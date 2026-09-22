@@ -141,10 +141,14 @@ def map_signature(path: pathlib.Path) -> str:
             w, h = int(p[1]), int(p[2])
         elif p[0] == "TILE":
             tiles.append(" ".join(p[1:]))
-        elif p[0] == "EDGE" and p[2] != "0":
-            row, c = divmod(int(p[1]), w + 1)
-            r, vertical = divmod(row, 2)
-            edges.add(("v" if vertical else "h", c % w, r % h, p[2], p[3]))
+        elif p[0] == "EDGE":
+            # Explicit open edges are identical to omitted edges. Do not let
+            # them fall through into `other`: exported server maps spell out
+            # border openings that bundled maps sometimes omit.
+            if p[2] != "0":
+                row, c = divmod(int(p[1]), w + 1)
+                r, vertical = divmod(row, 2)
+                edges.add(("v" if vertical else "h", c % w, r % h, p[2], p[3]))
         elif p[0] == "DRAGON":
             dragons.append(" ".join(p[1:]))
         else:

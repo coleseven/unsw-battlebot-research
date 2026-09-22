@@ -149,6 +149,26 @@ class MapTest(unittest.TestCase):
         finally:
             shutil.rmtree(tmp)
 
+    def test_explicit_open_edges_ignored(self):
+        """Server exports spell out open edges (`EDGE i 0 -1`) that bundled
+        maps omit; they mean nothing to the engine."""
+        tmp = pathlib.Path(tempfile.mkdtemp())
+        try:
+            base = (ROOT / "maps" / "arena.map").read_text()
+            (tmp / "a.map").write_text(base)
+            (tmp / "b.map").write_text(base + "\nEDGE 129 0 -1\nEDGE 5 0 -1\n")
+            self.assertEqual(paths.map_signature(tmp / "a.map"), paths.map_signature(tmp / "b.map"))
+        finally:
+            shutil.rmtree(tmp)
+
+    def test_server_copies_of_bundled_maps_dropped(self):
+        bundled = {paths.map_signature(b) for b in (ROOT / "maps").glob("*.map")}
+        for s in (ROOT / "maps" / "server").glob("*.map"):
+            if s.stem.lower() in {b.stem.lower() for b in (ROOT / "maps").glob("*.map")}:
+                self.assertIn(paths.map_signature(s), bundled, s.name)
+        names = [m.stem.lower() for m in paths.resolve_maps("all")]
+        self.assertEqual(len(names), len(set(names)))
+
     def test_all_maps_deduplicated(self):
         maps = paths.resolve_maps("all")
         sigs = [paths.map_signature(m) for m in maps]
