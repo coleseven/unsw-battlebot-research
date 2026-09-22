@@ -6,6 +6,9 @@ a fresh copy of the bot's modules, so no state leaks between dragons, just
 like separate processes on the judge. Any other bot (the helper-based starter,
 C/C++) runs the way `unswbc run` runs it: one OS process per dragon. That is
 much slower but faithful.
+
+Every Result records a content hash of the code that played each side, and
+final lengths come from the engine's own end-of-game standings.
 """
 
 from __future__ import annotations
@@ -19,6 +22,9 @@ import time
 from dataclasses import asdict, dataclass, field
 
 from unswbc.engine import EngineModule
+
+from . import replay as rp
+from .paths import bot_files, bot_hash
 
 _ENGINE: EngineModule | None = None
 
@@ -59,9 +65,16 @@ class InProcessBot:
     def __init__(self, path: pathlib.Path) -> None:
         self.path = path
         self.codes = {}
-        for f in path.glob("*.py"):
-            if f.stem != "main":
-                self.codes[f.stem] = (compile(f.read_bytes(), str(f), "exec"), str(f))
+        # Hash exactly the bytes that get compiled (plus bot.toml etc.), so a
+        # result names the code that actually ran, even if files change later.
+        h = hashlib.sha256()
+        for f in bot_files(path):
+            data = f.read_bytes()
+            h.update(f.relative_to(path).as_posix().encode() + b"\0")
+            h.update(data + b"\0")
+            if f.suffix == ".py" and f.parent == path and f.stem != "main":
+                self.codes[f.stem] = (compile(data, str(f), "exec"), str(f))
+        self.hash = h.hexdigest()[:16]
         if "brain" not in self.codes:
             raise ValueError(f"{path}: no brain.py")
         self.finder = _CodeFinder(self.codes)
@@ -105,6 +118,7 @@ class ProcessBot:
         from unswbc import run as ubc_run
         from unswbc.bot import Pool
 
+        self.hash = bot_hash(path)
         argv, botdir, _ = ubc_run._resolve(str(path))
         self.pool = Pool(argv, cwd=str(botdir), team=team.lower())
 
@@ -132,18 +146,20 @@ class Result:
     bot_a: str
     bot_b: str
     seed: int
-    winner: str | None          # "A", "B" or None (draw)
+    winner: str | None          # "A", "B" or None (draw, or error: check `error`)
     reason: str                 # elimination | length | error
     rounds: int
-    a_dragons: int
+    a_dragons: int              # living dragons at the end
     b_dragons: int
-    a_length: int
+    a_length: int               # total length of each team's living dragons
     b_length: int
-    a_longest: int = 0
+    a_longest: int = 0          # longest living dragon at the end (engine's standings)
     b_longest: int = 0
     deaths: dict = field(default_factory=dict)   # "A:W" -> count
     seconds: float = 0.0
     error: str | None = None
+    hash_a: str = ""            # content hash of the code that played each side
+    hash_b: str = ""
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -162,9 +178,9 @@ def play(map_path: pathlib.Path, bot_a: pathlib.Path, bot_b: pathlib.Path,
     pass unswbc.engine.DEBUG_ALL to keep them."""
     start = time.perf_counter()
     loaders = {"A": load_bot(bot_a, "A"), "B": load_bot(bot_b, "B")}
+    hashes = {t: loaders[t].hash for t in "AB"}
     live: dict[int, object] = {}
     teams: dict[int, str] = {}
-    bodies: dict[int, int] = {}      # dragon -> last known length
     deaths: dict[str, int] = {}
 
     def spawn(dragon_id: int, init: bytes) -> None:
@@ -181,16 +197,11 @@ def play(map_path: pathlib.Path, bot_a: pathlib.Path, bot_b: pathlib.Path,
         bot = live.get(dragon_id)
         if bot is None:
             return b"ENDTURN\n"
-        # track length for "longest dragon" stats: LENGTH is line 3 of the block
-        p = block.find(b"LENGTH ")
-        if p >= 0:
-            bodies[dragon_id] = int(block[p + 7:block.find(b"\n", p)])
         return bot.ask(block)
 
     def death(dragon_id: int, round_num: int, reason: str) -> None:
         key = f"{teams.get(dragon_id, '?')}:{reason}"
         deaths[key] = deaths.get(key, 0) + 1
-        bodies.pop(dragon_id, None)
         bot = live.pop(dragon_id, None)
         if bot is not None:
             bot.stop()
@@ -207,25 +218,26 @@ def play(map_path: pathlib.Path, bot_a: pathlib.Path, bot_b: pathlib.Path,
         for loader in loaders.values():
             loader.close()
 
+    common = dict(map=map_path.stem, bot_a=bot_a.name, bot_b=bot_b.name, seed=seed,
+                  deaths=deaths, hash_a=hashes["A"], hash_b=hashes["B"])
     if res is None:
-        return Result(map_path.stem, bot_a.name, bot_b.name, seed, None, "error",
-                      0, 0, 0, 0, 0, deaths=deaths, error=error,
+        return Result(**common, winner=None, reason="error", rounds=0, a_dragons=0,
+                      b_dragons=0, a_length=0, b_length=0, error=error,
                       seconds=time.perf_counter() - start)
 
+    # Lengths seen in round blocks predate each dragon's last action (and miss
+    # later splits and growth); the engine's final standings are exact.
+    blob = eng.replay(bot_a.name, bot_b.name)
     if replay_to is not None:
         replay_to.parent.mkdir(parents=True, exist_ok=True)
-        replay_to.write_bytes(eng.replay(bot_a.name, bot_b.name))
-
-    longest = {"A": 0, "B": 0}
-    for d, n in bodies.items():
-        t = teams.get(d)
-        if t:
-            longest[t] = max(longest[t], n)
+        replay_to.write_bytes(blob)
+    final = rp.read_result(blob)
     return Result(
-        map=map_path.stem, bot_a=bot_a.name, bot_b=bot_b.name, seed=seed,
+        **common,
         winner=res.winner, reason="elimination" if res.end_reason == 0 else "length",
         rounds=res.rounds + 1, a_dragons=res.a_dragons, b_dragons=res.b_dragons,
         a_length=res.a_length, b_length=res.b_length,
-        a_longest=longest["A"], b_longest=longest["B"],
-        deaths=deaths, seconds=time.perf_counter() - start,
+        a_longest=(final.get("a") or {}).get("longest", 0),
+        b_longest=(final.get("b") or {}).get("longest", 0),
+        seconds=time.perf_counter() - start,
     )

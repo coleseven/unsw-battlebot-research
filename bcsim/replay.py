@@ -35,6 +35,9 @@ DRAGON_DEATH = 11      # (11, id, reason letter)
 SONAR_PING = 12        # (12, sender, direction, value, origin, end, hit_id or None)
 
 
+_TAG_BITS = [[b for b in range(8) if tag >> b & 1] for tag in range(256)]
+
+
 def unpack(data: bytes) -> bytes:
     out = bytearray()
     i, n = 0, len(data)
@@ -45,11 +48,11 @@ def unpack(data: bytes) -> bytes:
             out += bytes(8 * (1 + data[i]))
             i += 1
             continue
+        bits = _TAG_BITS[tag]
         word = bytearray(8)
-        for b in range(8):
-            if tag & (1 << b):
-                word[b] = data[i]
-                i += 1
+        for b, v in zip(bits, data[i:i + len(bits)]):
+            word[b] = v
+        i += len(bits)
         out += word
         if tag == 0xFF:
             count = data[i]
@@ -238,11 +241,23 @@ class Replay:
         return ""
 
 
+def read_result(blob: bytes) -> dict:
+    """Only the final GameResult (skips decoding the event list)."""
+    if blob[:2] == b"\x1f\x8b":
+        blob = gzip.decompress(blob)
+    return _result(_Msg(unpack(blob)).struct(0, 0))
+
+
 def decode(blob: bytes) -> Replay:
     if blob[:2] == b"\x1f\x8b":
         blob = gzip.decompress(blob)
     m = _Msg(unpack(blob))
     root = m.struct(0, 0)
+    events = [_event(e) for e in root.struct_list(3)]
+    return Replay(root.u32(0), root.text(0), root.text(1), root.text(2), events, _result(root))
+
+
+def _result(root: _Struct) -> dict:
     res = root.struct(4)
     result = {}
     if res is not None:
@@ -255,8 +270,7 @@ def decode(blob: bytes) -> Replay:
             "a": team(res.struct(0)),
             "b": team(res.struct(1)),
         }
-    events = [_event(e) for e in root.struct_list(3)]
-    return Replay(root.u32(0), root.text(0), root.text(1), root.text(2), events, result)
+    return result
 
 
 def load(path) -> Replay:
