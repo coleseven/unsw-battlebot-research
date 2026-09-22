@@ -1,7 +1,9 @@
 from __future__ import annotations
 
+import ast
 import hashlib
 import pathlib
+import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 FRAMEWORK = ROOT / "framework"
@@ -50,6 +52,33 @@ def bot_hash(path: pathlib.Path) -> str:
         h.update(f.relative_to(path).as_posix().encode() + b"\0")
         h.update(f.read_bytes() + b"\0")
     return h.hexdigest()[:16]
+
+
+JUDGE_PACKAGES = {"numpy"}   # the judge's Python has the stdlib plus these
+
+
+def imports(path: pathlib.Path) -> set[str]:
+    """Top-level module names a .py file imports (absolute imports only)."""
+    tree = ast.parse(path.read_bytes(), filename=str(path))
+    out = set()
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Import):
+            out |= {a.name.split(".")[0] for a in node.names}
+        elif isinstance(node, ast.ImportFrom) and node.module and node.level == 0:
+            out.add(node.module.split(".")[0])
+    return out
+
+
+def foreign_imports(bot: pathlib.Path) -> set[str]:
+    """Modules the bot's top-level .py files import that it does not carry
+    and the judge does not provide. On the judge these fail; locally they
+    could silently resolve to some other copy and escape the bot's hash."""
+    local = {f.stem for f in bot.glob("*.py")} | {d.name for d in bot.iterdir() if d.is_dir()}
+    out = set()
+    for f in bot.glob("*.py"):
+        out |= imports(f)
+    return {m for m in out - local
+            if m not in sys.stdlib_module_names and m not in JUDGE_PACKAGES}
 
 
 def file_hash(path: pathlib.Path) -> str:

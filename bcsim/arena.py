@@ -15,15 +15,26 @@ to results/<timestamp>-<name>/: games.jsonl (one line per game), summary.md
 and run.json (code/engine/map hashes, git state, settings).
 
 Scoring: a game scores 1 win / 0.5 draw / 0 loss. "Score" is the mean of
-that; "win rate" counts wins only. Errored games count toward neither and are
-reported separately. The two games of a map+seed (one per side) form a block,
-and confidence intervals bootstrap over blocks, not individual games.
+that (match score); "win rate" counts wins only. Errored games count toward
+neither, nor toward Elo, and are reported in their own column.
+
+Uncertainty: the games of one opponent+map+seed (one per side; in a
+tournament, one bot pair+map+seed) form a block. "score 95% CI" is a
+percentile bootstrap of the mean match score, resampling whole blocks, so
+the two sides of a pairing stay together and side advantage cancels instead
+of inflating the spread. It estimates how the score would vary over new
+maps/seeds drawn like these, for this exact code; it says nothing about
+opponents or maps outside the pool. Small samples: with fewer than 2 blocks
+the interval is reported as 0-100%; with only a few blocks the percentile
+bootstrap is too narrow (it cannot see variation that never occurred -- e.g.
+if every block splits 1-1 the interval collapses to exactly 50%), so treat
+fewer than ~20 blocks as a screen, not a verdict. Games are deterministic for
+a given map, seed and code, so re-running identical settings adds no evidence.
 """
 
 from __future__ import annotations
 
 import argparse
-import ast
 import itertools
 import json
 import math
@@ -37,11 +48,12 @@ import time
 from collections import defaultdict
 from concurrent.futures import ProcessPoolExecutor, as_completed
 
-from .paths import (FRAMEWORK, RESULTS, ROOT, bot_files, bot_hash, file_hash,
-                    map_signature, resolve_bot, resolve_maps)
+from .paths import (FRAMEWORK, JUDGE_PACKAGES, RESULTS, ROOT, bot_files, bot_hash,
+                    file_hash, imports, map_signature, resolve_bot, resolve_maps)
 
 DEFAULT_POOL = "greedy,hunter,splitter,turtle,wanderer"
 BOOTSTRAP_ITERS = 2000
+FEW_BLOCKS = 20        # below this, summaries warn that intervals are too narrow
 
 
 # -- workers ---------------------------------------------------------------------
@@ -346,7 +358,12 @@ def summarize_eval(games: list[dict], focus: str) -> str:
         lines += ["", f"{focus} dragon deaths: " + ", ".join(
             f"{names.get(k, k)} {v}" for k, v in sorted(deaths.items(), key=lambda kv: -kv[1]))]
     lines += ["", "Score counts a draw as half a win; win rate counts wins only. "
-              "CI: bootstrap over map+seed blocks (both sides)."]
+              "CI: percentile bootstrap over opponent+map+seed blocks (both sides kept together)."]
+    few = sorted(opp for opp, t in by_opp.items() if 0 < len(t.blocks) < FEW_BLOCKS)
+    if few:
+        lines.append(f"Fewer than {FEW_BLOCKS} blocks for {', '.join(few)}: those intervals understate "
+                     "the uncertainty (a result that never varied gets a zero-width interval); "
+                     "add maps or seeds before trusting them.")
     if errors:
         lines += ["", f"**{len(errors)} games errored and are excluded from all scores**, "
                   f"e.g. {errors[0].get('error')}"]
@@ -427,21 +444,6 @@ def fit_elo(games: list[dict], names: list[str], iters: int = 2000) -> dict[str,
 # -- freeze ----------------------------------------------------------------------
 
 
-def _imports(path: pathlib.Path) -> set[str]:
-    """Top-level module names a .py file imports (absolute imports only)."""
-    tree = ast.parse(path.read_bytes(), filename=str(path))
-    out = set()
-    for node in ast.walk(tree):
-        if isinstance(node, ast.Import):
-            out |= {a.name.split(".")[0] for a in node.names}
-        elif isinstance(node, ast.ImportFrom) and node.module and node.level == 0:
-            out.add(node.module.split(".")[0])
-    return out
-
-
-JUDGE_PACKAGES = {"numpy"}
-
-
 def freeze(src: pathlib.Path, versions: pathlib.Path, framework: pathlib.Path = FRAMEWORK,
            name: str | None = None) -> pathlib.Path:
     """Copy a bot into versions/<name>, pulling in any framework module it
@@ -465,7 +467,7 @@ def freeze(src: pathlib.Path, versions: pathlib.Path, framework: pathlib.Path = 
     todo = sorted(tmp.glob("*.py"))
     while todo:
         f = todo.pop()
-        for mod in _imports(f):
+        for mod in imports(f):
             if (tmp / f"{mod}.py").is_file() or (tmp / mod).is_dir():
                 continue
             if (framework / f"{mod}.py").is_file():

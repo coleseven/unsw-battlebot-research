@@ -113,6 +113,24 @@ class FreezeTest(unittest.TestCase):
         InProcessBot(dst).new_brain("ID 0\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n", seed=0)
         self.assertEqual(arena.freeze(src, self.versions, framework=self.fw).name, "v2")
 
+    def test_captures_feature_code(self):
+        """A model bot that imports the real framework features.py (which in
+        turn imports bc and numpy) freezes into a self-contained snapshot."""
+        shutil.copy2(ROOT / "framework" / "features.py", self.fw / "features.py")
+        brain = ("import bc\nimport features\n\nclass Brain(bc.Brain):\n"
+                 "    def turn(self, obs):\n        features.encode(obs, self.team, self.id)\n"
+                 "        return 'MOVE N'\n")
+        src = make_bot(self.tmp / "mybot", brain, **{"bc.py": (self.fw / "bc.py").read_text()})
+        dst = arena.freeze(src, self.versions, framework=self.fw)
+        self.assertEqual((dst / "features.py").read_bytes(), (self.fw / "features.py").read_bytes())
+        self.assertIn("features.py", (dst / "FROZEN.txt").read_text())
+        self.assertEqual(paths.foreign_imports(dst), set())
+        # and the snapshot plays a real game using its own feature code
+        from bcsim.match import play
+        r = play(ROOT / "maps" / "arena.map", dst, ROOT / "opponents" / "greedy")
+        self.assertIsNone(r.error)
+        self.assertEqual(r.hash_a, paths.bot_hash(dst))
+
     def test_unknown_import_refused(self):
         brain = "import bc\nimport nosuchmodule\n\nclass Brain(bc.Brain):\n    pass\n"
         src = make_bot(self.tmp / "mybot", brain, **{"bc.py": (self.fw / "bc.py").read_text()})
@@ -148,6 +166,26 @@ class HashTest(unittest.TestCase):
             (bot / "brain.py").write_text(SIMPLE_BRAIN + "# change\n")
             self.assertNotEqual(paths.bot_hash(bot), h1)
         finally:
+            shutil.rmtree(tmp)
+
+    def test_bot_cannot_run_code_outside_its_hash(self):
+        """A bot importing a module it does not carry (e.g. framework
+        features.py reachable through sys.path) is refused, not silently run
+        with code the hash does not cover."""
+        from bcsim.match import InProcessBot
+        tmp = pathlib.Path(tempfile.mkdtemp())
+        sys.path.insert(0, str(ROOT / "framework"))   # make the leak possible
+        try:
+            brain = "import bc\nimport features\n\nclass Brain(bc.Brain):\n    pass\n"
+            bot = make_bot(tmp / "b", brain, **{"bc.py": (ROOT / "framework" / "bc.py").read_text()})
+            self.assertEqual(paths.foreign_imports(bot), {"features"})
+            with self.assertRaises(ValueError):
+                InProcessBot(bot)
+            shutil.copy2(ROOT / "framework" / "features.py", bot / "features.py")
+            self.assertEqual(paths.foreign_imports(bot), set())
+            InProcessBot(bot)
+        finally:
+            sys.path.remove(str(ROOT / "framework"))
             shutil.rmtree(tmp)
 
     def test_inprocess_hash_matches_dir_hash(self):

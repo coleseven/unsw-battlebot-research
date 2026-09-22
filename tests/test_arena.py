@@ -45,6 +45,7 @@ class ScoreTest(unittest.TestCase):
         self.assertIn("| 3-0-0 | 100% | 100% |", row)
         self.assertTrue(row.rstrip().endswith("| 3 | 3 |"), row)
         self.assertIn("3 games errored and are excluded", text)
+        self.assertIn("Fewer than 20 blocks for o", text)
 
     def test_score_vs_win_rate(self):
         t = arena.Tally()
@@ -182,6 +183,45 @@ class MatchStatsTest(unittest.TestCase):
                 self.assertEqual(r.hash_b, paths.bot_hash(ROOT / "opponents" / b))
                 if a != b:
                     self.assertNotEqual(r.hash_a, r.hash_b)
+        finally:
+            shutil.rmtree(tmp)
+
+    def _scripted(self, root: pathlib.Path, name: str, turn_body: str) -> pathlib.Path:
+        d = root / name
+        d.mkdir()
+        (d / "bot.toml").write_text('[project]\nlanguage = "py"\ninclude = [ "*.py" ]\n')
+        shutil.copy2(ROOT / "framework" / "bc.py", d / "bc.py")
+        (d / "brain.py").write_text("import bc\n\nclass Brain(bc.Brain):\n"
+                                    "    def turn(self, obs):\n" + turn_body)
+        return d
+
+    def test_last_turn_length_change(self):
+        """The final action changes a dragon's length, then the game ends
+        (the opponent forfeits in the same round). Lengths seen before that
+        action would be stale; the reported ones must be the final ones."""
+        from bcsim.match import play
+        tmp = pathlib.Path(tempfile.mkdtemp())
+        try:
+            forfeit = self._scripted(tmp, "forfeit", "        return 'NOT_A_COMMAND'\n")
+            sprint = self._scripted(tmp, "sprint", "        return 'MOVE ' + obs.facing * 2\n")
+            split = self._scripted(tmp, "split", "        if obs.length >= 4:\n"
+                                   "            return 'SPLIT 2'\n"
+                                   "        return self.fallback(obs)\n")
+            # arena.map: one length-3 dragon per side; team A (id 0) acts first
+            r = play(ROOT / "maps" / "arena.map", sprint, forfeit)
+            self.assertEqual((r.winner, r.rounds), ("A", 1))
+            # a 2-step sprint costs a segment: seen 3 before the move, final 2
+            self.assertEqual((r.a_longest, r.a_length, r.a_dragons), (2, 2, 1))
+
+            # the same map with team A's dragon lengthened to 4, then it splits
+            text = (ROOT / "maps" / "arena.map").read_text()
+            text = text.replace("DRAGON 0 3 3 5 2 5 1 5", "DRAGON 0 4 3 5 2 5 1 5 0 5")
+            m = tmp / "arena4.map"
+            m.write_text(text)
+            r = play(m, split, forfeit)
+            self.assertEqual((r.winner, r.rounds), ("A", 1))
+            # seen 4 before the split; final: parent 2 + child 2
+            self.assertEqual((r.a_longest, r.a_length, r.a_dragons), (2, 4, 2))
         finally:
             shutil.rmtree(tmp)
 

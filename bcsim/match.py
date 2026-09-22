@@ -24,7 +24,7 @@ from dataclasses import asdict, dataclass, field
 from unswbc.engine import EngineModule
 
 from . import replay as rp
-from .paths import bot_files, bot_hash
+from .paths import bot_files, bot_hash, foreign_imports
 
 _ENGINE: EngineModule | None = None
 
@@ -77,6 +77,12 @@ class InProcessBot:
         self.hash = h.hexdigest()[:16]
         if "brain" not in self.codes:
             raise ValueError(f"{path}: no brain.py")
+        # Everything a bot runs must be inside its directory (and so inside
+        # its hash), exactly as on the judge where only /bot is visible.
+        foreign = foreign_imports(path)
+        if foreign:
+            raise ValueError(f"{path.name} imports {sorted(foreign)}, which it does not carry "
+                             f"and the judge does not provide (run python -m bcsim.sync?)")
         self.finder = _CodeFinder(self.codes)
 
     def new_brain(self, init_text: str, seed: int):
