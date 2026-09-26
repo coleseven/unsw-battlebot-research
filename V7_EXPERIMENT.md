@@ -145,17 +145,84 @@ still to spend on section 5. (The "hit a wall" deaths in sandbox games are
 v6's last-resort fallback and are identical to Python v6 — see the live
 cross-check — not port or CPU faults.)
 
+## Section 5 — spending the speed (2026-09-26, on `v6-release-and-port-prep`)
+
+The port is now the **v6.1** bot (`framework/core_params.py`: `ATTACK_MIN_GAIN
+= 1`, `HUNT_MIN_GAIN = 2`, `W_HUB = 60.0`; `cppbot/params.hpp` regenerated). On
+top of it, three features from `CLOUD_TASK_2.md`, each behind a C++-only switch
+in `core_params.py` (regenerated into `params.hpp`, so `bcsim.tune` can drive
+them). **Every switch defaults to today's behaviour.**
+
+1. **`CPP_BUDGET`** — a points-based CPU meter. `clock()` advances with judge
+   points (0.1 s = 100M). `score_moves` splits the remaining `CPP_SOFT_POINTS`
+   (60M) evenly across legal moves (fair search — never the first move alone),
+   stops a move at its slice or `N_SEARCH`, and takes a cheap move past
+   `CPP_HARD_POINTS` (80M). This lets `N_SEARCH`/`DEPTH_MAX` grow, capped by real
+   cost. Off keeps the fixed 200-node search.
+2. **`CPP_PATH_DIST`** — one BFS per turn from our head over remembered terrain
+   (book portals included) gives portal-aware path distances, used for the
+   hub-far, feeding and hunting pulls in place of straight-line torus distance.
+   (The exploration goal already uses a portal-aware search-path progress, so it
+   is left as is.) Off keeps the straight-line terms.
+3. **`CPP_BEAM`** (`CPP_BEAM_WIDTH`, `CPP_BEAM_DEPTH`) — a bounded beam over our
+   own moves that simulates our body (growth on a known pearl, tail release
+   otherwise) and treats other dragons and enemy-head-reachable cells as
+   blocked, demoting a first move whose best line gets trapped before the
+   horizon (reusing `W_LETHAL`). Off keeps the single-ply argmax.
+
+### Matching with the switches off (required check)
+
+`python -m bcsim.parity --opponents opponents/splitter`, all switches off, over
+all 11 maps and both sides: **297,348 dragon-turns, 0 mismatches** — the new
+code changes nothing until a switch is turned on.
+
+### Judge CPU (sandbox, cppbot as team A vs splitter, limit 100M)
+
+| build | default_small max | schooltime max | big_empty max |
+|---|---|---|---|
+| all off (matching) | 6.5M | 6.7M | 7.1M |
+| `CPP_PATH_DIST=1` | 7.0M | — | — |
+| `CPP_BEAM=1` (8x6) | 10.6M | — | — |
+| `CPP_BUDGET=1`, `N_SEARCH=2000`, `DEPTH_MAX=30`, path on | 7.5M | 12.9M (p99 10.8M) | 23.6M (p99 18.5M) |
+
+Zero over-budget turns anywhere. Even the aggressive combined build peaks at
+23.6M of 100M on big_empty — the fair-split meter holds it well under the 60M
+soft budget, so `N_SEARCH`/`DEPTH_MAX`/beam size can go higher still.
+
+### Quick strength screens (directional only)
+
+Native games, one seed, four maps (default_small, default, Trauma,
+queen_of_spades), both sides, final team-length share. These run the C++ search
+against the extra local CPU, so they over-state the deeper search relative to
+the judge; the deciding tests run on the local PC against the sparring bots.
+
+| build | vs frozen `versions/v6` | vs `versions/v3` |
+|---|---|---|
+| `CPP_BUDGET=1`, `N_SEARCH=2000`, `DEPTH_MAX=30`, path on | 6/8, mean share +0.323 | 8/8, +0.367 |
+| `CPP_BEAM=1` (8x6), no budget | 6/8, +0.371 | 8/8, +0.400 |
+
+Both are directionally positive. The screen is noisy (single seed, `default` B
+lost to v6 in both), so it only says "worth the full local suite", not more.
+
+### Suggested settings to test locally (each a separate change)
+
+- **Feature 1:** `CPP_BUDGET=1`, `N_SEARCH=2000`, `DEPTH_MAX=30`
+  (keep `CPP_SOFT_POINTS=60000000`, `CPP_HARD_POINTS=80000000`). CPU headroom
+  allows going further (e.g. `N_SEARCH=5000`, `DEPTH_MAX=40`).
+- **Feature 2:** `CPP_PATH_DIST=1` (on its own and combined with feature 1).
+- **Feature 3:** `CPP_BEAM=1`, `CPP_BEAM_WIDTH=8`, `CPP_BEAM_DEPTH=6`; grow to
+  16x10 while the meter allows.
+
+The local PC then runs the full 11-map suite against the sparring opponents
+(nicked v34/v44, ctmes) for each feature, keeps the winners, and tunes the kept
+ones with `bcsim/tune.py` (every tunable lives in `cppbot/params.hpp`).
+
 ## Status and next steps
 
-- G1 matching: **PASS** (481,092 turns over two opponents, 0 mismatches, all 11
-  maps + a move-for-move live cross-check).
-- G2 CPU (matching settings): **PASS** (all 11 maps, both sides, max 7.1M of
-  100M, no over-budget turns).
-- G3 strength (matching settings): the port equals Python v6 by construction
-  (identical actions), so a full-suite strength run should be about even; not
-  yet run.
-- Section 5 (spend the speed: raise `N_SEARCH`/`DEPTH_MAX`, full-map BFS
-  distances, lookahead beam, CMA-ES tuning) is future work, each judged by the
-  full-suite rules in `CLAUDE.md`.
+- G1 matching: **PASS** (481,092 turns over two opponents + a live cross-check
+  for the matching build; 297,348 turns with the section-5 switches off).
+- G2 CPU (matching settings): **PASS** (all 11 maps, both sides, max 7.1M).
+- Section 5 features: implemented behind switches, CPU-safe, directionally
+  positive on quick screens. Ready for the local full-suite + tuning decision.
 
 Do not upload; the user uploads bots.
