@@ -204,8 +204,13 @@ def score_moves(mem, obs, team, did, P, model, protected=False,
     protection = P.PROTECT_MULT if protected else 1.0
     margin = P.SPACE_MARGIN * (P.ENDGAME_SPACE_MULT if obs.round >= 400 else 1.0)
     need = min(P.SPACE_MULT * obs.length + margin, P.SPACE_CAP)
-    remaining = max(0.0, P.SOFT_S - (time.perf_counter() - started))
-    per_direction = remaining / len(moves)
+    if getattr(P, "PARITY", False):
+        # Host-independent matching mode: no time cutoff, each move expands up
+        # to the N_SEARCH cap. float('inf') is never exceeded by the time check.
+        per_direction = float("inf")
+    else:
+        remaining = max(0.0, P.SOFT_S - (time.perf_counter() - started))
+        per_direction = remaining / len(moves)
     for direction, dest in moves.items():
         terms = search_one(mem, obs, team, did, dest, direction, P,
                            own_free, time.perf_counter(), per_direction)

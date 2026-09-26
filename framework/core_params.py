@@ -58,6 +58,11 @@ PEARL_TTL = 8
 OCC_TTL = 2
 SOFT_S = 0.045
 HARD_S = 0.065
+# Matching mode for the C++ port (V7): turn off the wall-clock cutoffs so the
+# search is host-independent. Each move then expands until its queue empties or
+# it hits the N_SEARCH cap, and the HARD_S v3 fallback never fires. Release play
+# keeps PARITY = False and the time budget.
+PARITY = False
 # Aggression: trade short dragons into longer enemy heads; keep long ones clear
 ATTACK_MAXLEN = 4
 ATTACK_MIN_GAIN = 0
