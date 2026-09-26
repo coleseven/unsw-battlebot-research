@@ -60,18 +60,18 @@ SOFT_S = 0.045
 HARD_S = 0.065
 # Aggression: trade short dragons into longer enemy heads; keep long ones clear
 ATTACK_MAXLEN = 4
-ATTACK_MIN_GAIN = 0
+ATTACK_MIN_GAIN = 1
 W_ATTACK = 150.0
 W_TRADE = 10.0
 HUNT_MAXLEN = 4
-HUNT_MIN_GAIN = 1
+HUNT_MIN_GAIN = 2
 HUNT_ROUND = 0
 W_HUNT = 40.0
 DEFEND_LEN = 6
 W_DEFEND = 15.0
 # Pearl hubs from the official-map hub book (only once the map is identified)
 HUB_BOOK = True
-W_HUB = 20.0
+W_HUB = 60.0
 HUB_SCALE = 4.0
 HUB_FAR_MULT = 0.5
 # Learned hubs when no book map fits (new or changed maps)

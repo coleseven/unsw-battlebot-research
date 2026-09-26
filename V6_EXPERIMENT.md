@@ -218,3 +218,52 @@ Known weaknesses for the next round: nicked v44 (8/22), and Queen and Trauma
 against nicked v34. The `unswbc` toolkit here is 0.3.10; PyPI has up to
 1.1.0 (no changelog published). The documented judge limits are unchanged, but
 re-run the CPU suite after any toolkit upgrade.
+
+## v6.1 (26 Sep): portal book, aggression, hubs, exploration
+
+All runs: deterministic judge-calibrated clock, all 11 maps, both sides, zero
+match errors unless noted. Opponents: uploaded v6 (`versions/v6`, submission
+6688), additive v4 (live before v6), nicked v34, nicked v44.
+
+- **Portal book** (`framework/v6_portal_book.py`, `bcsim/portal_book.py`):
+  official-map portal pairs, applied only after a dragon has seen one end with
+  the same id and edge. Every crossing matches engine geometry
+  (`tests/test_portal_book.py`). Portal steps per game rose on stronghold
+  (1 -> 22), Default, Queen and Schooltime, but not Trauma: the move was legal,
+  but nothing beyond the portal scored. Alone it was about even with v6
+  (12/22; `results/20260925-204545-full-change-13b847`; a lighter unseen-exit
+  penalty was not better: `...204546-full-change-911c3e`).
+- **Aggression** (`core_search`): short non-king dragons may step onto an
+  adjacent enemy head (head-on kills both), hunt longer enemy heads, and long
+  dragons keep 2 tiles from enemy heads. First settings (even trades allowed)
+  tripled favourable trades and all but ended losing ones, but even trades
+  exploded, pearls fell 568 -> 422 and body kills 11.6 -> 4.0 against nicked;
+  net about even (`...210224-full-change-b3cbea`).
+- **Hub book** (`framework/v6_hub_book.py`, `bcsim/hub_book.py`): up to 12
+  hubs per map from the map files' per-tile respawn gaps, only on maps with real
+  hot spots; map identified in-game by its kelp/portal layout (all 11 maps
+  identified from real observations, `tests/test_hub_book.py`). The hub pull
+  follows search paths (through book portals), with a weaker straight-line
+  fallback; learned hubs from observed countdowns on unknown maps. At W_HUB 20
+  the time near hubs only rose 18% -> 22% (`...210224-full-change-4838d6`).
+- **Exploration goal** (`core_memory.update_goal`): stale or unseen 8x8 blocks
+  as per-dragon goals, pursued along search paths; x2.5 in poor areas (mean
+  1/(1 + max countdown) of tiles in view below 0.01); weak for kings.
+
+Tuned combination **v6.1b + exploration** (`results/v61b-goal-bot`, hash
+`a208ae7f66bbd144`: ATTACK_MIN_GAIN 1, HUNT_MIN_GAIN 2, W_HUB 60, GOAL on;
+`results/20260925-212727-full-change-b01abd`):
+
+| Opponent | v6.1b + exploration | uploaded v6 |
+|---|---|---|
+| uploaded v6 | 16/22 | - |
+| additive v4 | 22/22 | 21/22 |
+| nicked v34 | 18/22 | 16/22 |
+| nicked v44 | 8/22 | 8/22 |
+
+No map at 0-2 against v6 or additive; against nicked v34 only Queen. These
+are now the defaults in `framework/core_params.py`. Pending: judge CPU suite
+(`results/20260925-214041-v6-cpu-f74d3d`), held-out v3/ctmes
+(`...214042-full-change-ba75fb`), and the same combination without the goal
+(`...212726-full-change-52675f`, resumed after a worker crashed with a
+CPython/wasmtime thread-state fault; not a bot error).
