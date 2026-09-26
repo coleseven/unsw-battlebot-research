@@ -96,14 +96,33 @@ def gen_seeds(plan, gen):
     return [plan["seed"] + gen * n + i for i in range(n)]
 
 
-def score(games, candidate):
+def _side_margins(replay):
+    """Both sides' margins for one replay (a worker job: decoding dominates scoring)."""
+    stats = analyze.game_stats(Path(replay).read_bytes())
+    return {side: margin.game_margin(stats, side)["margin"] for side in "AB"}
+
+
+def replay_margins(games, workers):
+    """Margins for every error-free game's replay, decoded in parallel."""
+    replays = [g["replay"] for g in games if not g.get("error") and g.get("replay")]
+    if workers <= 1 or len(replays) < 2:
+        return {r: _side_margins(r) for r in replays}
+    from concurrent.futures import ProcessPoolExecutor
+    with ProcessPoolExecutor(max_workers=workers) as ex:
+        return dict(zip(replays, ex.map(_side_margins, replays, chunksize=8)))
+
+
+def score(games, candidate, margins=None):
     per_map = {}
     for game in games:
         if game.get("error"):
             return -2.0, {"error": game["error"]}
         side = "A" if game["bot_a"] == candidate else "B"
-        stats = analyze.game_stats(Path(game["replay"]).read_bytes())
-        per_map.setdefault(game["map"].lower(), []).append(margin.game_margin(stats, side)["margin"])
+        if margins is not None and game["replay"] in margins:
+            value = margins[game["replay"]][side]
+        else:
+            value = _side_margins(game["replay"])[side]
+        per_map.setdefault(game["map"].lower(), []).append(value)
     means = {m: statistics.fmean(v) for m, v in per_map.items()}
     return statistics.fmean(means.values()) + 0.25 * min(means.values()), means
 
@@ -189,10 +208,11 @@ def run(out: Path, workers: int):
                 print(f"gen {gen}: worker pool crashed, replaying (attempt {attempt + 2})", flush=True)
         else:
             raise RuntimeError(f"gen {gen}: worker pool crashed three times")
+        margins = replay_margins(games, workers)
         fitness, rows = [], []
         for i, bot in enumerate(candidates):
             mine = [g for g in games if bot.name in (g["bot_a"], g["bot_b"])]
-            f, detail = score(mine, bot.name)
+            f, detail = score(mine, bot.name, margins)
             wins = sum(g["winner"] == ("A" if g["bot_a"] == bot.name else "B") for g in mine)
             fitness.append(-f)   # CMA-ES minimises
             rows.append({"gen": gen, "cand": bot.name, "F": f, "wins": wins, "games": len(mine),
