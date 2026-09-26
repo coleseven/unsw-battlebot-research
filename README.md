@@ -16,6 +16,14 @@ is v4 (submission 5204) until v6 is uploaded. See
 [TOP_TEAMS_SCOUTING.md](TOP_TEAMS_SCOUTING.md) and
 [COMPETITOR_RESEARCH.md](COMPETITOR_RESEARCH.md) for the research behind it.
 
+`cppbot/` is a 1:1 C++ port of the v6 core (V7): it plays v6 move-for-move but
+uses about 7M of the judge's 100M CPU points per turn instead of ~80M, leaving
+the budget free for a deeper search. Its data headers are generated from the
+Python single source with `python -m bcsim.gen_cpp`, and `python -m
+bcsim.parity` proves the two implementations pick identical actions. See
+[V7_CPP_PORT_PLAN.md](V7_CPP_PORT_PLAN.md) and
+[V7_EXPERIMENT.md](V7_EXPERIMENT.md).
+
 ## Layout
 
 | path | what |
