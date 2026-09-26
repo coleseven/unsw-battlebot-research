@@ -108,9 +108,28 @@ def gen_hub_book() -> str:
     return "\n".join(out)
 
 
+def gen_model() -> str:
+    """Emit the frozen v3 linear action model (weights + bias)."""
+    namespace: dict = {}
+    exec((ROOT / "versions/v3/action_model.py").read_text(encoding="utf8"), namespace)
+    model = namespace["MODEL"]
+    if model["kind"] != "linear":
+        raise ValueError(f"only the linear v3 model is ported, got {model['kind']}")
+    weights = ", ".join(_cpp_number(float(w))[1] for w in model["weight"])
+    bias = _cpp_number(float(model["bias"]))[1]
+    return "\n".join([
+        BANNER.format(src="versions/v3/action_model.py"),
+        "#pragma once", "#include <array>", "",
+        "namespace model {", "",
+        f"inline constexpr std::array<double, {len(model['weight'])}> WEIGHT = {{{weights}}};",
+        f"inline constexpr double BIAS = {bias};", "",
+        "}  // namespace model", ""])
+
+
 def main() -> None:
     CPPBOT.mkdir(exist_ok=True)
     for name, text in (("params.hpp", gen_params()),
+                       ("model.hpp", gen_model()),
                        ("portal_book.hpp", gen_portal_book()),
                        ("hub_book.hpp", gen_hub_book())):
         (CPPBOT / name).write_text(text, encoding="utf8")
