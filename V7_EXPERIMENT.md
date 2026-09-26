@@ -225,4 +225,40 @@ ones with `bcsim/tune.py` (every tunable lives in `cppbot/params.hpp`).
 - Section 5 features: implemented behind switches, CPU-safe, directionally
   positive on quick screens. Ready for the local full-suite + tuning decision.
 
+## Tuned release: v7 (2026-09-26, local)
+
+CMA-ES (`bcsim/tune.py`, space `experiments/tuning/space_v7_search.json`) from
+the C++ v6.1 port, vs nicked v34 and Python v6.1 on the 5 screen maps, popsize
+12. Stopped after 14 generations: the best F (+0.32) came in gen 1 and the
+population mean peaked at +0.127 (gen 7), then fell to about +0.05.
+
+Held-out validation, all 11 maps, both sides (wins of 22):
+
+| bot | nicked_v44 | ctmes | v6 | untuned C++ |
+|---|---|---|---|---|
+| untuned C++ (`results/v7-base-bot`) | 9 | 21 | 16 | - |
+| gen 1 c01 | 10 | 19 | 19 | 10 |
+| gen 8 c05 | 9 | 20 | 14 | 10 |
+| **gen 7 c05** | **14** | 20 | 15 | 12 |
+| CMA mean | 10 | 16 | 15 | 11 |
+
+Gen 7 c05 gains vs nicked v44 on stronghold, schooltime, arena, queen and
+trophy and loses Trauma. Judge sandbox (unswbc 0.3.10) vs splitter: max 7.0M
+points per turn on big_empty, schooltime, default_small (both sides), Slithery
+Fight and Portals; zero over budget. Frozen as `versions/v7` (hash
+`b033b4202f624d25`), `battlebot-v7.zip` (SHA-256
+`d8a50ef5de20e734b686e804e01d580920115fc02bdc88e892be516c7e6c8596`), verified by
+extracting and playing a sandbox game.
+
+Known weakness (ladder analysis of v6, sub 6688, 26 Sep): newborn length-2
+children walk into 1-wide dead ends (a length > 1 dragon cannot reverse) and
+die in kelp: 43 per game vs 26 for opponents, 513 per game on Slithery Fight.
+v7 keeps it (606 kelp deaths in a sandbox Slithery Fight game). Cause: the
+`room` flood fill in `search_one` ignores the no-reverse rule. Not fixed (user
+decision).
+
+Next tuning run: `20260926-151852-tune-d9e7d6`, from v7, sigma 0.15, screen
+maps plus the ladder-only maps Autarky, Prisoners Dilemma, Slithery Fight and
+Portals (`bcsim.tune --extra-maps`).
+
 Do not upload; the user uploads bots.

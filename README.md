@@ -4,7 +4,14 @@ Competition: https://game.battlecode.au (21 Sep – 17 Oct 2026). Rules: https:/
 
 ## Best tested local candidate
 
-`versions/v6` (hash `4959b003957277f5`, upload package `battlebot-v6.zip`) is
+`versions/v7` (hash `b033b4202f624d25`, upload package `battlebot-v7.zip`) is
+the C++ port of v6.1 with CMA-ES-tuned weights (tune `20260926-001535-tune-79f3f9`,
+gen 7 c05: N_SEARCH 357, DEPTH_MAX 12, all section-5 switches off). Over all 11
+maps and both sides it scored 14/22 vs nicked v44, 20/22 vs ctmes, 15/22 vs v6
+and 12/22 vs the untuned C++ bot (untuned: 9, 21, 16 of 22). Judge sandbox CPU
+max 7.0M of 100M. See [V7_EXPERIMENT.md](V7_EXPERIMENT.md), section "Tuned release".
+
+Previous: `versions/v6` (hash `4959b003957277f5`, upload package `battlebot-v6.zip`) is
 the search-core bot: per-dragon map memory, one bounded search score per move
 with an even per-move CPU budget, founder/long-dragon kings and late feeding.
 Under the judge-calibrated local clock (`BCSIM_DETERMINISTIC_V6=1`) it scored,

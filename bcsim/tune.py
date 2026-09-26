@@ -107,7 +107,15 @@ def prepare(args):
         maps = [m for m in maps if m.stem.lower() in wanted]
         if len(maps) != len(wanted):
             raise ValueError(f"unknown map in {args.maps}")
-    out = RESULTS / (datetime.now().strftime("%Y%m%d-%H%M%S") + "-tune-" + uuid.uuid4().hex[:6])
+    # ladder maps outside the official suite (e.g. maps/server/Slithery_Fight.map)
+    for extra in args.extra_maps:
+        path = Path(extra)
+        if not path.is_file():
+            raise ValueError(f"missing extra map {path}")
+        if official_suite.map_signature(path) in {official_suite.map_signature(m) for m in maps}:
+            raise ValueError(f"{path} duplicates a map already in the pool")
+        maps.append(path)
+    out =RESULTS / (datetime.now().strftime("%Y%m%d-%H%M%S") + "-tune-" + uuid.uuid4().hex[:6])
     out.mkdir()
     population.snapshot(base, out / "base")
     opponents = []
@@ -202,6 +210,8 @@ def main():
     ap.add_argument("--vs", nargs="+")
     ap.add_argument("--maps", default="screen",
                     help="screen (5 hardest), all (11), or comma-separated map stems")
+    ap.add_argument("--extra-maps", nargs="*", default=[],
+                    help="additional .map files (ladder maps outside the official suite)")
     ap.add_argument("--seed", type=int, default=53001)
     ap.add_argument("--popsize", type=int, default=12)
     ap.add_argument("--gens", type=int, default=25)
