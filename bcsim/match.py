@@ -139,6 +139,12 @@ class ProcessBot:
         # Windows. Execute the same source entry point directly instead.
         runnable = (ubc_run._inspect(path) if (path / "main.py").is_file() else None)
         argv, botdir, _ = runnable or ubc_run._resolve(str(path))
+        # The toolkit may pick the Microsoft Store alias (...\WindowsApps\python3.exe).
+        # Every launch through it goes via the AppX Deployment Service, which kept
+        # ~75 GB of commit after a long tuning run (WinError 1455). Use the real
+        # interpreter instead; same Python, no AppX activation.
+        if argv and "windowsapps" in argv[0].lower():
+            argv = [getattr(sys, "_base_executable", sys.executable), *argv[1:]]
         self.pool = Pool(argv, cwd=str(botdir), team=team.lower())
 
     def new_dragon(self, init: bytes, name: str):
