@@ -21,6 +21,7 @@ import bc
 C = 17
 N_SCALARS = 5
 DIR_INDEX = {"N": 0, "E": 1, "S": 2, "W": 3}
+FEATURE_VERSION = 2
 
 
 def encode(obs: bc.Obs, team: str, my_id: int) -> tuple[np.ndarray, np.ndarray]:
@@ -52,7 +53,10 @@ def encode(obs: bc.Obs, team: str, my_id: int) -> tuple[np.ndarray, np.ndarray]:
 
 
 def action_label(action) -> tuple[int, int, int, int]:
-    """(kind, first_dir, steps, split_size); kind 0 move, 1 split, 2 suicide, 3 none."""
+    """Summary only; use action_tokens for the complete sprint path.
+
+    (kind, first_dir, steps, split_size); kind 0 move, 1 split, 2 suicide, 3 none.
+    """
     if action is None:
         return 3, -1, 0, 0
     if action[0] == "move":
@@ -60,4 +64,59 @@ def action_label(action) -> tuple[int, int, int, int]:
         return 0, DIR_INDEX[steps[0]] if steps else -1, len(steps), 0
     if action[0] == "split":
         return 1, -1, 0, action[1]
-    return 2, -1, 0, 0
+    if action[0] == "suicide":
+        return 2, -1, 0, 0
+    raise ValueError(f"unknown action: {action!r}")
+
+
+def action_tokens(action) -> np.ndarray:
+    """Lossless variable-length MOVE path: N/E/S/W = 0/1/2/3, without a cap."""
+    return np.asarray([DIR_INDEX[d] for d in action[1]]
+                      if action is not None and action[0] == "move" else [], dtype=np.int8)
+
+
+def decode_action(kind: int, tokens, split_size: int = 0):
+    """Reconstruct a replay action. Remove batch padding using its mask first."""
+    if kind == 0:
+        if any(int(t) not in range(4) for t in tokens):
+            raise ValueError("move tokens must be in 0..3; remove padding first")
+        return "move", "".join("NESW"[int(t)] for t in tokens)
+    if kind == 1:
+        return "split", int(split_size)
+    if kind == 2:
+        return ("suicide",)
+    if kind == 3:
+        return None
+    raise ValueError(f"unknown action kind: {kind}")
+
+
+def encode_observation(obs: bc.Obs, team: str, my_id: int,
+                       map_size: tuple[int, int], unit_limit: int = 64) -> dict:
+    """V2 inputs derived exclusively from this dragon's observation/init.
+
+    Preserve encode()'s compact grid and add exact fields for richer models.
+    turn_order: 0 empty, 1 earlier ID, 2 self, 3 later ID.
+    portal_ids: -1 no portal. sonar: ordered uint32 values. IDs are categorical.
+    """
+    grid, scalar = encode(obs, team, my_id)
+    ids = np.full((7, 7), -1, dtype=np.int32)
+    order = np.zeros((7, 7), dtype=np.uint8)
+    portals = np.full((4, 7, 7), -1, dtype=np.int32)
+    for k, part in enumerate(obs.occ):
+        r, c = divmod(k, 7)
+        if part is not None:
+            pid = part[1]
+            ids[r, c] = pid
+            order[r, c] = 1 if pid < my_id else 2 if pid == my_id else 3
+        for d, name in enumerate("NESW"):
+            edge = obs.edge(k, name)
+            if edge >= 0:
+                portals[d, r, c] = edge
+    return {
+        "grid": grid, "scalar": scalar,
+        "dragon_ids": ids, "turn_order": order, "portal_ids": portals,
+        "coordinates": np.asarray([obs.x, obs.y], dtype=np.int32).reshape(2, 7, 7),
+        "pearl_countdown": np.asarray(obs.pearl_in, dtype=np.int32).reshape(7, 7),
+        "map_size": np.asarray(map_size, dtype=np.int32),
+        "unit_limit": np.int32(unit_limit), "sonar": np.asarray(obs.msgs, dtype=np.uint32),
+    }

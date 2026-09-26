@@ -88,8 +88,11 @@ def devalue(payload: dict, node: int = 1):
     return r(0)
 
 
-def battle_page(page: int) -> dict:
-    return devalue(json.loads(fetch(f"{SITE}/battles/__data.json?page={page}")))
+def battle_page(page: int, team: int | None = None, ranked_only: bool = True) -> dict:
+    query = f"page={page}" + (f"&teams={team}" if team is not None else "")
+    if team is not None and ranked_only:
+        query += "&kind=ranked"
+    return devalue(json.loads(fetch(f"{SITE}/battles/__data.json?{query}")))
 
 
 def battle_games(match_id: int) -> dict:
@@ -175,6 +178,12 @@ def main() -> None:
     ap.add_argument("--max-battles", type=int, default=400)
     ap.add_argument("--workers", type=int, default=3, help="parallel downloads (still rate limited)")
     ap.add_argument("--maps-only", action="store_true")
+    ap.add_argument("--team", type=int, action="append",
+                    help="team id (repeatable): take its most recent ranked battles, "
+                         "ignoring --min-elo; --max-battles applies per team")
+    ap.add_argument("--submission", type=int, action="append",
+                    help="submission id (repeatable): download only battles where either side "
+                         "played one of these (checked before any replay is fetched)")
     args = ap.parse_args()
 
     REPLAYS.mkdir(parents=True, exist_ok=True)
@@ -184,29 +193,35 @@ def main() -> None:
 
     have = known_battles()
     picked = []
-    for page in range(args.start_page, args.start_page + args.pages):
-        try:
-            listing = battle_page(page)
-        except Exception as e:
-            print(f"page {page}: {e}")
-            break
-        rows = listing.get("battles") or []
-        if not rows:
-            break
-        for b in rows:
-            if b["id"] in have or b.get("wait") is not None:
-                continue
-            if b.get("outcome") not in ("a", "b", "draw") or not b.get("resultsA"):
-                continue
-            if not b["ranked"] and not args.unranked:
-                continue
-            if min(b["a"]["elo"], b["b"]["elo"]) < args.min_elo:
-                continue
-            picked.append(b)
-        print(f"page {page}: {len(picked)} battles selected so far")
-        if len(picked) >= args.max_battles:
-            picked = picked[:args.max_battles]
-            break
+    for team in args.team or [None]:
+        mine = []
+        for page in range(args.start_page, args.start_page + args.pages):
+            try:
+                listing = battle_page(page, team, not args.unranked)
+            except Exception as e:
+                print(f"page {page}: {e}")
+                break
+            rows = listing.get("battles") or []
+            if not rows:
+                break
+            for b in rows:
+                if b.get("wait") is not None or (team is None and b["id"] in have):
+                    continue
+                if b.get("outcome") not in ("a", "b", "draw") or not b.get("resultsA"):
+                    continue
+                if not b["ranked"] and not args.unranked:
+                    continue
+                if team is None and min(b["a"]["elo"], b["b"]["elo"]) < args.min_elo:
+                    continue
+                # known battles still count toward a team's quota, so reruns
+                # top up to --max-battles instead of reaching further back
+                mine.append(b)
+            label = f"team {team} " if team is not None else ""
+            print(f"{label}page {page}: {len(mine)} battles selected so far")
+            if len(mine) >= args.max_battles:
+                break
+        picked += [b for b in mine[:args.max_battles] if b["id"] not in have]
+        have |= {b["id"] for b in picked}
 
     seen: dict[str, str] = {}
     done = 0
@@ -216,6 +231,9 @@ def main() -> None:
             info = battle_games(b["replayId"])
         except Exception as e:
             print(f"battle {b['id']}: {e}")
+            return None
+        match = (info.get("battle") or {}).get("match", {})
+        if args.submission and not {match.get("submissionAId"), match.get("submissionBId")} & set(args.submission):
             return None
         games = [g for g in (info.get("games") or []) if g.get("hasReplay")]
         rows = []

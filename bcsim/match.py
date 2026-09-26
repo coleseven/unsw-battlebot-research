@@ -16,6 +16,7 @@ from __future__ import annotations
 import hashlib
 import importlib.abc
 import importlib.util
+import os
 import pathlib
 import sys
 import time
@@ -91,7 +92,11 @@ class InProcessBot:
         try:
             brain_mod = importlib.import_module("brain")
             bc_mod = sys.modules["bc"]
-            return brain_mod.Brain(bc_mod.Init(init_text), seed=seed)
+            brain = brain_mod.Brain(bc_mod.Init(init_text), seed=seed)
+            if os.environ.get("BCSIM_DETERMINISTIC_V6") == "1" and "core_search" in self.codes:
+                from .local_v6_clock import install
+                install(brain)
+            return brain
         finally:
             sys.meta_path.remove(self.finder)
             for n in self.codes:
@@ -108,6 +113,9 @@ class _InProcDragon:
         self.error = None
 
     def ask(self, block: bytes) -> bytes:
+        clock = getattr(self.brain, "_bcsim_clock", None)
+        if clock is not None:
+            clock.start_turn()
         return self.brain.step(block.decode()).encode()
 
     def stop(self) -> None:
@@ -125,7 +133,12 @@ class ProcessBot:
         from unswbc.bot import Pool
 
         self.hash = bot_hash(path)
-        argv, botdir, _ = ubc_run._resolve(str(path))
+        # Python source snapshots already have a runnable main.py. Resolving a
+        # project compiles it into a shared .unswbc-build cache on every match;
+        # concurrent workers race while replacing the same .pyc files on
+        # Windows. Execute the same source entry point directly instead.
+        runnable = (ubc_run._inspect(path) if (path / "main.py").is_file() else None)
+        argv, botdir, _ = runnable or ubc_run._resolve(str(path))
         self.pool = Pool(argv, cwd=str(botdir), team=team.lower())
 
     def new_dragon(self, init: bytes, name: str):
@@ -138,7 +151,9 @@ class ProcessBot:
 
 
 def load_bot(path: pathlib.Path, team: str):
-    if (path / "brain.py").is_file():
+    # Our lightweight in-process protocol requires both modules. Third-party
+    # bots may also name a module brain.py while using their own wire format.
+    if (path / "brain.py").is_file() and (path / "bc.py").is_file():
         return InProcessBot(path)
     return ProcessBot(path, team)
 
