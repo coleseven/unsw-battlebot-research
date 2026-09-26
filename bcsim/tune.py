@@ -29,6 +29,7 @@ import re
 import shutil
 import statistics
 import uuid
+from concurrent.futures.process import BrokenProcessPool
 from datetime import datetime
 from pathlib import Path
 
@@ -148,16 +149,25 @@ def run(out: Path, workers: int):
         gen = es.countiter
         xs = es.ask()
         gen_dir = out / f"gen{gen:03d}"
-        if gen_dir.exists():
-            shutil.rmtree(gen_dir)   # an interrupted generation is replayed whole
-        candidates = []
-        for i, x in enumerate(xs):
-            bot = gen_dir / "bots" / f"c{i:02d}"
-            population.snapshot(out / "base", bot)
-            write_params(bot / plan["params"], decode(x, space))
-            candidates.append(bot)
-        jobs = population.jobs_for(candidates, opponents, maps, [plan["seed"]], gen_dir / "replays")
-        games = bounded.run(jobs, workers, gen_dir, f"gen{gen}")
+        for attempt in range(3):
+            if gen_dir.exists():
+                shutil.rmtree(gen_dir)   # an interrupted generation is replayed whole
+            candidates = []
+            for i, x in enumerate(xs):
+                bot = gen_dir / "bots" / f"c{i:02d}"
+                population.snapshot(out / "base", bot)
+                write_params(bot / plan["params"], decode(x, space))
+                candidates.append(bot)
+            jobs = population.jobs_for(candidates, opponents, maps, [plan["seed"]], gen_dir / "replays")
+            try:
+                games = bounded.run(jobs, workers, gen_dir, f"gen{gen}")
+                break
+            except BrokenProcessPool:
+                # rare CPython/wasmtime worker crash ("_PyThreadState_Attach");
+                # games are deterministic, so replaying the generation is exact
+                print(f"gen {gen}: worker pool crashed, replaying (attempt {attempt + 2})", flush=True)
+        else:
+            raise RuntimeError(f"gen {gen}: worker pool crashed three times")
         fitness, rows = [], []
         for i, bot in enumerate(candidates):
             mine = [g for g in games if bot.name in (g["bot_a"], g["bot_b"])]
