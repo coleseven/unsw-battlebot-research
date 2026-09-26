@@ -95,20 +95,17 @@ def screen(out: Path):
                              "losses": tally.l, "score": tally.score}
     result = {"maps": [p.stem for p in maps], "games": len(games),
               "workers": plan["workers"], "opponents": by_opponent}
+    per_map = {}
+    for g in games:
+        w = per_map.setdefault(g["map"], [0, 0])
+        w[0] += g["winner"] == ("A" if g["bot_a"] == "candidate" else "B")
+        w[1] += 1
+    result["per_map_wins"] = {m: f"{w}/{n}" for m, (w, n) in sorted(per_map.items())}
     population.write_json(out / "comparison.json", result)
     if len(plan.get("seeds", [None])) == 1:   # the matrix shows one game per side
         with (out / "map_matrix.md").open("x", encoding="utf8") as f:
             f.write(map_matrix.render(games, "candidate", list(plan["opponent_sources"]),
                                       result["maps"]))
-    else:
-        per_map = {}
-        for g in games:
-            side = "A" if g["bot_a"] == "candidate" else "B"
-            w = per_map.setdefault(g["map"], [0, 0])
-            w[0] += g["winner"] == side
-            w[1] += 1
-        result["per_map_wins"] = {m: f"{w}/{n}" for m, (w, n) in sorted(per_map.items())}
-        population.write_json(out / "comparison.json", result)
     print(json.dumps(result, indent=2), flush=True)
 
 
