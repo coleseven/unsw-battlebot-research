@@ -38,7 +38,7 @@ class Brain(bc.Brain):
         split = core_split.should_split(self.init, obs, self.team, P, protected)
         if split:
             return split
-        if time.perf_counter() - started > P.HARD_S:
+        if not getattr(P, "PARITY", False) and time.perf_counter() - started > P.HARD_S:
             self.hard_fallbacks += 1
             self.extra.append("LOG V6_HARD_FALLBACK")
             return action_value.choose(obs, self.team, action_model.MODEL)
