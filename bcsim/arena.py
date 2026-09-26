@@ -92,6 +92,8 @@ def _job(args: tuple) -> dict:
 
 
 def run_jobs(jobs: list[tuple], workers: int, label: str) -> list[dict]:
+    from .match import prebuild
+    prebuild([bot for job in jobs for bot in (job[1], job[2])])
     out = []
     start = time.perf_counter()
     last = 0.0

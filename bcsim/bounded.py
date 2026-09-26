@@ -33,6 +33,8 @@ def run(jobs, workers, folder, label="experiment", batch_per_worker=12):
     if not 1 <= workers <= 16 or not 1 <= batch_per_worker <= 16:
         raise ValueError("workers must be 1-16 and batch_per_worker 1-16")
     os.environ["RAYON_NUM_THREADS"] = "1"
+    from .match import prebuild
+    prebuild([bot for job in jobs for bot in (job[1], job[2])])
     folder.mkdir(parents=True, exist_ok=True)
     results, start = [], time.monotonic()
     batch_size = workers * batch_per_worker

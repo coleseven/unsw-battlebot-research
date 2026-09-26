@@ -150,6 +150,22 @@ class ProcessBot:
         self.pool.close()
 
 
+def prebuild(paths) -> None:
+    """Build every compiled (C/C++) bot once, before workers start.
+
+    The toolkit caches a build in the bot's .unswbc-build, but parallel workers
+    that each find no build yet all link the same bot.exe at once, and Windows
+    refuses to replace an executable another worker is running. Python and
+    in-process bots need no build.
+    """
+    from unswbc import run as ubc_run
+
+    for path in dict.fromkeys(pathlib.Path(p) for p in paths):
+        if (path / "main.py").is_file() or (path / "brain.py").is_file():
+            continue
+        ubc_run._resolve(str(path))
+
+
 def load_bot(path: pathlib.Path, team: str):
     # Our lightweight in-process protocol requires both modules. Third-party
     # bots may also name a module brain.py while using their own wire format.
