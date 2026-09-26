@@ -132,7 +132,7 @@ def main() -> None:
                        ("model.hpp", gen_model()),
                        ("portal_book.hpp", gen_portal_book()),
                        ("hub_book.hpp", gen_hub_book())):
-        (CPPBOT / name).write_text(text, encoding="utf8")
+        (CPPBOT / name).write_bytes(text.encode("utf8"))  # LF on every host
         print(f"wrote cppbot/{name}")
 
 

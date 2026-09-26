@@ -44,7 +44,7 @@ def write_params(path: Path, values: dict) -> None:
         literal = repr(value) if isinstance(value, float) else str(value)
         patterns = (
             (rf"^({re.escape(name)}\s*=\s*)[-+0-9.eE]+", r"\g<1>" + literal),                   # Python
-            (rf"^(\s*(?:static\s+)?constexpr\s+[\w:<> ]+\s+{re.escape(name)}\s*=\s*)[-+0-9.eE]+(f?\s*;)",
+            (rf"^(\s*(?:(?:static|inline)\s+)*constexpr\s+[\w:<> ]+\s+{re.escape(name)}\s*=\s*)[-+0-9.eE]+(f?\s*;)",
              r"\g<1>" + literal + r"\g<2>"),                                                     # C++
             (rf"^(\s*#\s*define\s+{re.escape(name)}\s+)[-+0-9.eE]+", r"\g<1>" + literal),        # C macro
         )
