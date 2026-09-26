@@ -145,7 +145,7 @@ class ProcessBot:
         # interpreter instead; same Python, no AppX activation.
         if argv and "windowsapps" in argv[0].lower():
             argv = [getattr(sys, "_base_executable", sys.executable), *argv[1:]]
-        self.pool = Pool(argv, cwd=str(botdir), team=team.lower())
+        self.pool = Pool(argv, cwd=str(botdir), key=team.lower())
 
     def new_dragon(self, init: bytes, name: str):
         from unswbc.bot import Bot
@@ -252,7 +252,10 @@ def play(map_path: pathlib.Path, bot_a: pathlib.Path, bot_b: pathlib.Path,
     eng = engine()
     error = None
     try:
-        res = eng.run(map_path.read_bytes(), reply, death, spawn, lambda line: None, debug)
+        # unswbc >= 1.1 seeds the engine (pearl spawns) per match, as the judge
+        # does; the same seed replays the same pearls
+        res = eng.run(map_path.read_bytes(), reply, death, spawn, lambda line: None, debug,
+                      seed % (1 << 64))
     except Exception as exc:  # engine refused the map, or a bot blew up badly
         res, error = None, f"{type(exc).__name__}: {exc}"
     finally:

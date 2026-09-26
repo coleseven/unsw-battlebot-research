@@ -31,7 +31,7 @@ def run(candidate, opponent, mapfile, out, side="A"):
     import psutil
     from unswbc.sandbox import SandboxPool, SandboxBot
     psutil.Process().nice(psutil.BELOW_NORMAL_PRIORITY_CLASS if os.name == "nt" else 5)
-    pool = SandboxPool(["python", "main.py"], cwd=str(candidate.resolve()), team=side.lower())
+    pool = SandboxPool(["python", "main.py"], cwd=str(candidate.resolve()), key=side.lower())
     loader = InProcessBot(opponent)
     live, teams, rows, errors, deaths, notices = {}, {}, [], [], [], []
     empty_turns = set()

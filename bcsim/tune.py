@@ -14,7 +14,7 @@ or [low, high, "int"]; CMA-ES works in [0, 1] per parameter.
 Objective (V6_CORE_PLAN.md section 4.2): for every game, the time-averaged
 team-length share margin (bcsim.margin.game_margin); per map, the mean over
 opponents and sides; F = mean over maps + 0.25 * worst map. Any game error
-scores the candidate F = -2. Games are deterministic, so one seed is used.
+scores the candidate F = -2. With --seeds N each generation plays N fresh engine seeds (unswbc >= 1.1 seeds pearl spawns); older plans use one fixed seed.
 Every generation is checkpointed (CMA state plus every evaluated vector).
 Set BCSIM_DETERMINISTIC_V6=1 for Python v6-core bots (judge-calibrated clock).
 """
@@ -22,6 +22,7 @@ Set BCSIM_DETERMINISTIC_V6=1 for Python v6-core bots (judge-calibrated clock).
 from __future__ import annotations
 
 import argparse
+import importlib.metadata
 import json
 import os
 import pickle
@@ -84,6 +85,17 @@ def read_current(path: Path, space) -> dict:
     return out
 
 
+def gen_seeds(plan, gen):
+    """Engine seeds for one generation. unswbc >= 1.1 seeds the pearl spawns,
+    so fresh seeds each generation keep CMA-ES from fitting one pearl layout;
+    every candidate in a generation still plays the same seeds. Plans made
+    before seeds_per_gen existed keep their single fixed seed."""
+    n = plan.get("seeds_per_gen")
+    if not n:
+        return [plan["seed"]]
+    return [plan["seed"] + gen * n + i for i in range(n)]
+
+
 def score(games, candidate):
     per_map = {}
     for game in games:
@@ -130,7 +142,8 @@ def prepare(args):
     population.write_json(out / "plan.json", {
         "base": str(base), "base_hash": bot_hash(out / "base"), "params": args.params,
         "space": space, "start": start, "opponents": [o.name for o in opponents],
-        "maps": [m.stem for m in maps], "seed": args.seed, "popsize": args.popsize,
+        "maps": [m.stem for m in maps], "seed": args.seed, "seeds_per_gen": args.seeds,
+        "unswbc": importlib.metadata.version("unswbc"), "popsize": args.popsize,
         "generations": args.gens, "sigma": args.sigma,
         "deterministic_v6_clock": os.environ.get("BCSIM_DETERMINISTIC_V6") == "1"})
     print(out)
@@ -166,7 +179,7 @@ def run(out: Path, workers: int):
                 population.snapshot(out / "base", bot)
                 write_params(bot / plan["params"], decode(x, space))
                 candidates.append(bot)
-            jobs = population.jobs_for(candidates, opponents, maps, [plan["seed"]], gen_dir / "replays")
+            jobs = population.jobs_for(candidates, opponents, maps, gen_seeds(plan, gen), gen_dir / "replays")
             try:
                 games = bounded.run(jobs, workers, gen_dir, f"gen{gen}")
                 break
@@ -213,6 +226,8 @@ def main():
     ap.add_argument("--extra-maps", nargs="*", default=[],
                     help="additional .map files (ladder maps outside the official suite)")
     ap.add_argument("--seed", type=int, default=53001)
+    ap.add_argument("--seeds", type=int, default=1,
+                    help="engine seeds per generation (fresh each generation)")
     ap.add_argument("--popsize", type=int, default=12)
     ap.add_argument("--gens", type=int, default=25)
     ap.add_argument("--sigma", type=float, default=0.25)

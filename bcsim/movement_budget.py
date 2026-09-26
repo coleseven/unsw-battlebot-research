@@ -64,7 +64,7 @@ def main():
     for name in ("control_450", "trap", "sprint"):
         path = args.experiment / "bots" / name
         print(f"sandbox: building {name}, {len(inputs)} cold/warm probes", flush=True)
-        pool = SandboxPool(["python", "main.py"], cwd=str(path.resolve()), team="a")
+        pool = SandboxPool(["python", "main.py"], cwd=str(path.resolve()), key="a")
         try:
             for sample in inputs:
                 bot = SandboxBot(pool, init=sample["init"].encode(), name=str(sample["id"]))

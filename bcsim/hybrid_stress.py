@@ -54,7 +54,7 @@ def run(out):
         if name == selection["selected"]:
             assert expected == selection["hash"]
         loader = InProcessBot(path)
-        pool = SandboxPool(["python", "main.py"], cwd=str(path.resolve()), team="a")
+        pool = SandboxPool(["python", "main.py"], cwd=str(path.resolve()), key="a")
         try:
             for sample in probes:
                 native = loader.new_brain(sample["init"], 0)

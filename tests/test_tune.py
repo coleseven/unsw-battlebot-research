@@ -41,5 +41,11 @@ class TuneTest(unittest.TestCase):
             self.assertIn("inline constexpr double W_HUB = 12.5;", text)
             self.assertIn("inline constexpr int N_SEARCH = 400;", text)
 
+    def test_generation_seeds(self):
+        self.assertEqual(tune.gen_seeds({"seed": 7}, 3), [7])
+        self.assertEqual(tune.gen_seeds({"seed": 7, "seeds_per_gen": 2}, 0), [7, 8])
+        self.assertEqual(tune.gen_seeds({"seed": 7, "seeds_per_gen": 2}, 3), [13, 14])
+
+
 if __name__ == "__main__":
     unittest.main()

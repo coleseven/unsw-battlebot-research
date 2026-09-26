@@ -16,7 +16,7 @@ def run(out):
     rows = []
     for name in ("heuristic", "linear", "neural"):
         path = out / "bots" / name
-        pool = SandboxPool(["python", "main.py"], cwd=str(path.resolve()), team="a")
+        pool = SandboxPool(["python", "main.py"], cwd=str(path.resolve()), key="a")
         try:
             for sample in inputs:
                 for mode in ("recorded", "force_late_movement"):

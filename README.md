@@ -4,6 +4,11 @@ Competition: https://game.battlecode.au (21 Sep – 17 Oct 2026). Rules: https:/
 
 ## Best tested local candidate
 
+**Recommended upload: `versions/v7-base` (`battlebot-v7-base.zip`)**, the
+untuned C++ port of v6.1. On unswbc 1.1.0 with 3 seeds it beats v6 43/66 and
+matches or beats the tuned `versions/v7` (whose single-seed gain was noise).
+See V7_EXPERIMENT.md, "unswbc 1.1.0 re-check".
+
 `versions/v7` (hash `b033b4202f624d25`, upload package `battlebot-v7.zip`) is
 the C++ port of v6.1 with CMA-ES-tuned weights (tune `20260926-001535-tune-79f3f9`,
 gen 7 c05: N_SEARCH 357, DEPTH_MAX 12, all section-5 switches off). Over all 11

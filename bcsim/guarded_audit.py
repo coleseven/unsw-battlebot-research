@@ -99,7 +99,7 @@ def budget(out, names=None):
     for name in names:
         path = out / "bots" / name
         print(f"sandbox: {name}, {len(inputs)} cold/warm observations", flush=True)
-        pool = SandboxPool(["python", "main.py"], cwd=str(path.resolve()), team="a")
+        pool = SandboxPool(["python", "main.py"], cwd=str(path.resolve()), key="a")
         try:
             for sample in inputs:
                 bot = SandboxBot(pool, init=sample["init"].encode(), name=str(sample["id"]))

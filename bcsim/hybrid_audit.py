@@ -62,7 +62,7 @@ def budget(out, stage):
     for name, expected_hash in record["hashes"].items():
         path = out / "bots" / name
         assert bot_hash(path) == expected_hash
-        pool = SandboxPool(["python", "main.py"], cwd=str(path.resolve()), team="a")
+        pool = SandboxPool(["python", "main.py"], cwd=str(path.resolve()), key="a")
         try:
             for category, sample in record["samples"].items():
                 if sample["bot"] != name:

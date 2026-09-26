@@ -80,7 +80,7 @@ def budget(out, stage):
             continue
         path = out / "bots" / name
         assert bot_hash(path) == plan["candidate_hashes"][name]
-        pool = SandboxPool(["python", "main.py"], cwd=str(path.resolve()), team="a")
+        pool = SandboxPool(["python", "main.py"], cwd=str(path.resolve()), key="a")
         try:
             for key, sample in samples.items():
                 turns = []

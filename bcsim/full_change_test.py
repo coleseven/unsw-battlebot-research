@@ -7,6 +7,7 @@ Run:
 """
 
 import argparse
+import importlib.metadata
 import json
 import os
 import shutil
@@ -18,7 +19,7 @@ from . import guarded, local_v6_clock, map_matrix, match, official_suite, popula
 from .paths import ROOT, RESULTS, bot_hash, file_hash, resolve_bot
 
 
-def prepare(candidate_source: Path, opponent_sources: list[Path], workers: int):
+def prepare(candidate_source: Path, opponent_sources: list[Path], workers: int, seeds: int = 1):
     if not opponent_sources or len({str(p) for p in opponent_sources}) != len(opponent_sources):
         raise ValueError("provide distinct opponents")
     if candidate_source in opponent_sources:
@@ -44,8 +45,10 @@ def prepare(candidate_source: Path, opponent_sources: list[Path], workers: int):
     population.write_json(out / "plan.json", {
         "question": "Does this unchanged candidate improve across every official map?",
         "coverage": "all 11 distinct official maps, both sides, every opponent",
-        "seed": 53001, "workers": workers,
-        "limits": "Bot seed is not an independent map-engine seed; one deterministic match per map/side/opponent.",
+        "seeds": [53001 + i for i in range(seeds)], "workers": workers,
+        "limits": "unswbc >= 1.1 seeds the engine (pearl spawns) per match, so each seed is a distinct game; "
+                  "the same seed replays identically.",
+        "unswbc": importlib.metadata.version("unswbc"),
         "candidate_source": str(candidate_source),
         "opponent_sources": {name: str(path) for name, path in sources.items()
                              if name != "candidate"},
@@ -83,7 +86,7 @@ def screen(out: Path):
     bots = out / "bots"
     opponents = [bots / name for name in plan["opponent_sources"]]
     games = guarded.stage(out, "full", [bots / "candidate"], opponents,
-                          maps, [plan["seed"]], plan["workers"], True)
+                          maps, plan.get("seeds", [plan.get("seed")]), plan["workers"], True)
     by_opponent = {}
     for name in plan["opponent_sources"]:
         selected = [g for g in games if name in (g["bot_a"], g["bot_b"])]
@@ -93,9 +96,19 @@ def screen(out: Path):
     result = {"maps": [p.stem for p in maps], "games": len(games),
               "workers": plan["workers"], "opponents": by_opponent}
     population.write_json(out / "comparison.json", result)
-    with (out / "map_matrix.md").open("x", encoding="utf8") as f:
-        f.write(map_matrix.render(games, "candidate", list(plan["opponent_sources"]),
-                                  result["maps"]))
+    if len(plan.get("seeds", [None])) == 1:   # the matrix shows one game per side
+        with (out / "map_matrix.md").open("x", encoding="utf8") as f:
+            f.write(map_matrix.render(games, "candidate", list(plan["opponent_sources"]),
+                                      result["maps"]))
+    else:
+        per_map = {}
+        for g in games:
+            side = "A" if g["bot_a"] == "candidate" else "B"
+            w = per_map.setdefault(g["map"], [0, 0])
+            w[0] += g["winner"] == side
+            w[1] += 1
+        result["per_map_wins"] = {m: f"{w}/{n}" for m, (w, n) in sorted(per_map.items())}
+        population.write_json(out / "comparison.json", result)
     print(json.dumps(result, indent=2), flush=True)
 
 
@@ -107,10 +120,11 @@ if __name__ == "__main__":
     parser.add_argument("--candidate", type=str)
     parser.add_argument("--vs", nargs="+")
     parser.add_argument("--workers", type=int, default=official_suite.DEFAULT_WORKERS)
+    parser.add_argument("--seeds", type=int, default=1, help="distinct engine seeds per map/side/opponent")
     args = parser.parse_args()
     if args.prepare and args.candidate and args.vs:
         prepare(resolve_bot(args.candidate), [resolve_bot(p) for p in args.vs],
-                args.workers)
+                args.workers, args.seeds)
     elif args.screen and args.experiment:
         screen(args.experiment)
     else:

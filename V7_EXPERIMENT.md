@@ -261,4 +261,30 @@ Next tuning run: `20260926-151852-tune-d9e7d6`, from v7, sigma 0.15, screen
 maps plus the ladder-only maps Autarky, Prisoners Dilemma, Slithery Fight and
 Portals (`bcsim.tune --extra-maps`).
 
+## unswbc 1.1.0 re-check (2026-09-26 evening): tuning gain was seed noise
+
+`unswbc` 1.1.0 changes the engine: a per-match seed drives pearl spawns (the
+judge picks a random one), and even seed 0 differs from 0.3.10. `bcsim.match`
+now passes its seed to the engine; `full_change_test --seeds N` and
+`tune --seeds N` (fresh seeds each generation) use it. API change: `Pool` /
+`SandboxPool` take `key=` instead of `team=`.
+
+Full suite, both sides, 3 seeds (wins of 66):
+
+| bot | nicked_v44 | ctmes | v6 | head to head |
+|---|---|---|---|---|
+| tuned v7 (`versions/v7`) | 29 | 60 | 42 | 30 |
+| untuned C++ (`versions/v7-base`) | 32 | 59 | 43 | 36 |
+
+The single-seed gain (14/22 vs nicked v44) does not survive: the tuner fitted
+one pearl layout. Both C++ builds beat v6 about 64%. Recommended upload:
+`battlebot-v7-base.zip` (hash `bec48091e76579a1`, SHA-256
+`2ace8aa4ca02cb08e026f37e48a756b894fc0b1ad0922d055051e0750d1a9df4`). Judge
+sandbox on 1.1.0: max 7.1M points (v7-base, big_empty); tuned v7 max 7.0M over
+big_empty, schooltime (both sides), default_small, Slithery Fight, Portals.
+
+Tuning restarted on 1.1.0: `20260926-170140-tune-268a93`, from the untuned
+C++ bot, 5 screen maps + Autarky, Prisoners Dilemma, Slithery Fight, Portals,
+2 fresh seeds per generation, vs nicked v34 and Python v6.1.
+
 Do not upload; the user uploads bots.
