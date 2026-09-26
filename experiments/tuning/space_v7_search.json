@@ -1,0 +1,94 @@
+{
+  "W_PEARL": [
+    30,
+    160
+  ],
+  "W_SPAWN": [
+    0,
+    80
+  ],
+  "W_UNSEEN": [
+    0,
+    30
+  ],
+  "W_TRAP": [
+    2,
+    30
+  ],
+  "W_HEAD_ENEMY": [
+    15,
+    150
+  ],
+  "W_HEAD_TEAM": [
+    15,
+    150
+  ],
+  "W_ATTACK": [
+    40,
+    300
+  ],
+  "W_HUNT": [
+    0,
+    100
+  ],
+  "W_DEFEND": [
+    0,
+    40
+  ],
+  "W_HUB": [
+    0,
+    150
+  ],
+  "W_GOAL": [
+    0,
+    8
+  ],
+  "POOR_MULT": [
+    1,
+    5
+  ],
+  "W_CASH": [
+    0,
+    160
+  ],
+  "FEED_ROUND": [
+    360,
+    470,
+    "int"
+  ],
+  "SPLIT_UNTIL_LARGE": [
+    200,
+    460,
+    "int"
+  ],
+  "SPLIT_UNTIL_SMALL": [
+    300,
+    480,
+    "int"
+  ],
+  "CAP": [
+    32,
+    64,
+    "int"
+  ],
+  "FLOOR": [
+    8,
+    36,
+    "int"
+  ],
+  "N_SEARCH": [
+    200,
+    3000,
+    "int"
+  ],
+  "DEPTH_MAX": [
+    12,
+    40,
+    "int"
+  ],
+  "CPP_PATH_DIST": [
+    0,
+    1,
+    "int"
+  ]
+}
