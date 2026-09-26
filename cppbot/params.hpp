@@ -91,4 +91,11 @@ inline constexpr double GOAL_STEP_COST = 0.5;
 inline constexpr double POOR_RATE = 0.01;
 inline constexpr double POOR_MULT = 2.5;
 inline constexpr double KING_GOAL_MULT = 0.3;
+inline constexpr int CPP_BUDGET = 0;
+inline constexpr int CPP_SOFT_POINTS = 60000000;
+inline constexpr int CPP_HARD_POINTS = 80000000;
+inline constexpr int CPP_PATH_DIST = 0;
+inline constexpr int CPP_BEAM = 0;
+inline constexpr int CPP_BEAM_WIDTH = 8;
+inline constexpr int CPP_BEAM_DEPTH = 6;
 }  // namespace params
