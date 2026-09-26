@@ -94,3 +94,14 @@ GOAL_STEP_COST = 0.5
 POOR_RATE = 0.01       # mean 1/(1 + max countdown) of tiles in view below this = poor area
 POOR_MULT = 2.5
 KING_GOAL_MULT = 0.3
+
+# --- C++ port only (V7 section 5); the Python core ignores these ------------
+# Every switch defaults to today's behaviour, so parity stays 100% with them
+# off. Ints so bcsim.tune can rewrite them; booleans are 0/1.
+CPP_BUDGET = 0          # C++ only: 1 = points meter + fair split; 0 = fixed N_SEARCH
+CPP_SOFT_POINTS = 60000000  # C++ only: stop expanding past this many points/turn
+CPP_HARD_POINTS = 80000000  # C++ only: past this, take a cheap safe move
+CPP_PATH_DIST = 0       # C++ only: 1 = portal-aware head-BFS path distances for pulls
+CPP_BEAM = 0            # C++ only: 1 = lookahead beam over our own moves
+CPP_BEAM_WIDTH = 8      # C++ only: beam width
+CPP_BEAM_DEPTH = 6      # C++ only: beam depth

@@ -3,12 +3,23 @@
 #pragma once
 
 #include <cmath>
+#include <ctime>
+#include <deque>
 #include <string>
 #include <tuple>
 
 #include "v6.hpp"
 
 namespace v6 {
+
+// ---- V7 section 5: CPU meter ------------------------------------------------
+// On the judge, clock() advances with CPU points spent (0.1 s = 100M points),
+// so this reads "points used so far" in normal play. Only consulted when the
+// points budget (CPP_BUDGET) is on; with it off there are no clock reads and
+// behaviour is byte-identical to the matching build.
+inline double cpu_points() {
+    return static_cast<double>(std::clock()) / CLOCKS_PER_SEC * 1e9;
+}
 
 // ---- tactics.py -------------------------------------------------------------
 inline std::unordered_set<int> danger_cells(const Obs& obs, char team) {
@@ -111,6 +122,45 @@ inline int torus_distance(int a, int b, int width, int height) {
     int dx = std::abs(ax - bx), dy = std::abs(ay - by);
     return std::min(dx, width - dx) + std::min(dy, height - dy);
 }
+
+// ---- V7 section 5: portal-aware path distances (CPP_PATH_DIST) --------------
+// One BFS per turn from our head over remembered terrain (book portals
+// included), ignoring dragons (they move). Gives, for each candidate move
+// direction and a target cell, a path distance that follows real corridors and
+// portals instead of the straight-line torus distance. Off (CPP_PATH_DIST=0)
+// nothing is built and the straight-line terms are used unchanged.
+struct PathDist {
+    std::unordered_map<int, int> dist;    // cell -> path distance from head
+    std::unordered_map<int, char> first;  // cell -> first step direction
+
+    void build(const WorldMemory& mem, const Obs& obs) {
+        int head = mem.cell(obs.x[CENTER], obs.y[CENTER]);
+        int cap = mem.width * mem.height;
+        dist[head] = 0; first[head] = 0;
+        std::deque<int> q{head};
+        int expanded = 0;
+        while (!q.empty() && expanded < cap) {
+            int c = q.front(); q.pop_front(); ++expanded;
+            for (char d : DIRS) {
+                auto nxt = mem.nav.destination(c, d);
+                if (!nxt || dist.count(*nxt)) continue;
+                dist[*nxt] = dist[c] + 1;
+                first[*nxt] = first[c] ? first[c] : d;
+                q.push_back(*nxt);
+            }
+        }
+    }
+    // Effective distance to `target` for a move in `dir`; the first step of the
+    // real shortest path gets dist-1, others dist+1. Unreachable within the map
+    // falls back to the straight-line distance passed in.
+    double eff(char dir, int target, int fallback) const {
+        auto it = dist.find(target);
+        if (it == dist.end()) return fallback;
+        auto fit = first.find(target);
+        char fT = fit == first.end() ? 0 : fit->second;
+        return (fT && dir == fT) ? std::max(0, it->second - 1) : it->second + 1;
+    }
+};
 inline std::unordered_map<int, int> own_free_times(const WorldMemory& mem, const Obs& obs) {
     auto body = mem.trail_body(obs.length);
     std::unordered_map<int, int> out;
@@ -187,8 +237,11 @@ inline double food_value(const WorldMemory& mem, const Obs& obs, int cell, int h
 }
 struct Terms { double food = 0, hub = 0, progress = 0; int unseen = 0, stale = 0, room = 0, exits = 0, expanded = 0; };
 
+// `deadline` is an absolute cpu_points() value; < 0 means no meter (matching
+// build). With it set (CPP_BUDGET on) the search also stops once the turn's CPU
+// points reach the deadline, so a larger N_SEARCH is capped by real cost.
 inline Terms search_one(const WorldMemory& mem, const Obs& obs, char team, int did, int dest, char direction,
-                        const std::unordered_map<int, int>& own_free) {
+                        const std::unordered_map<int, int>& own_free, double deadline = -1) {
     std::unordered_map<int, int> best; best[dest] = 0;
     using Node = std::tuple<int, int, int>;  // (cost, arrival, cell)
     std::priority_queue<Node, std::vector<Node>, std::greater<Node>> queue;
@@ -199,6 +252,7 @@ inline Terms search_one(const WorldMemory& mem, const Obs& obs, char team, int d
     double base = 0;
     if (has_goal) base = torus_distance(mem.cell(obs.x[CENTER], obs.y[CENTER]), *mem.goal, mem.width, mem.height);
     while (!queue.empty() && tm.expanded < params::N_SEARCH) {
+        if (deadline >= 0 && (tm.expanded & 31) == 0 && cpu_points() > deadline) break;
         auto [cost, arrival, cell] = queue.top(); queue.pop();
         auto bit = best.find(cell);
         if (bit == best.end() || cost != bit->second) continue;
@@ -233,12 +287,111 @@ inline Terms search_one(const WorldMemory& mem, const Obs& obs, char team, int d
     return tm;
 }
 
+// ---- V7 section 5: lookahead beam (CPP_BEAM) --------------------------------
+// A short beam over OUR OWN moves that simulates our body (growth on a known
+// pearl, tail release otherwise) and treats other dragons and the cells enemy
+// heads can reach as blocked. It demotes a first move whose best continuation
+// gets trapped before the horizon, reusing W_LETHAL, so v6's immediate scoring
+// is kept and only trap-prone moves are penalised. Off (CPP_BEAM=0) it is never
+// called and scores are unchanged.
+inline bool beam_is_food(const WorldMemory& mem, const Obs& obs, int cell) {
+    auto vit = mem.nav.visible.find(cell);
+    if (vit != mem.nav.visible.end() && obs.pearl[vit->second]) return true;
+    return mem.pearl.count(cell) != 0;
+}
+inline int beam_room(const WorldMemory& mem, int head, const std::unordered_set<int>& body,
+                     const std::unordered_set<int>& blockers, int cap) {
+    std::unordered_set<int> seen{head};
+    std::vector<int> st{head};
+    while (!st.empty() && static_cast<int>(seen.size()) < cap) {
+        int c = st.back(); st.pop_back();
+        for (char d : DIRS) {
+            auto n = mem.nav.destination(c, d);
+            if (!n || seen.count(*n) || body.count(*n) || blockers.count(*n)) continue;
+            seen.insert(*n); st.push_back(*n);
+        }
+    }
+    return static_cast<int>(seen.size());
+}
+struct BeamNode { std::vector<int> body; char facing; };  // body is head-first
+
+// Deepest ply (1..D) at which some line stays alive, starting AFTER `first_dir`.
+inline int beam_survive(const WorldMemory& mem, const Obs& obs, const std::vector<int>& start_body,
+                        char first_dir, int first_dest, const std::unordered_set<int>& blockers,
+                        int width, int depth) {
+    std::vector<int> body{first_dest};
+    bool grew = beam_is_food(mem, obs, first_dest);
+    for (int c : start_body) body.push_back(c);
+    if (!grew) body.pop_back();
+    std::vector<BeamNode> live{{body, first_dir}};
+    int reached = 1;
+    for (int ply = 2; ply <= depth && !live.empty(); ++ply) {
+        std::vector<std::pair<int, BeamNode>> children;  // (room, node)
+        for (auto& node : live) {
+            int head = node.body.front();
+            std::unordered_set<int> bodyset(node.body.begin(), node.body.end());
+            for (char d : DIRS) {
+                if (didx(d) == OPP[didx(node.facing)]) continue;
+                auto nd = mem.nav.destination(head, d);
+                if (!nd || blockers.count(*nd)) continue;
+                bool g = beam_is_food(mem, obs, *nd);
+                int tail = node.body.back();
+                if (bodyset.count(*nd) && !(!g && *nd == tail)) continue;  // self-collision
+                std::vector<int> nb; nb.reserve(node.body.size() + 1);
+                nb.push_back(*nd);
+                for (int c : node.body) nb.push_back(c);
+                if (!g) nb.pop_back();
+                std::unordered_set<int> nbset(nb.begin(), nb.end());
+                int room = beam_room(mem, *nd, nbset, blockers, static_cast<int>(nb.size()) + 6);
+                children.emplace_back(room, BeamNode{std::move(nb), d});
+            }
+        }
+        if (children.empty()) break;
+        std::stable_sort(children.begin(), children.end(),
+                         [](auto& a, auto& b) { return a.first > b.first; });
+        live.clear();
+        for (int i = 0; i < width && i < static_cast<int>(children.size()); ++i)
+            live.push_back(std::move(children[i].second));
+        reached = ply;
+    }
+    return reached;
+}
+inline void beam_adjust(WorldMemory& mem, const Obs& obs, char team, int did,
+                        std::vector<std::pair<char, double>>& scores,
+                        const std::unordered_map<char, int>& moves) {
+    auto start_body = mem.trail_body(obs.length);
+    if (!start_body) return;  // body not fully known yet; leave scores unchanged
+    std::unordered_set<int> blockers;
+    for (int cell : mem.occupied.order) {
+        const OccPart& p = *mem.occupied.find(cell);
+        if (p.id != did) blockers.insert(cell);  // other dragons (teammates and enemies)
+    }
+    // cells any enemy head can step onto next turn: risky to enter
+    for (int cell : mem.occupied.order) {
+        const OccPart& p = *mem.occupied.find(cell);
+        if (p.head && p.seen == obs.round && p.team != team)
+            for (char d : DIRS) { auto n = mem.nav.destination(cell, d); if (n) blockers.insert(*n); }
+    }
+    int width = std::max(1, params::CPP_BEAM_WIDTH), depth = std::max(2, params::CPP_BEAM_DEPTH);
+    for (auto& [dir, val] : scores) {
+        auto it = moves.find(dir);
+        if (it == moves.end()) continue;  // an attack move: leave its trade value alone
+        int survived = beam_survive(mem, obs, *start_body, dir, it->second, blockers, width, depth);
+        val -= params::W_LETHAL * (depth - survived) / static_cast<double>(depth);
+    }
+}
+
 // cash target: (head cell, front cell or none, local k)
 struct CashTarget { int head; std::optional<int> front; int local; };
 
 // Returns scores in Python dict insertion order (attacks first, then moves).
 inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const Obs& obs, char team, int did,
-                                                        bool protectedFlag, const std::optional<CashTarget>& cash) {
+                                                        bool protectedFlag, const std::optional<CashTarget>& cash,
+                                                        double t0 = -1) {
+    bool budget = params::CPP_BUDGET != 0 && t0 >= 0;
+    PathDist pd;
+    bool usePath = params::CPP_PATH_DIST != 0;
+    if (usePath) pd.build(mem, obs);
     bool hunter = !protectedFlag && obs.length <= params::HUNT_MAXLEN;
     bool attacker = !protectedFlag && obs.length <= params::ATTACK_MAXLEN;
     std::unordered_map<char, int> attacks_map;
@@ -287,9 +440,17 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
     double margin = params::SPACE_MARGIN * (obs.round >= 400 ? params::ENDGAME_SPACE_MULT : 1.0);
     double need = std::min(params::SPACE_MULT * obs.length + margin, static_cast<double>(params::SPACE_CAP));
 
-    for (char direction : remaining) {
+    for (std::size_t mi = 0; mi < remaining.size(); ++mi) {
+        char direction = remaining[mi];
         int dest = moves[direction];
-        Terms tm = search_one(mem, obs, team, did, dest, direction, own_free);
+        double deadline = -1;
+        if (budget) {
+            if (cpu_points() - t0 > params::CPP_HARD_POINTS) break;  // over hard: stop, take best so far
+            int moves_left = static_cast<int>(remaining.size() - mi);
+            double remaining_pts = params::CPP_SOFT_POINTS - (cpu_points() - t0);
+            deadline = cpu_points() + (remaining_pts > 0 ? remaining_pts / moves_left : 0.0);
+        }
+        Terms tm = search_one(mem, obs, team, did, dest, direction, own_free, deadline);
         double room = std::min(static_cast<double>(tm.room), need);
         double value = tm.food * (protectedFlag ? params::PROTECT_FOOD_MULT : 1.0);
         value += (params::W_UNSEEN * tm.unseen + params::W_STALE * tm.stale) / static_cast<double>(params::N_SEARCH);
@@ -303,8 +464,11 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
         if (hunter && obs.round >= params::HUNT_ROUND) {
             double add = 0;
             for (auto& [cell, pid] : enemy_heads)
-                if ((enemy_len.count(pid) ? enemy_len[pid] : 1) >= obs.length + params::HUNT_MIN_GAIN)
-                    add = std::max(add, params::W_HUNT / (1 + torus_distance(dest, cell, mem.width, mem.height)));
+                if ((enemy_len.count(pid) ? enemy_len[pid] : 1) >= obs.length + params::HUNT_MIN_GAIN) {
+                    double sl = torus_distance(dest, cell, mem.width, mem.height);
+                    double d = usePath ? pd.eff(direction, cell, static_cast<int>(sl)) : sl;
+                    add = std::max(add, params::W_HUNT / (1 + d));
+                }
             value += add;
         }
         if (mem.goal.has_value()) {
@@ -319,7 +483,11 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
             }
             crowd += 1;
             double far = 0;
-            for (auto& [hub, v] : mem.hubs) far = std::max(far, v / (1 + torus_distance(dest, hub, mem.width, mem.height) / params::HUB_SCALE));
+            for (auto& [hub, v] : mem.hubs) {
+                double sl = torus_distance(dest, hub, mem.width, mem.height);
+                double d = usePath ? pd.eff(direction, hub, static_cast<int>(sl)) : sl;
+                far = std::max(far, v / (1 + d / params::HUB_SCALE));
+            }
             far *= params::HUB_FAR_MULT;
             value += params::W_HUB * std::max(tm.hub, far) / crowd;
         }
@@ -340,13 +508,19 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
             if (obs.round < params::SCOUT_ROUNDS) value += params::W_PORTAL_SCOUT;
         }
         if (cash.has_value()) {
-            value += params::W_CASH / (1 + torus_distance(dest, cash->head, mem.width, mem.height));
+            double sl = torus_distance(dest, cash->head, mem.width, mem.height);
+            double d = usePath ? pd.eff(direction, cash->head, static_cast<int>(sl)) : sl;
+            value += params::W_CASH / (1 + d);
             if (cash->front.has_value() && dest == *cash->front) value -= params::W_LETHAL;
         }
         value += params::W_V3 * v3[direction];
         value += params::W_STRAIGHT * (direction == obs.facing ? 1.0 : 0.0);
         scores.emplace_back(direction, value);
     }
+    // Lookahead beam (off by default). Skipped if the points budget is already
+    // spent, so it never pushes a turn over the hard limit.
+    if (params::CPP_BEAM && !(budget && cpu_points() - t0 > params::CPP_SOFT_POINTS))
+        beam_adjust(mem, obs, team, did, scores, moves);
     return scores;
 }
 
@@ -441,6 +615,7 @@ class Brain {
     }
 
     std::string turn(const Obs& obs) {
+        double t0 = cpu_points();  // CPU points at the turn's start (for CPP_BUDGET)
         memory.update(obs);
         if (params::GOAL) memory.update_goal(obs, init.id);
         if (!born_round) born_round = obs.round;
@@ -449,7 +624,7 @@ class Brain {
         if (should_feed(memory, obs, init.team, target)) return "";
         auto split = should_split(init.width, init.height, init.unit_limit, obs, init.team, protectedFlag);
         if (split) return *split;
-        auto scores = score_moves(memory, obs, init.team, init.id, protectedFlag, target);
+        auto scores = score_moves(memory, obs, init.team, init.id, protectedFlag, target, t0);
         if (scores.empty()) {
             if (obs.length >= 4 && obs.unit_count < init.unit_limit)
                 return std::string("SPLIT ") + std::to_string(obs.length - 2);
