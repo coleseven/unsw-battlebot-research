@@ -144,8 +144,11 @@ def cpp_inproc_enabled() -> bool:
 
 
 def is_cpp_bot(path: pathlib.Path) -> bool:
-    """A folder bot built from C++ sources (has main.cpp, no Python brain)."""
-    return (path / "main.cpp").is_file() and not (path / "brain.py").is_file()
+    """A folder bot built from our cppbot sources (main.cpp + v6_brain.hpp, no
+    Python brain). The in-process wrapper only fits our brain; other C++ bots
+    (sparring) keep running as processes."""
+    return ((path / "main.cpp").is_file() and (path / "v6_brain.hpp").is_file()
+            and not (path / "brain.py").is_file())
 
 
 def _cpp_compiler() -> list[str]:
