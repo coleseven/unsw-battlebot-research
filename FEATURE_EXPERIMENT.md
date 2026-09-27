@@ -121,6 +121,29 @@ pairs, and (b) the **decision-flip rate**, meaning how often removing a term
 changes the chosen move. A term that almost never flips a decision is dead
 weight whatever its weight.
 
+### Stage 1 result (27 Sep 02:10, `results/20260926-214429-ablate-346278`)
+
+Aligned objective, delta from removing the group (negative = the group helps),
+current 10-map pool with 95% CI; guard = the other 5 maps.
+
+| group | pool delta [CI] | pool verdict | guard | all 15 |
+|---|---|---|---|---|
+| v3 learned action model (W_V3) | -0.355 [-0.463, -0.252] | essential | -0.271 | essential |
+| food | -0.255 [-0.376, -0.137] | essential | -0.235 | essential |
+| spawn anticipation | -0.123 [-0.218, -0.014] | essential | -0.099 | essential |
+| hubs | -0.115 [-0.200, -0.033] | essential | +0.051 | neutral |
+| room/trap | +0.131 [+0.024, +0.231] | **harmful** | -0.066 | neutral (ladder maps +0.315) |
+| defend | +0.025 [-0.020, +0.068] | neutral | +0.118 | **harmful** (+0.056 [+0.016, +0.098]) |
+| attack | -0.029 [-0.130, +0.066] | neutral | -0.195 | essential |
+| feed | -0.038 | neutral | -0.086 | neutral (-0.054, CI to +0.001) |
+| dead end | -0.029 | neutral | -0.052 | neutral |
+| exploration, revisit, fan, hunt, goal, protect | +0.008 to +0.055 | neutral | | neutral |
+| head safety, straight, portals | -0.017 to -0.004 | neutral | | neutral |
+
+Base (v7-base) won 141/240 (vs itself 50%, vs nicked +0.267 aligned). The
+aligned score is noisier than the length margin (per-cell SD 0.65 vs 0.33),
+so CIs are about +/-0.10 at K = 4 with two opponents.
+
 ## 3. Stage 2: simplify
 
 `B1` = B0 with every harmful group removed and neutral groups removed

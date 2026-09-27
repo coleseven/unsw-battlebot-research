@@ -1,0 +1,45 @@
+{
+ "drop_harmful": {
+  "W_TRAP": 0.0,
+  "W_LETHAL": 0.0,
+  "W_DEFEND": 0.0
+ },
+ "lean": {
+  "W_TRAP": 0.0,
+  "W_LETHAL": 0.0,
+  "W_DEFEND": 0.0,
+  "W_UNSEEN": 0.0,
+  "W_STALE": 0.0,
+  "W_REVISIT": 0.0,
+  "W_FAN_EARLY": 0.0,
+  "W_FAN_LATE": 0.0,
+  "W_HUNT": 0.0,
+  "W_GOAL": 0.0,
+  "GOAL": false,
+  "PROTECT_MULT": 1.0,
+  "PROTECT_FOOD_MULT": 1.0
+ },
+ "simplified": {
+  "W_TRAP": 0.0,
+  "W_LETHAL": 0.0,
+  "W_DEFEND": 0.0,
+  "W_UNSEEN": 0.0,
+  "W_STALE": 0.0,
+  "W_REVISIT": 0.0,
+  "W_FAN_EARLY": 0.0,
+  "W_FAN_LATE": 0.0,
+  "W_HUNT": 0.0,
+  "W_GOAL": 0.0,
+  "GOAL": false,
+  "PROTECT_MULT": 1.0,
+  "PROTECT_FOOD_MULT": 1.0,
+  "W_HEAD_ENEMY": 0.0,
+  "W_HEAD_TEAM": 0.0,
+  "W_AHEAD": 0.0,
+  "W_STRAIGHT": 0.0,
+  "W_PORTAL": 0.0,
+  "W_PORTAL_UNSEEN": 0.0,
+  "W_PORTAL_SCOUT": 0.0,
+  "PORTAL_BOOK": false
+ }
+}
