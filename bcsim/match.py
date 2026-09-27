@@ -170,7 +170,7 @@ def build_cpp_lib(path: pathlib.Path) -> pathlib.Path:
     sources = [INPROC_SRC, *(f for f in path.iterdir()
                              if f.is_file() and f.suffix in (".cpp", ".hpp"))]
     newest = max(f.stat().st_mtime for f in sources)
-    tmp = lib.with_suffix(".so.tmp")
+    tmp = lib.with_suffix(f".{os.getpid()}.tmp")   # per process: parallel builders never share one
     # Match unswbc's native flags (-std=c++20 -O2); -fPIC -shared build a
     # library and do not change the arithmetic.
     cmd = [*_cpp_compiler(), "-std=c++20", "-O2", "-fPIC", "-shared",
@@ -183,7 +183,15 @@ def build_cpp_lib(path: pathlib.Path) -> pathlib.Path:
     proc = subprocess.run(cmd, capture_output=True, text=True)
     if proc.returncode != 0:
         raise RuntimeError(f"in-process build failed for {path.name}:\n{proc.stderr}")
-    os.replace(tmp, lib)  # atomic, so parallel workers never see a half-written .so
+    try:
+        os.replace(tmp, lib)  # atomic, so parallel workers never see a half-written .so
+    except PermissionError:
+        # Windows: another worker built and loaded the same library first; the
+        # sources are identical, so use that one.
+        tmp.unlink(missing_ok=True)
+        if not lib.is_file():
+            raise
+        return lib
     sig_file.write_text(sig)
     return lib
 
@@ -193,7 +201,15 @@ def _load_cpp_lib(path: pathlib.Path) -> ctypes.CDLL:
     key = str(lib_path)
     lib = _CPP_LIBS.get(key)
     if lib is None:
-        lib = ctypes.CDLL(str(lib_path))
+        if os.name == "nt":
+            # Windows does not search PATH for a DLL's own dependencies
+            # (libstdc++/libgcc from MinGW); add the compiler's directory,
+            # where the native bot.exe finds the same runtime.
+            import shutil as _shutil
+            compiler = _shutil.which(_cpp_compiler()[0])
+            if compiler:
+                os.add_dll_directory(os.path.dirname(os.path.abspath(compiler)))
+        lib = ctypes.CDLL(str(lib_path.resolve()))
         lib.bc_new.restype = ctypes.c_void_p
         lib.bc_new.argtypes = [ctypes.c_char_p, ctypes.c_uint64]
         lib.bc_step.restype = ctypes.c_char_p

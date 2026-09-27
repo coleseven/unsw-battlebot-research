@@ -175,9 +175,11 @@ def prepare(args):
     base = resolve_bot(args.base)
     space = json.loads(Path(args.space).read_text(encoding="utf8"))
     maps = official_suite.official_maps()
-    if args.maps == "screen":
+    if args.maps == "ranked":
+        maps = official_suite.ranked_maps()
+    elif args.maps == "screen":
         maps = [m for m in maps if m.stem in SCREEN]
-    elif args.maps != "all":
+    elif args.maps not in ("all", "ranked"):
         wanted = {name.strip().lower() for name in args.maps.split(",")}
         maps = [m for m in maps if m.stem.lower() in wanted]
         if len(maps) != len(wanted):
@@ -287,8 +289,9 @@ def main():
     ap.add_argument("--params")
     ap.add_argument("--space")
     ap.add_argument("--vs", nargs="+")
-    ap.add_argument("--maps", default="screen",
-                    help="screen (5 hardest), all (11), or comma-separated map stems")
+    ap.add_argument("--maps", default="ranked",
+                    help="ranked (all 15: official 11 + ladder 4), all (official 11), screen (5), "
+                         "or comma-separated official map stems")
     ap.add_argument("--extra-maps", nargs="*", default=[],
                     help="additional .map files (ladder maps outside the official suite)")
     ap.add_argument("--seed", type=int, default=53001)

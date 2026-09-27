@@ -1,4 +1,5 @@
-"""The eleven distinct competition maps; required coverage for bot changes."""
+"""The eleven distinct competition maps (required coverage for bot changes)
+plus the four ladder-only maps: fifteen layouts, the whole ranked pool."""
 
 import os
 from pathlib import Path
@@ -20,6 +21,16 @@ SPECS = (
     ("big_empty", "maps/big_empty.map", 64, 64),
     ("arena", "maps/arena.map", 11, 11),
     ("Colosseum", "maps/Colosseum.map", 16, 16),
+)
+
+# Ladder-only maps: in the ranked pool since about 25 Sep but not in the
+# eleven above. Every ranked map seen in our downloaded replays (23 names) is
+# one of these fifteen layouts, so SPECS + LADDER_SPECS is the whole pool.
+LADDER_SPECS = (
+    ("Autarky", "maps/server/Autarky.map", 54, 18),
+    ("Prisoners_Dilemma", "maps/server/Prisoners_Dilemma.map", 32, 16),
+    ("Slithery_Fight", "maps/server/Slithery_Fight.map", 63, 27),
+    ("Portals", "maps/server/Portals.map", 32, 16),
 )
 
 # Sixteen simultaneous matches exhausted available RAM with process-based
@@ -51,7 +62,33 @@ def official_maps() -> list[Path]:
 
 
 def require_coverage(paths: list[Path]) -> None:
+    """Every official layout present, no layout twice (extra ladder maps allowed)."""
     expected = {map_signature(path) for path in official_maps()}
-    present = {map_signature(path) for path in paths}
-    if present != expected or len(paths) != len(SPECS):
+    signatures = [map_signature(path) for path in paths]
+    if not expected <= set(signatures) or len(set(signatures)) != len(signatures):
         raise ValueError(f"bot-change test must cover all {len(SPECS)} distinct official maps")
+
+
+def _load(specs) -> list[Path]:
+    paths = []
+    for name, relative, width, height in specs:
+        path = ROOT / relative
+        if not path.is_file() or path.stem != name:
+            raise ValueError(f"missing map {name}: {path}")
+        if dimensions(path) != (width, height):
+            raise ValueError(f"wrong dimensions for {name}: {dimensions(path)}")
+        paths.append(path)
+    return paths
+
+
+def ladder_extra_maps() -> list[Path]:
+    """The four ladder-only maps."""
+    return _load(LADDER_SPECS)
+
+
+def ranked_maps() -> list[Path]:
+    """All fifteen distinct ranked layouts: the official eleven, then the ladder four."""
+    paths = official_maps() + ladder_extra_maps()
+    if len({map_signature(p) for p in paths}) != len(paths):
+        raise ValueError("ranked pool contains duplicate playable layouts")
+    return paths

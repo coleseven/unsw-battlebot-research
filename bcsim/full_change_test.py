@@ -19,7 +19,8 @@ from . import guarded, local_v6_clock, map_matrix, match, official_suite, popula
 from .paths import ROOT, RESULTS, bot_hash, file_hash, resolve_bot
 
 
-def prepare(candidate_source: Path, opponent_sources: list[Path], workers: int, seeds: int = 1):
+def prepare(candidate_source: Path, opponent_sources: list[Path], workers: int, seeds: int = 1,
+            official_only: bool = False):
     if not opponent_sources or len({str(p) for p in opponent_sources}) != len(opponent_sources):
         raise ValueError("provide distinct opponents")
     if candidate_source in opponent_sources:
@@ -37,14 +38,16 @@ def prepare(candidate_source: Path, opponent_sources: list[Path], workers: int, 
         population.snapshot(path, out / "bots" / name)
     (out / "maps").mkdir()
     maps = []
-    for source in official_suite.official_maps():
+    pool = official_suite.official_maps() if official_only else official_suite.ranked_maps()
+    for source in pool:
         dest = out / "maps" / source.name
         shutil.copy2(source, dest)
         maps.append(dest)
     official_suite.require_coverage(maps)
     population.write_json(out / "plan.json", {
         "question": "Does this unchanged candidate improve across every official map?",
-        "coverage": "all 11 distinct official maps, both sides, every opponent",
+        "coverage": ("all 11 distinct official maps" if official_only else
+                     "all 15 distinct ranked maps (11 official + 4 ladder)") + ", both sides, every opponent",
         "seeds": [53001 + i for i in range(seeds)], "workers": workers,
         "limits": "unswbc >= 1.1 seeds the engine (pearl spawns) per match, so each seed is a distinct game; "
                   "the same seed replays identically.",
@@ -118,10 +121,12 @@ if __name__ == "__main__":
     parser.add_argument("--vs", nargs="+")
     parser.add_argument("--workers", type=int, default=official_suite.DEFAULT_WORKERS)
     parser.add_argument("--seeds", type=int, default=1, help="distinct engine seeds per map/side/opponent")
+    parser.add_argument("--official-only", action="store_true",
+                        help="the 11 official maps only (default: all 15 ranked maps)")
     args = parser.parse_args()
     if args.prepare and args.candidate and args.vs:
         prepare(resolve_bot(args.candidate), [resolve_bot(p) for p in args.vs],
-                args.workers, args.seeds)
+                args.workers, args.seeds, args.official_only)
     elif args.screen and args.experiment:
         screen(args.experiment)
     else:

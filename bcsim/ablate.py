@@ -64,7 +64,9 @@ def prepare(args):
     official_suite.require_coverage(official)
     signatures = {official_suite.map_signature(m) for m in official}
     extra = []
-    for source in map(Path, args.extra_maps):
+    extras = (official_suite.ladder_extra_maps() if args.extra_maps is None else
+              [Path(m) for m in args.extra_maps])
+    for source in extras:
         if official_suite.map_signature(source) in signatures:
             raise ValueError(f"{source} duplicates an official map")
         signatures.add(official_suite.map_signature(source))
@@ -228,7 +230,8 @@ def main():
     ap.add_argument("--params")
     ap.add_argument("--groups", help="groups JSON, or 'none' for base only (noise measurement)")
     ap.add_argument("--vs", nargs="+")
-    ap.add_argument("--extra-maps", nargs="*", default=[])
+    ap.add_argument("--extra-maps", nargs="*", default=None,
+                    help="maps beyond the official 11 (default: the 4 ladder maps; pass none to omit)")
     ap.add_argument("--seeds", type=int, default=3)
     ap.add_argument("--seed", type=int, default=61001)
     ap.add_argument("--workers", type=int, default=official_suite.DEFAULT_WORKERS)
