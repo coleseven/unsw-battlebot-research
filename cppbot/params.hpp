@@ -98,4 +98,13 @@ inline constexpr int CPP_PATH_DIST = 0;
 inline constexpr int CPP_BEAM = 0;
 inline constexpr int CPP_BEAM_WIDTH = 8;
 inline constexpr int CPP_BEAM_DEPTH = 6;
+inline constexpr int CPP_PORTAL_AGE = 0;
+inline constexpr int CPP_PORTAL_RAMP = 150;
+inline constexpr double CPP_PORTAL_SPREAD = 0.0;
+inline constexpr double CPP_TRAP_OPEN = 1.0;
+inline constexpr double CPP_TRAP_KELP_REF = 0.25;
+inline constexpr int CPP_VOR = 0;
+inline constexpr double CPP_VOR_LOST = 0.5;
+inline constexpr double CPP_VOR_CONTEST = 1.5;
+inline constexpr double CPP_VOR_MATE = 0.6;
 }  // namespace params

@@ -223,11 +223,31 @@ inline Threats head_threats(const WorldMemory& mem, const Obs& obs, char team, i
     }
     return t;
 }
-inline double food_value(const WorldMemory& mem, const Obs& obs, int cell, int hops) {
+// Voronoi-lite pearl targeting (CPP_VOR): visible head cells this turn.
+struct VorCtx {
+    std::vector<int> enemy, mates;
+};
+// Scale a pearl's value by who reaches it first: we arrive in hops + 1 moves; a
+// visible enemy head strictly sooner takes it (x LOST), one arriving within 2
+// moves after us contests it (x CONTEST, take it now); a teammate head strictly
+// sooner should have it (x MATE, spread out over a hub).
+inline double vor_mult(const WorldMemory& mem, int cell, int hops, const VorCtx& v) {
+    int ours = hops + 1;
+    int de = 1 << 30;
+    for (int e : v.enemy) de = std::min(de, torus_distance(cell, e, mem.width, mem.height));
+    double m = 1.0;
+    if (de < ours) m = params::CPP_VOR_LOST;
+    else if (de <= ours + 2) m = params::CPP_VOR_CONTEST;
+    for (int t : v.mates)
+        if (torus_distance(cell, t, mem.width, mem.height) < ours) { m *= params::CPP_VOR_MATE; break; }
+    return m;
+}
+inline double food_value(const WorldMemory& mem, const Obs& obs, int cell, int hops, const VorCtx* vor = nullptr) {
     double value = 0;
     auto vit = mem.nav.visible.find(cell);
     if (vit != mem.nav.visible.end() && obs.pearl[vit->second]) value = params::W_PEARL / (1 + hops);
     else if (mem.pearl.count(cell)) value = params::W_MEM_PEARL / (1 + hops);
+    if (vor != nullptr && value > 0) value *= vor_mult(mem, cell, hops, *vor);
     auto sit = mem.spawn_ready.find(cell);
     if (sit != mem.spawn_ready.end()) {
         int wait = sit->second - obs.round - hops;
@@ -241,7 +261,8 @@ struct Terms { double food = 0, hub = 0, progress = 0; int unseen = 0, stale = 0
 // build). With it set (CPP_BUDGET on) the search also stops once the turn's CPU
 // points reach the deadline, so a larger N_SEARCH is capped by real cost.
 inline Terms search_one(const WorldMemory& mem, const Obs& obs, char team, int did, int dest, char direction,
-                        const std::unordered_map<int, int>& own_free, double deadline = -1) {
+                        const std::unordered_map<int, int>& own_free, double deadline = -1,
+                        const VorCtx* vor = nullptr) {
     std::unordered_map<int, int> best; best[dest] = 0;
     using Node = std::tuple<int, int, int>;  // (cost, arrival, cell)
     std::priority_queue<Node, std::vector<Node>, std::greater<Node>> queue;
@@ -257,7 +278,7 @@ inline Terms search_one(const WorldMemory& mem, const Obs& obs, char team, int d
         auto bit = best.find(cell);
         if (bit == best.end() || cost != bit->second) continue;
         tm.expanded += 1;
-        tm.food = std::max(tm.food, food_value(mem, obs, cell, arrival - 1));
+        tm.food = std::max(tm.food, food_value(mem, obs, cell, arrival - 1, vor));
         if (has_goal) {
             double gained = base - torus_distance(cell, *mem.goal, mem.width, mem.height) - params::GOAL_STEP_COST * (arrival - 1);
             if (gained > tm.progress) tm.progress = gained;
@@ -387,7 +408,7 @@ struct CashTarget { int head; std::optional<int> front; int local; };
 // Returns scores in Python dict insertion order (attacks first, then moves).
 inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const Obs& obs, char team, int did,
                                                         bool protectedFlag, const std::optional<CashTarget>& cash,
-                                                        double t0 = -1) {
+                                                        double t0 = -1, int born = -1) {
     bool budget = params::CPP_BUDGET != 0 && t0 >= 0;
     PathDist pd;
     bool usePath = params::CPP_PATH_DIST != 0;
@@ -439,6 +460,24 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
     double protection = protectedFlag ? params::PROTECT_MULT : 1.0;
     double margin = params::SPACE_MARGIN * (obs.round >= 400 ? params::ENDGAME_SPACE_MULT : 1.0);
     double need = std::min(params::SPACE_MULT * obs.length + margin, static_cast<double>(params::SPACE_CAP));
+    // CPP_TRAP_OPEN: the room/trap penalty is scaled down in open terrain and
+    // kept in full where kelp is dense in view (Queen Of Spades needs it; open
+    // ladder maps did better without it). 1.0 = today's behaviour exactly.
+    double trap_mult = 1.0;
+    if (params::CPP_TRAP_OPEN != 1.0) {
+        int kelp = 0, total = 0;
+        for (int r = 0; r < W + 1; ++r) for (int c = 0; c < W; ++c) { ++total; kelp += obs.hedge[r][c] == KELP; }
+        for (int r = 0; r < W; ++r) for (int c = 0; c < W + 1; ++c) { ++total; kelp += obs.vedge[r][c] == KELP; }
+        double tight = std::min(1.0, (kelp / static_cast<double>(total)) / params::CPP_TRAP_KELP_REF);
+        trap_mult = params::CPP_TRAP_OPEN + (1.0 - params::CPP_TRAP_OPEN) * tight;
+    }
+    VorCtx vor_ctx;
+    const VorCtx* vor = nullptr;
+    if (params::CPP_VOR) {
+        for (auto& [cell, _] : enemy_heads) vor_ctx.enemy.push_back(cell);
+        vor_ctx.mates = th.mates;
+        vor = &vor_ctx;
+    }
 
     for (std::size_t mi = 0; mi < remaining.size(); ++mi) {
         char direction = remaining[mi];
@@ -450,12 +489,12 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
             double remaining_pts = params::CPP_SOFT_POINTS - (cpu_points() - t0);
             deadline = cpu_points() + (remaining_pts > 0 ? remaining_pts / moves_left : 0.0);
         }
-        Terms tm = search_one(mem, obs, team, did, dest, direction, own_free, deadline);
+        Terms tm = search_one(mem, obs, team, did, dest, direction, own_free, deadline, vor);
         double room = std::min(static_cast<double>(tm.room), need);
         double value = tm.food * (protectedFlag ? params::PROTECT_FOOD_MULT : 1.0);
         value += (params::W_UNSEEN * tm.unseen + params::W_STALE * tm.stale) / static_cast<double>(params::N_SEARCH);
-        value -= protection * params::W_TRAP * std::max(0.0, need - room);
-        if (room < obs.length + 2) value -= protection * params::W_LETHAL;
+        value -= protection * params::W_TRAP * trap_mult * std::max(0.0, need - room);
+        if (room < obs.length + 2) value -= protection * params::W_LETHAL * trap_mult;
         if (tm.exits == 0) value -= params::W_DEADEND;
         else if (tm.exits == 1) value -= params::W_CORRIDOR;
         int threat = reach.count(dest) ? reach[dest] : 0;
@@ -504,8 +543,27 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
         bool portal = mem.nav.edges[mem.nav.edge_key(start, direction)] >= 0;
         if (portal) {
             value -= params::W_PORTAL;
-            if (obs.round - mem.nav.seen[dest] > params::PORTAL_STALE) value -= protection * params::W_PORTAL_UNSEEN;
-            if (obs.round < params::SCOUT_ROUNDS) value += params::W_PORTAL_SCOUT;
+            bool unseen = obs.round - mem.nav.seen[dest] > params::PORTAL_STALE;
+            if (params::CPP_PORTAL_AGE) {
+                // By the dragon's own age, so a child born mid-game still scouts:
+                // an unseen exit earns the scout bonus while young, then its
+                // penalty ramps in over CPP_PORTAL_RAMP rounds.
+                int age = born >= 0 ? obs.round - born : obs.round;
+                if (unseen) {
+                    double ramp = age < params::SCOUT_ROUNDS ? 0.0
+                        : params::CPP_PORTAL_RAMP > 0
+                            ? std::min(1.0, (age - params::SCOUT_ROUNDS) / static_cast<double>(params::CPP_PORTAL_RAMP))
+                            : 1.0;
+                    value -= protection * params::W_PORTAL_UNSEEN * ramp;
+                    if (age < params::SCOUT_ROUNDS) value += params::W_PORTAL_SCOUT;
+                }
+                if (params::CPP_PORTAL_SPREAD > 0)
+                    for (int m : th.mates)
+                        if (torus_distance(start, m, mem.width, mem.height) <= 2) { value -= params::CPP_PORTAL_SPREAD; break; }
+            } else {
+                if (unseen) value -= protection * params::W_PORTAL_UNSEEN;
+                if (obs.round < params::SCOUT_ROUNDS) value += params::W_PORTAL_SCOUT;
+            }
         }
         if (cash.has_value()) {
             double sl = torus_distance(dest, cash->head, mem.width, mem.height);
@@ -624,7 +682,7 @@ class Brain {
         if (should_feed(memory, obs, init.team, target)) return "";
         auto split = should_split(init.width, init.height, init.unit_limit, obs, init.team, protectedFlag);
         if (split) return *split;
-        auto scores = score_moves(memory, obs, init.team, init.id, protectedFlag, target, t0);
+        auto scores = score_moves(memory, obs, init.team, init.id, protectedFlag, target, t0, *born_round);
         if (scores.empty()) {
             if (obs.length >= 4 && obs.unit_count < init.unit_limit)
                 return std::string("SPLIT ") + std::to_string(obs.length - 2);

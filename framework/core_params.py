@@ -105,3 +105,15 @@ CPP_PATH_DIST = 0       # C++ only: 1 = portal-aware head-BFS path distances for
 CPP_BEAM = 0            # C++ only: 1 = lookahead beam over our own moves
 CPP_BEAM_WIDTH = 8      # C++ only: beam width
 CPP_BEAM_DEPTH = 6      # C++ only: beam depth
+# Portal scouting by the dragon's own age (27 Sep: stalls on portal maps)
+CPP_PORTAL_AGE = 0      # C++ only: 1 = scout bonus / unseen-exit penalty by dragon age, not game round
+CPP_PORTAL_RAMP = 150   # C++ only: rounds over which the unseen-exit penalty ramps in after SCOUT_ROUNDS of age
+CPP_PORTAL_SPREAD = 0.0  # C++ only: penalty for entering a portal with a teammate head within 2 tiles
+# Trap weight by local tightness
+CPP_TRAP_OPEN = 1.0     # C++ only: W_TRAP/W_LETHAL multiplier in open terrain (1 = today; scales to 1 as view kelp rises)
+CPP_TRAP_KELP_REF = 0.25  # C++ only: kelp share of the view's edges that counts as fully tight
+# Voronoi-lite pearl targeting (nicked lab: 27/40 with a BFS version)
+CPP_VOR = 0             # C++ only: 1 = scale pearl values by who reaches them first
+CPP_VOR_LOST = 0.5      # C++ only: a visible enemy head reaches the pearl first
+CPP_VOR_CONTEST = 1.5   # C++ only: an enemy head reaches it within 2 moves after us (take it now)
+CPP_VOR_MATE = 0.6      # C++ only: a teammate head is closer (leave it to them)
