@@ -1,3 +1,4 @@
+import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -74,6 +75,38 @@ class TuneTest(unittest.TestCase):
         self.assertAlmostEqual(m["aligned"], 0.5 * -1 + 0.25 * (20 - 25) / 45 + 0.25 * m["margin"])
         elim = {"timeline": timeline[:5], "end": "eliminated", "winner": "A"}
         self.assertGreater(margin.game_margin(elim, "A")["aligned"], 0.9)
+
+    def test_pair_map_sampling(self):
+        maps = [Path(f"{m}.map") for m in ("a", "a_p1", "b", "b_p1", "c")]
+        plan = {"map_sample": "pair", "seed": 3}
+        picked = tune.gen_maps(plan, maps, 0)
+        self.assertEqual(sorted(p.stem.split("_")[0] for p in picked), ["a", "b", "c"])
+        self.assertEqual(picked, tune.gen_maps(plan, maps, 0))          # same for all candidates
+        self.assertEqual(tune.gen_maps({"seed": 3}, maps, 0), maps)     # default: every map
+        seen = {p.stem for g in range(20) for p in tune.gen_maps(plan, maps, g)}
+        self.assertTrue({"a", "a_p1", "b", "b_p1"} <= seen)
+
+    def test_cmaes_backend_and_warm_start(self):
+        import pickle
+        import cma
+        es = tune._CMAesLRA([0.5, 0.5], 0.2, 6)
+        xs = es.ask()
+        self.assertEqual(len(xs), 6)
+        es.tell(xs, [sum(x) for x in xs])
+        self.assertEqual(es.gen, 1)
+        self.assertEqual(len(es.mean), 2)
+        with tempfile.TemporaryDirectory() as t:
+            src = Path(t)
+            old_space = {"A": [0, 10], "B": [0, 1]}
+            (src / "plan.json").write_text(json.dumps({"space": old_space}), encoding="utf8")
+            old = cma.CMAEvolutionStrategy([0.3, 0.8], 0.2, {"bounds": [0, 1], "verbose": -9, "seed": 1})
+            (src / "cma.pkl").write_bytes(pickle.dumps(old))
+            space = {"A": [0, 20], "C": [0, 1]}              # A's range doubled; C is new
+            x0, cov = tune.warm_start({"warm_from": str(src), "start": {"A": 0, "C": 0.25}}, space)
+            self.assertAlmostEqual(x0[0], 0.15)              # A = 3.0 -> 3/20
+            self.assertAlmostEqual(x0[1], 0.25)              # new parameter starts at plan start
+            self.assertAlmostEqual(cov[0][0], old.sm.C[0][0] * 0.25)   # (10/20)^2
+            self.assertAlmostEqual(cov[1][1], 1.0)
 
     def test_generation_seeds(self):
         self.assertEqual(tune.gen_seeds({"seed": 7}, 3), [7])
