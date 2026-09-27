@@ -33,6 +33,15 @@ LADDER_SPECS = (
     ("Portals", "maps/server/Portals.map", 32, 16),
 )
 
+# Maps the ranked server is drawing right now (sampled from public ranked
+# battles, 27 Sep 02:00 UTC): since about 26 Sep 14:00-16:00 UTC ten maps;
+# Default Small, Stronghold and Big Empty left then, Arena and Colosseum have
+# not appeared since at least 25 Sep 12:00. Elo counts games won, so this pool
+# is the primary target; the other five stay as a regression guard because the
+# pool has changed twice in two days. Re-sample before relying on it.
+CURRENT_POOL = ("trophy", "queen_of_spades", "default", "Devil", "Trauma", "schooltime",
+                "Autarky", "Prisoners_Dilemma", "Slithery_Fight", "Portals")
+
 # Sixteen simultaneous matches exhausted available RAM with process-based
 # nicked; eight is the highest previously completed full-suite setting here.
 # The bounded runner can still use more on a machine with measured headroom.
@@ -84,6 +93,11 @@ def _load(specs) -> list[Path]:
 def ladder_extra_maps() -> list[Path]:
     """The four ladder-only maps."""
     return _load(LADDER_SPECS)
+
+
+def current_pool_maps() -> list[Path]:
+    """The maps in the current ranked rotation (CURRENT_POOL), in suite order."""
+    return [p for p in ranked_maps() if p.stem in CURRENT_POOL]
 
 
 def ranked_maps() -> list[Path]:

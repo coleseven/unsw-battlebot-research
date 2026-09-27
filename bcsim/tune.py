@@ -181,9 +181,11 @@ def prepare(args):
     maps = official_suite.official_maps()
     if args.maps == "ranked":
         maps = official_suite.ranked_maps()
+    elif args.maps == "current":
+        maps = official_suite.current_pool_maps()
     elif args.maps == "screen":
         maps = [m for m in maps if m.stem in SCREEN]
-    elif args.maps not in ("all", "ranked"):
+    elif args.maps not in ("all", "ranked", "current"):
         wanted = {name.strip().lower() for name in args.maps.split(",")}
         maps = [m for m in maps if m.stem.lower() in wanted]
         if len(maps) != len(wanted):
@@ -295,7 +297,8 @@ def main():
     ap.add_argument("--space")
     ap.add_argument("--vs", nargs="+")
     ap.add_argument("--maps", default="ranked",
-                    help="ranked (all 15: official 11 + ladder 4), all (official 11), screen (5), "
+                    help="ranked (all 15: official 11 + ladder 4), current (the 10 in today's ranked "
+                         "rotation), all (official 11), screen (5), "
                          "or comma-separated official map stems")
     ap.add_argument("--extra-maps", nargs="*", default=[],
                     help="additional .map files (ladder maps outside the official suite)")

@@ -159,6 +159,7 @@ def report(out: Path):
         return
     base = data[BASE]
     official = set(plan["official_maps"])
+    pool = set(official_suite.CURRENT_POOL)
     key = plan.get("objective", "margin")
     for rows in data.values():          # report in the plan's objective
         for r in rows.values():
@@ -173,9 +174,9 @@ def report(out: Path):
                  f"wins {sum(r['win'] for r in base_rows)}/{len(base_rows)}; by opponent: " +
                  ", ".join(f"{o} {statistics.fmean(r['margin'] for r in base_rows if r['opponent'] == o):+.3f}"
                            for o in plan["opponents"]))
-    lines += ["", "| variant | delta all [95% CI] | verdict | " +
+    lines += ["", "| variant | current pool delta [95% CI] | pool verdict | other maps | delta all 15 [95% CI] | verdict | " +
               " | ".join(f"vs {o}" for o in plan["opponents"]) + " | official | extra | wins |",
-              "|---|---|---|" + "---|" * len(plan["opponents"]) + "---|---|---|"]
+              "|---|---|---|---|---|---|" + "---|" * len(plan["opponents"]) + "---|---|---|"]
     summary = {}
     for name, rows in data.items():
         if name == BASE:
@@ -193,10 +194,16 @@ def report(out: Path):
                    for o in plan["opponents"]]
         off = diffs(lambda k: k[1] in official)
         ext = diffs(lambda k: k[1] not in official)
+        cur = diffs(lambda k: k[1] in pool)
+        guard = diffs(lambda k: k[1] not in pool)
+        cmean, clo, chi = _bootstrap(cur) if cur else (0.0, 0.0, 0.0)
         fmt = lambda b: f"{statistics.fmean(d for v in b.values() for d in v):+.3f}" if b else "-"
         wins = sum(r["win"] for r in rows.values())
-        summary[name] = {"delta": mean, "lo": lo, "hi": hi, "verdict": verdict}
-        lines.append(f"| {name} | {mean:+.3f} [{lo:+.3f}, {hi:+.3f}] | {verdict} | " +
+        cverdict = "harmful (drop)" if clo > 0 else "essential" if chi < 0 else "neutral"
+        summary[name] = {"delta": mean, "lo": lo, "hi": hi, "verdict": verdict,
+                         "pool_delta": cmean, "pool_lo": clo, "pool_hi": chi, "pool_verdict": cverdict}
+        lines.append(f"| {name} | {cmean:+.3f} [{clo:+.3f}, {chi:+.3f}] | {cverdict} | {fmt(guard)} | "
+                     f"{mean:+.3f} [{lo:+.3f}, {hi:+.3f}] | {verdict} | " +
                      " | ".join(f"{d:+.3f}" for d in per_opp) +
                      f" | {fmt(off)} | {fmt(ext)} | {wins}/{len(rows)} |")
     # noise: the seed-to-seed spread of base's margin in the same (opponent, map,

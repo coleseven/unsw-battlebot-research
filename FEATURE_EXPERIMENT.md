@@ -28,6 +28,21 @@ and passes parity locally. Runs locally. The user uploads bots.
 
 ## 1. Evaluation protocol (used by every stage)
 
+**What the site rewards (docs re-read 27 Sep):** a game is won by elimination,
+else at round 500 by the longest living dragon, then total length, else a draw.
+Elo moves once per ranked battle (5 games on random maps) by the **fraction of
+games won** (draw = half); the size of a win never counts. So the target is
+expected games won on the maps being drawn. The aligned score below is a lower-
+noise stand-in for that; the win column is the ground truth.
+
+**Current ranked rotation** (sampled from public ranked battles):
+since about 26 Sep 14:00-16:00 UTC, 10 maps: Trophy, Queen Of Spades,
+Default, Devil, Trauma, Schooltime, Autarky, Prisoners Dilemma, Slithery
+Fight, Portals (`official_suite.CURRENT_POOL`). Default Small, Stronghold and
+Big Empty left then; Arena and Colosseum have not appeared since at least
+25 Sep 12:00. **Decisions use the current pool; the other 5 maps are a
+regression guard** (the pool changed twice in two days). Reports show both.
+
 - **Maps:** the 11 official maps (required by CLAUDE.md) plus the 4 ladder-only
   maps (Autarky, Prisoners Dilemma, Slithery Fight, Portals) = 15. Report
   official-11 and ladder-4 separately as well as combined.
