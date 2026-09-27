@@ -1,0 +1,148 @@
+# Feature-efficiency experiment (v8 plan, drafted 2026-09-26)
+
+**Question:** which of the bot's features earn their place, and what is the
+smallest feature set that, once tuned, beats v6.1 (`versions/v7-base`, the
+C++ port with v6.1 parameters) and nicked v44?
+
+**Starts after** the cloud's in-process C++ build (`CLOUD_TASK_3.md`) is merged
+and passes parity locally. Runs locally. The user uploads bots.
+
+## 0. Why (evidence so far)
+
+- The 14-generation CMA-ES run (`20260926-001535-tune-79f3f9`, 21 parameters,
+  old engine, 1 seed) learned almost no structure: covariance condition number
+  2.0, every principal direction 3-7% of variance. A linear model on all 21
+  parameters predicts F worse than the mean (cross-validated R^2 -0.04); only
+  W_SPAWN (-0.32), W_PEARL (+0.26) and DEPTH_MAX (-0.25) correlate with F.
+- Its best candidate's gain vanished on 3 seeds (V7_EXPERIMENT.md, "unswbc
+  1.1.0 re-check"): too many dimensions for the signal.
+- Parameter counts elsewhere: ctmes CMA-tuned 25 of about 40 parameters and
+  still loses to us about 20/22. nicked (strongest) has 55 (v34) / 98 (v44)
+  hand-set constants and no sign of automated tuning. Kraken varies 3 of 17
+  per map. We have 93 constants and tuned 21-25. Tuning improves a design;
+  it does not replace one.
+
+## 1. Evaluation protocol (used by every stage)
+
+- **Maps:** the 11 official maps (required by CLAUDE.md) plus the 4 ladder-only
+  maps (Autarky, Prisoners Dilemma, Slithery Fight, Portals) = 15. Report
+  official-11 and ladder-4 separately as well as combined.
+- **Both sides, K engine seeds** (unswbc 1.1.0 seeds pearl spawns). Every
+  variant in a comparison plays **the same (map, side, seed) set**, so results
+  are paired.
+- **Opponents:**
+  - training/screening: `B0` (= v7-base) and nicked v34;
+  - held out (final stage only): nicked v44, ctmes, Python v6, leviathan3.
+- **Metric:** per-game margin (time-averaged team-length share,
+  `bcsim.margin`) as the primary measure because it is far less noisy than
+  win/loss; wins reported alongside.
+- **Statistics:** paired difference vs B0 on identical (map, side, seed)
+  blocks; 95% bootstrap CI resampling (map, seed) blocks. With ~19 variants
+  screened at once, a result counts only if it **replicates on a fresh seed
+  set** (screen, then confirm).
+- **CPU:** any variant that raises search effort gets a judge-sandbox check
+  (`unswbc run --sandbox`, max < 60M points per turn).
+
+Before stage 1, measure the noise: B0 vs nicked v34, 15 maps x 2 sides x 6
+seeds (180 games). From the per-block SD, pick K so the CI half-width on a
+paired margin difference is about 0.03 (expected K = 3-4).
+
+## 2. Stage 1: leave-one-group-out ablation
+
+Group the scoring terms into features and remove one group at a time (weights
+set to 0 in `params.hpp`, booleans off). Each ablated bot plays B0 and nicked
+v34 on the protocol set.
+
+| # | group | parameters set to 0 / off |
+|---|---|---|
+| 1 | food | W_PEARL, W_MEM_PEARL |
+| 2 | spawn anticipation | W_SPAWN |
+| 3 | unseen/stale exploration | W_UNSEEN, W_STALE |
+| 4 | room/trap | W_TRAP, W_LETHAL |
+| 5 | dead end / corridor | W_DEADEND, W_CORRIDOR |
+| 6 | head safety | W_HEAD_ENEMY, W_HEAD_TEAM, W_AHEAD |
+| 7 | revisit | W_REVISIT |
+| 8 | fan-out | W_FAN_EARLY, W_FAN_LATE |
+| 9 | straight bias | W_STRAIGHT |
+| 10 | portals | W_PORTAL, W_PORTAL_UNSEEN, W_PORTAL_SCOUT (+ PORTAL_BOOK off) |
+| 11 | v3 learned action model | W_V3 |
+| 12 | attack/trade | W_ATTACK, W_TRADE |
+| 13 | hunt | W_HUNT |
+| 14 | defend | W_DEFEND |
+| 15 | hubs | W_HUB (+ HUB_BOOK, LEARN_HUBS off) |
+| 16 | exploration goal | W_GOAL (+ GOAL off) |
+| 17 | king feeding | W_CASH, FEED_ROUND past 500 |
+| 18 | king protection | PROTECT_MULT = 1, PROTECT_FOOD_MULT = 1 |
+| 19 | sonar | SONAR off |
+
+The split economy (SPLIT_AT, CHILD, CAP, FLOOR, timings) and search size are
+structural, not removable; they stay in the tuned set.
+
+Cost: 19 variants x 2 opponents x 15 maps x 2 sides x K=3 = 3,420 games.
+Output per group: paired delta-margin vs B0 with CI, by map group. Classify:
+- **essential:** removing it hurts (CI below 0);
+- **neutral:** CI spans 0: candidate to drop;
+- **harmful:** removing it helps (CI above 0): drop.
+
+**Stage 1b (optional, cheap, explains the ablation):** log every term's value
+per decision for ~20 games (the Python core matches the C++ core exactly)
+and report (a) the correlation matrix / PCA of term values, to find redundant
+pairs, and (b) the **decision-flip rate**, meaning how often removing a term
+changes the chosen move. A term that almost never flips a decision is dead
+weight whatever its weight.
+
+## 3. Stage 2: simplify
+
+`B1` = B0 with every harmful group removed and neutral groups removed
+together. Confirm on a **fresh** seed set that B1 >= B0 (paired CI not below
+0). If the joint removal hurts, restore neutral groups one at a time (largest
+single-group delta first) until it does not.
+
+## 4. Stage 3: tune the compact set with group multipliers
+
+Tune **one multiplier per kept group** (scaling that group's weights from
+their v6.1 values), plus the structural knobs that showed signal: at most
+about 10 dimensions instead of 25.
+- Tooling: add group multipliers to the tuning space file (`bcsim.tune` maps
+  each multiplier onto its member weights), and teach `write_params` booleans.
+- CMA-ES: popsize 10, sigma 0.25, 3 fresh seeds per generation, 15 maps,
+  opponents B0 and nicked v34.
+- Stop when the CMA mean's F has not improved for 4 generations.
+- Candidates: the mean of the last 5 generations' means (ctmes found this beat
+  single best points) plus the top 3 single candidates.
+
+## 5. Stage 4: forward selection of new features
+
+Add candidate features one at a time to the tuned compact bot, each behind
+its switch, each on the protocol set with confirmation seeds:
+- dead-end corridor check that respects the no-reverse rule (ladder
+  analysis: 43 kelp deaths per game vs 26 for opponents, 513 on Slithery
+  Fight);
+- larger search (N_SEARCH, DEPTH_MAX) with the CPU meter (`CPP_BUDGET`);
+- path distances (`CPP_PATH_DIST`), beam (`CPP_BEAM`);
+- Queen of Spades / Portals handling (negative for every candidate so far).
+Keep a feature only if it replicates; re-tune its own weight only.
+
+## 6. Stage 5: final validation and success criteria
+
+Held-out opponents (nicked v44, ctmes, Python v6, leviathan3) and B0, 15 maps,
+both sides, 6 fresh seeds; judge-sandbox CPU on the largest maps.
+
+**Success:** vs B0 (v6.1) paired margin CI above 0 and wins >= 55%; vs nicked
+v44 wins >= 50% (B0 today: 32/66 = 48%); no official map worse than B0 by more
+than 0.10 margin. A candidate that meets this with fewer features than B0
+wins ties.
+
+## 7. Budget (per game about 4 s wall at 8 workers today; the cloud change should roughly halve it)
+
+| stage | games | now | after speedup |
+|---|---|---|---|
+| noise measurement | 180 | 12 min | 6 min |
+| stage 1 ablation | 3,420 | 4 h | 2 h |
+| stage 1b logging | ~20 (Python) | 30 min | 30 min |
+| stage 2 confirm | ~360 | 25 min | 12 min |
+| stage 3 CMA (<=15 gens) | ~13,500 | 15 h | 7-8 h |
+| stage 4 (per feature) | ~360 + confirm | 25 min | 12 min |
+| stage 5 | ~1,800 | 2 h | 1 h |
+
+Stage 1 is the overnight-friendly first run; stage 3 is the next night.
