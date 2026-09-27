@@ -41,6 +41,27 @@ class TuneTest(unittest.TestCase):
             self.assertIn("inline constexpr double W_HUB = 12.5;", text)
             self.assertIn("inline constexpr int N_SEARCH = 400;", text)
 
+    def test_booleans_and_group_multipliers(self):
+        with tempfile.TemporaryDirectory() as t:
+            py = Path(t) / "core_params.py"
+            py.write_text("GOAL = True\nW_A = 10.0\nW_B = 4.0\n", encoding="utf8")
+            hpp = Path(t) / "params.hpp"
+            hpp.write_text("inline constexpr bool GOAL = true;\ninline constexpr double W_A = 10.0;\n"
+                           "inline constexpr double W_B = 4.0;\n", encoding="utf8")
+            space = {"G": {"low": 0, "high": 3, "scale": ["W_A", "W_B"]}, "W_C": [0, 1]}
+            self.assertEqual(tune.read_current(hpp, {"G": space["G"]}), {"G": 1.0})
+            base = tune.read_members(hpp, space)
+            self.assertEqual(base, {"W_A": 10.0, "W_B": 4.0})
+            settings = tune.expand({"G": 0.5, "W_C": 0.2}, space, base)
+            self.assertEqual(settings, {"W_A": 5.0, "W_B": 2.0, "W_C": 0.2})
+            self.assertEqual(tune.decode(tune.encode({"G": 1.5, "W_C": 0.5}, space), space),
+                             {"G": 1.5, "W_C": 0.5})
+            for f in (py, hpp):
+                tune.write_params(f, {"GOAL": False, "W_A": 5.0})
+            self.assertEqual(py.read_text(encoding="utf8"), "GOAL = False\nW_A = 5.0\nW_B = 4.0\n")
+            self.assertIn("inline constexpr bool GOAL = false;", hpp.read_text(encoding="utf8"))
+            self.assertIn("inline constexpr double W_A = 5.0;", hpp.read_text(encoding="utf8"))
+
     def test_generation_seeds(self):
         self.assertEqual(tune.gen_seeds({"seed": 7}, 3), [7])
         self.assertEqual(tune.gen_seeds({"seed": 7, "seeds_per_gen": 2}, 0), [7, 8])

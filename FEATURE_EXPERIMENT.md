@@ -37,7 +37,7 @@ and passes parity locally. Runs locally. The user uploads bots.
   `bcsim.margin`) as the primary measure because it is far less noisy than
   win/loss; wins reported alongside.
 - **Statistics:** paired difference vs B0 on identical (map, side, seed)
-  blocks; 95% bootstrap CI resampling (map, seed) blocks. With ~19 variants
+  blocks; 95% bootstrap CI resampling (map, seed) blocks. With 18 variants
   screened at once, a result counts only if it **replicates on a fresh seed
   set** (screen, then confirm).
 - **CPU:** any variant that raises search effort gets a judge-sandbox check
@@ -73,12 +73,16 @@ v34 on the protocol set.
 | 16 | exploration goal | W_GOAL (+ GOAL off) |
 | 17 | king feeding | W_CASH, FEED_ROUND past 500 |
 | 18 | king protection | PROTECT_MULT = 1, PROTECT_FOOD_MULT = 1 |
-| 19 | sonar | SONAR off |
 
 The split economy (SPLIT_AT, CHILD, CAP, FLOOR, timings) and search size are
 structural, not removable; they stay in the tuned set.
 
-Cost: 19 variants x 2 opponents x 15 maps x 2 sides x K=3 = 3,420 games.
+Sonar is not in this table: it is inert in v6 and absent from the C++ bot
+(see stage 4).
+
+Tooling: `python -m bcsim.ablate` with `experiments/features/groups_v7.json`.
+
+Cost: 18 variants x 2 opponents x 15 maps x 2 sides x K=3 = 3,420 games.
 Output per group: paired delta-margin vs B0 with CI, by map group. Classify:
 - **essential:** removing it hurts (CI below 0);
 - **neutral:** CI spans 0: candidate to drop;
@@ -120,7 +124,23 @@ its switch, each on the protocol set with confirmation seeds:
   Fight);
 - larger search (N_SEARCH, DEPTH_MAX) with the CPU meter (`CPP_BUDGET`);
 - path distances (`CPP_PATH_DIST`), beam (`CPP_BEAM`);
-- Queen of Spades / Portals handling (negative for every candidate so far).
+- Queen of Spades / Portals handling (negative for every candidate so far);
+- **sonar**, which cannot be ablated because it does nothing today. v6 only
+  broadcasts a public king beacon (fixed magic `0xBC`, unencrypted, rounds
+  400+, length >= 6) that our own dragons decode and discard
+  (`framework/v4_sonar.py`), and the C++ port omits it. Candidates, each
+  behind its own switch in the C++ bot (cloud):
+  - **S1 king beacon routing:** the king broadcasts its position; feeding
+    dragons route toward it before it is in view (today the feed pull only
+    starts once the king is visible);
+  - **S2 hub / pearl-cluster sharing:** a dragon that sees a rich cluster
+    broadcasts it and far dragons get a pull (nicked broadcasts pearl
+    clusters of 3+ with an encrypted scheme);
+  - **S3 enemy-head warnings:** broadcast the nearest large enemy head and
+    steer away (ctmes tried this: no measurable edge over 1,056 games, so
+    lowest priority);
+  - encode with a keyed checksum so opponents cannot read or spoof it, and
+    count the judge's per-write CPU cost in the sandbox check.
 Keep a feature only if it replicates; re-tune its own weight only.
 
 ## 6. Stage 5: final validation and success criteria

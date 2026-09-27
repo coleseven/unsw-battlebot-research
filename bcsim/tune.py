@@ -41,48 +41,92 @@ SCREEN = ("default_small", "Devil", "queen_of_spades", "trophy", "big_empty")
 
 
 def write_params(path: Path, values: dict) -> None:
+    """Rewrite named settings in a Python or C/C++ parameter file. Numbers and
+    booleans (Python True/False, C++ true/false) are supported."""
     text = path.read_text(encoding="utf8")
     for name, value in values.items():
-        literal = repr(value) if isinstance(value, float) else str(value)
+        if isinstance(value, bool):
+            num = r"(?:True|False|true|false)"
+            py_lit, cpp_lit = ("True", "true") if value else ("False", "false")
+        else:
+            num = r"[-+0-9.eE]+"
+            py_lit = cpp_lit = repr(value) if isinstance(value, float) else str(value)
         patterns = (
-            (rf"^({re.escape(name)}\s*=\s*)[-+0-9.eE]+", r"\g<1>" + literal),                   # Python
-            (rf"^(\s*(?:(?:static|inline)\s+)*constexpr\s+[\w:<> ]+\s+{re.escape(name)}\s*=\s*)[-+0-9.eE]+(f?\s*;)",
-             r"\g<1>" + literal + r"\g<2>"),                                                     # C++
-            (rf"^(\s*#\s*define\s+{re.escape(name)}\s+)[-+0-9.eE]+", r"\g<1>" + literal),        # C macro
+            (rf"^({re.escape(name)}\s*=\s*){num}", r"\g<1>" + py_lit),                          # Python
+            (rf"^(\s*(?:(?:static|inline)\s+)*constexpr\s+[\w:<> ]+\s+{re.escape(name)}\s*=\s*){num}(f?\s*;)",
+             r"\g<1>" + cpp_lit + r"\g<2>"),                                                     # C++
+            (rf"^(\s*#\s*define\s+{re.escape(name)}\s+){num}", r"\g<1>" + cpp_lit),             # C macro
         )
         for pattern, repl in patterns:
             text, count = re.subn(pattern, repl, text, count=1, flags=re.M)
             if count:
                 break
         else:
-            raise ValueError(f"{name} not found as a numeric setting in {path}")
+            raise ValueError(f"{name} not found as a setting in {path}")
     path.write_bytes(text.encode("utf8"))
+
+
+def bounds(spec):
+    """(low, high, is_int) of a space entry: [low, high], [low, high, "int"], or a
+    group multiplier {"low": .., "high": .., "scale": [NAME, ...]}."""
+    if isinstance(spec, dict):
+        return spec["low"], spec["high"], False
+    return spec[0], spec[1], len(spec) > 2 and spec[2] == "int"
 
 
 def decode(x, space):
     values = {}
     for xi, (name, spec) in zip(x, space.items()):
-        low, high = spec[0], spec[1]
+        low, high, is_int = bounds(spec)
         v = float(low + min(1.0, max(0.0, float(xi))) * (high - low))
-        values[name] = int(round(v)) if len(spec) > 2 and spec[2] == "int" else float(round(v, 4))
+        values[name] = int(round(v)) if is_int else float(round(v, 4))
     return values
 
 
 def encode(values, space):
-    return [(values[name] - spec[0]) / (spec[1] - spec[0]) for name, spec in space.items()]
+    out = []
+    for name, spec in space.items():
+        low, high, _ = bounds(spec)
+        out.append((values[name] - low) / (high - low))
+    return out
+
+
+def expand(values, space, base_values):
+    """Parameter-file settings for one candidate: a group multiplier scales each
+    member weight from its base value (members must be floating-point weights);
+    ordinary entries pass through."""
+    out = {}
+    for name, value in values.items():
+        spec = space[name]
+        if isinstance(spec, dict):
+            for member in spec["scale"]:
+                out[member] = float(round(base_values[member] * value, 4))
+        else:
+            out[name] = value
+    return out
+
+
+def _read_number(text, name, path):
+    m = (re.search(rf"^{re.escape(name)}\s*=\s*([-+0-9.eE]+)", text, re.M) or
+         re.search(rf"constexpr\s+[\w:<> ]+\s+{re.escape(name)}\s*=\s*([-+0-9.eE]+)", text) or
+         re.search(rf"#\s*define\s+{re.escape(name)}\s+([-+0-9.eE]+)", text))
+    if not m:
+        raise ValueError(f"{name} not found in {path}")
+    return float(m.group(1))
 
 
 def read_current(path: Path, space) -> dict:
+    """Start point in the space: current values, or 1.0 for group multipliers."""
     text = path.read_text(encoding="utf8")
-    out = {}
-    for name, spec in space.items():
-        m = (re.search(rf"^{re.escape(name)}\s*=\s*([-+0-9.eE]+)", text, re.M) or
-             re.search(rf"constexpr\s+[\w:<> ]+\s+{re.escape(name)}\s*=\s*([-+0-9.eE]+)", text) or
-             re.search(rf"#\s*define\s+{re.escape(name)}\s+([-+0-9.eE]+)", text))
-        if not m:
-            raise ValueError(f"{name} not found in {path}")
-        out[name] = float(m.group(1))
-    return out
+    return {name: 1.0 if isinstance(spec, dict) else _read_number(text, name, path)
+            for name, spec in space.items()}
+
+
+def read_members(path: Path, space) -> dict:
+    """Base values of every weight a group multiplier scales."""
+    text = path.read_text(encoding="utf8")
+    return {m: _read_number(text, m, path)
+            for spec in space.values() if isinstance(spec, dict) for m in spec["scale"]}
 
 
 def gen_seeds(plan, gen):
@@ -158,9 +202,10 @@ def prepare(args):
     for m in maps:
         shutil.copy2(m, out / "maps" / m.name)
     start = read_current(out / "base" / args.params, space)
+    members = read_members(out / "base" / args.params, space)
     population.write_json(out / "plan.json", {
         "base": str(base), "base_hash": bot_hash(out / "base"), "params": args.params,
-        "space": space, "start": start, "opponents": [o.name for o in opponents],
+        "space": space, "start": start, "base_values": members, "opponents": [o.name for o in opponents],
         "maps": [m.stem for m in maps], "seed": args.seed, "seeds_per_gen": args.seeds,
         "unswbc": importlib.metadata.version("unswbc"), "popsize": args.popsize,
         "generations": args.gens, "sigma": args.sigma,
@@ -196,7 +241,8 @@ def run(out: Path, workers: int):
             for i, x in enumerate(xs):
                 bot = gen_dir / "bots" / f"c{i:02d}"
                 population.snapshot(out / "base", bot)
-                write_params(bot / plan["params"], decode(x, space))
+                write_params(bot / plan["params"],
+                             expand(decode(x, space), space, plan.get("base_values", {})))
                 candidates.append(bot)
             jobs = population.jobs_for(candidates, opponents, maps, gen_seeds(plan, gen), gen_dir / "replays")
             try:
