@@ -77,7 +77,7 @@ def prepare(args):
         "base": str(base), "base_hash": bot_hash(base), "params": args.params,
         "variants": variants, "opponents": opponents,
         "official_maps": [m.stem for m in official], "extra_maps": [m.stem for m in extra],
-        "seeds": [args.seed + i for i in range(args.seeds)],
+        "seeds": [args.seed + i for i in range(args.seeds)], "objective": "aligned",
         "unswbc": __import__("importlib.metadata").metadata.version("unswbc"),
         "deterministic_v6_clock": os.environ.get("BCSIM_DETERMINISTIC_V6") == "1"})
     print(out)
@@ -120,7 +120,8 @@ def run(out: Path, workers: int):
         for g in games:
             side = "A" if g["bot_a"] == name else "B"
             rows.append({"opponent": g["bot_b"] if side == "A" else g["bot_a"], "map": g["map"],
-                         "seed": g["seed"], "side": side, "margin": margins[g["replay"]][side],
+                         "seed": g["seed"], "side": side, "margin": margins[g["replay"]][side]["margin"],
+                         "aligned": margins[g["replay"]][side]["aligned"],
                          "win": g["winner"] == side})
         population.write_json(folder / "margins.json", rows)
         shutil.rmtree(folder / "replays", ignore_errors=True)
@@ -158,10 +159,14 @@ def report(out: Path):
         return
     base = data[BASE]
     official = set(plan["official_maps"])
+    key = plan.get("objective", "margin")
+    for rows in data.values():          # report in the plan's objective
+        for r in rows.values():
+            r["margin"] = r.get(key, r["margin"])
     lines = [f"# Ablation report: {out.name}", "",
              f"{len(plan['seeds'])} seeds, opponents {', '.join(plan['opponents'])}; "
              f"{len(plan['official_maps'])} official + {len(plan['extra_maps'])} extra maps, both sides. "
-             "Delta = variant margin minus base margin on the same (opponent, map, seed, side); "
+             f"Objective: {key}. Delta = variant score minus base score on the same (opponent, map, seed, side); "
              "positive means removing the group helped. 95% CI resamples (map, seed) blocks.", ""]
     base_rows = list(base.values())
     lines.append(f"base: mean margin {statistics.fmean(r['margin'] for r in base_rows):+.3f}, "

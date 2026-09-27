@@ -62,6 +62,19 @@ class TuneTest(unittest.TestCase):
             self.assertIn("inline constexpr bool GOAL = false;", hpp.read_text(encoding="utf8"))
             self.assertIn("inline constexpr double W_A = 5.0;", hpp.read_text(encoding="utf8"))
 
+    def test_aligned_objective_follows_the_longest_dragon(self):
+        from bcsim import margin
+        # we have more total length but a shorter longest dragon, and lose
+        timeline = [{"round": r, "A": [10, 200, 20], "B": [3, 60, 25]} for r in range(10, 500, 10)]
+        timeline.append({"round": 499, "A": [10, 200, 20], "B": [3, 60, 25]})
+        stats = {"timeline": timeline, "end": "round_limit", "winner": "B"}
+        m = margin.game_margin(stats, "A")
+        self.assertGreater(m["margin"], 0)          # length share says we were ahead
+        self.assertLess(m["aligned"], 0)            # the result and the longest dragon say otherwise
+        self.assertAlmostEqual(m["aligned"], 0.5 * -1 + 0.25 * (20 - 25) / 45 + 0.25 * m["margin"])
+        elim = {"timeline": timeline[:5], "end": "eliminated", "winner": "A"}
+        self.assertGreater(margin.game_margin(elim, "A")["aligned"], 0.9)
+
     def test_generation_seeds(self):
         self.assertEqual(tune.gen_seeds({"seed": 7}, 3), [7])
         self.assertEqual(tune.gen_seeds({"seed": 7, "seeds_per_gen": 2}, 0), [7, 8])

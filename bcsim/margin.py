@@ -44,8 +44,22 @@ def game_margin(stats, side):
         else:
             raise ValueError(f"missing timeline sample {round_no}")
         margins.append(value)
+    outcome = 1.0 if stats["winner"] == side else 0.0 if stats["winner"] not in ("A", "B") else -1.0
+    if stats["end"] == "eliminated" and stats["winner"] in ("A", "B"):
+        longest_share = outcome
+    else:
+        longest_share = share(final[side][2], final[other][2])
+    margin = statistics.fmean(margins)
     return {
-        "margin": statistics.fmean(margins),
+        "margin": margin,
+        # Win-aligned objective. A round-500 game is decided by the longest
+        # living dragon, then total length, so the total-length margin alone
+        # disagreed with the result in 36 of 180 v7-base vs nicked games (26
+        # wins with less total length, 10 losses with more). Half the result,
+        # a quarter the final longest-dragon share, a quarter the (smoother)
+        # time-averaged total-length margin.
+        "aligned": 0.5 * outcome + 0.25 * longest_share + 0.25 * margin,
+        "longest_share": longest_share,
         "final_share": share(final[side][1], final[other][1]),
         "final_longest_gap": final[side][2] - final[other][2],
         "elimination_round": end_round if stats["end"] == "eliminated" else None,

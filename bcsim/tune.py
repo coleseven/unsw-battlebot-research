@@ -141,9 +141,13 @@ def gen_seeds(plan, gen):
 
 
 def _side_margins(replay):
-    """Both sides' margins for one replay (a worker job: decoding dominates scoring)."""
+    """Both sides' objectives for one replay (a worker job: decoding dominates scoring)."""
     stats = analyze.game_stats(Path(replay).read_bytes())
-    return {side: margin.game_margin(stats, side)["margin"] for side in "AB"}
+    out = {}
+    for side in "AB":
+        m = margin.game_margin(stats, side)
+        out[side] = {"margin": m["margin"], "aligned": m["aligned"]}
+    return out
 
 
 def replay_margins(games, workers):
@@ -156,16 +160,16 @@ def replay_margins(games, workers):
         return dict(zip(replays, ex.map(_side_margins, replays, chunksize=8)))
 
 
-def score(games, candidate, margins=None):
+def score(games, candidate, margins=None, objective="margin"):
     per_map = {}
     for game in games:
         if game.get("error"):
             return -2.0, {"error": game["error"]}
         side = "A" if game["bot_a"] == candidate else "B"
         if margins is not None and game["replay"] in margins:
-            value = margins[game["replay"]][side]
+            value = margins[game["replay"]][side][objective]
         else:
-            value = _side_margins(game["replay"])[side]
+            value = _side_margins(game["replay"])[side][objective]
         per_map.setdefault(game["map"].lower(), []).append(value)
     means = {m: statistics.fmean(v) for m, v in per_map.items()}
     return statistics.fmean(means.values()) + 0.25 * min(means.values()), means
@@ -209,6 +213,7 @@ def prepare(args):
         "base": str(base), "base_hash": bot_hash(out / "base"), "params": args.params,
         "space": space, "start": start, "base_values": members, "opponents": [o.name for o in opponents],
         "maps": [m.stem for m in maps], "seed": args.seed, "seeds_per_gen": args.seeds,
+        "objective": args.objective,
         "unswbc": importlib.metadata.version("unswbc"), "popsize": args.popsize,
         "generations": args.gens, "sigma": args.sigma,
         "deterministic_v6_clock": os.environ.get("BCSIM_DETERMINISTIC_V6") == "1"})
@@ -260,7 +265,7 @@ def run(out: Path, workers: int):
         fitness, rows = [], []
         for i, bot in enumerate(candidates):
             mine = [g for g in games if bot.name in (g["bot_a"], g["bot_b"])]
-            f, detail = score(mine, bot.name, margins)
+            f, detail = score(mine, bot.name, margins, plan.get("objective", "margin"))
             wins = sum(g["winner"] == ("A" if g["bot_a"] == bot.name else "B") for g in mine)
             fitness.append(-f)   # CMA-ES minimises
             rows.append({"gen": gen, "cand": bot.name, "F": f, "wins": wins, "games": len(mine),
@@ -295,6 +300,8 @@ def main():
     ap.add_argument("--extra-maps", nargs="*", default=[],
                     help="additional .map files (ladder maps outside the official suite)")
     ap.add_argument("--seed", type=int, default=53001)
+    ap.add_argument("--objective", choices=["aligned", "margin"], default="aligned",
+                    help="per-game score: aligned (win + longest dragon + length) or margin (length only)")
     ap.add_argument("--seeds", type=int, default=1,
                     help="engine seeds per generation (fresh each generation)")
     ap.add_argument("--popsize", type=int, default=12)
