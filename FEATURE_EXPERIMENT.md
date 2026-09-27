@@ -151,6 +151,25 @@ together. Confirm on a **fresh** seed set that B1 >= B0 (paired CI not below
 0). If the joint removal hurts, restore neutral groups one at a time (largest
 single-group delta first) until it does not.
 
+### Stage 2 result (27 Sep 03:06, `results/20260927-021008-ablate-5c0197`, fresh seeds 71001-71004)
+
+| variant | pool delta [95% CI] | guard | all 15 | wins /240 |
+|---|---|---|---|---|
+| drop_harmful (no trap, no defend) | **+0.131 [+0.051, +0.210]** | -0.022 | +0.080 [+0.018, +0.148] | 161 (base 147) |
+| lean (+ no explore, revisit, fan, hunt, goal, protect) | +0.098 [-0.057, +0.248] | +0.007 | +0.068 | 159 |
+| simplified (+ no headsafe, straight, portal) | +0.005 [-0.143, +0.148] | +0.109 | +0.040 | 156 |
+
+The trap/defend removal replicated exactly (+0.131 in both stages; +0.10 vs
+v7-base, +0.06 vs nicked). Removing the neutral groups together gives the gain
+back, so they stay. **B1 = v7-base with W_TRAP, W_LETHAL, W_DEFEND = 0**
+(`results/v7-b1-bot`, hash b98a09bab93b8c7c).
+
+Stage 3 launched 27 Sep 03:07: `results/20260927-030709-tune-4efc96`, space
+`experiments/tuning/space_v7_b1_groups.json` (9 group multipliers 0.25-3x +
+FEED_ROUND, SPLIT_UNTIL_LARGE, SPLIT_UNTIL_SMALL = 12 dims), current 10-map
+pool, vs v7-base and nicked, 2 fresh seeds per generation, aligned objective,
+F = plain mean over maps (`--worst-weight 0`), popsize 12, 12 workers.
+
 ## 4. Stage 3: tune the compact set with group multipliers
 
 Tune **one multiplier per kept group** (scaling that group's weights from

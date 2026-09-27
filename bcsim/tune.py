@@ -13,7 +13,7 @@ or [low, high, "int"]; CMA-ES works in [0, 1] per parameter.
 
 Objective (V6_CORE_PLAN.md section 4.2): for every game, the time-averaged
 team-length share margin (bcsim.margin.game_margin); per map, the mean over
-opponents and sides; F = mean over maps + 0.25 * worst map. Any game error
+opponents and sides; F = mean over maps + w * worst map (w = --worst-weight, default 0.25). Any game error
 scores the candidate F = -2. With --seeds N each generation plays N fresh engine seeds (unswbc >= 1.1 seeds pearl spawns); older plans use one fixed seed.
 Every generation is checkpointed (CMA state plus every evaluated vector).
 Set BCSIM_DETERMINISTIC_V6=1 for Python v6-core bots (judge-calibrated clock).
@@ -160,7 +160,7 @@ def replay_margins(games, workers):
         return dict(zip(replays, ex.map(_side_margins, replays, chunksize=8)))
 
 
-def score(games, candidate, margins=None, objective="margin"):
+def score(games, candidate, margins=None, objective="margin", worst_weight=0.25):
     per_map = {}
     for game in games:
         if game.get("error"):
@@ -172,7 +172,7 @@ def score(games, candidate, margins=None, objective="margin"):
             value = _side_margins(game["replay"])[side][objective]
         per_map.setdefault(game["map"].lower(), []).append(value)
     means = {m: statistics.fmean(v) for m, v in per_map.items()}
-    return statistics.fmean(means.values()) + 0.25 * min(means.values()), means
+    return statistics.fmean(means.values()) + worst_weight * min(means.values()), means
 
 
 def prepare(args):
@@ -215,7 +215,7 @@ def prepare(args):
         "base": str(base), "base_hash": bot_hash(out / "base"), "params": args.params,
         "space": space, "start": start, "base_values": members, "opponents": [o.name for o in opponents],
         "maps": [m.stem for m in maps], "seed": args.seed, "seeds_per_gen": args.seeds,
-        "objective": args.objective,
+        "objective": args.objective, "worst_weight": args.worst_weight,
         "unswbc": importlib.metadata.version("unswbc"), "popsize": args.popsize,
         "generations": args.gens, "sigma": args.sigma,
         "deterministic_v6_clock": os.environ.get("BCSIM_DETERMINISTIC_V6") == "1"})
@@ -267,7 +267,8 @@ def run(out: Path, workers: int):
         fitness, rows = [], []
         for i, bot in enumerate(candidates):
             mine = [g for g in games if bot.name in (g["bot_a"], g["bot_b"])]
-            f, detail = score(mine, bot.name, margins, plan.get("objective", "margin"))
+            f, detail = score(mine, bot.name, margins, plan.get("objective", "margin"),
+                              plan.get("worst_weight", 0.25))
             wins = sum(g["winner"] == ("A" if g["bot_a"] == bot.name else "B") for g in mine)
             fitness.append(-f)   # CMA-ES minimises
             rows.append({"gen": gen, "cand": bot.name, "F": f, "wins": wins, "games": len(mine),
@@ -305,6 +306,8 @@ def main():
     ap.add_argument("--seed", type=int, default=53001)
     ap.add_argument("--objective", choices=["aligned", "margin"], default="aligned",
                     help="per-game score: aligned (win + longest dragon + length) or margin (length only)")
+    ap.add_argument("--worst-weight", type=float, default=0.25,
+                    help="F = mean over maps + this x worst map (0 = plain mean, lowest noise)")
     ap.add_argument("--seeds", type=int, default=1,
                     help="engine seeds per generation (fresh each generation)")
     ap.add_argument("--popsize", type=int, default=12)
