@@ -240,6 +240,27 @@ held out).
   identically to v7-base. Hidden-spawn map extracts moved to
   `maps/server/hidden/` (a case-insensitive `trophy.map` lookup had picked one up).
 
+### 27 Sep evening: CMA-ES upgrades and v9 run
+
+- Research + measurement: the tuner's signal-to-noise ratio is about 1 per
+  generation (candidate F spread vs 0.059 expected noise), so about half of each
+  ranking is noise. Changes in `bcsim/tune.py`: `--backend cmaes-lra`
+  (learning-rate adaptation, Nomura et al. GECCO 2023), `--eval-mean` (the
+  distribution mean is played every generation on the same seeds: an honest
+  progress curve and the final pick), `--map-sample pair` (one of each
+  map/perturbed pair per generation), `--warm-from` (start from a previous
+  run's CMA mean and covariance, rescaled to new bounds), `--fixed`.
+- Switches taken out of CMA (poor fit for binary variables) and decided by a
+  2x2 paired A/B at the gen-4 CMA mean (`results/20260927-190107-ablate-6028c1`,
+  1,080 games, 3 training opponents, 15 maps, 3 seeds): portal-by-age +0.068
+  [-0.011, +0.148] on the pool (and +0.07 within every tuning generation) ->
+  **on**; Voronoi +0.016 [-0.080, +0.109] -> off. The gen-4 mean itself won
+  156/270 (+0.29 vs v7-base, +0.32 vs leviathan3, -0.19 vs nicked v75).
+- v9 run `results/20260927-194503-tune-ccc4cd`: warm start from the v8 run's
+  gen-4 state, 16 dims (`space_v9.json`, bounds widened where the mean sat on
+  them: food, attack, action model, goal), cmaes-lra, popsize 12 + mean,
+  pair map sampling, vs nicked v75 / leviathan3 / v7-base.
+
 ## 4. Stage 3: tune the compact set with group multipliers
 
 Tune **one multiplier per kept group** (scaling that group's weights from
