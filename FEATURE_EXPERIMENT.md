@@ -1,5 +1,9 @@
 # Feature-efficiency experiment (v8 plan, drafted 2026-09-26)
 
+**Status (26 Sep 21:45):** stage 1 running, `results/20260926-214429-ablate-346278`
+(18 groups + base, vs v7-base and nicked, 15 maps, both sides, 4 seeds, 4,560
+games, aligned objective, in-process C++, 12 workers).
+
 **Question:** which of the bot's features earn their place, and what is the
 smallest feature set that, once tuned, beats v6.1 (`versions/v7-base`, the
 C++ port with v6.1 parameters) and nicked v44?
@@ -33,9 +37,13 @@ and passes parity locally. Runs locally. The user uploads bots.
 - **Opponents:**
   - training/screening: `B0` (= v7-base) and nicked v34;
   - held out (final stage only): nicked v44, ctmes, Python v6, leviathan3.
-- **Metric:** per-game margin (time-averaged team-length share,
-  `bcsim.margin`) as the primary measure because it is far less noisy than
-  win/loss; wins reported alongside.
+- **Metric:** the win-aligned per-game score (`bcsim.margin` "aligned"):
+  0.5 x result (+1/0/-1) + 0.25 x final longest-dragon share + 0.25 x the
+  time-averaged total-length margin; eliminations score +/-1. The round-500
+  tiebreak is the longest living dragon, and the length-only margin disagreed
+  with the result in 36 of 180 v7-base vs nicked games (26 wins with less
+  total length, 10 losses with more) and in ranked play (a Slithery Fight loss
+  with 277 vs 52 total length, 27 vs 30 longest). Wins reported alongside.
 - **Statistics:** paired difference vs B0 on identical (map, side, seed)
   blocks; 95% bootstrap CI resampling (map, seed) blocks. With 18 variants
   screened at once, a result counts only if it **replicates on a fresh seed
@@ -43,7 +51,10 @@ and passes parity locally. Runs locally. The user uploads bots.
 - **CPU:** any variant that raises search effort gets a judge-sandbox check
   (`unswbc run --sandbox`, max < 60M points per turn).
 
-Before stage 1, measure the noise: B0 vs nicked v34, 15 maps x 2 sides x 6
+Noise measured 26 Sep (length margin, v7-base vs nicked, 6 seeds): seed-to-seed SD
+0.33 per (map, side) cell, so K = 4 seeds with 2 opponents gives a paired CI
+half-width of about 0.06 (worst case, ignoring the positive correlation of paired
+games). Stage 1 therefore uses K = 4. Original plan text: B0 vs nicked v34, 15 maps x 2 sides x 6
 seeds (180 games). From the per-block SD, pick K so the CI half-width on a
 paired margin difference is about 0.03 (expected K = 3-4).
 
