@@ -218,6 +218,28 @@ held out).
   eaten). Our hub book identifies maps by walls, so it may pull to hubs that
   moved. Local testing needs spawn-perturbed maps.
 
+### 27 Sep afternoon: v8 code changes (C++ switches, all default off)
+
+- Portal book regenerated from all 15 ranked maps (the 4 ladder maps had no
+  entries). Changed nothing on Prisoners Dilemma: 0 portal crossings, 0/4 vs
+  nicked v75. The PD stall is not portals: its fast spawners sit next to each
+  team's start; in rounds 0-100 nicked ate 59 pearls (48 camping six fast
+  tiles), we ate 8 while our children fanned out and explored.
+- CPP_PORTAL_AGE / CPP_PORTAL_SPREAD, CPP_TRAP_OPEN, CPP_VOR: in the v8 tuning
+  space (`results/20260927-132201-tune-a63e89`).
+- CPP_SONAR_HUB (hub sharing over sonar, protocol-2 32-bit messages, team tag
+  + checksum, rotates through known hubs, receivers keep up to 4): judge
+  sandbox accepts it (no invalid actions, max 7.1M points). **It hurts on
+  Prisoners Dilemma vs nicked v75**: our team is down to 1 dragon of length 3
+  by round 100 in all 4 seeds (without it 5-7 dragons), 24 vs 180 pearls over
+  4 games; neutral on Trauma/Portals, 2/4 vs 1/4 on Autarky. Sharing sends our
+  dragons to the hub, where nicked wins the fight. The underlying deficiency is
+  **losing hub contests** (nicked: paired head-on trades and walling decide
+  them). Left off.
+- With every switch off the build still plays 88/88 official-map games
+  identically to v7-base. Hidden-spawn map extracts moved to
+  `maps/server/hidden/` (a case-insensitive `trophy.map` lookup had picked one up).
+
 ## 4. Stage 3: tune the compact set with group multipliers
 
 Tune **one multiplier per kept group** (scaling that group's weights from

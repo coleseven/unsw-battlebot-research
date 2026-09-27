@@ -672,9 +672,64 @@ class Brain {
         return std::string("MOVE ") + obs.facing;
     }
 
+    // ---- CPP_SONAR_HUB: share learned hubs ------------------------------------
+    // 32-bit message (protocol 2 carries 32-bit sonar): team tag 8 | x 6 | y 6 |
+    // value 4 | type 2 (0 = hub) | checksum 6. The team tag keeps the other team,
+    // including a mirror copy of this bot, from reading or feeding us hubs.
+    Hubs shared_hubs;
+    static std::uint32_t hub_tag(char team) { return team == 'A' ? 0xB7u : 0x6Du; }
+    static std::uint32_t hub_check(std::uint32_t tag, std::uint32_t x, std::uint32_t y, std::uint32_t v) {
+        return (tag + 7 * x + 13 * y + 3 * v) & 63u;
+    }
+    std::uint32_t encode_hub(int cell, double value) const {
+        std::uint32_t tag = hub_tag(init.team), x = cell % memory.width, y = cell / memory.width;
+        long q = std::lround(value * 15.0);
+        std::uint32_t v = static_cast<std::uint32_t>(std::clamp(q, 1L, 15L));
+        return (tag << 24) | (x << 18) | (y << 12) | (v << 8) | hub_check(tag, x, y, v);
+    }
+    void receive_hubs(const Obs& obs) {
+        std::uint32_t tag = hub_tag(init.team);
+        int best_cell = -1; std::uint32_t best_v = 0;
+        for (std::uint32_t m : obs.msgs) {
+            if ((m >> 24) != tag || ((m >> 6) & 3u) != 0) continue;
+            std::uint32_t x = (m >> 18) & 63u, y = (m >> 12) & 63u, v = (m >> 8) & 15u;
+            if (v == 0 || (m & 63u) != hub_check(tag, x, y, v)) continue;
+            if (static_cast<int>(x) >= memory.width || static_cast<int>(y) >= memory.height) continue;
+            if (v > best_v) { best_v = v; best_cell = static_cast<int>(y) * memory.width + static_cast<int>(x); }
+        }
+        if (best_cell >= 0) {
+            // keep up to 4 distinct shared hubs (strongest first), like learned hubs
+            bool found = false;
+            for (auto& h : shared_hubs)
+                if (h.first == best_cell) { h.second = std::max(h.second, best_v / 15.0); found = true; }
+            if (!found) shared_hubs.emplace_back(best_cell, best_v / 15.0);
+            std::stable_sort(shared_hubs.begin(), shared_hubs.end(),
+                             [](const auto& a, const auto& b) { return a.second > b.second; });
+            if (shared_hubs.size() > 4) shared_hubs.resize(4);
+        }
+        // own knowledge (book or learned) wins; a dragon that knows no hub adopts the shared one
+        if (memory.hubs.empty() && !shared_hubs.empty()) memory.set_hubs(shared_hubs);
+    }
+    std::string sonar_lines(const Obs& obs) const {
+        if (memory.hubs.empty() || (obs.round + init.id) % params::CPP_SONAR_EVERY != 0) return "";
+        // rotate through every known hub, so receivers learn all of them rather
+        // than all converging on one
+        const auto& hub = memory.hubs[(obs.round / params::CPP_SONAR_EVERY) % memory.hubs.size()];
+        std::string msg = std::to_string(encode_hub(hub.first, hub.second)), out;
+        for (char d : DIRS) out += std::string("\nSONAR ") + d + " " + msg;
+        return out;
+    }
+
     std::string turn(const Obs& obs) {
+        std::string action = decide(obs);
+        if (params::CPP_SONAR_HUB && !action.empty()) action += sonar_lines(obs);
+        return action;
+    }
+
+    std::string decide(const Obs& obs) {
         double t0 = cpu_points();  // CPU points at the turn's start (for CPP_BUDGET)
         memory.update(obs);
+        if (params::CPP_SONAR_HUB) receive_hubs(obs);
         if (params::GOAL) memory.update_goal(obs, init.id);
         if (!born_round) born_round = obs.round;
         bool protectedFlag = king_protected(obs, *born_round);

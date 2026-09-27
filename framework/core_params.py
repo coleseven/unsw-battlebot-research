@@ -117,3 +117,7 @@ CPP_VOR = 0             # C++ only: 1 = scale pearl values by who reaches them f
 CPP_VOR_LOST = 0.5      # C++ only: a visible enemy head reaches the pearl first
 CPP_VOR_CONTEST = 1.5   # C++ only: an enemy head reaches it within 2 moves after us (take it now)
 CPP_VOR_MATE = 0.6      # C++ only: a teammate head is closer (leave it to them)
+# Hub sharing by sonar: a split child starts with no memory, so it never learns a hub it
+# has not seen (Prisoners Dilemma: 8 pearls eaten vs nicked's 59 in rounds 0-100)
+CPP_SONAR_HUB = 0       # C++ only: 1 = dragons that know a hub send it; ones that know none adopt it
+CPP_SONAR_EVERY = 5     # C++ only: send the best known hub every this many rounds (all 4 directions)
