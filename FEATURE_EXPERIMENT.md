@@ -170,6 +170,30 @@ FEED_ROUND, SPLIT_UNTIL_LARGE, SPLIT_UNTIL_SMALL = 12 dims), current 10-map
 pool, vs v7-base and nicked, 2 fresh seeds per generation, aligned objective,
 F = plain mean over maps (`--worst-weight 0`), popsize 12, 12 workers.
 
+### B1 held-out check (27 Sep 08:24, `results/20260927-061647-full-change-fc188d` vs `...-061649-full-change-db2585`)
+
+Paired, same seeds 53001-53003, 15 maps, both sides, vs nicked v44, ctmes,
+Python v6, leviathan3 (none used in stages 1-2):
+
+| | B1 wins | v7-base wins | aligned delta [95% CI] |
+|---|---|---|---|
+| all 15 maps | 252/360 | 244/360 | +0.040 [-0.026, +0.106] |
+| current pool | 161/240 | 157/240 | +0.032 [-0.065, +0.126] |
+| pool vs nicked v44 | 25/60 | 28/60 | -0.035 |
+| pool vs v6 | 41/60 | 37/60 | +0.104 |
+
+Per pool map (B1 vs v7-base wins of 24): Trauma 18-11, Portals 16-11,
+Default 12-8, Autarky 23-21, Prisoners Dilemma 18-17, Trophy 19-21, Devil
+21-23, Schooltime 17-19, Slithery 9-11, **Queen Of Spades 8-15**.
+
+So the stage 1-2 gain (+0.13) was mostly against the training opponents;
+held out it is small and not significant. Dropping the trap penalty helps the
+open ladder maps and hurts Queen Of Spades (a tight map where the room check
+matters). Not upload-worthy on its own. Follow-ups: a map-dependent trap
+weight (off or low on open maps, on in tight ones), and training against more
+than two opponents (add nicked v44 / ctmes to the training set, keep others
+held out).
+
 ## 4. Stage 3: tune the compact set with group multipliers
 
 Tune **one multiplier per kept group** (scaling that group's weights from
