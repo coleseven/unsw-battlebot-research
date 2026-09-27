@@ -194,6 +194,30 @@ weight (off or low on open maps, on in tight ones), and training against more
 than two opponents (add nicked v44 / ctmes to the training set, keep others
 held out).
 
+### 27 Sep morning: new opponents and ladder findings (before re-tuning)
+
+- **New sparring bots** (GitHub, triaged, in git-ignored `sparring/`), vs
+  v7-base on the current pool, both sides, 2 seeds (40 games):
+  cpp_nicked_v75 33/40, nicked_v75py 33/40 (same logic), nicked_lab 32/40,
+  cpp_abyss 14/40, cpp_danielhe 2/40, patrick 1/40, kgts 0/40, ryuken 0/40.
+  nicked v75 (27 Sep, "changed to cpp, upgrade king cashin and portal
+  traversal") sweeps Prisoners Dilemma, Portals, Trauma, Slithery and
+  Schooltime 4/4.
+- **v7-base on the ladder** (sub 7946, 90 games): 53-37, Elo 1500 -> 1575.
+  Losses are decided early: total length flat from round 30 to 100 (7 alive,
+  16 total) while the opponent triples. The stall is a portal-map problem:
+  Prisoners Dilemma 10/10 games, Portals 6/8, Trauma 4/9, QoS 3/8, others ~0.
+  Cause: unknown portals score -60 (W_PORTAL_UNSEEN) with only +40 scouting
+  bonus before game round 100, so dragons never cross; nicked values an unseen
+  portal at +0.7 pearl before round 50 and ramps its penalty by the dragon's
+  own age, and spreads teammates across portals.
+- **Map variants:** since 27 Sep the server plays hash-suffixed variants
+  (Prisoners_Dilemma_12862686, Devil_c5844559, Default_9c45bfb7, Trauma_...,
+  Slithery_..., Autarky_..., Portals_...): same walls (Default: 66 edges
+  differ), pearl spawn data hidden in the replay (spawners exist: pearls are
+  eaten). Our hub book identifies maps by walls, so it may pull to hubs that
+  moved. Local testing needs spawn-perturbed maps.
+
 ## 4. Stage 3: tune the compact set with group multipliers
 
 Tune **one multiplier per kept group** (scaling that group's weights from
