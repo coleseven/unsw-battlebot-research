@@ -287,4 +287,64 @@ Tuning restarted on 1.1.0: `20260926-170140-tune-268a93`, from the untuned
 C++ bot, 5 screen maps + Autarky, Prisoners Dilemma, Slithery Fight, Portals,
 2 fresh seeds per generation, vs nicked v34 and Python v6.1.
 
+## In-process C++ for local simulation (cloud task 3, 2026-09-27)
+
+`bcsim.match` can now run the C++ bot in-process, so local tuning stops paying
+one OS process per dragon. It is off by default and changes nothing about the
+upload.
+
+- **C ABI** (`cppbot_inproc/inproc.cpp`, outside every bot directory so the
+  judge build never sees it): `bc_new` / `bc_step` / `bc_free`, one handle per
+  dragon, all state in the handle. `bc_step` returns exactly what `main.cpp`
+  prints. The header audit found no mutable globals (only read-only book data),
+  so handles are isolated.
+- **Shared library**: built with the **same compiler and flags unswbc uses for
+  the native build** (`toolchain.find_compiler` + `-std=c++20 -O2`, plus
+  `-fPIC -shared`); a different compiler broke score ties differently and the
+  game diverged. Cached at `<bot>/.unswbc-build/inproc.so` (ignored by
+  `bot_files`, so the bot's content hash is unchanged) with a build-signature
+  guard, rebuilt only when a source or the flags change. `match.prebuild`
+  builds it once before the worker pool.
+- **Loader**: `load_bot` returns an `InProcessCppBot` (driven through `ctypes`)
+  when `BCSIM_CPP_INPROC=1` and the directory is a C++ bot; it plugs into
+  `play()` like a process bot (`new_dragon` → handle, `ask` → `bc_step`,
+  `stop` → `bc_free`) and keeps the same directory content hash.
+
+**Parity** (`BCSIM_CPP_INPROC=1` vs `=0`, identical winner, rounds, lengths,
+deaths and replay bytes): `versions/v7-base` vs `opponents/splitter`, vs
+`versions/v6` and vs itself, all 11 official maps, both sides, seeds 1-3 —
+**198/198 configs identical, 0 mismatches**. The Python opponents must run
+under `BCSIM_DETERMINISTIC_V6=1`: their own wall-clock search budget otherwise
+makes the reference (process) and in-process games diverge under CPU load, which
+is the opponent's nondeterminism, not the loader's (the C++ bot has no
+wall-clock path with `CPP_BUDGET=0`). Isolation is covered by a unit test
+(`tests/test_inproc.py`): two handles stepped interleaved give the same actions
+as each run alone.
+
+**Speed** (Linux, seconds per game, prebuilt so the one-time compile is
+excluded):
+
+| matchup | map | process | in-process | speed-up |
+|---|---|---|---|---|
+| v7-base vs Python v6 | default_small | 9.9s | 6.7s | 1.5x |
+| v7-base vs Python v6 | Devil | 18.3s | 17.7s | 1.0x |
+| v7-base vs Python v6 | big_empty | 54.5s | 47.5s | 1.1x |
+| v7-base vs v7-base | default_small | 1.9s | 0.9s | 2.1x |
+| v7-base vs v7-base | Devil | 3.2s | 1.6s | 2.0x |
+| v7-base vs v7-base | big_empty | 34.2s | 23.4s | 1.5x |
+
+C++-vs-C++ is where the removed process overhead shows (about 2x on Linux);
+against Python v6 the heavy Python search dominates, so the in-process C++ side
+saves less. On Windows, where per-process startup and the pipe round trip are
+far more expensive, the win is larger (the reason for this task).
+
+**Upload unchanged**: `inproc.cpp` is outside `cppbot/`, so `bot.toml`'s
+`*.cpp`/`*.hpp` globs never include it; `cppbot` still builds `main.cpp` and
+plays under `unswbc run`/`--sandbox`. Existing tests still pass.
+
+**How to enable locally**: `export BCSIM_CPP_INPROC=1` (and
+`BCSIM_DETERMINISTIC_V6=1` when Python bots are in the match). The tuner and
+`full_change_test` pick it up through `bcsim.match`. Wrap the sparring C bots
+the same way locally (their code stays local and is never pushed).
+
 Do not upload; the user uploads bots.

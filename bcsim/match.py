@@ -13,11 +13,14 @@ final lengths come from the engine's own end-of-game standings.
 
 from __future__ import annotations
 
+import ctypes
 import hashlib
 import importlib.abc
 import importlib.util
 import os
 import pathlib
+import shutil
+import subprocess
 import sys
 import time
 from dataclasses import asdict, dataclass, field
@@ -25,7 +28,7 @@ from dataclasses import asdict, dataclass, field
 from unswbc.engine import EngineModule
 
 from . import replay as rp
-from .paths import bot_files, bot_hash, foreign_imports
+from .paths import ROOT, bot_files, bot_hash, foreign_imports
 
 _ENGINE: EngineModule | None = None
 
@@ -122,6 +125,121 @@ class _InProcDragon:
         pass
 
 
+# -- in-process C++ bots (local simulation only) --------------------------------
+#
+# For fast local tuning we can run the C++ bot in-process instead of one OS
+# process per dragon: a small C ABI (cppbot_inproc/inproc.cpp) is built against
+# the bot directory's headers/params into a shared library and driven through
+# ctypes. Off by default; opt in with BCSIM_CPP_INPROC=1. What gets uploaded is
+# unchanged -- inproc.cpp lives outside every bot directory and the .so is
+# cached under .unswbc-build (ignored by bot_files, so the bot's hash is the
+# same as the process build's).
+
+INPROC_SRC = ROOT / "cppbot_inproc" / "inproc.cpp"
+_CPP_LIBS: dict[str, ctypes.CDLL] = {}
+
+
+def cpp_inproc_enabled() -> bool:
+    return os.environ.get("BCSIM_CPP_INPROC") == "1"
+
+
+def is_cpp_bot(path: pathlib.Path) -> bool:
+    """A folder bot built from C++ sources (has main.cpp, no Python brain)."""
+    return (path / "main.cpp").is_file() and not (path / "brain.py").is_file()
+
+
+def _cpp_compiler() -> list[str]:
+    # Use the exact compiler unswbc uses for the native process build, so the
+    # in-process library computes identical floating point (a different compiler
+    # breaks score ties differently and the game diverges over 500 rounds).
+    from unswbc import toolchain
+    return toolchain.find_compiler(False)
+
+
+def build_cpp_lib(path: pathlib.Path) -> pathlib.Path:
+    """Build (or reuse) the in-process shared library for a C++ bot directory.
+
+    Cached at <bot>/.unswbc-build/inproc.so; that directory is ignored by
+    bot_files, so building leaves the bot's content hash untouched. Rebuilt only
+    when the wrapper or a bot source is newer than the cached library.
+    """
+    build_dir = path / ".unswbc-build"
+    build_dir.mkdir(exist_ok=True)
+    lib = build_dir / "inproc.so"
+    sig_file = build_dir / "inproc.sig"
+    sources = [INPROC_SRC, *(f for f in path.iterdir()
+                             if f.is_file() and f.suffix in (".cpp", ".hpp"))]
+    newest = max(f.stat().st_mtime for f in sources)
+    tmp = lib.with_suffix(".so.tmp")
+    # Match unswbc's native flags (-std=c++20 -O2); -fPIC -shared build a
+    # library and do not change the arithmetic.
+    cmd = [*_cpp_compiler(), "-std=c++20", "-O2", "-fPIC", "-shared",
+           "-I", str(path), str(INPROC_SRC), "-o", str(tmp)]
+    sig = " ".join(cmd)
+    fresh = (lib.is_file() and lib.stat().st_mtime >= newest
+             and sig_file.is_file() and sig_file.read_text() == sig)
+    if fresh:
+        return lib
+    proc = subprocess.run(cmd, capture_output=True, text=True)
+    if proc.returncode != 0:
+        raise RuntimeError(f"in-process build failed for {path.name}:\n{proc.stderr}")
+    os.replace(tmp, lib)  # atomic, so parallel workers never see a half-written .so
+    sig_file.write_text(sig)
+    return lib
+
+
+def _load_cpp_lib(path: pathlib.Path) -> ctypes.CDLL:
+    lib_path = build_cpp_lib(path)
+    key = str(lib_path)
+    lib = _CPP_LIBS.get(key)
+    if lib is None:
+        lib = ctypes.CDLL(str(lib_path))
+        lib.bc_new.restype = ctypes.c_void_p
+        lib.bc_new.argtypes = [ctypes.c_char_p, ctypes.c_uint64]
+        lib.bc_step.restype = ctypes.c_char_p
+        lib.bc_step.argtypes = [ctypes.c_void_p, ctypes.c_char_p]
+        lib.bc_free.restype = None
+        lib.bc_free.argtypes = [ctypes.c_void_p]
+        _CPP_LIBS[key] = lib
+    return lib
+
+
+class _CppDragon:
+    """One dragon handle in the shared library; the reply matches main.cpp."""
+
+    def __init__(self, lib: ctypes.CDLL, init: bytes) -> None:
+        self.lib = lib
+        self.handle = lib.bc_new(init, 0)
+        self.error = None
+        if not self.handle:
+            raise RuntimeError("bc_new returned null")
+
+    def ask(self, block: bytes) -> bytes:
+        return self.lib.bc_step(self.handle, block)
+
+    def stop(self) -> None:
+        if self.handle:
+            self.lib.bc_free(self.handle)
+            self.handle = None
+
+
+class InProcessCppBot:
+    """A C++ bot driven in-process (like ProcessBot, without the subprocess)."""
+
+    kind = "cpp_inproc"
+
+    def __init__(self, path: pathlib.Path) -> None:
+        self.path = path
+        self.hash = bot_hash(path)  # same identity as the process build
+        self.lib = _load_cpp_lib(path)
+
+    def new_dragon(self, init: bytes, name: str) -> _CppDragon:
+        return _CppDragon(self.lib, init)
+
+    def close(self) -> None:
+        pass
+
+
 # -- subprocess bots (anything unswbc run can play) -----------------------------
 
 
@@ -166,10 +284,14 @@ def prebuild(paths) -> None:
     """
     from unswbc import run as ubc_run
 
+    inproc = cpp_inproc_enabled()
     for path in dict.fromkeys(pathlib.Path(p) for p in paths):
         if (path / "main.py").is_file() or (path / "brain.py").is_file():
             continue
-        ubc_run._resolve(str(path))
+        if inproc and is_cpp_bot(path):
+            build_cpp_lib(path)  # in-process shared library, not the wasm build
+        else:
+            ubc_run._resolve(str(path))
 
 
 def load_bot(path: pathlib.Path, team: str):
@@ -177,6 +299,8 @@ def load_bot(path: pathlib.Path, team: str):
     # bots may also name a module brain.py while using their own wire format.
     if (path / "brain.py").is_file() and (path / "bc.py").is_file():
         return InProcessBot(path)
+    if cpp_inproc_enabled() and is_cpp_bot(path):
+        return InProcessCppBot(path)
     return ProcessBot(path, team)
 
 
