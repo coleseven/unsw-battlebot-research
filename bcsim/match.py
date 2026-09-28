@@ -173,30 +173,55 @@ def build_cpp_lib(path: pathlib.Path) -> pathlib.Path:
     sources = [INPROC_SRC, *(f for f in path.iterdir()
                              if f.is_file() and f.suffix in (".cpp", ".hpp"))]
     newest = max(f.stat().st_mtime for f in sources)
-    tmp = lib.with_suffix(f".{os.getpid()}.tmp")   # per process: parallel builders never share one
     # Match unswbc's native flags (-std=c++20 -O2); -fPIC -shared build a
-    # library and do not change the arithmetic.
-    cmd = [*_cpp_compiler(), "-std=c++20", "-O2", "-fPIC", "-shared",
-           "-I", str(path), str(INPROC_SRC), "-o", str(tmp)]
-    sig = " ".join(cmd)
-    fresh = (lib.is_file() and lib.stat().st_mtime >= newest
-             and sig_file.is_file() and sig_file.read_text() == sig)
-    if fresh:
+    # library and do not change the arithmetic. The signature leaves out the
+    # (per-process) output path: including it made every worker process see a
+    # stale cache and recompile every bot at start-up (28 Sep: 8 parallel GCC
+    # -O2 builds per batch on top of the games; GCC segfaulted three times and
+    # the PC blue-screened twice).
+    base_cmd = [*_cpp_compiler(), "-std=c++20", "-O2", "-fPIC", "-shared",
+                "-I", str(path), str(INPROC_SRC)]
+    sig = " ".join(base_cmd)
+
+    def fresh():
+        return (lib.is_file() and lib.stat().st_mtime >= newest
+                and sig_file.is_file() and sig_file.read_text() == sig)
+
+    if fresh():
         return lib
-    proc = subprocess.run(cmd, capture_output=True, text=True)
-    if proc.returncode != 0:
-        raise RuntimeError(f"in-process build failed for {path.name}:\n{proc.stderr}")
+    # One builder per library: others wait for it instead of compiling too.
+    lock = build_dir / "inproc.lock"
+    deadline = time.monotonic() + 600
+    while True:
+        try:
+            os.close(os.open(lock, os.O_CREAT | os.O_EXCL | os.O_WRONLY))
+            break
+        except FileExistsError:
+            try:
+                stale = time.time() - lock.stat().st_mtime > 600
+            except FileNotFoundError:
+                continue                          # released between our checks
+            if stale:
+                lock.unlink(missing_ok=True)      # left by a killed builder
+                continue
+            if time.monotonic() > deadline:
+                raise RuntimeError(f"timed out waiting for the in-process build of {path.name}")
+            time.sleep(0.5)
+            if fresh():
+                return lib
     try:
-        os.replace(tmp, lib)  # atomic, so parallel workers never see a half-written .so
-    except PermissionError:
-        # Windows: another worker built and loaded the same library first; the
-        # sources are identical, so use that one.
-        tmp.unlink(missing_ok=True)
-        if not lib.is_file():
-            raise
+        if fresh():
+            return lib
+        tmp = lib.with_suffix(f".{os.getpid()}.tmp")
+        proc = subprocess.run([*base_cmd, "-o", str(tmp)], capture_output=True, text=True)
+        if proc.returncode != 0:
+            tmp.unlink(missing_ok=True)
+            raise RuntimeError(f"in-process build failed for {path.name}:\n{proc.stderr}")
+        os.replace(tmp, lib)  # atomic: nobody sees a half-written .so
+        sig_file.write_text(sig)
         return lib
-    sig_file.write_text(sig)
-    return lib
+    finally:
+        lock.unlink(missing_ok=True)
 
 
 def _load_cpp_lib(path: pathlib.Path) -> ctypes.CDLL:
