@@ -286,6 +286,19 @@ Frozen as `versions/v9`, `battlebot-v9.zip` (SHA-256
 940e78c139b1c7e06e7dcf19c4b17d6b483c480384cf5611646a31e8023a1d0e), verified
 by extracting and playing a sandbox game.
 
+### 28 Sep 05:20: tuning has converged; v9 stays
+
+v9 run distribution means, gens 8-14: +0.104, +0.206, +0.069, +0.086,
++0.203, +0.247, +0.023 (average +0.134 vs +0.169 over gens 0-7), while the
+mean kept drifting (food x3.4, action model x2.8, attack x3.2). The run was
+stopped after gen 14 (state saved; resumable). The average of the gen 8-14
+means played v9 paired on the held-out set (nicked v44, nicked_lab, v6; 15
+maps, both sides, 3 seeds): 153 vs 153 wins, -0.001 [-0.070, +0.068]; pool
++0.011 [-0.069, +0.091]. No gain: the weights have converged, and v9 (earlier,
+less drift) stays the candidate. Further gains need new behaviour, above all
+winning hub contests against nicked-style play (nicked v75 still beats the
+tuned mean, -0.19).
+
 ## 4. Stage 3: tune the compact set with group multipliers
 
 Tune **one multiplier per kept group** (scaling that group's weights from
