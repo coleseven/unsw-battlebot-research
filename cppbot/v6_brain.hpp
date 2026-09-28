@@ -862,11 +862,58 @@ class Brain {
         return true;
     }
 
+    // ---- CPP_BRIEF: brief the newborn child ------------------------------------
+    // A child starts with no memory. At a split the parent sends one message
+    // backward into its own body; it exits at the tail, where the child now
+    // is, and the child reads it on its first turn (later the same round).
+    // Frame: team tag 8 | unused 12 | dead-end mask 4 (N E S W) | 1 0 | checksum 6.
+    // A mask bit means: moving that way from the child's birth cell enters a
+    // corridor the parent knows is a dead end.
+    static std::uint32_t brief_check(std::uint32_t tag, std::uint32_t mask) {
+        return (tag + 11 * mask + 2) & 63u;
+    }
+    std::string brief_line(const Obs& obs) const {
+        auto body = memory.trail_body(obs.length);
+        if (!body || body->size() < 2) return "";
+        int tail = body->back(), before = (*body)[body->size() - 2];
+        int w = memory.width, h = memory.height;
+        int dx = ((tail % w) - (before % w) + w) % w, dy = ((tail / w) - (before / w) + h) % h;
+        char face;
+        if (dx == 1 && dy == 0) face = 'E';
+        else if (dx == w - 1 && dy == 0) face = 'W';
+        else if (dy == 1 && dx == 0) face = 'S';
+        else if (dy == h - 1 && dx == 0) face = 'N';
+        else return "";
+        std::uint32_t mask = 0;
+        for (int i = 0; i < 4; ++i) {
+            char d = DIRS[i];
+            if (i == OPP[didx(face)]) continue;               // the child cannot reverse
+            auto dest = memory.nav.destination(tail, d);
+            if (dest && dead_end_ahead(memory, *dest, d, params::CPP_SPLIT_SAFE_LOOK)) mask |= 1u << i;
+        }
+        if (mask == 0) return "";
+        std::uint32_t tag = hub_tag(init.team);
+        std::uint32_t msg = (tag << 24) | (mask << 8) | (2u << 6) | brief_check(tag, mask);
+        // into our own body: the ray leaves at the tail, towards the child
+        return std::string("\nSONAR ") + DIRS[OPP[didx(obs.facing)]] + " " + std::to_string(msg);
+    }
+    std::uint32_t read_brief(const Obs& obs) const {
+        std::uint32_t tag = hub_tag(init.team);
+        for (std::uint32_t m : obs.msgs) {
+            if ((m >> 24) != tag || ((m >> 6) & 3u) != 2u) continue;
+            std::uint32_t mask = (m >> 8) & 15u;
+            if ((m & 63u) == brief_check(tag, mask)) return mask;
+        }
+        return 0;
+    }
+
     std::string turn(const Obs& obs) {
         std::string action = decide(obs);
         if (action.empty()) return action;
         if (params::CPP_KING_BEACON && obs.round >= params::CPP_KB_ROUND) action += king_lines(obs);
         else if (params::CPP_SONAR_HUB) action += sonar_lines(obs);
+        // last, so it wins the backward direction over a beacon
+        if (params::CPP_BRIEF && action.rfind("SPLIT ", 0) == 0) action += brief_line(obs);
         return action;
     }
 
@@ -891,6 +938,12 @@ class Brain {
             return fallback(obs);
         }
         // max by (score, d==facing), keeping the first maximum in insertion order
+        if (params::CPP_BRIEF && obs.round == *born_round) {
+            std::uint32_t mask = read_brief(obs);
+            if (mask)
+                for (auto& [d, v] : scores)
+                    if (mask & (1u << didx(d))) v -= params::CPP_BRIEF_PEN;
+        }
         char best_dir = scores[0].first;
         double best_score = scores[0].second;
         bool best_face = scores[0].first == obs.facing;

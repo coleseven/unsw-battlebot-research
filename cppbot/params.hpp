@@ -121,4 +121,6 @@ inline constexpr double CPP_DEADEND_PEN = 400.0;
 inline constexpr int CPP_SPLIT_SAFE = 0;
 inline constexpr int CPP_SPLIT_SAFE_LOOK = 12;
 inline constexpr int CPP_SPLIT_ROOM = 0;
+inline constexpr int CPP_BRIEF = 0;
+inline constexpr double CPP_BRIEF_PEN = 200.0;
 }  // namespace params
