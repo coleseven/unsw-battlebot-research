@@ -299,6 +299,35 @@ less drift) stays the candidate. Further gains need new behaviour, above all
 winning hub contests against nicked-style play (nicked v75 still beats the
 tuned mean, -0.19).
 
+### 28 Sep: king beacon, big-dragon feeding, dead-end check (on top of v9)
+
+Ladder (v9, first 30 games, Elo 1579 -> 1626): 4-5 of 13 losses were on the
+longest-dragon tiebreak with more total length (e.g. QoS 11/69 vs 14/14): long
+non-kings never fed the king. Kelp deaths vs nicked v75: 320/game vs their
+117; 90% are length-2 children, about 70% within 3-5 rounds of birth, 91% on
+Slithery Fight (children born onto a crowded two-wide fast-spawner patch).
+Head-on trades with nicked are even (lost shorter 125, longer 122).
+
+Paired test vs v9 (`results/20260928-140413-ablate-2970a3`; nicked v75,
+leviathan3, v7-base, nicked v44; 15 maps, both sides, 3 seeds, 360 games each):
+
+| variant | all 15 [95% CI] | pool | ladder 4 | wins (v9 210) |
+|---|---|---|---|---|
+| king beacon | +0.021 [-0.012, +0.052] | +0.027 | +0.098 | 218 |
+| **beacon + big feeding** | **+0.085 [+0.032, +0.138]** | +0.059 | +0.173 | **237** |
+| dead-end check (pen 400) | -0.003 | -0.008 | -0.127 | 213 |
+| all three | +0.047 | +0.002 | -0.079 | 228 |
+
+Beacon + big feeding is the v10 candidate (`results/v10-cand-bot`): positive
+vs all four opponents. The dead-end check cut kelp deaths in diagnostics but
+does not win games (it hurts the ladder maps), so it stays off. Next: split
+safety by room (CPP_SPLIT_ROOM 8/16) and a gentle dead-end penalty (60) on
+top of the candidate (`results/20260928-174742-ablate-8cf646`).
+
+Ops note: two BSODs and three GCC segfaults this day came from stacked jobs
+plus a build-cache bug (every worker recompiled every C++ bot per batch);
+both fixed (`bcsim/guard.py`, `match.build_cpp_lib`).
+
 ## 4. Stage 3: tune the compact set with group multipliers
 
 Tune **one multiplier per kept group** (scaling that group's weights from
