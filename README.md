@@ -4,6 +4,15 @@ Competition: https://game.battlecode.au (21 Sep – 17 Oct 2026). Rules: https:/
 
 ## Best tested local candidate
 
+**Upload candidate (28 Sep): `versions/v9` (`battlebot-v9.zip`, hash `7bad14b4e4fd110b`)**,
+the C++ bot with the v8 features (portal book for all 15 ranked maps, age-based
+portal scouting on, trap weight by local tightness) and the weights of the v9
+tuning run's generation-5 distribution mean. Held out (nicked v44, nicked_lab,
+Python v6; 15 maps, both sides, 3 seeds, paired with the live v7-base): 153 vs
+124 wins, +0.174 [+0.083, +0.265] aligned; current pool +0.187 [+0.088,
++0.290]; even with nicked v44. Judge sandbox max 7.3M points. See
+FEATURE_EXPERIMENT.md.
+
 **Recommended upload: `versions/v7-base` (`battlebot-v7-base.zip`)**, the
 untuned C++ port of v6.1. On unswbc 1.1.0 with 3 seeds it beats v6 43/66 and
 matches or beats the tuned `versions/v7` (whose single-seed gain was noise).

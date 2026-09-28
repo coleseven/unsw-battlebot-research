@@ -261,6 +261,31 @@ held out).
   them: food, attack, action model, goal), cmaes-lra, popsize 12 + mean,
   pair map sampling, vs nicked v75 / leviathan3 / v7-base.
 
+### 28 Sep: v9 gen-5 mean validated -> `versions/v9`
+
+v9 run distribution mean F by generation: +0.185, +0.278, +0.140, +0.119,
++0.208, +0.092, +0.177, +0.155 (60 games each, per-gen noise about +/-0.08:
+a plateau near +0.17). Held-out paired check of the gen-5 mean vs v7-base
+(`results/20260927-231030-full-change-1f35bb` vs `...-231031-full-change-51b4d9`,
+nicked v44 / nicked_lab / Python v6, 15 maps, both sides, seeds 53001-53003):
+
+| | v9-g5 wins | v7-base wins | aligned delta [95% CI] |
+|---|---|---|---|
+| all 15 maps | 153/270 | 124/270 | +0.174 [+0.083, +0.265] |
+| current pool | 99/180 | 77/180 | +0.187 [+0.088, +0.290] |
+| guard maps | 54/90 | 47/90 | +0.147 [-0.044, +0.346] |
+| pool vs nicked_lab | 23/60 | 12/60 | +0.284 |
+| pool vs v6 | 51/60 | 37/60 | +0.307 |
+| pool vs nicked v44 | 25/60 | 28/60 | -0.030 |
+
+Pool maps (wins of 18): Default 12-5, Autarky 18-13, Prisoners Dilemma
+14-11, Portals 9-5, Slithery 5-2, QoS 8-6, Schooltime 9-7, Trauma 4-4,
+Devil 13-15, Trophy 7-9. Judge sandbox (vs splitter): max 7.3M points;
+"no valid action" deaths are the late king feeding (all after round 400).
+Frozen as `versions/v9`, `battlebot-v9.zip` (SHA-256
+940e78c139b1c7e06e7dcf19c4b17d6b483c480384cf5611646a31e8023a1d0e), verified
+by extracting and playing a sandbox game.
+
 ## 4. Stage 3: tune the compact set with group multipliers
 
 Tune **one multiplier per kept group** (scaling that group's weights from
