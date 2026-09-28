@@ -32,6 +32,13 @@ def run(jobs, workers, folder, label="experiment", batch_per_worker=12):
     """
     if not 1 <= workers <= 16 or not 1 <= batch_per_worker <= 16:
         raise ValueError("workers must be 1-16 and batch_per_worker 1-16")
+    from .guard import cap_workers, slot
+    workers = cap_workers(workers)
+    with slot(label):
+        return _run(jobs, workers, folder, label, batch_per_worker)
+
+
+def _run(jobs, workers, folder, label, batch_per_worker):
     os.environ["RAYON_NUM_THREADS"] = "1"
     from .match import prebuild
     prebuild([bot for job in jobs for bot in (job[1], job[2])])

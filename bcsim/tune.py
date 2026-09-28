@@ -157,7 +157,8 @@ def replay_margins(games, workers):
     if workers <= 1 or len(replays) < 2:
         return {r: _side_margins(r) for r in replays}
     from concurrent.futures import ProcessPoolExecutor
-    with ProcessPoolExecutor(max_workers=workers) as ex:
+    from .guard import cap_workers, slot
+    with slot("replay scoring"), ProcessPoolExecutor(max_workers=cap_workers(workers)) as ex:
         return dict(zip(replays, ex.map(_side_margins, replays, chunksize=8)))
 
 

@@ -133,3 +133,6 @@ CPP_BIG_FEED_MARGIN = 4  # C++ only: the king must be this much longer than the 
 # Dead-end corridors (kelp deaths: 43/game vs 26 for opponents; a length >= 2 dragon cannot reverse)
 CPP_DEADEND_LOOK = 0    # C++ only: walk this many corridor steps ahead (0 = off)
 CPP_DEADEND_PEN = 400.0  # C++ only: penalty for a move into a known dead-end corridor
+CPP_SPLIT_SAFE = 0      # C++ only: 1 = do not split when the child would be born facing into a known dead end
+CPP_SPLIT_SAFE_LOOK = 12  # C++ only: corridor steps checked from the child's birth cell
+CPP_SPLIT_ROOM = 0      # C++ only: with CPP_SPLIT_SAFE, split only if the child's birth cell reaches this many free tiles

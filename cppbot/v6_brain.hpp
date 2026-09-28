@@ -410,10 +410,10 @@ struct CashTarget { int head; std::optional<int> front; int local; };
 // within the look-ahead: a dead end the dragon can only leave by dying.
 // Unknown edges, portals with an unknown exit and junctions all count as a way
 // out, so exploring is never blocked by this.
-inline bool dead_end_ahead(const WorldMemory& mem, int dest, char direction) {
+inline bool dead_end_ahead(const WorldMemory& mem, int dest, char direction, int look = params::CPP_DEADEND_LOOK) {
     int cell = dest;
     char came = direction;
-    for (int step = 0; step < params::CPP_DEADEND_LOOK; ++step) {
+    for (int step = 0; step < look; ++step) {
         int open = 0, next = -1;
         char next_dir = came;
         for (char d : DIRS) {
@@ -818,6 +818,50 @@ class Brain {
         return CashTarget{king_cell, std::nullopt, -1};
     }
 
+    // CPP_SPLIT_SAFE: the child is born at the parent's tail facing away from
+    // the parent; if that corridor is a known dead end the child (length >= 2,
+    // cannot reverse) is born dead. 90% of our kelp deaths were length-2
+    // dragons, most within 3-5 rounds of birth.
+    bool child_can_escape(const Obs& obs) const {
+        auto body = memory.trail_body(obs.length);
+        if (!body || body->size() < 2) return true;   // body unknown: allow the split
+        int tail = body->back(), before = (*body)[body->size() - 2];
+        int w = memory.width, h = memory.height;
+        int dx = ((tail % w) - (before % w) + w) % w, dy = ((tail / w) - (before / w) + h) % h;
+        char face;
+        if (dx == 1 && dy == 0) face = 'E';
+        else if (dx == w - 1 && dy == 0) face = 'W';
+        else if (dy == 1 && dx == 0) face = 'S';
+        else if (dy == h - 1 && dx == 0) face = 'N';
+        else return true;                              // a portal between the last two segments
+        if (dead_end_ahead(memory, tail, face, params::CPP_SPLIT_SAFE_LOOK)) return false;
+        if (params::CPP_SPLIT_ROOM > 0) {
+            // room around the birth cell: known open tiles reachable from the tail,
+            // not counting tiles any dragon occupies this round (the parent's own
+            // body included: it is still there when the child first moves). On
+            // Slithery Fight children were born onto a crowded two-wide spawner patch
+            // and died in the kelp with no legal move.
+            std::unordered_set<int> own(body->begin(), body->end());
+            std::vector<int> queue{tail};
+            std::unordered_set<int> seen{tail};
+            int room = 0;
+            for (std::size_t i = 0; i < queue.size() && room < params::CPP_SPLIT_ROOM; ++i) {
+                int c = queue[i];
+                for (char d : DIRS) {
+                    auto nc = memory.nav.destination(c, d);
+                    if (!nc || seen.count(*nc)) continue;
+                    seen.insert(*nc);
+                    const OccPart* part = memory.occupied.find(*nc);
+                    if (own.count(*nc) || (part != nullptr && part->seen == obs.round)) continue;
+                    ++room;
+                    queue.push_back(*nc);
+                }
+            }
+            if (room < params::CPP_SPLIT_ROOM) return false;
+        }
+        return true;
+    }
+
     std::string turn(const Obs& obs) {
         std::string action = decide(obs);
         if (action.empty()) return action;
@@ -838,6 +882,7 @@ class Brain {
         if (params::CPP_KING_BEACON && !target) target = beacon_target(obs);
         if (should_feed(memory, obs, init.team, target)) return "";
         auto split = should_split(init.width, init.height, init.unit_limit, obs, init.team, protectedFlag);
+        if (split && params::CPP_SPLIT_SAFE && !child_can_escape(obs)) split.reset();
         if (split) return *split;
         auto scores = score_moves(memory, obs, init.team, init.id, protectedFlag, target, t0, *born_round);
         if (scores.empty()) {

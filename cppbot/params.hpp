@@ -118,4 +118,7 @@ inline constexpr int CPP_BIG_FEED_ROUND = 430;
 inline constexpr int CPP_BIG_FEED_MARGIN = 4;
 inline constexpr int CPP_DEADEND_LOOK = 0;
 inline constexpr double CPP_DEADEND_PEN = 400.0;
+inline constexpr int CPP_SPLIT_SAFE = 0;
+inline constexpr int CPP_SPLIT_SAFE_LOOK = 12;
+inline constexpr int CPP_SPLIT_ROOM = 0;
 }  // namespace params
