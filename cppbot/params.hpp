@@ -109,4 +109,13 @@ inline constexpr double CPP_VOR_CONTEST = 1.5;
 inline constexpr double CPP_VOR_MATE = 0.6;
 inline constexpr int CPP_SONAR_HUB = 0;
 inline constexpr int CPP_SONAR_EVERY = 5;
+inline constexpr int CPP_KING_BEACON = 0;
+inline constexpr int CPP_KB_ROUND = 300;
+inline constexpr int CPP_KB_MINLEN = 8;
+inline constexpr int CPP_KB_TTL = 8;
+inline constexpr int CPP_BIG_FEED = 0;
+inline constexpr int CPP_BIG_FEED_ROUND = 430;
+inline constexpr int CPP_BIG_FEED_MARGIN = 4;
+inline constexpr int CPP_DEADEND_LOOK = 0;
+inline constexpr double CPP_DEADEND_PEN = 400.0;
 }  // namespace params

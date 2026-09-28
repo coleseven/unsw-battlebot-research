@@ -121,3 +121,15 @@ CPP_VOR_MATE = 0.6      # C++ only: a teammate head is closer (leave it to them)
 # has not seen (Prisoners Dilemma: 8 pearls eaten vs nicked's 59 in rounds 0-100)
 CPP_SONAR_HUB = 0       # C++ only: 1 = dragons that know a hub send it; ones that know none adopt it
 CPP_SONAR_EVERY = 5     # C++ only: send the best known hub every this many rounds (all 4 directions)
+# King beacon + big-dragon feeding (28 Sep ladder: losses on the longest-dragon tiebreak with
+# more total length; long non-kings never feed, only length <= FEED_MAXLEN dragons that see the king)
+CPP_KING_BEACON = 0     # C++ only: 1 = dragons broadcast/relay the longest known king over sonar
+CPP_KB_ROUND = 300      # C++ only: first round of king beacons
+CPP_KB_MINLEN = 8       # C++ only: shortest dragon that claims king
+CPP_KB_TTL = 8          # C++ only: rounds a heard king beacon stays valid
+CPP_BIG_FEED = 0        # C++ only: 1 = dragons of any length feed a king at least MARGIN longer
+CPP_BIG_FEED_ROUND = 430  # C++ only: first round big dragons feed
+CPP_BIG_FEED_MARGIN = 4  # C++ only: the king must be this much longer than the feeder
+# Dead-end corridors (kelp deaths: 43/game vs 26 for opponents; a length >= 2 dragon cannot reverse)
+CPP_DEADEND_LOOK = 0    # C++ only: walk this many corridor steps ahead (0 = off)
+CPP_DEADEND_PEN = 400.0  # C++ only: penalty for a move into a known dead-end corridor

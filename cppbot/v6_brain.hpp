@@ -405,6 +405,34 @@ inline void beam_adjust(WorldMemory& mem, const Obs& obs, char team, int did,
 // cash target: (head cell, front cell or none, local k)
 struct CashTarget { int head; std::optional<int> front; int local; };
 
+// CPP_DEADEND_LOOK: follow the corridor a move enters, never reversing (a
+// dragon of length >= 2 cannot turn around). True if it ends in known kelp
+// within the look-ahead: a dead end the dragon can only leave by dying.
+// Unknown edges, portals with an unknown exit and junctions all count as a way
+// out, so exploring is never blocked by this.
+inline bool dead_end_ahead(const WorldMemory& mem, int dest, char direction) {
+    int cell = dest;
+    char came = direction;
+    for (int step = 0; step < params::CPP_DEADEND_LOOK; ++step) {
+        int open = 0, next = -1;
+        char next_dir = came;
+        for (char d : DIRS) {
+            if (didx(d) == OPP[didx(came)]) continue;
+            int v = mem.nav.edges[mem.nav.edge_key(cell, d)];
+            if (v == NONE) return false;
+            if (v == KELP) continue;
+            auto nc = mem.nav.destination(cell, d);
+            if (!nc) return false;
+            ++open; next = *nc; next_dir = d;
+        }
+        if (open == 0) return true;
+        if (open >= 2) return false;
+        cell = next;
+        came = next_dir;
+    }
+    return false;
+}
+
 // Returns scores in Python dict insertion order (attacks first, then moves).
 inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const Obs& obs, char team, int did,
                                                         bool protectedFlag, const std::optional<CashTarget>& cash,
@@ -497,6 +525,8 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
         if (room < obs.length + 2) value -= protection * params::W_LETHAL * trap_mult;
         if (tm.exits == 0) value -= params::W_DEADEND;
         else if (tm.exits == 1) value -= params::W_CORRIDOR;
+        if (params::CPP_DEADEND_LOOK > 0 && obs.length >= 2 && dead_end_ahead(mem, dest, direction))
+            value -= params::CPP_DEADEND_PEN;
         int threat = reach.count(dest) ? reach[dest] : 0;
         if (th.enemy.count(dest) && !(hunter && threat >= obs.length + params::HUNT_MIN_GAIN))
             value -= protection * params::W_HEAD_ENEMY * std::max(1.0, obs.length / 4.0);
@@ -612,7 +642,7 @@ inline std::optional<CashTarget> visible_target(WorldMemory& mem, const Obs& obs
     return best;
 }
 inline bool should_feed(WorldMemory& mem, const Obs& obs, char team, const std::optional<CashTarget>& target) {
-    if (!target) return false;
+    if (!target || target->local < 0) return false;   // local < 0: a beaconed king not in view
     int own = mem.cell(obs.x[CENTER], obs.y[CENTER]);
     int distance = torus_distance(own, target->head, mem.width, mem.height);
     if (!(params::FEED_DMIN <= distance && distance <= params::FEED_DMAX) ||
@@ -720,9 +750,79 @@ class Brain {
         return out;
     }
 
+    // ---- CPP_KING_BEACON: the longest known king, broadcast and relayed ------
+    // Same 32-bit frame as the hub message with bit 6 set: team tag 8 | x 6 |
+    // y 6 | length/4 (5 bits, up to 124) | 1 | checksum 6. Every dragon sends the
+    // best king it knows (itself if it is at least as long), so the position
+    // spreads past the first dragon each ray reaches.
+    int king_cell = -1, king_q = 0, king_round = -1000;
+    static std::uint32_t king_check(std::uint32_t tag, std::uint32_t x, std::uint32_t y, std::uint32_t q) {
+        return (tag + 7 * x + 13 * y + 5 * q + 1) & 63u;
+    }
+    std::uint32_t encode_king(int cell, int q) const {
+        std::uint32_t tag = hub_tag(init.team), x = cell % memory.width, y = cell / memory.width;
+        std::uint32_t uq = static_cast<std::uint32_t>(std::clamp(q, 0, 31));
+        return (tag << 24) | (x << 18) | (y << 12) | (uq << 7) | (1u << 6) | king_check(tag, x, y, uq);
+    }
+    static int length_q(int length) { return std::min(31, length / 4); }
+    void receive_king(const Obs& obs) {
+        std::uint32_t tag = hub_tag(init.team);
+        for (std::uint32_t m : obs.msgs) {
+            if ((m >> 24) != tag || ((m >> 6) & 1u) != 1u) continue;
+            std::uint32_t x = (m >> 18) & 63u, y = (m >> 12) & 63u, q = (m >> 7) & 31u;
+            if ((m & 63u) != king_check(tag, x, y, q)) continue;
+            if (static_cast<int>(x) >= memory.width || static_cast<int>(y) >= memory.height) continue;
+            bool stale = obs.round - king_round > params::CPP_KB_TTL;
+            if (stale || static_cast<int>(q) >= king_q) {
+                king_cell = static_cast<int>(y) * memory.width + static_cast<int>(x);
+                king_q = static_cast<int>(q);
+                king_round = obs.round;
+            }
+        }
+        if (obs.round - king_round > params::CPP_KB_TTL) { king_cell = -1; king_q = 0; }
+    }
+    std::string king_lines(const Obs& obs) {
+        std::uint32_t msg;
+        int own_q = length_q(obs.length);
+        if (obs.length >= params::CPP_KB_MINLEN && (king_cell < 0 || own_q >= king_q))
+            msg = encode_king(memory.cell(obs.x[CENTER], obs.y[CENTER]), own_q);
+        else if (king_cell >= 0)
+            msg = encode_king(king_cell, king_q);   // relay
+        else
+            return "";
+        std::string out, s = std::to_string(msg);
+        for (char d : DIRS) out += std::string("\nSONAR ") + d + " " + s;
+        return out;
+    }
+    // A feeding target from the beacon: small dragons after FEED_ROUND and, with
+    // CPP_BIG_FEED, dragons of any length once the king is MARGIN longer. When a
+    // teammate head is in view near the beaconed cell it is used as the king (so
+    // should_feed can fire); otherwise the target only pulls (local = -1).
+    std::optional<CashTarget> beacon_target(const Obs& obs) {
+        if (king_cell < 0 || obs.round < params::CPP_KB_ROUND) return std::nullopt;
+        if (length_q(obs.length) >= king_q) return std::nullopt;   // this dragon is (a) king
+        bool small = obs.round >= params::FEED_ROUND && obs.length <= params::FEED_MAXLEN;
+        bool big = params::CPP_BIG_FEED && obs.round >= params::CPP_BIG_FEED_ROUND &&
+                   4 * king_q >= obs.length + params::CPP_BIG_FEED_MARGIN;
+        if (!small && !big) return std::nullopt;
+        std::optional<CashTarget> best;
+        int best_d = 1 << 30;
+        for (int k = 0; k < 49; ++k) {
+            const auto& p = obs.occ[k];
+            if (!p || !p->head || p->team != init.team || p->id == init.id) continue;
+            int head = memory.cell(obs.x[k], obs.y[k]);
+            int d = torus_distance(head, king_cell, memory.width, memory.height);
+            if (d <= 4 && d < best_d) { best_d = d; best = CashTarget{head, memory.nav.destination(head, p->facing), k}; }
+        }
+        if (best) return best;
+        return CashTarget{king_cell, std::nullopt, -1};
+    }
+
     std::string turn(const Obs& obs) {
         std::string action = decide(obs);
-        if (params::CPP_SONAR_HUB && !action.empty()) action += sonar_lines(obs);
+        if (action.empty()) return action;
+        if (params::CPP_KING_BEACON && obs.round >= params::CPP_KB_ROUND) action += king_lines(obs);
+        else if (params::CPP_SONAR_HUB) action += sonar_lines(obs);
         return action;
     }
 
@@ -730,10 +830,12 @@ class Brain {
         double t0 = cpu_points();  // CPU points at the turn's start (for CPP_BUDGET)
         memory.update(obs);
         if (params::CPP_SONAR_HUB) receive_hubs(obs);
+        if (params::CPP_KING_BEACON) receive_king(obs);
         if (params::GOAL) memory.update_goal(obs, init.id);
         if (!born_round) born_round = obs.round;
         bool protectedFlag = king_protected(obs, *born_round);
         auto target = visible_target(memory, obs, init.team, init.id);
+        if (params::CPP_KING_BEACON && !target) target = beacon_target(obs);
         if (should_feed(memory, obs, init.team, target)) return "";
         auto split = should_split(init.width, init.height, init.unit_limit, obs, init.team, protectedFlag);
         if (split) return *split;
