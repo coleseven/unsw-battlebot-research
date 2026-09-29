@@ -328,6 +328,25 @@ Ops note: two BSODs and three GCC segfaults this day came from stacked jobs
 plus a build-cache bug (every worker recompiled every C++ bot per batch);
 both fixed (`bcsim/guard.py`, `match.build_cpp_lib`).
 
+### 28 Sep evening: kelp fixes and sonar briefing (on top of beacon + big feeding)
+
+Paired vs the v10 candidate (247/360 wins; nicked v75, leviathan3, v7-base,
+nicked v44; 15 maps, both sides, 3 seeds; `results/20260928-174742-ablate-8cf646`
+and `results/20260928-180616-ablate-22301c`):
+
+| variant | all 15 [95% CI] | wins |
+|---|---|---|
+| split only with >= 8 free tiles (CPP_SPLIT_ROOM 8) | -0.069 [-0.130, -0.012] | 229 |
+| split only with >= 16 free tiles | -0.017 [-0.058, +0.023] | 242 |
+| dead-end penalty 60 | -0.046 [-0.100, +0.005] | 234 |
+| parent->child sonar brief (dead-end mask) | -0.005 [-0.027, +0.015] | 247 |
+| brief + room 8 | -0.092 [-0.149, -0.041] | 221 |
+
+None helps: the kelp deaths are cheap length-2 children, a price of fast
+splitting; fewer splits or detours cost more than they save. Own-team body
+deaths (18/game) are crowding (60% with no free neighbour), not
+coordination. v10 = v9 + CPP_KING_BEACON + CPP_BIG_FEED only.
+
 ## 4. Stage 3: tune the compact set with group multipliers
 
 Tune **one multiplier per kept group** (scaling that group's weights from
