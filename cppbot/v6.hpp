@@ -269,6 +269,7 @@ class WorldMemory {
 
     std::vector<hub_book::Layout> hub_maps;     // candidate layouts
     Hubs hubs;
+    Hubs learned_hubs;                          // CPP_HUB_OBSERVE: hubs from this dragon's own observations
     std::unordered_map<int, double> hub_area;
 
     OrderedMap<int> timer_max;                  // spawn tile -> largest countdown
@@ -316,6 +317,14 @@ class WorldMemory {
         if (rates.empty()) local_rate.reset();
         else { double s = 0; for (double r : rates) s += r; local_rate = s / rates.size(); }
         if (params::LEARN_HUBS && hub_maps.empty()) learn_hubs(obs);
+        else if (params::CPP_HUB_OBSERVE && params::LEARN_HUBS) {
+            // A book map: the server's variants move or kill its hubs (29 Sep A/B:
+            // the book helps on original spawns, -0.103 without it, but not on
+            // perturbed ones, +0.048 without it). Use the book until this dragon
+            // has seen spawners itself, then trust what it saw.
+            learn_hubs(obs, false);
+            if (!learned_hubs.empty()) set_hubs(learned_hubs);
+        }
 
         for (auto& [c, k] : visible) {
             if (obs.pearl_in[k] >= 0) spawn_ready[c] = obs.round + obs.pearl_in[k];
@@ -395,7 +404,7 @@ class WorldMemory {
         }
     }
 
-    void learn_hubs(const Obs& obs) {
+    void learn_hubs(const Obs& obs, bool apply = true) {
         if (obs.round % params::LEARN_EVERY || timer_max.size() == 0) return;
         int w = width, h = height;
         std::unordered_map<int, double> rate;
@@ -428,7 +437,8 @@ class WorldMemory {
             }
             if (far) picked.emplace_back(c, std::round(v / best * 1000.0) / 1000.0);
         }
-        set_hubs(picked);
+        learned_hubs = picked;
+        if (apply) set_hubs(picked);
     }
 
     void update_goal(const Obs& obs, int did) {

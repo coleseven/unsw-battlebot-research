@@ -138,3 +138,4 @@ CPP_SPLIT_SAFE_LOOK = 12  # C++ only: corridor steps checked from the child's bi
 CPP_SPLIT_ROOM = 0      # C++ only: with CPP_SPLIT_SAFE, split only if the child's birth cell reaches this many free tiles
 CPP_BRIEF = 0           # C++ only: 1 = at a split the parent sonars the child a dead-end mask (read on the child's first turn)
 CPP_BRIEF_PEN = 200.0   # C++ only: first-turn penalty for a direction the parent flagged as a dead end
+CPP_HUB_OBSERVE = 0     # C++ only: 1 = on a hub-book map, replace the book hubs with learned ones once any are observed
