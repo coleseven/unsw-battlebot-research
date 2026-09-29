@@ -223,6 +223,7 @@ def prepare(args):
         "objective": args.objective, "worst_weight": args.worst_weight,
         "backend": args.backend, "eval_mean": args.eval_mean, "map_sample": args.map_sample,
         "warm_from": str(Path(args.warm_from).resolve()) if args.warm_from else None,
+        "warm_mean": args.warm_mean,
         "fixed": json.loads(args.fixed) if args.fixed else {},
         "unswbc": importlib.metadata.version("unswbc"), "popsize": args.popsize,
         "generations": args.gens, "sigma": args.sigma,
@@ -316,9 +317,12 @@ def warm_start(plan, space):
     values = decode(old_mean, old_space)
     names = list(space)
     x0 = []
+    centre_on_base = plan.get("warm_mean") == "base"
     for name in names:
         low, high, _ = bounds(space[name])
-        v = values[name] if name in values else plan["start"][name]
+        # "base": centre on the base bot's own values (a proven point) and keep
+        # only the previous run's covariance (its learned search shape)
+        v = plan["start"][name] if centre_on_base or name not in values else values[name]
         x0.append(min(1.0, max(0.0, (v - low) / (high - low))))
     cov = np.eye(len(names))
     for i, a in enumerate(names):
@@ -456,6 +460,8 @@ def main():
     ap.add_argument("--map-sample", choices=["all", "pair"], default="all",
                     help="pair: per generation play one of each map / perturbed-copy pair")
     ap.add_argument("--warm-from", help="previous tune result dir: start from its CMA mean and covariance")
+    ap.add_argument("--warm-mean", choices=["run", "base"], default="run",
+                    help="with --warm-from: centre on the old run's mean (run) or on the base bot's values (base)")
     ap.add_argument("--fixed", help='JSON settings written into the base before tuning, e.g. {"CPP_VOR": 0}')
     ap.add_argument("--worst-weight", type=float, default=0.25,
                     help="F = mean over maps + this x worst map (0 = plain mean, lowest noise)")

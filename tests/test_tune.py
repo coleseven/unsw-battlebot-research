@@ -107,6 +107,11 @@ class TuneTest(unittest.TestCase):
             self.assertAlmostEqual(x0[1], 0.25)              # new parameter starts at plan start
             self.assertAlmostEqual(cov[0][0], old.sm.C[0][0] * 0.25)   # (10/20)^2
             self.assertAlmostEqual(cov[1][1], 1.0)
+            # warm_mean "base": the base bot's values, the old run's covariance
+            x0b, covb = tune.warm_start({"warm_from": str(src), "warm_mean": "base",
+                                         "start": {"A": 5, "C": 0.25}}, space)
+            self.assertAlmostEqual(x0b[0], 0.25)             # A = 5 (base) -> 5/20
+            self.assertAlmostEqual(covb[0][0], cov[0][0])    # shape kept
 
     def test_generation_seeds(self):
         self.assertEqual(tune.gen_seeds({"seed": 7}, 3), [7])
