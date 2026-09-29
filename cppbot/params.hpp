@@ -124,4 +124,6 @@ inline constexpr int CPP_SPLIT_ROOM = 0;
 inline constexpr int CPP_BRIEF = 0;
 inline constexpr double CPP_BRIEF_PEN = 200.0;
 inline constexpr int CPP_HUB_OBSERVE = 0;
+inline constexpr int CPP_ANCHOR = 0;
+inline constexpr int CPP_ANCHOR_RESCUE = 12;
 }  // namespace params

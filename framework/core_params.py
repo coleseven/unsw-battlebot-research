@@ -139,3 +139,5 @@ CPP_SPLIT_ROOM = 0      # C++ only: with CPP_SPLIT_SAFE, split only if the child
 CPP_BRIEF = 0           # C++ only: 1 = at a split the parent sonars the child a dead-end mask (read on the child's first turn)
 CPP_BRIEF_PEN = 200.0   # C++ only: first-turn penalty for a direction the parent flagged as a dead end
 CPP_HUB_OBSERVE = 0     # C++ only: 1 = on a hub-book map, replace the book hubs with learned ones once any are observed
+CPP_ANCHOR = 0          # C++ only: 1 = founders never split from FOUNDER_PROTECT_ROUND (grow early kings)
+CPP_ANCHOR_RESCUE = 12  # C++ only: ...unless the team has fewer dragons than this

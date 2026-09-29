@@ -929,6 +929,13 @@ class Brain {
         if (params::CPP_KING_BEACON && !target) target = beacon_target(obs);
         if (should_feed(memory, obs, init.team, target)) return "";
         auto split = should_split(init.width, init.height, init.unit_limit, obs, init.team, protectedFlag);
+        // CPP_ANCHOR: founders (alive at round 0) stop splitting from
+        // FOUNDER_PROTECT_ROUND so they grow into kings early, as nicked's anchors
+        // do from round 80 (our longest dragon was 4 at round 300 vs their 11).
+        // They split again only if the team falls below CPP_ANCHOR_RESCUE dragons.
+        if (split && params::CPP_ANCHOR && *born_round == 0 && obs.round >= params::FOUNDER_PROTECT_ROUND &&
+            obs.unit_count >= params::CPP_ANCHOR_RESCUE)
+            split.reset();
         if (split && params::CPP_SPLIT_SAFE && !child_can_escape(obs)) split.reset();
         if (split) return *split;
         auto scores = score_moves(memory, obs, init.team, init.id, protectedFlag, target, t0, *born_round);
