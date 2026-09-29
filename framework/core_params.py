@@ -144,3 +144,8 @@ CPP_ANCHOR_RESCUE = 12  # C++ only: ...unless the team has fewer dragons than th
 CPP_HUB_GRAD = 0.0      # C++ only: points per step closer to the best known hub (0 = off)
 CPP_HUB_GRAD_UNTIL = 500  # C++ only: apply the hub gradient before this round
 CPP_BOOK_MAP = 0        # C++ only: 1 = fill the identified book map's open edges (paths known from turn one)
+# King growth (nicked's kings are ~11 long at round 300, ours ~4: our protected long dragons keep
+# splitting until the team has FLOOR units, theirs stop at a quarter of the cap)
+CPP_PROTECT_FLOOR = -1  # C++ only: protected dragons stop splitting at this many units (-1 = FLOOR)
+CPP_RESCUE_EVERY = 0    # C++ only: below that floor a protected dragon splits at most once per this many rounds (0 = no limit)
+CPP_FEED_SHIFT_LARGE = 0  # C++ only: on large maps (area >= AREA_SPLIT) feeding and king beacons start this many rounds earlier

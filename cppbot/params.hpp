@@ -129,4 +129,7 @@ inline constexpr int CPP_ANCHOR_RESCUE = 12;
 inline constexpr double CPP_HUB_GRAD = 0.0;
 inline constexpr int CPP_HUB_GRAD_UNTIL = 500;
 inline constexpr int CPP_BOOK_MAP = 0;
+inline constexpr int CPP_PROTECT_FLOOR = -1;
+inline constexpr int CPP_RESCUE_EVERY = 0;
+inline constexpr int CPP_FEED_SHIFT_LARGE = 0;
 }  // namespace params

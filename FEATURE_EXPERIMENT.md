@@ -402,6 +402,29 @@ maps (pair sampling), cmaes-lra, mean played each generation.
 Lesson: first-pass effects of +0.04 are within noise (paired CI about +/-0.05
 at 450-540 games); only fresh-seed confirmation counts. v10 stays the best.
 
+### 29 Sep afternoon: Trophy opening, nicked v92, king growth
+
+- Trophy trace (founders' per-move term breakdown, results/make_dbg_bot.py):
+  the v3 local ranker decides moves (85-205 points, 10-30 between moves);
+  the hub term changes by about 1 point between moves, and walls block the
+  straight-line pull, so founders drift along the edges.
+- CPP_BOOK_MAP (fill the identified book map's open edges, so paths to hubs
+  are known from turn one) vs v10, 6 opponents, 15 maps, 3 seeds (540 games):
+  +0.150 [+0.073, +0.236] current pool, +0.122 [+0.054, +0.191] all 15, wins
+  378 vs 335, positive against every opponent (+0.259 vs nicked v75); ladder
+  maps +0.000 (no book to fill). With CPP_HUB_GRAD 15: -0.156; 8: +0.010
+  (the per-step pull hurts). Fresh-seed confirmation with nicked v92 added:
+  see below.
+- New public bots (GitHub check): nicked v92 (arch4) and abyss's live
+  submission (wall-clock search, validation only). v10 vs nicked v92: 8/40
+  on the current pool (v75: 14/40); 0/4 on Portals, PD, Slithery, Trauma,
+  Schooltime, Trophy.
+- King growth (strategy from nicked, our own code): our protected long dragons
+  keep splitting while the team has fewer than FLOOR (24) units; nicked's stop
+  at a quarter of the cap and then only split a 2-child every 5 rounds.
+  Switches CPP_PROTECT_FLOOR, CPP_RESCUE_EVERY, and CPP_FEED_SHIFT_LARGE
+  (cash-in schedule earlier on big maps, as nicked's BIG_CASH_SHIFT).
+
 ## 4. Stage 3: tune the compact set with group multipliers
 
 Tune **one multiplier per kept group** (scaling that group's weights from

@@ -639,8 +639,8 @@ inline bool king_protected(const Obs& obs, int born_round) {
     return (born_round == 0 && obs.round >= params::FOUNDER_PROTECT_ROUND) ||
            (obs.round >= params::PROTECT_ROUND && obs.length >= params::PROTECT_LEN);
 }
-inline std::optional<CashTarget> visible_target(WorldMemory& mem, const Obs& obs, char team, int did) {
-    if (obs.round < params::FEED_ROUND || obs.length > params::FEED_MAXLEN) return std::nullopt;
+inline std::optional<CashTarget> visible_target(WorldMemory& mem, const Obs& obs, char team, int did, int shift = 0) {
+    if (obs.round < params::FEED_ROUND - shift || obs.length > params::FEED_MAXLEN) return std::nullopt;
     std::unordered_map<int, int> segments;
     std::vector<std::tuple<int, int, char>> heads;  // (k, id, facing)
     for (int k = 0; k < 49; ++k) {
@@ -686,7 +686,8 @@ inline std::optional<std::string> should_split(int width, int height, int unit_l
     if (danger_cells(obs, team).count(CENTER)) return std::nullopt;
     int cutoff = (width * height < params::AREA_SPLIT) ? params::SPLIT_UNTIL_SMALL : params::SPLIT_UNTIL_LARGE;
     bool late = obs.round > cutoff;
-    if (protectedFlag && (late || obs.unit_count >= params::FLOOR)) return std::nullopt;
+    int pfloor = params::CPP_PROTECT_FLOOR >= 0 ? params::CPP_PROTECT_FLOOR : params::FLOOR;
+    if (protectedFlag && (late || obs.unit_count >= pfloor)) return std::nullopt;
     if (late && (obs.unit_count >= params::FLOOR || obs.round >= params::FLOOR_UNTIL)) return std::nullopt;
     return std::string("SPLIT ") + std::to_string(params::CHILD);
 }
@@ -714,6 +715,11 @@ class Brain {
     Init init;
     WorldMemory memory;
     std::optional<int> born_round;
+    int last_split = -1000;   // round of this dragon's last split (CPP_RESCUE_EVERY)
+
+    // CPP_FEED_SHIFT_LARGE: big maps start the cash-in schedule earlier (drops there
+    // are rarely taken by the enemy; nicked starts 40 rounds earlier on big maps).
+    int feed_shift() const { return init.width * init.height >= params::AREA_SPLIT ? params::CPP_FEED_SHIFT_LARGE : 0; }
 
     explicit Brain(const Init& in) : init(in), memory(in.width, in.height) {}
 
@@ -821,10 +827,11 @@ class Brain {
     // teammate head is in view near the beaconed cell it is used as the king (so
     // should_feed can fire); otherwise the target only pulls (local = -1).
     std::optional<CashTarget> beacon_target(const Obs& obs) {
-        if (king_cell < 0 || obs.round < params::CPP_KB_ROUND) return std::nullopt;
+        int shift = feed_shift();
+        if (king_cell < 0 || obs.round < params::CPP_KB_ROUND - shift) return std::nullopt;
         if (length_q(obs.length) >= king_q) return std::nullopt;   // this dragon is (a) king
-        bool small = obs.round >= params::FEED_ROUND && obs.length <= params::FEED_MAXLEN;
-        bool big = params::CPP_BIG_FEED && obs.round >= params::CPP_BIG_FEED_ROUND &&
+        bool small = obs.round >= params::FEED_ROUND - shift && obs.length <= params::FEED_MAXLEN;
+        bool big = params::CPP_BIG_FEED && obs.round >= params::CPP_BIG_FEED_ROUND - shift &&
                    4 * king_q >= obs.length + params::CPP_BIG_FEED_MARGIN;
         if (!small && !big) return std::nullopt;
         std::optional<CashTarget> best;
@@ -932,7 +939,7 @@ class Brain {
     std::string turn(const Obs& obs) {
         std::string action = decide(obs);
         if (action.empty()) return action;
-        if (params::CPP_KING_BEACON && obs.round >= params::CPP_KB_ROUND) action += king_lines(obs);
+        if (params::CPP_KING_BEACON && obs.round >= params::CPP_KB_ROUND - feed_shift()) action += king_lines(obs);
         else if (params::CPP_SONAR_HUB) action += sonar_lines(obs);
         // last, so it wins the backward direction over a beacon
         if (params::CPP_BRIEF && action.rfind("SPLIT ", 0) == 0) action += brief_line(obs);
@@ -947,7 +954,7 @@ class Brain {
         if (params::GOAL) memory.update_goal(obs, init.id);
         if (!born_round) born_round = obs.round;
         bool protectedFlag = king_protected(obs, *born_round);
-        auto target = visible_target(memory, obs, init.team, init.id);
+        auto target = visible_target(memory, obs, init.team, init.id, feed_shift());
         if (params::CPP_KING_BEACON && !target) target = beacon_target(obs);
         if (should_feed(memory, obs, init.team, target)) return "";
         auto split = should_split(init.width, init.height, init.unit_limit, obs, init.team, protectedFlag);
@@ -959,7 +966,11 @@ class Brain {
             obs.unit_count >= params::CPP_ANCHOR_RESCUE)
             split.reset();
         if (split && params::CPP_SPLIT_SAFE && !child_can_escape(obs)) split.reset();
-        if (split) return *split;
+        // CPP_RESCUE_EVERY: a protected (long) dragon below the floor rebuilds the
+        // population slowly instead of splitting itself back down every turn.
+        if (split && params::CPP_RESCUE_EVERY > 0 && protectedFlag && obs.round - last_split < params::CPP_RESCUE_EVERY)
+            split.reset();
+        if (split) { last_split = obs.round; return *split; }
         auto scores = score_moves(memory, obs, init.team, init.id, protectedFlag, target, t0, *born_round);
         if (scores.empty()) {
             if (obs.length >= 4 && obs.unit_count < init.unit_limit)
