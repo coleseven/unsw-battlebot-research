@@ -151,9 +151,14 @@ def extract_map(path: pathlib.Path, seen: dict[str, str]) -> str | None:
     if digest in seen:
         return seen[digest]
     name = _safe(r.map_name or f"unnamed_{digest}")
-    dest = MAPS / "server" / f"{name}.map"
+    # Since 27 Sep the server hides pearl spawners in replays of its map
+    # variants; such a copy never spawns a pearl locally, so keep it apart
+    # (a case-insensitive lookup of e.g. trophy.map once picked one up).
+    spawns = any(l.startswith("TILE") and l.split()[3:5] != ["0", "0"] for l in text.splitlines())
+    folder = MAPS / "server" if spawns else MAPS / "server" / "hidden"
+    dest = folder / f"{name}.map"
     if dest.is_file() and dest.read_text(encoding="utf8") != text:
-        dest = MAPS / "server" / f"{name}_{digest}.map"
+        dest = folder / f"{name}_{digest}.map"
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text(text, encoding="utf8", newline="\n")
     seen[digest] = dest.stem
