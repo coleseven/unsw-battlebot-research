@@ -4,6 +4,13 @@ Competition: https://game.battlecode.au (21 Sep – 17 Oct 2026). Rules: https:/
 
 ## Best tested local candidate
 
+**Upload candidate (28 Sep): `versions/v10` (`battlebot-v10.zip`, hash `c1fbdb633f1627e3`)**:
+v9 plus the sonar king beacon and big-dragon feeding (`CPP_KING_BEACON`,
+`CPP_BIG_FEED`). Vs v9, paired: +0.085 [+0.032, +0.138] (237 vs 210 of 360)
+against nicked v75 / leviathan3 / v7-base / nicked v44; held out (nicked_lab,
+v6, ctmes) +0.036 [+0.003, +0.073] (207 vs 198 of 270). Judge sandbox max
+7.6M points. See FEATURE_EXPERIMENT.md.
+
 **Upload candidate (28 Sep): `versions/v9` (`battlebot-v9.zip`, hash `7bad14b4e4fd110b`)**,
 the C++ bot with the v8 features (portal book for all 15 ranked maps, age-based
 portal scouting on, trap weight by local tightness) and the weights of the v9

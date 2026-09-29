@@ -347,6 +347,17 @@ splitting; fewer splits or detours cost more than they save. Own-team body
 deaths (18/game) are crowding (60% with no free neighbour), not
 coordination. v10 = v9 + CPP_KING_BEACON + CPP_BIG_FEED only.
 
+### 28 Sep 23:10: v10 frozen
+
+Held out vs v9 (`results/20260928-224114-full-change-f05cec` vs
+`...-224115-full-change-345748`; nicked_lab, Python v6, ctmes; 15 maps, both
+sides, 3 seeds): 207 vs 198 of 270, +0.036 [+0.003, +0.073]; pool +0.028;
+nicked_lab +0.053, v6 +0.029, ctmes +0.003 (59/60 both). Judge sandbox max
+7.6M points (Slithery); "no valid action" deaths only from round 403 (king
+feeding). `versions/v10`, `battlebot-v10.zip` (SHA-256
+5927847622bf570f28cb40524f406397d03d0a9ce696194411336a3ae30393b6), verified by
+extracting and playing a sandbox game.
+
 ## 4. Stage 3: tune the compact set with group multipliers
 
 Tune **one multiplier per kept group** (scaling that group's weights from
