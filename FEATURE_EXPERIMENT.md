@@ -379,6 +379,29 @@ warm start centred on v10 with the v9 run's covariance (`--warm-mean base`),
 added, dead-end penalty 0-150 with look 12), 4 opponents, current + perturbed
 maps (pair sampling), cmaes-lra, mean played each generation.
 
+### 29 Sep: v11 retune and follow-up research (none beats v10 robustly)
+
+- v11 retune (gens 0-8, mean of gen 5-8 means) vs v10: held out (nicked_lab,
+  v6, ctmes) 205 vs 207, -0.029 [-0.117, +0.048]; training opponents on fresh
+  seeds 232 vs 212, +0.048 [-0.025, +0.123], but -0.059 vs nicked v75 and
+  +0.152 vs leviathan3: overfits the easy opponent. Not adopted.
+- v10 vs nicked v75 (40 recorded games, 15/40 won): we eat more pearls (604 vs
+  454/game) and reach the same total, but nicked's longest dragon is 11 at
+  round 300 (ours 4) and 23 at 490 (ours 17); it feeds more (29 vs 12.5
+  deliberate feeding deaths/game) and sprints a little (4/game, we 0).
+  Trophy 0/4 (by round 100 nicked has 103-111 total vs our 15-16: our
+  dragons wander to nicked's side while it takes the centre hub), Schooltime
+  0/4 (their feeding deaths 72-147 vs ours 6-22), Slithery 0/4 (our kelp
+  deaths 940-1340 vs 340-470), PD 0/4 (early eliminations).
+- CPP_ANCHOR (founders stop splitting from round 80/150, as nicked's anchors):
+  neutral (-0.005..+0.014 over 450 games); anchored founders get killed.
+- Stronger far hub pull (HUB_FAR_MULT/HUB_SCALE): +0.044 [-0.011, +0.101]
+  first, then -0.056 [-0.136, +0.017] and -0.058 on fresh seeds with v6 added:
+  the first result was noise. Exploration goal off: +0.010.
+
+Lesson: first-pass effects of +0.04 are within noise (paired CI about +/-0.05
+at 450-540 games); only fresh-seed confirmation counts. v10 stays the best.
+
 ## 4. Stage 3: tune the compact set with group multipliers
 
 Tune **one multiplier per kept group** (scaling that group's weights from
