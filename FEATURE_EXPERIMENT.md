@@ -413,8 +413,11 @@ at 450-540 games); only fresh-seed confirmation counts. v10 stays the best.
   +0.150 [+0.073, +0.236] current pool, +0.122 [+0.054, +0.191] all 15, wins
   378 vs 335, positive against every opponent (+0.259 vs nicked v75); ladder
   maps +0.000 (no book to fill). With CPP_HUB_GRAD 15: -0.156; 8: +0.010
-  (the per-step pull hurts). Fresh-seed confirmation with nicked v92 added:
-  see below.
+  (the per-step pull hurts). Fresh-seed confirmation (seeds 153001-3, nicked
+  v92 added, leviathan3 kept, v6 dropped): +0.118 [+0.033, +0.203] current
+  pool, +0.090 [+0.019, +0.164] all 15, wins 316 vs 280, positive against
+  all six (v92 +0.027, v75 +0.164). Adopted: base for further tests is
+  results/v10g-bot (v10 + CPP_BOOK_MAP 1).
 - New public bots (GitHub check): nicked v92 (arch4) and abyss's live
   submission (wall-clock search, validation only). v10 vs nicked v92: 8/40
   on the current pool (v75: 14/40); 0/4 on Portals, PD, Slithery, Trauma,
