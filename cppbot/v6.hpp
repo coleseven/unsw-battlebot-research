@@ -270,6 +270,7 @@ class WorldMemory {
     std::vector<hub_book::Layout> hub_maps;     // candidate layouts
     Hubs hubs;
     Hubs learned_hubs;                          // CPP_HUB_OBSERVE: hubs from this dragon's own observations
+    bool book_filled = false;                   // CPP_BOOK_MAP: open edges filled from the identified layout
     std::unordered_map<int, double> hub_area;
 
     OrderedMap<int> timer_max;                  // spawn tile -> largest countdown
@@ -303,6 +304,16 @@ class WorldMemory {
         if (!book.empty()) apply_book();
         const auto& visible = nav.visible;
         if (!hub_maps.empty()) identify_map(obs);
+        // CPP_BOOK_MAP: once the map is identified, the book's edge layout says
+        // which edges are open everywhere, so paths are known from turn one.
+        // Only open edges are filled; closed ones stay unknown (kelp blocks as
+        // before, portals still come from the portal book or observation).
+        if (params::CPP_BOOK_MAP && !book_filled && hub_maps.size() == 1) {
+            const std::string& bits = hub_maps[0].bits;
+            for (int key = 0; key < static_cast<int>(nav.edges.size()); ++key)
+                if (nav.edges[key] == NONE && hex_bit(bits, key) == 0) nav.remember(key, OPEN);
+            book_filled = true;
+        }
         std::vector<double> rates;
         for (auto& [c, k] : visible) {
             sector_seen[(c / width / sec) * sec_w + (c % width) / sec] = obs.round;

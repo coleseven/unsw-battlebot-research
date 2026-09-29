@@ -126,4 +126,7 @@ inline constexpr double CPP_BRIEF_PEN = 200.0;
 inline constexpr int CPP_HUB_OBSERVE = 0;
 inline constexpr int CPP_ANCHOR = 0;
 inline constexpr int CPP_ANCHOR_RESCUE = 12;
+inline constexpr double CPP_HUB_GRAD = 0.0;
+inline constexpr int CPP_HUB_GRAD_UNTIL = 500;
+inline constexpr int CPP_BOOK_MAP = 0;
 }  // namespace params

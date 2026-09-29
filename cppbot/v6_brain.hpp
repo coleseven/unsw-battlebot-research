@@ -440,7 +440,7 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
     bool budget = params::CPP_BUDGET != 0 && t0 >= 0;
     PathDist pd;
     bool usePath = params::CPP_PATH_DIST != 0;
-    if (usePath) pd.build(mem, obs);
+    if (usePath || params::CPP_HUB_GRAD > 0) pd.build(mem, obs);
     bool hunter = !protectedFlag && obs.length <= params::HUNT_MAXLEN;
     bool attacker = !protectedFlag && obs.length <= params::ATTACK_MAXLEN;
     std::unordered_map<char, int> attacks_map;
@@ -559,6 +559,28 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
             }
             far *= params::HUB_FAR_MULT;
             value += params::W_HUB * std::max(tm.hub, far) / crowd;
+            // CPP_HUB_GRAD: a constant pull per step closer to the best hub. The
+            // term above changes by about 1 point between neighbouring moves when
+            // the hub is far, so the local v3 ranker (10-30 point differences)
+            // decided the Trophy opening and our founders drifted to the far side
+            // while nicked took the centre hub (142 vs 39 pearls by round 100).
+            if (params::CPP_HUB_GRAD > 0 && obs.round < params::CPP_HUB_GRAD_UNTIL) {
+                int w = mem.width, h = mem.height;
+                // target: the most attractive hub (value discounted by distance)
+                int target = -1; double target_v = 0, best_score = -1;
+                for (auto& [hub, v] : mem.hubs) {
+                    double score = v / (1 + torus_distance(start, hub, w, h) / params::HUB_SCALE);
+                    if (score > best_score) { best_score = score; target = hub; target_v = v; }
+                }
+                if (target >= 0 && torus_distance(start, target, w, h) > 2) {   // at the hub, food and local play take over
+                    // walking distance where known (pd: +1 closer for the first
+                    // step of the shortest path, 1 further otherwise), else straight line
+                    auto it = pd.dist.find(target);
+                    double now = it != pd.dist.end() ? it->second : torus_distance(start, target, w, h);
+                    double after = pd.eff(direction, target, torus_distance(dest, target, w, h));
+                    value += params::CPP_HUB_GRAD * target_v * (now - after) / crowd;
+                }
+            }
         }
         if (obs.length >= params::DEFEND_LEN) {
             int near = 0; for (auto& [cell, _] : enemy_heads) if (torus_distance(dest, cell, mem.width, mem.height) <= 2) ++near;

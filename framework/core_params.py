@@ -141,3 +141,6 @@ CPP_BRIEF_PEN = 200.0   # C++ only: first-turn penalty for a direction the paren
 CPP_HUB_OBSERVE = 0     # C++ only: 1 = on a hub-book map, replace the book hubs with learned ones once any are observed
 CPP_ANCHOR = 0          # C++ only: 1 = founders never split from FOUNDER_PROTECT_ROUND (grow early kings)
 CPP_ANCHOR_RESCUE = 12  # C++ only: ...unless the team has fewer dragons than this
+CPP_HUB_GRAD = 0.0      # C++ only: points per step closer to the best known hub (0 = off)
+CPP_HUB_GRAD_UNTIL = 500  # C++ only: apply the hub gradient before this round
+CPP_BOOK_MAP = 0        # C++ only: 1 = fill the identified book map's open edges (paths known from turn one)
