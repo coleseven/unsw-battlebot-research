@@ -358,6 +358,27 @@ feeding). `versions/v10`, `battlebot-v10.zip` (SHA-256
 5927847622bf570f28cb40524f406397d03d0a9ce696194411336a3ae30393b6), verified by
 extracting and playing a sandbox game.
 
+### 29 Sep night: v9 ladder analysis, hub book tests, v11 retune
+
+v9 ladder (128 games, 31 battles, opponents 1560-1650): 66 wins (52%).
+Worst maps Default 3/14, Trauma 2/8, Slithery 5/14, PD 5/14, QoS 5/11; best
+Autarky 13/13, Trophy 11/14. Losses: 25 round-500 with shorter king and less
+total, 15 tiebreak with shorter king but more total, 18 eliminations.
+Opponents' deliberate feeding deaths 47.6/game vs our 23.7 (plus 36 self-hits):
+they feed kings about twice as hard.
+
+Hub book A/B (25 maps = 15 + 10 perturbed; 4 opponents; 3 seeds; 600 each):
+book off vs on: book maps original spawns -0.103 [-0.199, -0.006], perturbed
++0.048 [-0.083, +0.187]. CPP_HUB_OBSERVE (switch to learned hubs once observed):
+current pool originals -0.104 [-0.172, -0.037], perturbed +0.003. The book is
+a good prior even with shuffled spawns: kept on, observe off.
+
+v11 retune `results/20260929-013847-tune-c7cd3d`: base v10 (current code),
+warm start centred on v10 with the v9 run's covariance (`--warm-mean base`),
+17 dims (`space_v11.json`: king-feeding ranges widened, economy settings
+added, dead-end penalty 0-150 with look 12), 4 opponents, current + perturbed
+maps (pair sampling), cmaes-lra, mean played each generation.
+
 ## 4. Stage 3: tune the compact set with group multipliers
 
 Tune **one multiplier per kept group** (scaling that group's weights from
