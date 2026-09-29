@@ -26,10 +26,11 @@ from pathlib import Path
 from .paths import RESULTS
 
 LOCK = RESULTS / ".experiment.lock"
-# 28 Sep 18:16: Windows Memory Diagnostic removed bad RAM regions; a third BSOD
-# (0x7E, illegal instruction) followed under a single 8-worker job. Keep the
-# memory footprint small until the RAM is fixed; raise with BCSIM_MAX_WORKERS.
-MAX_WORKERS = int(os.environ.get("BCSIM_MAX_WORKERS", "4"))
+# 28 Sep: Windows Memory Diagnostic removed bad RAM regions and a third BSOD
+# followed under a single 8-worker job; the RAM overclock was then removed
+# (3600 MHz). Back to the 12 workers that ran for hours before, one job at a
+# time; lower with BCSIM_MAX_WORKERS if crashes return.
+MAX_WORKERS = int(os.environ.get("BCSIM_MAX_WORKERS", "12"))
 _held = 0
 
 
