@@ -466,6 +466,14 @@ at 450-540 games); only fresh-seed confirmation counts. v10 stays the best.
   in view without its head; feeders bind to the head carrying the token.
   Smoke test (4 games vs v75) runs; ablate on v10j (= v10h), seeds 211001-3:
   kb2, kb2 + hubsep.
+  Result (540 games each; base 314 wins): kb2 +0.033 [+0.009, +0.060] pool,
+  +0.018 all 15, 323 wins; kb2hub +0.041 [+0.003, +0.085], 324. Mostly from
+  easy opponents (leviathan3 +0.087; v92 -0.034): current-pool wins vs the
+  strong three (v92, v75, lab) 65/180 vs base 62/180, vs the easy three 140 vs
+  132. Not established; fresh-seed confirmation of kb2 alone (seeds 221001-3).
+- CPP_FEED_REACH (F1): feed only if the king's head can walk (in view, through
+  free cells and our own body) to our body within this many steps; the old
+  check was a 2-4 geometric distance that ignores kelp and bodies between.
 
 ## 4. Stage 3: tune the compact set with group multipliers
 

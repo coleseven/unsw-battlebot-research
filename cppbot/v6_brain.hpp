@@ -670,6 +670,32 @@ inline std::optional<CashTarget> visible_target(WorldMemory& mem, const Obs& obs
     if (!best_key) return std::nullopt;
     return best;
 }
+// CPP_FEED_REACH: steps the king (head at view index k) needs to reach the
+// nearest of our body cells, which turn into pearls when we feed, moving
+// through free cells and our own body in view; a large value if it cannot.
+// Geometric distance alone ignores kelp, bodies and walls between us.
+inline int king_reach_to_body(const Obs& obs, int king_k, int did) {
+    auto ours = [&](int k) { return obs.occ[k] && obs.occ[k]->id == did; };
+    std::vector<int> dist(49, -1);
+    std::vector<int> frontier{king_k};
+    dist[king_k] = 0;
+    while (!frontier.empty()) {
+        std::vector<int> nxt;
+        for (int k : frontier)
+            for (char d : DIRS) {
+                if (obs.edge(k, d) != OPEN) continue;
+                int n = Obs::step(k, d);
+                if (n < 0 || dist[n] >= 0) continue;
+                if (ours(n)) return dist[k] + 1;
+                if (obs.occ[n]) continue;
+                dist[n] = dist[k] + 1;
+                nxt.push_back(n);
+            }
+        frontier.swap(nxt);
+    }
+    return 1 << 20;
+}
+
 inline bool should_feed(WorldMemory& mem, const Obs& obs, char team, const std::optional<CashTarget>& target) {
     if (!target || target->local < 0) return false;   // local < 0: a beaconed king not in view
     int own = mem.cell(obs.x[CENTER], obs.y[CENTER]);
@@ -682,6 +708,9 @@ inline bool should_feed(WorldMemory& mem, const Obs& obs, char team, const std::
             if (torus_distance(enemy, target->head, mem.width, mem.height) <= 2) return false;
         }
     }
+    if (params::CPP_FEED_REACH > 0 && obs.occ[CENTER] &&
+        king_reach_to_body(obs, target->local, obs.occ[CENTER]->id) > params::CPP_FEED_REACH)
+        return false;
     return true;
 }
 
