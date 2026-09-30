@@ -493,6 +493,17 @@ at 450-540 games); only fresh-seed confirmation counts. v10 stays the best.
 - CPP_KING_GRAD: per-step pull (walking distance, PathDist) toward the
   feeding target. Ablate on v10l (= v10h), seeds 241001-3: kgrad10, kgrad25,
   kgrad25 + kb2.
+  Result (base 327 wins): kgrad10 -0.011, 318; kgrad25 -0.022, 319;
+  kgrad25kb2 -0.013, 316; mean longest dragon vs v92 19.1 (base) vs 19.2-19.7:
+  the pull is not the bottleneck. Not adopted.
+- Feed trace of 6 new replays vs v92 (results/v92-diag, v10h behaviour):
+  late sacrifices per game ours 0-19 vs v92's 22-100 (Big Empty 19/9 vs
+  36/100, Schooltime 9/6 vs 60/84, Autarky 0 vs 22); v92's team eats 3-4x more
+  of its own corpses late. Our king gets its share when feeding happens; the
+  volume is missing: only length <= FEED_MAXLEN (5) dragons feed, and only
+  near a visible king twice their length. Ablate on v10l, seeds 261001-3:
+  sum64 (FEED_MAXLEN 64, KING_GRAD 10), sum12 (12), sum64early (+ FEED_ROUND
+  380).
 
 ## 4. Stage 3: tune the compact set with group multipliers
 
