@@ -504,6 +504,13 @@ at 450-540 games); only fresh-seed confirmation counts. v10 stays the best.
   near a visible king twice their length. Ablate on v10l, seeds 261001-3:
   sum64 (FEED_MAXLEN 64, KING_GRAD 10), sum12 (12), sum64early (+ FEED_ROUND
   380).
+  Result (base 348 wins): sum12 +0.034 [-0.003, +0.070] pool, +0.028
+  [+0.001, +0.056] all 15, 362 wins; strong three on the pool 80 vs 69/180;
+  positive vs v92 (+0.027), v75 (+0.071), lab (+0.035); mean longest vs v92
+  21.3 vs 18.5. sum64 +0.013, 355 (strong 75); sum64early -0.003, 349 (strong
+  80, easy pool 139 vs 148). First change that moves the mechanism and helps
+  against the strong opponents. Confirmation of sum12 and sum64, seeds
+  271001-3.
 
 ## 4. Stage 3: tune the compact set with group multipliers
 
