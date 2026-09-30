@@ -473,7 +473,12 @@ at 450-540 games); only fresh-seed confirmation counts. v10 stays the best.
   132. Not established; fresh-seed confirmation of kb2 alone (seeds 221001-3).
 - CPP_FEED_REACH (F1): feed only if the king's head can walk (in view, through
   free cells and our own body) to our body within this many steps; the old
+- kb2 confirmation (seeds 221001-3; base 303 wins): +0.017 [-0.020, +0.060]
+  pool, 308 wins; strong three on the pool 55/180 vs 56/180, easy three
+  143 vs 136. Same pattern as the first run: gains only against easy
+  opponents. Not adopted alone; kept as an option under feeding changes.
   check was a 2-4 geometric distance that ignores kelp and bodies between.
+  Ablate on v10k (= v10h), seeds 231001-3: reach4, reach6, kb2 + reach4.
 
 ## 4. Stage 3: tune the compact set with group multipliers
 
