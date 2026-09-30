@@ -453,6 +453,19 @@ at 450-540 games); only fresh-seed confirmation counts. v10 stays the best.
   never applied) and CPP_V3_PORTAL (v3 scores a portal move by the cells
   beside the head, not the far end). Ablate on v10i (= v10h behaviour), seeds
   191001-3: hubsep, v3portal, both, v12tune (final mean), v12gen5 (gen-5 mean).
+  Result (540 games each; base 339 wins): hubsep +0.011 [-0.016, +0.040]
+  pool, 342 wins (Portals up, Autarky down, v92 +0.001); v3portal -0.043
+  [-0.095, +0.006], 330; both -0.033, 332; v12tune -0.091 [-0.192, +0.002],
+  317, v92 -0.185; v12gen5 -0.087 [-0.175, +0.001], 324, v92 -0.100. None
+  adopted; the broad retune made the bot worse against the strongest
+  opponent. v10h stays the incumbent.
+- CPP_KB_V2 (king beacon v2, same 32 bits): tag 5 | x 6 | y 6 | length/4 (4)
+  | origin round mod 8 | king token = id mod 16 | checksum 4. Relays keep the
+  origin round (a dead king expires after the TTL, capped at 7); ties go to
+  the lower token; a stored king is dropped when the cell it must be near is
+  in view without its head; feeders bind to the head carrying the token.
+  Smoke test (4 games vs v75) runs; ablate on v10j (= v10h), seeds 211001-3:
+  kb2, kb2 + hubsep.
 
 ## 4. Stage 3: tune the compact set with group multipliers
 

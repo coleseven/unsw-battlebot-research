@@ -153,3 +153,4 @@ CPP_FEED_SHIFT_LARGE = 0  # C++ only: on large maps (area >= AREA_SPLIT) feeding
 # distances; v3 scores portal moves by the cells beside the head instead of the far end
 CPP_HUB_SEP_FIX = 0     # C++ only: 1 = learned hubs use the true wrapped distance for their 5-cell spacing
 CPP_V3_PORTAL = 0       # C++ only: 1 = portal moves get the mean v3 score of the ordinary moves
+CPP_KB_V2 = 0           # C++ only: 1 = king beacon carries a king token and origin age (relays keep it); feeders bind to the token

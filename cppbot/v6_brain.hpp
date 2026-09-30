@@ -800,7 +800,90 @@ class Brain {
         return (tag << 24) | (x << 18) | (y << 12) | (uq << 7) | (1u << 6) | king_check(tag, x, y, uq);
     }
     static int length_q(int length) { return std::min(31, length / 4); }
+
+    // ---- CPP_KB_V2: king beacon with identity and origin age ----------------
+    // tag 5 | x 6 | y 6 | length/4 (4 bits, up to 60) | origin round mod 8 (3) |
+    // king token = id mod 16 (4) | checksum 4. Relays keep the origin round, so
+    // the TTL measures time since the king itself spoke (a dead king expires);
+    // feeders bind to the head whose id matches the token.
+    int king_tok = -1;
+    static std::uint32_t kb2_tag(char team) { return (hub_tag(team) ^ 0x15u) & 31u; }
+    static std::uint32_t kb2_check(std::uint32_t body) {
+        std::uint32_t h = body * 2654435761u;
+        return (h >> 28) & 15u;
+    }
+    std::uint32_t encode_king2(int cell, int q, int origin, int tok) const {
+        std::uint32_t x = cell % memory.width, y = cell / memory.width;
+        std::uint32_t body = (kb2_tag(init.team) << 23) | (x << 17) | (y << 11) |
+                             (static_cast<std::uint32_t>(std::clamp(q, 0, 15)) << 7) |
+                             ((static_cast<std::uint32_t>(origin) & 7u) << 4) | (static_cast<std::uint32_t>(tok) & 15u);
+        return (body << 4) | kb2_check(body);
+    }
+    static int kb2_ttl() { return std::min(params::CPP_KB_TTL, 7); }
+    // better(candidate) than the stored king: the same king with fresher news, or
+    // a longer king, or an equally long one with a lower token (deterministic)
+    bool kb2_better(int q, int origin, int tok, int now) const {
+        if (king_cell < 0 || now - king_round > kb2_ttl()) return true;
+        if (tok == king_tok) return origin > king_round;
+        return q > king_q || (q == king_q && tok < king_tok);
+    }
+    void receive_king2(const Obs& obs) {
+        std::uint32_t tag = kb2_tag(init.team);
+        for (std::uint32_t m : obs.msgs) {
+            std::uint32_t body = m >> 4;
+            if ((body >> 23) != tag || (m & 15u) != kb2_check(body)) continue;
+            int x = (body >> 17) & 63, y = (body >> 11) & 63, q = (body >> 7) & 15;
+            int r8 = (body >> 4) & 7, tok = body & 15;
+            if (x >= memory.width || y >= memory.height) continue;
+            int age = (obs.round - r8) & 7;
+            if (age > kb2_ttl()) continue;
+            int origin = obs.round - age;
+            if (kb2_better(q, origin, tok, obs.round)) {
+                king_cell = y * memory.width + x; king_q = q; king_round = origin; king_tok = tok;
+            }
+        }
+        if (obs.round - king_round > kb2_ttl()) { king_cell = -1; king_q = 0; king_tok = -1; }
+        // contradicted: where the king must be is in view, but its head is not
+        if (king_cell >= 0 && king_tok != (init.id & 15)) {
+            int head = memory.cell(obs.x[CENTER], obs.y[CENTER]);
+            int w = memory.width, h = memory.height;
+            int ax = std::abs(head % w - king_cell % w), ay = std::abs(head / w - king_cell / w);
+            int cheb = std::max(std::min(ax, w - ax), std::min(ay, h - ay));
+            if (cheb + (obs.round - king_round) <= 3 && king_head_in_view(obs) < 0) {
+                king_cell = -1; king_q = 0; king_tok = -1;
+            }
+        }
+    }
+    // index k of the visible teammate head carrying the king's token, or -1
+    int king_head_in_view(const Obs& obs) const {
+        int best = -1, best_d = 1 << 30;
+        for (int k = 0; k < 49; ++k) {
+            const auto& p = obs.occ[k];
+            if (!p || !p->head || p->team != init.team || p->id == init.id || (p->id & 15) != king_tok) continue;
+            int d = torus_distance(memory.cell(obs.x[k], obs.y[k]), king_cell, memory.width, memory.height);
+            if (d < best_d) { best_d = d; best = k; }
+        }
+        return best;
+    }
+    std::string king_lines2(const Obs& obs) {
+        int own_q = std::min(15, obs.length / 4), own_tok = init.id & 15;
+        std::uint32_t msg;
+        if (obs.length >= params::CPP_KB_MINLEN && (king_tok == own_tok || kb2_better(own_q, obs.round, own_tok, obs.round))) {
+            int cell = memory.cell(obs.x[CENTER], obs.y[CENTER]);
+            king_cell = cell; king_q = own_q; king_round = obs.round; king_tok = own_tok;
+            msg = encode_king2(cell, own_q, obs.round, own_tok);
+        } else if (king_cell >= 0) {
+            msg = encode_king2(king_cell, king_q, king_round, king_tok);   // relay, origin kept
+        } else {
+            return "";
+        }
+        std::string out, s = std::to_string(msg);
+        for (char d : DIRS) out += std::string("\nSONAR ") + d + " " + s;
+        return out;
+    }
+
     void receive_king(const Obs& obs) {
+        if (params::CPP_KB_V2) { receive_king2(obs); return; }
         std::uint32_t tag = hub_tag(init.team);
         for (std::uint32_t m : obs.msgs) {
             if ((m >> 24) != tag || ((m >> 6) & 1u) != 1u) continue;
@@ -817,6 +900,7 @@ class Brain {
         if (obs.round - king_round > params::CPP_KB_TTL) { king_cell = -1; king_q = 0; }
     }
     std::string king_lines(const Obs& obs) {
+        if (params::CPP_KB_V2) return king_lines2(obs);
         std::uint32_t msg;
         int own_q = length_q(obs.length);
         if (obs.length >= params::CPP_KB_MINLEN && (king_cell < 0 || own_q >= king_q))
@@ -836,11 +920,22 @@ class Brain {
     std::optional<CashTarget> beacon_target(const Obs& obs) {
         int shift = feed_shift();
         if (king_cell < 0 || obs.round < params::CPP_KB_ROUND - shift) return std::nullopt;
-        if (length_q(obs.length) >= king_q) return std::nullopt;   // this dragon is (a) king
+        if (params::CPP_KB_V2 ? king_tok == (init.id & 15) : length_q(obs.length) >= king_q)
+            return std::nullopt;   // this dragon is (a) king
         bool small = obs.round >= params::FEED_ROUND - shift && obs.length <= params::FEED_MAXLEN;
         bool big = params::CPP_BIG_FEED && obs.round >= params::CPP_BIG_FEED_ROUND - shift &&
                    4 * king_q >= obs.length + params::CPP_BIG_FEED_MARGIN;
         if (!small && !big) return std::nullopt;
+        if (params::CPP_KB_V2) {
+            // bind to the head carrying the king's token, not any teammate near the cell
+            int k = king_head_in_view(obs);
+            if (k >= 0) {
+                int head = memory.cell(obs.x[k], obs.y[k]);
+                if (torus_distance(head, king_cell, memory.width, memory.height) <= 4 + (obs.round - king_round))
+                    return CashTarget{head, memory.nav.destination(head, obs.occ[k]->facing), k};
+            }
+            return CashTarget{king_cell, std::nullopt, -1};
+        }
         std::optional<CashTarget> best;
         int best_d = 1 << 30;
         for (int k = 0; k < 49; ++k) {

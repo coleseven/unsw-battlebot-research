@@ -6,6 +6,15 @@ Incumbent: **v10h** (`results/v10h-bot`, v10 + CPP_BOOK_MAP + CPP_FEED_SHIFT_LAR
 Keep **v10g** (book map only) as a second control: the book gain is confirmed,
 the feed shift is marginal.
 
+## Done
+
+- 30 Sep defect + tune-candidate ablate: nothing beats v10h (hubsep +0.011,
+  v3portal -0.043, both -0.033, v12tune -0.091, v12gen5 -0.087 on the pool;
+  both tune candidates worst vs nicked v92). No finalists, so the robustness
+  check is moot for these; hubsep kept as an option for combinations.
+- Item 4 implemented as CPP_KB_V2 (default off); ablate running
+  (results/v12-kb2-dir.txt).
+
 ## Now
 
 1. **Defect + tune-candidate ablate** (`results/20260930-073741-ablate-f5f4ba`,
