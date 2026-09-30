@@ -132,4 +132,6 @@ inline constexpr int CPP_BOOK_MAP = 0;
 inline constexpr int CPP_PROTECT_FLOOR = -1;
 inline constexpr int CPP_RESCUE_EVERY = 0;
 inline constexpr int CPP_FEED_SHIFT_LARGE = 0;
+inline constexpr int CPP_HUB_SEP_FIX = 0;
+inline constexpr int CPP_V3_PORTAL = 0;
 }  // namespace params

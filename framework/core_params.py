@@ -149,3 +149,7 @@ CPP_BOOK_MAP = 0        # C++ only: 1 = fill the identified book map's open edge
 CPP_PROTECT_FLOOR = -1  # C++ only: protected dragons stop splitting at this many units (-1 = FLOOR)
 CPP_RESCUE_EVERY = 0    # C++ only: below that floor a protected dragon splits at most once per this many rounds (0 = no limit)
 CPP_FEED_SHIFT_LARGE = 0  # C++ only: on large maps (area >= AREA_SPLIT) feeding and king beacons start this many rounds earlier
+# Defects found in review (30 Sep): learned-hub spacing used max instead of min of the wrapped
+# distances; v3 scores portal moves by the cells beside the head instead of the far end
+CPP_HUB_SEP_FIX = 0     # C++ only: 1 = learned hubs use the true wrapped distance for their 5-cell spacing
+CPP_V3_PORTAL = 0       # C++ only: 1 = portal moves get the mean v3 score of the ordinary moves

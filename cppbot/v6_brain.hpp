@@ -474,6 +474,13 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
     if (remaining.empty()) return scores;
 
     auto v3 = v3_scores(obs, team, remaining);
+    // CPP_V3_PORTAL: v3 describes the cells beside our head, but a portal move
+    // lands at the far end; give portal moves the mean of the ordinary moves.
+    if (params::CPP_V3_PORTAL) {
+        double sum = 0; int n = 0;
+        for (char d : remaining) if (obs.edge(CENTER, d) < 0) { sum += v3[d]; ++n; }
+        for (char d : remaining) if (obs.edge(CENTER, d) >= 0) v3[d] = n ? sum / n : 0.0;
+    }
     Threats th = head_threats(mem, obs, team, did);
     std::unordered_map<int, int> reach;
     for (auto& [cell, pid] : enemy_heads)

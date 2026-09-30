@@ -442,8 +442,12 @@ class WorldMemory {
             if (static_cast<int>(picked.size()) >= 4 || v <= 0 || v < 2 * mean) break;
             bool far = true;
             for (auto& [q, _] : picked) {
-                int dxm = std::max(std::abs(c % w - q % w), w - std::abs(c % w - q % w));
-                int dym = std::max(std::abs(c / w - q / w), h - std::abs(c / w - q / w));
+                // wrapped distance per axis: min of direct and around (CPP_HUB_SEP_FIX;
+                // the port used max, so every pair looked >= half the map apart and
+                // learned hubs could all sit on one patch)
+                int ax = std::abs(c % w - q % w), ay = std::abs(c / w - q / w);
+                int dxm = params::CPP_HUB_SEP_FIX ? std::min(ax, w - ax) : std::max(ax, w - ax);
+                int dym = params::CPP_HUB_SEP_FIX ? std::min(ay, h - ay) : std::max(ay, h - ay);
                 if (std::max(dxm, dym) < 5) { far = false; break; }
             }
             if (far) picked.emplace_back(c, std::round(v / best * 1000.0) / 1000.0);
