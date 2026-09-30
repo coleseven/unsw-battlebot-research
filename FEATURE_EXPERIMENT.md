@@ -427,6 +427,23 @@ at 450-540 games); only fresh-seed confirmation counts. v10 stays the best.
   at a quarter of the cap and then only split a 2-child every 5 rounds.
   Switches CPP_PROTECT_FLOOR, CPP_RESCUE_EVERY, and CPP_FEED_SHIFT_LARGE
   (cash-in schedule earlier on big maps, as nicked's BIG_CASH_SHIFT).
+  Round 1 on v10g (seeds 161001-3, 540 games each): floor 16, floor 16 +
+  rescue 5, floor 10 + rescue 5 all within +/-0.013 (they barely trigger:
+  SPLIT_AT 4 splits a dragon at length 4, before PROTECT_LEN 5 makes it
+  protected). shift40 +0.026 [-0.007, +0.064] pool, +0.036 [+0.011, +0.064]
+  all 15, wins 344 vs 325. Round 2 (seeds 171001-3): shift40 again, and
+  PROTECT_LEN 4 alone / with floor 16 + rescue 5 / plus shift40.
+  Round 2: PROTECT_LEN 4 -0.185 [-0.269, -0.106] pool (285 vs 329 wins);
+  with floor 16 + rescue 5 -0.302 (250); plus shift40 -0.324 (247). Growing
+  kings early is badly worse for us, against every opponent: our strength is
+  many small dragons. shift40 +0.004 pool, +0.029 [-0.000, +0.061] all 15
+  (344 vs 329); both rounds together 688 vs 654 wins and positive vs both
+  nicked versions each time: adopted (v10h = v10 + book map + shift40).
+- v12 retune (results/v12-tune-dir.txt): warm from the v11 run's covariance,
+  centred on v10h, space_v12 (17 dims: v11 minus CPP_DEADEND_PEN plus
+  CPP_FEED_SHIFT_LARGE), strong opponents only (nicked v92, v75, v44, lab,
+  v7-base; leviathan3 held out after it overfit v11), current pool + perturbed
+  copies (pair sampling), seed 181001, popsize 12, sigma 0.2.
 
 ## 4. Stage 3: tune the compact set with group multipliers
 
