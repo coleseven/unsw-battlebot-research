@@ -15,6 +15,18 @@ the feed shift is marginal.
 - Item 4 implemented as CPP_KB_V2 (default off); ablate running
   (results/v12-kb2-dir.txt).
 
+- 30 Sep kb2 confirmation: gains only vs easy opponents (strong three 55 vs
+  56/180). Feed reach (reach4/6, kb2+reach4): all within noise, slightly
+  negative vs v92.
+- **v92 loss anatomy** (630 base games vs v92, 30 Sep runs): (a) longest-dragon
+  tiebreak with equal or more total length (Autarky longest 12 vs 26, total
+  86 vs 52; Big Empty 55 vs 77; Slithery 36 vs 54; Schooltime 36 vs 60): the
+  feed pull W_CASH/(1+d) is ~3 points far away, drowned by v3. Testing
+  CPP_KING_GRAD (per-step walking-distance pull to the feeding target).
+  (b) early elimination: Prisoners Dilemma 0/42 (wiped out in 41, median
+  round 221; our population never grows, v92 cycles 81 wall deaths/game),
+  Default Small, Arena, Trophy. **PD opening/population is its own item.**
+
 ## Now
 
 1. **Defect + tune-candidate ablate** (`results/20260930-073741-ablate-f5f4ba`,

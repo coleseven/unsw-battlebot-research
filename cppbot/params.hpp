@@ -135,5 +135,6 @@ inline constexpr int CPP_FEED_SHIFT_LARGE = 0;
 inline constexpr int CPP_HUB_SEP_FIX = 0;
 inline constexpr int CPP_V3_PORTAL = 0;
 inline constexpr int CPP_FEED_REACH = 0;
+inline constexpr double CPP_KING_GRAD = 0.0;
 inline constexpr int CPP_KB_V2 = 0;
 }  // namespace params

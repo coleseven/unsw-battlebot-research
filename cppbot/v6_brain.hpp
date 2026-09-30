@@ -440,7 +440,7 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
     bool budget = params::CPP_BUDGET != 0 && t0 >= 0;
     PathDist pd;
     bool usePath = params::CPP_PATH_DIST != 0;
-    if (usePath || params::CPP_HUB_GRAD > 0) pd.build(mem, obs);
+    if (usePath || params::CPP_HUB_GRAD > 0 || (params::CPP_KING_GRAD > 0 && cash.has_value())) pd.build(mem, obs);
     bool hunter = !protectedFlag && obs.length <= params::HUNT_MAXLEN;
     bool attacker = !protectedFlag && obs.length <= params::ATTACK_MAXLEN;
     std::unordered_map<char, int> attacks_map;
@@ -628,6 +628,18 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
             double sl = torus_distance(dest, cash->head, mem.width, mem.height);
             double d = usePath ? pd.eff(direction, cash->head, static_cast<int>(sl)) : sl;
             value += params::W_CASH / (1 + d);
+            // CPP_KING_GRAD: a constant pull per step closer to the king by walking
+            // distance (W_CASH/(1+d) is ~3 points at 20 cells, drowned by v3's
+            // 10-30 point spread: against nicked v92 we lose on the longest dragon
+            // with more total length, e.g. Autarky 12 vs 26 longest, 86 vs 52 total)
+            if (params::CPP_KING_GRAD > 0) {
+                int head = mem.cell(obs.x[CENTER], obs.y[CENTER]);
+                auto it = pd.dist.find(cash->head);
+                if (it != pd.dist.end())
+                    value += params::CPP_KING_GRAD * (it->second - pd.eff(direction, cash->head, it->second));
+                else
+                    value += params::CPP_KING_GRAD * (torus_distance(head, cash->head, mem.width, mem.height) - sl);
+            }
             if (cash->front.has_value() && dest == *cash->front) value -= params::W_LETHAL;
         }
         value += params::W_V3 * v3[direction];

@@ -479,6 +479,20 @@ at 450-540 games); only fresh-seed confirmation counts. v10 stays the best.
   opponents. Not adopted alone; kept as an option under feeding changes.
   check was a 2-4 geometric distance that ignores kelp and bodies between.
   Ablate on v10k (= v10h), seeds 231001-3: reach4, reach6, kb2 + reach4.
+  Result (base 329 wins): reach4 +0.030 [-0.014, +0.078] pool, 333 wins
+  (strong three on the pool 82 vs 76/180, guard 31 vs 35/90); reach6 +0.004,
+  325; kb2reach4 +0.022, 326; all slightly negative vs v92. Not adopted.
+- v92 loss anatomy (630 base games vs v92 from the 29-30 Sep runs): wins by
+  map Autarky 8/42, Colosseum 21, Devil 16, Portals 1, PD 0, Slithery 2,
+  Trauma 7, Arena 10, Big Empty 7, Default 15, Default Small 7, QoS 18,
+  Schooltime 6, Stronghold 19, Trophy 11. Round-limit losses are lost on the
+  longest dragon with similar or more total length (medians, ours/theirs:
+  Autarky 12/26 longest, 86/52 total; Big Empty 55/77, 588/556; Slithery
+  36/54, 184/204; Schooltime 36/60). Eliminations dominate PD (41 of 42,
+  median round 221), Default Small, Arena, Trophy.
+- CPP_KING_GRAD: per-step pull (walking distance, PathDist) toward the
+  feeding target. Ablate on v10l (= v10h), seeds 241001-3: kgrad10, kgrad25,
+  kgrad25 + kb2.
 
 ## 4. Stage 3: tune the compact set with group multipliers
 
