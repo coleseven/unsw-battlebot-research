@@ -444,6 +444,15 @@ at 450-540 games); only fresh-seed confirmation counts. v10 stays the best.
   CPP_FEED_SHIFT_LARGE), strong opponents only (nicked v92, v75, v44, lab,
   v7-base; leviathan3 held out after it overfit v11), current pool + perturbed
   copies (pair sampling), seed 181001, popsize 12, sigma 0.2.
+  Result: distribution-mean F +0.086 (gen 1), +0.080 (gen 5), then down to
+  -0.280 (gen 11); the final mean drifted far from v10h (food x2.9, attack
+  x2.2, feed x2.1). Per-generation scores are confounded by seed and map
+  sampling, so the final and gen-5 means are judged in the paired ablate below.
+- Review defects (TOP_100_RESEARCH.md, checked in source): CPP_HUB_SEP_FIX
+  (learned hubs' 5-cell spacing used max of the wrapped distances, so it
+  never applied) and CPP_V3_PORTAL (v3 scores a portal move by the cells
+  beside the head, not the far end). Ablate on v10i (= v10h behaviour), seeds
+  191001-3: hubsep, v3portal, both, v12tune (final mean), v12gen5 (gen-5 mean).
 
 ## 4. Stage 3: tune the compact set with group multipliers
 

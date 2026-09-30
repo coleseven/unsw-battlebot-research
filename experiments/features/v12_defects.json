@@ -1,1 +1,60 @@
-{"hubsep": {"CPP_HUB_SEP_FIX": 1}, "v3portal": {"CPP_V3_PORTAL": 1}, "both": {"CPP_HUB_SEP_FIX": 1, "CPP_V3_PORTAL": 1}}
+{
+ "hubsep": {
+  "CPP_HUB_SEP_FIX": 1
+ },
+ "v3portal": {
+  "CPP_V3_PORTAL": 1
+ },
+ "both": {
+  "CPP_HUB_SEP_FIX": 1,
+  "CPP_V3_PORTAL": 1
+ },
+ "v12tune": {
+  "W_PEARL": 521.0673,
+  "W_MEM_PEARL": 130.2668,
+  "W_SPAWN": 47.7502,
+  "W_V3": 40.6002,
+  "W_ATTACK": 918.9269,
+  "W_TRADE": 61.2618,
+  "W_HEAD_ENEMY": 202.6174,
+  "W_HEAD_TEAM": 202.6174,
+  "W_AHEAD": 67.5391,
+  "W_TRAP": 4.17,
+  "W_LETHAL": 41.7004,
+  "W_CASH": 157.3718,
+  "FEED_ROUND": 400,
+  "SPLIT_UNTIL_LARGE": 330,
+  "SPLIT_UNTIL_SMALL": 384,
+  "CAP": 52,
+  "FLOOR": 21,
+  "CPP_KB_ROUND": 250,
+  "CPP_KB_MINLEN": 11,
+  "CPP_BIG_FEED_ROUND": 400,
+  "CPP_BIG_FEED_MARGIN": 6,
+  "CPP_FEED_SHIFT_LARGE": 46
+ },
+ "v12gen5": {
+  "W_PEARL": 341.2009,
+  "W_MEM_PEARL": 85.3002,
+  "W_SPAWN": 43.7803,
+  "W_V3": 33.8755,
+  "W_ATTACK": 836.9967,
+  "W_TRADE": 55.7998,
+  "W_HEAD_ENEMY": 151.9525,
+  "W_HEAD_TEAM": 151.9525,
+  "W_AHEAD": 50.6508,
+  "W_TRAP": 4.4051,
+  "W_LETHAL": 44.0508,
+  "W_CASH": 111.438,
+  "FEED_ROUND": 400,
+  "SPLIT_UNTIL_LARGE": 363,
+  "SPLIT_UNTIL_SMALL": 407,
+  "CAP": 55,
+  "FLOOR": 23,
+  "CPP_KB_ROUND": 298,
+  "CPP_KB_MINLEN": 10,
+  "CPP_BIG_FEED_ROUND": 416,
+  "CPP_BIG_FEED_MARGIN": 4,
+  "CPP_FEED_SHIFT_LARGE": 38
+ }
+}
