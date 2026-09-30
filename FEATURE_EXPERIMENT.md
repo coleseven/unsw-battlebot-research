@@ -511,6 +511,12 @@ at 450-540 games); only fresh-seed confirmation counts. v10 stays the best.
   80, easy pool 139 vs 148). First change that moves the mechanism and helps
   against the strong opponents. Confirmation of sum12 and sum64, seeds
   271001-3.
+  Confirmation (base 323 wins): sum12 -0.017 [-0.050, +0.024] pool, 322
+  wins, strong three on the pool 66 vs 67/180; sum64 -0.030, 316. Did not
+  replicate. Both runs together sum12 684 vs 671 wins of 1080; vs v92
+  consistently positive (+0.027, +0.049; longest dragon +2.5 both times, v92
+  wins 30 vs 28 and 20 vs 16 of 90), vs v75 +0.071 then -0.051. Small real
+  mechanism effect, no established win gain. Not adopted.
 
 ## 4. Stage 3: tune the compact set with group multipliers
 

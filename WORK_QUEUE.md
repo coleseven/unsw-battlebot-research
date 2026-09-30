@@ -27,6 +27,11 @@ the feed shift is marginal.
   round 221; our population never grows, v92 cycles 81 wall deaths/game),
   Default Small, Arena, Trophy. **PD opening/population is its own item.**
 
+- 30 Sep endgame conversion: king gradient (no effect: longest unchanged);
+  feed trace showed our late feeding volume is 3-10x below v92's; letting
+  length <= 12 feed + king gradient 10 (sum12) raised our longest dragon vs
+  v92 by ~2.5 in two runs but the win gain did not replicate (+14, then -1).
+
 ## Now
 
 1. **Defect + tune-candidate ablate** (`results/20260930-073741-ablate-f5f4ba`,
