@@ -110,8 +110,9 @@ inline std::unordered_map<char, double> v3_scores(const Obs& obs, char team, con
             cont / 3.0, length, obs.round / 500.0, population,
             food * length, space * length, (friendly / 13.0) * population,
             exits / 3.0 * length, boundary / 24.0 * ((food == 0.0) ? 1.0 : 0.0)};
-        double s = 0; for (int j = 0; j < 24; ++j) s += row[j] * model::WEIGHT[j];
-        out[d] = s + model::BIAS;
+        const auto& wt = params::CPP_V3_R4 ? model::WEIGHT_R4 : model::WEIGHT;
+        double s = 0; for (int j = 0; j < 24; ++j) s += row[j] * wt[j];
+        out[d] = s + (params::CPP_V3_R4 ? model::BIAS_R4 : model::BIAS);
     }
     return out;
 }

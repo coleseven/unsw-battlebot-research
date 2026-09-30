@@ -155,4 +155,5 @@ CPP_HUB_SEP_FIX = 0     # C++ only: 1 = learned hubs use the true wrapped distan
 CPP_V3_PORTAL = 0       # C++ only: 1 = portal moves get the mean v3 score of the ordinary moves
 CPP_FEED_REACH = 0      # C++ only: feed only if the king can walk to our body (the drops) within this many steps in view (0 = off)
 CPP_KING_GRAD = 0.0     # C++ only: points per step closer (walking distance) to the feeding target (0 = off)
+CPP_V3_R4 = 0           # C++ only: 1 = move ranker weights refit on nicked v92's moves (model.hpp WEIGHT_R4)
 CPP_KB_V2 = 0           # C++ only: 1 = king beacon carries a king token and origin age (relays keep it); feeders bind to the token

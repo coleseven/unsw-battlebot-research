@@ -582,3 +582,22 @@ wins ties.
 | stage 5 | ~1,800 | 2 h | 1 h |
 
 Stage 1 is the overnight-friendly first run; stage 3 is the next night.
+
+### 30 Sep evening: v10h uploaded; move ranker refit (R4)
+
+- v10h frozen (versions/v10h, bot hash f9d00cd150ff2c53, battlebot-v10h.zip),
+  judge sandbox max 7.9M points/turn; active on the ladder by 21:59 UTC.
+- Prisoners Dilemma vs v92 (4 games): both sides stay small (~20 total), but
+  v92 eats 221-399 pearls per game to our 29-82 and splits 83-146 times to our
+  14-33; we lose ~7 dragons to kelp in rounds 0-50. Food finding, not fights.
+- Move ranker refit (bcsim/ranker_v4.py): 300 local games of nicked v92 vs our
+  five strongest bots on all 15 maps (2 seeds, both sides), v92's single-step
+  moves with at least two candidates, 25% sample, the same 24 features;
+  split by (map, seed). ~650k examples. Linear softmax (LBFGS, l2 by dev nll):
+  test accuracy on v92's moves 60.7% vs 57.9% for the old v3 weights (nll
+  0.820 vs 0.835). Largest changes: friendly_near -2.3 -> -6.3 (avoid
+  teammates), space_x_length +0.1 -> +6.4 (long dragons seek room), food_count
+  -0.7 -> -6.1 (nearest pearl over clusters). Weight norm 1.76x the old.
+  Stored in framework/ranker_r4.json, emitted as model::WEIGHT_R4 behind
+  CPP_V3_R4. Ablate on v10m (= v10h), seeds 301001-3: r4 (W_V3 24.7), r4eq
+  (W_V3 14.06, the old norm), r4lo (W_V3 9).

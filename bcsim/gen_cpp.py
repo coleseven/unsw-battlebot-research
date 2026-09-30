@@ -12,6 +12,7 @@ Run it after changing any of those Python sources, then rebuild cppbot.
 from __future__ import annotations
 
 import importlib
+import json
 import sys
 from pathlib import Path
 
@@ -117,12 +118,19 @@ def gen_model() -> str:
         raise ValueError(f"only the linear v3 model is ported, got {model['kind']}")
     weights = ", ".join(_cpp_number(float(w))[1] for w in model["weight"])
     bias = _cpp_number(float(model["bias"]))[1]
+    r4_path = ROOT / "framework/ranker_r4.json"
+    r4 = json.loads(r4_path.read_text(encoding="utf8")) if r4_path.exists() else model
+    r4w = ", ".join(_cpp_number(float(w))[1] for w in r4["weight"])
+    r4b = _cpp_number(float(r4["bias"]))[1]
     return "\n".join([
         BANNER.format(src="versions/v3/action_model.py"),
         "#pragma once", "#include <array>", "",
         "namespace model {", "",
         f"inline constexpr std::array<double, {len(model['weight'])}> WEIGHT = {{{weights}}};",
         f"inline constexpr double BIAS = {bias};", "",
+        "// CPP_V3_R4: the same 24 features refit on a stronger bot's moves (bcsim.ranker_v4)",
+        f"inline constexpr std::array<double, {len(r4['weight'])}> WEIGHT_R4 = {{{r4w}}};",
+        f"inline constexpr double BIAS_R4 = {r4b};", "",
         "}  // namespace model", ""])
 
 
