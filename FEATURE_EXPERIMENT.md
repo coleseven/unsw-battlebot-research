@@ -609,3 +609,23 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   that v3 is our most important term. Not adopted. Next ranker step, if any:
   labels from our own bot's outcomes (search/rollout teacher on states our bot
   visits), not imitation of another bot.
+
+### 30 Sep night: Prisoners Dilemma food
+
+- PD's food is 12 cells that respawn every round (x=14 and 17, y=0-2 and
+  13-15, two 6-cell blocks across the vertical wrap); the middle diamond
+  respawns every 150-250 rounds, x=15/16 every 480. Before round 150 v92 eats
+  94-116 pearls from the fast cells, we eat 16-38, though our founders start
+  beside them.
+- Hub log (results/make_hubdbg_bot.py, 1 game): founders starting on the left
+  edge never see a spawner timer and have no hubs all game; dragons that know
+  the hub wander away from it (the hub pull is drowned again); learned hubs
+  bunch on one patch (the spacing bug).
+- PD-only probe vs v92 (diagnostic, 6 games per variant): base 0/6, 50
+  pearls/game; CPP_SONAR_HUB 2/6, 161; + CPP_HUB_SEP_FIX 0/6, 36 (spreading
+  hubs sends dragons to slow cells); + sep + W_HUB x3 1/6, 123; + sep + goal
+  off 2/6, 225. Fresh seeds: sonarhub 3/6, 226; + goal off 1/6, 168; + W_HUB
+  x3 2/6, 274; + every 2 rounds 1/6, 158. CPP_SONAR_HUB alone 5/12 vs v92 on
+  PD (base 0/42 earlier today). It hurt on PD on 27 Sep (v7-era bot vs v75),
+  so the full suite decides: ablate on v10m, seeds 311001-3: sonarhub,
+  sonarhub + W_HUB x3.
