@@ -601,3 +601,11 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   Stored in framework/ranker_r4.json, emitted as model::WEIGHT_R4 behind
   CPP_V3_R4. Ablate on v10m (= v10h), seeds 301001-3: r4 (W_V3 24.7), r4eq
   (W_V3 14.06, the old norm), r4lo (W_V3 9).
+  Result (base 347 wins): r4 -0.044 [-0.149, +0.060] pool, 333 wins; r4eq
+  -0.053, 326; r4lo -0.175 [-0.283, -0.078], 291. Strong three on the pool
+  71/71/53 vs 76. Better imitation of v92 (60.7% vs 57.9%) made our bot
+  worse: v92's moves fit v92's own search, splitting and feeding, not ours.
+  A weaker ranker (W_V3 9) hurts a lot, consistent with the stage-1 finding
+  that v3 is our most important term. Not adopted. Next ranker step, if any:
+  labels from our own bot's outcomes (search/rollout teacher on states our bot
+  visits), not imitation of another bot.
