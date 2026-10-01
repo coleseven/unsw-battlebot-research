@@ -5,10 +5,12 @@ stage, frozen hashes, gates passed, next action, exact run directories.
 
 ## Current stage
 
-**M2 (teacher pilot), starting.** M1 gates passed (1 Oct): identity, and
-off/zero/log parity with v10h. Next action: pilot source games with feature
-logging (15 ranked + 7 Sprint unseen maps), sample ~300 decisions, force
-each legal candidate to the end of the game, report label usefulness.
+**M2b (teacher pilot, revised label), starting.** M2 gate NOT passed (1 Oct):
+terminal results of single forced moves are chaos-dominated; final-margin
+labels carry signal but a 210-decision student made held-out margins worse.
+Next action: short-horizon labels (+40 rounds) recorded from the same forced
+games, ~1,000 more decisions from fresh source games, a regularised student
+with an override margin, the same held-out check. Fail again -> stop R5 at M2.
 
 ## M0: frozen experiment contract (30 Sep 2026, git aa2cbb5)
 
@@ -78,3 +80,25 @@ each legal candidate to the end of the game, report label usefulness.
   and leviathan3 (6/28): the incumbent is fitted to known maps. The mover's
   source games and evaluation include the 7 Sprint maps as a generalisation
   panel (`official_suite.sprint_maps()`).
+
+## M2: teacher pilot (1 Oct) - gate not passed
+
+- `results/mover-m2`: 44 source games (15 ranked + 7 Sprint maps, both sides,
+  opponents rotating through the panel, seeds 381001+), 308 sampled decisions
+  (up to 7 per game: half random, half close calls), every legal candidate
+  forced and played to the end: 808 games, ~20 min at 12 workers.
+- Integrity: 0 errors, every forced move applied, forcing the chosen move
+  reproduced the source result at all 308 decisions.
+- Result differs between alternatives at 50/308 decisions (16%); final
+  longest-margin differs at 204/308. Oracle (best branch each time) +26.5 wins.
+- Labels vs the incumbent's own preference (S0 gap chosen - alternative):
+  game result alt - chosen: gap 0-5 -0.006, 5-20 +0.043, 20-60 0.000, 60+
+  +0.017 (no relation: result flips are chaos, not move quality); final
+  longest margin alt - chosen: -0.16, -0.67, -2.07, -2.37 (monotone: real
+  signal, and it agrees with the incumbent). Among the 50 result-flip
+  decisions the chosen move was best 21 times, worst 28.
+- Provisional student (`bcsim/mover_pilot_check.py`; linear residual,
+  pairwise logistic, split by whole source games 210/98): on margin labels the
+  held-out total fell 497 -> 455 with 56 overrides (13 better, 17 worse); on
+  result labels 56 -> 57.5 with 54 overrides (3/3). Overrides far too often;
+  no learnable improvement at this size.
