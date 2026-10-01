@@ -657,3 +657,24 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   small robust overall gain: candidate **v10o** = v10h + CPP_SONAR_HUB 1 +
   CPP_SONAR_ADOPT_AGE 30 (versions/v10o, bot hash 7623b9aa5ef6172b); judge
   sandbox check pending.
+
+### 1 Oct: Sprint, unseen maps, R5 mover
+
+- Sprint 1 (591 teams, best of 7, 7 unseen maps; v10h played): seed 131, bye,
+  beat Split and Stack 6-1, lost to Citadel Insecurities 1-6 (won Stripes, drew
+  weakhold; longest 62/64 on Maze, 29/43 on Around UNSW with more total, Tower
+  Defense 62 vs 771 pearls). Maps extracted to maps/server; panel
+  `official_suite.sprint_maps()`. The ladder still drew the 10 known maps
+  afterwards (14:51 UTC sample).
+- Unseen-map baseline (results/sprint-baseline, 2 seeds, 6 opponents, both
+  sides): v10h 58/168 (35%), v10o 52/168; v10h loses even to v7-base 4/28 and
+  leviathan3 6/28 there (it beats them easily on known maps). Tower Defense
+  0/24, Australia 2/24, Stripes 4/24, Around UNSW 6/24.
+- R5 mover (NEW_MOVER_RESULTS.md): counterfactual teacher sound, labels
+  chaos-dominated; the trained residual lost games (tau 0.5: 184 vs 270 of
+  528). Stopped; incumbent kept.
+- Unseen-maps diagnosis: v10h differs from v7-base mainly in CMA-tuned weights
+  tuned on known maps (food x2.2, W_V3 x2.5, attack x2.8, weaker trap/lethal
+  and fan) plus king beacon/big feed. Grouped ablate on v10q (= v10h), 11
+  official + 7 Sprint maps, 2 seeds 421001-2: all v7 weights, then v3, food,
+  safety, fight, explore groups at v7 values, and king beacon + big feed off.
