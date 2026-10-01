@@ -5,9 +5,9 @@ stage, frozen hashes, gates passed, next action, exact run directories.
 
 ## Current stage
 
-**M1 (identity/parity), in progress.** Next action: read the identity gate
-result (`results/mover-m1-identity.json`, log `results/mover-m1-identity.log`);
-then the zero-strength residual switch in C++ and per-candidate feature logging.
+**M1 (identity/parity), in progress.** Identity gate PASSED (1 Oct). Next
+action: the zero-strength residual switch in C++ and per-candidate feature
+logging from live memory, with Python/C++ parity fixtures.
 
 ## M0: frozen experiment contract (30 Sep 2026, git aa2cbb5)
 
@@ -41,6 +41,10 @@ then the zero-strength residual switch in C++ and per-candidate feature logging.
   vs pass-through hook vs forcing the chosen move (5 decisions per game, rounds
   >= 40 and >= 300) all give the identical event stream (actions, tiles,
   moves, splits, deaths, sonar; CPU points ignored), and that forcing another
-  direction diverges. Status: queued behind the running confirmation.
+  direction diverges. **PASSED 1 Oct** (`results/mover-m1-identity.json`):
+  no-op identical in all 3 games; forcing the chosen move identical at all 13
+  sampled decisions (Trophy ended before round 300); every other forced
+  direction diverged. Note: the divergence check forced N, often a reversal
+  into the neck; M2 must force only legal candidate moves.
 - To do: CPP mover residual switch (off/zero = exact incumbent), 64-feature
   logging from live memory, Python/C++ feature parity fixtures.
