@@ -5,12 +5,11 @@ stage, frozen hashes, gates passed, next action, exact run directories.
 
 ## Current stage
 
-**M6 screen (game test of a linear residual), running**
-(`results/r5-screen1-dir.txt`). M2b passed only borderline (weak learnable
-signal on game result, ~+8 wins per 358 held-out decisions beyond the
-permutation baseline); a direct game screen is cheaper than growing the corpus
-first. Next action: read the screen; if no variant helps, stop R5 at this
-stage and record why.
+**Stopped after the M6 screen (1 Oct): the trained residual loses games.**
+The incumbent stays. Do not scale this teacher (single forced moves labelled
+by game result). Restart only with a lower-variance teacher (see "What would
+have to change" below). The code, C++ switch (off by default) and parity tests
+remain for that restart.
 
 ## M0: frozen experiment contract (30 Sep 2026, git aa2cbb5)
 
@@ -132,3 +131,35 @@ stage and record why.
 - Screen: CPP_MOVER 1 at tau 0.5 / 1 / 2 vs the v10q base (= v10h behaviour,
   mover off), 15 ranked + 7 Sprint maps, 6 opponents, both sides, 2 seeds
   411001-2.
+
+## M6 screen (1 Oct): the residual hurts
+
+- `results/r5-screen1-dir.txt` (2 seeds 411001-2, 15 ranked + 7 Sprint maps,
+  6 opponents, both sides, 528 games per variant; base = mover off, 270 wins):
+  tau 0.5 184 wins, pool -0.352 [-0.557, -0.161]; tau 1 234, -0.163
+  [-0.314, -0.016]; tau 2 263, -0.014 [-0.104, +0.080] (few overrides). Strong
+  three on the pool 20 / 26 / 38 vs 44 of 120; Sprint maps 32 / 52 / 50 vs 58
+  of 168. The more it overrides, the worse.
+- Conclusion: the M2b offline gain (+8 wins per 358 decisions beyond the
+  permutation baseline) did not transfer. The model had learned to deviate from
+  the incumbent's preferences (-pearl, -exits, -hub progress), which looked
+  slightly positive on noisy result labels and is clearly negative in play.
+
+## What would have to change before R5 restarts
+
+1. **Teacher variance.** One forced move flips the final result in 16-19% of
+   decisions, unrelated to the incumbent's own strong preferences: game
+   results of single deterministic branches are mostly chaos. A usable teacher
+   needs several continuations per (decision, move) with independent future
+   randomness from the same state (engine RNG branching and bot-state
+   snapshots, not available today), or decisions where one move plausibly
+   decides an outcome (king danger, feeding, contested food), not random turns.
+2. **Labels that agree with winning.** Final longest-dragon margin carried
+   real signal but mostly confirmed the incumbent's ranking; short-horizon
+   totals did not predict final outcomes. A tactical teacher (short exact
+   lookahead for valuable dragons, queue item 4) gives cheaper, lower-variance
+   labels for the decisions that matter.
+3. **Scope.** Ordinary moves of all dragons are mostly fine already; the
+   measured losses are conversion (longest dragon) and food access on unseen
+   maps, which are policy/role problems (queue items 1, 2, 5), not local move
+   ranking.
