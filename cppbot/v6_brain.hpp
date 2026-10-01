@@ -815,10 +815,18 @@ class Brain {
             if (shared_hubs.size() > 4) shared_hubs.resize(4);
         }
         // own knowledge (book or learned) wins; a dragon that knows no hub adopts the shared one
-        if (memory.hubs.empty() && !shared_hubs.empty()) memory.set_hubs(shared_hubs);
+        // CPP_SONAR_ADOPT_AGE: adopt only after this many rounds alive without a hub of
+        // its own: founders that never see a spawner (Prisoners Dilemma) adopt, while
+        // newborns that would find food themselves keep spreading out (Slithery Fight)
+        int age = born_round ? obs.round - *born_round : 0;
+        if (memory.hubs.empty() && !shared_hubs.empty() && age >= params::CPP_SONAR_ADOPT_AGE) memory.set_hubs(shared_hubs);
     }
     std::string sonar_lines(const Obs& obs) const {
         if (memory.hubs.empty() || (obs.round + init.id) % params::CPP_SONAR_EVERY != 0) return "";
+        // CPP_SONAR_HUB_MIN: only share a learned farm (fast respawns), not an ordinary
+        // patch: sharing helps where food is one concentrated farm (Prisoners Dilemma)
+        // and crowds dragons where it is spread (Slithery Fight, Portals)
+        if (params::CPP_SONAR_HUB_MIN > 0 && memory.hub_best_abs < params::CPP_SONAR_HUB_MIN) return "";
         // rotate through every known hub, so receivers learn all of them rather
         // than all converging on one
         const auto& hub = memory.hubs[(obs.round / params::CPP_SONAR_EVERY) % memory.hubs.size()];

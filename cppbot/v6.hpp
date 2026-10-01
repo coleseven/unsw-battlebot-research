@@ -269,6 +269,7 @@ class WorldMemory {
 
     std::vector<hub_book::Layout> hub_maps;     // candidate layouts
     Hubs hubs;
+    double hub_best_abs = 0;   // learned hubs: best 5x5 respawn-rate sum (absolute; hub values are relative)
     Hubs learned_hubs;                          // CPP_HUB_OBSERVE: hubs from this dragon's own observations
     bool book_filled = false;                   // CPP_BOOK_MAP: open edges filled from the identified layout
     std::unordered_map<int, double> hub_area;
@@ -434,6 +435,7 @@ class WorldMemory {
         }
         double mean = 0; for (auto& [c, v] : local) mean += v; mean /= local.size();
         double best = local[0].second; for (auto& [c, v] : local) best = std::max(best, v);
+        hub_best_abs = best;
         // stable sort by -value (Python sorted is stable on insertion order)
         std::stable_sort(local.begin(), local.end(),
                          [](auto& a, auto& b) { return a.second > b.second; });

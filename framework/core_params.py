@@ -120,6 +120,8 @@ CPP_VOR_MATE = 0.6      # C++ only: a teammate head is closer (leave it to them)
 # Hub sharing by sonar: a split child starts with no memory, so it never learns a hub it
 # has not seen (Prisoners Dilemma: 8 pearls eaten vs nicked's 59 in rounds 0-100)
 CPP_SONAR_HUB = 0       # C++ only: 1 = dragons that know a hub send it; ones that know none adopt it
+CPP_SONAR_HUB_MIN = 0.0  # C++ only: share a learned hub only if its 5x5 respawn-rate sum is at least this (0 = always)
+CPP_SONAR_ADOPT_AGE = 0  # C++ only: a dragon adopts a shared hub only after this many rounds alive without one
 CPP_SONAR_EVERY = 5     # C++ only: send the best known hub every this many rounds (all 4 directions)
 # King beacon + big-dragon feeding (28 Sep ladder: losses on the longest-dragon tiebreak with
 # more total length; long non-kings never feed, only length <= FEED_MAXLEN dragons that see the king)

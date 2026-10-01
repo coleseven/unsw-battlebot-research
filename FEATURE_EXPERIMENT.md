@@ -629,3 +629,15 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   PD (base 0/42 earlier today). It hurt on PD on 27 Sep (v7-era bot vs v75),
   so the full suite decides: ablate on v10m, seeds 311001-3: sonarhub,
   sonarhub + W_HUB x3.
+  Full suite (base 343 wins): sonarhub -0.011 [-0.065, +0.042] pool, 337
+  wins: PD 15 -> 20 of 36, but Slithery 24 -> 16 and Portals 21 -> 17 (book
+  maps identical: sharing only matters without a book). sonarhub + W_HUB x3
+  -0.193, 293. Not adopted as is.
+- Absolute learned-hub richness (5x5 respawn-rate sum, logged per dragon vs
+  v92): PD median 2.0-2.5 (max 5.0), Slithery 1.5 (max 7.1), Portals 0.8-1.9,
+  Autarky 1.2-2.3: a richness threshold (CPP_SONAR_HUB_MIN, added) cannot
+  separate PD from Slithery. Likely difference: on PD the hub-less dragons are
+  founders that never see a spawner; on Slithery they are newborns that would
+  find food themselves and get crowded onto one hub. CPP_SONAR_ADOPT_AGE: adopt
+  a shared hub only after this many rounds alive without one. Ablate on v10n
+  (= v10h), seeds 331001-3: adopt age 15, 30, 60.
