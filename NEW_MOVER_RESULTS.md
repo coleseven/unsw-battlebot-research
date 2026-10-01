@@ -163,3 +163,8 @@ remain for that restart.
    measured losses are conversion (longest dragon) and food access on unseen
    maps, which are policy/role problems (queue items 1, 2, 5), not local move
    ranking.
+
+Correction (1 Oct evening): the "Sprint maps" in the M6 screen and the M1
+context note had no pearl spawners (hidden in server replays, misfiled by the
+scraper), so their Sprint-map numbers say nothing about generalisation. The
+conclusion stands on the 15 ranked maps alone (tau 0.5 / 1: clearly worse).

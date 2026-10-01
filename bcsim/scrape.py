@@ -154,7 +154,7 @@ def extract_map(path: pathlib.Path, seen: dict[str, str]) -> str | None:
     # Since 27 Sep the server hides pearl spawners in replays of its map
     # variants; such a copy never spawns a pearl locally, so keep it apart
     # (a case-insensitive lookup of e.g. trophy.map once picked one up).
-    spawns = any(l.startswith("TILE") and l.split()[3:5] != ["0", "0"] for l in text.splitlines())
+    spawns = any(l.startswith("TILE ") and l.split()[3:5] != ["0", "0"] for l in text.splitlines())
     folder = MAPS / "server" if spawns else MAPS / "server" / "hidden"
     dest = folder / f"{name}.map"
     if dest.is_file() and dest.read_text(encoding="utf8") != text:

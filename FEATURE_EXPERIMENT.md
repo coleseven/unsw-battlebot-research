@@ -678,3 +678,15 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   and fan) plus king beacon/big feed. Grouped ablate on v10q (= v10h), 11
   official + 7 Sprint maps, 2 seeds 421001-2: all v7 weights, then v3, food,
   safety, fight, explore groups at v7 values, and king beacon + big feed off.
+- **Correction (1 Oct evening): the unseen-map results above are invalid.**
+  All 7 Sprint map extracts have zero pearl spawners (the server hides them in
+  replays); `bcsim/scrape.py` filed them as normal maps because its spawner
+  check matched the `TILE_COUNT` header line (fixed: "TILE " with a space; the
+  7 extracts moved to maps/server/hidden/). Local games on them had almost no
+  food (Tower Defense: 24/24 draws with 0 pearls eaten; Stripes 18/24 draws),
+  so the "35% on unseen maps / loses to v7" finding and the grouped unseen-map
+  ablate (no group differed: 50-64/168) measured spawner-less maps, not
+  generalisation. Books probe on them: map fill off identical, all books off
+  48 vs 58. All 15 ranked maps do have spawners (checked), so earlier
+  evaluations stand. Next: reconstruct the Sprint spawners from the real
+  replays' pearl appearances.
