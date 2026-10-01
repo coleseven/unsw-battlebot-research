@@ -33,8 +33,18 @@ def load(d: Path):
         s0 = F[:, 36].copy()
         margin = np.array([L[k]["our_longest"] - L[k]["their_longest"] for k in dirs], dtype=float)
         result = np.array([L[k]["result"] for k in dirs], dtype=float)
-        rows.append({"game": x["source"]["replay"], "dirs": dirs, "F": F, "s0": s0, "margin": margin,
-                     "result": result, "chosen": dirs.index(x["chosen"])})
+        row = {"game": x["source"]["replay"], "dirs": dirs, "F": F, "s0": s0, "margin": margin,
+               "result": result, "chosen": dirs.index(x["chosen"])}
+        for h in ("20", "40", "80"):
+            def hv(k, what):
+                hz = L[k].get("horizon", {}).get(h)
+                if hz and hz["reached"]:
+                    return hz["our_" + what] - hz["their_" + what]
+                return L[k]["our_" + what] - L[k]["their_" + what]   # game over before h: final state
+            if all("horizon" in L[k] for k in dirs):
+                row[f"h{h}_total"] = np.array([hv(k, "total") for k in dirs], dtype=float)
+                row[f"h{h}_longest"] = np.array([hv(k, "longest") for k in dirs], dtype=float)
+        rows.append(row)
     return rows
 
 
@@ -77,6 +87,7 @@ def fit(X, rows, label, l2=1e-2, resid=1e-2, steps=400, lr=0.05):
 
 
 SCALE = 1.0
+L2, RESID = 0.05, 0.05
 
 
 def main() -> None:
@@ -95,30 +106,26 @@ def main() -> None:
     mean, std = allF.mean(0), allF.std(0) + 1e-6
     Xtr, Xte = prep(train, SCALE, mean, std), prep(test, SCALE, mean, std)
     report = {"decisions": len(rows), "train": len(train), "test": len(test), "score_scale": SCALE}
-    for label in ("margin", "result"):
-        w = fit(Xtr, train, label)
-        chosen_v, student_v, overrides, better, worse = 0.0, 0.0, 0, 0, 0
-        for x, r in zip(Xte, test):
-            base = (r["s0"] - r["s0"].mean()) / SCALE
-            q = base + 2 * np.tanh(x @ w)
-            a0 = r["chosen"]
-            a = int(np.argmax(q)) if q.max() > q[a0] else a0
-            chosen_v += r[label][a0]; student_v += r[label][a]
-            if a != a0:
-                overrides += 1
-                better += r[label][a] > r[label][a0]; worse += r[label][a] < r[label][a0]
-        report[label] = {"held_out_incumbent_total": chosen_v, "held_out_student_total": student_v,
-                         "overrides": overrides, "override_better": better, "override_worse": worse,
-                         "also_result_if_margin_student": None}
-        if label == "margin":
-            res_c = sum(r["result"][r["chosen"]] for r in test)
-            res_s = 0.0
+    labels = [l for l in ("margin", "result", "h20_total", "h40_total", "h80_total", "h40_longest", "h80_longest")
+              if all(l in r for r in rows)]
+    for label in labels:
+        w = fit(Xtr, train, label, l2=L2, resid=RESID)
+        report[label] = {}
+        for tau in (0.0, 0.5, 1.0):
+            ev = {k: [0.0, 0.0] for k in (label, "margin", "result")}
+            overrides = better = worse = 0
             for x, r in zip(Xte, test):
                 base = (r["s0"] - r["s0"].mean()) / SCALE
                 q = base + 2 * np.tanh(x @ w)
-                a0 = r["chosen"]; a = int(np.argmax(q)) if q.max() > q[a0] else a0
-                res_s += r["result"][a]
-            report[label]["also_result_if_margin_student"] = {"incumbent": res_c, "student": res_s}
+                a0 = r["chosen"]
+                a = int(np.argmax(q)) if q.max() - q[a0] > tau else a0
+                for k in ev:
+                    ev[k][0] += r[k][a0]; ev[k][1] += r[k][a]
+                if a != a0:
+                    overrides += 1
+                    better += r[label][a] > r[label][a0]; worse += r[label][a] < r[label][a0]
+            report[label][f"tau{tau}"] = {"overrides": overrides, "better": better, "worse": worse,
+                                          **{f"{k}_incumbent_vs_student": v for k, v in ev.items()}}
     (d / "pilot_student.json").write_text(json.dumps(report, indent=1, default=float), encoding="utf8")
     print(json.dumps(report, indent=1, default=float))
 

@@ -45,13 +45,23 @@ class Force:
     """Hook that forces `direction` for dragon `did` at `rnd` (a no-op when
     direction is None) and records what the bot originally chose."""
 
-    def __init__(self, did: int | None = None, rnd: int | None = None, direction: str | None = None):
+    def __init__(self, did: int | None = None, rnd: int | None = None, direction: str | None = None,
+                 horizons=()):
         self.did, self.rnd, self.direction = did, rnd, direction
         self.original: str | None = None
         self.applied = False
+        # short-horizon labels: each team's living dragons' lengths, from the
+        # LENGTH line of every block at round rnd + h (every dragon gets a block)
+        self.at = {rnd + h: h for h in horizons} if rnd is not None else {}
+        self.snap = {h: {"A": [], "B": []} for h in horizons}
 
     def __call__(self, dragon_id, team, block, reply):
-        if dragon_id != self.did or block_round(block) != self.rnd:
+        r = block_round(block)
+        if r in self.at and team in ("A", "B"):
+            for line in block.split(b"\n", 4)[:4]:
+                if line.startswith(b"LENGTH"):
+                    self.snap[self.at[r]][team].append(int(line.split()[1]))
+        if dragon_id != self.did or r != self.rnd:
             return reply
         self.original = move_of(reply)
         if self.direction is None or self.original is None:
@@ -269,13 +279,19 @@ def pilot_sample(out: Path, per_game: int, seed: int) -> None:
 
 def _label_job(args):
     key, map_path, a, b, seed, side, did, rnd, direction = args
-    f = Force(did, rnd, direction)
+    f = Force(did, rnd, direction, horizons=(20, 40, 80))
     tmp = Path(os.environ.get("TEMP", ".")) / f"label-{os.getpid()}.replay"
     r = match.play(Path(map_path), Path(a), Path(b), seed=seed, replay_to=tmp, hook=f)
     tmp.unlink(missing_ok=True)
     us = side.lower(); them = "b" if us == "a" else "a"
     res = 1.0 if r.winner == side else 0.5 if r.winner is None and not r.error else 0.0
+    them_t = "B" if side == "A" else "A"
+    horizon = {str(h): {"our_n": len(v[side]), "our_total": sum(v[side]), "our_longest": max(v[side], default=0),
+                        "their_n": len(v[them_t]), "their_total": sum(v[them_t]),
+                        "their_longest": max(v[them_t], default=0), "reached": bool(v[side] or v[them_t])}
+               for h, v in f.snap.items()}
     return {"key": key, "dir": direction, "applied": f.applied, "seen": f.original, "result": res,
+            "horizon": horizon,
             "reason": r.reason, "rounds": r.rounds, "error": r.error,
             "our_longest": getattr(r, f"{us}_longest"), "their_longest": getattr(r, f"{them}_longest"),
             "our_total": getattr(r, f"{us}_length"), "their_total": getattr(r, f"{them}_length")}
