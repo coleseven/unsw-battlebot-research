@@ -14,9 +14,9 @@ then the zero-strength residual switch in C++ and per-candidate feature logging.
 - Incumbent (base policy for labels and comparisons): **v10h**,
   `versions/v10h`, bot hash `f9d00cd150ff2c53` (v10 + CPP_BOOK_MAP 1 +
   CPP_FEED_SHIFT_LARGE 40; live on the ladder since 30 Sep ~21:59 UTC).
-  The sonar adoption-age variants (age 30/60) are in fresh-seed confirmation
-  (`results/v12-sonarage-confirm-dir.txt`); they are NOT the base unless they
-  pass, and then the mover is rebased explicitly.
+  1 Oct: sonar adoption age 30 passed confirmation -> candidate v10o
+  (`versions/v10o`, hash 7623b9aa5ef6172b). If the user uploads v10o, the
+  mover is rebased onto it explicitly before any labels are collected (none yet).
 - Engine: unswbc 1.1.0 (seeded pearl spawns; same seed replays identically).
   Our C++ bots run in-process with BCSIM_DETERMINISTIC_V6=1, BCSIM_CPP_INPROC=1.
 - Opponent panel (hashes): cpp_nicked_v92 `602ed8c414fbde08`, cpp_nicked_v75

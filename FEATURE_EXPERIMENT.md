@@ -649,3 +649,11 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   lot between runs: base Slithery 24 in the previous run, 16 here). Mildly
   positive overall; confirmation of age30/age60 on fresh seeds 341001-3 with
   the 10 perturbed layouts added (25 layouts).
+  Confirmation (seeds 341001-3, 15 maps + 10 perturbed = 25 layouts, 900
+  games each; base 542 wins): age30 +0.038 [-0.004, +0.085] pool, +0.038
+  [+0.010, +0.065] all layouts, 563 wins; strong three pool 66 vs 63,
+  perturbed 74 vs 68; vs v92 +0.060. age60 +0.020, 552. **age30 replicated**
+  (+0.026, then +0.038 pool). Not the PD-specific fix (PD gain not kept) but a
+  small robust overall gain: candidate **v10o** = v10h + CPP_SONAR_HUB 1 +
+  CPP_SONAR_ADOPT_AGE 30 (versions/v10o, bot hash 7623b9aa5ef6172b); judge
+  sandbox check pending.
