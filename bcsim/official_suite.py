@@ -95,6 +95,26 @@ def ladder_extra_maps() -> list[Path]:
     return _load(LADDER_SPECS)
 
 
+# The Sprint tournament (1 Oct 2026) played only unseen maps (best of 7). The
+# ladder still drew the ten CURRENT_POOL maps afterwards (sampled 1 Oct 14:51
+# UTC), so these are a separate generalisation panel: no map book applies to
+# them, as in later tournaments that may use unseen maps too.
+SPRINT_SPECS = (
+    ("Australia", "maps/server/Australia.map", 64, 64),
+    ("Islands", "maps/server/Islands.map", 56, 40),
+    ("Maze", "maps/server/Maze.map", 48, 24),
+    ("Stripes", "maps/server/Stripes.map", 24, 12),
+    ("Tower_Defense", "maps/server/Tower_Defense.map", 32, 16),
+    ("Around_UNSW", "maps/server/Around_UNSW.map", 64, 64),
+    ("weakhold", "maps/server/weakhold.map", 40, 15),
+)
+
+
+def sprint_maps() -> list[Path]:
+    """The seven Sprint (unseen-map) layouts: a generalisation panel, not ladder maps."""
+    return _load(SPRINT_SPECS)
+
+
 def current_pool_maps() -> list[Path]:
     """The maps in the current ranked rotation (CURRENT_POOL), in suite order."""
     return [p for p in ranked_maps() if p.stem in CURRENT_POOL]
