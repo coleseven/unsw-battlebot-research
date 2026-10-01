@@ -690,3 +690,17 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   48 vs 58. All 15 ranked maps do have spawners (checked), so earlier
   evaluations stand. Next: reconstruct the Sprint spawners from the real
   replays' pearl appearances.
+- Sprint spawners reconstructed (`bcsim/spawn_reconstruct.py`): a pearl that
+  appears in a phase with no death is a spawn; take-to-respawn gaps give the
+  delay range (10th-90th percentile); evidence pooled with the mirror cell
+  (engine convention: SYMMETRY y flips x, x flips y, xy is a point
+  reflection). Validated on PD (true spawners known): 56 found, 0 false; 8 of
+  12 every-round cells found fast; slow delays rough. Built from 57 real games
+  per map into maps/sprint/ (70-350 spawners each); all 7 play.
+- **Corrected unseen-map baseline** (results/sprint-baseline, 2 seeds 361001-2,
+  6 opponents, both sides): v10h 82/168 (49%), v10o 83/168. v10h vs v92 4/28,
+  v75 9/28, lab 9/28, v44 14/28, leviathan3 26/28, v7-base 20/28. Weakest maps:
+  Tower Defense 4/24, weakhold 7/24, Islands 10/24; strongest Stripes 23/24.
+  Against this panel v10h wins ~62% on the known maps: a moderate
+  generalisation gap, concentrated against the strong opponents. v10o is no
+  worse on unseen maps than v10h.
