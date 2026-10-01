@@ -5,12 +5,12 @@ stage, frozen hashes, gates passed, next action, exact run directories.
 
 ## Current stage
 
-**M2b (teacher pilot, revised label), starting.** M2 gate NOT passed (1 Oct):
-terminal results of single forced moves are chaos-dominated; final-margin
-labels carry signal but a 210-decision student made held-out margins worse.
-Next action: short-horizon labels (+40 rounds) recorded from the same forced
-games, ~1,000 more decisions from fresh source games, a regularised student
-with an override margin, the same held-out check. Fail again -> stop R5 at M2.
+**M6 screen (game test of a linear residual), running**
+(`results/r5-screen1-dir.txt`). M2b passed only borderline (weak learnable
+signal on game result, ~+8 wins per 358 held-out decisions beyond the
+permutation baseline); a direct game screen is cheaper than growing the corpus
+first. Next action: read the screen; if no variant helps, stop R5 at this
+stage and record why.
 
 ## M0: frozen experiment contract (30 Sep 2026, git aa2cbb5)
 
@@ -102,3 +102,33 @@ with an override margin, the same held-out check. Fail again -> stop R5 at M2.
   held-out total fell 497 -> 455 with 56 overrides (13 better, 17 worse); on
   result labels 56 -> 57.5 with 54 overrides (3/3). Overrides far too often;
   no learnable improvement at this size.
+
+## M2b: horizon labels and more data (1 Oct)
+
+- `results/mover-m2b`: 88 source games (the 44 from M2 + 44 new, seeds
+  391001+), 1,220 decisions (up to 14 per game), 1,075 fully labelled (a
+  worker file-handle leak stopped the first run at 2,609 games; fixed with
+  max_tasks_per_child=20 and resumed). Labels: final result and margin, plus
+  each team's count/total/longest at +20/+40/+80 rounds (recorded by the
+  reply hook from every dragon's LENGTH line).
+- Integrity: 3 errors, forcing the chosen move reproduced 1,073/1,075 source
+  results. Result differs at 202/1,075 decisions; oracle +140.5 wins.
+- Held-out students (split by whole source games 717/358, l2 0.05, residual
+  penalty 0.05): horizon-total and horizon-longest labels give no reliable
+  gain on the true objectives. Result label: 182 -> 203 wins at tau 0 (24
+  better / 3 worse when the result changes), but the final margin falls.
+- Controls (4 splits, result label, tau 0.5): real labels +11, +9, +16, +16
+  wins; labels permuted within each decision +0, +11.5, +5, +4. So part of the
+  gain is simply deviating from the incumbent; the label-specific signal is
+  about +8 wins per 358 decisions: weak but consistent. Borderline pass.
+- Linear residual trained on all 1,075 decisions (result label;
+  `bcsim/mover_train.py` -> `framework/mover_r5.json`, linear as two ReLU
+  units): largest weights -exits, -pearl, +friendly_near, -hub_delta, -facing,
+  i.e. mostly "deviate from what S0 likes" - a warning sign.
+- **M5 parity PASSED** (`results/mover_m5_parity.py`): 14,329/14,330 C++
+  choices equal the Python recomputation from logged features; the one
+  mismatch sits on the tau boundary (1e-5). At tau 0.5 the mover overrides a
+  third of eligible moves.
+- Screen: CPP_MOVER 1 at tau 0.5 / 1 / 2 vs the v10q base (= v10h behaviour,
+  mover off), 15 ranked + 7 Sprint maps, 6 opponents, both sides, 2 seeds
+  411001-2.

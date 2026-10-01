@@ -241,7 +241,7 @@ def pilot_sources(out: Path, logbot: Path, seed: int, workers: int) -> None:
             opp = OPP_PANEL[(2 * i + j) % len(OPP_PANEL)]
             name = f"{m.stem}-{side}-{Path(opp).name}"
             jobs.append((str(m), str(logbot), opp, seed + i, side, str(out / "sources" / f"{name}.replay")))
-    with guard.slot("mover-sources"), ProcessPoolExecutor(guard.cap_workers(workers)) as pool:
+    with guard.slot("mover-sources"), ProcessPoolExecutor(guard.cap_workers(workers), max_tasks_per_child=20) as pool:
         rows = list(pool.map(_source_job, jobs))
     (out / "sources.json").write_text(json.dumps(rows, indent=1), encoding="utf8")
     print(f"{len(rows)} source games, errors: {sum(1 for r in rows if r['error'])}", flush=True)
@@ -316,7 +316,7 @@ def pilot_label(out: Path, playbot: Path, workers: int) -> None:
             if (i, direction) not in done:
                 jobs.append((i, s["map"], a, b, s["seed"], s["side"], d["id"], d["round"], direction))
     print(f"{len(jobs)} games to play", flush=True)
-    with guard.slot("mover-label"), ProcessPoolExecutor(guard.cap_workers(workers)) as pool, lab.open("a") as f:
+    with guard.slot("mover-label"), ProcessPoolExecutor(guard.cap_workers(workers), max_tasks_per_child=20) as pool, lab.open("a") as f:
         futs = [pool.submit(_label_job, j) for j in jobs]
         for n, fut in enumerate(as_completed(futs), 1):
             f.write(json.dumps(fut.result()) + "\n"); f.flush()
