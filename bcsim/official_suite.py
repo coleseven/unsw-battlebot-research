@@ -98,15 +98,17 @@ def ladder_extra_maps() -> list[Path]:
 # The Sprint tournament (1 Oct 2026) played only unseen maps (best of 7). The
 # ladder still drew the ten CURRENT_POOL maps afterwards (sampled 1 Oct 14:51
 # UTC), so these are a separate generalisation panel: no map book applies to
-# them, as in later tournaments that may use unseen maps too.
+# them, as in later tournaments that may use unseen maps too. The server hides
+# spawners in replays, so these maps carry spawners reconstructed from 57 real
+# Sprint games each (bcsim.spawn_reconstruct): an approximation for testing.
 SPRINT_SPECS = (
-    ("Australia", "maps/server/Australia.map", 64, 64),
-    ("Islands", "maps/server/Islands.map", 56, 40),
-    ("Maze", "maps/server/Maze.map", 48, 24),
-    ("Stripes", "maps/server/Stripes.map", 24, 12),
-    ("Tower_Defense", "maps/server/Tower_Defense.map", 32, 16),
-    ("Around_UNSW", "maps/server/Around_UNSW.map", 64, 64),
-    ("weakhold", "maps/server/weakhold.map", 40, 15),
+    ("Australia", "maps/sprint/Australia.map", 64, 64),
+    ("Islands", "maps/sprint/Islands.map", 56, 40),
+    ("Maze", "maps/sprint/Maze.map", 48, 24),
+    ("Stripes", "maps/sprint/Stripes.map", 24, 12),
+    ("Tower_Defense", "maps/sprint/Tower_Defense.map", 32, 16),
+    ("Around_UNSW", "maps/sprint/Around_UNSW.map", 64, 64),
+    ("weakhold", "maps/sprint/weakhold.map", 40, 15),
 )
 
 
