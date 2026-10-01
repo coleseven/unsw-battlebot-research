@@ -134,10 +134,38 @@ def gen_model() -> str:
         "}  // namespace model", ""])
 
 
+def gen_mover() -> str:
+    """Emit the R5 mover weights (framework/mover_r5.json, written by
+    bcsim.mover_train); without it, zero weights: the residual is exactly 0."""
+    hidden, n = 24, 64
+    path = ROOT / "framework/mover_r5.json"
+    m = json.loads(path.read_text(encoding="utf8")) if path.exists() else {}
+    w1 = m.get("w1", [0.0] * (hidden * n))
+    b1 = m.get("b1", [0.0] * hidden)
+    w2 = m.get("w2", [0.0] * hidden)
+    mean = m.get("mean", [0.0] * n)
+    std = m.get("std", [1.0] * n)
+    num = lambda xs: ", ".join(_cpp_number(float(v))[1] for v in xs)
+    return "\n".join([
+        BANNER.format(src="framework/mover_r5.json" if path.exists() else "zero weights (no framework/mover_r5.json)"),
+        "#pragma once", "#include <array>", "",
+        "namespace mover {", "",
+        f"inline constexpr int HIDDEN = {hidden};",
+        f"inline constexpr double SCORE_SCALE = {_cpp_number(float(m.get('score_scale', 1.0)))[1]};",
+        f"inline constexpr std::array<double, {hidden * n}> W1 = {{{num(w1)}}};",
+        f"inline constexpr std::array<double, {hidden}> B1 = {{{num(b1)}}};",
+        f"inline constexpr std::array<double, {hidden}> W2 = {{{num(w2)}}};",
+        f"inline constexpr double B2 = {_cpp_number(float(m.get('b2', 0.0)))[1]};",
+        f"inline constexpr std::array<double, {n}> MEAN = {{{num(mean)}}};",
+        f"inline constexpr std::array<double, {n}> STD = {{{num(std)}}};", "",
+        "}  // namespace mover", ""])
+
+
 def main() -> None:
     CPPBOT.mkdir(exist_ok=True)
     for name, text in (("params.hpp", gen_params()),
                        ("model.hpp", gen_model()),
+                       ("mover.hpp", gen_mover()),
                        ("portal_book.hpp", gen_portal_book()),
                        ("hub_book.hpp", gen_hub_book())):
         (CPPBOT / name).write_bytes(text.encode("utf8"))  # LF on every host

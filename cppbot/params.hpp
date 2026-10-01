@@ -139,5 +139,9 @@ inline constexpr int CPP_V3_PORTAL = 0;
 inline constexpr int CPP_FEED_REACH = 0;
 inline constexpr double CPP_KING_GRAD = 0.0;
 inline constexpr int CPP_V3_R4 = 0;
+inline constexpr int CPP_MOVER = 0;
+inline constexpr double CPP_MOVER_LAMBDA = 1.0;
+inline constexpr double CPP_MOVER_TAU = 0.0;
+inline constexpr int CPP_MOVER_LOG = 0;
 inline constexpr int CPP_KB_V2 = 0;
 }  // namespace params

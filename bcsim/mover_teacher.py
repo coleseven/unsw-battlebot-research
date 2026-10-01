@@ -131,9 +131,228 @@ def identity(cases) -> dict:
                                          for c in report)}
 
 
+def variant(base: str, name: str, over: dict) -> Path:
+    """A copy of bot `base` with params.hpp constants overridden."""
+    import re
+    import shutil
+    d = Path("results/mover-variants") / name
+    if d.exists():
+        shutil.rmtree(d)
+    shutil.copytree(base, d, ignore=shutil.ignore_patterns(".unswbc-build", "FROZEN.txt"))
+    p = d / "params.hpp"
+    s = p.read_text(encoding="utf8")
+    for k, v in over.items():
+        s, n = re.subn(rf"(inline constexpr \w+ {k} = )[^;]+;", rf"\g<1>{v};", s)
+        assert n == 1, k
+    p.write_text(s, encoding="utf8")
+    return d
+
+
+def parse_mover_logs(blob: bytes):
+    """Decisions logged with CPP_MOVER_LOG: [{round, id, chosen, cands: {dir: [64 floats]}}]."""
+    out, cur = [], None
+    for ev in rp.decode(blob).events:
+        if ev[0] != rp.DRAGON_LOG:
+            continue
+        for line in str(ev[2]).splitlines():
+            p = line.split()
+            if p[:1] == ["MV"]:
+                cur = {"round": int(p[1]), "id": int(p[2]), "chosen": p[3], "n": int(p[4]), "cands": {}}
+                out.append(cur)
+            elif p[:1] == ["MVC"] and cur is not None:
+                cur["cands"][p[1]] = [float(v) for v in p[2:]]
+    return out
+
+
+def parity(reference: str, opponents, maps, seed: int) -> dict:
+    """M1: the new build with the mover off, with zero weights on, and with
+    feature logging must play exactly like the frozen incumbent."""
+    import unswbc.engine as E
+    off = variant(reference, "off", {})
+    zero = variant(reference, "zero", {"CPP_MOVER": 1})
+    log = variant(reference, "log8", {"CPP_MOVER_LOG": 8})
+    rows = []
+    for m in maps:
+        for opp in opponents:
+            for side in "AB":
+                def pair(bot, debug=0):
+                    a, b = (bot, opp) if side == "A" else (opp, bot)
+                    tmp = Path(os.environ.get("TEMP", ".")) / f"parity-{os.getpid()}.replay"
+                    match.play(Path(m), Path(a), Path(b), seed=seed, replay_to=tmp, debug=debug)
+                    blob = tmp.read_bytes(); tmp.unlink(missing_ok=True)
+                    return blob
+                ref = events(pair(Path("versions/v10h")))
+                logged = pair(log, E.DEBUG_ALL)
+                decisions = parse_mover_logs(logged)
+                widths = {len(v) for d in decisions for v in d["cands"].values()}
+                rows.append({"map": Path(m).stem, "opp": Path(opp).name, "side": side,
+                             "off": events(pair(off)) == ref, "zero": events(pair(zero)) == ref,
+                             "log8": events(logged) == ref, "logged_decisions": len(decisions),
+                             "feature_widths": sorted(widths)})
+                print(json.dumps(rows[-1]), flush=True)
+    return {"rows": rows, "pass": all(r["off"] and r["zero"] and r["log8"] and r["feature_widths"] == [64] for r in rows)}
+
+
+FEATURES = (["v3_" + n for n in ("food_nearness", "soon_food", "food_count", "spawn_count", "space", "exits",
+                                 "dead_end", "straight", "friendly_near", "enemy_near", "enemy_reach",
+                                 "friendly_reach", "later_enemy_reach", "own_near", "boundary", "short_path",
+                                 "length", "round", "population", "food_x_length", "space_x_length",
+                                 "friendly_x_population", "exits_x_length", "boundary_x_no_food")]
+            + ["round", "remaining", "log_length", "units_frac", "age", "founder", "protected", "cash_target",
+               "known_hub", "map_known", "local_rate", "local_rate_valid"]
+            + ["s0", "v3_part", "non_v3", "facing", "portal", "landing_in_view", "landing_age", "room_per_len",
+               "exits", "landing_edges_known", "pearl_known", "pearl", "hub_dist", "hub_delta", "hub_rate_valid",
+               "hub_rate", "cash_dist", "cash_delta", "target_age", "target_age_valid", "blocks_front",
+               "recipient_visible", "friendly_heads", "enemy_heads", "threat_lower_id", "threat_higher_id",
+               "own_visible", "big_enemy"])
+OPP_PANEL = ["sparring/cpp_nicked_v92", "sparring/cpp_nicked_v75", "sparring/nicked_lab",
+             "sparring/cpp_leviathan3", "results/v7-base-bot", "sparring/nicked_v44"]
+
+
+def _source_job(args):
+    map_path, bot, opp, seed, side, out = args
+    import unswbc.engine as E
+    a, b = (bot, opp) if side == "A" else (opp, bot)
+    r = match.play(Path(map_path), Path(a), Path(b), seed=seed, replay_to=Path(out), debug=E.DEBUG_ALL)
+    return {"map": map_path, "a": a, "b": b, "seed": seed, "side": side, "replay": out,
+            "winner": r.winner, "error": r.error}
+
+
+def pilot_sources(out: Path, logbot: Path, seed: int, workers: int) -> None:
+    """One source game per (map, side) over the 15 ranked + 7 Sprint maps,
+    opponents rotating through the panel; the incumbent logs every 8th
+    eligible decision (its play is identical to the frozen incumbent)."""
+    from concurrent.futures import ProcessPoolExecutor
+    maps = official_suite.ranked_maps() + official_suite.sprint_maps()
+    (out / "sources").mkdir(parents=True, exist_ok=True)
+    jobs = []
+    for i, m in enumerate(maps):
+        for j, side in enumerate("AB"):
+            opp = OPP_PANEL[(2 * i + j) % len(OPP_PANEL)]
+            name = f"{m.stem}-{side}-{Path(opp).name}"
+            jobs.append((str(m), str(logbot), opp, seed + i, side, str(out / "sources" / f"{name}.replay")))
+    with guard.slot("mover-sources"), ProcessPoolExecutor(guard.cap_workers(workers)) as pool:
+        rows = list(pool.map(_source_job, jobs))
+    (out / "sources.json").write_text(json.dumps(rows, indent=1), encoding="utf8")
+    print(f"{len(rows)} source games, errors: {sum(1 for r in rows if r['error'])}", flush=True)
+
+
+def pilot_sample(out: Path, per_game: int, seed: int) -> None:
+    """Up to `per_game` logged decisions per source game, our team only:
+    half at random, half among close calls (S0 gap between the best two
+    candidates below the game's median), spread over phases."""
+    import random
+    rng = random.Random(seed)
+    sources = json.loads((out / "sources.json").read_text())
+    decisions = []
+    for src in sources:
+        if src["error"]:
+            continue
+        r = rp.load(src["replay"])
+        logs = parse_mover_logs(Path(src["replay"]).read_bytes())
+        if not logs:
+            continue
+        def gap(d):
+            s = sorted((v[36] for v in d["cands"].values()), reverse=True)
+            return s[0] - s[1]
+        med = sorted(gap(d) for d in logs)[len(logs) // 2]
+        close = [d for d in logs if gap(d) <= med]
+        pick = rng.sample(logs, min(per_game // 2, len(logs)))
+        rest = [d for d in close if d not in pick]
+        pick += rng.sample(rest, min(per_game - len(pick), len(rest)))
+        for d in pick:
+            decisions.append({"source": src, "round": d["round"], "id": d["id"], "chosen": d["chosen"],
+                              "cands": d["cands"], "gap": gap(d), "close": gap(d) <= med})
+    (out / "decisions.json").write_text(json.dumps(decisions), encoding="utf8")
+    print(f"{len(decisions)} decisions from {len(sources)} games", flush=True)
+
+
+def _label_job(args):
+    key, map_path, a, b, seed, side, did, rnd, direction = args
+    f = Force(did, rnd, direction)
+    tmp = Path(os.environ.get("TEMP", ".")) / f"label-{os.getpid()}.replay"
+    r = match.play(Path(map_path), Path(a), Path(b), seed=seed, replay_to=tmp, hook=f)
+    tmp.unlink(missing_ok=True)
+    us = side.lower(); them = "b" if us == "a" else "a"
+    res = 1.0 if r.winner == side else 0.5 if r.winner is None and not r.error else 0.0
+    return {"key": key, "dir": direction, "applied": f.applied, "seen": f.original, "result": res,
+            "reason": r.reason, "rounds": r.rounds, "error": r.error,
+            "our_longest": getattr(r, f"{us}_longest"), "their_longest": getattr(r, f"{them}_longest"),
+            "our_total": getattr(r, f"{us}_length"), "their_total": getattr(r, f"{them}_length")}
+
+
+def pilot_label(out: Path, playbot: Path, workers: int) -> None:
+    """Force every candidate of every sampled decision (the chosen one too, as
+    the reference) and play each game to the end with unchanged policies.
+    Resumable: finished (decision, direction) pairs in labels.jsonl are skipped."""
+    from concurrent.futures import ProcessPoolExecutor, as_completed
+    decisions = json.loads((out / "decisions.json").read_text())
+    done = set()
+    lab = out / "labels.jsonl"
+    if lab.exists():
+        done = {(r["key"], r["dir"]) for r in map(json.loads, lab.read_text().splitlines())}
+    jobs = []
+    for i, d in enumerate(decisions):
+        s = d["source"]
+        a = str(playbot) if s["side"] == "A" else s["a"]
+        b = str(playbot) if s["side"] == "B" else s["b"]
+        for direction in d["cands"]:
+            if (i, direction) not in done:
+                jobs.append((i, s["map"], a, b, s["seed"], s["side"], d["id"], d["round"], direction))
+    print(f"{len(jobs)} games to play", flush=True)
+    with guard.slot("mover-label"), ProcessPoolExecutor(guard.cap_workers(workers)) as pool, lab.open("a") as f:
+        futs = [pool.submit(_label_job, j) for j in jobs]
+        for n, fut in enumerate(as_completed(futs), 1):
+            f.write(json.dumps(fut.result()) + "\n"); f.flush()
+            if n % 50 == 0:
+                print(f"labelled {n}/{len(jobs)}", flush=True)
+
+
+def pilot_report(out: Path) -> dict:
+    from collections import defaultdict
+    decisions = json.loads((out / "decisions.json").read_text())
+    labels = defaultdict(dict)
+    for r in map(json.loads, (out / "labels.jsonl").read_text().splitlines()):
+        labels[r["key"]][r["dir"]] = r
+    rep = {"decisions": len(decisions), "labelled": 0, "errors": 0, "not_applied": 0,
+           "chosen_reproduces_source": 0, "result_differs": 0, "margin_differs": 0,
+           "oracle_gain": 0.0, "by_phase": defaultdict(lambda: [0, 0]), "by_map": defaultdict(lambda: [0, 0])}
+    for i, d in enumerate(decisions):
+        L = labels.get(i, {})
+        if len(L) < len(d["cands"]):
+            continue
+        rep["labelled"] += 1
+        rep["errors"] += sum(1 for r in L.values() if r["error"])
+        rep["not_applied"] += sum(1 for r in L.values() if not r["applied"])
+        ch = L[d["chosen"]]
+        src_win = 1.0 if d["source"]["winner"] == d["source"]["side"] else 0.5 if d["source"]["winner"] is None else 0.0
+        rep["chosen_reproduces_source"] += ch["result"] == src_win
+        res = {k: r["result"] for k, r in L.items()}
+        differs = len(set(res.values())) > 1
+        rep["result_differs"] += differs
+        marg = {k: r["our_longest"] - r["their_longest"] for k, r in L.items()}
+        rep["margin_differs"] += len(set(marg.values())) > 1
+        rep["oracle_gain"] += max(res.values()) - res[d["chosen"]]
+        ph = "r<100" if d["round"] < 100 else "r<300" if d["round"] < 300 else "r>=300"
+        rep["by_phase"][ph][0] += 1; rep["by_phase"][ph][1] += differs
+        mp = Path(d["source"]["map"]).stem
+        rep["by_map"][mp][0] += 1; rep["by_map"][mp][1] += differs
+    rep["by_phase"] = dict(rep["by_phase"]); rep["by_map"] = dict(rep["by_map"])
+    (out / "pilot_report.json").write_text(json.dumps(rep, indent=1), encoding="utf8")
+    return rep
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--identity", action="store_true")
+    ap.add_argument("--parity", help="new build to compare with versions/v10h (M1 off/zero/log gate)")
+    ap.add_argument("--pilot", type=Path, help="M2 pilot directory")
+    ap.add_argument("--step", choices=["sources", "sample", "label", "report"])
+    ap.add_argument("--logbot", default="results/mover-variants/log8")
+    ap.add_argument("--playbot", default="results/mover-variants/off")
+    ap.add_argument("--per-game", type=int, default=7)
+    ap.add_argument("--seed", type=int, default=381001)
+    ap.add_argument("--workers", type=int, default=12)
     ap.add_argument("--base", default="versions/v10h")
     ap.add_argument("--out", type=Path, default=Path("results/mover-m1-identity.json"))
     a = ap.parse_args()
@@ -148,6 +367,23 @@ def main() -> None:
             rep = identity(cases)
         a.out.write_text(json.dumps(rep, indent=1), encoding="utf8")
         print("PASS" if rep["pass"] else "FAIL", a.out)
+    if a.parity:
+        maps = {p.stem: p for p in official_suite.ranked_maps() + official_suite.sprint_maps()}
+        with guard.slot("mover-parity"):
+            rep = parity(a.parity, ["sparring/cpp_nicked_v92", "results/v7-base-bot"],
+                         [maps[m] for m in ("Portals", "trophy", "Prisoners_Dilemma", "Maze")], 371001)
+        out = Path("results/mover-m1-parity.json")
+        out.write_text(json.dumps(rep, indent=1), encoding="utf8")
+        print("PASS" if rep["pass"] else "FAIL", out)
+    if a.pilot:
+        if a.step == "sources":
+            pilot_sources(a.pilot, Path(a.logbot), a.seed, a.workers)
+        elif a.step == "sample":
+            pilot_sample(a.pilot, a.per_game, a.seed)
+        elif a.step == "label":
+            pilot_label(a.pilot, Path(a.playbot), a.workers)
+        elif a.step == "report":
+            print(json.dumps(pilot_report(a.pilot), indent=1))
 
 
 if __name__ == "__main__":

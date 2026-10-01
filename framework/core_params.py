@@ -158,4 +158,9 @@ CPP_V3_PORTAL = 0       # C++ only: 1 = portal moves get the mean v3 score of th
 CPP_FEED_REACH = 0      # C++ only: feed only if the king can walk to our body (the drops) within this many steps in view (0 = off)
 CPP_KING_GRAD = 0.0     # C++ only: points per step closer (walking distance) to the feeding target (0 = off)
 CPP_V3_R4 = 0           # C++ only: 1 = move ranker weights refit on nicked v92's moves (model.hpp WEIGHT_R4)
+# R5 mover (NEW_MOVER_PLAN.md): residual on the complete move score, weights in mover.hpp
+CPP_MOVER = 0           # C++ only: 1 = apply the R5 residual (zero weights = incumbent exactly)
+CPP_MOVER_LAMBDA = 1.0  # C++ only: residual strength
+CPP_MOVER_TAU = 0.0     # C++ only: override the incumbent's move only if q gains more than this
+CPP_MOVER_LOG = 0       # C++ only: log the 64 mover features of every N-th eligible decision (0 = off)
 CPP_KB_V2 = 0           # C++ only: 1 = king beacon carries a king token and origin age (relays keep it); feeders bind to the token
