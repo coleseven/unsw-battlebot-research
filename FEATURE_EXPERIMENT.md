@@ -641,3 +641,11 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   find food themselves and get crowded onto one hub. CPP_SONAR_ADOPT_AGE: adopt
   a shared hub only after this many rounds alive without one. Ablate on v10n
   (= v10h), seeds 331001-3: adopt age 15, 30, 60.
+  Result (base 333 wins): age15 -0.014, 331 (strong pool 55 vs 63); age30
+  +0.026 [+0.001, +0.054] pool, +0.017 [+0.001, +0.036] all 15, 340 (strong
+  65); age60 +0.028 [-0.001, +0.066], +0.019, 342 (strong 66). PD 17/16/14 vs
+  15 of 36, Slithery 19/20/25 vs 16, Portals 18/20/20 vs 19: the Slithery and
+  Portals losses are gone but so is the PD gain (per-map counts of 36 vary a
+  lot between runs: base Slithery 24 in the previous run, 16 here). Mildly
+  positive overall; confirmation of age30/age60 on fresh seeds 341001-3 with
+  the 10 perturbed layouts added (25 layouts).
