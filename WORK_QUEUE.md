@@ -90,7 +90,10 @@ the feed shift is marginal.
       seeds) plus fresh-seed confirmation; promote on wins vs the strong three,
       not on label accuracy. Budget: ~10k states x 4 moves x ~1.5 s per
       rollout = about 1.5 h at 12 workers per labelling round.
-    - Good job for the spare GTX 980 machine once the labelling pipeline works.
+    - Runs on this PC (the GTX 980 machine may not be set up): labelling
+      and confirmation games are heavy jobs and go through the guard lock
+      like everything else, one at a time; model fitting is small (CPU or
+      this PC's GPU).
 
 ## Method changes for future tuning
 
@@ -106,6 +109,5 @@ the feed shift is marginal.
 
 ## Spare machine (GTX 980)
 
-- Audit replay schemas (public replays redact sonar and pearl timers), refresh
-  the v3 linear ranker on audited data, then a small MLP; judge by held-out
-  games, not imitation accuracy. CUDA 12.6-era PyTorch for Maxwell, or CPU.
+- Not assumed available (user, 30 Sep): plan all work for this PC. If it is
+  set up later: replay-schema audit and model training could move there.
