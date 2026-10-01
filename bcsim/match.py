@@ -383,10 +383,14 @@ def _seed_for(seed: int, team: str, dragon_id: int) -> int:
 
 def play(map_path: pathlib.Path, bot_a: pathlib.Path, bot_b: pathlib.Path,
          seed: int = 0, replay_to: pathlib.Path | None = None,
-         debug: int = 0) -> Result:
+         debug: int = 0, hook=None) -> Result:
     """Play bot_a (team A) against bot_b (team B) on map_path.
     `debug` = 0 drops bot logs/indicators/drawings from the replay (faster);
-    pass unswbc.engine.DEBUG_ALL to keep them."""
+    pass unswbc.engine.DEBUG_ALL to keep them.
+    `hook(dragon_id, team, block, reply) -> reply` (optional) sees every bot
+    reply after the bot produced it (its private state already updated) and
+    may rewrite it: the counterfactual-move teacher (bcsim.mover_teacher)
+    forces one move this way. None leaves play unchanged."""
     start = time.perf_counter()
     loaders = {"A": load_bot(bot_a, "A"), "B": load_bot(bot_b, "B")}
     hashes = {t: loaders[t].hash for t in "AB"}
@@ -408,7 +412,8 @@ def play(map_path: pathlib.Path, bot_a: pathlib.Path, bot_b: pathlib.Path,
         bot = live.get(dragon_id)
         if bot is None:
             return b"ENDTURN\n"
-        return bot.ask(block)
+        out = bot.ask(block)
+        return out if hook is None else hook(dragon_id, teams.get(dragon_id), block, out)
 
     def death(dragon_id: int, round_num: int, reason: str) -> None:
         key = f"{teams.get(dragon_id, '?')}:{reason}"
