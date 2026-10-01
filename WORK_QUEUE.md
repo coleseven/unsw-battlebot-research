@@ -34,17 +34,11 @@ the feed shift is marginal.
 
 ## Now
 
-1. **Defect + tune-candidate ablate** (`results/20260930-073741-ablate-f5f4ba`,
-   running): hubsep, v3portal, both, v12tune, v12gen5 vs v10i (= v10h).
-   Decision table per variant: current pool, guard maps, per opponent (report
-   nicked v92/v75/lab separately from the easy leviathan3/v7-base), actual wins
-   and paired CI. Gains mostly from leviathan3/v7-base do not count.
-2. **Robustness check for finalists + control**: 15 originals + 10 perturbed
-   (`maps/perturbed/*_p1`), both sides, same seeds for every bot; report
-   original and perturbed deltas separately. Also replay the tune's final
-   generation conditions with the frozen v10h (hard conditions vs policy drift).
-   New perturbations (`_p2`) for final confirmation, not `_p1` again.
-3. Confirm any winner on fresh seeds before promotion (and judge sandbox check).
+1. **CPP_SONAR_HUB full-suite ablate** (`results/v12-sonarhub-dir.txt`,
+   running): sonarhub, sonarhub + W_HUB x3 vs v10m (= v10h). PD probe: 5/12
+   vs v92 with it (base 0/42), pearls 50 -> 161-226 per game. Confirm on fresh
+   seeds if it helps overall, then judge sandbox and an upload candidate.
+2. Robustness check (originals + perturbed, same seeds) for any finalist.
 
 ## Next (structural)
 
@@ -70,6 +64,33 @@ the feed shift is marginal.
    the old beam made deeper.
 9. Destination-aware portal scoring (remembered landing info + uncertainty),
    only if the neutral CPP_V3_PORTAL treatment shows portals matter.
+
+10. **Our own better move ranker (self-taught, "R5")**. The v3 ranker is our
+    most important term (W_V3 9 instead of 24.7: -0.175; removing it -0.36),
+    but it is a 24-feature linear model fitted in the v3 era, it only sees the
+    7x7 window, and imitating nicked v92's moves made us worse (R4: -0.044 at
+    better imitation accuracy, 30 Sep). So learn from our own bot's outcomes,
+    not from another bot's choices:
+    - **States**: sampled decisions from our incumbent's games vs the strong
+      panel on all 15 maps (DAgger-style: later rounds sample states the new
+      ranker itself visits).
+    - **Labels by counterfactual rollouts**: replay the same seeded game to
+      round t (deterministic), force the dragon's move m via a wrapper bot,
+      let our bot play on for K rounds (or to the end), and score each legal
+      move by the outcome (dragon survival and length, team length/longest,
+      game result). Engine snapshots are not needed; prefix replay is. Check
+      the forced-move wrapper reproduces the original game exactly first.
+    - **Features**: the 24 v3 features plus portal-destination info (with an
+      unknown flag), hub/goal/king-target direction and walking distance,
+      teammate heads, round phase, role (founder, king, feeder).
+    - **Model**: linear first (drop-in for model.hpp), then a small MLP (<=1-2k
+      params) if linear gains; C++ inference must stay well under the judge
+      budget (now ~8M of 100M points).
+    - **Gate**: the usual paired full-suite ablate (6 opponents, 15 maps, 3
+      seeds) plus fresh-seed confirmation; promote on wins vs the strong three,
+      not on label accuracy. Budget: ~10k states x 4 moves x ~1.5 s per
+      rollout = about 1.5 h at 12 workers per labelling round.
+    - Good job for the spare GTX 980 machine once the labelling pipeline works.
 
 ## Method changes for future tuning
 
