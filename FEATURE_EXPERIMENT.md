@@ -704,3 +704,31 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   Against this panel v10h wins ~62% on the known maps: a moderate
   generalisation gap, concentrated against the strong opponents. v10o is no
   worse on unseen maps than v10h.
+
+### 1-2 Oct night: queen rules (Slay Queen, unswbc 1.2.3)
+
+- Rules changed 1 Oct (official /updates): queens (ids 0/1) score first, then
+  longest dragon, then total length; ceil(len/4) free steps per move; ratings
+  reset and all submissions idled; unswbc 1.2.3 (its 15 bundled maps equal our
+  ranked suite). Astra's Q0 groundwork verified: isolated 1.2.3 runtime
+  (`bcsim.queen_runtime`), 6 engine rules tests pass, queen diagnostics, wins
+  objective. v10o legal under 1.2.3 (sandbox max 8.0M); uploaded ~00:48 UTC 2 Oct.
+- Q1 baseline (v11a = v10o settings, 1.2.3, 15 maps, 6 opponents, both sides,
+  2 seeds 431001-2): 200/360 wins; **our queen alive at round 500 in 10/360**
+  (median death round 84-87), theirs 43; of 234 round-limit games only 23 were
+  decided by queen length. Queen deaths in 12 diagnostic games: 5 walls/kelp
+  (often length 2-3, as early as round 10), 4 enemy head-ons, 3 our own dragons.
+- Q1 CPP_QUEEN (Astra's mode: queen protected, no late splits, feeding only to
+  the queen by id, king beacon off): q_on 148/360 (queen alive 28), q_nosplit
+  147 (31), q_late 158 (33); strong three 42-48 vs 71/180. Worse overall; the
+  opponent's queen also survives more (50-66 vs 43).
+- Q2 CPP_MULTISTEP (extra free steps only to grab a visible pearl): legal,
+  rarely triggers (dragons split at 4 = one free step).
+- Q3 (seeds 441001-2; base 216/360): q_ms 175; q_ms_s7 100; q_ms_s11 83; q_s7
+  86; ms_s7 126. Splitting later (bigger, faster dragons) is a large loss: the
+  small-dragon economy dominates. Pending: multistep alone (Q3b) and queen
+  safety switches (Q1b: multi-step enemy reach, queen dead-end look-ahead,
+  worker guard, safety multiplier, king beacon kept).
+- Tooling: ablate now takes the guard lock before deleting a partial variant
+  (a waiting resume deleted 33 replays of a running variant; that run was
+  redone). Overnight jobs run as detached chains (results/overnight_chain*.sh).
