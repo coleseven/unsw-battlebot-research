@@ -812,3 +812,7 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   <= ATTACK_MAXLEN) 265, their queen alive 25, vs v92 22 vs 15, vs v11q 35 vs
   30, vs v75 29 vs 35; hunt_strong (600/400) 261 (27); hunt_nopull 260 (31; no
   gain vs v92). Confirmation queued (3 seeds 591001-3, 15 + 7 Sprint maps).
+- Q7 hunt confirmation (seeds 591001-3, 15 + 7 Sprint maps, 7 opponents, 924
+  games): hunt 549 vs 563, their queen alive 65 vs 72, vs v92 40 vs 36, vs v11q
+  65 vs 66; known 390 vs 405, Sprint 159 vs 158. Did not replicate; not adopted.
+- v11q uploaded 2 Oct ~21:04 UTC (ladder ~1445, rank 100 ~1533).
