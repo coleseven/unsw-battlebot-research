@@ -752,3 +752,12 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   strong three 95 vs 76, pool 144 vs 130**; ms + full queen safety 201 (queen
   alive 34). Confirmation queued: 3 fresh seeds 501001-3, 15 ranked + 7 Sprint
   maps (results/q3c-ms-confirm-dir.txt).
+- **Multistep confirmed** (seeds 501001-3, 15 ranked + 7 Sprint maps, 792
+  games each): 474 vs 447; wins delta +0.068 [+0.013, +0.124]; known maps 335
+  vs 308/540, Sprint 139 vs 139/252; vs v75 +0.15, leviathan3 +0.15, lab +0.09,
+  v92 0. Frozen **v11ms** (versions/v11ms, hash d8a1433a6097d63c,
+  battlebot-v11ms.zip), 1.2.3 sandbox max 8.0M points/turn.
+- Head-to-heads under 1.2.3 (15 maps, both sides, 4 seeds, 120 games):
+  v11ms vs v10o (live) 62/120; v11ms + queen safety vs v11ms 48/120 (queens
+  alive 17 vs 12). Queen safety as scoring penalties loses even against our own
+  queen-careless bot; queen survival needs tactics (Q4), not weights.
