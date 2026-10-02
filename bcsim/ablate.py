@@ -34,7 +34,7 @@ from concurrent.futures.process import BrokenProcessPool
 from datetime import datetime
 from pathlib import Path
 
-from . import bounded, official_suite, population, tune
+from . import bounded, guard, official_suite, population, tune
 from .paths import RESULTS, bot_hash, resolve_bot
 
 BASE = "base"
@@ -93,6 +93,15 @@ def _expected(plan):
 
 
 def run(out: Path, workers: int):
+    """Take the machine-wide lock before touching any variant folder: a resumed
+    run deletes a partial variant, and must never do that to a folder another
+    guarded job is still writing (2 Oct: a waiting resume deleted 33 replays of a
+    running variant). guard.slot is re-entrant, so bounded.run inside still works."""
+    with guard.slot(f"ablate {out.name}"):
+        _run(out, workers)
+
+
+def _run(out: Path, workers: int):
     plan = json.loads((out / "plan.json").read_text(encoding="utf8"))
     if (os.environ.get("BCSIM_DETERMINISTIC_V6") == "1") != plan["deterministic_v6_clock"]:
         raise ValueError("BCSIM_DETERMINISTIC_V6 must match the plan")
