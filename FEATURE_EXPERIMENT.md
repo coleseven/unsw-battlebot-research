@@ -803,3 +803,12 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   25; qs350feed 270, length 5, v92 17. Mixed; not adopted.
 - Q6 (v11g, seeds 571001-2; base 254/420): queen flight 251 (queen length 3-4
   = one free step, nothing to flee with); queen food x3 246.
+- Q6 complete: qkeep6 226 (queen length 15 when alive, but alive 27 vs 56);
+  qfood3_keep6 235 (26); all3 230 (27). A big queen is a target; with current
+  tactics a small careful queen survives best. Not adopted.
+- **Q7 queen hunt** (v11h = v11q behaviour, 7 opponents incl. v11q, seeds
+  581001-2; base 262/420, their queen alive 40): CPP_QUEEN_HUNT (bonus 300 for a
+  head-on into the enemy queen at any length gap, pull 150/(1+d) for workers
+  <= ATTACK_MAXLEN) 265, their queen alive 25, vs v92 22 vs 15, vs v11q 35 vs
+  30, vs v75 29 vs 35; hunt_strong (600/400) 261 (27); hunt_nopull 260 (31; no
+  gain vs v92). Confirmation queued (3 seeds 591001-3, 15 + 7 Sprint maps).
