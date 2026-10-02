@@ -1,0 +1,5 @@
+frozen v11ms at 2026-10-02 04:16, git e117905
+v10o settings (v10h + sonar hub age 30) on current code + CPP_MULTISTEP 1 (queen rules: extra free steps to grab a visible pearl); queen mode off
+bot hash d8a1433a6097d63c
+queen rules (unswbc 1.2.3): screen 236 vs 209 of 360; confirmation 474 vs 447 of 792 (15 ranked + 7 Sprint maps, 3 seeds 501001-3), wins delta +0.068 [+0.013, +0.124]; known maps 335 vs 308/540, Sprint maps 139 vs 139/252
+1.2.3 judge sandbox max 8.0M points/turn (big_empty, slithery, schooltime, default, PD)
