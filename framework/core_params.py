@@ -166,6 +166,7 @@ CPP_MOVER_LOG = 0       # C++ only: log the 64 mover features of every N-th elig
 CPP_KB_V2 = 0           # C++ only: 1 = king beacon carries a king token and origin age (relays keep it); feeders bind to the token
 CPP_MULTISTEP = 0       # Q2 (queen rules): spend extra free steps (ceil(len/4) - 1) reaching a visible pearl
 CPP_MULTISTEP_QUEEN = 0  # Q2: with CPP_QUEEN, let the queen take extra steps too (default: workers only)
+CPP_MULTISTEP_TRAVEL = 0  # Q2b: with no reachable pearl, spend extra free steps travelling toward the best hub
 CPP_QUEEN_LIGHT = 0     # Q4: minimal queen rules: the queen never feeds; workers keep CPP_QUEEN_GUARD_* clear of it
 CPP_QUEEN_LIGHT_SPLIT_UNTIL = 1000  # light queen: the queen stops splitting from this round (1000 = never)
 CPP_QUEEN_LIGHT_FEED = 0  # small late feeders target our visible queen by id (queen-mode feeding branch)

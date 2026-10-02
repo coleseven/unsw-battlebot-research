@@ -146,6 +146,7 @@ inline constexpr int CPP_MOVER_LOG = 0;
 inline constexpr int CPP_KB_V2 = 0;
 inline constexpr int CPP_MULTISTEP = 0;
 inline constexpr int CPP_MULTISTEP_QUEEN = 0;
+inline constexpr int CPP_MULTISTEP_TRAVEL = 0;
 inline constexpr int CPP_QUEEN_LIGHT = 0;
 inline constexpr int CPP_QUEEN_LIGHT_SPLIT_UNTIL = 1000;
 inline constexpr int CPP_QUEEN_LIGHT_FEED = 0;
