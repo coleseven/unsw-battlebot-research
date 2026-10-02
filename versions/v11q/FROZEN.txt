@@ -1,0 +1,5 @@
+frozen v11q at 2026-10-02 12:14, git 82ca0df
+v11ms + CPP_QUEEN_LIGHT 1 (queen never feeds; workers within 1 of the queen head pay 200) + CPP_QUEEN_TACTICS 1 (3-step exact queen escape search)
+bot hash 1c547e93cdff8382
+queen rules (1.2.3) confirmation, seeds 541001-3, 15 ranked + 7 Sprint maps, 792 games: wins 490 vs 492 (v11ms), pool 233 vs 226/360, strong three 189 vs 182/396; our queen alive at round 500: 79 vs 24 (theirs 56 vs 57)
+1.2.3 judge sandbox max 8.0M points/turn

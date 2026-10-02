@@ -780,3 +780,12 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   assuming faster threats makes every cell deadly). First queen change that
   keeps or adds wins against this old-rules panel while nearly tripling queen
   survival. Confirmation queued: 3 seeds 541001-3, 15 ranked + 7 Sprint maps.
+- **Q4 confirmation** (seeds 541001-3, 15 ranked + 7 Sprint maps, 792 games):
+  ql_qt 490 vs 492 wins (neutral vs this old-rules panel), pool 233 vs 226/360,
+  strong three 189 vs 182/396; **our queen alive at round 500: 79 vs 24**
+  (theirs 56 vs 57); known maps 353 vs 353, Sprint 137 vs 139. Frozen **v11q**
+  (versions/v11q, hash 1c547e93cdff8382, battlebot-v11q.zip; 1.2.3 sandbox max
+  8.0M). Head-to-heads (15 maps, both sides, 4 seeds, 120 games): **v11q vs
+  v10o 80/120 (queens alive 20 vs 2), v11q vs v11ms 73/120 (20 vs 1)**. Against
+  opponents that, like ours, lose their queens, a surviving queen decides the
+  game; the old-rules panel understates this. Recommended upload: v11q.
