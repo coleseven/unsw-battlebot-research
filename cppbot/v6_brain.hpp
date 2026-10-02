@@ -1519,7 +1519,7 @@ class Brain {
         // CPP_MULTISTEP_TRAVEL: with no reachable pearl, travel toward the strategic
         // target (the remembered hub; workers can carry on in later turns) with the
         // same endpoint safety; the endpoint must be strictly closer to it.
-        if (goal < 0 && params::CPP_MULTISTEP_TRAVEL && !memory.hubs.empty()) {
+        if (goal < 0 && params::CPP_MULTISTEP_TRAVEL && init.id > 1 && !memory.hubs.empty()) {   // never the queen (2 Oct: queen alive 94 -> 75)
             int w = memory.width, h = memory.height, target = memory.hubs[0].first;
             int best = -1, best_d = torus_distance(memory.cell(obs.x[start], obs.y[start]), target, w, h);
             for (int k = 0; k < 49; ++k) {

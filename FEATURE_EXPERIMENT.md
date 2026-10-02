@@ -816,3 +816,11 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   games): hunt 549 vs 563, their queen alive 65 vs 72, vs v92 40 vs 36, vs v11q
   65 vs 66; known 390 vs 405, Sprint 159 vs 158. Did not replicate; not adopted.
 - v11q uploaded 2 Oct ~21:04 UTC (ladder ~1445, rank 100 ~1533).
+- v11q live, first 4 battles / 20 games after upload: 3 battles won (vs 1638
+  CookAgent, 1597 Kerwin, 1534 DIET CODE), 12/20 games; rating 1455 -> 1519.
+  Our queen alive 7/20 (v10o 2/50); only ours alive 4 games, won 4; only theirs
+  2, lost 2; both alive 3, won 1; both dead 11, won 7.
+- Q8 CPP_MULTISTEP_TRAVEL (extra free steps toward the best hub when no pearl;
+  seeds 601001-3, 15 + 7 Sprint maps, 7 opponents, 924 games): 557 vs 560,
+  queen alive 75 vs 94 (the light-mode queen travelled into danger). Rerun with
+  workers only (the queen never travels).
