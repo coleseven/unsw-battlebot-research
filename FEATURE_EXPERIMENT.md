@@ -761,3 +761,22 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   v11ms vs v10o (live) 62/120; v11ms + queen safety vs v11ms 48/120 (queens
   alive 17 vs 12). Queen safety as scoring penalties loses even against our own
   queen-careless bot; queen survival needs tactics (Q4), not weights.
+
+### 2 Oct: Q4 queen tactics
+
+- Queen deaths with queen mode off (v11e = v11ms, 12 logged games): 5 killed
+  by our own dragons (head-ons, own bodies), 4 walls/kelp at length 2-3, 2
+  enemy head-ons, 1 fed itself to a worker (feeding rule picked the queen).
+- CPP_QUEEN_TACTICS: exact 3-step escape search for the queen in the view
+  (own body simulated, tail blocks; threat heads at ceil(visible len/4) steps
+  per turn, own workers included); keeps the incumbent's move unless another
+  survives longer. CPP_QUEEN_LIGHT: the queen never feeds; workers within
+  CPP_QUEEN_GUARD_R of the queen's head pay CPP_QUEEN_GUARD_PEN. Probe (24
+  games): queen median death round 105 -> 175.
+- Q4 ablate (1.2.3, seeds 531001-2, base v11e 223/360, queen alive 13): qt 218
+  (queen alive 19, median death 139); ql 226 (22); **ql_qt 228, pool 152 vs
+  142, queen alive 37 vs 13 (theirs 33), median death 137**; ql_qt_r2 217
+  (51; strong 71 vs 85: a wider guard crowds workers out); ql_qt_m1 204 (14:
+  assuming faster threats makes every cell deadly). First queen change that
+  keeps or adds wins against this old-rules panel while nearly tripling queen
+  survival. Confirmation queued: 3 seeds 541001-3, 15 ranked + 7 Sprint maps.
