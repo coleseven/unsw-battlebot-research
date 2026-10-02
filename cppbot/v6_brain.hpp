@@ -558,7 +558,8 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
         }
         Terms tm = search_one(mem, obs, team, did, dest, direction, own_free, deadline, vor);
         double room = std::min(static_cast<double>(tm.room), need);
-        double value = tm.food * (protectedFlag ? params::PROTECT_FOOD_MULT : 1.0);
+        double value = tm.food * (protectedFlag ? params::PROTECT_FOOD_MULT : 1.0)
+                       * ((params::CPP_QUEEN_LIGHT && did <= 1) ? params::CPP_QUEEN_LIGHT_FOOD : 1.0);
         value += (params::W_UNSEEN * tm.unseen + params::W_STALE * tm.stale) / static_cast<double>(params::N_SEARCH);
         value -= protection * params::W_TRAP * trap_mult * std::max(0.0, need - room);
         if (room < obs.length + 2) value -= protection * params::W_LETHAL * trap_mult;
@@ -1258,6 +1259,8 @@ class Brain {
         // CPP_QUEEN_LIGHT_SPLIT_UNTIL: the queen keeps its length from this round
         // (with both queens alive, queen length decides the game)
         if (split && params::CPP_QUEEN_LIGHT && init.id <= 1 && obs.round >= params::CPP_QUEEN_LIGHT_SPLIT_UNTIL) split.reset();
+        // CPP_QUEEN_LIGHT_KEEP: the queen splits only if it keeps at least this length
+        if (split && params::CPP_QUEEN_LIGHT && init.id <= 1 && obs.length - params::CHILD < params::CPP_QUEEN_LIGHT_KEEP) split.reset();
         if (split && params::CPP_SPLIT_SAFE && !child_can_escape(obs)) split.reset();
         // CPP_RESCUE_EVERY: a protected (long) dragon below the floor rebuilds the
         // population slowly instead of splitting itself back down every turn.
