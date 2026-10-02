@@ -778,7 +778,7 @@ inline bool king_protected(const Obs& obs, int born_round) {
 inline std::optional<CashTarget> visible_target(WorldMemory& mem, const Obs& obs, char team, int did, int shift = 0) {
     // Queen mode deliberately uses exact visible identity, not size or an
     // aliased king beacon. A missing queen is unknown, never presumed dead.
-    if (params::CPP_QUEEN) {
+    if (params::CPP_QUEEN || params::CPP_QUEEN_LIGHT_FEED) {
         if (did <= 1 || obs.round < params::FEED_ROUND - shift || obs.length > params::FEED_MAXLEN)
             return std::nullopt;
         for (int k = 0; k < 49; ++k) {
@@ -1255,6 +1255,9 @@ class Brain {
         if (split && params::CPP_ANCHOR && *born_round == 0 && obs.round >= params::FOUNDER_PROTECT_ROUND &&
             obs.unit_count >= params::CPP_ANCHOR_RESCUE)
             split.reset();
+        // CPP_QUEEN_LIGHT_SPLIT_UNTIL: the queen keeps its length from this round
+        // (with both queens alive, queen length decides the game)
+        if (split && params::CPP_QUEEN_LIGHT && init.id <= 1 && obs.round >= params::CPP_QUEEN_LIGHT_SPLIT_UNTIL) split.reset();
         if (split && params::CPP_SPLIT_SAFE && !child_can_escape(obs)) split.reset();
         // CPP_RESCUE_EVERY: a protected (long) dragon below the floor rebuilds the
         // population slowly instead of splitting itself back down every turn.
