@@ -169,6 +169,7 @@ CPP_MULTISTEP_QUEEN = 0  # Q2: with CPP_QUEEN, let the queen take extra steps to
 CPP_QUEEN_LIGHT = 0     # Q4: minimal queen rules: the queen never feeds; workers keep CPP_QUEEN_GUARD_* clear of it
 CPP_QUEEN_LIGHT_SPLIT_UNTIL = 1000  # light queen: the queen stops splitting from this round (1000 = never)
 CPP_QUEEN_LIGHT_FEED = 0  # small late feeders target our visible queen by id (queen-mode feeding branch)
+CPP_QUEEN_FLIGHT = 0    # queen: when threatened, spend extra free steps maximising distance from threat heads
 CPP_QUEEN_TACTICS = 0   # Q4: exact short escape search for our queen (id 0/1), any mode
 CPP_QUEEN_TACTICS_DEPTH = 3  # Q4: look-ahead steps (view radius is 3)
 CPP_QUEEN_TACTICS_MARGIN = 0  # Q4: extra steps per turn assumed for threat heads

@@ -149,6 +149,7 @@ inline constexpr int CPP_MULTISTEP_QUEEN = 0;
 inline constexpr int CPP_QUEEN_LIGHT = 0;
 inline constexpr int CPP_QUEEN_LIGHT_SPLIT_UNTIL = 1000;
 inline constexpr int CPP_QUEEN_LIGHT_FEED = 0;
+inline constexpr int CPP_QUEEN_FLIGHT = 0;
 inline constexpr int CPP_QUEEN_TACTICS = 0;
 inline constexpr int CPP_QUEEN_TACTICS_DEPTH = 3;
 inline constexpr int CPP_QUEEN_TACTICS_MARGIN = 0;

@@ -1325,6 +1325,10 @@ class Brain {
                 best_dir = std::get<3>(*top);
         }
         std::string path(1, best_dir);
+        if (params::CPP_QUEEN_FLIGHT && init.id <= 1) {
+            std::string flee = queen_flight(obs, best_dir);
+            if (!flee.empty()) return std::string("MOVE ") + path + flee;
+        }
         if (params::CPP_MULTISTEP && (!(params::CPP_QUEEN && init.id <= 1) || params::CPP_MULTISTEP_QUEEN))
             path += extra_steps(obs, best_dir);
         return std::string("MOVE ") + path;
@@ -1395,6 +1399,66 @@ class Brain {
         };
         go(body, 1, first);
         return {best, full};
+    }
+
+    // CPP_QUEEN_FLIGHT: when a threat head could reach the queen's first-step cell
+    // within its next turn (+1 margin), spend the remaining free steps (no paid
+    // steps) moving to the reachable view cell that maximises the distance to the
+    // nearest threat, keeping two open exits. Bodies of every dragon block, as in
+    // extra_steps; returns the extra directions, or "" when not threatened.
+    std::string queen_flight(const Obs& obs, char first) const {
+        int free_steps = (obs.length + 3) / 4;
+        if (free_steps < 2 || obs.edge(CENTER, first) != OPEN) return "";
+        int start = Obs::step(CENTER, first);
+        if (start < 0 || obs.occ[start]) return "";
+        std::unordered_map<int, int> seg;
+        for (int k = 0; k < 49; ++k) if (obs.occ[k]) seg[obs.occ[k]->id] += 1;
+        std::vector<std::pair<int, int>> threats;   // (view index, steps per turn)
+        for (int k = 0; k < 49; ++k) {
+            const auto& p = obs.occ[k];
+            if (!p || !p->head || p->id == init.id || p->team == init.team) continue;
+            threats.emplace_back(k, std::max(1, (seg[p->id] + 3) / 4));
+        }
+        auto dist = [](int a, int b) { return std::abs(a / 7 - b / 7) + std::abs(a % 7 - b % 7); };
+        bool threatened = false;
+        for (auto& [k, sp] : threats) if (dist(k, start) <= sp + 1) threatened = true;
+        if (!threatened) return "";
+        auto margin = [&](int c) { int m = 99; for (auto& [k, sp] : threats) m = std::min(m, dist(k, c) - sp); return m; };
+        std::array<int, 49> prev; prev.fill(-2);
+        std::array<char, 49> how{};
+        prev[start] = -1;
+        std::vector<int> frontier{start}, seen{start};
+        for (int dpt = 1; dpt < free_steps; ++dpt) {
+            std::vector<int> nxt;
+            for (int k : frontier)
+                for (char d : DIRS) {
+                    if (obs.edge(k, d) != OPEN) continue;
+                    int n = Obs::step(k, d);
+                    if (n < 0 || n == CENTER || prev[n] != -2 || obs.occ[n]) continue;
+                    prev[n] = k; how[n] = d; nxt.push_back(n); seen.push_back(n);
+                }
+            frontier.swap(nxt);
+        }
+        int best = start, best_m = margin(start), best_x = -1;
+        for (int c : seen) {
+            if (c == start) continue;
+            int exits = 0;
+            for (char d : DIRS) {
+                if (obs.edge(c, d) != OPEN) continue;
+                int n = Obs::step(c, d);
+                if (n < 0 || obs.occ[n] || n == CENTER) continue;
+                bool on_path = false;
+                for (int q = c; q >= 0; q = prev[q]) if (q == n) { on_path = true; break; }
+                if (!on_path) ++exits;
+            }
+            if (exits < 2) continue;
+            int m = margin(c);
+            if (m > best_m || (m == best_m && exits > best_x)) { best = c; best_m = m; best_x = exits; }
+        }
+        if (best == start) return "";
+        std::string steps;
+        for (int c = best; c != start; c = prev[c]) steps.insert(steps.begin(), how[c]);
+        return steps;
     }
 
     // CPP_MULTISTEP (queen rules, unswbc 1.2.3): a dragon may move ceil(length / 4)
