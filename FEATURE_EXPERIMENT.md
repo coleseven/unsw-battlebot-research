@@ -732,3 +732,23 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
 - Tooling: ablate now takes the guard lock before deleting a partial variant
   (a waiting resume deleted 33 replays of a running variant; that run was
   redone). Overnight jobs run as detached chains (results/overnight_chain*.sh).
+- Queen death diagnosis (debug bot logging the queen each turn, 12 games, full
+  queen-safety settings): 11/12 queens died; 7 enemy head-ons at length 12-20
+  with 1-2 legal moves and enemy heads in view; 4 boxed in early (Portals,
+  Autarky, rounds 10-50, zero legal moves; the queen splits a 2-child and still
+  dies). Scoring-level safety terms cannot fix positions already short of moves.
+- Q1b (seeds 461001-2; base 210): q_kb (queen mode, king beacon kept) 181,
+  queen alive 27; qs_reach 178 (27); qs_dead 182 (29); qs_full 174 (29);
+  qs_full_nosplit 166 (28). The king beacon explains part of the queen-mode
+  loss (q_on 148 vs 200 in Q1); none of the safety terms moves queen survival.
+- Q1c (seeds 491001-2; base 207, queen alive 9): wider enemy-reach margin +2
+  qx2 169 (queen alive 32), +3 qx3 170 (32), qx2_nosplit 167 (33). Queen
+  safety triples survival but costs 30-40 wins against this old-rules panel.
+  Caveat: the panel's opponents do not protect their own queens, so most local
+  games still end with both queens dead and are decided by longest dragon; on
+  the reset ladder, opponents adapting to queen scoring will make a dead queen
+  far more costly. A queen-aware sparring opponent is needed before judging.
+- **Q3b (seeds 471001-2; base 209): CPP_MULTISTEP alone 236 wins (+27),
+  strong three 95 vs 76, pool 144 vs 130**; ms + full queen safety 201 (queen
+  alive 34). Confirmation queued: 3 fresh seeds 501001-3, 15 ranked + 7 Sprint
+  maps (results/q3c-ms-confirm-dir.txt).
