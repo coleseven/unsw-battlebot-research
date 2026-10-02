@@ -147,7 +147,7 @@ def _side_margins(replay):
     out = {}
     for side in "AB":
         m = margin.game_margin(stats, side)
-        out[side] = {"margin": m["margin"], "aligned": m["aligned"]}
+        out[side] = {k: m[k] for k in ("margin", "aligned", "wins")}
     return out
 
 
@@ -451,8 +451,8 @@ def main():
     ap.add_argument("--extra-maps", nargs="*", default=[],
                     help="additional .map files (ladder maps outside the official suite)")
     ap.add_argument("--seed", type=int, default=53001)
-    ap.add_argument("--objective", choices=["aligned", "margin"], default="aligned",
-                    help="per-game score: aligned (win + longest dragon + length) or margin (length only)")
+    ap.add_argument("--objective", choices=["wins", "aligned", "margin"], default="wins",
+                    help="wins: actual outcome (default); aligned/margin: historical diagnostics only")
     ap.add_argument("--backend", choices=sorted(BACKENDS), default="pycma",
                     help="pycma, or cmaes-lra (learning-rate adaptation for noisy scores)")
     ap.add_argument("--eval-mean", action="store_true",

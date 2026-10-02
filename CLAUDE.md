@@ -1,5 +1,9 @@
 See README.md for layout and commands.
 
+- **1 October rules reset:** read [STRATEGIC_RESET_2026-10-01.md](STRATEGIC_RESET_2026-10-01.md) before new bot work. Official rules now score original queens (IDs 0/1) first and give ceil(start length / 4) free moves. The installed engine was still 1.1.0 at review. Establish current-engine/scoring/map parity before evaluating candidates. Historical longest-dragon objectives and the old current-pool list below are not current validation. R5 is stopped after its failed screen; NEW_MOVER_RESULTS.md records the outcome. Follow Q0–Q6 in the reset document for the new priority order; do not restart M0–M8 automatically. This research turn authorized documentation only, not implementation or upload.
+
+- For new mover / R5 work, read [NEW_MOVER_PLAN.md](NEW_MOVER_PLAN.md) and [WORK_QUEUE.md](WORK_QUEUE.md) before implementation. Follow stages M0–M8 and their gates; record progress in NEW_MOVER_RESULTS.md when implementation begins. The plan is instructions, not evidence that a new model is implemented or validated.
+
 - Use `.venv\Scripts\python` for all tooling. The unswbc CLI may not be on PATH: `C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Scripts\unswbc.exe`.
 - Edit shared code in `framework/`, never the copies inside bot folders; run `python -m bcsim.sync` after.
 - Bots must keep state on `self` only (the arena gives each dragon fresh module copies; the judge gives each its own process).

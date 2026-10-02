@@ -144,4 +144,8 @@ inline constexpr double CPP_MOVER_LAMBDA = 1.0;
 inline constexpr double CPP_MOVER_TAU = 0.0;
 inline constexpr int CPP_MOVER_LOG = 0;
 inline constexpr int CPP_KB_V2 = 0;
+inline constexpr int CPP_QUEEN = 0;
+inline constexpr int CPP_QUEEN_SPLIT_UNTIL = 80;
+inline constexpr int CPP_QUEEN_FLOOR = 4;
+inline constexpr int CPP_QUEEN_KEEP = 5;
 }  // namespace params

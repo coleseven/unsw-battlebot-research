@@ -751,6 +751,20 @@ inline bool king_protected(const Obs& obs, int born_round) {
            (obs.round >= params::PROTECT_ROUND && obs.length >= params::PROTECT_LEN);
 }
 inline std::optional<CashTarget> visible_target(WorldMemory& mem, const Obs& obs, char team, int did, int shift = 0) {
+    // Queen mode deliberately uses exact visible identity, not size or an
+    // aliased king beacon. A missing queen is unknown, never presumed dead.
+    if (params::CPP_QUEEN) {
+        if (did <= 1 || obs.round < params::FEED_ROUND - shift || obs.length > params::FEED_MAXLEN)
+            return std::nullopt;
+        for (int k = 0; k < 49; ++k) {
+            const auto& p = obs.occ[k];
+            if (p && p->head && p->team == team && p->id <= 1) {
+                int head = mem.cell(obs.x[k], obs.y[k]);
+                return CashTarget{head, mem.nav.destination(head, p->facing), k};
+            }
+        }
+        return std::nullopt;
+    }
     if (obs.round < params::FEED_ROUND - shift || obs.length > params::FEED_MAXLEN) return std::nullopt;
     std::unordered_map<int, int> segments;
     std::vector<std::tuple<int, int, char>> heads;  // (k, id, facing)
@@ -1184,7 +1198,7 @@ class Brain {
         std::string action = decide(obs);
         if (action.empty()) return action;
         action += mover_log;
-        if (params::CPP_KING_BEACON && obs.round >= params::CPP_KB_ROUND - feed_shift()) action += king_lines(obs);
+        if (!params::CPP_QUEEN && params::CPP_KING_BEACON && obs.round >= params::CPP_KB_ROUND - feed_shift()) action += king_lines(obs);
         else if (params::CPP_SONAR_HUB) action += sonar_lines(obs);
         // last, so it wins the backward direction over a beacon
         if (params::CPP_BRIEF && action.rfind("SPLIT ", 0) == 0) action += brief_line(obs);
@@ -1195,14 +1209,19 @@ class Brain {
         double t0 = cpu_points();  // CPU points at the turn's start (for CPP_BUDGET)
         memory.update(obs);
         if (params::CPP_SONAR_HUB) receive_hubs(obs);
-        if (params::CPP_KING_BEACON) receive_king(obs);
+        if (!params::CPP_QUEEN && params::CPP_KING_BEACON) receive_king(obs);
         if (params::GOAL) memory.update_goal(obs, init.id);
         if (!born_round) born_round = obs.round;
         bool protectedFlag = king_protected(obs, *born_round);
+        bool queen = params::CPP_QUEEN && init.id <= 1;
+        if (queen) protectedFlag = true;
         auto target = visible_target(memory, obs, init.team, init.id, feed_shift());
-        if (params::CPP_KING_BEACON && !target) target = beacon_target(obs);
+        if (!params::CPP_QUEEN && params::CPP_KING_BEACON && !target) target = beacon_target(obs);
         if (should_feed(memory, obs, init.team, target)) return "";
         auto split = should_split(init.width, init.height, init.unit_limit, obs, init.team, protectedFlag);
+        if (queen && (obs.round >= params::CPP_QUEEN_SPLIT_UNTIL ||
+                      obs.unit_count >= params::CPP_QUEEN_FLOOR ||
+                      obs.length - params::CHILD < params::CPP_QUEEN_KEEP)) split.reset();
         // CPP_ANCHOR: founders (alive at round 0) stop splitting from
         // FOUNDER_PROTECT_ROUND so they grow into kings early, as nicked's anchors
         // do from round 80 (our longest dragon was 4 at round 300 vs their 11).
@@ -1236,7 +1255,7 @@ class Brain {
         auto scores = score_moves(memory, obs, init.team, init.id, protectedFlag, target, t0, *born_round, &trace);
         if (scores.empty()) {
             if (obs.length >= 4 && obs.unit_count < init.unit_limit)
-                return std::string("SPLIT ") + std::to_string(obs.length - 2);
+                return std::string("SPLIT ") + std::to_string(queen ? 2 : obs.length - 2);
             return fallback(obs);
         }
         // max by (score, d==facing), keeping the first maximum in insertion order

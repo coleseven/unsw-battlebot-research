@@ -30,7 +30,7 @@ from concurrent.futures import ProcessPoolExecutor
 from . import reconstruct, replay as rp
 from .paths import RESULTS, ROOT
 
-VERSION = 4                 # bump when game_stats output changes
+VERSION = 5                 # queen diagnostics; historical replays retain their recorded winner
 CACHE = RESULTS / "analyze_cache"
 BUDGET = 100_000_000        # judge CPU points per dragon-turn
 SAMPLE = 10                 # timeline resolution in rounds
@@ -85,11 +85,14 @@ def game_stats(blob: bytes) -> dict:
     for i, (t, coords) in enumerate(board.dragons):
         body[i], team[i], born[i] = list(coords), t, 0
     T = {"A": _team(), "B": _team()}
+    queens = {t: next((i for i in (0, 1) if team.get(i) == t), None) for t in "AB"}
+    queen_deaths = {}
     timeline, deaths, contact = [], [], None
     rnd, actor, action, steps, headon = 0, None, None, 0, None
 
     def snapshot():
         row = {"round": rnd}
+        row["queens"] = {t: len(body.get(d, [])) for t, d in queens.items()}
         for t in "AB":
             lens = [len(b) for d, b in body.items() if team[d] == t]
             row[t] = [len(lens), sum(lens), max(lens, default=0)]
@@ -169,6 +172,8 @@ def game_stats(blob: bytes) -> dict:
         elif k == rp.DRAGON_DEATH:
             d, why = ev[1], ev[2]
             b, t = body[d], team[d]
+            if queens.get(t) == d:
+                queen_deaths[t] = rnd
             # the other party: for "O" whoever's body is on the cell moved into;
             # a head-on kills both, the engine reporting the struck dragon first
             other = None
@@ -226,6 +231,8 @@ def game_stats(blob: bytes) -> dict:
         s["child_len"] = dict(s["child_len"])
         s["deaths"] = dict(s["deaths"])
         s["final"] = r.result.get(t.lower())
+        s["queen"] = {"id": queens[t], "length": len(body.get(queens[t], [])),
+                      "alive": queens[t] in body, "death_round": queen_deaths.get(t)}
         teams[t] = s
     names = {"A": r.bot_a, "B": r.bot_b}
     has_cpu = {t: teams[t]["cpu"] is not None for t in "AB"}

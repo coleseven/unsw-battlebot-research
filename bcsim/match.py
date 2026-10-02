@@ -24,6 +24,7 @@ import subprocess
 import sys
 import time
 from dataclasses import asdict, dataclass, field
+from functools import lru_cache
 
 from unswbc.engine import EngineModule
 
@@ -31,6 +32,14 @@ from . import replay as rp
 from .paths import ROOT, bot_files, bot_hash, foreign_imports
 
 _ENGINE: EngineModule | None = None
+
+
+@lru_cache(maxsize=1)
+def engine_identity() -> dict:
+    import unswbc
+    from unswbc.engine import WASM_PATH
+    return {"engine_version": unswbc.__version__,
+            "engine_sha256": hashlib.sha256(WASM_PATH.read_bytes()).hexdigest()}
 
 
 def engine() -> EngineModule:
@@ -371,6 +380,12 @@ class Result:
     error: str | None = None
     hash_a: str = ""            # content hash of the code that played each side
     hash_b: str = ""
+    engine_version: str = ""
+    engine_sha256: str = ""
+    map_sha256: str = ""
+    a_queen: int | None = None  # None for an engine without queen scoring
+    b_queen: int | None = None
+    queen_death_round: dict = field(default_factory=dict)
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -397,6 +412,7 @@ def play(map_path: pathlib.Path, bot_a: pathlib.Path, bot_b: pathlib.Path,
     live: dict[int, object] = {}
     teams: dict[int, str] = {}
     deaths: dict[str, int] = {}
+    queen_deaths: dict[str, int] = {}
 
     def spawn(dragon_id: int, init: bytes) -> None:
         text = init.decode()
@@ -416,6 +432,8 @@ def play(map_path: pathlib.Path, bot_a: pathlib.Path, bot_b: pathlib.Path,
         return out if hook is None else hook(dragon_id, teams.get(dragon_id), block, out)
 
     def death(dragon_id: int, round_num: int, reason: str) -> None:
+        if dragon_id in (0, 1):
+            queen_deaths[teams.get(dragon_id, "?")] = round_num
         key = f"{teams.get(dragon_id, '?')}:{reason}"
         deaths[key] = deaths.get(key, 0) + 1
         bot = live.pop(dragon_id, None)
@@ -438,7 +456,9 @@ def play(map_path: pathlib.Path, bot_a: pathlib.Path, bot_b: pathlib.Path,
             loader.close()
 
     common = dict(map=map_path.stem, bot_a=bot_a.name, bot_b=bot_b.name, seed=seed,
-                  deaths=deaths, hash_a=hashes["A"], hash_b=hashes["B"])
+                  deaths=deaths, hash_a=hashes["A"], hash_b=hashes["B"],
+                  **engine_identity(), map_sha256=hashlib.sha256(map_path.read_bytes()).hexdigest(),
+                  queen_death_round=queen_deaths)
     if res is None:
         return Result(**common, winner=None, reason="error", rounds=0, a_dragons=0,
                       b_dragons=0, a_length=0, b_length=0, error=error,
@@ -458,5 +478,6 @@ def play(map_path: pathlib.Path, bot_a: pathlib.Path, bot_b: pathlib.Path,
         a_length=res.a_length, b_length=res.b_length,
         a_longest=(final.get("a") or {}).get("longest", 0),
         b_longest=(final.get("b") or {}).get("longest", 0),
+        a_queen=getattr(res, "a_queen", None), b_queen=getattr(res, "b_queen", None),
         seconds=time.perf_counter() - start,
     )

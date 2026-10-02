@@ -77,7 +77,7 @@ def prepare(args):
         "base": str(base), "base_hash": bot_hash(base), "params": args.params,
         "variants": variants, "opponents": opponents,
         "official_maps": [m.stem for m in official], "extra_maps": [m.stem for m in extra],
-        "seeds": [args.seed + i for i in range(args.seeds)], "objective": "aligned",
+        "seeds": [args.seed + i for i in range(args.seeds)], "objective": "wins",
         "unswbc": __import__("importlib.metadata").metadata.version("unswbc"),
         "deterministic_v6_clock": os.environ.get("BCSIM_DETERMINISTIC_V6") == "1"})
     print(out)
@@ -122,6 +122,7 @@ def run(out: Path, workers: int):
             rows.append({"opponent": g["bot_b"] if side == "A" else g["bot_a"], "map": g["map"],
                          "seed": g["seed"], "side": side, "margin": margins[g["replay"]][side]["margin"],
                          "aligned": margins[g["replay"]][side]["aligned"],
+                         "wins": margins[g["replay"]][side]["wins"],
                          "win": g["winner"] == side})
         population.write_json(folder / "margins.json", rows)
         shutil.rmtree(folder / "replays", ignore_errors=True)

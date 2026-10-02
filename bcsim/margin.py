@@ -25,7 +25,12 @@ def share(ours, theirs):
 
 
 def game_margin(stats, side):
-    """Return the v6 objective and diagnostics for one replay and one side."""
+    """Actual outcome objective plus historical length diagnostics.
+
+    Wins is win=1/draw=0/loss=-1 under the replay's recorded rules.
+    Aligned is preserved for historical plans; new plans must use wins.
+    Never infer the ruleset from the interpreter used to analyze old replays.
+    """
     if side not in ("A", "B"):
         raise ValueError(side)
     other = "B" if side == "A" else "A"
@@ -58,7 +63,9 @@ def game_margin(stats, side):
         # wins with less total length, 10 losses with more). Half the result,
         # a quarter the final longest-dragon share, a quarter the (smoother)
         # time-averaged total-length margin.
+        "wins": outcome,
         "aligned": 0.5 * outcome + 0.25 * longest_share + 0.25 * margin,
+        "queen_gap": (final["queens"][side] - final["queens"][other]) if "queens" in final else None,
         "longest_share": longest_share,
         "final_share": share(final[side][1], final[other][1]),
         "final_longest_gap": final[side][2] - final[other][2],
