@@ -5,6 +5,7 @@
 #include <cmath>
 #include <ctime>
 #include <deque>
+#include <functional>
 #include <string>
 #include <tuple>
 
@@ -519,7 +520,7 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
     // our queen's head this round (workers keep clear of it: own head-ons and
     // collisions killed 3 of 12 queens in a diagnostic, 2 Oct)
     int queen_head = -1;
-    if (params::CPP_QUEEN && !is_queen && params::CPP_QUEEN_GUARD_PEN > 0)
+    if ((params::CPP_QUEEN || params::CPP_QUEEN_LIGHT) && did > 1 && params::CPP_QUEEN_GUARD_PEN > 0)
         for (int cell : mem.occupied.order) {
             const OccPart& p = *mem.occupied.find(cell);
             if (p.head && p.team == team && p.id <= 1 && p.seen == obs.round) queen_head = cell;
@@ -1241,7 +1242,8 @@ class Brain {
         if (queen) protectedFlag = true;
         auto target = visible_target(memory, obs, init.team, init.id, feed_shift());
         if ((!params::CPP_QUEEN || params::CPP_QUEEN_KB) && params::CPP_KING_BEACON && !target) target = beacon_target(obs);
-        if (should_feed(memory, obs, init.team, target)) return "";
+        // CPP_QUEEN_LIGHT: the queen never feeds (a dead queen scores 0)
+        if (!(params::CPP_QUEEN_LIGHT && init.id <= 1) && should_feed(memory, obs, init.team, target)) return "";
         auto split = should_split(init.width, init.height, init.unit_limit, obs, init.team, protectedFlag);
         if (queen && (obs.round >= params::CPP_QUEEN_SPLIT_UNTIL ||
                       obs.unit_count >= params::CPP_QUEEN_FLOOR ||
@@ -1304,10 +1306,92 @@ class Brain {
             if (params::CPP_MOVER_LOG > 0 && (init.id * 31 + obs.round) % params::CPP_MOVER_LOG == 0)
                 mover_log = mover_line(obs, trace, best_dir);
         }
+        // CPP_QUEEN_TACTICS: the queen keeps the incumbent's move unless it survives
+        // fewer look-ahead steps (or fewer full lines when no move is fully safe)
+        // than another legal move; among the best, the incumbent's score decides.
+        if (params::CPP_QUEEN_TACTICS && init.id <= 1 && scores.size() >= 2) {
+            std::vector<std::tuple<int, int, double, char>> opts;   // (survived, full lines, score, dir)
+            for (auto& [d, v] : scores) {
+                auto [s, f] = queen_escape(obs, d, params::CPP_QUEEN_TACTICS_DEPTH);
+                opts.emplace_back(s, std::min(f, 1), v, d);
+            }
+            auto inc = std::find_if(opts.begin(), opts.end(), [&](auto& o) { return std::get<3>(o) == best_dir; });
+            auto top = std::max_element(opts.begin(), opts.end(), [](auto& a, auto& b) {
+                return std::tie(std::get<0>(a), std::get<1>(a), std::get<2>(a)) < std::tie(std::get<0>(b), std::get<1>(b), std::get<2>(b)); });
+            if (inc != opts.end() && std::tie(std::get<0>(*inc), std::get<1>(*inc)) < std::tie(std::get<0>(*top), std::get<1>(*top)))
+                best_dir = std::get<3>(*top);
+        }
         std::string path(1, best_dir);
         if (params::CPP_MULTISTEP && (!(params::CPP_QUEEN && init.id <= 1) || params::CPP_MULTISTEP_QUEEN))
             path += extra_steps(obs, best_dir);
         return std::string("MOVE ") + path;
+    }
+
+    // CPP_QUEEN_TACTICS (Q4): short exact escape search for our queen (id 0/1).
+    // For one first move, search every move sequence up to `depth` steps in the
+    // view, simulating the queen's own body (the head advances, the whole current
+    // body including the tail blocks: the engine checks collision before the tail
+    // moves). Other dragons' bodies are static obstacles. A cell is deadly at our
+    // step t if a threat head (enemy, and with CPP_QUEEN_TACTICS_FRIENDS our own
+    // workers) can reach it in t of its turns at ceil(visible length / 4) steps
+    // per turn (visible length is a lower bound). Returns (steps survived on the
+    // best line, number of lines surviving the full depth).
+    std::pair<int, int> queen_escape(const Obs& obs, char first, int depth) const {
+        int w = memory.width, h = memory.height;
+        int head = memory.cell(obs.x[CENTER], obs.y[CENTER]);
+        std::unordered_set<int> in_view, others;
+        std::unordered_map<int, int> seg_count;
+        std::vector<std::pair<int, int>> threats;   // (cell, steps per turn)
+        for (int k = 0; k < 49; ++k) {
+            int c = memory.cell(obs.x[k], obs.y[k]);
+            in_view.insert(c);
+            const auto& p = obs.occ[k];
+            if (!p) continue;
+            seg_count[p->id] += 1;
+            if (p->id != init.id) others.insert(c);
+        }
+        for (int k = 0; k < 49; ++k) {
+            const auto& p = obs.occ[k];
+            if (!p || !p->head || p->id == init.id) continue;
+            if (p->team == init.team && !params::CPP_QUEEN_TACTICS_FRIENDS) continue;
+            int speed = std::max(1, (seg_count[p->id] + 3) / 4) + params::CPP_QUEEN_TACTICS_MARGIN;
+            threats.emplace_back(memory.cell(obs.x[k], obs.y[k]), speed);
+        }
+        // own body, head first; a trail with gaps (multi-step turns) is not a body
+        std::vector<int> body;
+        if (auto tb = memory.trail_body(obs.length)) {
+            bool ok = (*tb)[0] == head;
+            for (std::size_t i = 1; ok && i < tb->size(); ++i)
+                ok = torus_distance((*tb)[i - 1], (*tb)[i], w, h) == 1;
+            if (ok) body = *tb;
+        }
+        if (body.empty()) {   // fall back: visible own cells as static obstacles
+            body.push_back(head);
+            for (int k = 0; k < 49; ++k)
+                if (obs.occ[k] && obs.occ[k]->id == init.id && k != CENTER) others.insert(memory.cell(obs.x[k], obs.y[k]));
+        }
+        auto deadly = [&](int c, int t) {
+            for (auto& [tc, sp] : threats) if (torus_distance(c, tc, w, h) <= t * sp) return true;
+            return false;
+        };
+        int best = 0, full = 0;
+        // iterative DFS over (body, step, direction)
+        std::function<void(const std::vector<int>&, int, char)> go = [&](const std::vector<int>& b, int t, char d) {
+            auto n = memory.nav.destination(b[0], d);
+            if (!n) return;
+            if (b.size() > 1 && *n == b[1]) return;                       // reversal into the neck
+            if (others.count(*n)) return;
+            for (int c : b) if (c == *n) return;                          // own body, tail included
+            if (deadly(*n, t)) return;
+            best = std::max(best, t);
+            if (t == depth || !in_view.count(*n)) { if (t == depth) ++full; else best = std::max(best, depth); return; }
+            std::vector<int> nb; nb.reserve(b.size());
+            nb.push_back(*n);
+            for (std::size_t i = 0; i + 1 < b.size(); ++i) nb.push_back(b[i]);
+            for (char nd : DIRS) go(nb, t + 1, nd);
+        };
+        go(body, 1, first);
+        return {best, full};
     }
 
     // CPP_MULTISTEP (queen rules, unswbc 1.2.3): a dragon may move ceil(length / 4)
