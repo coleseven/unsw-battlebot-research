@@ -789,3 +789,17 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   v10o 80/120 (queens alive 20 vs 2), v11q vs v11ms 73/120 (20 vs 1)**. Against
   opponents that, like ours, lose their queens, a surviving queen decides the
   game; the old-rules panel understates this. Recommended upload: v11q.
+- **Live ladder evidence (2 Oct ~18:40 UTC, v10o, 10 ranked battles / 50
+  games after the reset):** rating ~1445 (rank 100 at 1533), 7/10 battles won.
+  Queens at round 500: both dead 38 games (we won 25), only theirs alive 10
+  (we won 0), only ours 1 (won), both alive 1 (won). Our queen survived 2/50,
+  theirs 11/50. Ladder teams already protect queens; queen survival decided 10
+  of our 23 losses. Strong case for v11q (queen alive 3.3x in testing, 80/120 vs
+  v10o head-to-head).
+- Q5 queen growth (v11f = v11q behaviour, 7 opponents incl. v11q, seeds
+  561001-2; base 268/420, queen alive 65 at median length 3): split cutoff 250/
+  350 no effect (the queen is already below split length); qfeed (late feeders
+  target the queen by id) 269, pool 174 vs 168, queen length 4, but vs v92 17 vs
+  25; qs350feed 270, length 5, v92 17. Mixed; not adopted.
+- Q6 (v11g, seeds 571001-2; base 254/420): queen flight 251 (queen length 3-4
+  = one free step, nothing to flee with); queen food x3 246.
