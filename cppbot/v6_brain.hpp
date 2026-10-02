@@ -572,12 +572,12 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
             if (params::CPP_QUEEN_REACH_PEN > 0)
                 for (auto& [cell, pid] : enemy_heads) {
                     int el = enemy_len.count(pid) ? enemy_len[pid] : 1;
-                    if (torus_distance(dest, cell, mem.width, mem.height) <= std::max(1, (el + 3) / 4))
+                    if (torus_distance(dest, cell, mem.width, mem.height) <= std::max(1, (el + 3) / 4) + params::CPP_QUEEN_REACH_EXTRA)
                         value -= params::CPP_QUEEN_REACH_PEN;
                 }
             if (params::CPP_QUEEN_DEADEND > 0 && obs.length >= 2 && dead_end_ahead(mem, dest, direction, params::CPP_QUEEN_DEADEND))
                 value -= params::CPP_QUEEN_DEADEND_PEN;
-        } else if (queen_head >= 0 && torus_distance(dest, queen_head, mem.width, mem.height) <= 1) {
+        } else if (queen_head >= 0 && torus_distance(dest, queen_head, mem.width, mem.height) <= params::CPP_QUEEN_GUARD_R) {
             value -= params::CPP_QUEEN_GUARD_PEN;
         }
         int threat = reach.count(dest) ? reach[dest] : 0;

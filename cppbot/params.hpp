@@ -156,4 +156,6 @@ inline constexpr int CPP_QUEEN_DEADEND = 0;
 inline constexpr double CPP_QUEEN_DEADEND_PEN = 400.0;
 inline constexpr double CPP_QUEEN_GUARD_PEN = 0.0;
 inline constexpr int CPP_QUEEN_KB = 0;
+inline constexpr int CPP_QUEEN_REACH_EXTRA = 0;
+inline constexpr int CPP_QUEEN_GUARD_R = 1;
 }  // namespace params

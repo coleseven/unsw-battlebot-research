@@ -176,3 +176,5 @@ CPP_QUEEN_DEADEND = 0      # queen: dead-end corridor look-ahead (0 = off)
 CPP_QUEEN_DEADEND_PEN = 400.0
 CPP_QUEEN_GUARD_PEN = 0.0  # workers: penalty for moving next to our queen's head
 CPP_QUEEN_KB = 0           # 1 = keep the king beacon / big-dragon feeding in queen mode
+CPP_QUEEN_REACH_EXTRA = 0  # queen: extra cells of margin beyond an enemy head's ceil(len/4) reach
+CPP_QUEEN_GUARD_R = 1      # workers: guard radius around our queen's head
