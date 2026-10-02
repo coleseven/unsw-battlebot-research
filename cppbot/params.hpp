@@ -150,4 +150,10 @@ inline constexpr int CPP_QUEEN = 0;
 inline constexpr int CPP_QUEEN_SPLIT_UNTIL = 80;
 inline constexpr int CPP_QUEEN_FLOOR = 4;
 inline constexpr int CPP_QUEEN_KEEP = 5;
+inline constexpr double CPP_QUEEN_SAFE_MULT = 1.5;
+inline constexpr double CPP_QUEEN_REACH_PEN = 0.0;
+inline constexpr int CPP_QUEEN_DEADEND = 0;
+inline constexpr double CPP_QUEEN_DEADEND_PEN = 400.0;
+inline constexpr double CPP_QUEEN_GUARD_PEN = 0.0;
+inline constexpr int CPP_QUEEN_KB = 0;
 }  // namespace params

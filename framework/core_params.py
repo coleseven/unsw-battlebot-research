@@ -170,3 +170,9 @@ CPP_QUEEN = 0           # Q1: fixed-ID queen policy; historical behavior remains
 CPP_QUEEN_SPLIT_UNTIL = 80
 CPP_QUEEN_FLOOR = 4     # queen supplies the opening economy only below this population
 CPP_QUEEN_KEEP = 5      # retain at least two free steps after an opening split
+CPP_QUEEN_SAFE_MULT = 1.5  # queen's trap/lethal/head safety multiplier (1.5 = PROTECT_MULT, unchanged)
+CPP_QUEEN_REACH_PEN = 0.0  # queen: penalty per enemy head that can reach the cell with ceil(len/4) steps
+CPP_QUEEN_DEADEND = 0      # queen: dead-end corridor look-ahead (0 = off)
+CPP_QUEEN_DEADEND_PEN = 400.0
+CPP_QUEEN_GUARD_PEN = 0.0  # workers: penalty for moving next to our queen's head
+CPP_QUEEN_KB = 0           # 1 = keep the king beacon / big-dragon feeding in queen mode

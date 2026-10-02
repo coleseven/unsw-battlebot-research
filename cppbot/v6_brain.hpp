@@ -514,7 +514,16 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
     std::unordered_map<int, int> latest_visit;
     for (auto& [c, r] : mem.trail) latest_visit[c] = r;
     int start = mem.cell(obs.x[CENTER], obs.y[CENTER]);
-    double protection = protectedFlag ? params::PROTECT_MULT : 1.0;
+    bool is_queen = params::CPP_QUEEN && did <= 1;
+    double protection = is_queen ? params::CPP_QUEEN_SAFE_MULT : protectedFlag ? params::PROTECT_MULT : 1.0;
+    // our queen's head this round (workers keep clear of it: own head-ons and
+    // collisions killed 3 of 12 queens in a diagnostic, 2 Oct)
+    int queen_head = -1;
+    if (params::CPP_QUEEN && !is_queen && params::CPP_QUEEN_GUARD_PEN > 0)
+        for (int cell : mem.occupied.order) {
+            const OccPart& p = *mem.occupied.find(cell);
+            if (p.head && p.team == team && p.id <= 1 && p.seen == obs.round) queen_head = cell;
+        }
     double margin = params::SPACE_MARGIN * (obs.round >= 400 ? params::ENDGAME_SPACE_MULT : 1.0);
     double need = std::min(params::SPACE_MULT * obs.length + margin, static_cast<double>(params::SPACE_CAP));
     // CPP_TRAP_OPEN: the room/trap penalty is scaled down in open terrain and
@@ -556,6 +565,21 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
         else if (tm.exits == 1) value -= params::W_CORRIDOR;
         if (params::CPP_DEADEND_LOOK > 0 && obs.length >= 2 && dead_end_ahead(mem, dest, direction))
             value -= params::CPP_DEADEND_PEN;
+        // Queen safety (queen rules): an enemy head of visible length L can now
+        // move ceil(L/4) cells (visible length is a lower bound); dead ends kill
+        // short queens (5 of 12 diagnostic queen deaths were walls/kelp).
+        if (is_queen) {
+            if (params::CPP_QUEEN_REACH_PEN > 0)
+                for (auto& [cell, pid] : enemy_heads) {
+                    int el = enemy_len.count(pid) ? enemy_len[pid] : 1;
+                    if (torus_distance(dest, cell, mem.width, mem.height) <= std::max(1, (el + 3) / 4))
+                        value -= params::CPP_QUEEN_REACH_PEN;
+                }
+            if (params::CPP_QUEEN_DEADEND > 0 && obs.length >= 2 && dead_end_ahead(mem, dest, direction, params::CPP_QUEEN_DEADEND))
+                value -= params::CPP_QUEEN_DEADEND_PEN;
+        } else if (queen_head >= 0 && torus_distance(dest, queen_head, mem.width, mem.height) <= 1) {
+            value -= params::CPP_QUEEN_GUARD_PEN;
+        }
         int threat = reach.count(dest) ? reach[dest] : 0;
         if (th.enemy.count(dest) && !(hunter && threat >= obs.length + params::HUNT_MIN_GAIN))
             value -= protection * params::W_HEAD_ENEMY * std::max(1.0, obs.length / 4.0);
@@ -1198,7 +1222,7 @@ class Brain {
         std::string action = decide(obs);
         if (action.empty()) return action;
         action += mover_log;
-        if (!params::CPP_QUEEN && params::CPP_KING_BEACON && obs.round >= params::CPP_KB_ROUND - feed_shift()) action += king_lines(obs);
+        if ((!params::CPP_QUEEN || params::CPP_QUEEN_KB) && params::CPP_KING_BEACON && obs.round >= params::CPP_KB_ROUND - feed_shift()) action += king_lines(obs);
         else if (params::CPP_SONAR_HUB) action += sonar_lines(obs);
         // last, so it wins the backward direction over a beacon
         if (params::CPP_BRIEF && action.rfind("SPLIT ", 0) == 0) action += brief_line(obs);
@@ -1209,14 +1233,14 @@ class Brain {
         double t0 = cpu_points();  // CPU points at the turn's start (for CPP_BUDGET)
         memory.update(obs);
         if (params::CPP_SONAR_HUB) receive_hubs(obs);
-        if (!params::CPP_QUEEN && params::CPP_KING_BEACON) receive_king(obs);
+        if ((!params::CPP_QUEEN || params::CPP_QUEEN_KB) && params::CPP_KING_BEACON) receive_king(obs);
         if (params::GOAL) memory.update_goal(obs, init.id);
         if (!born_round) born_round = obs.round;
         bool protectedFlag = king_protected(obs, *born_round);
         bool queen = params::CPP_QUEEN && init.id <= 1;
         if (queen) protectedFlag = true;
         auto target = visible_target(memory, obs, init.team, init.id, feed_shift());
-        if (!params::CPP_QUEEN && params::CPP_KING_BEACON && !target) target = beacon_target(obs);
+        if ((!params::CPP_QUEEN || params::CPP_QUEEN_KB) && params::CPP_KING_BEACON && !target) target = beacon_target(obs);
         if (should_feed(memory, obs, init.team, target)) return "";
         auto split = should_split(init.width, init.height, init.unit_limit, obs, init.team, protectedFlag);
         if (queen && (obs.round >= params::CPP_QUEEN_SPLIT_UNTIL ||
