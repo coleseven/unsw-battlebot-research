@@ -1280,7 +1280,69 @@ class Brain {
             if (params::CPP_MOVER_LOG > 0 && (init.id * 31 + obs.round) % params::CPP_MOVER_LOG == 0)
                 mover_log = mover_line(obs, trace, best_dir);
         }
-        return std::string("MOVE ") + best_dir;
+        std::string path(1, best_dir);
+        if (params::CPP_MULTISTEP && (!(params::CPP_QUEEN && init.id <= 1) || params::CPP_MULTISTEP_QUEEN))
+            path += extra_steps(obs, best_dir);
+        return std::string("MOVE ") + path;
+    }
+
+    // CPP_MULTISTEP (queen rules, unswbc 1.2.3): a dragon may move ceil(length / 4)
+    // times per turn for free (start-of-move length). After the incumbent's first
+    // step, spend the remaining free steps only on reaching a visible pearl by the
+    // shortest path through free cells of the view. Conservative: every occupied
+    // cell (own body included, even the tail) and every cell already entered this
+    // turn is blocked, portals are not taken, no paid (sprint) steps; the endpoint
+    // must keep two open exits and stay out of reach (distance <= 2) of enemy heads.
+    std::string extra_steps(const Obs& obs, char first) const {
+        int free_steps = (obs.length + 3) / 4;
+        if (free_steps < 2) return "";
+        if (obs.edge(CENTER, first) != OPEN) return "";
+        int start = Obs::step(CENTER, first);
+        if (start < 0 || obs.occ[start]) return "";            // attack or off-view: single step
+        std::vector<int> enemy;
+        for (int k = 0; k < 49; ++k)
+            if (obs.occ[k] && obs.occ[k]->head && obs.occ[k]->team != init.team) enemy.push_back(k);
+        auto near_enemy = [&](int k) {
+            for (int e : enemy) if (std::abs(e / 7 - k / 7) + std::abs(e % 7 - k % 7) <= 2) return true;
+            return false;
+        };
+        int budget = free_steps - 1;
+        // BFS from the first step's cell, depth <= budget, avoiding occupied/entered cells
+        std::array<int, 49> prev; prev.fill(-2);
+        std::array<char, 49> how{};
+        std::array<int, 49> depth{};
+        prev[start] = -1;
+        std::vector<int> frontier{start};
+        int goal = -1;
+        for (int dpt = 1; dpt <= budget && goal < 0 && !frontier.empty(); ++dpt) {
+            std::vector<int> nxt;
+            for (int k : frontier) {
+                for (char d : DIRS) {
+                    if (obs.edge(k, d) != OPEN) continue;           // kelp, unknown or portal
+                    int n = Obs::step(k, d);
+                    if (n < 0 || n == CENTER || prev[n] != -2 || obs.occ[n]) continue;
+                    prev[n] = k; how[n] = d; depth[n] = dpt;
+                    if (obs.pearl[n] && goal < 0) goal = n;
+                    nxt.push_back(n);
+                }
+            }
+            frontier.swap(nxt);
+        }
+        if (goal < 0 || near_enemy(goal)) return "";
+        int exits = 0;
+        for (char d : DIRS) {
+            if (obs.edge(goal, d) != OPEN) continue;
+            int n = Obs::step(goal, d);
+            if (n >= 0 && !obs.occ[n] && n != CENTER) {
+                bool on_path = false;
+                for (int c = goal; c >= 0; c = prev[c]) if (c == n) { on_path = true; break; }
+                if (!on_path && n != start) ++exits;
+            }
+        }
+        if (exits < 2) return "";
+        std::string steps;
+        for (int c = goal; c != start; c = prev[c]) steps.insert(steps.begin(), how[c]);
+        return steps;
     }
 
     // R5 residual: q(a) = q0(a) + lambda * 2 tanh(f(a)), q0 = (S0 - mean S0) / scale;

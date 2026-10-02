@@ -164,6 +164,8 @@ CPP_MOVER_LAMBDA = 1.0  # C++ only: residual strength
 CPP_MOVER_TAU = 0.0     # C++ only: override the incumbent's move only if q gains more than this
 CPP_MOVER_LOG = 0       # C++ only: log the 64 mover features of every N-th eligible decision (0 = off)
 CPP_KB_V2 = 0           # C++ only: 1 = king beacon carries a king token and origin age (relays keep it); feeders bind to the token
+CPP_MULTISTEP = 0       # Q2 (queen rules): spend extra free steps (ceil(len/4) - 1) reaching a visible pearl
+CPP_MULTISTEP_QUEEN = 0  # Q2: with CPP_QUEEN, let the queen take extra steps too (default: workers only)
 CPP_QUEEN = 0           # Q1: fixed-ID queen policy; historical behavior remains the default
 CPP_QUEEN_SPLIT_UNTIL = 80
 CPP_QUEEN_FLOOR = 4     # queen supplies the opening economy only below this population
