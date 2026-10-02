@@ -487,7 +487,10 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
         if (attacks == nullptr || it == attacks_map.end()) continue;
         int pid = it->second;
         int gain = (enemy_len.count(pid) ? enemy_len[pid] : 1) - obs.length;
-        if (gain >= params::ATTACK_MIN_GAIN) { scores.emplace_back(d, params::W_ATTACK + params::W_TRADE * gain); if (trace) ++trace->n_attacks; }
+        // CPP_QUEEN_HUNT: a head-on into the enemy queen (id 0/1) is worth it at
+        // any length difference: a dead enemy queen scores 0 (queen rules)
+        if (params::CPP_QUEEN_HUNT && pid <= 1 && did > 1) { scores.emplace_back(d, params::W_ATTACK + params::CPP_QUEEN_HUNT_BONUS); if (trace) ++trace->n_attacks; }
+        else if (gain >= params::ATTACK_MIN_GAIN) { scores.emplace_back(d, params::W_ATTACK + params::W_TRADE * gain); if (trace) ++trace->n_attacks; }
         moves.erase(d);
     }
     // rebuild remaining move order (NESW minus popped attacks)
@@ -585,6 +588,13 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
         int threat = reach.count(dest) ? reach[dest] : 0;
         if (th.enemy.count(dest) && !(hunter && threat >= obs.length + params::HUNT_MIN_GAIN))
             value -= protection * params::W_HEAD_ENEMY * std::max(1.0, obs.length / 4.0);
+        if (params::CPP_QUEEN_HUNT && did > 1 && obs.length <= params::ATTACK_MAXLEN)
+            for (auto& [cell, pid] : enemy_heads)
+                if (pid <= 1) {
+                    double sl = torus_distance(dest, cell, mem.width, mem.height);
+                    double d = usePath ? pd.eff(direction, cell, static_cast<int>(sl)) : sl;
+                    value += params::CPP_QUEEN_HUNT_PULL / (1 + d);
+                }
         if (hunter && obs.round >= params::HUNT_ROUND) {
             double add = 0;
             for (auto& [cell, pid] : enemy_heads)

@@ -172,6 +172,9 @@ CPP_QUEEN_LIGHT_FEED = 0  # small late feeders target our visible queen by id (q
 CPP_QUEEN_LIGHT_FOOD = 1.0  # light queen: multiplier on the queen's food term
 CPP_QUEEN_LIGHT_KEEP = 0  # light queen: split only if the queen keeps at least this length (0 = off)
 CPP_QUEEN_FLIGHT = 0    # queen: when threatened, spend extra free steps maximising distance from threat heads
+CPP_QUEEN_HUNT = 0      # workers (<= ATTACK_MAXLEN) attack the enemy queen head at any length difference
+CPP_QUEEN_HUNT_BONUS = 300.0  # added to W_ATTACK for a head-on into the enemy queen
+CPP_QUEEN_HUNT_PULL = 150.0   # pull toward a visible enemy queen head: PULL / (1 + distance)
 CPP_QUEEN_TACTICS = 0   # Q4: exact short escape search for our queen (id 0/1), any mode
 CPP_QUEEN_TACTICS_DEPTH = 3  # Q4: look-ahead steps (view radius is 3)
 CPP_QUEEN_TACTICS_MARGIN = 0  # Q4: extra steps per turn assumed for threat heads
