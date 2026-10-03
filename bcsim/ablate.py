@@ -60,11 +60,17 @@ def prepare(args):
         population.snapshot(path, out / "opponents" / path.name)
         opponents.append(path.name)
     (out / "maps").mkdir()
-    official = official_suite.official_maps()
-    official_suite.require_coverage(official)
+    if args.maps == "current":
+        # the current ranked rotation as official 1.2.9 files (3 Oct); historical
+        # coverage is a separate run, not mixed into this one
+        official = official_suite.current_maps()
+    else:
+        official = official_suite.official_maps()
+        official_suite.require_coverage(official)
     signatures = {official_suite.map_signature(m) for m in official}
     extra = []
-    extras = (official_suite.ladder_extra_maps() if args.extra_maps is None else
+    extras = ([] if args.maps == "current" and args.extra_maps is None else
+              official_suite.ladder_extra_maps() if args.extra_maps is None else
               [Path(m) for m in args.extra_maps])
     for source in extras:
         if official_suite.map_signature(source) in signatures:
@@ -252,6 +258,8 @@ def main():
     ap.add_argument("--params")
     ap.add_argument("--groups", help="groups JSON, or 'none' for base only (noise measurement)")
     ap.add_argument("--vs", nargs="+")
+    ap.add_argument("--maps", choices=["historical", "current"], default="historical",
+                    help="historical: official 11 + extras (default); current: the 17-map ranked rotation as 1.2.9 files")
     ap.add_argument("--extra-maps", nargs="*", default=None,
                     help="maps beyond the official 11 (default: the 4 ladder maps; pass none to omit)")
     ap.add_argument("--seeds", type=int, default=3)

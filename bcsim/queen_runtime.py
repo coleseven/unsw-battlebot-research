@@ -3,7 +3,8 @@
     .venv/Scripts/python -m bcsim.queen_runtime unittest discover -s tests -p test_queen_rules.py
     .venv/Scripts/python -m bcsim.queen_runtime bcsim.queen_baseline
 
-Install unswbc==1.2.3 with pip --no-deps --target results/queen-runtime-packages/1.2.3.
+Install a toolkit with pip --no-deps --target results/queen-runtime-packages/<version>
+(1.2.3 and 1.2.9 installed; BCSIM_QUEEN_RUNTIME selects, default 1.2.9).
 The inherited .venv supplies dependencies. Child processes inherit this runtime.
 """
 import os
@@ -11,7 +12,8 @@ from pathlib import Path
 import runpy
 import sys
 
-VERSION = "1.2.3"
+# Current official toolkit; BCSIM_QUEEN_RUNTIME=1.2.3 reproduces the 1-2 Oct results.
+VERSION = os.environ.get("BCSIM_QUEEN_RUNTIME", "1.2.9")
 PACKAGE = Path(__file__).resolve().parents[1] / "results/queen-runtime-packages" / VERSION
 
 

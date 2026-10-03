@@ -19,7 +19,7 @@ def fixture(length=5, tiles=(), edges=(), bodies=None):
     return ("\n".join(lines) + "\n").encode()
 
 
-@unittest.skipUnless(unswbc.__version__ == "1.2.3", "run via bcsim.queen_runtime")
+@unittest.skipUnless(unswbc.__version__ in ("1.2.3", "1.2.9"), "run via bcsim.queen_runtime")
 class QueenEngineTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):

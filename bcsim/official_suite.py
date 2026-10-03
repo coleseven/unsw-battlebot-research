@@ -121,6 +121,28 @@ def sprint_maps() -> list[Path]:
     return _load(SPRINT_SPECS)
 
 
+# Official unswbc 1.2.9 maps (copied verbatim to maps/v129, MANIFEST.json has
+# hashes). Checked 3 Oct against recent ranked replays: identical edges and
+# dragon starts (some replays list the teams side-swapped). These are the
+# current maps; the historical 15 and reconstructed Sprint maps stay separate.
+V129_POOL = {"Trophy": "trophy.map", "Queen Of Spades": "queen_of_spades.map", "Default": "default.map",
+             "Devil": "devil.map", "Trauma": "trauma.map", "Schooltime": "schooltime.map",
+             "Autarky": "autarky.map", "Prisoners Dilemma": "dilemma.map", "Slithery Fight": "slithery_fight.map",
+             "Portals": "portals.map", "Australia": "australia.map", "Islands": "islands.map", "Maze": "maze.map",
+             "Stripes": "stripes.map", "Tower Defense": "tower_defense.map", "Around UNSW": "unsw.map",
+             "weakhold": "weakhold.map"}
+
+
+def v129_maps() -> list[Path]:
+    """All 22 maps bundled with unswbc 1.2.9 (current official files)."""
+    return sorted((ROOT / "maps/v129").glob("*.map"))
+
+
+def current_maps() -> list[Path]:
+    """The 17 maps of the current ranked rotation (sampled 3 Oct), as official 1.2.9 files."""
+    return [ROOT / "maps/v129" / f for f in V129_POOL.values()]
+
+
 def current_pool_maps() -> list[Path]:
     """The maps in the current ranked rotation (CURRENT_POOL), in suite order."""
     return [p for p in ranked_maps() + sprint_maps() if p.stem in CURRENT_POOL]
