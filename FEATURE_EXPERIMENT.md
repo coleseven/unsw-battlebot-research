@@ -917,3 +917,10 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   (all won) vs only-theirs 9. Weak maps: stripes 0/8, tower defence 1/8 (look at
   these next); weakhold 8/8. 1.2.9 sandbox max 8.4M points/turn. **v11t
   recommended for upload** (battlebot-v11t.zip, hash 668938a734ff8da6).
+- **C6 refuge on v11t** (current 17 maps, 10 opponents, seeds 721001-2, 680
+  games; base v11t 358, queen alive 218): **ref100 392 (+34), queen alive 243**,
+  all-maps delta +0.100 [+0.029, +0.176]; vs v92 25 vs 17, growth 46 vs 35,
+  economy 40 vs 32, lab 34 vs 29; v75 28 vs 30, raider 30 vs 31. ref250 385
+  (queen alive 256). Candidate frozen as **versions/v11u** (v11t + CPP_QUEEN_REFUGE
+  1, hash e05b504928e4024c). C7: untouched confirmation (seeds 731001-3, +v11q in
+  the panel) and v11u vs v11t head-to-head (seeds 741001-4) queued.
