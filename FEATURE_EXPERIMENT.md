@@ -853,3 +853,18 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   61 vs 53, vs v11q 61 vs 66); kx1_g2 545 (107). Queen survival +10-14% but
   9-27 fewer wins: not adopted. v11q stays the incumbent. Local queen tweaks are
   at diminishing returns; next: learn from the top ladder teams' queen play.
+
+### 3 Oct: ladder anatomy
+
+- Top-ladder games (37 battles, 185 games, both teams >= 1580, since 2 Oct):
+  decided by elimination 31%, longest dragon with both queens dead 31%, queen
+  survival 23%, queen length with both alive 15%. Queens alive 31%; surviving
+  queens median length 3 (quartiles 3, 16): top teams also keep small queens.
+- v11q on the ladder (30 battles, 162 games since upload): wins by reason
+  elimination 27, longest 33, queen length 10, queen survival 4; losses
+  elimination 16, longest 33, queen length 8, **queen survival 31** (net -27,
+  the largest loss source). The local panel rarely protects queens, so local
+  tests underweight queen survival.
+- **Ranked pool changed**: 12 recent ranked battles drew the old 10 maps plus
+  all 7 Sprint maps (~40% of games). `official_suite.CURRENT_POOL` now has 17
+  maps; `current_pool_maps()` includes the reconstructed Sprint maps.

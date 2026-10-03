@@ -39,8 +39,12 @@ LADDER_SPECS = (
 # not appeared since at least 25 Sep 12:00. Elo counts games won, so this pool
 # is the primary target; the other five stay as a regression guard because the
 # pool has changed twice in two days. Re-sample before relying on it.
+# Re-sampled 3 Oct 2026 (12 ranked battles): the 10 maps below plus all 7 Sprint
+# maps (about 40% of games). The Sprint maps are played from their reconstructed
+# spawners (maps/sprint, bcsim.spawn_reconstruct), an approximation.
 CURRENT_POOL = ("trophy", "queen_of_spades", "default", "Devil", "Trauma", "schooltime",
-                "Autarky", "Prisoners_Dilemma", "Slithery_Fight", "Portals")
+                "Autarky", "Prisoners_Dilemma", "Slithery_Fight", "Portals",
+                "Australia", "Islands", "Maze", "Stripes", "Tower_Defense", "Around_UNSW", "weakhold")
 
 # Sixteen simultaneous matches exhausted available RAM with process-based
 # nicked; eight is the highest previously completed full-suite setting here.
@@ -119,7 +123,7 @@ def sprint_maps() -> list[Path]:
 
 def current_pool_maps() -> list[Path]:
     """The maps in the current ranked rotation (CURRENT_POOL), in suite order."""
-    return [p for p in ranked_maps() if p.stem in CURRENT_POOL]
+    return [p for p in ranked_maps() + sprint_maps() if p.stem in CURRENT_POOL]
 
 
 def ranked_maps() -> list[Path]:
