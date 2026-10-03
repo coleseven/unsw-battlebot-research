@@ -1,0 +1,5 @@
+frozen v11t at 2026-10-03, git 77a11bd
+v11q + CPP_QUEEN_TACTICS2 1 (corrected queen escape search: eating keeps the tail, wall/portal-aware BFS threat reach in turns, leaving view = unknown, full-line counts, the checked move is the final move, no extra queen pearl steps)
+bot hash 668938a734ff8da6 (battlebot-v11t.zip verified)
+1.2.9 confirmation C5, current 17 maps, 10 opponents incl. 4 queen-aware specialists, seeds 691001-3, 1,020 games: wins 571 vs 534 (v11q behaviour), queen alive 346 vs 207; earlier screens +18 (C2) and +30 (C3)
+1.2.9 judge sandbox (unsw, australia, schooltime, islands, trophy): max 8.4M points/turn
