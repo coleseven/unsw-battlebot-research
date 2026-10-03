@@ -899,3 +899,10 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   rarely triggers and both strengths decide those few cases); **y150_t2 285, queen
   alive 175, vs v92 25 vs 16** - effectively a second run of the corrected search
   (+18 in C2, +30 here). Yield alone not adopted.
+- **C5 confirmation of the corrected queen search** (1.2.9, current 17 maps, 10
+  opponents incl. the 4 queen-aware specialists, seeds 691001-3, 1,020 games;
+  base v11n = v11q behaviour 534, queen alive 207): **t2 571 (+37), queen alive
+  346, only-ours-alive 233 (all won)**; vs v92 32 vs 17, economy 68 vs 52, careful
+  59 vs 51, lab 49 vs 43; raider 42 vs 46, v7 72 vs 81, growth 55 vs 58. All-maps
+  wins delta +0.070 [-0.003, +0.141]. Three consistent runs (+18, +30, +37).
+  Frozen **v11t** (versions/v11t, hash 668938a734ff8da6 = v11q + CPP_QUEEN_TACTICS2).
