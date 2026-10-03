@@ -841,3 +841,10 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
 - CPP_QUEEN_LIGHT_SAFE: room/lethal multiplier for the light queen (in light
   mode the queen had no extra trap safety). Q10 queued: safe3, safe6, safe3 +
   guard radius 2, safe3 + depth 4.
+- Q9 complete: keep300x1 (light queen reach penalty 300, +1 margin) 256 vs 256,
+  **queen alive 63 vs 50** at equal wins; d4_keep300 253 (57).
+- Q10 (v11k, seeds 631001-2; base 258/420, queen alive 55): CPP_QUEEN_LIGHT_SAFE
+  x3 255 (56), x6 254 (56): room safety does nothing for a length-3 queen
+  (boxing-in is dynamic); safe3 + guard radius 2: 255, **queen alive 69,
+  theirs 37 vs 48**. Confirmation queued: kx1, kx1 + guard 2 (seeds 641001-3,
+  15 + 7 Sprint maps, 7 opponents).
