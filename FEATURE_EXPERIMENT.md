@@ -848,3 +848,8 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   (boxing-in is dynamic); safe3 + guard radius 2: 255, **queen alive 69,
   theirs 37 vs 48**. Confirmation queued: kx1, kx1 + guard 2 (seeds 641001-3,
   15 + 7 Sprint maps, 7 opponents).
+- Q11 confirmation (seeds 641001-3, 15 + 7 Sprint maps, 7 opponents, 924
+  games; base v11k = v11q behaviour 572, queen alive 94): kx1 563 (104; vs v92
+  61 vs 53, vs v11q 61 vs 66); kx1_g2 545 (107). Queen survival +10-14% but
+  9-27 fewer wins: not adopted. v11q stays the incumbent. Local queen tweaks are
+  at diminishing returns; next: learn from the top ladder teams' queen play.
