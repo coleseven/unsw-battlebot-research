@@ -152,6 +152,7 @@ inline constexpr int CPP_QUEEN_LIGHT_SPLIT_UNTIL = 1000;
 inline constexpr int CPP_QUEEN_LIGHT_FEED = 0;
 inline constexpr double CPP_QUEEN_LIGHT_FOOD = 1.0;
 inline constexpr int CPP_QUEEN_LIGHT_KEEP = 0;
+inline constexpr double CPP_QUEEN_LIGHT_SAFE = 1.0;
 inline constexpr int CPP_QUEEN_FLIGHT = 0;
 inline constexpr int CPP_QUEEN_HUNT = 0;
 inline constexpr double CPP_QUEEN_HUNT_BONUS = 300.0;

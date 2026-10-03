@@ -520,6 +520,9 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
     int start = mem.cell(obs.x[CENTER], obs.y[CENTER]);
     bool is_queen = params::CPP_QUEEN && did <= 1;
     double protection = is_queen ? params::CPP_QUEEN_SAFE_MULT : protectedFlag ? params::PROTECT_MULT : 1.0;
+    // CPP_QUEEN_LIGHT_SAFE: the light-mode queen weighs room and lethal traps more (43% of
+    // ladder queen deaths, 2 Oct, were a boxed-in queen forced into a wall)
+    if (params::CPP_QUEEN_LIGHT && did <= 1) protection *= params::CPP_QUEEN_LIGHT_SAFE;
     // our queen's head this round (workers keep clear of it: own head-ons and
     // collisions killed 3 of 12 queens in a diagnostic, 2 Oct)
     int queen_head = -1;

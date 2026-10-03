@@ -172,6 +172,7 @@ CPP_QUEEN_LIGHT_SPLIT_UNTIL = 1000  # light queen: the queen stops splitting fro
 CPP_QUEEN_LIGHT_FEED = 0  # small late feeders target our visible queen by id (queen-mode feeding branch)
 CPP_QUEEN_LIGHT_FOOD = 1.0  # light queen: multiplier on the queen's food term
 CPP_QUEEN_LIGHT_KEEP = 0  # light queen: split only if the queen keeps at least this length (0 = off)
+CPP_QUEEN_LIGHT_SAFE = 1.0  # light queen: multiplier on its trap/lethal (room) penalties
 CPP_QUEEN_FLIGHT = 0    # queen: when threatened, spend extra free steps maximising distance from threat heads
 CPP_QUEEN_HUNT = 0      # workers (<= ATTACK_MAXLEN) attack the enemy queen head at any length difference
 CPP_QUEEN_HUNT_BONUS = 300.0  # added to W_ATTACK for a head-on into the enemy queen

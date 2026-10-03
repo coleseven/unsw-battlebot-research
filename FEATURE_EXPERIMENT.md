@@ -832,3 +832,12 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
 - Q8b travel for workers only (seeds 611001-3, 924 games): 552 vs 563, vs v92
   45 vs 57/132, queen alive 101 vs 102. Not adopted: spending spare free steps
   on hub travel does not help; pearl-only multistep (v11ms) stays.
+- Ladder queen deaths with v11q (20 battles, 83 queen deaths): walls/kelp 36
+  (boxed in, no legal move), enemy head-on 18, own dragons 18 (14 head-on, 4
+  body), self 6, enemy body 3, no action 2; median death round 146, length 3. We
+  killed their queen 14 times. A boxed-in small queen is the main loss.
+- Q9 (v11j, seeds 621001-2; base 256/420, queen alive 50): d4 251 (57); d5 249
+  (44); keep300 (light queen reach penalty) 257 (55); keep300x1 pending.
+- CPP_QUEEN_LIGHT_SAFE: room/lethal multiplier for the light queen (in light
+  mode the queen had no extra trap safety). Q10 queued: safe3, safe6, safe3 +
+  guard radius 2, safe3 + depth 4.
