@@ -824,3 +824,8 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   seeds 601001-3, 15 + 7 Sprint maps, 7 opponents, 924 games): 557 vs 560,
   queen alive 75 vs 94 (the light-mode queen travelled into danger). Rerun with
   workers only (the queen never travels).
+- v11q live after ~3 h (14 battles, 82 games): 34/82 games won; queens at round
+  500: only ours alive 7 (won 7), only theirs 15 (won 0), both alive 8 (won 3),
+  both dead 52 (won 24). Our queen alive 18% (v10o 4%), theirs 28%: opponents at
+  1500-1600 protect queens better. Leaderboard ~00:00 UTC 3 Oct: **rank 108 /
+  973 at 1529; rank 100 at 1560** (gap was ~88 before v11q).
