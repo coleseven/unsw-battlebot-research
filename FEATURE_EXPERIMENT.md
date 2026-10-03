@@ -924,3 +924,18 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   (queen alive 256). Candidate frozen as **versions/v11u** (v11t + CPP_QUEEN_REFUGE
   1, hash e05b504928e4024c). C7: untouched confirmation (seeds 731001-3, +v11q in
   the panel) and v11u vs v11t head-to-head (seeds 741001-4) queued.
+- **v11u vs v11t head-to-head** (seeds 741001-4, 136 games): 67/136, queen alive
+  54 vs 56. Refuge does not beat our own latest; C7 (panel + v11q) decides.
+- **Queen-death diagnostic (Astra step 2)**: the 674 C5 games where v11t's queen
+  died were replayed with replays kept (all 674 reproduced the same winner;
+  results/qdiag-t2, scripts results/queen_replays.py, queen_death_diag.py,
+  queen_wall_diag.py). Causes: kelp/wall 358 (53%), enemy head-on 213, own
+  head-on 50, own body 43, enemy body 10. Queen length at death 2 (332) or 3 (314).
+  Of the 358 wall deaths, **355 had no free move at all** (boxed in; the only
+  "free" cell was a reversal into the neck), and **241 came within two rounds of a
+  queen split**, a window that holds only 1.9% of queen turns. Of those, ~107 were
+  the no-legal-move fallback split (already doomed), but **~131 were ordinary
+  length-4 splits made with only one (108) or two free exits**: the split costs
+  the queen its move and bypasses the escape search. C8 tests
+  CPP_QUEEN_SPLIT_EXITS (light queen splits only with >= 2 / >= 3 free open exits)
+  on v11t (base results/v11t2-bot = v11t + the off switch; seeds 751001-2).

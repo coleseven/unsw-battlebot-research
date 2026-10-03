@@ -162,6 +162,7 @@ inline constexpr int CPP_QUEEN_YIELD = 0;
 inline constexpr double CPP_QUEEN_YIELD_PEN = 150.0;
 inline constexpr int CPP_QUEEN_REFUGE = 0;
 inline constexpr double CPP_QUEEN_REFUGE_W = 100.0;
+inline constexpr int CPP_QUEEN_SPLIT_EXITS = 0;
 inline constexpr int CPP_QUEEN_TACTICS = 0;
 inline constexpr int CPP_QUEEN_TACTICS_DEPTH = 3;
 inline constexpr int CPP_QUEEN_TACTICS_MARGIN = 0;

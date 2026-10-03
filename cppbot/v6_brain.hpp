@@ -1335,6 +1335,14 @@ class Brain {
         // CPP_QUEEN_LIGHT_KEEP: the queen splits only if it keeps at least this length
         if (split && params::CPP_QUEEN_LIGHT && init.id <= 1 && obs.length - params::CHILD < params::CPP_QUEEN_LIGHT_KEEP) split.reset();
         if (split && params::CPP_SPLIT_SAFE && !child_can_escape(obs)) split.reset();
+        // CPP_QUEEN_SPLIT_EXITS: a split costs the queen its move and skips the escape
+        // search; 131 of 674 v11t queen deaths (3 Oct) were a boxed-in queen within two
+        // rounds of an ordinary split made with only one or two free exits
+        if (split && params::CPP_QUEEN_SPLIT_EXITS > 0 && params::CPP_QUEEN_LIGHT && init.id <= 1) {
+            int exits = 0;
+            for (char d : DIRS) if (obs.passable(CENTER, d)) ++exits;
+            if (exits < params::CPP_QUEEN_SPLIT_EXITS) split.reset();
+        }
         // CPP_RESCUE_EVERY: a protected (long) dragon below the floor rebuilds the
         // population slowly instead of splitting itself back down every turn.
         if (split && params::CPP_RESCUE_EVERY > 0 && protectedFlag && obs.round - last_split < params::CPP_RESCUE_EVERY)
