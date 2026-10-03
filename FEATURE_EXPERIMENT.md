@@ -906,3 +906,9 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   59 vs 51, lab 49 vs 43; raider 42 vs 46, v7 72 vs 81, growth 55 vs 58. All-maps
   wins delta +0.070 [-0.003, +0.141]. Three consistent runs (+18, +30, +37).
   Frozen **v11t** (versions/v11t, hash 668938a734ff8da6 = v11q + CPP_QUEEN_TACTICS2).
+- C4 temporary queen refuge (CPP_QUEEN_REFUGE: a crowded light queen, >= 3 heads
+  within 3 or <= 2 exits, is pulled toward more open cells; base v11n = v11q
+  behaviour, without the corrected search; 7 opponents incl. the 4 queen-aware
+  specialists, 476 games): base 222, queen alive 82; **ref100 233 (95), ref250
+  233 (105, only-ours-alive 62 vs 42)**; ref250 raider 33 vs 27, lab 36 vs 33.
+  C6 tests refuge on top of v11t (10 opponents, seeds 721001-2) before adoption.
