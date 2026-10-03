@@ -1328,7 +1328,19 @@ class Brain {
         // CPP_QUEEN_TACTICS: the queen keeps the incumbent's move unless it survives
         // fewer look-ahead steps (or fewer full lines when no move is fully safe)
         // than another legal move; among the best, the incumbent's score decides.
-        if (params::CPP_QUEEN_TACTICS && init.id <= 1 && scores.size() >= 2) {
+        if (params::CPP_QUEEN_TACTICS2 && init.id <= 1 && scores.size() >= 2) {
+            std::vector<std::tuple<int, int, int, double, char>> opts;   // (survived, full lines<=4, unknown exits, score, dir)
+            for (auto& [d, v] : scores) {
+                Escape e = queen_escape2(obs, d, params::CPP_QUEEN_TACTICS_DEPTH);
+                opts.emplace_back(e.survived, std::min(e.full, 4), e.unknown, v, d);
+            }
+            auto inc = std::find_if(opts.begin(), opts.end(), [&](auto& o) { return std::get<4>(o) == best_dir; });
+            auto top = std::max_element(opts.begin(), opts.end(), [](auto& a, auto& b) {
+                return std::tie(std::get<0>(a), std::get<1>(a), std::get<2>(a), std::get<3>(a)) <
+                       std::tie(std::get<0>(b), std::get<1>(b), std::get<2>(b), std::get<3>(b)); });
+            if (inc != opts.end() && std::tie(std::get<0>(*inc), std::get<1>(*inc)) < std::tie(std::get<0>(*top), std::get<1>(*top)))
+                best_dir = std::get<4>(*top);
+        } else if (params::CPP_QUEEN_TACTICS && init.id <= 1 && scores.size() >= 2) {
             std::vector<std::tuple<int, int, double, char>> opts;   // (survived, full lines, score, dir)
             for (auto& [d, v] : scores) {
                 auto [s, f] = queen_escape(obs, d, params::CPP_QUEEN_TACTICS_DEPTH);
@@ -1345,7 +1357,8 @@ class Brain {
             std::string flee = queen_flight(obs, best_dir);
             if (!flee.empty()) return std::string("MOVE ") + path + flee;
         }
-        if (params::CPP_MULTISTEP && (!(params::CPP_QUEEN && init.id <= 1) || params::CPP_MULTISTEP_QUEEN))
+        if (params::CPP_MULTISTEP && (!(params::CPP_QUEEN && init.id <= 1) || params::CPP_MULTISTEP_QUEEN)
+            && !(params::CPP_QUEEN_TACTICS2 && init.id <= 1 && !params::CPP_MULTISTEP_QUEEN))   // the checked move is the final move
             path += extra_steps(obs, best_dir);
         return std::string("MOVE ") + path;
     }
@@ -1475,6 +1488,80 @@ class Brain {
         std::string steps;
         for (int c = best; c != start; c = prev[c]) steps.insert(steps.begin(), how[c]);
         return steps;
+    }
+
+    // CPP_QUEEN_TACTICS2: corrected escape search (NEXT_STEPS_2026-10-03 section 2).
+    // Differences from queen_escape: (1) eating a pearl keeps the tail (the body
+    // grows); (2) a threat's reach is its walking distance through open, free view
+    // cells (walls and bodies block), turned into turns at ceil(visible len/4)
+    // steps per turn; (3) leaving the view is counted separately as an uncertain
+    // exit, never as a demonstrated full-depth survival; (4) the number of
+    // full-depth lines is returned, not clamped to one.
+    struct Escape { int survived = 0, full = 0, unknown = 0; };
+    Escape queen_escape2(const Obs& obs, char first, int depth) const {
+        // view-index search: other dragons' cells block; threat reach by BFS
+        std::array<bool, 49> blocked{};
+        std::unordered_map<int, int> seg;
+        for (int k = 0; k < 49; ++k) if (obs.occ[k]) { seg[obs.occ[k]->id] += 1; if (obs.occ[k]->id != init.id) blocked[k] = true; }
+        std::array<int, 49> reach_turn; reach_turn.fill(1 << 20);
+        for (int k = 0; k < 49; ++k) {
+            const auto& p = obs.occ[k];
+            if (!p || !p->head || p->id == init.id) continue;
+            if (p->team == init.team && !params::CPP_QUEEN_TACTICS_FRIENDS) continue;
+            int speed = std::max(1, (seg[p->id] + 3) / 4) + params::CPP_QUEEN_TACTICS_MARGIN;
+            std::array<int, 49> dist; dist.fill(-1); dist[k] = 0;
+            std::vector<int> fr{k};
+            while (!fr.empty()) {
+                std::vector<int> nx;
+                for (int c : fr) for (char d : DIRS) {
+                    if (obs.edge(c, d) != OPEN) continue;
+                    int n = Obs::step(c, d);
+                    if (n < 0 || dist[n] >= 0) continue;
+                    dist[n] = dist[c] + 1;
+                    if (!blocked[n] || n == CENTER) nx.push_back(n);   // can reach our cells, not pass through bodies
+                }
+                fr.swap(nx);
+            }
+            for (int c = 0; c < 49; ++c) if (dist[c] > 0) reach_turn[c] = std::min(reach_turn[c], (dist[c] + speed - 1) / speed);
+        }
+        // own body in view indices, head first (trail_body when consistent)
+        std::vector<int> body;
+        {
+            int w = memory.width, h = memory.height, head = memory.cell(obs.x[CENTER], obs.y[CENTER]);
+            std::unordered_map<int, int> view_of;
+            for (int k = 0; k < 49; ++k) view_of[memory.cell(obs.x[k], obs.y[k])] = k;
+            if (auto tb = memory.trail_body(obs.length)) {
+                bool ok = (*tb)[0] == head;
+                for (std::size_t i = 1; ok && i < tb->size(); ++i) ok = torus_distance((*tb)[i - 1], (*tb)[i], w, h) == 1;
+                if (ok) for (int c : *tb) { auto it = view_of.find(c); body.push_back(it == view_of.end() ? -1 : it->second); }
+            }
+            if (body.empty()) {
+                body.push_back(CENTER);
+                for (int k = 0; k < 49; ++k) if (obs.occ[k] && obs.occ[k]->id == init.id && k != CENTER) blocked[k] = true;
+            }
+        }
+        Escape e;
+        std::function<void(const std::vector<int>&, std::array<bool, 49>, int, char)> go =
+            [&](const std::vector<int>& b, std::array<bool, 49> eaten, int t, char d) {
+            int at = b[0];
+            if (obs.edge(at, d) != OPEN) return;                   // walls, kelp, unknown, portals
+            int n = Obs::step(at, d);
+            if (n < 0) { e.survived = std::max(e.survived, t - 1); ++e.unknown; return; }   // leaves the view: uncertain
+            if (b.size() > 1 && n == b[1]) return;
+            if (blocked[n]) return;
+            for (int c : b) if (c == n) return;                    // own body incl. the current tail
+            if (reach_turn[n] <= t) return;                        // a threat can be there by our turn t
+            e.survived = std::max(e.survived, t);
+            bool food = obs.pearl[n] && !eaten[n];
+            std::vector<int> nb; nb.reserve(b.size() + 1);
+            nb.push_back(n);
+            for (std::size_t i = 0; i + (food ? 0 : 1) < b.size(); ++i) nb.push_back(b[i]);   // food keeps the tail
+            if (food) eaten[n] = true;
+            if (t == depth) { ++e.full; return; }
+            for (char nd : DIRS) go(nb, eaten, t + 1, nd);
+        };
+        go(body, std::array<bool, 49>{}, 1, first);
+        return e;
     }
 
     // CPP_MULTISTEP (queen rules, unswbc 1.2.3): a dragon may move ceil(length / 4)

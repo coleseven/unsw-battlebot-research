@@ -177,6 +177,7 @@ CPP_QUEEN_FLIGHT = 0    # queen: when threatened, spend extra free steps maximis
 CPP_QUEEN_HUNT = 0      # workers (<= ATTACK_MAXLEN) attack the enemy queen head at any length difference
 CPP_QUEEN_HUNT_BONUS = 300.0  # added to W_ATTACK for a head-on into the enemy queen
 CPP_QUEEN_HUNT_PULL = 150.0   # pull toward a visible enemy queen head: PULL / (1 + distance)
+CPP_QUEEN_TACTICS2 = 0  # corrected queen escape search (food keeps the tail, path-aware threat reach, unknown exits separate, line counts); queen takes no extra pearl steps unless CPP_MULTISTEP_QUEEN
 CPP_QUEEN_TACTICS = 0   # Q4: exact short escape search for our queen (id 0/1), any mode
 CPP_QUEEN_TACTICS_DEPTH = 3  # Q4: look-ahead steps (view radius is 3)
 CPP_QUEEN_TACTICS_MARGIN = 0  # Q4: extra steps per turn assumed for threat heads

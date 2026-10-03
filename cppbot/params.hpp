@@ -157,6 +157,7 @@ inline constexpr int CPP_QUEEN_FLIGHT = 0;
 inline constexpr int CPP_QUEEN_HUNT = 0;
 inline constexpr double CPP_QUEEN_HUNT_BONUS = 300.0;
 inline constexpr double CPP_QUEEN_HUNT_PULL = 150.0;
+inline constexpr int CPP_QUEEN_TACTICS2 = 0;
 inline constexpr int CPP_QUEEN_TACTICS = 0;
 inline constexpr int CPP_QUEEN_TACTICS_DEPTH = 3;
 inline constexpr int CPP_QUEEN_TACTICS_MARGIN = 0;
