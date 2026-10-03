@@ -868,3 +868,21 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
 - **Ranked pool changed**: 12 recent ranked battles drew the old 10 maps plus
   all 7 Sprint maps (~40% of games). `official_suite.CURRENT_POOL` now has 17
   maps; `current_pool_maps()` includes the reconstructed Sprint maps.
+
+### 3 Oct: current toolkit 1.2.9 and current maps (NEXT_STEPS_2026-10-03.md)
+
+- unswbc 1.2.9 installed isolated (results/queen-runtime-packages/1.2.9; wheel
+  sha256 0f80169...; `bcsim.queen_runtime` default 1.2.9, BCSIM_QUEEN_RUNTIME=1.2.3
+  reproduces 1-2 Oct). The 6 engine rules tests pass on 1.2.9.
+- The 22 official 1.2.9 maps copied to maps/v129 (MANIFEST.json: sha256, edge and
+  dragon hashes, spawner counts). Against 16 maps seen in recent ranked replays:
+  edges identical on all 16; dragon starts identical except replays that list the
+  teams side-swapped. `official_suite.current_maps()` = the 17-map ranked rotation
+  as 1.2.9 files; `ablate --maps current` runs it (historical runs unchanged).
+- **C1** (1.2.9, current 17 maps, 6 opponents, both sides, seeds 651001-2, 408
+  games): v11q 242 (59%); queen alive 84, theirs 51; outcome classes: elimination
+  96 games (won 40), only ours alive 46 (won 46), only theirs 23 (won 0), both 20
+  (won 8), none 223 (won 148). Elimination losses: Trophy 14, PD 11, Stripes 9,
+  Devil 7, weakhold 6; by v75 18, lab 15, v92 13; median round 217.
+  Book audit: map fill off 229 (-13), all books off 216 (-26): the books still
+  help on the current maps; kept.
