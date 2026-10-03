@@ -912,3 +912,8 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   specialists, 476 games): base 222, queen alive 82; **ref100 233 (95), ref250
   233 (105, only-ours-alive 62 vs 42)**; ref250 raider 33 vs 27, lab 36 vs 33.
   C6 tests refuge on top of v11t (10 opponents, seeds 721001-2) before adoption.
+- **v11t vs v11q head-to-head** (1.2.9, current 17 maps, fresh seeds 711001-4,
+  136 games): **v11t 75/136 (55%), queen alive 48 vs 26**, only-ours-alive 30
+  (all won) vs only-theirs 9. Weak maps: stripes 0/8, tower defence 1/8 (look at
+  these next); weakhold 8/8. 1.2.9 sandbox max 8.4M points/turn. **v11t
+  recommended for upload** (battlebot-v11t.zip, hash 668938a734ff8da6).
