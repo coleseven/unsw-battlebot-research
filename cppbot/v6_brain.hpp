@@ -526,6 +526,19 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
     // our queen's head this round (workers keep clear of it: own head-ons and
     // collisions killed 3 of 12 queens in a diagnostic, 2 Oct)
     int queen_head = -1;
+    // CPP_QUEEN_YIELD: our visible queen's free exit cells (view indices); workers
+    // avoid taking them, more so when the queen has only one or two left
+    std::vector<int> queen_exits;
+    if (params::CPP_QUEEN_YIELD && did > 1)
+        for (int k = 0; k < 49; ++k) {
+            const auto& p = obs.occ[k];
+            if (!p || !p->head || p->team != team || p->id > 1) continue;
+            for (char d : DIRS) {
+                if (obs.edge(k, d) != OPEN) continue;
+                int n = Obs::step(k, d);
+                if (n >= 0 && !obs.occ[n]) queen_exits.push_back(n);
+            }
+        }
     if ((params::CPP_QUEEN || params::CPP_QUEEN_LIGHT) && did > 1 && params::CPP_QUEEN_GUARD_PEN > 0)
         for (int cell : mem.occupied.order) {
             const OccPart& p = *mem.occupied.find(cell);
@@ -587,6 +600,11 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
                 value -= params::CPP_QUEEN_DEADEND_PEN;
         } else if (queen_head >= 0 && torus_distance(dest, queen_head, mem.width, mem.height) <= params::CPP_QUEEN_GUARD_R) {
             value -= params::CPP_QUEEN_GUARD_PEN;
+        }
+        if (!queen_exits.empty()) {
+            int vk = Obs::step(CENTER, direction);
+            if (vk >= 0 && std::find(queen_exits.begin(), queen_exits.end(), vk) != queen_exits.end())
+                value -= params::CPP_QUEEN_YIELD_PEN * (queen_exits.size() <= 1 ? 3.0 : queen_exits.size() == 2 ? 1.5 : 1.0);
         }
         int threat = reach.count(dest) ? reach[dest] : 0;
         if (th.enemy.count(dest) && !(hunter && threat >= obs.length + params::HUNT_MIN_GAIN))
