@@ -454,6 +454,28 @@ struct MoverTrace {
     std::vector<std::array<double, MV_N>> f;
 };
 
+// CPP_QUEEN_REFUGE helper: openness of view cell c = free view cells reachable
+// within 3 steps (bodies block) minus 2 per other dragon head within distance 2.
+inline int view_openness(const Obs& obs, int c, int did) {
+    if (c < 0 || obs.occ[c]) return -100;
+    std::array<int, 49> dist; dist.fill(-1); dist[c] = 0;
+    std::vector<int> fr{c}; int count = 0;
+    for (int dpt = 1; dpt <= 3 && !fr.empty(); ++dpt) {
+        std::vector<int> nx;
+        for (int k : fr) for (char d : DIRS) {
+            if (obs.edge(k, d) != OPEN) continue;
+            int n = Obs::step(k, d);
+            if (n < 0 || dist[n] >= 0 || obs.occ[n]) continue;
+            dist[n] = dpt; ++count; nx.push_back(n);
+        }
+        fr.swap(nx);
+    }
+    for (int k = 0; k < 49; ++k)
+        if (obs.occ[k] && obs.occ[k]->head && obs.occ[k]->id != did &&
+            std::abs(k / 7 - c / 7) + std::abs(k % 7 - c % 7) <= 2) count -= 2;
+    return count;
+}
+
 // Returns scores in Python dict insertion order (attacks first, then moves).
 inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const Obs& obs, char team, int did,
                                                         bool protectedFlag, const std::optional<CashTarget>& cash,
@@ -529,6 +551,22 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
     // CPP_QUEEN_YIELD: our visible queen's free exit cells (view indices); workers
     // avoid taking them, more so when the queen has only one or two left
     std::vector<int> queen_exits;
+    // CPP_QUEEN_REFUGE: a crowded light queen (>= 3 other heads within 3, or <= 2
+    // free exits) is pulled toward more open, less crowded cells
+    bool refuge = false; int open_here = 0;
+    if (params::CPP_QUEEN_REFUGE && params::CPP_QUEEN_LIGHT && did <= 1) {
+        int heads = 0, exits = 0;
+        for (int k = 0; k < 49; ++k)
+            if (obs.occ[k] && obs.occ[k]->head && obs.occ[k]->id != did &&
+                std::abs(k / 7 - CENTER / 7) + std::abs(k % 7 - CENTER % 7) <= 3) ++heads;
+        for (char d : DIRS) if (obs.passable(CENTER, d)) ++exits;
+        refuge = heads >= 3 || exits <= 2;
+        if (refuge) {
+            int best = 0;
+            for (char d : DIRS) best = std::max(best, view_openness(obs, Obs::step(CENTER, d), did));
+            open_here = best;
+        }
+    }
     if (params::CPP_QUEEN_YIELD && did > 1)
         for (int k = 0; k < 49; ++k) {
             const auto& p = obs.occ[k];
@@ -600,6 +638,10 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
                 value -= params::CPP_QUEEN_DEADEND_PEN;
         } else if (queen_head >= 0 && torus_distance(dest, queen_head, mem.width, mem.height) <= params::CPP_QUEEN_GUARD_R) {
             value -= params::CPP_QUEEN_GUARD_PEN;
+        }
+        if (refuge) {
+            int o = view_openness(obs, Obs::step(CENTER, direction), did);
+            value += params::CPP_QUEEN_REFUGE_W * (o - open_here) / 10.0;
         }
         if (!queen_exits.empty()) {
             int vk = Obs::step(CENTER, direction);
