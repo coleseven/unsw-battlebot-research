@@ -894,3 +894,8 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   26 vs 39; t2_d4 283, queen alive 152, vs v11q 38. Fixing the model beats
   re-weighting it. Confirmation queued (seeds 691001-3, 10 opponents incl. the 4
   queen-aware specialists).
+- C3 worker yield (CPP_QUEEN_YIELD, seeds 671001-2, 476 games; base v11m = v11q
+  behaviour 255, queen alive 91): y150 258 (91), y300 258 (91; identical: the rule
+  rarely triggers and both strengths decide those few cases); **y150_t2 285, queen
+  alive 175, vs v92 25 vs 16** - effectively a second run of the corrected search
+  (+18 in C2, +30 here). Yield alone not adopted.
