@@ -573,7 +573,7 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
         // Queen safety (queen rules): an enemy head of visible length L can now
         // move ceil(L/4) cells (visible length is a lower bound); dead ends kill
         // short queens (5 of 12 diagnostic queen deaths were walls/kelp).
-        if (is_queen) {
+        if (is_queen || (params::CPP_QUEEN_LIGHT && did <= 1)) {   // light-mode queen: keep-away and dead ends too
             if (params::CPP_QUEEN_REACH_PEN > 0)
                 for (auto& [cell, pid] : enemy_heads) {
                     int el = enemy_len.count(pid) ? enemy_len[pid] : 1;
