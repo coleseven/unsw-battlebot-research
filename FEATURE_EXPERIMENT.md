@@ -829,3 +829,6 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   both dead 52 (won 24). Our queen alive 18% (v10o 4%), theirs 28%: opponents at
   1500-1600 protect queens better. Leaderboard ~00:00 UTC 3 Oct: **rank 108 /
   973 at 1529; rank 100 at 1560** (gap was ~88 before v11q).
+- Q8b travel for workers only (seeds 611001-3, 924 games): 552 vs 563, vs v92
+  45 vs 57/132, queen alive 101 vs 102. Not adopted: spending spare free steps
+  on hub travel does not help; pearl-only multistep (v11ms) stays.
