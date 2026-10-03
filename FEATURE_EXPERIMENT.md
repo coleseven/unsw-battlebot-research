@@ -886,3 +886,11 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   Devil 7, weakhold 6; by v75 18, lab 15, v92 13; median round 217.
   Book audit: map fill off 229 (-13), all books off 216 (-26): the books still
   help on the current maps; kept.
+- **C2 corrected queen search** (CPP_QUEEN_TACTICS2: food keeps the tail, path-
+  aware threat reach, uncertain exits separate, line counts, checked move = final
+  move; 1.2.9, current 17 maps, 6 opponents + v11q, seeds 661001-2, 476 games;
+  base v11l = v11q behaviour 273, queen alive 101): **t2 291 wins, queen alive
+  158, only-ours-alive 111 (all won); vs v92 25 vs 14, vs v11q 50 vs 34**, vs lab
+  26 vs 39; t2_d4 283, queen alive 152, vs v11q 38. Fixing the model beats
+  re-weighting it. Confirmation queued (seeds 691001-3, 10 opponents incl. the 4
+  queen-aware specialists).
