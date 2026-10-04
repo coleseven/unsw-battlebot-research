@@ -964,3 +964,9 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   plays "MOVE facing" and a head-on kills both. C10 tests CPP_DOOMED_SPARE_QUEEN
   (a trapped worker rams an adjacent enemy head, else dies anywhere but on our
   queen; base results/v11t4-bot; 10 opponents + v11q; seeds 771001-3).
+- **C9 CPP_QUEEN_SPRINT** (base v11t-equivalent, 680 games; base 394, queen
+  alive 231): sp1 370 (188), sp2 373 (183). **Rejected.** Like wider keep-away
+  and fewer splits, a more fearful threat model makes the queen survive less:
+  with more cells marked unsafe the search loses its distinctions. The corrected
+  search's free-step model is the better operating point; further gains must come
+  from other units' behaviour, not from a more cautious queen.
