@@ -503,12 +503,27 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
             if (p.head) enemy_heads.emplace_back(cell, p.id);
         }
     }
+    // CPP_QUEEN_BODYGUARD: our visible queen's head (view index); small enemies
+    // rammed 187 of 674 v11t queens (3 Oct), so a worker trades head-on with an
+    // enemy head that is within reach of the queen, whatever the length gap
+    int guard_queen = -1;
+    if (params::CPP_QUEEN_BODYGUARD > 0 && did > 1)
+        for (int k = 0; k < 49; ++k)
+            if (obs.occ[k] && obs.occ[k]->head && obs.occ[k]->team == team && obs.occ[k]->id <= 1) guard_queen = k;
     // attacks in NESW order (move_order already NESW); scores.push in that order
     for (char d : DIRS) {
         auto it = attacks_map.find(d);
         if (attacks == nullptr || it == attacks_map.end()) continue;
         int pid = it->second;
         int gain = (enemy_len.count(pid) ? enemy_len[pid] : 1) - obs.length;
+        if (guard_queen >= 0) {
+            int t = Obs::step(CENTER, d);
+            if (t >= 0 && std::abs(t / 7 - guard_queen / 7) + std::abs(t % 7 - guard_queen % 7) <= params::CPP_QUEEN_BODYGUARD) {
+                scores.emplace_back(d, params::W_ATTACK + params::CPP_QUEEN_BODYGUARD_BONUS); if (trace) ++trace->n_attacks;
+                moves.erase(d);
+                continue;
+            }
+        }
         // CPP_QUEEN_HUNT: a head-on into the enemy queen (id 0/1) is worth it at
         // any length difference: a dead enemy queen scores 0 (queen rules)
         if (params::CPP_QUEEN_HUNT && pid <= 1 && did > 1) { scores.emplace_back(d, params::W_ATTACK + params::CPP_QUEEN_HUNT_BONUS); if (trace) ++trace->n_attacks; }

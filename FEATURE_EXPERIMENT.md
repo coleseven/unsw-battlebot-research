@@ -970,3 +970,6 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   with more cells marked unsafe the search loses its distinctions. The corrected
   search's free-step model is the better operating point; further gains must come
   from other units' behaviour, not from a more cautious queen.
+- C11 queued: CPP_QUEEN_BODYGUARD (a worker may trade head-on with an adjacent
+  enemy head that is within 2 / 3 cells of our queen, whatever the length gap;
+  W_ATTACK + 200). Base results/v11t5-bot, 10 opponents, seeds 781001-2.
