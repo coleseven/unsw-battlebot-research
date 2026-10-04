@@ -978,3 +978,23 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   371** (+15); lab 59 vs 43, v92 34 vs 31; growth 55 vs 65, v7 37 vs 44, v11q 55
   vs 57. Neutral on wins: not adopted alone (a logically safe fix; keep for a
   combined candidate).
+- **C11 CPP_QUEEN_BODYGUARD** (base v11t-equivalent, 680 games; base 385, queen
+  alive 228): bg2 381 (227), bg3 379 (228). **Rejected**: the rule rarely fires
+  (an enemy head must be adjacent to the worker and near the queen) and changes
+  nothing measurable.
+
+### 3-4 Oct overnight summary
+
+- v11t (corrected queen search) confirmed three times (+18, +30, +37) and beats
+  v11q 75/136 head-to-head; sandbox max 8.4M points/turn. **Recommended upload.**
+- Queen-death anatomy for v11t (674 deaths): 53% boxed in by walls (two-thirds
+  right after a split, mostly where a growing queen eats; 355/358 had no legal
+  move), 32% enemy head-ons (mostly length-2/3 enemies, some sprinting), 14% own
+  dragons (28 trapped workers' last move).
+- Every attempt to make the queen more cautious on top of v11t lost wins and
+  queen survival: refuge (C6 +34 did not confirm in C7), split-exits (C8 -20 to
+  -25), sprint-aware threats (C9 -21 to -24), bodyguard (C11 neutral), doomed
+  worker (C10 neutral, queen alive +15). The corrected search is at a local
+  optimum for queen-side caution; further gains likely need different strategy
+  (longest-dragon play when both queens die: 294/548 games, our weakest class),
+  not more queen safety weights.
