@@ -945,3 +945,8 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   economy 71 vs 65; v11q 51 vs 55, careful 51 vs 55. With the even head-to-head
   (67/136) the C6 gain (+34) did not hold: **refuge not adopted**, v11u not
   promoted. v11t stays the upload recommendation.
+- **C8 CPP_QUEEN_SPLIT_EXITS** (base v11t-equivalent, 10 opponents, seeds
+  751001-2, 680 games; base 402, queen alive 240): sx2 377 (211), sx3 382 (193).
+  **Rejected**: stopping narrow-spot splits leaves a longer queen that survives
+  less. The post-split wall deaths are where a growing queen eats (pockets), not
+  something the split causes; splitting down to length 2 is protective.
