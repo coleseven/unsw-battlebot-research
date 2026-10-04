@@ -980,6 +980,23 @@ class Brain {
         int f = didx(obs.facing);
         for (int d : {f, LEFTi[f], RIGHTi[f]})
             if (obs.passable(CENTER, DIRS[d])) return std::string("MOVE ") + DIRS[d];
+        // CPP_DOOMED_SPARE_QUEEN: no legal move left. A head-on kills both, and 28 of
+        // 674 v11t queen deaths (3 Oct) were a trapped worker's last move into our
+        // own queen's head: ram an enemy head if one is adjacent, otherwise die
+        // anywhere but on our queen.
+        if (params::CPP_DOOMED_SPARE_QUEEN && init.id > 1) {
+            int pick = -1, worst = -1;
+            for (int d : {f, LEFTi[f], RIGHTi[f]}) {
+                int n = obs.edge(CENTER, DIRS[d]) == OPEN ? Obs::step(CENTER, DIRS[d]) : -1;
+                const auto* p = (n >= 0 && obs.occ[n]) ? &*obs.occ[n] : nullptr;
+                bool our_queen = p && p->head && p->team == init.team && p->id <= 1;
+                bool enemy_head = p && p->head && p->team != init.team;
+                if (enemy_head) { pick = d; break; }
+                if (our_queen) { if (worst < 0) worst = d; continue; }
+                if (pick < 0) pick = d;
+            }
+            if (pick >= 0) return std::string("MOVE ") + DIRS[pick];
+        }
         return std::string("MOVE ") + obs.facing;
     }
 

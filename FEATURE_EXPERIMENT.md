@@ -959,3 +959,8 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   corrected search only models ceil(L/4) free steps. C9 adds CPP_QUEEN_SPRINT:
   each threat gets one sprint of min(length - 1, cap) paid steps on top (base
   results/v11t3-bot = v11t + off switches; sp1, sp2; seeds 761001-2).
+- **Friendly queen kills** (results/queen_friendly_diag.py): of 32 own dragons
+  moving into our queen's head, 28 had no legal move (length 2-3): fallback()
+  plays "MOVE facing" and a head-on kills both. C10 tests CPP_DOOMED_SPARE_QUEEN
+  (a trapped worker rams an adjacent enemy head, else dies anywhere but on our
+  queen; base results/v11t4-bot; 10 opponents + v11q; seeds 771001-3).
