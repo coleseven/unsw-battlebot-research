@@ -1078,3 +1078,9 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   - Not adopted as-is. Narrowed in D5: CPP_QUEEN_CALM_CAP applies the low cap only
     with no enemy head in view (base results/v11t11-bot; calm1 and calm2 with portal
     trust; seeds 841001-2).
+- **D4 CPP_FEED_TRAVEL screen** (base results/v11t10-bot, equivalence 68/68, 6
+  opponents, seeds 831001-2, 408 games): base 205, **ft1 217, +2.9 pp [+0.5,
+  +5.6]**, equal-family +0.052. Both-queens-dead class 103-102 vs 90-113: the gain
+  is in the diagnosed class. **No map is worse** (islands 14 vs 9, portals 14 vs 12,
+  maze 14 vs 12, default, schooltime, trauma +1). D6 untouched confirmation queued
+  (seeds 851001-3, 10 opponents + versions/v11t, 1,122 games each).
