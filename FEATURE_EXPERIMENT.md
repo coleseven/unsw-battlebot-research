@@ -1044,4 +1044,5 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   equal-family -0.036; vs v11t 53 vs 51; stripes 12 vs 21, trophy 25 vs 30,
   australia 35 vs 41; trauma 55 vs 46, maze 46 vs 39. The D1 gain (+3.7 pp,
   autarky +11) did not replicate (autarky 42 vs 45). **Rejected (unconfirmed)**;
-  no tuning sweep of it. v11t stays the control.
+  no tuning sweep of it. v11t stays the control. (1.2.9 sandbox of the gp build,
+  5 maps: max 11.8M points/turn, for the record.)
