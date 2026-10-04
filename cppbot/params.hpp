@@ -174,6 +174,7 @@ inline constexpr int CPP_QUEEN_DEBUG = 0;
 inline constexpr int CPP_QUEEN_PORTAL_TRUST = 0;
 inline constexpr double CPP_FEED_TRAVEL = 0.0;
 inline constexpr int CPP_FEED_TRAVEL_CAP = 60;
+inline constexpr int CPP_QUEEN_CALM_CAP = 0;
 inline constexpr int CPP_QUEEN_TACTICS = 0;
 inline constexpr int CPP_QUEEN_TACTICS_DEPTH = 3;
 inline constexpr int CPP_QUEEN_TACTICS_MARGIN = 0;

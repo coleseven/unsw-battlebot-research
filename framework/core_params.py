@@ -194,6 +194,7 @@ CPP_QUEEN_DEBUG = 0  # debug only: log the queen's corrected-search options each
 CPP_QUEEN_PORTAL_TRUST = 0  # corrected search never overrides a queen move through a portal (the in-view search cannot follow portals)
 CPP_FEED_TRAVEL = 0.0  # small workers start feeding this many rounds earlier per cell of distance to the beaconed king (0 = off)
 CPP_FEED_TRAVEL_CAP = 60  # at most this many rounds earlier
+CPP_QUEEN_CALM_CAP = 0  # corrected search: full-line cap used when no enemy head is in view (0 = always CPP_QUEEN_FULL_CAP)
 CPP_QUEEN_TACTICS = 0   # Q4: exact short escape search for our queen (id 0/1), any mode
 CPP_QUEEN_TACTICS_DEPTH = 3  # Q4: look-ahead steps (view radius is 3)
 CPP_QUEEN_TACTICS_MARGIN = 0  # Q4: extra steps per turn assumed for threat heads

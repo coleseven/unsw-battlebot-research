@@ -1473,13 +1473,18 @@ class Brain {
         // fewer look-ahead steps (or fewer full lines when no move is fully safe)
         // than another legal move; among the best, the incumbent's score decides.
         if (params::CPP_QUEEN_TACTICS2 && init.id <= 1 && scores.size() >= 2) {
-            std::vector<std::tuple<int, int, int, double, char>> opts;   // (survived, full lines<=4, unknown exits, score, dir)
+            // CPP_QUEEN_CALM_CAP: extra escape lines matter against threats; with no enemy
+            // head in view a low cap lets the queen take a safe single corridor to food
+            // (D3, 4 Oct: a global cap 1-2 won Stripes 16/24 vs 4 but lost elsewhere)
+            int cap = params::CPP_QUEEN_FULL_CAP;
+            if (params::CPP_QUEEN_CALM_CAP > 0 && obs.enemy_heads(init.team).empty()) cap = params::CPP_QUEEN_CALM_CAP;
+            std::vector<std::tuple<int, int, int, double, char>> opts;   // (survived, full lines<=cap, unknown exits, score, dir)
             for (auto& [d, v] : scores) {
                 Escape e = queen_escape2(obs, d, params::CPP_QUEEN_TACTICS_DEPTH);
                 // CPP_QUEEN_FULL_CAP: with a cap of 4 a safe single corridor loses to any
                 // move with more full-depth lines, even with no enemy near; on Stripes
                 // (4 Oct) this kept the queen out of the pocket that founds the economy
-                opts.emplace_back(e.survived, std::min(e.full, params::CPP_QUEEN_FULL_CAP), e.unknown, v, d);
+                opts.emplace_back(e.survived, std::min(e.full, cap), e.unknown, v, d);
             }
             auto inc = std::find_if(opts.begin(), opts.end(), [&](auto& o) { return std::get<4>(o) == best_dir; });
             auto top = std::max_element(opts.begin(), opts.end(), [](auto& a, auto& b) {

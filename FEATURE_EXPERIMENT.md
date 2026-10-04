@@ -1067,3 +1067,14 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   - CPP_FEED_TRAVEL (feeding start earlier by 1 round per cell of distance to the
     beaconed king, capped at 60). D4 screen queued: base results/v11t10-bot, seeds
     831001-2.
+- **D3 queen portal-trust screen** (base results/v11t9-bot, 6 opponents, seeds
+  821001-2, 408 games each; base 212):
+  - pt (trust alone): 207, −1.2 pp; Stripes 6 vs 4.
+  - pt2 (trust + full cap 2): 218, +1.5 pp [−5.4, +8.1].
+  - pt1 (trust + full cap 1): 219, +1.6 pp [−5.6, +8.6].
+  - **Stripes 16/24 vs 4/24 for both capped variants**, confirming the mechanism.
+  - The global cap costs elsewhere (pt1: default 9 vs 16, islands 7 vs 12; pt2: portals
+    11 vs 16, weakhold 7 vs 12). Queen alive 93 vs 115 for pt2.
+  - Not adopted as-is. Narrowed in D5: CPP_QUEEN_CALM_CAP applies the low cap only
+    with no enemy head in view (base results/v11t11-bot; calm1 and calm2 with portal
+    trust; seeds 841001-2).
