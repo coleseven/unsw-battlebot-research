@@ -939,3 +939,9 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   the queen its move and bypasses the escape search. C8 tests
   CPP_QUEEN_SPLIT_EXITS (light queen splits only with >= 2 / >= 3 free open exits)
   on v11t (base results/v11t2-bot = v11t + the off switch; seeds 751001-2).
+- **C7 refuge confirmation on v11t** (untouched seeds 731001-3, 10 opponents +
+  v11q, 1,122 games): base v11t 627, queen alive 406; **ref100 641 (+14), queen
+  alive 395**, all-maps delta +0.026 [-0.045, +0.097] (neutral); raider 51 vs 41,
+  economy 71 vs 65; v11q 51 vs 55, careful 51 vs 55. With the even head-to-head
+  (67/136) the C6 gain (+34) did not hold: **refuge not adopted**, v11u not
+  promoted. v11t stays the upload recommendation.
