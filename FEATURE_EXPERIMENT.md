@@ -1039,3 +1039,9 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   (CPP_HUB_PATH 3) 220 (-0.2 pp): **rejected**. D2 confirmation of gp queued
   (seeds 811001-3, 10 opponents + versions/v11t, 1,122 games each), then a 1.2.9
   sandbox CPU check of results/v12gp-bot.
+- **D2 goal-path confirmation** (untouched seeds 811001-3, 10 opponents +
+  versions/v11t, 1,122 games): base 652, **gp 659, +0.6 pp [-2.8, +4.1]**,
+  equal-family -0.036; vs v11t 53 vs 51; stripes 12 vs 21, trophy 25 vs 30,
+  australia 35 vs 41; trauma 55 vs 46, maze 46 vs 39. The D1 gain (+3.7 pp,
+  autarky +11) did not replicate (autarky 42 vs 45). **Rejected (unconfirmed)**;
+  no tuning sweep of it. v11t stays the control.
