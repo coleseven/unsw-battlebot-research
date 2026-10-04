@@ -950,3 +950,12 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   **Rejected**: stopping narrow-spot splits leaves a longer queen that survives
   less. The post-split wall deaths are where a growing queen eats (pockets), not
   something the split causes; splitting down to length 2 is protective.
+- **Queen head-on diagnostic** (same 674 replays, results/queen_headon_diag.py):
+  263 head-on deaths; 187 an enemy moving into our queen, 26 our queen moving
+  into an enemy, 50 our own dragons. The rammers are small (length 2: 155, 3: 93).
+  In 60 cases the queen's move was out of every enemy's free-step reach at the
+  start of its turn, yet it was rammed that round: the enemy **sprinted** (e.g.
+  a length-3 v92 dragon played EE; each extra step costs a segment). The
+  corrected search only models ceil(L/4) free steps. C9 adds CPP_QUEEN_SPRINT:
+  each threat gets one sprint of min(length - 1, cap) paid steps on top (base
+  results/v11t3-bot = v11t + off switches; sp1, sp2; seeds 761001-2).

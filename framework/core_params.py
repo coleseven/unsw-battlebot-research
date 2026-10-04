@@ -183,6 +183,7 @@ CPP_QUEEN_YIELD_PEN = 150.0  # base penalty (x3 if the queen has one exit, x1.5 
 CPP_QUEEN_REFUGE = 0    # crowded light queen is pulled toward open, uncrowded cells
 CPP_QUEEN_REFUGE_W = 100.0  # points per 10 openness units relative to the best move
 CPP_QUEEN_SPLIT_EXITS = 0  # light queen splits only with >= this many free open exits (0 = off)
+CPP_QUEEN_SPRINT = 0  # corrected search: threats may also sprint up to this many paid steps once (each costs a segment; 0 = off)
 CPP_QUEEN_TACTICS = 0   # Q4: exact short escape search for our queen (id 0/1), any mode
 CPP_QUEEN_TACTICS_DEPTH = 3  # Q4: look-ahead steps (view radius is 3)
 CPP_QUEEN_TACTICS_MARGIN = 0  # Q4: extra steps per turn assumed for threat heads

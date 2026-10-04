@@ -1590,7 +1590,15 @@ class Brain {
                 }
                 fr.swap(nx);
             }
-            for (int c = 0; c < 49; ++c) if (dist[c] > 0) reach_turn[c] = std::min(reach_turn[c], (dist[c] + speed - 1) / speed);
+            // CPP_QUEEN_SPRINT: beyond its free steps a head may sprint (each extra step
+            // costs a segment); a length-2/3 enemy rammed 187 of 674 v11t queens (3 Oct),
+            // often from two cells away. One sprint, capped, at most length - 1 paid steps.
+            int bonus = std::min(seg[p->id] - 1, params::CPP_QUEEN_SPRINT);
+            if (bonus < 0) bonus = 0;
+            for (int c = 0; c < 49; ++c) if (dist[c] > 0) {
+                int dd = std::max(1, dist[c] - bonus);
+                reach_turn[c] = std::min(reach_turn[c], (dd + speed - 1) / speed);
+            }
         }
         // own body in view indices, head first (trail_body when consistent)
         std::vector<int> body;
