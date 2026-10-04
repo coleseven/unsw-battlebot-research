@@ -1084,3 +1084,13 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   is in the diagnosed class. **No map is worse** (islands 14 vs 9, portals 14 vs 12,
   maze 14 vs 12, default, schooltime, trauma +1). D6 untouched confirmation queued
   (seeds 851001-3, 10 opponents + versions/v11t, 1,122 games each).
+- **D5 calm cap** (base results/v11t11-bot, equivalence 68/68, 6 opponents, seeds
+  841001-2, 408 games; base 230, queen alive 129):
+  - calm1 (portal trust + full cap 1 when no enemy head in view): 199, −7.4 pp
+    [−12.7, −1.7], queen alive 77.
+  - calm2: 219, −2.7 pp [−9.6, +3.9], queen alive 109. Stripes 11 and 13 vs 10.
+  - **Both rejected.** "No enemy in view" is not safety: enemies arrive after the queen
+    has committed to a corridor.
+  - Stripes queen founding is closed for now. The bug (portal moves scored as death) is
+    documented and the switches stay off. Any revisit needs a fix confined to the portal
+    move itself, not a weaker escape preference.
