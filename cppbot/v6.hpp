@@ -303,6 +303,7 @@ class WorldMemory {
         last_round = obs.round;
         nav.update(obs);
         if (!book.empty()) apply_book();
+        if (params::CPP_HUB_PATH > 0 && !hubs.empty()) build_hub_area();   // terrain knowledge grows every turn
         const auto& visible = nav.visible;
         if (!hub_maps.empty()) identify_map(obs);
         // CPP_BOOK_MAP: once the map is identified, the book's edge layout says
@@ -404,8 +405,41 @@ class WorldMemory {
     void set_hubs(const Hubs& new_hubs) {
         if (new_hubs == hubs) return;
         hubs = new_hubs;
+        build_hub_area();
+    }
+
+    void build_hub_area() {
         hub_area.clear();
         for (auto& [hub, value] : hubs) {
+            if (params::CPP_HUB_PATH > 0) {
+                // CPP_HUB_PATH: the cells within walking distance of the hub (kelp
+                // blocks, known portals are followed, unknown edges count as open).
+                // A 5x5 square reaches across kelp: on Stripes (4 Oct) a worker camped
+                // outside a fenced fast-spawner pocket for 120 rounds without eating.
+                std::unordered_map<int, int> dist{{hub, 0}};
+                std::vector<int> fr{hub};
+                for (int depth = 0; depth < params::CPP_HUB_PATH && !fr.empty(); ++depth) {
+                    std::vector<int> nx;
+                    for (int c : fr) for (char d : DIRS) {
+                        int v = nav.edges[nav.edge_key(c, d)];
+                        if (v == KELP) continue;
+                        std::optional<int> nc;
+                        if (v == NONE) {
+                            int x = c % width, y = c / width, i = didx(d);
+                            nc = ((y + DYi[i] + height) % height) * width + (x + DXi[i] + width) % width;
+                        } else nc = nav.destination(c, d);
+                        if (!nc || dist.count(*nc)) continue;
+                        dist[*nc] = depth + 1;
+                        nx.push_back(*nc);
+                    }
+                    fr.swap(nx);
+                }
+                for (auto& [c, dd] : dist) {
+                    auto it = hub_area.find(c);
+                    if (it == hub_area.end() || value > it->second) hub_area[c] = value;
+                }
+                continue;
+            }
             int x = hub % width, y = hub / width;
             for (int dy = -2; dy <= 2; ++dy)
                 for (int dx = -2; dx <= 2; ++dx) {

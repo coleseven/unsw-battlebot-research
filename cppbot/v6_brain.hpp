@@ -262,12 +262,41 @@ inline double food_value(const WorldMemory& mem, const Obs& obs, int cell, int h
 }
 struct Terms { double food = 0, hub = 0, progress = 0; int unseen = 0, stale = 0, room = 0, exits = 0, expanded = 0; };
 
+// CPP_GOAL_PATH: walking distance from the exploration goal over remembered
+// terrain (kelp blocks, known portals are followed, unknown edges count as open
+// because the goal is there to be explored). The straight-line progress term
+// strands a worker against a wall nearest its goal: on Stripes (4 Oct) a founder
+// circled a 2x3 loop beside the kelp band for 120 rounds without eating.
+inline std::vector<int> goal_distances(const WorldMemory& mem, int goal) {
+    const Nav& nav = mem.nav;
+    std::vector<int> dist(nav.n, -1);
+    dist[goal] = 0;
+    std::vector<int> fr{goal};
+    while (!fr.empty()) {
+        std::vector<int> nx;
+        for (int c : fr) for (char d : DIRS) {
+            int v = nav.edges[nav.edge_key(c, d)];
+            if (v == KELP) continue;
+            std::optional<int> nc;
+            if (v == NONE) {
+                int x = c % nav.w, y = c / nav.w, i = didx(d);
+                nc = ((y + DYi[i] + nav.h) % nav.h) * nav.w + (x + DXi[i] + nav.w) % nav.w;
+            } else nc = nav.destination(c, d);
+            if (!nc || dist[*nc] >= 0) continue;
+            dist[*nc] = dist[c] + 1;
+            nx.push_back(*nc);
+        }
+        fr.swap(nx);
+    }
+    return dist;
+}
+
 // `deadline` is an absolute cpu_points() value; < 0 means no meter (matching
 // build). With it set (CPP_BUDGET on) the search also stops once the turn's CPU
 // points reach the deadline, so a larger N_SEARCH is capped by real cost.
 inline Terms search_one(const WorldMemory& mem, const Obs& obs, char team, int did, int dest, char direction,
                         const std::unordered_map<int, int>& own_free, double deadline = -1,
-                        const VorCtx* vor = nullptr) {
+                        const VorCtx* vor = nullptr, const std::vector<int>* gdist = nullptr) {
     std::unordered_map<int, int> best; best[dest] = 0;
     using Node = std::tuple<int, int, int>;  // (cost, arrival, cell)
     std::priority_queue<Node, std::vector<Node>, std::greater<Node>> queue;
@@ -277,6 +306,8 @@ inline Terms search_one(const WorldMemory& mem, const Obs& obs, char team, int d
     bool has_goal = mem.goal.has_value();
     double base = 0;
     if (has_goal) base = torus_distance(mem.cell(obs.x[CENTER], obs.y[CENTER]), *mem.goal, mem.width, mem.height);
+    bool gpath = gdist != nullptr && has_goal && (*gdist)[mem.cell(obs.x[CENTER], obs.y[CENTER])] >= 0;
+    if (gpath) base = (*gdist)[mem.cell(obs.x[CENTER], obs.y[CENTER])];
     while (!queue.empty() && tm.expanded < params::N_SEARCH) {
         if (deadline >= 0 && (tm.expanded & 31) == 0 && cpu_points() > deadline) break;
         auto [cost, arrival, cell] = queue.top(); queue.pop();
@@ -285,7 +316,8 @@ inline Terms search_one(const WorldMemory& mem, const Obs& obs, char team, int d
         tm.expanded += 1;
         tm.food = std::max(tm.food, food_value(mem, obs, cell, arrival - 1, vor));
         if (has_goal) {
-            double gained = base - torus_distance(cell, *mem.goal, mem.width, mem.height) - params::GOAL_STEP_COST * (arrival - 1);
+            int gd = gpath ? (*gdist)[cell] : torus_distance(cell, *mem.goal, mem.width, mem.height);
+            double gained = gd < 0 ? 0.0 : base - gd - params::GOAL_STEP_COST * (arrival - 1);
             if (gained > tm.progress) tm.progress = gained;
         }
         if (!hub_area.empty()) {
@@ -618,6 +650,9 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
         vor = &vor_ctx;
     }
 
+    std::vector<int> gdist;
+    const std::vector<int>* gdist_ptr = nullptr;
+    if (params::CPP_GOAL_PATH && mem.goal.has_value()) { gdist = goal_distances(mem, *mem.goal); gdist_ptr = &gdist; }
     for (std::size_t mi = 0; mi < remaining.size(); ++mi) {
         char direction = remaining[mi];
         int dest = moves[direction];
@@ -628,7 +663,7 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
             double remaining_pts = params::CPP_SOFT_POINTS - (cpu_points() - t0);
             deadline = cpu_points() + (remaining_pts > 0 ? remaining_pts / moves_left : 0.0);
         }
-        Terms tm = search_one(mem, obs, team, did, dest, direction, own_free, deadline, vor);
+        Terms tm = search_one(mem, obs, team, did, dest, direction, own_free, deadline, vor, gdist_ptr);
         double room = std::min(static_cast<double>(tm.room), need);
         double value = tm.food * (protectedFlag ? params::PROTECT_FOOD_MULT : 1.0)
                        * ((params::CPP_QUEEN_LIGHT && did <= 1) ? params::CPP_QUEEN_LIGHT_FOOD : 1.0);

@@ -133,6 +133,20 @@ V129_POOL = {"Trophy": "trophy.map", "Queen Of Spades": "queen_of_spades.map", "
              "weakhold": "weakhold.map"}
 
 
+# Map names differ between suites: historical file stems ("Prisoners_Dilemma",
+# "Around_UNSW"), official 1.2.9 file stems ("dilemma", "unsw") and display names
+# ("Prisoners Dilemma"). Reports key maps by canonical_map(); raw names are kept.
+MAP_ALIASES = {"dilemma": "prisoners_dilemma", "unsw": "around_unsw"}
+
+
+def canonical_map(name: str) -> str:
+    """Canonical key for a map name or file stem: lower case, spaces to
+    underscores, then the explicit alias table (no fuzzy matching)."""
+    key = Path(name).stem if name.endswith(".map") else name
+    key = key.strip().lower().replace(" ", "_")
+    return MAP_ALIASES.get(key, key)
+
+
 def v129_maps() -> list[Path]:
     """All 22 maps bundled with unswbc 1.2.9 (current official files)."""
     return sorted((ROOT / "maps/v129").glob("*.map"))

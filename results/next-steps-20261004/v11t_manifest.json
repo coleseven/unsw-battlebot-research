@@ -1,0 +1,177 @@
+{
+  "control": "versions/v11t",
+  "frozen_commit": "77a11bd",
+  "bot_hash": "668938a734ff8da6",
+  "files_sha256": {
+    "bot.toml": "adcec7270a31dd08db969cacfe39794a6659fa89fca38c37f25173ba33b0d9f6",
+    "FROZEN.txt": "eabacdb10b96a6c425c67c84b5e11e058f0138de92c6217890b31c238b7c5a9b",
+    "hub_book.hpp": "7d9591149e40a0d45d25b7df69b2e72247068796f1095c9b350e3567feefec25",
+    "main.cpp": "4d01f52cdff06ee8c0a011cfcb74153a326bed997b911b4dc72de7a62318e091",
+    "model.hpp": "1df44bfab2cf4eae84a646567dfd0a960862ae1cb41e75621062fd5002f50576",
+    "mover.hpp": "bfb4206b09a189a4fbe3113c037c7539ca989b84c7cbbc69c53339ecbadedd5b",
+    "params.hpp": "411dad0d70ffe872bb5ec7285f3bc4bb08ee8a84a6e56f0fd79161032b4ac4b6",
+    "portal_book.hpp": "aedc99ec53ef97ec2ca810e585d2c52734858eecb1cdc26768f89218b8106f54",
+    "v6.hpp": "ba56ea47f29731e115e11ef15b2a3084f7f16e59136f048ee085fa3451911dcb",
+    "v6_brain.hpp": "beabe8f4bd621b6d69f3e2533b0c2f4f80eea3088324f9432bc35d468106660e"
+  },
+  "zip": {
+    "path": "battlebot-v11t.zip",
+    "sha256": "199302f55ae6d2eb57172bfdc38f76ec878f55fc9e9fa3bc4b1d7f8d68da74b1",
+    "unzipped_bot_hash": "668938a734ff8da6 (verified 3 Oct)"
+  },
+  "params_note": "versions/v11t/params.hpp is the tuned control; cppbot/params.hpp is a template with different defaults. C-series bases (results/v11t2-bot .. v11t5-bot) = v11t files' params plus new switches set off.",
+  "engine": [
+    {
+      "version": "1.2.9",
+      "sha256": "26e68680e45eb0f221db702aead9eefde776c2ad2ba066f4ddf8c12500c6a546"
+    }
+  ],
+  "runtime": "bcsim.queen_runtime, results/queen-runtime-packages/1.2.9 (BCSIM_QUEEN_RUNTIME default 1.2.9)",
+  "flags": {
+    "BCSIM_DETERMINISTIC_V6": "1",
+    "BCSIM_CPP_INPROC": "1",
+    "objective": "wins",
+    "workers": 12
+  },
+  "maps": {
+    "suite": "official_suite.current_maps() = maps/v129, 17 layouts (canonical names)",
+    "sha256": {
+      "around_unsw": [
+        "ea443f10a63c1a37521cfef814b2e9316acf5e56f29e74b9e2c20987ccd0b72a"
+      ],
+      "australia": [
+        "7fccdee8a73a971bc3dc7a07b13aa56bb214f311249b942869bcc9708084d539"
+      ],
+      "autarky": [
+        "c622b9afe8fea2d034999511f07fc561a4e5e7120615f0f9bf454b3f27fc0a16"
+      ],
+      "default": [
+        "42d4766ffede5f445692b119a26a6eee687fdc63b5b86776fefdf7fd755789b8"
+      ],
+      "devil": [
+        "a09e8f2d3bdd1e40fad31a0ecdf00166cd1090c232c56dcc2557729de737f6aa"
+      ],
+      "islands": [
+        "8a403c0aa6c7affc53ee27283fed1568840bb82517c9d7eb59c69462f66d5fb6"
+      ],
+      "maze": [
+        "f154114e3ed9d39efd8516529acf8462328866b1580662228ff35dedd3cd3bdf"
+      ],
+      "portals": [
+        "56341e6577da7429efb6f33b64b79b0c4223c4fbd9df995713ad781bead5f423"
+      ],
+      "prisoners_dilemma": [
+        "fd02547854cbcbe36274d4341900610ba1aa1caa35e553c38135def95e0db68d"
+      ],
+      "queen_of_spades": [
+        "126d71b46443268596285918d910b7f8d875bf3028ca9c5ff6bad97b4e868938"
+      ],
+      "schooltime": [
+        "5b9481d0c65454b6d0a6747a581c582414cba37dd99273cc5a23dbca63b31724"
+      ],
+      "slithery_fight": [
+        "001f3501dc5b76cb35b796f03fcaaed6c90be34741b5da03ab061ba0908347e7"
+      ],
+      "stripes": [
+        "31b22a24c467edb146f8c6fc291beccce1493617d90ff5bb6eff538c3af24715"
+      ],
+      "tower_defense": [
+        "1f097251f44508a5db71c691a361362052934817e99a8975a2521bcaf81c9725"
+      ],
+      "trauma": [
+        "dcf39d713c060e5ded2d031a7ffe1a27ea60fe4b72ff8fb3fffbabc4f81e2066"
+      ],
+      "trophy": [
+        "4f84e990688c1e96ee4c2a7ff0706e4b44f4ee63531dd5c5582cf9157b134fb1"
+      ],
+      "weakhold": [
+        "4cf0e4e57c12fd4dfbd2ad997e29994e736dd5d8eca1e0f3353e3020d94b08c1"
+      ]
+    }
+  },
+  "opponents_hash": {
+    "cpp_leviathan3": [
+      "fb5e2bc2b5915d86"
+    ],
+    "cpp_nicked_v75": [
+      "1c66e312e0f142fb"
+    ],
+    "cpp_nicked_v92": [
+      "602ed8c414fbde08"
+    ],
+    "nicked_lab": [
+      "902a04976020ece2"
+    ],
+    "nicked_v44": [
+      "5f9efb7e03ba029b"
+    ],
+    "opp-careful-queen": [
+      "d92cbd0bb6e4e0b9"
+    ],
+    "opp-economy": [
+      "d8a1433a6097d63c"
+    ],
+    "opp-growth-queen": [
+      "524cdcf66e377411"
+    ],
+    "opp-raider": [
+      "c5a1ae1ad6416297"
+    ],
+    "v11q": [
+      "1c547e93cdff8382"
+    ],
+    "v7-base-bot": [
+      "bec48091e76579a1"
+    ]
+  },
+  "seeds_used": {
+    "C5": [
+      691001,
+      691002,
+      691003
+    ],
+    "h2h v11t-v11q": [
+      711001,
+      711002,
+      711003,
+      711004
+    ],
+    "C6": [
+      721001,
+      721002
+    ],
+    "C7": [
+      731001,
+      731002,
+      731003
+    ],
+    "h2h v11u-v11t": [
+      741001,
+      741002,
+      741003,
+      741004
+    ],
+    "C8": [
+      751001,
+      751002
+    ],
+    "C9": [
+      761001,
+      761002
+    ],
+    "C10": [
+      771001,
+      771002,
+      771003
+    ],
+    "C11": [
+      781001,
+      781002
+    ]
+  },
+  "sandbox": "1.2.9 judge sandbox, 5 maps: max 8.4M points/turn (not a bound for new code)",
+  "online": {
+    "known": "v11q uploaded by the user 2 Oct ~21:04 UTC (latest recorded live version)",
+    "unknown": "whether v11t has been uploaded; battlebot-v11t.zip was handed over 3 Oct ~21:20 UTC with no confirmed submission. Do not attribute website games to v11t until the submission identity/time is recorded."
+  }
+}

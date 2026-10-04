@@ -3,7 +3,7 @@ import json, sys
 from collections import Counter, defaultdict
 from pathlib import Path
 from bcsim import official_suite
-A = Path(sys.argv[1]); pool = {m.lower() for m in official_suite.CURRENT_POOL}
+A = Path(sys.argv[1]); pool = {official_suite.canonical_map(m) for m in official_suite.CURRENT_POOL}
 for v in json.loads((A / "plan.json").read_text())["variants"]:
     f = A / "runs" / v / "games.jsonl"
     if not f.exists(): continue
@@ -14,7 +14,7 @@ for v in json.loads((A / "plan.json").read_text())["variants"]:
         opp = g["bot_b"] if us == "A" else g["bot_a"]
         oq = g.get(f"{us.lower()}_queen") or 0; tq = g.get(f"{th.lower()}_queen") or 0
         c["n"] += 1; c["w"] += g["winner"] == us; c["qa"] += oq > 0; c["tq"] += tq > 0
-        if g["map"].lower() in pool: c["pn"] += 1; c["pw"] += g["winner"] == us
+        if official_suite.canonical_map(g["map"]) in pool: c["pn"] += 1; c["pw"] += g["winner"] == us
         per[opp][0] += g["winner"] == us; per[opp][1] += 1
         if oq > 0: qlen.append(oq)
     qlen.sort()

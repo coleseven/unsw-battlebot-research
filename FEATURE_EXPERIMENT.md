@@ -998,3 +998,36 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   optimum for queen-side caution; further gains likely need different strategy
   (longest-dragon play when both queens die: 294/548 games, our weakest class),
   not more queen safety weights.
+
+### 4 Oct: NEXT_STEPS_2026-10-04 work
+
+- **Report repair**: `bcsim.ablate.report` now derives maps from each run's frozen
+  plan via `official_suite.canonical_map` (aliases dilemma/prisoners_dilemma and
+  unsw/around_unsw are explicit; every played map must be planned). It reports
+  every map, equal-map and equal-family deltas (nicked / ours / other), win-score
+  pp, and states that a positive delta means the variant (base + group) scored
+  higher. The stale CURRENT_POOL subtotal and "15 maps" header are gone.
+  C1, C4-C11 reports regenerated; totals match Astra's outcome audit exactly
+  (C5 t2 571/1020, C7 base 627/1122, C10 base 647 / dq 645, C11 base 385/680).
+- Frozen control manifest: results/next-steps-20261004/v11t_manifest.json
+  (files, bot hash, zip, engine 1.2.9 sha, map and opponent hashes, seeds,
+  flags). Online: v11q is the last recorded upload; v11t's upload is unknown.
+- **Disabled-switch equivalence**: versions/v11t against results/v11t5-bot (new
+  code, new switches off) on 17 maps x 2 sides x 2 opponents: 68/68 identical.
+- **24-case diagnostic** (results/next-steps-20261004/DIAGNOSTIC_FINDINGS.md):
+  Stripes and Portals losses start with zero food intake from round 0; Trophy
+  is an early population race at equal yield per worker-turn; Dilemma and
+  Islands are not production failures. The harvest gate is not met in its
+  intended form: the first divergence is reaching productive food (hub area
+  across kelp, straight-line goal progress, the corrected queen search refusing
+  Stripes' founding pocket), not sequencing food already in reach.
+- Probes (single games vs turtle, diagnostic only): on Stripes v11q's workers
+  ate 69/39 pearls in rounds 0-119, v11t's 0/0; W_HUB 0 frees the stranded
+  worker (21 on one side); CPP_HUB_PATH 3 gives 26/10, but Portals falls 43/22
+  -> 0/0. PORTAL_BOOK off raises Portals rounds 0-59 intake 5/0 -> 28/24 (book
+  pairs match 1.2.9 exactly; C1 Portals +2/24 books off).
+- New off-by-default switches: CPP_GOAL_PATH (goal progress by walking distance,
+  unknown edges open) and CPP_HUB_PATH (hub area by walking distance). **D1
+  screen** queued: base results/v11t7-bot, gp and hp3, 6 opponents (v92,
+  leviathan3, lab, careful-queen, raider, economy), seeds 801001-2, 408 games
+  each, preceded by an equivalence check of v11t7-bot against v11t.

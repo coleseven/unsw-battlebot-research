@@ -1,0 +1,860 @@
+[
+  {
+    "label": "C5 t2",
+    "run": "20261003-134712-ablate-e3fcd5",
+    "variant": "t2",
+    "classes": {
+      "elimination": {
+        "n": 184,
+        "l": 123,
+        "w": 61
+      },
+      "both_dead": {
+        "n": 474,
+        "w": 244,
+        "l": 230,
+        "loss_more_total": 38,
+        "loss_longest_gap_le5": 69
+      },
+      "only_ours": {
+        "n": 233,
+        "w": 233
+      },
+      "both_alive_equal": {
+        "n": 40,
+        "w": 18,
+        "l": 22
+      },
+      "both_alive_unequal": {
+        "n": 41,
+        "l": 26,
+        "w": 15
+      },
+      "only_theirs": {
+        "n": 48,
+        "l": 48
+      }
+    },
+    "maps": {
+      "trophy": {
+        "n": 60,
+        "l": 34,
+        "loss_elimination": 28,
+        "loss_both_dead": 5,
+        "w": 26,
+        "loss_only_theirs": 1
+      },
+      "queen_of_spades": {
+        "n": 60,
+        "l": 24,
+        "loss_elimination": 15,
+        "w": 36,
+        "loss_both_dead": 8,
+        "loss_both_alive_unequal": 1
+      },
+      "default": {
+        "n": 60,
+        "l": 21,
+        "loss_elimination": 3,
+        "w": 39,
+        "loss_both_dead": 8,
+        "loss_only_theirs": 7,
+        "loss_both_alive_unequal": 3
+      },
+      "devil": {
+        "n": 60,
+        "l": 26,
+        "loss_elimination": 11,
+        "w": 34,
+        "loss_both_dead": 12,
+        "loss_only_theirs": 3
+      },
+      "trauma": {
+        "n": 60,
+        "w": 40,
+        "l": 20,
+        "loss_both_dead": 5,
+        "loss_both_alive_unequal": 12,
+        "loss_only_theirs": 3
+      },
+      "autarky": {
+        "n": 60,
+        "l": 21,
+        "loss_both_dead": 11,
+        "w": 39,
+        "loss_both_alive_unequal": 4,
+        "loss_only_theirs": 6
+      },
+      "schooltime": {
+        "n": 60,
+        "w": 40,
+        "l": 20,
+        "loss_both_alive_equal": 20
+      },
+      "dilemma": {
+        "n": 60,
+        "l": 39,
+        "loss_elimination": 24,
+        "w": 21,
+        "loss_only_theirs": 5,
+        "loss_both_alive_unequal": 1,
+        "loss_both_alive_equal": 1,
+        "loss_both_dead": 8
+      },
+      "portals": {
+        "n": 60,
+        "l": 26,
+        "loss_both_dead": 25,
+        "w": 34,
+        "loss_only_theirs": 1
+      },
+      "australia": {
+        "n": 60,
+        "w": 37,
+        "l": 23,
+        "loss_both_dead": 11,
+        "loss_only_theirs": 7,
+        "loss_both_alive_unequal": 5
+      },
+      "slithery_fight": {
+        "n": 60,
+        "l": 16,
+        "loss_both_dead": 11,
+        "w": 44,
+        "loss_only_theirs": 5
+      },
+      "islands": {
+        "n": 60,
+        "l": 28,
+        "loss_both_dead": 25,
+        "w": 32,
+        "loss_elimination": 1,
+        "loss_only_theirs": 2
+      },
+      "maze": {
+        "n": 60,
+        "w": 42,
+        "l": 18,
+        "loss_elimination": 2,
+        "loss_both_dead": 16
+      },
+      "stripes": {
+        "n": 60,
+        "w": 25,
+        "l": 35,
+        "loss_elimination": 32,
+        "loss_both_alive_equal": 1,
+        "loss_both_dead": 2
+      },
+      "tower_defense": {
+        "n": 60,
+        "l": 40,
+        "loss_both_dead": 37,
+        "w": 20,
+        "loss_only_theirs": 2,
+        "loss_elimination": 1
+      },
+      "weakhold": {
+        "n": 60,
+        "l": 41,
+        "loss_elimination": 6,
+        "loss_both_dead": 29,
+        "w": 19,
+        "loss_only_theirs": 6
+      },
+      "unsw": {
+        "n": 60,
+        "l": 17,
+        "loss_both_dead": 17,
+        "w": 43
+      }
+    }
+  },
+  {
+    "label": "C7 base",
+    "run": "20261003-183034-ablate-3ac260",
+    "variant": "base",
+    "classes": {
+      "elimination": {
+        "n": 229,
+        "l": 156,
+        "w": 73
+      },
+      "only_ours": {
+        "n": 259,
+        "w": 259
+      },
+      "both_dead": {
+        "n": 499,
+        "l": 244,
+        "loss_more_total": 55,
+        "loss_longest_gap_le5": 49,
+        "w": 254,
+        "d": 1
+      },
+      "both_alive_unequal": {
+        "n": 57,
+        "l": 39,
+        "w": 18
+      },
+      "both_alive_equal": {
+        "n": 42,
+        "l": 19,
+        "w": 23
+      },
+      "only_theirs": {
+        "n": 36,
+        "l": 36
+      }
+    },
+    "maps": {
+      "trophy": {
+        "n": 66,
+        "l": 37,
+        "loss_elimination": 31,
+        "loss_both_dead": 6,
+        "w": 29
+      },
+      "queen_of_spades": {
+        "n": 66,
+        "w": 38,
+        "l": 28,
+        "loss_both_dead": 7,
+        "loss_elimination": 19,
+        "loss_both_alive_unequal": 1,
+        "loss_only_theirs": 1
+      },
+      "devil": {
+        "n": 66,
+        "l": 19,
+        "loss_elimination": 12,
+        "w": 47,
+        "loss_both_dead": 7
+      },
+      "default": {
+        "n": 66,
+        "l": 13,
+        "loss_elimination": 3,
+        "w": 53,
+        "loss_both_dead": 5,
+        "loss_only_theirs": 4,
+        "loss_both_alive_unequal": 1
+      },
+      "trauma": {
+        "n": 66,
+        "l": 28,
+        "loss_elimination": 1,
+        "w": 38,
+        "loss_both_alive_unequal": 25,
+        "loss_only_theirs": 1,
+        "loss_both_dead": 1
+      },
+      "autarky": {
+        "n": 66,
+        "l": 28,
+        "loss_both_dead": 20,
+        "loss_only_theirs": 6,
+        "loss_both_alive_unequal": 2,
+        "w": 38
+      },
+      "schooltime": {
+        "n": 66,
+        "l": 18,
+        "loss_both_alive_equal": 18,
+        "w": 48
+      },
+      "dilemma": {
+        "n": 66,
+        "l": 39,
+        "loss_elimination": 23,
+        "w": 27,
+        "loss_only_theirs": 2,
+        "loss_both_alive_unequal": 2,
+        "loss_both_alive_equal": 1,
+        "loss_both_dead": 11
+      },
+      "portals": {
+        "n": 66,
+        "l": 23,
+        "loss_both_dead": 22,
+        "w": 42,
+        "loss_only_theirs": 1,
+        "d": 1
+      },
+      "slithery_fight": {
+        "n": 66,
+        "w": 46,
+        "l": 20,
+        "loss_both_dead": 17,
+        "loss_only_theirs": 2,
+        "loss_both_alive_unequal": 1
+      },
+      "australia": {
+        "n": 66,
+        "w": 35,
+        "l": 31,
+        "loss_both_dead": 23,
+        "loss_only_theirs": 2,
+        "loss_both_alive_unequal": 6
+      },
+      "islands": {
+        "n": 66,
+        "l": 32,
+        "loss_both_dead": 28,
+        "loss_elimination": 3,
+        "w": 34,
+        "loss_only_theirs": 1
+      },
+      "stripes": {
+        "n": 66,
+        "w": 16,
+        "l": 50,
+        "loss_elimination": 46,
+        "loss_both_dead": 4
+      },
+      "maze": {
+        "n": 66,
+        "l": 18,
+        "loss_both_dead": 16,
+        "loss_elimination": 2,
+        "w": 48
+      },
+      "tower_defense": {
+        "n": 66,
+        "l": 44,
+        "loss_elimination": 9,
+        "loss_both_dead": 27,
+        "w": 22,
+        "loss_only_theirs": 7,
+        "loss_both_alive_unequal": 1
+      },
+      "weakhold": {
+        "n": 66,
+        "l": 40,
+        "loss_both_dead": 26,
+        "loss_elimination": 7,
+        "w": 26,
+        "loss_only_theirs": 7
+      },
+      "unsw": {
+        "n": 66,
+        "l": 26,
+        "loss_both_dead": 24,
+        "w": 40,
+        "loss_only_theirs": 2
+      }
+    }
+  },
+  {
+    "label": "C10 base",
+    "run": "20261003-224713-ablate-d440c5",
+    "variant": "base",
+    "classes": {
+      "elimination": {
+        "n": 206,
+        "l": 135,
+        "w": 71
+      },
+      "both_dead": {
+        "n": 548,
+        "l": 254,
+        "loss_more_total": 57,
+        "loss_longest_gap_le5": 64,
+        "w": 294
+      },
+      "only_ours": {
+        "n": 244,
+        "w": 244
+      },
+      "both_alive_unequal": {
+        "n": 40,
+        "w": 19,
+        "l": 21
+      },
+      "only_theirs": {
+        "n": 46,
+        "l": 46
+      },
+      "both_alive_equal": {
+        "n": 38,
+        "l": 19,
+        "w": 19
+      }
+    },
+    "maps": {
+      "trophy": {
+        "n": 66,
+        "l": 32,
+        "loss_elimination": 26,
+        "w": 34,
+        "loss_both_dead": 6
+      },
+      "queen_of_spades": {
+        "n": 66,
+        "l": 23,
+        "loss_elimination": 6,
+        "loss_both_dead": 9,
+        "w": 43,
+        "loss_both_alive_unequal": 1,
+        "loss_only_theirs": 7
+      },
+      "default": {
+        "n": 66,
+        "w": 42,
+        "l": 24,
+        "loss_both_dead": 8,
+        "loss_elimination": 2,
+        "loss_only_theirs": 12,
+        "loss_both_alive_unequal": 2
+      },
+      "devil": {
+        "n": 66,
+        "l": 19,
+        "loss_both_dead": 10,
+        "loss_elimination": 8,
+        "w": 47,
+        "loss_only_theirs": 1
+      },
+      "trauma": {
+        "n": 66,
+        "w": 48,
+        "l": 18,
+        "loss_elimination": 1,
+        "loss_both_dead": 5,
+        "loss_both_alive_unequal": 9,
+        "loss_only_theirs": 2,
+        "loss_both_alive_equal": 1
+      },
+      "autarky": {
+        "n": 66,
+        "l": 20,
+        "loss_both_dead": 10,
+        "w": 46,
+        "loss_only_theirs": 8,
+        "loss_both_alive_unequal": 2
+      },
+      "dilemma": {
+        "n": 66,
+        "l": 41,
+        "loss_elimination": 26,
+        "loss_both_dead": 9,
+        "loss_both_alive_unequal": 2,
+        "w": 25,
+        "loss_only_theirs": 3,
+        "loss_both_alive_equal": 1
+      },
+      "schooltime": {
+        "n": 66,
+        "l": 17,
+        "loss_both_alive_equal": 17,
+        "w": 49
+      },
+      "portals": {
+        "n": 66,
+        "l": 30,
+        "loss_both_dead": 30,
+        "w": 36
+      },
+      "slithery_fight": {
+        "n": 66,
+        "l": 18,
+        "loss_both_dead": 17,
+        "w": 48,
+        "loss_both_alive_unequal": 1
+      },
+      "australia": {
+        "n": 66,
+        "l": 25,
+        "loss_both_dead": 20,
+        "w": 41,
+        "loss_only_theirs": 1,
+        "loss_both_alive_unequal": 4
+      },
+      "islands": {
+        "n": 66,
+        "l": 29,
+        "loss_both_dead": 29,
+        "w": 37
+      },
+      "stripes": {
+        "n": 66,
+        "w": 19,
+        "l": 47,
+        "loss_elimination": 45,
+        "loss_both_dead": 2
+      },
+      "maze": {
+        "n": 66,
+        "l": 20,
+        "loss_both_dead": 16,
+        "loss_elimination": 3,
+        "w": 46,
+        "loss_only_theirs": 1
+      },
+      "tower_defense": {
+        "n": 66,
+        "l": 40,
+        "loss_elimination": 12,
+        "loss_both_dead": 24,
+        "w": 26,
+        "loss_only_theirs": 4
+      },
+      "weakhold": {
+        "n": 66,
+        "l": 42,
+        "loss_both_dead": 30,
+        "loss_elimination": 6,
+        "w": 24,
+        "loss_only_theirs": 6
+      },
+      "unsw": {
+        "n": 66,
+        "l": 30,
+        "loss_both_dead": 29,
+        "w": 36,
+        "loss_only_theirs": 1
+      }
+    }
+  },
+  {
+    "label": "C10 dq",
+    "run": "20261003-224713-ablate-d440c5",
+    "variant": "dq",
+    "classes": {
+      "elimination": {
+        "n": 223,
+        "w": 74,
+        "l": 149
+      },
+      "only_ours": {
+        "n": 255,
+        "w": 255
+      },
+      "both_dead": {
+        "n": 529,
+        "l": 234,
+        "loss_more_total": 53,
+        "loss_longest_gap_le5": 63,
+        "w": 295
+      },
+      "both_alive_equal": {
+        "n": 40,
+        "l": 32,
+        "w": 8
+      },
+      "both_alive_unequal": {
+        "n": 35,
+        "l": 22,
+        "w": 13
+      },
+      "only_theirs": {
+        "n": 40,
+        "l": 40
+      }
+    },
+    "maps": {
+      "trophy": {
+        "n": 66,
+        "w": 32,
+        "l": 34,
+        "loss_elimination": 27,
+        "loss_both_dead": 7
+      },
+      "queen_of_spades": {
+        "n": 66,
+        "l": 28,
+        "loss_elimination": 14,
+        "w": 38,
+        "loss_both_dead": 9,
+        "loss_both_alive_unequal": 2,
+        "loss_only_theirs": 3
+      },
+      "devil": {
+        "n": 66,
+        "l": 17,
+        "loss_elimination": 10,
+        "w": 49,
+        "loss_both_dead": 6,
+        "loss_only_theirs": 1
+      },
+      "default": {
+        "n": 66,
+        "w": 41,
+        "l": 25,
+        "loss_elimination": 5,
+        "loss_both_dead": 11,
+        "loss_both_alive_unequal": 2,
+        "loss_only_theirs": 7
+      },
+      "trauma": {
+        "n": 66,
+        "w": 51,
+        "l": 15,
+        "loss_both_dead": 6,
+        "loss_only_theirs": 1,
+        "loss_both_alive_unequal": 8
+      },
+      "autarky": {
+        "n": 66,
+        "w": 46,
+        "l": 20,
+        "loss_both_dead": 11,
+        "loss_both_alive_unequal": 4,
+        "loss_only_theirs": 5
+      },
+      "dilemma": {
+        "n": 66,
+        "l": 41,
+        "loss_elimination": 26,
+        "loss_both_dead": 9,
+        "w": 25,
+        "loss_both_alive_unequal": 2,
+        "loss_only_theirs": 3,
+        "loss_both_alive_equal": 1
+      },
+      "schooltime": {
+        "n": 66,
+        "l": 31,
+        "loss_both_alive_equal": 31,
+        "w": 35
+      },
+      "portals": {
+        "n": 66,
+        "l": 24,
+        "loss_both_dead": 24,
+        "w": 42
+      },
+      "australia": {
+        "n": 66,
+        "l": 21,
+        "loss_both_dead": 13,
+        "loss_only_theirs": 5,
+        "w": 45,
+        "loss_both_alive_unequal": 3
+      },
+      "slithery_fight": {
+        "n": 66,
+        "w": 44,
+        "l": 22,
+        "loss_both_dead": 20,
+        "loss_both_alive_unequal": 1,
+        "loss_only_theirs": 1
+      },
+      "islands": {
+        "n": 66,
+        "l": 26,
+        "loss_elimination": 1,
+        "loss_both_dead": 24,
+        "loss_only_theirs": 1,
+        "w": 40
+      },
+      "stripes": {
+        "n": 66,
+        "w": 17,
+        "l": 49,
+        "loss_elimination": 47,
+        "loss_both_dead": 2
+      },
+      "maze": {
+        "n": 66,
+        "w": 46,
+        "l": 20,
+        "loss_both_dead": 17,
+        "loss_elimination": 3
+      },
+      "tower_defense": {
+        "n": 66,
+        "l": 38,
+        "loss_elimination": 12,
+        "loss_both_dead": 21,
+        "w": 28,
+        "loss_only_theirs": 5
+      },
+      "weakhold": {
+        "n": 66,
+        "l": 40,
+        "loss_both_dead": 30,
+        "loss_elimination": 4,
+        "w": 26,
+        "loss_only_theirs": 6
+      },
+      "unsw": {
+        "n": 66,
+        "w": 40,
+        "l": 26,
+        "loss_both_dead": 24,
+        "loss_only_theirs": 2
+      }
+    }
+  },
+  {
+    "label": "C11 base",
+    "run": "20261003-230525-ablate-af20b7",
+    "variant": "base",
+    "classes": {
+      "elimination": {
+        "n": 127,
+        "l": 82,
+        "w": 45
+      },
+      "both_dead": {
+        "n": 323,
+        "w": 176,
+        "l": 147,
+        "loss_more_total": 28,
+        "loss_longest_gap_le5": 49
+      },
+      "only_ours": {
+        "n": 146,
+        "w": 146
+      },
+      "both_alive_unequal": {
+        "n": 29,
+        "l": 22,
+        "w": 7
+      },
+      "both_alive_equal": {
+        "n": 26,
+        "w": 11,
+        "l": 15
+      },
+      "only_theirs": {
+        "n": 29,
+        "l": 29
+      }
+    },
+    "maps": {
+      "trophy": {
+        "n": 40,
+        "l": 22,
+        "loss_elimination": 20,
+        "w": 18,
+        "loss_both_dead": 2
+      },
+      "queen_of_spades": {
+        "n": 40,
+        "l": 13,
+        "loss_elimination": 9,
+        "w": 27,
+        "loss_both_dead": 4
+      },
+      "default": {
+        "n": 40,
+        "l": 11,
+        "loss_elimination": 1,
+        "w": 29,
+        "loss_both_alive_equal": 1,
+        "loss_both_dead": 4,
+        "loss_only_theirs": 4,
+        "loss_both_alive_unequal": 1
+      },
+      "devil": {
+        "n": 40,
+        "l": 11,
+        "loss_elimination": 4,
+        "loss_both_alive_unequal": 1,
+        "w": 29,
+        "loss_both_dead": 6
+      },
+      "trauma": {
+        "n": 40,
+        "w": 23,
+        "l": 17,
+        "loss_both_alive_unequal": 11,
+        "loss_only_theirs": 4,
+        "loss_both_dead": 2
+      },
+      "dilemma": {
+        "n": 40,
+        "l": 25,
+        "loss_elimination": 12,
+        "w": 15,
+        "loss_only_theirs": 1,
+        "loss_both_alive_equal": 2,
+        "loss_both_alive_unequal": 1,
+        "loss_both_dead": 9
+      },
+      "autarky": {
+        "n": 40,
+        "w": 28,
+        "l": 12,
+        "loss_both_dead": 8,
+        "loss_only_theirs": 3,
+        "loss_both_alive_unequal": 1
+      },
+      "schooltime": {
+        "n": 40,
+        "w": 28,
+        "l": 12,
+        "loss_both_alive_equal": 12
+      },
+      "portals": {
+        "n": 40,
+        "l": 13,
+        "loss_both_dead": 11,
+        "w": 27,
+        "loss_only_theirs": 2
+      },
+      "australia": {
+        "n": 40,
+        "l": 24,
+        "loss_both_dead": 15,
+        "w": 16,
+        "loss_both_alive_unequal": 4,
+        "loss_only_theirs": 5
+      },
+      "slithery_fight": {
+        "n": 40,
+        "w": 27,
+        "l": 13,
+        "loss_both_dead": 10,
+        "loss_both_alive_unequal": 2,
+        "loss_only_theirs": 1
+      },
+      "stripes": {
+        "n": 40,
+        "w": 9,
+        "l": 31,
+        "loss_elimination": 31
+      },
+      "islands": {
+        "n": 40,
+        "l": 20,
+        "loss_both_dead": 19,
+        "w": 20,
+        "loss_only_theirs": 1
+      },
+      "tower_defense": {
+        "n": 40,
+        "l": 20,
+        "loss_both_dead": 15,
+        "w": 20,
+        "loss_only_theirs": 3,
+        "loss_elimination": 1,
+        "loss_both_alive_unequal": 1
+      },
+      "maze": {
+        "n": 40,
+        "l": 11,
+        "loss_both_dead": 9,
+        "loss_elimination": 2,
+        "w": 29
+      },
+      "weakhold": {
+        "n": 40,
+        "l": 26,
+        "loss_both_dead": 20,
+        "loss_elimination": 2,
+        "w": 14,
+        "loss_only_theirs": 4
+      },
+      "unsw": {
+        "n": 40,
+        "l": 14,
+        "loss_both_dead": 13,
+        "w": 26,
+        "loss_only_theirs": 1
+      }
+    }
+  }
+]

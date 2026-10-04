@@ -187,6 +187,8 @@ CPP_QUEEN_SPRINT = 0  # corrected search: threats may also sprint up to this man
 CPP_DOOMED_SPARE_QUEEN = 0  # a trapped worker never spends its last move on our queen's head (rams an enemy head if it can)
 CPP_QUEEN_BODYGUARD = 0  # workers trade head-on with enemy heads within this many cells of our queen's head (0 = off)
 CPP_QUEEN_BODYGUARD_BONUS = 200.0  # added to W_ATTACK for such a trade
+CPP_GOAL_PATH = 0  # exploration-goal progress by path distance over remembered terrain (unknown edges open) instead of straight line
+CPP_HUB_PATH = 0  # hub area = cells within this walking distance of the hub over remembered terrain (0 = the 5x5 square)
 CPP_QUEEN_TACTICS = 0   # Q4: exact short escape search for our queen (id 0/1), any mode
 CPP_QUEEN_TACTICS_DEPTH = 3  # Q4: look-ahead steps (view radius is 3)
 CPP_QUEEN_TACTICS_MARGIN = 0  # Q4: extra steps per turn assumed for threat heads

@@ -13,10 +13,12 @@ The groups file maps a variant name to settings ({"W_PEARL": 0.0,
 "GOAL": false, ...}); variant "base" (unchanged) is always added. Every
 variant plays every opponent on every map, both sides and every seed
 (unswbc >= 1.1 seeds pearl spawns), so each variant's games pair one-to-one
-with base's. The report gives each variant's mean margin difference from base
-(bcsim.margin, positive = the variant is better, i.e. removing the group
-helps) with a 95% bootstrap CI resampling (map, seed) blocks, by opponent and
-for official vs extra maps. `--prepare --groups none --seeds 6` measures
+with base's. The report gives each variant's mean score difference from base
+(positive = the variant, i.e. base plus the group's settings, scored higher;
+a group may add a feature or remove one) with a 95% bootstrap CI resampling
+(map, seed) blocks, by opponent, equally weighted over maps and opponent
+families, and per map. Maps come from the run's frozen plan, keyed by
+official_suite.canonical_map(). `--prepare --groups none --seeds 6` measures
 noise: the report then suggests how many seeds a given CI width needs.
 Set BCSIM_DETERMINISTIC_V6=1 when a Python v6-core bot plays.
 """
@@ -27,6 +29,7 @@ import argparse
 import json
 import os
 import random
+import re
 import shutil
 import statistics
 import uuid
@@ -157,6 +160,18 @@ def _bootstrap(diffs_by_block, reps=2000, seed=0):
     return statistics.fmean(flat), means[int(0.025 * reps)], means[int(0.975 * reps) - 1]
 
 
+def _family(opponent: str) -> str:
+    """Strategic lineage of an opponent folder, for equal-family weighting: the
+    nicked versions are one family, our own versions and our opp-* specialists
+    another; anything else is its own family."""
+    o = opponent.lower()
+    if "nicked" in o:
+        return "nicked"
+    if o.startswith("opp-") or re.match(r"v\d", o):
+        return "ours"
+    return o
+
+
 def _load(out, plan):
     data = {}
     for name in plan["variants"]:
@@ -175,53 +190,91 @@ def report(out: Path):
         return
     base = data[BASE]
     official = set(plan["official_maps"])
-    pool = set(official_suite.CURRENT_POOL)
     key = plan.get("objective", "margin")
     for rows in data.values():          # report in the plan's objective
         for r in rows.values():
             r["margin"] = r.get(key, r["margin"])
+    # map coverage from this run's own frozen plan (never a global pool list):
+    # every planned map gets exactly one canonical key, every played map is planned
+    planned = plan["official_maps"] + plan["extra_maps"]
+    canon = {m: official_suite.canonical_map(m) for m in planned}
+    if len(set(canon.values())) != len(planned):
+        raise ValueError(f"two planned maps share a canonical name: {canon}")
+    for name, rows in data.items():
+        stray = {k[1] for k in rows} - set(planned)
+        if stray:
+            raise ValueError(f"{name}: games on maps outside the plan: {sorted(stray)}")
+    maps = sorted(canon, key=lambda m: canon[m])
+    fam = {o: _family(o) for o in plan["opponents"]}
+    families = sorted(set(fam.values()))
+    current = plan.get("maps") == "current" or not plan["extra_maps"]
     lines = [f"# Ablation report: {out.name}", "",
-             f"{len(plan['seeds'])} seeds, opponents {', '.join(plan['opponents'])}; "
-             f"{len(plan['official_maps'])} official + {len(plan['extra_maps'])} extra maps, both sides. "
-             f"Objective: {key}. Delta = variant score minus base score on the same (opponent, map, seed, side); "
-             "positive means removing the group helped. 95% CI resamples (map, seed) blocks.", ""]
+             f"{len(plan['seeds'])} seeds {plan['seeds']}, opponents {', '.join(plan['opponents'])} "
+             f"(families: {', '.join(f'{f} {sum(v == f for v in fam.values())}' for f in families)}); "
+             f"{len(maps)} maps from the run's plan ({', '.join(canon[m] for m in maps)}), both sides. "
+             f"Objective: {key}. Delta = variant score minus base score on the same (opponent, map, seed, "
+             "side), where the variant is the base plus that group's parameter changes: **positive means the "
+             "variant scored higher than the base**. 95% CI resamples (map, seed) blocks. Equal-map and "
+             "equal-family deltas weight each map / opponent family equally.", ""]
     base_rows = list(base.values())
     lines.append(f"base: mean margin {statistics.fmean(r['margin'] for r in base_rows):+.3f}, "
                  f"wins {sum(r['win'] for r in base_rows)}/{len(base_rows)}; by opponent: " +
                  ", ".join(f"{o} {statistics.fmean(r['margin'] for r in base_rows if r['opponent'] == o):+.3f}"
                            for o in plan["opponents"]))
-    lines += ["", "| variant | current pool delta [95% CI] | pool verdict | other maps | delta all 15 [95% CI] | verdict | " +
-              " | ".join(f"vs {o}" for o in plan["opponents"]) + " | official | extra | wins |",
-              "|---|---|---|---|---|---|" + "---|" * len(plan["opponents"]) + "---|---|---|"]
+    split_cols = "" if current else f" | official {len(plan['official_maps'])} | extra {len(plan['extra_maps'])}"
+    pp = key == "wins"   # signed outcome: win +1, draw 0, loss -1, so win-score (1 / 0.5 / 0) moves by delta / 2
+    if pp:
+        lines += ["", "Objective wins is the signed outcome (win +1, draw 0, loss -1); the win-score column "
+                  "(win 1, draw 0.5, loss 0) is delta / 2 in percentage points."]
+    lines += ["", f"| variant | delta all {len(maps)} maps [95% CI] | verdict | " + ("win-score pp [95% CI] | " if pp else "") +
+              "equal-map delta | equal-family delta | " +
+              " | ".join(f"vs {o}" for o in plan["opponents"]) + f"{split_cols} | wins |",
+              "|---|---|---|---|---|" + ("---|" if pp else "") + "---|" * len(plan["opponents"]) + ("---|---|" if not current else "") + "---|"]
     summary = {}
+    per_map = {}
     for name, rows in data.items():
         if name == BASE:
             continue
         def diffs(keep):
             by_block = {}
-            for key, r in rows.items():
-                if key in base and keep(key):
-                    by_block.setdefault((key[1], key[2]), []).append(r["margin"] - base[key]["margin"])
+            for k, r in rows.items():
+                if k in base and keep(k):
+                    by_block.setdefault((k[1], k[2]), []).append(r["margin"] - base[k]["margin"])
             return by_block
+        flat = lambda b: [d for v in b.values() for d in v]
         allb = diffs(lambda k: True)
         mean, lo, hi = _bootstrap(allb)
-        verdict = "harmful (drop)" if lo > 0 else "essential" if hi < 0 else "neutral"
-        per_opp = [statistics.fmean(d for b in diffs(lambda k, o=o: k[0] == o).values() for d in b)
-                   for o in plan["opponents"]]
-        off = diffs(lambda k: k[1] in official)
-        ext = diffs(lambda k: k[1] not in official)
-        cur = diffs(lambda k: k[1] in pool)
-        guard = diffs(lambda k: k[1] not in pool)
-        cmean, clo, chi = _bootstrap(cur) if cur else (0.0, 0.0, 0.0)
-        fmt = lambda b: f"{statistics.fmean(d for v in b.values() for d in v):+.3f}" if b else "-"
+        verdict = "variant better" if lo > 0 else "variant worse" if hi < 0 else "unclear"
+        per_opp = [statistics.fmean(flat(diffs(lambda k, o=o: k[0] == o))) for o in plan["opponents"]]
+        map_means = {m: statistics.fmean(flat(diffs(lambda k, m=m: k[1] == m))) for m in maps
+                     if flat(diffs(lambda k, m=m: k[1] == m))}
+        fam_means = {f: statistics.fmean(flat(diffs(lambda k, f=f: fam[k[0]] == f))) for f in families}
+        eq_map = statistics.fmean(map_means.values())
+        eq_fam = statistics.fmean(fam_means.values())
+        fmt = lambda b: f"{statistics.fmean(flat(b)):+.3f}" if b else "-"
         wins = sum(r["win"] for r in rows.values())
-        cverdict = "harmful (drop)" if clo > 0 else "essential" if chi < 0 else "neutral"
-        summary[name] = {"delta": mean, "lo": lo, "hi": hi, "verdict": verdict,
-                         "pool_delta": cmean, "pool_lo": clo, "pool_hi": chi, "pool_verdict": cverdict}
-        lines.append(f"| {name} | {cmean:+.3f} [{clo:+.3f}, {chi:+.3f}] | {cverdict} | {fmt(guard)} | "
-                     f"{mean:+.3f} [{lo:+.3f}, {hi:+.3f}] | {verdict} | " +
-                     " | ".join(f"{d:+.3f}" for d in per_opp) +
-                     f" | {fmt(off)} | {fmt(ext)} | {wins}/{len(rows)} |")
+        extra = "" if current else (f" | {fmt(diffs(lambda k: k[1] in official))} | "
+                                    f"{fmt(diffs(lambda k: k[1] not in official))}")
+        summary[name] = {"delta": mean, "lo": lo, "hi": hi, "verdict": verdict, "equal_map": eq_map,
+                         "equal_family": eq_fam, "families": fam_means,
+                         "maps": {canon[m]: v for m, v in map_means.items()}, "wins": wins, "games": len(rows)}
+        per_map[name] = map_means
+        wpp = f"{mean * 50:+.1f} [{lo * 50:+.1f}, {hi * 50:+.1f}] | " if pp else ""
+        lines.append(f"| {name} | {mean:+.3f} [{lo:+.3f}, {hi:+.3f}] | {verdict} | {wpp}{eq_map:+.3f} | {eq_fam:+.3f} | " +
+                     " | ".join(f"{d:+.3f}" for d in per_opp) + f"{extra} | {wins}/{len(rows)} |")
+    # per-map table: base wins and each variant's wins and delta on every planned map
+    names = [n for n in data if n != BASE]
+    lines += ["", "Per map (wins/games; delta vs base):", "",
+              "| map | base | " + " | ".join(names) + " |", "|---|---|" + "---|" * len(names)]
+    for m in maps:
+        bw = [r["win"] for k, r in base.items() if k[1] == m]
+        cells = []
+        for n in names:
+            vw = [r["win"] for k, r in data[n].items() if k[1] == m]
+            d = per_map[n].get(m)
+            cells.append(f"{sum(vw)}/{len(vw)} ({d:+.3f})" if d is not None else f"{sum(vw)}/{len(vw)}")
+        lines.append(f"| {canon[m]} | {sum(bw)}/{len(bw)} | " + " | ".join(cells) + " |")
+
     # noise: the seed-to-seed spread of base's margin in the same (opponent, map,
     # side) cell. Pairing cancels map and side effects, so a variant close to
     # base has per-game difference variance of about 2 * within^2; the overall

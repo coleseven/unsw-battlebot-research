@@ -1,0 +1,10682 @@
+[
+ {
+  "map": "stripes",
+  "opponent": "cpp_nicked_v75",
+  "seed": 771001,
+  "side": "A",
+  "class": "elimination",
+  "rounds": 97,
+  "ours_total": 0,
+  "theirs_total": 25,
+  "ours_longest": 0,
+  "theirs_longest": 3,
+  "replay": "results\\20261003-224713-ablate-d440c5\\runs\\base\\replays\\base-vs-cpp_nicked_v75-stripes-s771001.replay",
+  "group": "elimination",
+  "us": "A",
+  "stats": {
+   "A": {
+    "0": {
+     "cov_sum": 309,
+     "rounds": 20,
+     "wturns": 20
+    },
+    "all": {
+     "cov_sum": 1228,
+     "rounds": 98,
+     "wturns": 98,
+     "dry20": 78,
+     "death_H": 2
+    },
+    "20": {
+     "cov_sum": 303,
+     "rounds": 20,
+     "wturns": 20,
+     "dry20": 20
+    },
+    "40": {
+     "cov_sum": 195,
+     "rounds": 20,
+     "wturns": 20,
+     "dry20": 20
+    },
+    "60": {
+     "cov_sum": 265,
+     "rounds": 20,
+     "wturns": 20,
+     "dry20": 20
+    },
+    "80": {
+     "cov_sum": 156,
+     "rounds": 18,
+     "wturns": 18,
+     "dry20": 18,
+     "death_H": 2
+    }
+   },
+   "B": {
+    "0": {
+     "cov_sum": 221,
+     "rounds": 20,
+     "wturns": 21,
+     "passed": 3,
+     "nat": 2,
+     "splits": 1
+    },
+    "all": {
+     "cov_sum": 3360,
+     "rounds": 98,
+     "wturns": 513,
+     "passed": 34,
+     "nat": 26,
+     "splits": 12,
+     "dry20": 220,
+     "death_W": 1,
+     "drop": 2,
+     "death_H": 2
+    },
+    "20": {
+     "cov_sum": 439,
+     "rounds": 20,
+     "wturns": 51,
+     "dry20": 21,
+     "passed": 4,
+     "nat": 4,
+     "splits": 2
+    },
+    "40": {
+     "cov_sum": 770,
+     "rounds": 20,
+     "wturns": 107,
+     "dry20": 32,
+     "passed": 10,
+     "nat": 6,
+     "splits": 2
+    },
+    "60": {
+     "cov_sum": 935,
+     "rounds": 20,
+     "wturns": 160,
+     "dry20": 73,
+     "nat": 8,
+     "passed": 6,
+     "splits": 4,
+     "death_W": 1,
+     "drop": 1
+    },
+    "80": {
+     "cov_sum": 995,
+     "rounds": 18,
+     "wturns": 174,
+     "dry20": 94,
+     "passed": 11,
+     "nat": 6,
+     "splits": 3,
+     "death_H": 2,
+     "drop": 1
+    }
+   }
+  },
+  "deficit_len": 18,
+  "deficit_pop": 20,
+  "end": [
+   97,
+   2,
+   27,
+   1,
+   11
+  ],
+  "lens": [
+   [
+    0,
+    4,
+    4,
+    2,
+    2
+   ],
+   [
+    10,
+    4,
+    4,
+    2,
+    2
+   ],
+   [
+    20,
+    4,
+    6,
+    2,
+    3
+   ],
+   [
+    30,
+    4,
+    8,
+    2,
+    3
+   ],
+   [
+    40,
+    4,
+    10,
+    2,
+    5
+   ],
+   [
+    50,
+    4,
+    15,
+    2,
+    6
+   ],
+   [
+    60,
+    4,
+    16,
+    2,
+    7
+   ],
+   [
+    70,
+    4,
+    21,
+    2,
+    9
+   ],
+   [
+    80,
+    4,
+    22,
+    2,
+    10
+   ],
+   [
+    90,
+    4,
+    25,
+    2,
+    11
+   ]
+  ]
+ },
+ {
+  "map": "stripes",
+  "opponent": "opp-careful-queen",
+  "seed": 771001,
+  "side": "B",
+  "class": "elimination",
+  "rounds": 424,
+  "ours_total": 0,
+  "theirs_total": 72,
+  "ours_longest": 0,
+  "theirs_longest": 3,
+  "replay": "results\\20261003-224713-ablate-d440c5\\runs\\base\\replays\\opp-careful-queen-vs-base-stripes-s771001.replay",
+  "group": "elimination",
+  "us": "B",
+  "stats": {
+   "A": {
+    "0": {
+     "cov_sum": 373,
+     "rounds": 20,
+     "wturns": 29,
+     "nat": 3,
+     "splits": 1
+    },
+    "all": {
+     "cov_sum": 25332,
+     "rounds": 425,
+     "wturns": 9390,
+     "nat": 484,
+     "splits": 223,
+     "dry20": 3894,
+     "death_O": 29,
+     "death_W": 140,
+     "passed": 141,
+     "drop": 103,
+     "death_H": 25
+    },
+    "20": {
+     "cov_sum": 525,
+     "rounds": 20,
+     "wturns": 60,
+     "dry20": 20,
+     "nat": 3,
+     "splits": 2
+    },
+    "40": {
+     "cov_sum": 660,
+     "rounds": 20,
+     "wturns": 107,
+     "dry20": 34,
+     "nat": 10,
+     "death_O": 1,
+     "splits": 3
+    },
+    "60": {
+     "cov_sum": 948,
+     "rounds": 20,
+     "wturns": 184,
+     "splits": 6,
+     "dry20": 37,
+     "nat": 13,
+     "death_W": 2
+    },
+    "80": {
+     "cov_sum": 1073,
+     "rounds": 20,
+     "wturns": 243,
+     "dry20": 96,
+     "nat": 6,
+     "passed": 4,
+     "splits": 2
+    },
+    "100": {
+     "cov_sum": 1173,
+     "rounds": 20,
+     "wturns": 300,
+     "dry20": 162,
+     "nat": 18,
+     "passed": 2,
+     "splits": 7,
+     "death_W": 3
+    },
+    "late": {
+     "cov_sum": 20580,
+     "rounds": 305,
+     "wturns": 8467,
+     "dry20": 3545,
+     "splits": 202,
+     "nat": 431,
+     "death_W": 135,
+     "passed": 135,
+     "drop": 103,
+     "death_H": 25,
+     "death_O": 28
+    }
+   },
+   "B": {
+    "0": {
+     "cov_sum": 309,
+     "rounds": 20,
+     "wturns": 20
+    },
+    "all": {
+     "cov_sum": 3669,
+     "rounds": 425,
+     "wturns": 176,
+     "dry20": 131,
+     "nat": 6,
+     "splits": 2,
+     "death_W": 3,
+     "drop": 1,
+     "death_H": 1
+    },
+    "20": {
+     "cov_sum": 309,
+     "rounds": 20,
+     "wturns": 20,
+     "dry20": 20
+    },
+    "40": {
+     "cov_sum": 318,
+     "rounds": 20,
+     "wturns": 20,
+     "dry20": 20,
+     "nat": 1
+    },
+    "60": {
+     "cov_sum": 269,
+     "rounds": 20,
+     "wturns": 20,
+     "dry20": 20
+    },
+    "80": {
+     "cov_sum": 147,
+     "rounds": 20,
+     "wturns": 20,
+     "dry20": 20
+    },
+    "100": {
+     "cov_sum": 169,
+     "rounds": 20,
+     "wturns": 20,
+     "dry20": 20
+    },
+    "late": {
+     "cov_sum": 2148,
+     "rounds": 305,
+     "wturns": 56,
+     "dry20": 31,
+     "nat": 5,
+     "splits": 2,
+     "death_W": 3,
+     "drop": 1,
+     "death_H": 1
+    }
+   }
+  },
+  "deficit_len": 10,
+  "deficit_pop": 12,
+  "end": [
+   424,
+   3,
+   72,
+   1,
+   29
+  ],
+  "lens": [
+   [
+    0,
+    4,
+    4,
+    2,
+    2
+   ],
+   [
+    10,
+    4,
+    5,
+    2,
+    2
+   ],
+   [
+    20,
+    4,
+    7,
+    2,
+    3
+   ],
+   [
+    30,
+    4,
+    9,
+    2,
+    4
+   ],
+   [
+    40,
+    4,
+    10,
+    2,
+    5
+   ],
+   [
+    50,
+    4,
+    13,
+    2,
+    5
+   ],
+   [
+    60,
+    5,
+    18,
+    2,
+    7
+   ],
+   [
+    70,
+    5,
+    20,
+    2,
+    9
+   ],
+   [
+    80,
+    5,
+    25,
+    2,
+    11
+   ],
+   [
+    90,
+    5,
+    29,
+    2,
+    12
+   ],
+   [
+    100,
+    5,
+    31,
+    2,
+    13
+   ],
+   [
+    110,
+    5,
+    38,
+    2,
+    15
+   ],
+   [
+    120,
+    5,
+    41,
+    2,
+    17
+   ],
+   [
+    130,
+    5,
+    46,
+    2,
+    20
+   ],
+   [
+    140,
+    5,
+    49,
+    2,
+    22
+   ],
+   [
+    150,
+    5,
+    46,
+    2,
+    20
+   ],
+   [
+    160,
+    6,
+    49,
+    2,
+    21
+   ],
+   [
+    170,
+    6,
+    59,
+    2,
+    26
+   ],
+   [
+    180,
+    3,
+    63,
+    1,
+    30
+   ],
+   [
+    190,
+    3,
+    60,
+    1,
+    26
+   ],
+   [
+    200,
+    3,
+    59,
+    1,
+    25
+   ],
+   [
+    210,
+    3,
+    67,
+    1,
+    27
+   ],
+   [
+    220,
+    3,
+    58,
+    1,
+    23
+   ],
+   [
+    230,
+    3,
+    63,
+    1,
+    25
+   ],
+   [
+    240,
+    3,
+    64,
+    1,
+    26
+   ],
+   [
+    250,
+    3,
+    60,
+    1,
+    26
+   ],
+   [
+    260,
+    3,
+    66,
+    1,
+    28
+   ],
+   [
+    270,
+    3,
+    62,
+    1,
+    26
+   ],
+   [
+    280,
+    3,
+    73,
+    1,
+    29
+   ],
+   [
+    290,
+    3,
+    72,
+    1,
+    30
+   ],
+   [
+    300,
+    3,
+    74,
+    1,
+    33
+   ],
+   [
+    310,
+    3,
+    77,
+    1,
+    33
+   ],
+   [
+    320,
+    3,
+    75,
+    1,
+    32
+   ],
+   [
+    330,
+    3,
+    71,
+    1,
+    31
+   ],
+   [
+    340,
+    3,
+    59,
+    1,
+    25
+   ],
+   [
+    350,
+    3,
+    63,
+    1,
+    27
+   ],
+   [
+    360,
+    3,
+    67,
+    1,
+    29
+   ],
+   [
+    370,
+    3,
+    68,
+    1,
+    29
+   ],
+   [
+    380,
+    3,
+    75,
+    1,
+    31
+   ],
+   [
+    390,
+    3,
+    69,
+    1,
+    27
+   ],
+   [
+    400,
+    3,
+    64,
+    1,
+    27
+   ],
+   [
+    410,
+    4,
+    73,
+    1,
+    31
+   ],
+   [
+    420,
+    2,
+    72,
+    1,
+    31
+   ]
+  ]
+ },
+ {
+  "map": "stripes",
+  "opponent": "cpp_leviathan3",
+  "seed": 771001,
+  "side": "A",
+  "class": "elimination",
+  "rounds": 461,
+  "ours_total": 0,
+  "theirs_total": 84,
+  "ours_longest": 0,
+  "theirs_longest": 8,
+  "replay": "results\\20261003-224713-ablate-d440c5\\runs\\base\\replays\\base-vs-cpp_leviathan3-stripes-s771001.replay",
+  "group": "elimination",
+  "us": "A",
+  "stats": {
+   "A": {
+    "0": {
+     "cov_sum": 309,
+     "rounds": 20,
+     "wturns": 20
+    },
+    "all": {
+     "cov_sum": 4465,
+     "rounds": 462,
+     "wturns": 438,
+     "dry20": 264,
+     "nat": 12,
+     "drop": 5,
+     "passed": 8,
+     "splits": 7,
+     "death_W": 7,
+     "death_H": 2
+    },
+    "20": {
+     "cov_sum": 321,
+     "rounds": 20,
+     "wturns": 20,
+     "dry20": 20
+    },
+    "40": {
+     "cov_sum": 323,
+     "rounds": 20,
+     "wturns": 20,
+     "dry20": 20,
+     "nat": 1
+    },
+    "60": {
+     "cov_sum": 308,
+     "rounds": 20,
+     "wturns": 20,
+     "dry20": 20
+    },
+    "80": {
+     "cov_sum": 283,
+     "rounds": 20,
+     "wturns": 20,
+     "dry20": 20
+    },
+    "100": {
+     "cov_sum": 176,
+     "rounds": 20,
+     "wturns": 20,
+     "dry20": 20
+    },
+    "late": {
+     "cov_sum": 2745,
+     "rounds": 342,
+     "wturns": 318,
+     "dry20": 164,
+     "drop": 5,
+     "passed": 8,
+     "nat": 11,
+     "splits": 7,
+     "death_W": 7,
+     "death_H": 2
+    }
+   },
+   "B": {
+    "0": {
+     "cov_sum": 328,
+     "rounds": 20,
+     "wturns": 29,
+     "nat": 2,
+     "splits": 1
+    },
+    "all": {
+     "cov_sum": 25557,
+     "rounds": 462,
+     "wturns": 9144,
+     "nat": 450,
+     "splits": 194,
+     "dry20": 4554,
+     "passed": 149,
+     "death_W": 122,
+     "drop": 79,
+     "death_S": 28,
+     "death_H": 12,
+     "death_O": 8
+    },
+    "20": {
+     "cov_sum": 286,
+     "rounds": 20,
+     "wturns": 40,
+     "dry20": 28,
+     "nat": 2
+    },
+    "40": {
+     "cov_sum": 520,
+     "rounds": 20,
+     "wturns": 69,
+     "splits": 2,
+     "dry20": 20,
+     "nat": 4
+    },
+    "60": {
+     "cov_sum": 395,
+     "rounds": 20,
+     "wturns": 80,
+     "dry20": 43,
+     "nat": 2
+    },
+    "80": {
+     "cov_sum": 620,
+     "rounds": 20,
+     "splits": 9,
+     "wturns": 143,
+     "dry20": 38,
+     "nat": 19,
+     "passed": 6,
+     "death_W": 6
+    },
+    "100": {
+     "cov_sum": 930,
+     "rounds": 20,
+     "wturns": 240,
+     "dry20": 41,
+     "nat": 28,
+     "splits": 11,
+     "death_W": 5,
+     "passed": 6
+    },
+    "late": {
+     "cov_sum": 22478,
+     "rounds": 342,
+     "wturns": 8543,
+     "dry20": 4384,
+     "nat": 393,
+     "death_W": 111,
+     "passed": 137,
+     "splits": 171,
+     "drop": 79,
+     "death_S": 28,
+     "death_H": 12,
+     "death_O": 8
+    }
+   }
+  },
+  "deficit_len": 10,
+  "deficit_pop": 12,
+  "end": [
+   461,
+   3,
+   84,
+   1,
+   26
+  ],
+  "lens": [
+   [
+    0,
+    4,
+    4,
+    2,
+    2
+   ],
+   [
+    10,
+    4,
+    5,
+    2,
+    2
+   ],
+   [
+    20,
+    4,
+    6,
+    2,
+    3
+   ],
+   [
+    30,
+    4,
+    6,
+    2,
+    3
+   ],
+   [
+    40,
+    4,
+    8,
+    2,
+    3
+   ],
+   [
+    50,
+    4,
+    10,
+    2,
+    4
+   ],
+   [
+    60,
+    5,
+    12,
+    2,
+    5
+   ],
+   [
+    70,
+    5,
+    12,
+    2,
+    5
+   ],
+   [
+    80,
+    5,
+    14,
+    2,
+    5
+   ],
+   [
+    90,
+    5,
+    19,
+    2,
+    8
+   ],
+   [
+    100,
+    5,
+    17,
+    2,
+    8
+   ],
+   [
+    110,
+    5,
+    23,
+    2,
+    11
+   ],
+   [
+    120,
+    5,
+    30,
+    2,
+    14
+   ],
+   [
+    130,
+    5,
+    30,
+    2,
+    14
+   ],
+   [
+    140,
+    5,
+    40,
+    2,
+    19
+   ],
+   [
+    150,
+    5,
+    37,
+    2,
+    17
+   ],
+   [
+    160,
+    5,
+    43,
+    2,
+    19
+   ],
+   [
+    170,
+    5,
+    50,
+    2,
+    22
+   ],
+   [
+    180,
+    5,
+    49,
+    2,
+    22
+   ],
+   [
+    190,
+    5,
+    43,
+    2,
+    19
+   ],
+   [
+    200,
+    6,
+    47,
+    2,
+    20
+   ],
+   [
+    210,
+    6,
+    51,
+    2,
+    22
+   ],
+   [
+    220,
+    8,
+    47,
+    3,
+    20
+   ],
+   [
+    230,
+    6,
+    58,
+    2,
+    24
+   ],
+   [
+    240,
+    8,
+    60,
+    3,
+    25
+   ],
+   [
+    250,
+    8,
+    56,
+    3,
+    25
+   ],
+   [
+    260,
+    8,
+    57,
+    3,
+    26
+   ],
+   [
+    270,
+    6,
+    59,
+    2,
+    27
+   ],
+   [
+    280,
+    6,
+    69,
+    2,
+    29
+   ],
+   [
+    290,
+    7,
+    63,
+    3,
+    28
+   ],
+   [
+    300,
+    7,
+    60,
+    3,
+    28
+   ],
+   [
+    310,
+    7,
+    69,
+    3,
+    28
+   ],
+   [
+    320,
+    5,
+    72,
+    2,
+    30
+   ],
+   [
+    330,
+    5,
+    67,
+    2,
+    31
+   ],
+   [
+    340,
+    5,
+    71,
+    2,
+    32
+   ],
+   [
+    350,
+    4,
+    65,
+    2,
+    29
+   ],
+   [
+    360,
+    2,
+    71,
+    1,
+    26
+   ],
+   [
+    370,
+    2,
+    74,
+    1,
+    26
+   ],
+   [
+    380,
+    2,
+    81,
+    1,
+    26
+   ],
+   [
+    390,
+    3,
+    78,
+    1,
+    26
+   ],
+   [
+    400,
+    3,
+    80,
+    1,
+    25
+   ],
+   [
+    410,
+    3,
+    79,
+    1,
+    24
+   ],
+   [
+    420,
+    3,
+    79,
+    1,
+    23
+   ],
+   [
+    430,
+    3,
+    85,
+    1,
+    27
+   ],
+   [
+    440,
+    3,
+    86,
+    1,
+    28
+   ],
+   [
+    450,
+    3,
+    81,
+    1,
+    25
+   ],
+   [
+    460,
+    3,
+    84,
+    1,
+    25
+   ]
+  ]
+ },
+ {
+  "map": "stripes",
+  "opponent": "cpp_nicked_v92",
+  "seed": 771002,
+  "side": "B",
+  "class": "elimination",
+  "rounds": 119,
+  "ours_total": 0,
+  "theirs_total": 40,
+  "ours_longest": 0,
+  "theirs_longest": 5,
+  "replay": "results\\20261003-224713-ablate-d440c5\\runs\\base\\replays\\cpp_nicked_v92-vs-base-stripes-s771002.replay",
+  "group": "elimination",
+  "us": "B",
+  "stats": {
+   "A": {
+    "0": {
+     "cov_sum": 311,
+     "rounds": 20,
+     "wturns": 27,
+     "nat": 8,
+     "splits": 2,
+     "death_W": 1
+    },
+    "all": {
+     "cov_sum": 5135,
+     "rounds": 120,
+     "wturns": 994,
+     "nat": 125,
+     "splits": 53,
+     "death_W": 37,
+     "dry20": 145,
+     "drop": 14,
+     "death_H": 3,
+     "passed": 5
+    },
+    "20": {
+     "cov_sum": 578,
+     "rounds": 20,
+     "wturns": 73,
+     "nat": 11,
+     "splits": 6,
+     "death_W": 2
+    },
+    "40": {
+     "cov_sum": 913,
+     "rounds": 20,
+     "wturns": 158,
+     "nat": 16,
+     "splits": 6,
+     "dry20": 28,
+     "death_W": 3
+    },
+    "60": {
+     "cov_sum": 1056,
+     "rounds": 20,
+     "wturns": 209,
+     "nat": 28,
+     "dry20": 28,
+     "splits": 12,
+     "death_W": 9,
+     "drop": 6,
+     "death_H": 2
+    },
+    "80": {
+     "cov_sum": 1142,
+     "rounds": 20,
+     "wturns": 231,
+     "dry20": 38,
+     "splits": 11,
+     "nat": 28,
+     "death_W": 10,
+     "drop": 3,
+     "passed": 1
+    },
+    "100": {
+     "cov_sum": 1135,
+     "rounds": 20,
+     "wturns": 296,
+     "dry20": 51,
+     "splits": 16,
+     "death_W": 12,
+     "drop": 5,
+     "nat": 34,
+     "passed": 4,
+     "death_H": 1
+    }
+   },
+   "B": {
+    "0": {
+     "cov_sum": 276,
+     "rounds": 20,
+     "wturns": 20,
+     "nat": 1
+    },
+    "all": {
+     "cov_sum": 1176,
+     "rounds": 120,
+     "wturns": 117,
+     "nat": 2,
+     "dry20": 77,
+     "splits": 1,
+     "death_H": 3,
+     "drop": 1
+    },
+    "20": {
+     "cov_sum": 308,
+     "rounds": 20,
+     "wturns": 31,
+     "dry20": 20,
+     "nat": 1,
+     "splits": 1
+    },
+    "40": {
+     "cov_sum": 292,
+     "rounds": 20,
+     "wturns": 40,
+     "dry20": 31
+    },
+    "60": {
+     "cov_sum": 130,
+     "rounds": 20,
+     "wturns": 26,
+     "dry20": 26,
+     "death_H": 2
+    },
+    "80": {
+     "cov_sum": 97,
+     "rounds": 20,
+     "drop": 1
+    },
+    "100": {
+     "cov_sum": 73,
+     "rounds": 20,
+     "death_H": 1
+    }
+   }
+  },
+  "deficit_len": 13,
+  "deficit_pop": 27,
+  "end": [
+   119,
+   3,
+   40,
+   1,
+   16
+  ],
+  "lens": [
+   [
+    0,
+    4,
+    4,
+    2,
+    2
+   ],
+   [
+    10,
+    4,
+    4,
+    2,
+    2
+   ],
+   [
+    20,
+    5,
+    9,
+    2,
+    3
+   ],
+   [
+    30,
+    6,
+    10,
+    3,
+    4
+   ],
+   [
+    40,
+    6,
+    14,
+    3,
+    7
+   ],
+   [
+    50,
+    6,
+    21,
+    3,
+    9
+   ],
+   [
+    60,
+    6,
+    22,
+    3,
+    10
+   ],
+   [
+    70,
+    4,
+    27,
+    2,
+    11
+   ],
+   [
+    80,
+    2,
+    26,
+    1,
+    11
+   ],
+   [
+    90,
+    2,
+    30,
+    1,
+    13
+   ],
+   [
+    100,
+    3,
+    32,
+    1,
+    12
+   ],
+   [
+    110,
+    3,
+    38,
+    1,
+    13
+   ]
+  ]
+ },
+ {
+  "map": "trophy",
+  "opponent": "cpp_nicked_v75",
+  "seed": 771002,
+  "side": "A",
+  "class": "elimination",
+  "rounds": 74,
+  "ours_total": 0,
+  "theirs_total": 100,
+  "ours_longest": 0,
+  "theirs_longest": 3,
+  "replay": "results\\20261003-224713-ablate-d440c5\\runs\\base\\replays\\base-vs-cpp_nicked_v75-trophy-s771002.replay",
+  "group": "elimination",
+  "us": "A",
+  "stats": {
+   "A": {
+    "0": {
+     "cov_sum": 784,
+     "rounds": 20,
+     "wturns": 25,
+     "nat": 1,
+     "splits": 1
+    },
+    "all": {
+     "cov_sum": 4258,
+     "rounds": 75,
+     "wturns": 171,
+     "nat": 14,
+     "splits": 5,
+     "death_H": 7,
+     "dry20": 19
+    },
+    "20": {
+     "cov_sum": 1026,
+     "rounds": 20,
+     "wturns": 38,
+     "nat": 6,
+     "death_H": 1,
+     "splits": 2
+    },
+    "40": {
+     "cov_sum": 1667,
+     "rounds": 20,
+     "wturns": 79,
+     "nat": 5,
+     "splits": 2,
+     "death_H": 1,
+     "dry20": 4
+    },
+    "60": {
+     "cov_sum": 781,
+     "rounds": 15,
+     "wturns": 29,
+     "death_H": 5,
+     "dry20": 15,
+     "nat": 2
+    }
+   },
+   "B": {
+    "0": {
+     "cov_sum": 1130,
+     "rounds": 20,
+     "wturns": 48,
+     "nat": 11,
+     "splits": 5,
+     "passed": 1
+    },
+    "all": {
+     "cov_sum": 19707,
+     "rounds": 75,
+     "wturns": 1459,
+     "nat": 106,
+     "splits": 47,
+     "passed": 37,
+     "death_H": 7,
+     "dry20": 181,
+     "drop": 6
+    },
+    "20": {
+     "cov_sum": 4133,
+     "rounds": 20,
+     "wturns": 256,
+     "nat": 40,
+     "passed": 12,
+     "splits": 17,
+     "death_H": 1,
+     "dry20": 4
+    },
+    "40": {
+     "cov_sum": 7507,
+     "rounds": 20,
+     "splits": 16,
+     "wturns": 586,
+     "dry20": 37,
+     "nat": 37,
+     "passed": 17,
+     "death_H": 1,
+     "drop": 3
+    },
+    "60": {
+     "cov_sum": 6937,
+     "rounds": 15,
+     "death_H": 5,
+     "wturns": 569,
+     "dry20": 140,
+     "passed": 7,
+     "nat": 18,
+     "drop": 3,
+     "splits": 9
+    }
+   }
+  },
+  "deficit_len": 8,
+  "deficit_pop": 9,
+  "end": [
+   74,
+   2,
+   102,
+   1,
+   42
+  ],
+  "lens": [
+   [
+    0,
+    6,
+    6,
+    2,
+    2
+   ],
+   [
+    10,
+    6,
+    7,
+    2,
+    3
+   ],
+   [
+    20,
+    7,
+    17,
+    3,
+    7
+   ],
+   [
+    30,
+    6,
+    30,
+    2,
+    12
+   ],
+   [
+    40,
+    9,
+    54,
+    4,
+    23
+   ],
+   [
+    50,
+    13,
+    71,
+    6,
+    28
+   ],
+   [
+    60,
+    11,
+    91,
+    5,
+    38
+   ],
+   [
+    70,
+    2,
+    92,
+    1,
+    38
+   ]
+  ]
+ },
+ {
+  "map": "trophy",
+  "opponent": "opp-careful-queen",
+  "seed": 771001,
+  "side": "B",
+  "class": "elimination",
+  "rounds": 312,
+  "ours_total": 0,
+  "theirs_total": 178,
+  "ours_longest": 0,
+  "theirs_longest": 8,
+  "replay": "results\\20261003-224713-ablate-d440c5\\runs\\base\\replays\\opp-careful-queen-vs-base-trophy-s771001.replay",
+  "group": "elimination",
+  "us": "B",
+  "stats": {
+   "A": {
+    "0": {
+     "cov_sum": 1009,
+     "rounds": 20,
+     "wturns": 43,
+     "nat": 5,
+     "splits": 2,
+     "passed": 1
+    },
+    "all": {
+     "cov_sum": 119070,
+     "rounds": 313,
+     "wturns": 11510,
+     "nat": 514,
+     "splits": 190,
+     "passed": 52,
+     "dry20": 4362,
+     "death_H": 63,
+     "death_W": 64,
+     "death_O": 9,
+     "drop": 6
+    },
+    "20": {
+     "cov_sum": 2197,
+     "rounds": 20,
+     "wturns": 96,
+     "nat": 8,
+     "splits": 4,
+     "dry20": 4
+    },
+    "40": {
+     "cov_sum": 3017,
+     "rounds": 20,
+     "wturns": 158,
+     "dry20": 40,
+     "nat": 7,
+     "splits": 3,
+     "death_H": 1
+    },
+    "60": {
+     "cov_sum": 4964,
+     "rounds": 20,
+     "nat": 35,
+     "wturns": 320,
+     "dry20": 65,
+     "splits": 14
+    },
+    "80": {
+     "cov_sum": 6970,
+     "rounds": 20,
+     "wturns": 508,
+     "dry20": 137,
+     "splits": 8,
+     "nat": 24,
+     "passed": 6,
+     "death_H": 4,
+     "death_W": 2
+    },
+    "100": {
+     "cov_sum": 7074,
+     "rounds": 20,
+     "wturns": 549,
+     "dry20": 165,
+     "splits": 12,
+     "nat": 32,
+     "passed": 2,
+     "death_H": 2,
+     "death_W": 3,
+     "death_O": 1
+    },
+    "late": {
+     "cov_sum": 93839,
+     "rounds": 193,
+     "wturns": 9836,
+     "dry20": 3951,
+     "splits": 147,
+     "death_H": 56,
+     "nat": 403,
+     "passed": 43,
+     "death_W": 59,
+     "death_O": 8,
+     "drop": 6
+    }
+   },
+   "B": {
+    "0": {
+     "cov_sum": 979,
+     "rounds": 20,
+     "wturns": 45,
+     "nat": 5,
+     "splits": 3
+    },
+    "all": {
+     "cov_sum": 46865,
+     "rounds": 313,
+     "wturns": 2389,
+     "nat": 116,
+     "splits": 43,
+     "dry20": 940,
+     "death_W": 9,
+     "passed": 12,
+     "death_H": 35,
+     "death_O": 1
+    },
+    "20": {
+     "cov_sum": 1847,
+     "rounds": 20,
+     "wturns": 98,
+     "dry20": 8,
+     "nat": 8,
+     "splits": 3,
+     "death_W": 1
+    },
+    "40": {
+     "cov_sum": 2628,
+     "rounds": 20,
+     "wturns": 151,
+     "nat": 12,
+     "splits": 5,
+     "death_W": 2,
+     "dry20": 17,
+     "passed": 2,
+     "death_H": 1
+    },
+    "60": {
+     "cov_sum": 3457,
+     "rounds": 20,
+     "wturns": 168,
+     "dry20": 57,
+     "nat": 9,
+     "splits": 2,
+     "death_W": 2
+    },
+    "80": {
+     "cov_sum": 3297,
+     "rounds": 20,
+     "wturns": 178,
+     "dry20": 89,
+     "death_W": 1,
+     "nat": 8,
+     "splits": 5,
+     "death_H": 2
+    },
+    "100": {
+     "cov_sum": 4369,
+     "rounds": 20,
+     "wturns": 225,
+     "nat": 10,
+     "dry20": 79,
+     "splits": 3,
+     "passed": 3,
+     "death_W": 1
+    },
+    "late": {
+     "cov_sum": 30288,
+     "rounds": 193,
+     "wturns": 1524,
+     "dry20": 690,
+     "nat": 64,
+     "splits": 22,
+     "death_H": 32,
+     "passed": 7,
+     "death_W": 2,
+     "death_O": 1
+    }
+   }
+  },
+  "deficit_len": 59,
+  "deficit_pop": 60,
+  "end": [
+   312,
+   2,
+   177,
+   1,
+   56
+  ],
+  "lens": [
+   [
+    0,
+    6,
+    6,
+    2,
+    2
+   ],
+   [
+    10,
+    8,
+    8,
+    3,
+    3
+   ],
+   [
+    20,
+    11,
+    11,
+    5,
+    4
+   ],
+   [
+    30,
+    14,
+    15,
+    6,
+    6
+   ],
+   [
+    40,
+    17,
+    19,
+    7,
+    8
+   ],
+   [
+    50,
+    21,
+    22,
+    8,
+    9
+   ],
+   [
+    60,
+    21,
+    23,
+    9,
+    10
+   ],
+   [
+    70,
+    22,
+    41,
+    9,
+    16
+   ],
+   [
+    80,
+    25,
+    58,
+    9,
+    24
+   ],
+   [
+    90,
+    26,
+    66,
+    10,
+    26
+   ],
+   [
+    100,
+    25,
+    67,
+    11,
+    26
+   ],
+   [
+    110,
+    27,
+    71,
+    12,
+    26
+   ],
+   [
+    120,
+    33,
+    82,
+    13,
+    32
+   ],
+   [
+    130,
+    35,
+    88,
+    15,
+    35
+   ],
+   [
+    140,
+    32,
+    99,
+    15,
+    40
+   ],
+   [
+    150,
+    33,
+    111,
+    14,
+    44
+   ],
+   [
+    160,
+    36,
+    124,
+    16,
+    53
+   ],
+   [
+    170,
+    33,
+    112,
+    14,
+    46
+   ],
+   [
+    180,
+    26,
+    106,
+    10,
+    45
+   ],
+   [
+    190,
+    26,
+    118,
+    12,
+    49
+   ],
+   [
+    200,
+    28,
+    123,
+    11,
+    51
+   ],
+   [
+    210,
+    22,
+    126,
+    10,
+    53
+   ],
+   [
+    220,
+    22,
+    133,
+    10,
+    56
+   ],
+   [
+    230,
+    20,
+    142,
+    9,
+    56
+   ],
+   [
+    240,
+    17,
+    144,
+    7,
+    56
+   ],
+   [
+    250,
+    15,
+    151,
+    6,
+    56
+   ],
+   [
+    260,
+    8,
+    150,
+    3,
+    56
+   ],
+   [
+    270,
+    5,
+    159,
+    2,
+    56
+   ],
+   [
+    280,
+    5,
+    167,
+    2,
+    56
+   ],
+   [
+    290,
+    5,
+    167,
+    2,
+    56
+   ],
+   [
+    300,
+    5,
+    175,
+    2,
+    57
+   ],
+   [
+    310,
+    2,
+    179,
+    1,
+    54
+   ]
+  ]
+ },
+ {
+  "map": "trophy",
+  "opponent": "cpp_nicked_v75",
+  "seed": 771002,
+  "side": "B",
+  "class": "elimination",
+  "rounds": 254,
+  "ours_total": 0,
+  "theirs_total": 217,
+  "ours_longest": 0,
+  "theirs_longest": 18,
+  "replay": "results\\20261003-224713-ablate-d440c5\\runs\\base\\replays\\cpp_nicked_v75-vs-base-trophy-s771002.replay",
+  "group": "elimination",
+  "us": "B",
+  "stats": {
+   "A": {
+    "0": {
+     "cov_sum": 1130,
+     "rounds": 20,
+     "wturns": 48,
+     "nat": 11,
+     "splits": 5,
+     "passed": 1
+    },
+    "all": {
+     "cov_sum": 107568,
+     "rounds": 255,
+     "wturns": 9319,
+     "nat": 361,
+     "splits": 95,
+     "passed": 159,
+     "death_H": 28,
+     "dry20": 4716,
+     "death_O": 4,
+     "death_W": 19,
+     "drop": 7
+    },
+    "20": {
+     "cov_sum": 4056,
+     "rounds": 20,
+     "wturns": 238,
+     "nat": 35,
+     "splits": 14,
+     "passed": 8,
+     "death_H": 2,
+     "dry20": 8
+    },
+    "40": {
+     "cov_sum": 6550,
+     "rounds": 20,
+     "wturns": 466,
+     "dry20": 21,
+     "nat": 35,
+     "splits": 16,
+     "death_H": 5,
+     "passed": 12
+    },
+    "60": {
+     "cov_sum": 7862,
+     "rounds": 20,
+     "wturns": 585,
+     "dry20": 139,
+     "nat": 15,
+     "death_H": 3,
+     "passed": 7,
+     "splits": 6,
+     "death_O": 1
+    },
+    "80": {
+     "cov_sum": 9214,
+     "rounds": 20,
+     "wturns": 715,
+     "dry20": 285,
+     "nat": 36,
+     "splits": 12,
+     "passed": 23,
+     "death_W": 2,
+     "death_H": 4
+    },
+    "100": {
+     "cov_sum": 9818,
+     "rounds": 20,
+     "wturns": 883,
+     "dry20": 314,
+     "nat": 43,
+     "passed": 19,
+     "splits": 14,
+     "death_H": 1,
+     "death_W": 3
+    },
+    "late": {
+     "cov_sum": 68938,
+     "rounds": 135,
+     "wturns": 6384,
+     "dry20": 3949,
+     "nat": 186,
+     "passed": 89,
+     "death_W": 14,
+     "splits": 28,
+     "death_H": 13,
+     "death_O": 3,
+     "drop": 7
+    }
+   },
+   "B": {
+    "0": {
+     "cov_sum": 915,
+     "rounds": 20,
+     "wturns": 38,
+     "nat": 7,
+     "splits": 3,
+     "death_W": 1
+    },
+    "all": {
+     "cov_sum": 16521,
+     "rounds": 255,
+     "wturns": 1071,
+     "nat": 62,
+     "splits": 29,
+     "death_W": 4,
+     "death_H": 26,
+     "passed": 5,
+     "dry20": 238,
+     "drop": 10,
+     "death_O": 1
+    },
+    "20": {
+     "cov_sum": 2183,
+     "rounds": 20,
+     "wturns": 133,
+     "splits": 7,
+     "nat": 17,
+     "death_H": 2,
+     "passed": 1,
+     "death_W": 1
+    },
+    "40": {
+     "cov_sum": 2866,
+     "rounds": 20,
+     "wturns": 166,
+     "splits": 4,
+     "passed": 1,
+     "death_H": 5,
+     "nat": 9
+    },
+    "60": {
+     "cov_sum": 2246,
+     "rounds": 20,
+     "wturns": 139,
+     "dry20": 27,
+     "death_H": 3,
+     "nat": 14,
+     "splits": 7,
+     "passed": 1,
+     "drop": 4,
+     "death_O": 1
+    },
+    "80": {
+     "cov_sum": 2667,
+     "rounds": 20,
+     "wturns": 168,
+     "dry20": 35,
+     "death_H": 4,
+     "nat": 2,
+     "death_W": 1,
+     "passed": 1
+    },
+    "100": {
+     "cov_sum": 1064,
+     "rounds": 20,
+     "wturns": 88,
+     "dry20": 60,
+     "death_H": 1,
+     "nat": 2,
+     "splits": 1
+    },
+    "late": {
+     "cov_sum": 4580,
+     "rounds": 135,
+     "wturns": 339,
+     "dry20": 116,
+     "nat": 11,
+     "splits": 7,
+     "death_W": 1,
+     "death_H": 11,
+     "passed": 1,
+     "drop": 6
+    }
+   }
+  },
+  "deficit_len": 15,
+  "deficit_pop": 14,
+  "end": [
+   254,
+   4,
+   220,
+   1,
+   47
+  ],
+  "lens": [
+   [
+    0,
+    6,
+    6,
+    2,
+    2
+   ],
+   [
+    10,
+    7,
+    7,
+    3,
+    3
+   ],
+   [
+    20,
+    11,
+    17,
+    4,
+    7
+   ],
+   [
+    30,
+    16,
+    28,
+    6,
+    11
+   ],
+   [
+    40,
+    19,
+    46,
+    8,
+    19
+   ],
+   [
+    50,
+    19,
+    55,
+    9,
+    22
+   ],
+   [
+    60,
+    15,
+    69,
+    7,
+    30
+   ],
+   [
+    70,
+    15,
+    72,
+    6,
+    31
+   ],
+   [
+    80,
+    23,
+    74,
+    10,
+    32
+   ],
+   [
+    90,
+    21,
+    88,
+    9,
+    36
+   ],
+   [
+    100,
+    12,
+    96,
+    5,
+    38
+   ],
+   [
+    110,
+    10,
+    111,
+    4,
+    46
+   ],
+   [
+    120,
+    11,
+    128,
+    5,
+    48
+   ],
+   [
+    130,
+    11,
+    137,
+    5,
+    48
+   ],
+   [
+    140,
+    11,
+    149,
+    5,
+    49
+   ],
+   [
+    150,
+    11,
+    151,
+    5,
+    48
+   ],
+   [
+    160,
+    7,
+    157,
+    3,
+    48
+   ],
+   [
+    170,
+    7,
+    165,
+    3,
+    48
+   ],
+   [
+    180,
+    6,
+    171,
+    2,
+    48
+   ],
+   [
+    190,
+    3,
+    179,
+    1,
+    48
+   ],
+   [
+    200,
+    3,
+    185,
+    1,
+    48
+   ],
+   [
+    210,
+    3,
+    194,
+    1,
+    48
+   ],
+   [
+    220,
+    3,
+    207,
+    1,
+    49
+   ],
+   [
+    230,
+    3,
+    208,
+    1,
+    48
+   ],
+   [
+    240,
+    4,
+    215,
+    2,
+    48
+   ],
+   [
+    250,
+    5,
+    222,
+    2,
+    48
+   ]
+  ]
+ },
+ {
+  "map": "trophy",
+  "opponent": "cpp_nicked_v92",
+  "seed": 771001,
+  "side": "B",
+  "class": "elimination",
+  "rounds": 130,
+  "ours_total": 0,
+  "theirs_total": 133,
+  "ours_longest": 0,
+  "theirs_longest": 5,
+  "replay": "results\\20261003-224713-ablate-d440c5\\runs\\base\\replays\\cpp_nicked_v92-vs-base-trophy-s771001.replay",
+  "group": "elimination",
+  "us": "B",
+  "stats": {
+   "A": {
+    "0": {
+     "cov_sum": 1162,
+     "rounds": 20,
+     "wturns": 43,
+     "nat": 7,
+     "splits": 3
+    },
+    "all": {
+     "cov_sum": 41364,
+     "rounds": 131,
+     "wturns": 3187,
+     "nat": 176,
+     "splits": 65,
+     "passed": 59,
+     "dry20": 765,
+     "death_H": 16,
+     "death_W": 3
+    },
+    "20": {
+     "cov_sum": 3608,
+     "rounds": 20,
+     "splits": 13,
+     "wturns": 222,
+     "nat": 29,
+     "passed": 5
+    },
+    "40": {
+     "cov_sum": 5631,
+     "rounds": 20,
+     "wturns": 381,
+     "passed": 10,
+     "nat": 24,
+     "splits": 8,
+     "dry20": 49,
+     "death_H": 2
+    },
+    "60": {
+     "cov_sum": 7150,
+     "rounds": 20,
+     "wturns": 545,
+     "dry20": 119,
+     "nat": 23,
+     "splits": 8,
+     "passed": 11,
+     "death_H": 4
+    },
+    "80": {
+     "cov_sum": 8255,
+     "rounds": 20,
+     "wturns": 658,
+     "dry20": 196,
+     "splits": 14,
+     "nat": 30,
+     "passed": 18,
+     "death_H": 3
+    },
+    "100": {
+     "cov_sum": 9847,
+     "rounds": 20,
+     "wturns": 824,
+     "dry20": 230,
+     "death_H": 5,
+     "passed": 8,
+     "nat": 44,
+     "splits": 16,
+     "death_W": 3
+    },
+    "late": {
+     "cov_sum": 5711,
+     "rounds": 11,
+     "wturns": 514,
+     "dry20": 171,
+     "nat": 19,
+     "death_H": 2,
+     "splits": 3,
+     "passed": 7
+    }
+   },
+   "B": {
+    "0": {
+     "cov_sum": 973,
+     "rounds": 20,
+     "wturns": 45,
+     "nat": 5,
+     "splits": 3
+    },
+    "all": {
+     "cov_sum": 12775,
+     "rounds": 131,
+     "wturns": 686,
+     "nat": 37,
+     "splits": 15,
+     "dry20": 211,
+     "death_H": 16,
+     "drop": 3,
+     "death_W": 1
+    },
+    "20": {
+     "cov_sum": 1826,
+     "rounds": 20,
+     "wturns": 105,
+     "nat": 8,
+     "splits": 3,
+     "dry20": 14
+    },
+    "40": {
+     "cov_sum": 2942,
+     "rounds": 20,
+     "wturns": 163,
+     "nat": 6,
+     "splits": 3,
+     "dry20": 33,
+     "death_H": 2
+    },
+    "60": {
+     "cov_sum": 2961,
+     "rounds": 20,
+     "wturns": 149,
+     "dry20": 108,
+     "nat": 5,
+     "death_H": 4,
+     "splits": 2,
+     "drop": 2
+    },
+    "80": {
+     "cov_sum": 2676,
+     "rounds": 20,
+     "wturns": 144,
+     "dry20": 29,
+     "drop": 1,
+     "nat": 5,
+     "death_H": 3,
+     "splits": 2
+    },
+    "100": {
+     "cov_sum": 1264,
+     "rounds": 20,
+     "wturns": 66,
+     "dry20": 24,
+     "nat": 6,
+     "death_H": 5,
+     "splits": 1
+    },
+    "late": {
+     "cov_sum": 133,
+     "rounds": 11,
+     "wturns": 14,
+     "death_H": 2,
+     "dry20": 3,
+     "nat": 2,
+     "splits": 1,
+     "death_W": 1
+    }
+   }
+  },
+  "deficit_len": 20,
+  "deficit_pop": 21,
+  "end": [
+   130,
+   4,
+   132,
+   2,
+   48
+  ],
+  "lens": [
+   [
+    0,
+    6,
+    6,
+    2,
+    2
+   ],
+   [
+    10,
+    8,
+    8,
+    3,
+    3
+   ],
+   [
+    20,
+    11,
+    13,
+    5,
+    5
+   ],
+   [
+    30,
+    14,
+    28,
+    6,
+    10
+   ],
+   [
+    40,
+    19,
+    42,
+    8,
+    18
+   ],
+   [
+    50,
+    20,
+    47,
+    9,
+    19
+   ],
+   [
+    60,
+    19,
+    59,
+    9,
+    24
+   ],
+   [
+    70,
+    18,
+    66,
+    8,
+    29
+   ],
+   [
+    80,
+    16,
+    72,
+    7,
+    28
+   ],
+   [
+    90,
+    19,
+    83,
+    8,
+    34
+   ],
+   [
+    100,
+    14,
+    95,
+    6,
+    39
+   ],
+   [
+    110,
+    7,
+    102,
+    3,
+    40
+   ],
+   [
+    120,
+    6,
+    118,
+    2,
+    47
+   ],
+   [
+    130,
+    4,
+    132,
+    2,
+    48
+   ]
+  ]
+ },
+ {
+  "map": "dilemma",
+  "opponent": "cpp_nicked_v75",
+  "seed": 771001,
+  "side": "A",
+  "class": "elimination",
+  "rounds": 350,
+  "ours_total": 0,
+  "theirs_total": 17,
+  "ours_longest": 0,
+  "theirs_longest": 3,
+  "replay": "results\\20261003-224713-ablate-d440c5\\runs\\base\\replays\\base-vs-cpp_nicked_v75-dilemma-s771001.replay",
+  "group": "elimination",
+  "us": "A",
+  "stats": {
+   "A": {
+    "0": {
+     "cov_sum": 512,
+     "rounds": 20,
+     "wturns": 109,
+     "splits": 7,
+     "nat": 6,
+     "death_W": 3,
+     "death_H": 1,
+     "drop": 1
+    },
+    "all": {
+     "cov_sum": 10648,
+     "rounds": 351,
+     "wturns": 1381,
+     "splits": 38,
+     "nat": 63,
+     "death_W": 21,
+     "death_H": 20,
+     "drop": 20,
+     "dry20": 667,
+     "passed": 3
+    },
+    "20": {
+     "cov_sum": 228,
+     "rounds": 20,
+     "wturns": 100,
+     "dry20": 82
+    },
+    "40": {
+     "cov_sum": 839,
+     "rounds": 20,
+     "wturns": 99,
+     "dry20": 78,
+     "drop": 2,
+     "splits": 3,
+     "nat": 4,
+     "death_H": 2,
+     "death_W": 2
+    },
+    "60": {
+     "cov_sum": 431,
+     "rounds": 20,
+     "wturns": 78,
+     "dry20": 56,
+     "death_H": 1,
+     "nat": 1,
+     "drop": 2,
+     "splits": 1
+    },
+    "80": {
+     "cov_sum": 752,
+     "rounds": 20,
+     "wturns": 83,
+     "dry20": 42,
+     "drop": 1,
+     "splits": 2,
+     "death_H": 1,
+     "nat": 5,
+     "passed": 1,
+     "death_W": 1
+    },
+    "100": {
+     "cov_sum": 886,
+     "rounds": 20,
+     "wturns": 86,
+     "dry20": 27,
+     "splits": 1,
+     "death_H": 1
+    },
+    "late": {
+     "cov_sum": 7000,
+     "rounds": 231,
+     "wturns": 826,
+     "dry20": 382,
+     "nat": 47,
+     "splits": 24,
+     "death_W": 15,
+     "death_H": 14,
+     "drop": 14,
+     "passed": 2
+    }
+   },
+   "B": {
+    "0": {
+     "cov_sum": 933,
+     "rounds": 20,
+     "wturns": 118,
+     "splits": 8,
+     "nat": 8,
+     "death_W": 3,
+     "death_H": 1,
+     "drop": 1
+    },
+    "all": {
+     "cov_sum": 15357,
+     "rounds": 351,
+     "wturns": 2130,
+     "splits": 40,
+     "nat": 71,
+     "death_W": 17,
+     "death_H": 20,
+     "drop": 21,
+     "dry20": 1102,
+     "passed": 16
+    },
+    "20": {
+     "cov_sum": 1096,
+     "rounds": 20,
+     "wturns": 139,
+     "dry20": 82,
+     "nat": 6,
+     "splits": 3,
+     "death_W": 3,
+     "drop": 2
+    },
+    "40": {
+     "cov_sum": 859,
+     "rounds": 20,
+     "wturns": 133,
+     "dry20": 92,
+     "drop": 4,
+     "nat": 3,
+     "splits": 2,
+     "death_W": 1,
+     "death_H": 2,
+     "passed": 1
+    },
+    "60": {
+     "cov_sum": 761,
+     "rounds": 20,
+     "wturns": 116,
+     "dry20": 82,
+     "death_H": 1,
+     "nat": 2,
+     "splits": 1,
+     "death_W": 1
+    },
+    "80": {
+     "cov_sum": 512,
+     "rounds": 20,
+     "wturns": 95,
+     "dry20": 79,
+     "death_H": 1
+    },
+    "100": {
+     "cov_sum": 461,
+     "rounds": 20,
+     "wturns": 78,
+     "dry20": 54,
+     "death_H": 1,
+     "drop": 2,
+     "splits": 1,
+     "nat": 2
+    },
+    "late": {
+     "cov_sum": 10735,
+     "rounds": 231,
+     "wturns": 1451,
+     "splits": 25,
+     "dry20": 713,
+     "death_W": 9,
+     "nat": 50,
+     "death_H": 14,
+     "drop": 12,
+     "passed": 15
+    }
+   }
+  },
+  "deficit_len": 235,
+  "deficit_pop": 236,
+  "end": [
+   350,
+   3,
+   20,
+   1,
+   7
+  ],
+  "lens": [
+   [
+    0,
+    17,
+    17,
+    3,
+    3
+   ],
+   [
+    10,
+    14,
+    15,
+    6,
+    6
+   ],
+   [
+    20,
+    14,
+    16,
+    6,
+    7
+   ],
+   [
+    30,
+    14,
+    16,
+    6,
+    7
+   ],
+   [
+    40,
+    14,
+    15,
+    6,
+    7
+   ],
+   [
+    50,
+    15,
+    14,
+    7,
+    6
+   ],
+   [
+    60,
+    11,
+    15,
+    5,
+    6
+   ],
+   [
+    70,
+    11,
+    15,
+    5,
+    6
+   ],
+   [
+    80,
+    12,
+    12,
+    5,
+    5
+   ],
+   [
+    90,
+    12,
+    12,
+    5,
+    5
+   ],
+   [
+    100,
+    14,
+    9,
+    5,
+    4
+   ],
+   [
+    110,
+    12,
+    9,
+    5,
+    4
+   ],
+   [
+    120,
+    12,
+    11,
+    5,
+    4
+   ],
+   [
+    130,
+    12,
+    9,
+    5,
+    4
+   ],
+   [
+    140,
+    10,
+    6,
+    4,
+    3
+   ],
+   [
+    150,
+    11,
+    7,
+    4,
+    3
+   ],
+   [
+    160,
+    10,
+    9,
+    4,
+    4
+   ],
+   [
+    170,
+    10,
+    10,
+    4,
+    4
+   ],
+   [
+    180,
+    14,
+    12,
+    5,
+    5
+   ],
+   [
+    190,
+    15,
+    13,
+    6,
+    5
+   ],
+   [
+    200,
+    16,
+    12,
+    7,
+    6
+   ],
+   [
+    210,
+    16,
+    14,
+    6,
+    6
+   ],
+   [
+    220,
+    17,
+    17,
+    6,
+    8
+   ],
+   [
+    230,
+    16,
+    16,
+    7,
+    7
+   ],
+   [
+    240,
+    10,
+    16,
+    4,
+    7
+   ],
+   [
+    250,
+    6,
+    19,
+    2,
+    8
+   ],
+   [
+    260,
+    10,
+    18,
+    4,
+    8
+   ],
+   [
+    270,
+    10,
+    18,
+    4,
+    8
+   ],
+   [
+    280,
+    12,
+    18,
+    5,
+    8
+   ],
+   [
+    290,
+    8,
+    18,
+    3,
+    7
+   ],
+   [
+    300,
+    8,
+    18,
+    3,
+    7
+   ],
+   [
+    310,
+    6,
+    17,
+    2,
+    7
+   ],
+   [
+    320,
+    6,
+    18,
+    2,
+    7
+   ],
+   [
+    330,
+    6,
+    17,
+    2,
+    7
+   ],
+   [
+    340,
+    3,
+    19,
+    1,
+    7
+   ],
+   [
+    350,
+    3,
+    20,
+    1,
+    7
+   ]
+  ]
+ },
+ {
+  "map": "dilemma",
+  "opponent": "opp-careful-queen",
+  "seed": 771003,
+  "side": "B",
+  "class": "elimination",
+  "rounds": 436,
+  "ours_total": 0,
+  "theirs_total": 64,
+  "ours_longest": 0,
+  "theirs_longest": 3,
+  "replay": "results\\20261003-224713-ablate-d440c5\\runs\\base\\replays\\opp-careful-queen-vs-base-dilemma-s771003.replay",
+  "group": "elimination",
+  "us": "B",
+  "stats": {
+   "A": {
+    "0": {
+     "cov_sum": 803,
+     "rounds": 20,
+     "wturns": 123,
+     "splits": 8,
+     "nat": 7,
+     "death_W": 3,
+     "drop": 2
+    },
+    "all": {
+     "cov_sum": 27692,
+     "rounds": 437,
+     "wturns": 6719,
+     "splits": 88,
+     "nat": 171,
+     "death_W": 56,
+     "drop": 27,
+     "dry20": 4419,
+     "death_H": 8,
+     "passed": 3
+    },
+    "20": {
+     "cov_sum": 918,
+     "rounds": 20,
+     "wturns": 131,
+     "dry20": 65,
+     "drop": 3,
+     "nat": 7,
+     "death_W": 4,
+     "splits": 3
+    },
+    "40": {
+     "cov_sum": 1053,
+     "rounds": 20,
+     "wturns": 143,
+     "dry20": 73,
+     "drop": 1,
+     "splits": 3,
+     "nat": 4,
+     "death_W": 2
+    },
+    "60": {
+     "cov_sum": 946,
+     "rounds": 20,
+     "wturns": 142,
+     "dry20": 111,
+     "nat": 2,
+     "splits": 1,
+     "death_W": 1,
+     "drop": 1
+    },
+    "80": {
+     "cov_sum": 1139,
+     "rounds": 20,
+     "wturns": 146,
+     "dry20": 117,
+     "nat": 4,
+     "splits": 2,
+     "death_W": 2,
+     "drop": 1
+    },
+    "100": {
+     "cov_sum": 933,
+     "rounds": 20,
+     "wturns": 148,
+     "dry20": 101,
+     "drop": 4,
+     "nat": 13,
+     "splits": 6,
+     "death_H": 1,
+     "death_W": 4
+    },
+    "late": {
+     "cov_sum": 21900,
+     "rounds": 317,
+     "wturns": 5886,
+     "splits": 65,
+     "death_W": 40,
+     "dry20": 3952,
+     "nat": 134,
+     "drop": 15,
+     "death_H": 7,
+     "passed": 3
+    }
+   },
+   "B": {
+    "0": {
+     "cov_sum": 805,
+     "rounds": 20,
+     "wturns": 124,
+     "splits": 8,
+     "nat": 8,
+     "death_W": 4,
+     "drop": 1
+    },
+    "all": {
+     "cov_sum": 11419,
+     "rounds": 437,
+     "wturns": 1794,
+     "splits": 25,
+     "nat": 48,
+     "death_W": 20,
+     "drop": 10,
+     "dry20": 1278,
+     "death_H": 8
+    },
+    "20": {
+     "cov_sum": 751,
+     "rounds": 20,
+     "wturns": 123,
+     "dry20": 82,
+     "drop": 1,
+     "nat": 2,
+     "splits": 1,
+     "death_W": 1
+    },
+    "40": {
+     "cov_sum": 1094,
+     "rounds": 20,
+     "wturns": 126,
+     "dry20": 102,
+     "drop": 2,
+     "nat": 4,
+     "splits": 2,
+     "death_W": 2
+    },
+    "60": {
+     "cov_sum": 941,
+     "rounds": 20,
+     "wturns": 126,
+     "dry20": 100,
+     "drop": 2,
+     "nat": 4,
+     "splits": 2,
+     "death_W": 2
+    },
+    "80": {
+     "cov_sum": 974,
+     "rounds": 20,
+     "wturns": 120,
+     "dry20": 107
+    },
+    "100": {
+     "cov_sum": 883,
+     "rounds": 20,
+     "wturns": 122,
+     "dry20": 103,
+     "nat": 2,
+     "splits": 1,
+     "death_W": 1,
+     "death_H": 1
+    },
+    "late": {
+     "cov_sum": 5971,
+     "rounds": 317,
+     "wturns": 1053,
+     "dry20": 784,
+     "nat": 28,
+     "splits": 11,
+     "death_W": 10,
+     "drop": 4,
+     "death_H": 7
+    }
+   }
+  },
+  "deficit_len": 104,
+  "deficit_pop": 106,
+  "end": [
+   436,
+   3,
+   67,
+   1,
+   28
+  ],
+  "lens": [
+   [
+    0,
+    17,
+    17,
+    3,
+    3
+   ],
+   [
+    10,
+    16,
+    16,
+    7,
+    7
+   ],
+   [
+    20,
+    16,
+    18,
+    7,
+    8
+   ],
+   [
+    30,
+    16,
+    16,
+    7,
+    7
+   ],
+   [
+    40,
+    16,
+    16,
+    7,
+    7
+   ],
+   [
+    50,
+    19,
+    17,
+    8,
+    8
+   ],
+   [
+    60,
+    16,
+    17,
+    7,
+    8
+   ],
+   [
+    70,
+    16,
+    17,
+    7,
+    8
+   ],
+   [
+    80,
+    16,
+    18,
+    7,
+    8
+   ],
+   [
+    90,
+    16,
+    17,
+    7,
+    8
+   ],
+   [
+    100,
+    16,
+    17,
+    7,
+    8
+   ],
+   [
+    110,
+    13,
+    17,
+    6,
+    8
+   ],
+   [
+    120,
+    13,
+    22,
+    6,
+    9
+   ],
+   [
+    130,
+    13,
+    18,
+    6,
+    8
+   ],
+   [
+    140,
+    15,
+    20,
+    7,
+    9
+   ],
+   [
+    150,
+    15,
+    18,
+    7,
+    8
+   ],
+   [
+    160,
+    12,
+    21,
+    6,
+    10
+   ],
+   [
+    170,
+    13,
+    24,
+    5,
+    11
+   ],
+   [
+    180,
+    10,
+    29,
+    5,
+    13
+   ],
+   [
+    190,
+    6,
+    34,
+    3,
+    16
+   ],
+   [
+    200,
+    6,
+    36,
+    3,
+    16
+   ],
+   [
+    210,
+    6,
+    36,
+    3,
+    15
+   ],
+   [
+    220,
+    6,
+    37,
+    3,
+    16
+   ],
+   [
+    230,
+    6,
+    39,
+    3,
+    17
+   ],
+   [
+    240,
+    6,
+    43,
+    3,
+    19
+   ],
+   [
+    250,
+    6,
+    46,
+    3,
+    20
+   ],
+   [
+    260,
+    6,
+    46,
+    3,
+    20
+   ],
+   [
+    270,
+    6,
+    47,
+    3,
+    20
+   ],
+   [
+    280,
+    6,
+    45,
+    3,
+    20
+   ],
+   [
+    290,
+    6,
+    47,
+    3,
+    21
+   ],
+   [
+    300,
+    6,
+    45,
+    3,
+    20
+   ],
+   [
+    310,
+    6,
+    45,
+    3,
+    20
+   ],
+   [
+    320,
+    7,
+    47,
+    3,
+    20
+   ],
+   [
+    330,
+    7,
+    45,
+    3,
+    20
+   ],
+   [
+    340,
+    7,
+    45,
+    3,
+    20
+   ],
+   [
+    350,
+    7,
+    50,
+    3,
+    20
+   ],
+   [
+    360,
+    5,
+    50,
+    2,
+    23
+   ],
+   [
+    370,
+    5,
+    51,
+    2,
+    23
+   ],
+   [
+    380,
+    5,
+    52,
+    2,
+    23
+   ],
+   [
+    390,
+    5,
+    56,
+    2,
+    25
+   ],
+   [
+    400,
+    5,
+    62,
+    2,
+    27
+   ],
+   [
+    410,
+    6,
+    61,
+    2,
+    27
+   ],
+   [
+    420,
+    3,
+    63,
+    1,
+    27
+   ],
+   [
+    430,
+    3,
+    65,
+    1,
+    28
+   ]
+  ]
+ },
+ {
+  "map": "dilemma",
+  "opponent": "cpp_nicked_v75",
+  "seed": 771001,
+  "side": "B",
+  "class": "elimination",
+  "rounds": 335,
+  "ours_total": 0,
+  "theirs_total": 47,
+  "ours_longest": 0,
+  "theirs_longest": 3,
+  "replay": "results\\20261003-224713-ablate-d440c5\\runs\\base\\replays\\cpp_nicked_v75-vs-base-dilemma-s771001.replay",
+  "group": "elimination",
+  "us": "B",
+  "stats": {
+   "A": {
+    "0": {
+     "cov_sum": 844,
+     "rounds": 20,
+     "wturns": 119,
+     "splits": 6,
+     "nat": 4,
+     "death_W": 2
+    },
+    "all": {
+     "cov_sum": 19976,
+     "rounds": 336,
+     "wturns": 4253,
+     "splits": 53,
+     "nat": 96,
+     "death_W": 28,
+     "dry20": 2899,
+     "drop": 19,
+     "death_H": 6,
+     "passed": 7
+    },
+    "20": {
+     "cov_sum": 858,
+     "rounds": 20,
+     "wturns": 127,
+     "dry20": 101,
+     "drop": 1,
+     "splits": 2,
+     "nat": 2,
+     "death_W": 1
+    },
+    "40": {
+     "cov_sum": 1021,
+     "rounds": 20,
+     "wturns": 145,
+     "dry20": 96,
+     "drop": 1,
+     "nat": 4,
+     "splits": 2,
+     "death_W": 2
+    },
+    "60": {
+     "cov_sum": 1061,
+     "rounds": 20,
+     "wturns": 142,
+     "dry20": 107,
+     "nat": 2,
+     "splits": 1,
+     "death_W": 1
+    },
+    "80": {
+     "cov_sum": 707,
+     "rounds": 20,
+     "wturns": 143,
+     "dry20": 122,
+     "drop": 1,
+     "nat": 2,
+     "splits": 1,
+     "death_W": 1
+    },
+    "100": {
+     "cov_sum": 913,
+     "rounds": 20,
+     "wturns": 116,
+     "dry20": 95,
+     "nat": 4,
+     "death_H": 3,
+     "splits": 2,
+     "death_W": 1,
+     "drop": 2,
+     "passed": 1
+    },
+    "late": {
+     "cov_sum": 14572,
+     "rounds": 216,
+     "wturns": 3461,
+     "dry20": 2378,
+     "nat": 78,
+     "death_H": 3,
+     "splits": 39,
+     "drop": 14,
+     "death_W": 20,
+     "passed": 6
+    }
+   },
+   "B": {
+    "0": {
+     "cov_sum": 639,
+     "rounds": 20,
+     "wturns": 122,
+     "splits": 7,
+     "nat": 6,
+     "death_W": 3,
+     "drop": 1
+    },
+    "all": {
+     "cov_sum": 5216,
+     "rounds": 336,
+     "wturns": 688,
+     "splits": 17,
+     "nat": 28,
+     "death_W": 13,
+     "drop": 11,
+     "dry20": 380,
+     "death_O": 1,
+     "death_H": 6
+    },
+    "20": {
+     "cov_sum": 498,
+     "rounds": 20,
+     "wturns": 119,
+     "dry20": 81,
+     "drop": 2,
+     "nat": 4,
+     "splits": 2,
+     "death_W": 2,
+     "death_O": 1
+    },
+    "40": {
+     "cov_sum": 711,
+     "rounds": 20,
+     "wturns": 106,
+     "dry20": 63,
+     "nat": 4,
+     "splits": 2,
+     "drop": 1,
+     "death_W": 2
+    },
+    "60": {
+     "cov_sum": 641,
+     "rounds": 20,
+     "wturns": 103,
+     "dry20": 87,
+     "drop": 1,
+     "nat": 2,
+     "splits": 1,
+     "death_W": 1
+    },
+    "80": {
+     "cov_sum": 807,
+     "rounds": 20,
+     "wturns": 100,
+     "dry20": 87
+    },
+    "100": {
+     "cov_sum": 758,
+     "rounds": 20,
+     "wturns": 75,
+     "dry20": 45,
+     "drop": 3,
+     "nat": 5,
+     "splits": 2,
+     "death_W": 2,
+     "death_H": 3
+    },
+    "late": {
+     "cov_sum": 1162,
+     "rounds": 216,
+     "wturns": 63,
+     "dry20": 17,
+     "death_H": 3,
+     "drop": 3,
+     "nat": 7,
+     "splits": 3,
+     "death_W": 3
+    }
+   }
+  },
+  "deficit_len": 105,
+  "deficit_pop": 35,
+  "end": [
+   335,
+   3,
+   48,
+   1,
+   23
+  ],
+  "lens": [
+   [
+    0,
+    17,
+    17,
+    3,
+    3
+   ],
+   [
+    10,
+    16,
+    16,
+    7,
+    7
+   ],
+   [
+    20,
+    16,
+    16,
+    7,
+    7
+   ],
+   [
+    30,
+    16,
+    16,
+    7,
+    7
+   ],
+   [
+    40,
+    15,
+    17,
+    6,
+    8
+   ],
+   [
+    50,
+    14,
+    19,
+    6,
+    8
+   ],
+   [
+    60,
+    14,
+    17,
+    6,
+    8
+   ],
+   [
+    70,
+    14,
+    17,
+    6,
+    8
+   ],
+   [
+    80,
+    14,
+    17,
+    6,
+    8
+   ],
+   [
+    90,
+    14,
+    17,
+    6,
+    8
+   ],
+   [
+    100,
+    14,
+    17,
+    6,
+    8
+   ],
+   [
+    110,
+    12,
+    13,
+    5,
+    6
+   ],
+   [
+    120,
+    7,
+    14,
+    3,
+    6
+   ],
+   [
+    130,
+    5,
+    17,
+    2,
+    7
+   ],
+   [
+    140,
+    8,
+    17,
+    3,
+    8
+   ],
+   [
+    150,
+    5,
+    17,
+    2,
+    8
+   ],
+   [
+    160,
+    5,
+    18,
+    2,
+    8
+   ],
+   [
+    170,
+    5,
+    18,
+    2,
+    8
+   ],
+   [
+    180,
+    3,
+    23,
+    1,
+    8
+   ],
+   [
+    190,
+    3,
+    29,
+    1,
+    12
+   ],
+   [
+    200,
+    3,
+    31,
+    1,
+    13
+   ],
+   [
+    210,
+    3,
+    36,
+    1,
+    15
+   ],
+   [
+    220,
+    3,
+    37,
+    1,
+    15
+   ],
+   [
+    230,
+    3,
+    44,
+    1,
+    19
+   ],
+   [
+    240,
+    3,
+    48,
+    1,
+    19
+   ],
+   [
+    250,
+    3,
+    47,
+    1,
+    21
+   ],
+   [
+    260,
+    3,
+    48,
+    1,
+    22
+   ],
+   [
+    270,
+    3,
+    48,
+    1,
+    22
+   ],
+   [
+    280,
+    3,
+    48,
+    1,
+    22
+   ],
+   [
+    290,
+    3,
+    48,
+    1,
+    22
+   ],
+   [
+    300,
+    3,
+    48,
+    1,
+    22
+   ],
+   [
+    310,
+    3,
+    48,
+    1,
+    22
+   ],
+   [
+    320,
+    3,
+    48,
+    1,
+    22
+   ],
+   [
+    330,
+    3,
+    48,
+    1,
+    22
+   ]
+  ]
+ },
+ {
+  "map": "dilemma",
+  "opponent": "cpp_nicked_v92",
+  "seed": 771001,
+  "side": "B",
+  "class": "elimination",
+  "rounds": 339,
+  "ours_total": 0,
+  "theirs_total": 50,
+  "ours_longest": 0,
+  "theirs_longest": 4,
+  "replay": "results\\20261003-224713-ablate-d440c5\\runs\\base\\replays\\cpp_nicked_v92-vs-base-dilemma-s771001.replay",
+  "group": "elimination",
+  "us": "B",
+  "stats": {
+   "A": {
+    "0": {
+     "cov_sum": 870,
+     "rounds": 20,
+     "wturns": 124,
+     "splits": 8,
+     "nat": 8,
+     "death_W": 4,
+     "drop": 2
+    },
+    "all": {
+     "cov_sum": 21542,
+     "rounds": 340,
+     "wturns": 4390,
+     "splits": 130,
+     "nat": 247,
+     "death_W": 100,
+     "drop": 56,
+     "dry20": 2162,
+     "death_H": 10,
+     "passed": 29,
+     "death_O": 2
+    },
+    "20": {
+     "cov_sum": 952,
+     "rounds": 20,
+     "wturns": 140,
+     "dry20": 74,
+     "nat": 12,
+     "drop": 3,
+     "splits": 7,
+     "death_W": 6
+    },
+    "40": {
+     "cov_sum": 947,
+     "rounds": 20,
+     "wturns": 167,
+     "dry20": 94,
+     "nat": 8,
+     "splits": 4,
+     "death_W": 4,
+     "death_H": 1
+    },
+    "60": {
+     "cov_sum": 1090,
+     "rounds": 20,
+     "wturns": 147,
+     "dry20": 107,
+     "nat": 9,
+     "passed": 1,
+     "splits": 4,
+     "death_W": 3
+    },
+    "80": {
+     "cov_sum": 1225,
+     "rounds": 20,
+     "wturns": 155,
+     "nat": 11,
+     "dry20": 77,
+     "splits": 5,
+     "death_W": 6,
+     "drop": 4
+    },
+    "100": {
+     "cov_sum": 802,
+     "rounds": 20,
+     "wturns": 141,
+     "dry20": 66,
+     "splits": 6,
+     "nat": 10,
+     "death_W": 4,
+     "death_H": 1,
+     "drop": 4
+    },
+    "late": {
+     "cov_sum": 15656,
+     "rounds": 220,
+     "wturns": 3516,
+     "dry20": 1744,
+     "splits": 96,
+     "death_W": 73,
+     "nat": 189,
+     "drop": 43,
+     "passed": 28,
+     "death_O": 2,
+     "death_H": 8
+    }
+   },
+   "B": {
+    "0": {
+     "cov_sum": 633,
+     "rounds": 20,
+     "wturns": 122,
+     "splits": 7,
+     "nat": 8,
+     "death_W": 3,
+     "drop": 1
+    },
+    "all": {
+     "cov_sum": 6554,
+     "rounds": 340,
+     "wturns": 1103,
+     "splits": 21,
+     "nat": 37,
+     "death_W": 16,
+     "drop": 12,
+     "dry20": 683,
+     "death_H": 8
+    },
+    "20": {
+     "cov_sum": 436,
+     "rounds": 20,
+     "wturns": 122,
+     "dry20": 82,
+     "splits": 1,
+     "death_W": 1
+    },
+    "40": {
+     "cov_sum": 690,
+     "rounds": 20,
+     "wturns": 124,
+     "dry20": 103,
+     "drop": 2,
+     "nat": 5,
+     "splits": 3,
+     "death_W": 2,
+     "death_H": 1
+    },
+    "60": {
+     "cov_sum": 1009,
+     "rounds": 20,
+     "wturns": 124,
+     "dry20": 64,
+     "nat": 6,
+     "death_W": 3,
+     "drop": 4,
+     "splits": 3
+    },
+    "80": {
+     "cov_sum": 711,
+     "rounds": 20,
+     "wturns": 125,
+     "dry20": 77,
+     "nat": 4,
+     "splits": 2,
+     "death_W": 2
+    },
+    "100": {
+     "cov_sum": 684,
+     "rounds": 20,
+     "wturns": 112,
+     "dry20": 72,
+     "drop": 2,
+     "nat": 4,
+     "splits": 2,
+     "death_W": 2,
+     "death_H": 1
+    },
+    "late": {
+     "cov_sum": 2391,
+     "rounds": 220,
+     "wturns": 374,
+     "dry20": 285,
+     "drop": 3,
+     "nat": 10,
+     "splits": 3,
+     "death_W": 3,
+     "death_H": 6
+    }
+   }
+  },
+  "deficit_len": 166,
+  "deficit_pop": 166,
+  "end": [
+   339,
+   3,
+   50,
+   1,
+   22
+  ],
+  "lens": [
+   [
+    0,
+    17,
+    17,
+    3,
+    3
+   ],
+   [
+    10,
+    16,
+    16,
+    7,
+    7
+   ],
+   [
+    20,
+    18,
+    17,
+    7,
+    7
+   ],
+   [
+    30,
+    16,
+    18,
+    7,
+    7
+   ],
+   [
+    40,
+    16,
+    17,
+    7,
+    8
+   ],
+   [
+    50,
+    16,
+    17,
+    7,
+    8
+   ],
+   [
+    60,
+    16,
+    15,
+    7,
+    7
+   ],
+   [
+    70,
+    16,
+    17,
+    7,
+    8
+   ],
+   [
+    80,
+    17,
+    18,
+    7,
+    8
+   ],
+   [
+    90,
+    16,
+    16,
+    7,
+    7
+   ],
+   [
+    100,
+    16,
+    17,
+    7,
+    7
+   ],
+   [
+    110,
+    14,
+    13,
+    6,
+    6
+   ],
+   [
+    120,
+    14,
+    19,
+    6,
+    8
+   ],
+   [
+    130,
+    14,
+    14,
+    6,
+    7
+   ],
+   [
+    140,
+    14,
+    16,
+    6,
+    8
+   ],
+   [
+    150,
+    14,
+    14,
+    6,
+    7
+   ],
+   [
+    160,
+    14,
+    20,
+    6,
+    8
+   ],
+   [
+    170,
+    14,
+    20,
+    6,
+    7
+   ],
+   [
+    180,
+    13,
+    23,
+    5,
+    9
+   ],
+   [
+    190,
+    11,
+    25,
+    4,
+    9
+   ],
+   [
+    200,
+    8,
+    29,
+    3,
+    12
+   ],
+   [
+    210,
+    3,
+    33,
+    1,
+    13
+   ],
+   [
+    220,
+    3,
+    39,
+    1,
+    16
+   ],
+   [
+    230,
+    3,
+    46,
+    1,
+    18
+   ],
+   [
+    240,
+    3,
+    49,
+    1,
+    19
+   ],
+   [
+    250,
+    3,
+    49,
+    1,
+    21
+   ],
+   [
+    260,
+    3,
+    48,
+    1,
+    21
+   ],
+   [
+    270,
+    3,
+    51,
+    1,
+    22
+   ],
+   [
+    280,
+    3,
+    52,
+    1,
+    23
+   ],
+   [
+    290,
+    3,
+    49,
+    1,
+    22
+   ],
+   [
+    300,
+    3,
+    53,
+    1,
+    23
+   ],
+   [
+    310,
+    3,
+    53,
+    1,
+    22
+   ],
+   [
+    320,
+    3,
+    48,
+    1,
+    21
+   ],
+   [
+    330,
+    3,
+    50,
+    1,
+    21
+   ]
+  ]
+ },
+ {
+  "map": "portals",
+  "opponent": "cpp_nicked_v75",
+  "seed": 771001,
+  "side": "A",
+  "class": "both_dead",
+  "rounds": 499,
+  "ours_total": 65,
+  "theirs_total": 44,
+  "ours_longest": 16,
+  "theirs_longest": 33,
+  "replay": "results\\20261003-224713-ablate-d440c5\\runs\\base\\replays\\base-vs-cpp_nicked_v75-portals-s771001.replay",
+  "group": "both_dead_more_total",
+  "us": "A",
+  "stats": {
+   "A": {
+    "0": {
+     "cov_sum": 179,
+     "rounds": 20,
+     "wturns": 40
+    },
+    "all": {
+     "cov_sum": 24513,
+     "rounds": 500,
+     "wturns": 10492,
+     "dry20": 4147,
+     "passed": 351,
+     "nat": 493,
+     "splits": 340,
+     "death_W": 149,
+     "drop": 387,
+     "death_O": 56,
+     "death_H": 110,
+     "death_A": 19
+    },
+    "20": {
+     "cov_sum": 251,
+     "rounds": 20,
+     "wturns": 40,
+     "dry20": 40,
+     "passed": 1
+    },
+    "40": {
+     "cov_sum": 356,
+     "rounds": 20,
+     "wturns": 40,
+     "dry20": 40,
+     "passed": 1
+    },
+    "60": {
+     "cov_sum": 332,
+     "rounds": 20,
+     "wturns": 49,
+     "dry20": 33,
+     "nat": 4,
+     "splits": 2
+    },
+    "80": {
+     "cov_sum": 471,
+     "rounds": 20,
+     "wturns": 64,
+     "dry20": 27,
+     "nat": 2,
+     "passed": 2,
+     "death_W": 1,
+     "splits": 1
+    },
+    "100": {
+     "cov_sum": 581,
+     "rounds": 20,
+     "wturns": 120,
+     "dry20": 41,
+     "nat": 12,
+     "splits": 6,
+     "drop": 4,
+     "death_W": 2,
+     "passed": 2
+    },
+    "late": {
+     "cov_sum": 22343,
+     "rounds": 380,
+     "wturns": 10139,
+     "dry20": 3966,
+     "passed": 345,
+     "nat": 475,
+     "splits": 331,
+     "drop": 383,
+     "death_W": 146,
+     "death_O": 56,
+     "death_H": 110,
+     "death_A": 19
+    }
+   },
+   "B": {
+    "0": {
+     "cov_sum": 319,
+     "rounds": 20,
+     "wturns": 63,
+     "nat": 9,
+     "splits": 5,
+     "death_W": 2,
+     "death_S": 2,
+     "drop": 1
+    },
+    "all": {
+     "cov_sum": 24974,
+     "rounds": 500,
+     "wturns": 9110,
+     "nat": 628,
+     "splits": 361,
+     "death_W": 189,
+     "death_S": 34,
+     "drop": 334,
+     "dry20": 2426,
+     "passed": 294,
+     "death_H": 54,
+     "death_O": 48,
+     "death_A": 33
+    },
+    "20": {
+     "cov_sum": 372,
+     "rounds": 20,
+     "wturns": 81,
+     "nat": 14,
+     "splits": 7,
+     "drop": 4,
+     "death_W": 4,
+     "death_S": 2,
+     "dry20": 4,
+     "passed": 3,
+     "death_H": 2
+    },
+    "40": {
+     "cov_sum": 350,
+     "rounds": 20,
+     "wturns": 68,
+     "nat": 10,
+     "drop": 5,
+     "splits": 6,
+     "death_W": 2,
+     "passed": 4,
+     "death_S": 1,
+     "death_H": 2
+    },
+    "60": {
+     "cov_sum": 496,
+     "rounds": 20,
+     "wturns": 104,
+     "drop": 4,
+     "passed": 2,
+     "nat": 7,
+     "splits": 4,
+     "death_W": 1,
+     "death_S": 1,
+     "dry20": 2
+    },
+    "80": {
+     "cov_sum": 737,
+     "rounds": 20,
+     "wturns": 154,
+     "dry20": 54,
+     "nat": 9,
+     "splits": 5,
+     "passed": 3,
+     "death_S": 1,
+     "drop": 1
+    },
+    "100": {
+     "cov_sum": 906,
+     "rounds": 20,
+     "wturns": 241,
+     "nat": 12,
+     "dry20": 94,
+     "splits": 5,
+     "passed": 11,
+     "death_W": 1,
+     "drop": 1
+    },
+    "late": {
+     "cov_sum": 21794,
+     "rounds": 380,
+     "wturns": 8399,
+     "dry20": 2272,
+     "death_W": 179,
+     "nat": 567,
+     "passed": 271,
+     "splits": 329,
+     "drop": 318,
+     "death_S": 27,
+     "death_O": 48,
+     "death_H": 50,
+     "death_A": 33
+    }
+   }
+  },
+  "deficit_len": null,
+  "deficit_pop": null,
+  "end": [
+   499,
+   65,
+   44,
+   9,
+   5
+  ],
+  "lens": [
+   [
+    0,
+    9,
+    9,
+    3,
+    3
+   ],
+   [
+    10,
+    9,
+    10,
+    3,
+    4
+   ],
+   [
+    20,
+    9,
+    10,
+    3,
+    4
+   ],
+   [
+    30,
+    9,
+    8,
+    3,
+    3
+   ],
+   [
+    40,
+    9,
+    7,
+    3,
+    3
+   ],
+   [
+    50,
+    9,
+    6,
+    3,
+    2
+   ],
+   [
+    60,
+    9,
+    8,
+    3,
+    4
+   ],
+   [
+    70,
+    9,
+    11,
+    3,
+    5
+   ],
+   [
+    80,
+    13,
+    15,
+    5,
+    6
+   ],
+   [
+    90,
+    11,
+    18,
+    4,
+    7
+   ],
+   [
+    100,
+    12,
+    23,
+    5,
+    10
+   ],
+   [
+    110,
+    17,
+    29,
+    6,
+    12
+   ],
+   [
+    120,
+    23,
+    34,
+    9,
+    14
+   ],
+   [
+    130,
+    29,
+    36,
+    11,
+    14
+   ],
+   [
+    140,
+    29,
+    43,
+    11,
+    17
+   ],
+   [
+    150,
+    36,
+    52,
+    14,
+    21
+   ],
+   [
+    160,
+    41,
+    57,
+    15,
+    24
+   ],
+   [
+    170,
+    42,
+    69,
+    16,
+    29
+   ],
+   [
+    180,
+    48,
+    68,
+    19,
+    30
+   ],
+   [
+    190,
+    57,
+    65,
+    22,
+    27
+   ],
+   [
+    200,
+    53,
+    72,
+    21,
+    28
+   ],
+   [
+    210,
+    55,
+    68,
+    21,
+    28
+   ],
+   [
+    220,
+    65,
+    74,
+    25,
+    32
+   ],
+   [
+    230,
+    63,
+    84,
+    27,
+    36
+   ],
+   [
+    240,
+    71,
+    79,
+    30,
+    33
+   ],
+   [
+    250,
+    70,
+    80,
+    28,
+    33
+   ],
+   [
+    260,
+    67,
+    94,
+    26,
+    27
+   ],
+   [
+    270,
+    73,
+    93,
+    29,
+    26
+   ],
+   [
+    280,
+    76,
+    89,
+    31,
+    25
+   ],
+   [
+    290,
+    65,
+    86,
+    28,
+    21
+   ],
+   [
+    300,
+    71,
+    84,
+    29,
+    21
+   ],
+   [
+    310,
+    60,
+    78,
+    25,
+    17
+   ],
+   [
+    320,
+    69,
+    88,
+    29,
+    22
+   ],
+   [
+    330,
+    80,
+    80,
+    35,
+    21
+   ],
+   [
+    340,
+    63,
+    72,
+    29,
+    21
+   ],
+   [
+    350,
+    72,
+    85,
+    33,
+    24
+   ],
+   [
+    360,
+    71,
+    89,
+    32,
+    21
+   ],
+   [
+    370,
+    73,
+    83,
+    31,
+    17
+   ],
+   [
+    380,
+    86,
+    80,
+    37,
+    18
+   ],
+   [
+    390,
+    85,
+    77,
+    36,
+    20
+   ],
+   [
+    400,
+    93,
+    87,
+    40,
+    24
+   ],
+   [
+    410,
+    84,
+    76,
+    35,
+    23
+   ],
+   [
+    420,
+    78,
+    70,
+    32,
+    19
+   ],
+   [
+    430,
+    79,
+    65,
+    35,
+    14
+   ],
+   [
+    440,
+    80,
+    66,
+    35,
+    14
+   ],
+   [
+    450,
+    89,
+    43,
+    38,
+    12
+   ],
+   [
+    460,
+    92,
+    47,
+    33,
+    11
+   ],
+   [
+    470,
+    87,
+    49,
+    26,
+    12
+   ],
+   [
+    480,
+    76,
+    53,
+    16,
+    14
+   ],
+   [
+    490,
+    69,
+    46,
+    11,
+    7
+   ]
+  ]
+ },
+ {
+  "map": "islands",
+  "opponent": "nicked_v44",
+  "seed": 771003,
+  "side": "B",
+  "class": "both_dead",
+  "rounds": 499,
+  "ours_total": 243,
+  "theirs_total": 160,
+  "ours_longest": 19,
+  "theirs_longest": 20,
+  "replay": "results\\20261003-224713-ablate-d440c5\\runs\\base\\replays\\nicked_v44-vs-base-islands-s771003.replay",
+  "group": "both_dead_more_total",
+  "us": "B",
+  "stats": {
+   "A": {
+    "0": {
+     "cov_sum": 202,
+     "rounds": 20,
+     "wturns": 129,
+     "nat": 17,
+     "splits": 5,
+     "passed": 1
+    },
+    "all": {
+     "cov_sum": 53656,
+     "rounds": 500,
+     "wturns": 16519,
+     "nat": 481,
+     "splits": 196,
+     "passed": 591,
+     "dry20": 8486,
+     "death_O": 14,
+     "drop": 212,
+     "death_H": 84,
+     "death_S": 2,
+     "death_W": 66,
+     "death_A": 14
+    },
+    "20": {
+     "cov_sum": 318,
+     "rounds": 20,
+     "splits": 13,
+     "wturns": 290,
+     "dry20": 26,
+     "death_O": 3,
+     "nat": 23,
+     "drop": 3,
+     "passed": 7
+    },
+    "40": {
+     "cov_sum": 647,
+     "rounds": 20,
+     "wturns": 478,
+     "passed": 9,
+     "dry20": 77,
+     "nat": 29,
+     "drop": 12,
+     "death_H": 6,
+     "splits": 16,
+     "death_O": 1
+    },
+    "60": {
+     "cov_sum": 1155,
+     "rounds": 20,
+     "wturns": 690,
+     "dry20": 156,
+     "passed": 18,
+     "nat": 40,
+     "drop": 11,
+     "splits": 18,
+     "death_H": 6,
+     "death_O": 2,
+     "death_S": 1
+    },
+    "80": {
+     "cov_sum": 1655,
+     "rounds": 20,
+     "wturns": 766,
+     "dry20": 228,
+     "splits": 19,
+     "passed": 21,
+     "death_H": 15,
+     "drop": 27,
+     "nat": 26,
+     "death_O": 2,
+     "death_W": 2
+    },
+    "100": {
+     "cov_sum": 2124,
+     "rounds": 20,
+     "wturns": 846,
+     "dry20": 261,
+     "passed": 18,
+     "nat": 32,
+     "death_H": 5,
+     "drop": 11,
+     "splits": 16,
+     "death_O": 1
+    },
+    "late": {
+     "cov_sum": 47555,
+     "rounds": 380,
+     "wturns": 13320,
+     "dry20": 7738,
+     "passed": 517,
+     "nat": 314,
+     "death_H": 52,
+     "splits": 109,
+     "drop": 148,
+     "death_W": 64,
+     "death_O": 5,
+     "death_S": 1,
+     "death_A": 14
+    }
+   },
+   "B": {
+    "0": {
+     "cov_sum": 374,
+     "rounds": 20,
+     "wturns": 156,
+     "nat": 22,
+     "splits": 8,
+     "passed": 1,
+     "death_W": 2
+    },
+    "all": {
+     "cov_sum": 52557,
+     "rounds": 500,
+     "wturns": 19919,
+     "nat": 1035,
+     "splits": 555,
+     "passed": 312,
+     "death_W": 354,
+     "dry20": 7065,
+     "drop": 435,
+     "death_H": 96,
+     "death_O": 31,
+     "death_A": 55
+    },
+    "20": {
+     "cov_sum": 757,
+     "rounds": 20,
+     "wturns": 335,
+     "nat": 27,
+     "dry20": 53,
+     "splits": 14,
+     "passed": 5,
+     "death_W": 4,
+     "drop": 3
+    },
+    "40": {
+     "cov_sum": 1200,
+     "rounds": 20,
+     "wturns": 473,
+     "dry20": 186,
+     "nat": 25,
+     "splits": 15,
+     "passed": 2,
+     "drop": 5,
+     "death_W": 5,
+     "death_H": 4
+    },
+    "60": {
+     "cov_sum": 1772,
+     "rounds": 20,
+     "wturns": 626,
+     "dry20": 228,
+     "nat": 40,
+     "death_H": 6,
+     "passed": 2,
+     "splits": 20,
+     "drop": 8,
+     "death_W": 4
+    },
+    "80": {
+     "cov_sum": 2033,
+     "rounds": 20,
+     "death_W": 13,
+     "wturns": 693,
+     "dry20": 320,
+     "drop": 15,
+     "death_H": 11,
+     "splits": 17,
+     "nat": 32,
+     "passed": 3
+    },
+    "100": {
+     "cov_sum": 2225,
+     "rounds": 20,
+     "wturns": 710,
+     "dry20": 222,
+     "splits": 19,
+     "nat": 33,
+     "death_H": 5,
+     "drop": 14,
+     "passed": 14,
+     "death_W": 7
+    },
+    "late": {
+     "cov_sum": 44196,
+     "rounds": 380,
+     "wturns": 16926,
+     "drop": 390,
+     "dry20": 6056,
+     "nat": 856,
+     "passed": 285,
+     "splits": 462,
+     "death_H": 70,
+     "death_W": 319,
+     "death_O": 31,
+     "death_A": 55
+    }
+   }
+  },
+  "deficit_len": null,
+  "deficit_pop": null,
+  "end": [
+   499,
+   250,
+   158,
+   24,
+   21
+  ],
+  "lens": [
+   [
+    0,
+    12,
+    12,
+    5,
+    5
+   ],
+   [
+    10,
+    21,
+    18,
+    8,
+    7
+   ],
+   [
+    20,
+    30,
+    29,
+    11,
+    10
+   ],
+   [
+    30,
+    38,
+    38,
+    17,
+    15
+   ],
+   [
+    40,
+    50,
+    46,
+    21,
+    20
+   ],
+   [
+    50,
+    53,
+    55,
+    23,
+    23
+   ],
+   [
+    60,
+    61,
+    68,
+    27,
+    29
+   ],
+   [
+    70,
+    73,
+    76,
+    31,
+    34
+   ],
+   [
+    80,
+    88,
+    94,
+    37,
+    38
+   ],
+   [
+    90,
+    78,
+    87,
+    34,
+    36
+   ],
+   [
+    100,
+    75,
+    94,
+    30,
+    38
+   ],
+   [
+    110,
+    90,
+    101,
+    36,
+    41
+   ],
+   [
+    120,
+    95,
+    118,
+    37,
+    48
+   ],
+   [
+    130,
+    108,
+    126,
+    42,
+    48
+   ],
+   [
+    140,
+    114,
+    137,
+    45,
+    48
+   ],
+   [
+    150,
+    123,
+    139,
+    49,
+    48
+   ],
+   [
+    160,
+    134,
+    147,
+    54,
+    48
+   ],
+   [
+    170,
+    138,
+    152,
+    55,
+    47
+   ],
+   [
+    180,
+    150,
+    153,
+    55,
+    45
+   ],
+   [
+    190,
+    151,
+    162,
+    56,
+    48
+   ],
+   [
+    200,
+    166,
+    168,
+    57,
+    48
+   ],
+   [
+    210,
+    162,
+    156,
+    55,
+    48
+   ],
+   [
+    220,
+    163,
+    162,
+    55,
+    48
+   ],
+   [
+    230,
+    167,
+    173,
+    53,
+    48
+   ],
+   [
+    240,
+    166,
+    166,
+    54,
+    48
+   ],
+   [
+    250,
+    161,
+    154,
+    54,
+    47
+   ],
+   [
+    260,
+    172,
+    145,
+    54,
+    45
+   ],
+   [
+    270,
+    178,
+    150,
+    55,
+    43
+   ],
+   [
+    280,
+    177,
+    142,
+    53,
+    38
+   ],
+   [
+    290,
+    164,
+    149,
+    49,
+    35
+   ],
+   [
+    300,
+    179,
+    152,
+    54,
+    34
+   ],
+   [
+    310,
+    178,
+    154,
+    54,
+    33
+   ],
+   [
+    320,
+    185,
+    155,
+    55,
+    30
+   ],
+   [
+    330,
+    208,
+    152,
+    54,
+    27
+   ],
+   [
+    340,
+    212,
+    138,
+    50,
+    25
+   ],
+   [
+    350,
+    216,
+    143,
+    49,
+    25
+   ],
+   [
+    360,
+    227,
+    146,
+    51,
+    24
+   ],
+   [
+    370,
+    219,
+    147,
+    43,
+    24
+   ],
+   [
+    380,
+    207,
+    160,
+    34,
+    25
+   ],
+   [
+    390,
+    216,
+    145,
+    30,
+    24
+   ],
+   [
+    400,
+    211,
+    151,
+    28,
+    25
+   ],
+   [
+    410,
+    208,
+    149,
+    27,
+    24
+   ],
+   [
+    420,
+    212,
+    146,
+    27,
+    24
+   ],
+   [
+    430,
+    213,
+    152,
+    24,
+    24
+   ],
+   [
+    440,
+    214,
+    153,
+    23,
+    24
+   ],
+   [
+    450,
+    224,
+    153,
+    22,
+    22
+   ],
+   [
+    460,
+    229,
+    158,
+    22,
+    24
+   ],
+   [
+    470,
+    231,
+    159,
+    23,
+    23
+   ],
+   [
+    480,
+    241,
+    154,
+    24,
+    22
+   ],
+   [
+    490,
+    244,
+    155,
+    23,
+    22
+   ]
+  ]
+ },
+ {
+  "map": "tower_defense",
+  "opponent": "opp-careful-queen",
+  "seed": 771002,
+  "side": "A",
+  "class": "both_dead",
+  "rounds": 499,
+  "ours_total": 70,
+  "theirs_total": 39,
+  "ours_longest": 8,
+  "theirs_longest": 14,
+  "replay": "results\\20261003-224713-ablate-d440c5\\runs\\base\\replays\\base-vs-opp-careful-queen-tower_defense-s771002.replay",
+  "group": "both_dead_more_total",
+  "us": "A",
+  "stats": {
+   "A": {
+    "0": {
+     "cov_sum": 238,
+     "rounds": 20,
+     "wturns": 20
+    },
+    "all": {
+     "cov_sum": 34160,
+     "rounds": 500,
+     "wturns": 6802,
+     "dry20": 2701,
+     "nat": 292,
+     "splits": 131,
+     "passed": 13,
+     "death_W": 48,
+     "death_O": 9,
+     "death_H": 56,
+     "drop": 73,
+     "death_A": 7
+    },
+    "20": {
+     "cov_sum": 239,
+     "rounds": 20,
+     "wturns": 20,
+     "dry20": 11,
+     "nat": 1
+    },
+    "40": {
+     "cov_sum": 316,
+     "rounds": 20,
+     "wturns": 37,
+     "nat": 1,
+     "splits": 1
+    },
+    "60": {
+     "cov_sum": 283,
+     "rounds": 20,
+     "wturns": 40,
+     "dry20": 34
+    },
+    "80": {
+     "cov_sum": 335,
+     "rounds": 20,
+     "wturns": 40,
+     "dry20": 30,
+     "nat": 1
+    },
+    "100": {
+     "cov_sum": 292,
+     "rounds": 20,
+     "wturns": 45,
+     "dry20": 17,
+     "nat": 3,
+     "splits": 1
+    },
+    "late": {
+     "cov_sum": 32457,
+     "rounds": 380,
+     "wturns": 6600,
+     "passed": 13,
+     "nat": 286,
+     "splits": 129,
+     "dry20": 2609,
+     "death_W": 48,
+     "death_O": 9,
+     "death_H": 56,
+     "drop": 73,
+     "death_A": 7
+    }
+   },
+   "B": {
+    "0": {
+     "cov_sum": 239,
+     "rounds": 20,
+     "wturns": 20
+    },
+    "all": {
+     "cov_sum": 30109,
+     "rounds": 500,
+     "wturns": 6222,
+     "dry20": 2963,
+     "nat": 220,
+     "splits": 110,
+     "death_W": 33,
+     "death_H": 58,
+     "passed": 5,
+     "death_O": 6,
+     "drop": 87,
+     "death_A": 11
+    },
+    "20": {
+     "cov_sum": 261,
+     "rounds": 20,
+     "wturns": 20,
+     "dry20": 20,
+     "nat": 1
+    },
+    "40": {
+     "cov_sum": 341,
+     "rounds": 20,
+     "wturns": 38,
+     "dry20": 20,
+     "nat": 1,
+     "splits": 1
+    },
+    "60": {
+     "cov_sum": 332,
+     "rounds": 20,
+     "wturns": 40,
+     "dry20": 38
+    },
+    "80": {
+     "cov_sum": 307,
+     "rounds": 20,
+     "wturns": 40,
+     "dry20": 33,
+     "nat": 1
+    },
+    "100": {
+     "cov_sum": 307,
+     "rounds": 20,
+     "wturns": 42,
+     "dry20": 8,
+     "nat": 3,
+     "splits": 1
+    },
+    "late": {
+     "cov_sum": 28322,
+     "rounds": 380,
+     "wturns": 6022,
+     "splits": 108,
+     "dry20": 2844,
+     "nat": 214,
+     "death_W": 33,
+     "death_H": 58,
+     "passed": 5,
+     "death_O": 6,
+     "drop": 87,
+     "death_A": 11
+    }
+   }
+  },
+  "deficit_len": null,
+  "deficit_pop": null,
+  "end": [
+   499,
+   74,
+   37,
+   14,
+   4
+  ],
+  "lens": [
+   [
+    0,
+    4,
+    4,
+    2,
+    2
+   ],
+   [
+    10,
+    4,
+    4,
+    2,
+    2
+   ],
+   [
+    20,
+    4,
+    4,
+    2,
+    2
+   ],
+   [
+    30,
+    4,
+    4,
+    2,
+    2
+   ],
+   [
+    40,
+    5,
+    5,
+    2,
+    2
+   ],
+   [
+    50,
+    6,
+    6,
+    3,
+    3
+   ],
+   [
+    60,
+    6,
+    6,
+    3,
+    3
+   ],
+   [
+    70,
+    6,
+    6,
+    3,
+    3
+   ],
+   [
+    80,
+    6,
+    6,
+    3,
+    3
+   ],
+   [
+    90,
+    7,
+    6,
+    3,
+    3
+   ],
+   [
+    100,
+    7,
+    7,
+    3,
+    3
+   ],
+   [
+    110,
+    7,
+    8,
+    3,
+    3
+   ],
+   [
+    120,
+    10,
+    10,
+    4,
+    4
+   ],
+   [
+    130,
+    11,
+    10,
+    5,
+    5
+   ],
+   [
+    140,
+    11,
+    10,
+    5,
+    5
+   ],
+   [
+    150,
+    11,
+    10,
+    5,
+    5
+   ],
+   [
+    160,
+    11,
+    10,
+    5,
+    5
+   ],
+   [
+    170,
+    11,
+    18,
+    5,
+    7
+   ],
+   [
+    180,
+    12,
+    22,
+    5,
+    10
+   ],
+   [
+    190,
+    25,
+    33,
+    11,
+    13
+   ],
+   [
+    200,
+    30,
+    42,
+    11,
+    18
+   ],
+   [
+    210,
+    28,
+    47,
+    12,
+    19
+   ],
+   [
+    220,
+    21,
+    43,
+    10,
+    17
+   ],
+   [
+    230,
+    27,
+    43,
+    9,
+    18
+   ],
+   [
+    240,
+    28,
+    40,
+    11,
+    17
+   ],
+   [
+    250,
+    31,
+    39,
+    12,
+    16
+   ],
+   [
+    260,
+    38,
+    46,
+    16,
+    19
+   ],
+   [
+    270,
+    40,
+    42,
+    16,
+    18
+   ],
+   [
+    280,
+    39,
+    45,
+    16,
+    18
+   ],
+   [
+    290,
+    41,
+    50,
+    18,
+    22
+   ],
+   [
+    300,
+    46,
+    55,
+    18,
+    23
+   ],
+   [
+    310,
+    41,
+    51,
+    16,
+    22
+   ],
+   [
+    320,
+    44,
+    59,
+    18,
+    25
+   ],
+   [
+    330,
+    58,
+    51,
+    22,
+    21
+   ],
+   [
+    340,
+    60,
+    51,
+    28,
+    20
+   ],
+   [
+    350,
+    62,
+    50,
+    29,
+    21
+   ],
+   [
+    360,
+    54,
+    45,
+    23,
+    20
+   ],
+   [
+    370,
+    53,
+    40,
+    22,
+    18
+   ],
+   [
+    380,
+    56,
+    46,
+    24,
+    20
+   ],
+   [
+    390,
+    56,
+    47,
+    22,
+    19
+   ],
+   [
+    400,
+    62,
+    49,
+    26,
+    21
+   ],
+   [
+    410,
+    61,
+    44,
+    25,
+    18
+   ],
+   [
+    420,
+    68,
+    46,
+    29,
+    20
+   ],
+   [
+    430,
+    66,
+    47,
+    26,
+    20
+   ],
+   [
+    440,
+    69,
+    48,
+    27,
+    19
+   ],
+   [
+    450,
+    65,
+    45,
+    28,
+    19
+   ],
+   [
+    460,
+    69,
+    52,
+    27,
+    19
+   ],
+   [
+    470,
+    69,
+    47,
+    26,
+    14
+   ],
+   [
+    480,
+    67,
+    41,
+    18,
+    8
+   ],
+   [
+    490,
+    69,
+    40,
+    14,
+    6
+   ]
+  ]
+ },
+ {
+  "map": "portals",
+  "opponent": "cpp_nicked_v75",
+  "seed": 771001,
+  "side": "B",
+  "class": "both_dead",
+  "rounds": 499,
+  "ours_total": 27,
+  "theirs_total": 65,
+  "ours_longest": 9,
+  "theirs_longest": 29,
+  "replay": "results\\20261003-224713-ablate-d440c5\\runs\\base\\replays\\cpp_nicked_v75-vs-base-portals-s771001.replay",
+  "group": "both_dead_no_total_adv",
+  "us": "B",
+  "stats": {
+   "A": {
+    "0": {
+     "cov_sum": 319,
+     "rounds": 20,
+     "wturns": 63,
+     "nat": 9,
+     "splits": 5,
+     "death_W": 2,
+     "death_S": 2,
+     "drop": 1
+    },
+    "all": {
+     "cov_sum": 24808,
+     "rounds": 500,
+     "wturns": 8803,
+     "nat": 633,
+     "splits": 364,
+     "death_W": 159,
+     "death_S": 37,
+     "drop": 346,
+     "dry20": 2186,
+     "passed": 292,
+     "death_H": 76,
+     "death_O": 45,
+     "death_A": 35
+    },
+    "20": {
+     "cov_sum": 372,
+     "rounds": 20,
+     "wturns": 81,
+     "nat": 14,
+     "splits": 7,
+     "drop": 4,
+     "death_W": 4,
+     "death_S": 2,
+     "dry20": 4,
+     "passed": 3,
+     "death_H": 2
+    },
+    "40": {
+     "cov_sum": 350,
+     "rounds": 20,
+     "wturns": 68,
+     "nat": 10,
+     "drop": 5,
+     "splits": 6,
+     "death_W": 2,
+     "passed": 4,
+     "death_S": 1,
+     "death_H": 2
+    },
+    "60": {
+     "cov_sum": 496,
+     "rounds": 20,
+     "wturns": 104,
+     "drop": 4,
+     "passed": 2,
+     "nat": 7,
+     "splits": 4,
+     "death_W": 1,
+     "death_S": 1,
+     "dry20": 2
+    },
+    "80": {
+     "cov_sum": 755,
+     "rounds": 20,
+     "wturns": 156,
+     "dry20": 62,
+     "nat": 7,
+     "splits": 4,
+     "passed": 3
+    },
+    "100": {
+     "cov_sum": 894,
+     "rounds": 20,
+     "wturns": 224,
+     "nat": 15,
+     "dry20": 85,
+     "death_W": 1,
+     "drop": 2,
+     "passed": 5,
+     "splits": 6,
+     "death_O": 2
+    },
+    "late": {
+     "cov_sum": 21622,
+     "rounds": 380,
+     "wturns": 8107,
+     "dry20": 2033,
+     "nat": 571,
+     "death_W": 149,
+     "passed": 275,
+     "splits": 332,
+     "drop": 330,
+     "death_O": 43,
+     "death_H": 72,
+     "death_S": 31,
+     "death_A": 35
+    }
+   },
+   "B": {
+    "0": {
+     "cov_sum": 235,
+     "rounds": 20,
+     "wturns": 40
+    },
+    "all": {
+     "cov_sum": 22512,
+     "rounds": 500,
+     "wturns": 9285,
+     "dry20": 3408,
+     "passed": 292,
+     "nat": 432,
+     "splits": 322,
+     "death_W": 132,
+     "drop": 382,
+     "death_O": 45,
+     "death_H": 84,
+     "death_A": 60
+    },
+    "20": {
+     "cov_sum": 250,
+     "rounds": 20,
+     "wturns": 40,
+     "dry20": 40,
+     "passed": 1
+    },
+    "40": {
+     "cov_sum": 259,
+     "rounds": 20,
+     "wturns": 40,
+     "dry20": 40,
+     "passed": 1
+    },
+    "60": {
+     "cov_sum": 350,
+     "rounds": 20,
+     "wturns": 59,
+     "dry20": 26,
+     "nat": 6,
+     "splits": 2,
+     "death_W": 1
+    },
+    "80": {
+     "cov_sum": 546,
+     "rounds": 20,
+     "wturns": 116,
+     "dry20": 34,
+     "splits": 6,
+     "nat": 11,
+     "drop": 4,
+     "death_W": 2,
+     "passed": 2
+    },
+    "100": {
+     "cov_sum": 785,
+     "rounds": 20,
+     "wturns": 203,
+     "dry20": 84,
+     "splits": 9,
+     "nat": 15,
+     "passed": 6,
+     "drop": 4,
+     "death_W": 2
+    },
+    "late": {
+     "cov_sum": 20087,
+     "rounds": 380,
+     "wturns": 8787,
+     "dry20": 3184,
+     "nat": 400,
+     "death_W": 127,
+     "passed": 282,
+     "splits": 305,
+     "drop": 374,
+     "death_O": 45,
+     "death_H": 84,
+     "death_A": 60
+    }
+   }
+  },
+  "deficit_len": 405,
+  "deficit_pop": 459,
+  "end": [
+   499,
+   27,
+   62,
+   3,
+   14
+  ],
+  "lens": [
+   [
+    0,
+    9,
+    9,
+    3,
+    3
+   ],
+   [
+    10,
+    9,
+    10,
+    3,
+    4
+   ],
+   [
+    20,
+    9,
+    10,
+    3,
+    4
+   ],
+   [
+    30,
+    9,
+    8,
+    3,
+    3
+   ],
+   [
+    40,
+    9,
+    7,
+    3,
+    3
+   ],
+   [
+    50,
+    9,
+    6,
+    3,
+    2
+   ],
+   [
+    60,
+    9,
+    8,
+    3,
+    4
+   ],
+   [
+    70,
+    11,
+    11,
+    4,
+    5
+   ],
+   [
+    80,
+    12,
+    15,
+    4,
+    6
+   ],
+   [
+    90,
+    19,
+    19,
+    7,
+    8
+   ],
+   [
+    100,
+    22,
+    22,
+    8,
+    10
+   ],
+   [
+    110,
+    28,
+    25,
+    11,
+    10
+   ],
+   [
+    120,
+    36,
+    32,
+    15,
+    13
+   ],
+   [
+    130,
+    44,
+    37,
+    17,
+    16
+   ],
+   [
+    140,
+    49,
+    45,
+    21,
+    20
+   ],
+   [
+    150,
+    55,
+    49,
+    23,
+    20
+   ],
+   [
+    160,
+    58,
+    58,
+    24,
+    23
+   ],
+   [
+    170,
+    61,
+    64,
+    25,
+    26
+   ],
+   [
+    180,
+    60,
+    48,
+    25,
+    19
+   ],
+   [
+    190,
+    50,
+    54,
+    22,
+    22
+   ],
+   [
+    200,
+    60,
+    62,
+    26,
+    26
+   ],
+   [
+    210,
+    62,
+    63,
+    26,
+    27
+   ],
+   [
+    220,
+    66,
+    72,
+    30,
+    30
+   ],
+   [
+    230,
+    65,
+    80,
+    27,
+    34
+   ],
+   [
+    240,
+    75,
+    87,
+    32,
+    37
+   ],
+   [
+    250,
+    71,
+    79,
+    29,
+    32
+   ],
+   [
+    260,
+    76,
+    83,
+    32,
+    26
+   ],
+   [
+    270,
+    72,
+    86,
+    29,
+    24
+   ],
+   [
+    280,
+    77,
+    67,
+    34,
+    22
+   ],
+   [
+    290,
+    71,
+    71,
+    29,
+    24
+   ],
+   [
+    300,
+    69,
+    74,
+    28,
+    23
+   ],
+   [
+    310,
+    77,
+    82,
+    32,
+    24
+   ],
+   [
+    320,
+    81,
+    81,
+    32,
+    21
+   ],
+   [
+    330,
+    78,
+    82,
+    32,
+    22
+   ],
+   [
+    340,
+    95,
+    75,
+    39,
+    22
+   ],
+   [
+    350,
+    72,
+    78,
+    28,
+    21
+   ],
+   [
+    360,
+    60,
+    71,
+    24,
+    22
+   ],
+   [
+    370,
+    62,
+    76,
+    24,
+    24
+   ],
+   [
+    380,
+    68,
+    84,
+    28,
+    24
+   ],
+   [
+    390,
+    72,
+    82,
+    30,
+    23
+   ],
+   [
+    400,
+    77,
+    64,
+    33,
+    17
+   ],
+   [
+    410,
+    54,
+    70,
+    21,
+    19
+   ],
+   [
+    420,
+    34,
+    73,
+    13,
+    16
+   ],
+   [
+    430,
+    18,
+    51,
+    8,
+    10
+   ],
+   [
+    440,
+    19,
+    49,
+    7,
+    7
+   ],
+   [
+    450,
+    21,
+    53,
+    9,
+    5
+   ],
+   [
+    460,
+    22,
+    40,
+    6,
+    8
+   ],
+   [
+    470,
+    23,
+    55,
+    4,
+    12
+   ],
+   [
+    480,
+    22,
+    55,
+    3,
+    10
+   ],
+   [
+    490,
+    22,
+    56,
+    3,
+    12
+   ]
+  ]
+ },
+ {
+  "map": "islands",
+  "opponent": "cpp_nicked_v75",
+  "seed": 771001,
+  "side": "A",
+  "class": "both_dead",
+  "rounds": 499,
+  "ours_total": 40,
+  "theirs_total": 146,
+  "ours_longest": 18,
+  "theirs_longest": 28,
+  "replay": "results\\20261003-224713-ablate-d440c5\\runs\\base\\replays\\base-vs-cpp_nicked_v75-islands-s771001.replay",
+  "group": "both_dead_no_total_adv",
+  "us": "A",
+  "stats": {
+   "A": {
+    "0": {
+     "cov_sum": 367,
+     "rounds": 20,
+     "wturns": 157,
+     "nat": 20,
+     "splits": 8,
+     "death_W": 1
+    },
+    "all": {
+     "cov_sum": 32690,
+     "rounds": 500,
+     "wturns": 17364,
+     "nat": 753,
+     "splits": 451,
+     "death_W": 262,
+     "dry20": 6071,
+     "death_H": 150,
+     "drop": 491,
+     "passed": 244,
+     "death_O": 20,
+     "death_A": 19
+    },
+    "20": {
+     "cov_sum": 893,
+     "rounds": 20,
+     "wturns": 345,
+     "nat": 32,
+     "dry20": 36,
+     "splits": 17,
+     "death_H": 3,
+     "death_W": 4,
+     "drop": 6,
+     "passed": 1
+    },
+    "40": {
+     "cov_sum": 1252,
+     "rounds": 20,
+     "wturns": 551,
+     "dry20": 138,
+     "nat": 35,
+     "splits": 17,
+     "passed": 7,
+     "death_H": 2,
+     "drop": 6,
+     "death_W": 4
+    },
+    "60": {
+     "cov_sum": 1981,
+     "rounds": 20,
+     "wturns": 775,
+     "splits": 21,
+     "dry20": 275,
+     "nat": 36,
+     "death_W": 6,
+     "passed": 6,
+     "death_H": 3,
+     "drop": 7
+    },
+    "80": {
+     "cov_sum": 2809,
+     "rounds": 20,
+     "wturns": 1032,
+     "dry20": 382,
+     "nat": 42,
+     "splits": 20,
+     "death_H": 2,
+     "passed": 9,
+     "drop": 5,
+     "death_W": 9
+    },
+    "100": {
+     "cov_sum": 2855,
+     "rounds": 20,
+     "wturns": 1079,
+     "dry20": 451,
+     "death_H": 10,
+     "nat": 45,
+     "death_W": 12,
+     "passed": 9,
+     "splits": 28,
+     "drop": 28,
+     "death_O": 5
+    },
+    "late": {
+     "cov_sum": 22533,
+     "rounds": 380,
+     "wturns": 13425,
+     "dry20": 4789,
+     "nat": 543,
+     "splits": 340,
+     "death_W": 226,
+     "drop": 439,
+     "death_H": 130,
+     "passed": 212,
+     "death_O": 15,
+     "death_A": 19
+    }
+   },
+   "B": {
+    "0": {
+     "cov_sum": 375,
+     "rounds": 20,
+     "wturns": 131,
+     "nat": 15,
+     "splits": 6,
+     "passed": 1
+    },
+    "all": {
+     "cov_sum": 79897,
+     "rounds": 500,
+     "wturns": 26012,
+     "nat": 767,
+     "splits": 380,
+     "passed": 876,
+     "dry20": 11973,
+     "death_H": 146,
+     "drop": 503,
+     "death_O": 17,
+     "death_W": 86,
+     "death_S": 1,
+     "death_A": 104
+    },
+    "20": {
+     "cov_sum": 595,
+     "rounds": 20,
+     "wturns": 279,
+     "dry20": 53,
+     "nat": 25,
+     "splits": 13,
+     "death_H": 3,
+     "drop": 5,
+     "passed": 7,
+     "death_O": 1
+    },
+    "40": {
+     "cov_sum": 1170,
+     "rounds": 20,
+     "wturns": 473,
+     "nat": 29,
+     "dry20": 84,
+     "splits": 10,
+     "passed": 14,
+     "drop": 2,
+     "death_H": 2
+    },
+    "60": {
+     "cov_sum": 1909,
+     "rounds": 20,
+     "nat": 31,
+     "wturns": 731,
+     "splits": 16,
+     "dry20": 265,
+     "passed": 21,
+     "death_H": 1
+    },
+    "80": {
+     "cov_sum": 2824,
+     "rounds": 20,
+     "wturns": 918,
+     "dry20": 456,
+     "passed": 13,
+     "nat": 32,
+     "splits": 13,
+     "death_H": 4,
+     "death_W": 1,
+     "drop": 4
+    },
+    "100": {
+     "cov_sum": 3119,
+     "rounds": 20,
+     "wturns": 1047,
+     "dry20": 484,
+     "passed": 29,
+     "death_H": 10,
+     "splits": 17,
+     "nat": 34,
+     "drop": 12,
+     "death_W": 2
+    },
+    "late": {
+     "cov_sum": 69905,
+     "rounds": 380,
+     "nat": 601,
+     "wturns": 22433,
+     "dry20": 10631,
+     "passed": 791,
+     "splits": 305,
+     "death_H": 126,
+     "drop": 480,
+     "death_W": 83,
+     "death_O": 16,
+     "death_S": 1,
+     "death_A": 104
+    }
+   }
+  },
+  "deficit_len": 109,
+  "deficit_pop": 118,
+  "end": [
+   499,
+   40,
+   147,
+   5,
+   32
+  ],
+  "lens": [
+   [
+    0,
+    12,
+    12,
+    5,
+    5
+   ],
+   [
+    10,
+    22,
+    18,
+    8,
+    7
+   ],
+   [
+    20,
+    30,
+    27,
+    12,
+    11
+   ],
+   [
+    30,
+    39,
+    33,
+    16,
+    13
+   ],
+   [
+    40,
+    51,
+    47,
+    22,
+    20
+   ],
+   [
+    50,
+    63,
+    58,
+    27,
+    24
+   ],
+   [
+    60,
+    79,
+    72,
+    33,
+    28
+   ],
+   [
+    70,
+    86,
+    89,
+    37,
+    36
+   ],
+   [
+    80,
+    102,
+    101,
+    45,
+    43
+   ],
+   [
+    90,
+    121,
+    112,
+    52,
+    46
+   ],
+   [
+    100,
+    125,
+    125,
+    54,
+    51
+   ],
+   [
+    110,
+    125,
+    128,
+    52,
+    51
+   ],
+   [
+    120,
+    130,
+    141,
+    55,
+    56
+   ],
+   [
+    130,
+    113,
+    152,
+    48,
+    59
+   ],
+   [
+    140,
+    120,
+    157,
+    49,
+    62
+   ],
+   [
+    150,
+    114,
+    173,
+    50,
+    64
+   ],
+   [
+    160,
+    119,
+    182,
+    53,
+    64
+   ],
+   [
+    170,
+    111,
+    192,
+    48,
+    64
+   ],
+   [
+    180,
+    123,
+    182,
+    53,
+    64
+   ],
+   [
+    190,
+    112,
+    190,
+    49,
+    64
+   ],
+   [
+    200,
+    105,
+    207,
+    44,
+    64
+   ],
+   [
+    210,
+    114,
+    215,
+    48,
+    64
+   ],
+   [
+    220,
+    119,
+    212,
+    52,
+    63
+   ],
+   [
+    230,
+    116,
+    211,
+    48,
+    63
+   ],
+   [
+    240,
+    116,
+    211,
+    50,
+    63
+   ],
+   [
+    250,
+    121,
+    210,
+    50,
+    63
+   ],
+   [
+    260,
+    122,
+    207,
+    54,
+    64
+   ],
+   [
+    270,
+    116,
+    208,
+    48,
+    64
+   ],
+   [
+    280,
+    116,
+    206,
+    53,
+    64
+   ],
+   [
+    290,
+    111,
+    204,
+    47,
+    63
+   ],
+   [
+    300,
+    116,
+    197,
+    51,
+    63
+   ],
+   [
+    310,
+    119,
+    214,
+    52,
+    64
+   ],
+   [
+    320,
+    114,
+    205,
+    47,
+    62
+   ],
+   [
+    330,
+    127,
+    205,
+    45,
+    62
+   ],
+   [
+    340,
+    131,
+    207,
+    42,
+    63
+   ],
+   [
+    350,
+    121,
+    214,
+    34,
+    64
+   ],
+   [
+    360,
+    108,
+    217,
+    29,
+    63
+   ],
+   [
+    370,
+    99,
+    216,
+    24,
+    63
+   ],
+   [
+    380,
+    72,
+    218,
+    16,
+    63
+   ],
+   [
+    390,
+    58,
+    223,
+    13,
+    64
+   ],
+   [
+    400,
+    55,
+    214,
+    12,
+    63
+   ],
+   [
+    410,
+    63,
+    217,
+    12,
+    64
+   ],
+   [
+    420,
+    70,
+    210,
+    10,
+    64
+   ],
+   [
+    430,
+    72,
+    168,
+    10,
+    45
+   ],
+   [
+    440,
+    78,
+    170,
+    9,
+    47
+   ],
+   [
+    450,
+    68,
+    133,
+    8,
+    40
+   ],
+   [
+    460,
+    67,
+    134,
+    7,
+    38
+   ],
+   [
+    470,
+    70,
+    141,
+    6,
+    38
+   ],
+   [
+    480,
+    71,
+    147,
+    6,
+    34
+   ],
+   [
+    490,
+    71,
+    154,
+    6,
+    34
+   ]
+  ]
+ },
+ {
+  "map": "weakhold",
+  "opponent": "cpp_leviathan3",
+  "seed": 771002,
+  "side": "B",
+  "class": "both_dead",
+  "rounds": 499,
+  "ours_total": 7,
+  "theirs_total": 11,
+  "ours_longest": 3,
+  "theirs_longest": 5,
+  "replay": "results\\20261003-224713-ablate-d440c5\\runs\\base\\replays\\cpp_leviathan3-vs-base-weakhold-s771002.replay",
+  "group": "both_dead_no_total_adv",
+  "us": "B",
+  "stats": {
+   "A": {
+    "0": {
+     "cov_sum": 60,
+     "rounds": 20,
+     "splits": 3,
+     "wturns": 63,
+     "nat": 3,
+     "death_W": 1
+    },
+    "all": {
+     "cov_sum": 1805,
+     "rounds": 500,
+     "splits": 40,
+     "wturns": 2045,
+     "nat": 117,
+     "death_W": 38,
+     "dry20": 1269,
+     "passed": 2
+    },
+    "20": {
+     "cov_sum": 58,
+     "rounds": 20,
+     "wturns": 66,
+     "dry20": 33,
+     "nat": 6,
+     "splits": 2,
+     "death_W": 2
+    },
+    "40": {
+     "cov_sum": 1,
+     "rounds": 20,
+     "wturns": 60,
+     "dry20": 31
+    },
+    "60": {
+     "cov_sum": 116,
+     "rounds": 20,
+     "wturns": 80,
+     "dry20": 52,
+     "nat": 9,
+     "splits": 3,
+     "death_W": 3
+    },
+    "80": {
+     "cov_sum": 41,
+     "rounds": 20,
+     "wturns": 83,
+     "dry20": 45,
+     "nat": 3,
+     "splits": 1,
+     "death_W": 1
+    },
+    "100": {
+     "cov_sum": 139,
+     "rounds": 20,
+     "wturns": 86,
+     "dry20": 51,
+     "nat": 8,
+     "splits": 2,
+     "death_W": 2
+    },
+    "late": {
+     "cov_sum": 1390,
+     "rounds": 380,
+     "wturns": 1607,
+     "dry20": 1057,
+     "splits": 29,
+     "nat": 88,
+     "death_W": 29,
+     "passed": 2
+    }
+   },
+   "B": {
+    "0": {
+     "cov_sum": 41,
+     "rounds": 20,
+     "splits": 3,
+     "wturns": 63,
+     "nat": 3,
+     "death_W": 1
+    },
+    "all": {
+     "cov_sum": 1581,
+     "rounds": 500,
+     "splits": 20,
+     "wturns": 1685,
+     "nat": 53,
+     "death_W": 19,
+     "dry20": 1256
+    },
+    "20": {
+     "cov_sum": 93,
+     "rounds": 20,
+     "wturns": 64,
+     "dry20": 33,
+     "nat": 5,
+     "splits": 2,
+     "death_W": 1
+    },
+    "40": {
+     "cov_sum": 62,
+     "rounds": 20,
+     "wturns": 65,
+     "dry20": 29,
+     "nat": 4,
+     "death_W": 2,
+     "splits": 1
+    },
+    "60": {
+     "cov_sum": 83,
+     "rounds": 20,
+     "wturns": 66,
+     "dry20": 36,
+     "nat": 6,
+     "splits": 2,
+     "death_W": 2
+    },
+    "80": {
+     "cov_sum": 21,
+     "rounds": 20,
+     "wturns": 60,
+     "dry20": 47
+    },
+    "100": {
+     "cov_sum": 45,
+     "rounds": 20,
+     "wturns": 63,
+     "dry20": 51,
+     "nat": 3,
+     "splits": 1,
+     "death_W": 1
+    },
+    "late": {
+     "cov_sum": 1236,
+     "rounds": 380,
+     "wturns": 1304,
+     "dry20": 1060,
+     "nat": 32,
+     "splits": 11,
+     "death_W": 12
+    }
+   }
+  },
+  "deficit_len": 288,
+  "deficit_pop": 290,
+  "end": [
+   499,
+   6,
+   10,
+   3,
+   4
+  ],
+  "lens": [
+   [
+    0,
+    8,
+    8,
+    2,
+    2
+   ],
+   [
+    10,
+    10,
+    8,
+    4,
+    4
+   ],
+   [
+    20,
+    8,
+    8,
+    4,
+    4
+   ],
+   [
+    30,
+    8,
+    8,
+    4,
+    4
+   ],
+   [
+    40,
+    10,
+    8,
+    5,
+    4
+   ],
+   [
+    50,
+    10,
+    8,
+    5,
+    4
+   ],
+   [
+    60,
+    8,
+    8,
+    4,
+    4
+   ],
+   [
+    70,
+    8,
+    8,
+    4,
+    4
+   ],
+   [
+    80,
+    8,
+    8,
+    4,
+    4
+   ],
+   [
+    90,
+    8,
+    8,
+    4,
+    4
+   ],
+   [
+    100,
+    8,
+    8,
+    4,
+    4
+   ],
+   [
+    110,
+    8,
+    9,
+    4,
+    4
+   ],
+   [
+    120,
+    8,
+    10,
+    4,
+    4
+   ],
+   [
+    130,
+    8,
+    8,
+    4,
+    4
+   ],
+   [
+    140,
+    8,
+    10,
+    4,
+    4
+   ],
+   [
+    150,
+    8,
+    10,
+    4,
+    5
+   ],
+   [
+    160,
+    9,
+    9,
+    4,
+    4
+   ],
+   [
+    170,
+    8,
+    8,
+    4,
+    4
+   ],
+   [
+    180,
+    8,
+    8,
+    4,
+    4
+   ],
+   [
+    190,
+    8,
+    10,
+    4,
+    4
+   ],
+   [
+    200,
+    10,
+    8,
+    5,
+    4
+   ],
+   [
+    210,
+    8,
+    8,
+    4,
+    4
+   ],
+   [
+    220,
+    8,
+    8,
+    4,
+    4
+   ],
+   [
+    230,
+    8,
+    8,
+    4,
+    4
+   ],
+   [
+    240,
+    8,
+    10,
+    4,
+    5
+   ],
+   [
+    250,
+    8,
+    8,
+    4,
+    4
+   ],
+   [
+    260,
+    8,
+    9,
+    4,
+    4
+   ],
+   [
+    270,
+    8,
+    8,
+    4,
+    4
+   ],
+   [
+    280,
+    9,
+    8,
+    4,
+    4
+   ],
+   [
+    290,
+    6,
+    10,
+    3,
+    5
+   ],
+   [
+    300,
+    6,
+    8,
+    3,
+    4
+   ],
+   [
+    310,
+    6,
+    8,
+    3,
+    4
+   ],
+   [
+    320,
+    6,
+    11,
+    3,
+    5
+   ],
+   [
+    330,
+    6,
+    8,
+    3,
+    4
+   ],
+   [
+    340,
+    6,
+    11,
+    3,
+    5
+   ],
+   [
+    350,
+    6,
+    8,
+    3,
+    4
+   ],
+   [
+    360,
+    6,
+    8,
+    3,
+    4
+   ],
+   [
+    370,
+    6,
+    10,
+    3,
+    4
+   ],
+   [
+    380,
+    6,
+    8,
+    3,
+    4
+   ],
+   [
+    390,
+    6,
+    10,
+    3,
+    4
+   ],
+   [
+    400,
+    6,
+    8,
+    3,
+    4
+   ],
+   [
+    410,
+    6,
+    10,
+    3,
+    5
+   ],
+   [
+    420,
+    6,
+    11,
+    3,
+    5
+   ],
+   [
+    430,
+    6,
+    8,
+    3,
+    4
+   ],
+   [
+    440,
+    6,
+    8,
+    3,
+    4
+   ],
+   [
+    450,
+    6,
+    10,
+    3,
+    4
+   ],
+   [
+    460,
+    6,
+    8,
+    3,
+    4
+   ],
+   [
+    470,
+    6,
+    8,
+    3,
+    4
+   ],
+   [
+    480,
+    6,
+    8,
+    3,
+    4
+   ],
+   [
+    490,
+    6,
+    9,
+    3,
+    4
+   ]
+  ]
+ },
+ {
+  "map": "stripes",
+  "opponent": "cpp_nicked_v75",
+  "seed": 771002,
+  "side": "A",
+  "class": "win",
+  "group": "control",
+  "control_for": "cpp_nicked_v75 s771001 A",
+  "us": "A",
+  "stats": {
+   "A": {
+    "0": {
+     "cov_sum": 285,
+     "rounds": 20,
+     "wturns": 20,
+     "nat": 1
+    },
+    "all": {
+     "cov_sum": 12719,
+     "rounds": 377,
+     "wturns": 2744,
+     "nat": 151,
+     "dry20": 868,
+     "splits": 80,
+     "death_H": 32,
+     "drop": 43,
+     "passed": 15,
+     "death_O": 4,
+     "death_W": 26
+    },
+    "20": {
+     "cov_sum": 158,
+     "rounds": 20,
+     "wturns": 20,
+     "dry20": 20
+    },
+    "40": {
+     "cov_sum": 158,
+     "rounds": 20,
+     "wturns": 20,
+     "dry20": 20
+    },
+    "60": {
+     "cov_sum": 201,
+     "rounds": 20,
+     "wturns": 20,
+     "dry20": 20
+    },
+    "80": {
+     "cov_sum": 256,
+     "rounds": 20,
+     "wturns": 20,
+     "dry20": 20
+    },
+    "100": {
+     "cov_sum": 342,
+     "rounds": 20,
+     "wturns": 26,
+     "dry20": 3,
+     "nat": 3,
+     "splits": 1,
+     "death_H": 1
+    },
+    "late": {
+     "cov_sum": 11319,
+     "rounds": 257,
+     "wturns": 2618,
+     "nat": 147,
+     "splits": 79,
+     "drop": 43,
+     "death_H": 31,
+     "passed": 15,
+     "death_O": 4,
+     "dry20": 785,
+     "death_W": 26
+    }
+   },
+   "B": {
+    "0": {
+     "cov_sum": 276,
+     "rounds": 20,
+     "wturns": 25,
+     "passed": 3,
+     "nat": 3,
+     "splits": 1,
+     "death_W": 1
+    },
+    "all": {
+     "cov_sum": 12784,
+     "rounds": 377,
+     "wturns": 2598,
+     "passed": 168,
+     "nat": 103,
+     "splits": 52,
+     "death_W": 23,
+     "dry20": 1160,
+     "death_O": 3,
+     "drop": 36,
+     "death_H": 28
+    },
+    "20": {
+     "cov_sum": 445,
+     "rounds": 20,
+     "wturns": 66,
+     "dry20": 20,
+     "nat": 7,
+     "passed": 4,
+     "splits": 3
+    },
+    "40": {
+     "cov_sum": 762,
+     "rounds": 20,
+     "wturns": 135,
+     "dry20": 23,
+     "passed": 9,
+     "nat": 6,
+     "splits": 3,
+     "death_O": 1
+    },
+    "60": {
+     "cov_sum": 823,
+     "rounds": 20,
+     "wturns": 152,
+     "dry20": 53,
+     "nat": 12,
+     "passed": 9,
+     "death_W": 3,
+     "splits": 4,
+     "drop": 1
+    },
+    "80": {
+     "cov_sum": 901,
+     "rounds": 20,
+     "wturns": 175,
+     "dry20": 51,
+     "nat": 8,
+     "passed": 5,
+     "splits": 3,
+     "death_W": 1,
+     "drop": 2,
+     "death_O": 1
+    },
+    "100": {
+     "cov_sum": 945,
+     "rounds": 20,
+     "wturns": 187,
+     "dry20": 83,
+     "passed": 10,
+     "nat": 7,
+     "death_H": 1,
+     "splits": 3,
+     "drop": 1
+    },
+    "late": {
+     "cov_sum": 8632,
+     "rounds": 257,
+     "wturns": 1858,
+     "dry20": 930,
+     "splits": 35,
+     "nat": 60,
+     "death_O": 1,
+     "passed": 128,
+     "drop": 32,
+     "death_W": 18,
+     "death_H": 27
+    }
+   }
+  },
+  "deficit_len": null,
+  "deficit_pop": null,
+  "rounds": 376,
+  "end": [
+   376,
+   45,
+   3,
+   20,
+   1
+  ],
+  "lens": [
+   [
+    0,
+    4,
+    4,
+    2,
+    2
+   ],
+   [
+    10,
+    4,
+    4,
+    2,
+    2
+   ],
+   [
+    20,
+    5,
+    4,
+    2,
+    2
+   ],
+   [
+    30,
+    5,
+    8,
+    2,
+    3
+   ],
+   [
+    40,
+    5,
+    11,
+    2,
+    5
+   ],
+   [
+    50,
+    5,
+    15,
+    2,
+    6
+   ],
+   [
+    60,
+    5,
+    15,
+    2,
+    7
+   ],
+   [
+    70,
+    5,
+    16,
+    2,
+    7
+   ],
+   [
+    80,
+    5,
+    20,
+    2,
+    8
+   ],
+   [
+    90,
+    5,
+    21,
+    2,
+    8
+   ],
+   [
+    100,
+    5,
+    24,
+    2,
+    9
+   ],
+   [
+    110,
+    5,
+    22,
+    2,
+    8
+   ],
+   [
+    120,
+    6,
+    29,
+    2,
+    11
+   ],
+   [
+    130,
+    9,
+    22,
+    3,
+    9
+   ],
+   [
+    140,
+    7,
+    19,
+    2,
+    8
+   ],
+   [
+    150,
+    9,
+    19,
+    3,
+    8
+   ],
+   [
+    160,
+    12,
+    22,
+    4,
+    9
+   ],
+   [
+    170,
+    13,
+    25,
+    5,
+    11
+   ],
+   [
+    180,
+    15,
+    23,
+    6,
+    10
+   ],
+   [
+    190,
+    9,
+    15,
+    3,
+    6
+   ],
+   [
+    200,
+    9,
+    24,
+    4,
+    9
+   ],
+   [
+    210,
+    9,
+    18,
+    4,
+    8
+   ],
+   [
+    220,
+    16,
+    20,
+    7,
+    8
+   ],
+   [
+    230,
+    19,
+    20,
+    8,
+    8
+   ],
+   [
+    240,
+    19,
+    23,
+    8,
+    9
+   ],
+   [
+    250,
+    22,
+    18,
+    9,
+    7
+   ],
+   [
+    260,
+    26,
+    18,
+    12,
+    7
+   ],
+   [
+    270,
+    25,
+    19,
+    11,
+    8
+   ],
+   [
+    280,
+    26,
+    17,
+    11,
+    7
+   ],
+   [
+    290,
+    31,
+    15,
+    13,
+    6
+   ],
+   [
+    300,
+    38,
+    12,
+    16,
+    5
+   ],
+   [
+    310,
+    38,
+    12,
+    17,
+    5
+   ],
+   [
+    320,
+    43,
+    12,
+    19,
+    5
+   ],
+   [
+    330,
+    45,
+    16,
+    19,
+    7
+   ],
+   [
+    340,
+    49,
+    13,
+    18,
+    5
+   ],
+   [
+    350,
+    47,
+    13,
+    20,
+    5
+   ],
+   [
+    360,
+    41,
+    12,
+    17,
+    5
+   ],
+   [
+    370,
+    39,
+    4,
+    18,
+    1
+   ]
+  ]
+ },
+ {
+  "map": "stripes",
+  "opponent": "opp-careful-queen",
+  "seed": 771002,
+  "side": "A",
+  "class": "win",
+  "group": "control",
+  "control_for": "opp-careful-queen s771001 B",
+  "us": "A",
+  "stats": {
+   "A": {
+    "0": {
+     "cov_sum": 285,
+     "rounds": 20,
+     "wturns": 20,
+     "nat": 1
+    },
+    "all": {
+     "cov_sum": 21393,
+     "rounds": 413,
+     "wturns": 6585,
+     "nat": 330,
+     "dry20": 2473,
+     "splits": 165,
+     "death_H": 45,
+     "drop": 86,
+     "death_O": 13,
+     "passed": 59,
+     "death_W": 81
+    },
+    "20": {
+     "cov_sum": 158,
+     "rounds": 20,
+     "wturns": 20,
+     "dry20": 20
+    },
+    "40": {
+     "cov_sum": 247,
+     "rounds": 20,
+     "wturns": 23,
+     "dry20": 20,
+     "nat": 2,
+     "splits": 1
+    },
+    "60": {
+     "cov_sum": 550,
+     "rounds": 20,
+     "wturns": 60,
+     "dry20": 20,
+     "nat": 5,
+     "splits": 2
+    },
+    "80": {
+     "cov_sum": 605,
+     "rounds": 20,
+     "wturns": 87,
+     "dry20": 29,
+     "nat": 3,
+     "splits": 1
+    },
+    "100": {
+     "cov_sum": 827,
+     "rounds": 20,
+     "wturns": 153,
+     "dry20": 45,
+     "nat": 10,
+     "splits": 5
+    },
+    "late": {
+     "cov_sum": 18721,
+     "rounds": 293,
+     "wturns": 6222,
+     "dry20": 2339,
+     "nat": 309,
+     "splits": 156,
+     "death_H": 45,
+     "drop": 86,
+     "death_O": 13,
+     "passed": 59,
+     "death_W": 81
+    }
+   },
+   "B": {
+    "0": {
+     "cov_sum": 276,
+     "rounds": 20,
+     "wturns": 20,
+     "nat": 1
+    },
+    "all": {
+     "cov_sum": 7575,
+     "rounds": 413,
+     "wturns": 1520,
+     "nat": 115,
+     "dry20": 692,
+     "splits": 45,
+     "death_W": 36,
+     "passed": 56,
+     "death_H": 11,
+     "drop": 9
+    },
+    "20": {
+     "cov_sum": 216,
+     "rounds": 20,
+     "wturns": 20,
+     "dry20": 20
+    },
+    "40": {
+     "cov_sum": 405,
+     "rounds": 20,
+     "wturns": 41,
+     "dry20": 20,
+     "nat": 5,
+     "splits": 2
+    },
+    "60": {
+     "cov_sum": 563,
+     "rounds": 20,
+     "wturns": 70,
+     "dry20": 35,
+     "nat": 2,
+     "splits": 1
+    },
+    "80": {
+     "cov_sum": 536,
+     "rounds": 20,
+     "wturns": 87,
+     "dry20": 51,
+     "nat": 2,
+     "splits": 1
+    },
+    "100": {
+     "cov_sum": 559,
+     "rounds": 20,
+     "wturns": 100,
+     "dry20": 57,
+     "nat": 5
+    },
+    "late": {
+     "cov_sum": 5020,
+     "rounds": 293,
+     "wturns": 1182,
+     "splits": 41,
+     "dry20": 509,
+     "nat": 100,
+     "death_W": 36,
+     "passed": 56,
+     "death_H": 11,
+     "drop": 9
+    }
+   }
+  },
+  "deficit_len": null,
+  "deficit_pop": null,
+  "rounds": 412,
+  "end": [
+   412,
+   75,
+   2,
+   31,
+   1
+  ],
+  "lens": [
+   [
+    0,
+    4,
+    4,
+    2,
+    2
+   ],
+   [
+    10,
+    4,
+    4,
+    2,
+    2
+   ],
+   [
+    20,
+    5,
+    5,
+    2,
+    2
+   ],
+   [
+    30,
+    5,
+    5,
+    2,
+    2
+   ],
+   [
+    40,
+    5,
+    5,
+    2,
+    2
+   ],
+   [
+    50,
+    5,
+    6,
+    2,
+    3
+   ],
+   [
+    60,
+    7,
+    10,
+    3,
+    4
+   ],
+   [
+    70,
+    9,
+    11,
+    4,
+    4
+   ],
+   [
+    80,
+    12,
+    12,
+    5,
+    5
+   ],
+   [
+    90,
+    13,
+    12,
+    5,
+    5
+   ],
+   [
+    100,
+    15,
+    14,
+    6,
+    6
+   ],
+   [
+    110,
+    20,
+    15,
+    9,
+    6
+   ],
+   [
+    120,
+    25,
+    19,
+    11,
+    6
+   ],
+   [
+    130,
+    25,
+    10,
+    11,
+    4
+   ],
+   [
+    140,
+    30,
+    15,
+    14,
+    6
+   ],
+   [
+    150,
+    32,
+    18,
+    15,
+    9
+   ],
+   [
+    160,
+    35,
+    20,
+    16,
+    10
+   ],
+   [
+    170,
+    38,
+    20,
+    18,
+    9
+   ],
+   [
+    180,
+    40,
+    20,
+    18,
+    9
+   ],
+   [
+    190,
+    43,
+    14,
+    20,
+    7
+   ],
+   [
+    200,
+    48,
+    15,
+    21,
+    7
+   ],
+   [
+    210,
+    51,
+    14,
+    24,
+    7
+   ],
+   [
+    220,
+    49,
+    9,
+    22,
+    4
+   ],
+   [
+    230,
+    42,
+    10,
+    19,
+    4
+   ],
+   [
+    240,
+    45,
+    7,
+    21,
+    3
+   ],
+   [
+    250,
+    47,
+    6,
+    21,
+    3
+   ],
+   [
+    260,
+    51,
+    7,
+    23,
+    3
+   ],
+   [
+    270,
+    57,
+    6,
+    24,
+    3
+   ],
+   [
+    280,
+    58,
+    8,
+    24,
+    4
+   ],
+   [
+    290,
+    59,
+    7,
+    25,
+    3
+   ],
+   [
+    300,
+    51,
+    7,
+    20,
+    3
+   ],
+   [
+    310,
+    51,
+    4,
+    22,
+    2
+   ],
+   [
+    320,
+    60,
+    4,
+    25,
+    2
+   ],
+   [
+    330,
+    57,
+    5,
+    25,
+    2
+   ],
+   [
+    340,
+    60,
+    5,
+    24,
+    2
+   ],
+   [
+    350,
+    58,
+    2,
+    23,
+    1
+   ],
+   [
+    360,
+    64,
+    2,
+    26,
+    1
+   ],
+   [
+    370,
+    68,
+    2,
+    27,
+    1
+   ],
+   [
+    380,
+    69,
+    2,
+    26,
+    1
+   ],
+   [
+    390,
+    70,
+    2,
+    29,
+    1
+   ],
+   [
+    400,
+    67,
+    2,
+    28,
+    1
+   ],
+   [
+    410,
+    72,
+    2,
+    29,
+    1
+   ]
+  ]
+ },
+ {
+  "map": "trophy",
+  "opponent": "cpp_nicked_v92",
+  "seed": 771002,
+  "side": "A",
+  "class": "win",
+  "group": "control",
+  "control_for": "cpp_nicked_v75 s771002 A",
+  "us": "A",
+  "stats": {
+   "A": {
+    "0": {
+     "cov_sum": 947,
+     "rounds": 20,
+     "wturns": 36,
+     "nat": 9,
+     "splits": 4,
+     "passed": 1
+    },
+    "all": {
+     "cov_sum": 90167,
+     "rounds": 231,
+     "wturns": 8490,
+     "nat": 378,
+     "splits": 143,
+     "passed": 44,
+     "death_H": 31,
+     "death_W": 49,
+     "dry20": 3488,
+     "drop": 3,
+     "death_O": 9
+    },
+    "20": {
+     "cov_sum": 3109,
+     "rounds": 20,
+     "wturns": 181,
+     "nat": 25,
+     "splits": 10,
+     "death_H": 2
+    },
+    "40": {
+     "cov_sum": 5445,
+     "rounds": 20,
+     "wturns": 368,
+     "nat": 33,
+     "death_H": 4,
+     "splits": 13,
+     "passed": 2,
+     "death_W": 1
+    },
+    "60": {
+     "cov_sum": 7220,
+     "rounds": 20,
+     "wturns": 463,
+     "dry20": 105,
+     "nat": 23,
+     "death_H": 3,
+     "splits": 8,
+     "passed": 6
+    },
+    "80": {
+     "cov_sum": 8026,
+     "rounds": 20,
+     "wturns": 634,
+     "dry20": 150,
+     "splits": 19,
+     "nat": 43,
+     "death_W": 4,
+     "passed": 4,
+     "death_H": 3
+    },
+    "100": {
+     "cov_sum": 8633,
+     "rounds": 20,
+     "wturns": 792,
+     "dry20": 242,
+     "nat": 40,
+     "death_W": 9,
+     "splits": 17,
+     "death_H": 3,
+     "passed": 4,
+     "drop": 2
+    },
+    "late": {
+     "cov_sum": 56787,
+     "rounds": 111,
+     "wturns": 6016,
+     "splits": 72,
+     "dry20": 2991,
+     "death_W": 35,
+     "nat": 205,
+     "death_H": 16,
+     "death_O": 9,
+     "passed": 27,
+     "drop": 1
+    }
+   },
+   "B": {
+    "0": {
+     "cov_sum": 1104,
+     "rounds": 20,
+     "wturns": 40,
+     "nat": 5,
+     "splits": 2
+    },
+    "all": {
+     "cov_sum": 17061,
+     "rounds": 231,
+     "wturns": 820,
+     "nat": 53,
+     "splits": 20,
+     "passed": 8,
+     "dry20": 261,
+     "death_H": 17,
+     "death_W": 4,
+     "drop": 1,
+     "death_O": 1
+    },
+    "20": {
+     "cov_sum": 2825,
+     "rounds": 20,
+     "wturns": 138,
+     "nat": 17,
+     "splits": 8,
+     "passed": 4,
+     "dry20": 2,
+     "death_H": 2,
+     "death_W": 1
+    },
+    "40": {
+     "cov_sum": 3153,
+     "rounds": 20,
+     "wturns": 147,
+     "nat": 15,
+     "dry20": 19,
+     "death_H": 4,
+     "splits": 5,
+     "death_W": 2
+    },
+    "60": {
+     "cov_sum": 2485,
+     "rounds": 20,
+     "wturns": 127,
+     "dry20": 34,
+     "nat": 6,
+     "splits": 1,
+     "death_H": 3,
+     "passed": 3
+    },
+    "80": {
+     "cov_sum": 1926,
+     "rounds": 20,
+     "wturns": 106,
+     "dry20": 55,
+     "death_H": 3,
+     "nat": 5,
+     "splits": 3
+    },
+    "100": {
+     "cov_sum": 1741,
+     "rounds": 20,
+     "wturns": 88,
+     "dry20": 17,
+     "nat": 5,
+     "death_W": 1,
+     "passed": 1,
+     "death_H": 3,
+     "splits": 1
+    },
+    "late": {
+     "cov_sum": 3827,
+     "rounds": 111,
+     "wturns": 174,
+     "dry20": 134,
+     "death_H": 2,
+     "drop": 1,
+     "death_O": 1
+    }
+   }
+  },
+  "deficit_len": null,
+  "deficit_pop": null,
+  "rounds": 230,
+  "end": [
+   230,
+   168,
+   3,
+   58,
+   1
+  ],
+  "lens": [
+   [
+    0,
+    6,
+    6,
+    2,
+    2
+   ],
+   [
+    10,
+    6,
+    8,
+    2,
+    2
+   ],
+   [
+    20,
+    15,
+    11,
+    6,
+    4
+   ],
+   [
+    30,
+    24,
+    18,
+    10,
+    8
+   ],
+   [
+    40,
+    36,
+    20,
+    14,
+    9
+   ],
+   [
+    50,
+    47,
+    21,
+    20,
+    8
+   ],
+   [
+    60,
+    54,
+    19,
+    22,
+    8
+   ],
+   [
+    70,
+    59,
+    15,
+    23,
+    6
+   ],
+   [
+    80,
+    69,
+    17,
+    27,
+    6
+   ],
+   [
+    90,
+    78,
+    11,
+    31,
+    4
+   ],
+   [
+    100,
+    94,
+    13,
+    39,
+    6
+   ],
+   [
+    110,
+    98,
+    11,
+    39,
+    5
+   ],
+   [
+    120,
+    106,
+    8,
+    44,
+    3
+   ],
+   [
+    130,
+    118,
+    8,
+    51,
+    3
+   ],
+   [
+    140,
+    121,
+    5,
+    53,
+    2
+   ],
+   [
+    150,
+    124,
+    6,
+    55,
+    2
+   ],
+   [
+    160,
+    126,
+    6,
+    55,
+    2
+   ],
+   [
+    170,
+    131,
+    3,
+    56,
+    1
+   ],
+   [
+    180,
+    140,
+    3,
+    57,
+    1
+   ],
+   [
+    190,
+    133,
+    3,
+    55,
+    1
+   ],
+   [
+    200,
+    144,
+    3,
+    56,
+    1
+   ],
+   [
+    210,
+    158,
+    3,
+    56,
+    1
+   ],
+   [
+    220,
+    169,
+    3,
+    58,
+    1
+   ],
+   [
+    230,
+    168,
+    3,
+    58,
+    1
+   ]
+  ]
+ },
+ {
+  "map": "trophy",
+  "opponent": "opp-careful-queen",
+  "seed": 771001,
+  "side": "A",
+  "class": "win",
+  "group": "control",
+  "control_for": "opp-careful-queen s771001 B",
+  "us": "A",
+  "stats": {
+   "A": {
+    "0": {
+     "cov_sum": 1010,
+     "rounds": 20,
+     "wturns": 39,
+     "nat": 5,
+     "splits": 2
+    },
+    "all": {
+     "cov_sum": 203113,
+     "rounds": 500,
+     "wturns": 19441,
+     "nat": 978,
+     "splits": 345,
+     "dry20": 7798,
+     "passed": 99,
+     "death_W": 128,
+     "death_H": 44,
+     "death_O": 44,
+     "drop": 55,
+     "death_A": 120
+    },
+    "20": {
+     "cov_sum": 1897,
+     "rounds": 20,
+     "wturns": 93,
+     "nat": 7,
+     "splits": 4,
+     "dry20": 2
+    },
+    "40": {
+     "cov_sum": 3049,
+     "rounds": 20,
+     "wturns": 183,
+     "nat": 10,
+     "splits": 5,
+     "dry20": 33
+    },
+    "60": {
+     "cov_sum": 5037,
+     "rounds": 20,
+     "wturns": 388,
+     "dry20": 84,
+     "nat": 42,
+     "splits": 15,
+     "passed": 7,
+     "death_W": 3
+    },
+    "80": {
+     "cov_sum": 7141,
+     "rounds": 20,
+     "wturns": 558,
+     "dry20": 96,
+     "nat": 34,
+     "death_W": 4,
+     "splits": 16,
+     "death_H": 2,
+     "passed": 4,
+     "death_O": 1
+    },
+    "100": {
+     "cov_sum": 8482,
+     "rounds": 20,
+     "wturns": 703,
+     "dry20": 202,
+     "nat": 30,
+     "death_W": 5,
+     "splits": 12,
+     "passed": 2,
+     "death_H": 1
+    },
+    "late": {
+     "cov_sum": 176497,
+     "rounds": 380,
+     "wturns": 17477,
+     "dry20": 7381,
+     "nat": 850,
+     "splits": 291,
+     "passed": 86,
+     "death_O": 43,
+     "death_W": 116,
+     "death_H": 41,
+     "drop": 55,
+     "death_A": 120
+    }
+   },
+   "B": {
+    "0": {
+     "cov_sum": 977,
+     "rounds": 20,
+     "wturns": 49,
+     "nat": 5,
+     "splits": 3,
+     "passed": 1
+    },
+    "all": {
+     "cov_sum": 39315,
+     "rounds": 500,
+     "wturns": 1751,
+     "nat": 81,
+     "splits": 38,
+     "passed": 6,
+     "dry20": 584,
+     "death_W": 11,
+     "death_H": 26,
+     "drop": 22,
+     "death_O": 1
+    },
+    "20": {
+     "cov_sum": 2217,
+     "rounds": 20,
+     "wturns": 101,
+     "dry20": 8,
+     "nat": 8,
+     "splits": 3
+    },
+    "40": {
+     "cov_sum": 2901,
+     "rounds": 20,
+     "wturns": 149,
+     "nat": 8,
+     "splits": 4,
+     "death_W": 3,
+     "dry20": 21
+    },
+    "60": {
+     "cov_sum": 2807,
+     "rounds": 20,
+     "wturns": 146,
+     "nat": 6,
+     "dry20": 73,
+     "death_W": 3,
+     "splits": 2
+    },
+    "80": {
+     "cov_sum": 2468,
+     "rounds": 20,
+     "wturns": 112,
+     "dry20": 82,
+     "nat": 5,
+     "death_H": 2,
+     "passed": 1
+    },
+    "100": {
+     "cov_sum": 2709,
+     "rounds": 20,
+     "wturns": 147,
+     "dry20": 55,
+     "nat": 10,
+     "splits": 5,
+     "death_H": 1,
+     "drop": 1
+    },
+    "late": {
+     "cov_sum": 25236,
+     "rounds": 380,
+     "wturns": 1047,
+     "dry20": 345,
+     "death_H": 23,
+     "nat": 39,
+     "splits": 21,
+     "drop": 21,
+     "passed": 4,
+     "death_W": 5,
+     "death_O": 1
+    }
+   }
+  },
+  "deficit_len": null,
+  "deficit_pop": null,
+  "rounds": 499,
+  "end": [
+   499,
+   148,
+   8,
+   11,
+   2
+  ],
+  "lens": [
+   [
+    0,
+    6,
+    6,
+    2,
+    2
+   ],
+   [
+    10,
+    8,
+    8,
+    3,
+    3
+   ],
+   [
+    20,
+    11,
+    11,
+    4,
+    5
+   ],
+   [
+    30,
+    15,
+    14,
+    6,
+    6
+   ],
+   [
+    40,
+    18,
+    19,
+    8,
+    8
+   ],
+   [
+    50,
+    22,
+    21,
+    9,
+    8
+   ],
+   [
+    60,
+    28,
+    20,
+    13,
+    9
+   ],
+   [
+    70,
+    48,
+    18,
+    21,
+    8
+   ],
+   [
+    80,
+    61,
+    18,
+    25,
+    8
+   ],
+   [
+    90,
+    63,
+    15,
+    25,
+    6
+   ],
+   [
+    100,
+    78,
+    15,
+    34,
+    6
+   ],
+   [
+    110,
+    84,
+    18,
+    36,
+    9
+   ],
+   [
+    120,
+    93,
+    23,
+    40,
+    10
+   ],
+   [
+    130,
+    103,
+    23,
+    44,
+    9
+   ],
+   [
+    140,
+    114,
+    21,
+    48,
+    9
+   ],
+   [
+    150,
+    125,
+    17,
+    51,
+    7
+   ],
+   [
+    160,
+    123,
+    13,
+    50,
+    6
+   ],
+   [
+    170,
+    139,
+    15,
+    56,
+    6
+   ],
+   [
+    180,
+    142,
+    16,
+    56,
+    6
+   ],
+   [
+    190,
+    160,
+    17,
+    57,
+    7
+   ],
+   [
+    200,
+    161,
+    17,
+    56,
+    7
+   ],
+   [
+    210,
+    166,
+    13,
+    56,
+    6
+   ],
+   [
+    220,
+    168,
+    13,
+    57,
+    6
+   ],
+   [
+    230,
+    166,
+    10,
+    55,
+    5
+   ],
+   [
+    240,
+    174,
+    11,
+    57,
+    5
+   ],
+   [
+    250,
+    184,
+    12,
+    58,
+    5
+   ],
+   [
+    260,
+    185,
+    12,
+    55,
+    5
+   ],
+   [
+    270,
+    184,
+    14,
+    55,
+    6
+   ],
+   [
+    280,
+    185,
+    10,
+    56,
+    4
+   ],
+   [
+    290,
+    184,
+    11,
+    56,
+    5
+   ],
+   [
+    300,
+    191,
+    7,
+    56,
+    3
+   ],
+   [
+    310,
+    195,
+    5,
+    58,
+    2
+   ],
+   [
+    320,
+    191,
+    2,
+    53,
+    1
+   ],
+   [
+    330,
+    203,
+    2,
+    57,
+    1
+   ],
+   [
+    340,
+    211,
+    3,
+    58,
+    1
+   ],
+   [
+    350,
+    215,
+    3,
+    57,
+    1
+   ],
+   [
+    360,
+    218,
+    4,
+    56,
+    2
+   ],
+   [
+    370,
+    225,
+    4,
+    56,
+    2
+   ],
+   [
+    380,
+    222,
+    2,
+    56,
+    1
+   ],
+   [
+    390,
+    223,
+    3,
+    56,
+    1
+   ],
+   [
+    400,
+    224,
+    3,
+    56,
+    1
+   ],
+   [
+    410,
+    189,
+    3,
+    36,
+    1
+   ],
+   [
+    420,
+    199,
+    3,
+    28,
+    1
+   ],
+   [
+    430,
+    181,
+    3,
+    23,
+    1
+   ],
+   [
+    440,
+    150,
+    4,
+    22,
+    1
+   ],
+   [
+    450,
+    121,
+    4,
+    23,
+    2
+   ],
+   [
+    460,
+    129,
+    6,
+    17,
+    2
+   ],
+   [
+    470,
+    142,
+    6,
+    14,
+    2
+   ],
+   [
+    480,
+    147,
+    6,
+    14,
+    2
+   ],
+   [
+    490,
+    152,
+    9,
+    14,
+    2
+   ]
+  ]
+ },
+ {
+  "map": "dilemma",
+  "opponent": "nicked_v44",
+  "seed": 771001,
+  "side": "A",
+  "class": "win",
+  "group": "control",
+  "control_for": "cpp_nicked_v75 s771001 A",
+  "us": "A",
+  "stats": {
+   "A": {
+    "0": {
+     "cov_sum": 643,
+     "rounds": 20,
+     "wturns": 119,
+     "splits": 6,
+     "nat": 4,
+     "death_W": 2
+    },
+    "all": {
+     "cov_sum": 30606,
+     "rounds": 500,
+     "wturns": 7813,
+     "splits": 113,
+     "nat": 238,
+     "death_W": 80,
+     "dry20": 5098,
+     "drop": 78,
+     "death_H": 4,
+     "passed": 7,
+     "death_O": 3,
+     "death_A": 14
+    },
+    "20": {
+     "cov_sum": 356,
+     "rounds": 20,
+     "wturns": 120,
+     "dry20": 98,
+     "drop": 1
+    },
+    "40": {
+     "cov_sum": 720,
+     "rounds": 20,
+     "wturns": 123,
+     "dry20": 97,
+     "drop": 2,
+     "nat": 2,
+     "splits": 1,
+     "death_W": 1
+    },
+    "60": {
+     "cov_sum": 791,
+     "rounds": 20,
+     "wturns": 143,
+     "dry20": 86,
+     "splits": 2,
+     "drop": 1,
+     "nat": 2,
+     "death_W": 1
+    },
+    "80": {
+     "cov_sum": 991,
+     "rounds": 20,
+     "wturns": 146,
+     "dry20": 113,
+     "drop": 3,
+     "nat": 6,
+     "splits": 3,
+     "death_W": 3,
+     "death_H": 1
+    },
+    "100": {
+     "cov_sum": 562,
+     "rounds": 20,
+     "wturns": 126,
+     "dry20": 100,
+     "nat": 4,
+     "splits": 2,
+     "death_W": 2,
+     "drop": 1
+    },
+    "late": {
+     "cov_sum": 26543,
+     "rounds": 380,
+     "wturns": 7036,
+     "dry20": 4604,
+     "drop": 70,
+     "nat": 220,
+     "splits": 99,
+     "death_W": 71,
+     "death_H": 3,
+     "passed": 7,
+     "death_O": 3,
+     "death_A": 14
+    }
+   },
+   "B": {
+    "0": {
+     "cov_sum": 1053,
+     "rounds": 20,
+     "wturns": 125,
+     "splits": 8,
+     "nat": 8,
+     "death_W": 4,
+     "drop": 2
+    },
+    "all": {
+     "cov_sum": 8071,
+     "rounds": 500,
+     "wturns": 1177,
+     "splits": 19,
+     "nat": 32,
+     "death_W": 13,
+     "drop": 7,
+     "dry20": 812,
+     "death_O": 2,
+     "passed": 2,
+     "death_H": 6
+    },
+    "20": {
+     "cov_sum": 930,
+     "rounds": 20,
+     "wturns": 113,
+     "dry20": 70,
+     "drop": 1,
+     "nat": 4,
+     "splits": 2,
+     "death_W": 2,
+     "death_O": 2
+    },
+    "40": {
+     "cov_sum": 641,
+     "rounds": 20,
+     "wturns": 80,
+     "dry20": 70,
+     "passed": 2
+    },
+    "60": {
+     "cov_sum": 462,
+     "rounds": 20,
+     "wturns": 85,
+     "dry20": 66,
+     "drop": 1,
+     "nat": 4,
+     "splits": 2,
+     "death_W": 2
+    },
+    "80": {
+     "cov_sum": 404,
+     "rounds": 20,
+     "wturns": 78,
+     "dry20": 60,
+     "death_H": 1
+    },
+    "100": {
+     "cov_sum": 474,
+     "rounds": 20,
+     "wturns": 75,
+     "dry20": 45,
+     "nat": 4,
+     "splits": 2,
+     "drop": 1,
+     "death_W": 1
+    },
+    "late": {
+     "cov_sum": 4107,
+     "rounds": 380,
+     "wturns": 621,
+     "dry20": 501,
+     "nat": 12,
+     "splits": 5,
+     "drop": 2,
+     "death_W": 4,
+     "death_H": 5
+    }
+   }
+  },
+  "deficit_len": null,
+  "deficit_pop": null,
+  "rounds": 499,
+  "end": [
+   499,
+   58,
+   2,
+   16,
+   1
+  ],
+  "lens": [
+   [
+    0,
+    17,
+    17,
+    3,
+    3
+   ],
+   [
+    10,
+    16,
+    17,
+    7,
+    7
+   ],
+   [
+    20,
+    16,
+    16,
+    7,
+    7
+   ],
+   [
+    30,
+    16,
+    16,
+    7,
+    6
+   ],
+   [
+    40,
+    17,
+    12,
+    7,
+    5
+   ],
+   [
+    50,
+    19,
+    12,
+    7,
+    5
+   ],
+   [
+    60,
+    18,
+    12,
+    7,
+    5
+   ],
+   [
+    70,
+    18,
+    12,
+    8,
+    5
+   ],
+   [
+    80,
+    18,
+    12,
+    8,
+    5
+   ],
+   [
+    90,
+    21,
+    12,
+    9,
+    5
+   ],
+   [
+    100,
+    17,
+    9,
+    7,
+    4
+   ],
+   [
+    110,
+    16,
+    12,
+    7,
+    5
+   ],
+   [
+    120,
+    16,
+    12,
+    7,
+    5
+   ],
+   [
+    130,
+    17,
+    12,
+    7,
+    5
+   ],
+   [
+    140,
+    16,
+    12,
+    7,
+    5
+   ],
+   [
+    150,
+    16,
+    12,
+    7,
+    5
+   ],
+   [
+    160,
+    19,
+    13,
+    8,
+    6
+   ],
+   [
+    170,
+    20,
+    13,
+    8,
+    6
+   ],
+   [
+    180,
+    24,
+    13,
+    8,
+    6
+   ],
+   [
+    190,
+    20,
+    2,
+    8,
+    1
+   ],
+   [
+    200,
+    36,
+    2,
+    15,
+    1
+   ],
+   [
+    210,
+    31,
+    2,
+    14,
+    1
+   ],
+   [
+    220,
+    35,
+    2,
+    16,
+    1
+   ],
+   [
+    230,
+    38,
+    2,
+    17,
+    1
+   ],
+   [
+    240,
+    43,
+    2,
+    18,
+    1
+   ],
+   [
+    250,
+    46,
+    2,
+    19,
+    1
+   ],
+   [
+    260,
+    44,
+    2,
+    20,
+    1
+   ],
+   [
+    270,
+    42,
+    2,
+    19,
+    1
+   ],
+   [
+    280,
+    47,
+    2,
+    20,
+    1
+   ],
+   [
+    290,
+    43,
+    2,
+    19,
+    1
+   ],
+   [
+    300,
+    42,
+    2,
+    19,
+    1
+   ],
+   [
+    310,
+    46,
+    2,
+    20,
+    1
+   ],
+   [
+    320,
+    43,
+    2,
+    19,
+    1
+   ],
+   [
+    330,
+    47,
+    2,
+    21,
+    1
+   ],
+   [
+    340,
+    47,
+    2,
+    21,
+    1
+   ],
+   [
+    350,
+    48,
+    2,
+    21,
+    1
+   ],
+   [
+    360,
+    50,
+    2,
+    22,
+    1
+   ],
+   [
+    370,
+    50,
+    2,
+    22,
+    1
+   ],
+   [
+    380,
+    50,
+    2,
+    23,
+    1
+   ],
+   [
+    390,
+    57,
+    4,
+    23,
+    2
+   ],
+   [
+    400,
+    56,
+    2,
+    24,
+    1
+   ],
+   [
+    410,
+    57,
+    4,
+    25,
+    2
+   ],
+   [
+    420,
+    60,
+    2,
+    26,
+    1
+   ],
+   [
+    430,
+    60,
+    2,
+    27,
+    1
+   ],
+   [
+    440,
+    60,
+    2,
+    27,
+    1
+   ],
+   [
+    450,
+    66,
+    2,
+    29,
+    1
+   ],
+   [
+    460,
+    64,
+    2,
+    28,
+    1
+   ],
+   [
+    470,
+    68,
+    2,
+    28,
+    1
+   ],
+   [
+    480,
+    69,
+    2,
+    28,
+    1
+   ],
+   [
+    490,
+    79,
+    2,
+    26,
+    1
+   ]
+  ]
+ },
+ {
+  "map": "dilemma",
+  "opponent": "opp-careful-queen",
+  "seed": 771002,
+  "side": "A",
+  "class": "win",
+  "group": "control",
+  "control_for": "opp-careful-queen s771003 B",
+  "us": "A",
+  "stats": {
+   "A": {
+    "0": {
+     "cov_sum": 803,
+     "rounds": 20,
+     "wturns": 123,
+     "splits": 8,
+     "nat": 7,
+     "death_W": 3,
+     "drop": 2
+    },
+    "all": {
+     "cov_sum": 18452,
+     "rounds": 500,
+     "wturns": 2705,
+     "splits": 47,
+     "nat": 100,
+     "death_W": 34,
+     "drop": 24,
+     "dry20": 1585,
+     "death_H": 12,
+     "passed": 1
+    },
+    "20": {
+     "cov_sum": 915,
+     "rounds": 20,
+     "wturns": 131,
+     "dry20": 65,
+     "drop": 4,
+     "nat": 7,
+     "death_W": 4,
+     "splits": 3
+    },
+    "40": {
+     "cov_sum": 802,
+     "rounds": 20,
+     "wturns": 126,
+     "dry20": 74,
+     "nat": 4,
+     "splits": 2,
+     "death_W": 2,
+     "drop": 1
+    },
+    "60": {
+     "cov_sum": 950,
+     "rounds": 20,
+     "wturns": 118,
+     "dry20": 84,
+     "drop": 2,
+     "nat": 4,
+     "splits": 2,
+     "death_H": 1,
+     "death_W": 2
+    },
+    "80": {
+     "cov_sum": 841,
+     "rounds": 20,
+     "wturns": 108,
+     "dry20": 54,
+     "nat": 6,
+     "drop": 2,
+     "splits": 3,
+     "death_W": 3
+    },
+    "100": {
+     "cov_sum": 901,
+     "rounds": 20,
+     "wturns": 109,
+     "dry20": 60,
+     "drop": 3,
+     "nat": 6,
+     "splits": 3,
+     "death_W": 3
+    },
+    "late": {
+     "cov_sum": 13240,
+     "rounds": 380,
+     "wturns": 1990,
+     "dry20": 1248,
+     "drop": 10,
+     "nat": 66,
+     "splits": 26,
+     "death_W": 17,
+     "death_H": 11,
+     "passed": 1
+    }
+   },
+   "B": {
+    "0": {
+     "cov_sum": 805,
+     "rounds": 20,
+     "wturns": 124,
+     "splits": 8,
+     "nat": 8,
+     "death_W": 4,
+     "drop": 1
+    },
+    "all": {
+     "cov_sum": 27712,
+     "rounds": 500,
+     "wturns": 5638,
+     "splits": 78,
+     "nat": 165,
+     "death_W": 49,
+     "drop": 37,
+     "dry20": 3473,
+     "death_H": 14,
+     "passed": 7,
+     "death_A": 3,
+     "death_O": 1
+    },
+    "20": {
+     "cov_sum": 709,
+     "rounds": 20,
+     "wturns": 123,
+     "dry20": 82,
+     "drop": 1,
+     "nat": 2,
+     "splits": 1,
+     "death_W": 1
+    },
+    "40": {
+     "cov_sum": 679,
+     "rounds": 20,
+     "wturns": 123,
+     "dry20": 104,
+     "drop": 1,
+     "nat": 2,
+     "splits": 1,
+     "death_W": 1
+    },
+    "60": {
+     "cov_sum": 1060,
+     "rounds": 20,
+     "wturns": 121,
+     "dry20": 68,
+     "drop": 5,
+     "nat": 5,
+     "splits": 4,
+     "death_W": 2,
+     "death_H": 1
+    },
+    "80": {
+     "cov_sum": 690,
+     "rounds": 20,
+     "wturns": 142,
+     "dry20": 72,
+     "nat": 3,
+     "death_W": 2,
+     "drop": 2,
+     "splits": 2
+    },
+    "100": {
+     "cov_sum": 665,
+     "rounds": 20,
+     "wturns": 140,
+     "dry20": 131
+    },
+    "late": {
+     "cov_sum": 23104,
+     "rounds": 380,
+     "drop": 27,
+     "wturns": 4865,
+     "dry20": 3016,
+     "nat": 145,
+     "splits": 62,
+     "death_W": 39,
+     "passed": 7,
+     "death_H": 13,
+     "death_A": 3,
+     "death_O": 1
+    }
+   }
+  },
+  "deficit_len": 179,
+  "deficit_pop": 179,
+  "rounds": 499,
+  "end": [
+   499,
+   15,
+   49,
+   4,
+   14
+  ],
+  "lens": [
+   [
+    0,
+    17,
+    17,
+    3,
+    3
+   ],
+   [
+    10,
+    16,
+    16,
+    7,
+    7
+   ],
+   [
+    20,
+    18,
+    16,
+    8,
+    7
+   ],
+   [
+    30,
+    16,
+    16,
+    7,
+    7
+   ],
+   [
+    40,
+    17,
+    16,
+    7,
+    7
+   ],
+   [
+    50,
+    17,
+    18,
+    7,
+    7
+   ],
+   [
+    60,
+    16,
+    16,
+    7,
+    7
+   ],
+   [
+    70,
+    17,
+    19,
+    7,
+    8
+   ],
+   [
+    80,
+    14,
+    17,
+    6,
+    8
+   ],
+   [
+    90,
+    16,
+    16,
+    6,
+    8
+   ],
+   [
+    100,
+    14,
+    16,
+    6,
+    8
+   ],
+   [
+    110,
+    17,
+    16,
+    7,
+    8
+   ],
+   [
+    120,
+    14,
+    16,
+    6,
+    8
+   ],
+   [
+    130,
+    15,
+    16,
+    7,
+    8
+   ],
+   [
+    140,
+    15,
+    16,
+    7,
+    8
+   ],
+   [
+    150,
+    17,
+    17,
+    8,
+    8
+   ],
+   [
+    160,
+    17,
+    17,
+    7,
+    8
+   ],
+   [
+    170,
+    17,
+    18,
+    8,
+    7
+   ],
+   [
+    180,
+    13,
+    18,
+    6,
+    7
+   ],
+   [
+    190,
+    13,
+    21,
+    6,
+    9
+   ],
+   [
+    200,
+    12,
+    22,
+    5,
+    9
+   ],
+   [
+    210,
+    17,
+    25,
+    6,
+    11
+   ],
+   [
+    220,
+    12,
+    20,
+    4,
+    9
+   ],
+   [
+    230,
+    11,
+    22,
+    4,
+    9
+   ],
+   [
+    240,
+    14,
+    26,
+    5,
+    12
+   ],
+   [
+    250,
+    15,
+    28,
+    6,
+    12
+   ],
+   [
+    260,
+    16,
+    29,
+    7,
+    13
+   ],
+   [
+    270,
+    16,
+    29,
+    7,
+    13
+   ],
+   [
+    280,
+    16,
+    30,
+    7,
+    13
+   ],
+   [
+    290,
+    16,
+    29,
+    7,
+    13
+   ],
+   [
+    300,
+    18,
+    29,
+    7,
+    13
+   ],
+   [
+    310,
+    16,
+    29,
+    7,
+    13
+   ],
+   [
+    320,
+    16,
+    30,
+    7,
+    13
+   ],
+   [
+    330,
+    16,
+    29,
+    7,
+    13
+   ],
+   [
+    340,
+    16,
+    29,
+    7,
+    13
+   ],
+   [
+    350,
+    16,
+    30,
+    7,
+    13
+   ],
+   [
+    360,
+    15,
+    31,
+    6,
+    12
+   ],
+   [
+    370,
+    17,
+    33,
+    7,
+    13
+   ],
+   [
+    380,
+    19,
+    32,
+    7,
+    13
+   ],
+   [
+    390,
+    15,
+    35,
+    6,
+    14
+   ],
+   [
+    400,
+    17,
+    36,
+    7,
+    15
+   ],
+   [
+    410,
+    14,
+    33,
+    6,
+    14
+   ],
+   [
+    420,
+    14,
+    34,
+    6,
+    15
+   ],
+   [
+    430,
+    12,
+    36,
+    5,
+    16
+   ],
+   [
+    440,
+    14,
+    39,
+    6,
+    18
+   ],
+   [
+    450,
+    14,
+    44,
+    5,
+    19
+   ],
+   [
+    460,
+    17,
+    42,
+    6,
+    18
+   ],
+   [
+    470,
+    15,
+    44,
+    5,
+    18
+   ],
+   [
+    480,
+    15,
+    45,
+    5,
+    18
+   ],
+   [
+    490,
+    14,
+    46,
+    4,
+    16
+   ]
+  ]
+ }
+]
