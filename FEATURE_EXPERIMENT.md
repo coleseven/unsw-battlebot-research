@@ -1031,3 +1031,11 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   screen** queued: base results/v11t7-bot, gp and hp3, 6 opponents (v92,
   leviathan3, lab, careful-queen, raider, economy), seeds 801001-2, 408 games
   each, preceded by an equivalence check of v11t7-bot against v11t.
+- **D1 access screen** (base results/v11t7-bot, equivalence with v11t 68/68; 6
+  opponents, seeds 801001-2, 408 games; base 221): **gp (CPP_GOAL_PATH) 236,
+  +3.7 pp [-2.7, +10.3]**, gains vs 5 of 6 opponents, queen alive 132 vs 121;
+  autarky 20 vs 9, dilemma 9 vs 5, trauma 18 vs 14, trophy 13 vs 10, tower
+  defense 17 vs 14; portals 8 vs 13, around_unsw 12 vs 17, devil 9 vs 13. hp3
+  (CPP_HUB_PATH 3) 220 (-0.2 pp): **rejected**. D2 confirmation of gp queued
+  (seeds 811001-3, 10 opponents + versions/v11t, 1,122 games each), then a 1.2.9
+  sandbox CPU check of results/v12gp-bot.
