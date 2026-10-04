@@ -1046,3 +1046,24 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   autarky +11) did not replicate (autarky 42 vs 45). **Rejected (unconfirmed)**;
   no tuning sweep of it. v11t stays the control. (1.2.9 sandbox of the gp build,
   5 maps: max 11.8M points/turn, for the record.)
+- **Stripes queen founding** (DIAGNOSTIC_FINDINGS.md; LOG QT trace with the debug-only
+  CPP_QUEEN_DEBUG):
+  - At round 7 the queen's pocket-ward move N survives 3/3 with 3 full lines, and the
+    corrected search overrides it for S (4 lines; cap 4).
+  - At (13,0) the pocket entry S is a **portal move**. queen_escape2 only follows open
+    in-view edges, so it scored 0 survival and was always overridden.
+  - New switches: CPP_QUEEN_PORTAL_TRUST (never override a queen move through a portal)
+    and CPP_QUEEN_FULL_CAP (4 = v11t).
+  - Probe (turtle, Stripes, rounds 0-119, worker pearls): v11t 0 / 0; trust alone 0 / 0;
+    trust + cap 1 69 / 32; trust + cap 2 53 / 41 (v11q 69 / 39).
+  - D3 screen queued: pt, pt2, pt1 on base results/v11t9-bot (equivalence 68/68),
+    6 opponents, seeds 821001-2.
+- **Late-game conversion** (DIAGNOSTIC_FINDINGS.md section "Late-game conversion"; all
+  548 both-dead games of the C10 base replayed):
+  - Delivery efficiency is the same in wins and losses (38-39% of donated pearls reach
+    the recipient).
+  - In the 160 could-not-deliver losses, 44.5 of 66 worker length is still more than
+    12 cells from the king at round 480.
+  - CPP_FEED_TRAVEL (feeding start earlier by 1 round per cell of distance to the
+    beaconed king, capped at 60). D4 screen queued: base results/v11t10-bot, seeds
+    831001-2.

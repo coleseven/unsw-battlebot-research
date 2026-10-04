@@ -1243,7 +1243,16 @@ class Brain {
         if (king_cell < 0 || obs.round < params::CPP_KB_ROUND - shift) return std::nullopt;
         if (params::CPP_KB_V2 ? king_tok == (init.id & 15) : length_q(obs.length) >= king_q)
             return std::nullopt;   // this dragon is (a) king
-        bool small = obs.round >= params::FEED_ROUND - shift && obs.length <= params::FEED_MAXLEN;
+        // CPP_FEED_TRAVEL: a far worker sets out earlier. In both-queens-dead losses
+        // (4 Oct, 160 games) our worker material at round 480 was 66, of which 44.5 was
+        // more than 12 cells from the king: it never arrived. Departure time scales with
+        // the distance to the beaconed king; near workers keep FEED_ROUND.
+        int travel = 0;
+        if (params::CPP_FEED_TRAVEL > 0) {
+            int d = torus_distance(memory.cell(obs.x[CENTER], obs.y[CENTER]), king_cell, memory.width, memory.height);
+            travel = std::min(params::CPP_FEED_TRAVEL_CAP, static_cast<int>(params::CPP_FEED_TRAVEL * d));
+        }
+        bool small = obs.round >= params::FEED_ROUND - shift - travel && obs.length <= params::FEED_MAXLEN;
         bool big = params::CPP_BIG_FEED && obs.round >= params::CPP_BIG_FEED_ROUND - shift &&
                    4 * king_q >= obs.length + params::CPP_BIG_FEED_MARGIN;
         if (!small && !big) return std::nullopt;
@@ -1467,14 +1476,33 @@ class Brain {
             std::vector<std::tuple<int, int, int, double, char>> opts;   // (survived, full lines<=4, unknown exits, score, dir)
             for (auto& [d, v] : scores) {
                 Escape e = queen_escape2(obs, d, params::CPP_QUEEN_TACTICS_DEPTH);
-                opts.emplace_back(e.survived, std::min(e.full, 4), e.unknown, v, d);
+                // CPP_QUEEN_FULL_CAP: with a cap of 4 a safe single corridor loses to any
+                // move with more full-depth lines, even with no enemy near; on Stripes
+                // (4 Oct) this kept the queen out of the pocket that founds the economy
+                opts.emplace_back(e.survived, std::min(e.full, params::CPP_QUEEN_FULL_CAP), e.unknown, v, d);
             }
             auto inc = std::find_if(opts.begin(), opts.end(), [&](auto& o) { return std::get<4>(o) == best_dir; });
             auto top = std::max_element(opts.begin(), opts.end(), [](auto& a, auto& b) {
                 return std::tie(std::get<0>(a), std::get<1>(a), std::get<2>(a), std::get<3>(a)) <
                        std::tie(std::get<0>(b), std::get<1>(b), std::get<2>(b), std::get<3>(b)); });
-            if (inc != opts.end() && std::tie(std::get<0>(*inc), std::get<1>(*inc)) < std::tie(std::get<0>(*top), std::get<1>(*top)))
+            char inc_dir = best_dir;
+            // CPP_QUEEN_PORTAL_TRUST: queen_escape2 only follows open in-view edges, so a
+            // first step through a portal scores 0 survival and was always overridden. On
+            // Stripes (4 Oct) that kept the queen out of the portal-entered fast pocket
+            // that founds the economy (v11q took it; v11t's workers then ate 0 in 120
+            // rounds). A portal move is left to the move scorer's own safety terms.
+            bool trust = params::CPP_QUEEN_PORTAL_TRUST && obs.edge(CENTER, inc_dir) >= 0;
+            if (!trust && inc != opts.end() && std::tie(std::get<0>(*inc), std::get<1>(*inc)) < std::tie(std::get<0>(*top), std::get<1>(*top)))
                 best_dir = std::get<4>(*top);
+            if (params::CPP_QUEEN_DEBUG) {
+                char b[96];
+                std::snprintf(b, sizeof b, "\nLOG QT %d inc %c -> %c", obs.round, inc_dir, best_dir);
+                mover_log += b;
+                for (auto& o : opts) {
+                    std::snprintf(b, sizeof b, " | %c s%d f%d u%d v%.1f", std::get<4>(o), std::get<0>(o), std::get<1>(o), std::get<2>(o), std::get<3>(o));
+                    mover_log += b;
+                }
+            }
         } else if (params::CPP_QUEEN_TACTICS && init.id <= 1 && scores.size() >= 2) {
             std::vector<std::tuple<int, int, double, char>> opts;   // (survived, full lines, score, dir)
             for (auto& [d, v] : scores) {

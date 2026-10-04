@@ -132,3 +132,42 @@ failures are:
 
 Harvest sequencing (section 4) stays queued behind these. If an access fix lands and Trophy-style
 population races remain, revisit it together with "harvest one turn versus split now".
+
+## Late-game conversion (section 5 prerequisite)
+
+All 548 both-queens-dead games of the C10 base (254 losses, 294 wins) were replayed
+deterministically, and all 548 reproduced the recorded winner (`late_cases.json`,
+`late/replays`). Analysis scripts: `collector_diag.py` → `collector_cases.json`, and
+`endgame_spread.py`.
+
+- **Classes of the 254 losses.**
+  - Could not deliver (160): our end total length exceeds their final longest, but no
+    dragon of ours ever exceeded it.
+  - Could not produce (76): end total 15 against their longest 27.5. These are mostly
+    weakhold, Tower Defense and Maze.
+  - Delivered then died (18): our dragon was longer than their final longest after
+    round 300 and then died. Mostly weakhold and Islands.
+- **Delivery efficiency is the same in wins and losses.** A donation is a worker's empty
+  action, which drops its pearls; every donation had a teammate within the feeding range
+  of 4. Donated pearls went:
+  - losses: 38% to the intended recipient, 48% to other teammates, 8% to the enemy, 6%
+    never eaten;
+  - wins: 39%, 46%, 8%, 7%.
+  - Pickup-aware drop placement therefore has no specific target here.
+- **Volume and transport differ.**
+  - Winners donate 42.5 times per game against 29.3 in losses (25.4 against 21.7 after
+    round 400 in the could-not-deliver class).
+  - In could-not-deliver losses our worker material at rounds 420 / 460 / 480 is 84.5 /
+    78 / 66, of which **51 / 49 / 44.5 is more than 12 cells from our king** and only
+    3 / 3 / 2 within 6.
+  - Our king grows 16 → 20.5 → 23 over those rounds, while theirs grows 20 → 27.5 → 33.
+  - In wins our king grows 18.5 → 24 → 28 at the same rate, and theirs only 10.5 → 14.
+  - The longest-length race is decided after round 400: in losses the median margin goes
+    −2 → −5 (round 450) → −10 (end); in wins 0 → +2 → +10.
+- **Diagnosis.** Of Astra's three options, the evidence matches "collection begins too
+  late despite persistent surplus". The surplus exists, but most of it is too far from
+  the king to arrive before round 500. Small workers all start feeding at a fixed round
+  (FEED_ROUND 403, minus 40 on large maps), whatever their distance from the king.
+- **Experiment.** `CPP_FEED_TRAVEL`: a small worker's feeding start moves earlier by
+  1 round per cell of distance to the beaconed king, capped at 60. Near workers keep the
+  current timing. D4 screen: base results/v11t10-bot, 408 games.

@@ -189,6 +189,11 @@ CPP_QUEEN_BODYGUARD = 0  # workers trade head-on with enemy heads within this ma
 CPP_QUEEN_BODYGUARD_BONUS = 200.0  # added to W_ATTACK for such a trade
 CPP_GOAL_PATH = 0  # exploration-goal progress by path distance over remembered terrain (unknown edges open) instead of straight line
 CPP_HUB_PATH = 0  # hub area = cells within this walking distance of the hub over remembered terrain (0 = the 5x5 square)
+CPP_QUEEN_FULL_CAP = 4  # corrected search: full-depth escape lines count up to this many (4 = v11t)
+CPP_QUEEN_DEBUG = 0  # debug only: log the queen's corrected-search options each turn (LOG QT lines)
+CPP_QUEEN_PORTAL_TRUST = 0  # corrected search never overrides a queen move through a portal (the in-view search cannot follow portals)
+CPP_FEED_TRAVEL = 0.0  # small workers start feeding this many rounds earlier per cell of distance to the beaconed king (0 = off)
+CPP_FEED_TRAVEL_CAP = 60  # at most this many rounds earlier
 CPP_QUEEN_TACTICS = 0   # Q4: exact short escape search for our queen (id 0/1), any mode
 CPP_QUEEN_TACTICS_DEPTH = 3  # Q4: look-ahead steps (view radius is 3)
 CPP_QUEEN_TACTICS_MARGIN = 0  # Q4: extra steps per turn assumed for threat heads
