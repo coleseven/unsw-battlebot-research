@@ -973,3 +973,8 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
 - C11 queued: CPP_QUEEN_BODYGUARD (a worker may trade head-on with an adjacent
   enemy head that is within 2 / 3 cells of our queen, whatever the length gap;
   W_ATTACK + 200). Base results/v11t5-bot, 10 opponents, seeds 781001-2.
+- **C10 CPP_DOOMED_SPARE_QUEEN** (base v11t-equivalent, 10 opponents + v11q,
+  seeds 771001-3, 1,122 games): base 647, queen alive 356; **dq 645, queen alive
+  371** (+15); lab 59 vs 43, v92 34 vs 31; growth 55 vs 65, v7 37 vs 44, v11q 55
+  vs 57. Neutral on wins: not adopted alone (a logically safe fix; keep for a
+  combined candidate).
