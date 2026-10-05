@@ -1120,3 +1120,11 @@ v11t stays the control and the recommended upload.
   - Probe: CPP_QUEEN_EARLY 40 also fixes Stripes (workers 69 / 20 vs 0 / 0), because the
     queen founds the portal pocket in the opening.
   - D7 screen queued: e40 and e80 on base results/v11t12-bot, seeds 861001-2.
+- **D7 queen early** (base results/v11t12-bot, equivalence 68/68, 6 opponents, seeds
+  861001-2, 408 games; base 221):
+  - e40: 230, +2.2 pp [−3.7, +8.6]. Elimination wins 25 vs 19; v92 21 vs 18; queen
+    alive 114 vs 124. By map: slithery 23 vs 14, tower defense 15 vs 8; maze 14 vs 19,
+    queen of spades 11 vs 15, autarky 11 vs 15.
+  - e80: 222, +0.5 pp.
+  - D8 untouched confirmation of e40 queued (seeds 871001-3, 10 opponents +
+    versions/v11t).
