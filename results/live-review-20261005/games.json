@@ -1,0 +1,1957 @@
+[
+{
+"grp": "new",
+"battle": 1160533,
+"at": "2026-10-05T16:32:52.667Z",
+"opp": "Nexus Lab",
+"opp_elo": 1608,
+"game": 1160533,
+"map": "Autarky",
+"us": "A",
+"won": false,
+"cls": "elim",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1160533,
+"at": "2026-10-05T16:32:52.667Z",
+"opp": "Nexus Lab",
+"opp_elo": 1608,
+"game": 1160534,
+"map": "Schooltime",
+"us": "A",
+"won": true,
+"cls": "onlyOurs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1160533,
+"at": "2026-10-05T16:32:52.667Z",
+"opp": "Nexus Lab",
+"opp_elo": 1608,
+"game": 1160535,
+"map": "Devil",
+"us": "A",
+"won": true,
+"cls": "onlyOurs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1160533,
+"at": "2026-10-05T16:32:52.667Z",
+"opp": "Nexus Lab",
+"opp_elo": 1608,
+"game": 1160536,
+"map": "Trauma",
+"us": "A",
+"won": true,
+"cls": "both",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1160533,
+"at": "2026-10-05T16:32:52.667Z",
+"opp": "Nexus Lab",
+"opp_elo": 1608,
+"game": 1160537,
+"map": "Default",
+"us": "A",
+"won": false,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1158434,
+"at": "2026-10-05T16:07:16.534Z",
+"opp": "Imagine Winning",
+"opp_elo": 1631,
+"game": 1158434,
+"map": "Devil",
+"us": "A",
+"won": false,
+"cls": "onlyTheirs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1158434,
+"at": "2026-10-05T16:07:16.534Z",
+"opp": "Imagine Winning",
+"opp_elo": 1631,
+"game": 1158435,
+"map": "Around UNSW",
+"us": "A",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1158434,
+"at": "2026-10-05T16:07:16.534Z",
+"opp": "Imagine Winning",
+"opp_elo": 1631,
+"game": 1158436,
+"map": "Trauma",
+"us": "A",
+"won": false,
+"cls": "onlyTheirs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1158434,
+"at": "2026-10-05T16:07:16.534Z",
+"opp": "Imagine Winning",
+"opp_elo": 1631,
+"game": 1158437,
+"map": "Prisoners Dilemma",
+"us": "A",
+"won": false,
+"cls": "elim",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1158434,
+"at": "2026-10-05T16:07:16.534Z",
+"opp": "Imagine Winning",
+"opp_elo": 1631,
+"game": 1158438,
+"map": "Maze",
+"us": "A",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1158249,
+"at": "2026-10-05T16:03:14.025Z",
+"opp": "ihateapple",
+"opp_elo": 1450,
+"game": 1158249,
+"map": "Portals",
+"us": "B",
+"won": false,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1158249,
+"at": "2026-10-05T16:03:14.025Z",
+"opp": "ihateapple",
+"opp_elo": 1450,
+"game": 1158250,
+"map": "Devil",
+"us": "B",
+"won": true,
+"cls": "elim",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1158249,
+"at": "2026-10-05T16:03:14.025Z",
+"opp": "ihateapple",
+"opp_elo": 1450,
+"game": 1158251,
+"map": "Islands",
+"us": "B",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1158249,
+"at": "2026-10-05T16:03:14.025Z",
+"opp": "ihateapple",
+"opp_elo": 1450,
+"game": 1158252,
+"map": "Slithery Fight",
+"us": "B",
+"won": false,
+"cls": "onlyTheirs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1158249,
+"at": "2026-10-05T16:03:14.025Z",
+"opp": "ihateapple",
+"opp_elo": 1450,
+"game": 1158253,
+"map": "Default",
+"us": "B",
+"won": true,
+"cls": "elim",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1157718,
+"at": "2026-10-05T15:53:38.783Z",
+"opp": "aisakastrats",
+"opp_elo": 1533,
+"game": 1157718,
+"map": "Autarky",
+"us": "B",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1157718,
+"at": "2026-10-05T15:53:38.783Z",
+"opp": "aisakastrats",
+"opp_elo": 1533,
+"game": 1157719,
+"map": "Slithery Fight",
+"us": "B",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1157718,
+"at": "2026-10-05T15:53:38.783Z",
+"opp": "aisakastrats",
+"opp_elo": 1533,
+"game": 1157720,
+"map": "Portals",
+"us": "B",
+"won": false,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1157718,
+"at": "2026-10-05T15:53:38.783Z",
+"opp": "aisakastrats",
+"opp_elo": 1533,
+"game": 1157721,
+"map": "weakhold",
+"us": "B",
+"won": true,
+"cls": "elim",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1157718,
+"at": "2026-10-05T15:53:38.783Z",
+"opp": "aisakastrats",
+"opp_elo": 1533,
+"game": 1157722,
+"map": "Default",
+"us": "B",
+"won": false,
+"cls": "onlyTheirs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1157673,
+"at": "2026-10-05T15:52:29.450Z",
+"opp": "miga bot",
+"opp_elo": 1489,
+"game": 1157673,
+"map": "Schooltime",
+"us": "A",
+"won": false,
+"cls": "both",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1157673,
+"at": "2026-10-05T15:52:29.450Z",
+"opp": "miga bot",
+"opp_elo": 1489,
+"game": 1157674,
+"map": "Trauma",
+"us": "A",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1157673,
+"at": "2026-10-05T15:52:29.450Z",
+"opp": "miga bot",
+"opp_elo": 1489,
+"game": 1157675,
+"map": "Portals",
+"us": "A",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1157673,
+"at": "2026-10-05T15:52:29.450Z",
+"opp": "miga bot",
+"opp_elo": 1489,
+"game": 1157676,
+"map": "Prisoners Dilemma",
+"us": "A",
+"won": false,
+"cls": "elim",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1157673,
+"at": "2026-10-05T15:52:29.450Z",
+"opp": "miga bot",
+"opp_elo": 1489,
+"game": 1157677,
+"map": "Autarky",
+"us": "A",
+"won": false,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1156097,
+"at": "2026-10-05T15:31:03.737Z",
+"opp": "Spearhead Capital",
+"opp_elo": 1547,
+"game": 1156097,
+"map": "Devil",
+"us": "B",
+"won": true,
+"cls": "elim",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1156097,
+"at": "2026-10-05T15:31:03.737Z",
+"opp": "Spearhead Capital",
+"opp_elo": 1547,
+"game": 1156098,
+"map": "Portals",
+"us": "B",
+"won": false,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1156097,
+"at": "2026-10-05T15:31:03.737Z",
+"opp": "Spearhead Capital",
+"opp_elo": 1547,
+"game": 1156099,
+"map": "Prisoners Dilemma",
+"us": "B",
+"won": false,
+"cls": "elim",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1156097,
+"at": "2026-10-05T15:31:03.737Z",
+"opp": "Spearhead Capital",
+"opp_elo": 1547,
+"game": 1156100,
+"map": "Islands",
+"us": "B",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1156097,
+"at": "2026-10-05T15:31:03.737Z",
+"opp": "Spearhead Capital",
+"opp_elo": 1547,
+"game": 1156101,
+"map": "Schooltime",
+"us": "B",
+"won": true,
+"cls": "onlyOurs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1154061,
+"at": "2026-10-05T15:06:11.150Z",
+"opp": "pig",
+"opp_elo": 1473,
+"game": 1154061,
+"map": "Trophy",
+"us": "A",
+"won": false,
+"cls": "elim",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1154061,
+"at": "2026-10-05T15:06:11.150Z",
+"opp": "pig",
+"opp_elo": 1473,
+"game": 1154062,
+"map": "Islands",
+"us": "A",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1154061,
+"at": "2026-10-05T15:06:11.150Z",
+"opp": "pig",
+"opp_elo": 1473,
+"game": 1154063,
+"map": "Maze",
+"us": "A",
+"won": true,
+"cls": "onlyOurs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1154061,
+"at": "2026-10-05T15:06:11.150Z",
+"opp": "pig",
+"opp_elo": 1473,
+"game": 1154064,
+"map": "Trauma",
+"us": "A",
+"won": false,
+"cls": "both",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1154061,
+"at": "2026-10-05T15:06:11.150Z",
+"opp": "pig",
+"opp_elo": 1473,
+"game": 1154065,
+"map": "Portals",
+"us": "A",
+"won": true,
+"cls": "onlyOurs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1153360,
+"at": "2026-10-05T14:51:36.723Z",
+"opp": "R\u221e",
+"opp_elo": 1550,
+"game": 1153360,
+"map": "Portals",
+"us": "B",
+"won": false,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1153360,
+"at": "2026-10-05T14:51:36.723Z",
+"opp": "R\u221e",
+"opp_elo": 1550,
+"game": 1153361,
+"map": "Default",
+"us": "B",
+"won": false,
+"cls": "both",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1153360,
+"at": "2026-10-05T14:51:36.723Z",
+"opp": "R\u221e",
+"opp_elo": 1550,
+"game": 1153362,
+"map": "Queen Of Spades",
+"us": "B",
+"won": true,
+"cls": "elim",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1153360,
+"at": "2026-10-05T14:51:36.723Z",
+"opp": "R\u221e",
+"opp_elo": 1550,
+"game": 1153363,
+"map": "Devil",
+"us": "B",
+"won": false,
+"cls": "onlyTheirs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1153360,
+"at": "2026-10-05T14:51:36.723Z",
+"opp": "R\u221e",
+"opp_elo": 1550,
+"game": 1153364,
+"map": "Trophy",
+"us": "B",
+"won": false,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1152685,
+"at": "2026-10-05T14:43:48.540Z",
+"opp": "Oswald",
+"opp_elo": 1557,
+"game": 1152685,
+"map": "Around UNSW",
+"us": "B",
+"won": false,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1152685,
+"at": "2026-10-05T14:43:48.540Z",
+"opp": "Oswald",
+"opp_elo": 1557,
+"game": 1152686,
+"map": "Maze",
+"us": "B",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1152685,
+"at": "2026-10-05T14:43:48.540Z",
+"opp": "Oswald",
+"opp_elo": 1557,
+"game": 1152687,
+"map": "Devil",
+"us": "B",
+"won": false,
+"cls": "elim",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1152685,
+"at": "2026-10-05T14:43:48.540Z",
+"opp": "Oswald",
+"opp_elo": 1557,
+"game": 1152688,
+"map": "Prisoners Dilemma",
+"us": "B",
+"won": false,
+"cls": "elim",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1152685,
+"at": "2026-10-05T14:43:48.540Z",
+"opp": "Oswald",
+"opp_elo": 1557,
+"game": 1152689,
+"map": "Default",
+"us": "B",
+"won": false,
+"cls": "onlyTheirs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1152239,
+"at": "2026-10-05T14:36:22.630Z",
+"opp": "Oswald",
+"opp_elo": 1558,
+"game": 1152239,
+"map": "Maze",
+"us": "B",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1152239,
+"at": "2026-10-05T14:36:22.630Z",
+"opp": "Oswald",
+"opp_elo": 1558,
+"game": 1152240,
+"map": "Devil",
+"us": "B",
+"won": true,
+"cls": "elim",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1152239,
+"at": "2026-10-05T14:36:22.630Z",
+"opp": "Oswald",
+"opp_elo": 1558,
+"game": 1152241,
+"map": "Autarky",
+"us": "B",
+"won": false,
+"cls": "onlyTheirs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1152239,
+"at": "2026-10-05T14:36:22.630Z",
+"opp": "Oswald",
+"opp_elo": 1558,
+"game": 1152242,
+"map": "Prisoners Dilemma",
+"us": "B",
+"won": false,
+"cls": "elim",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1152239,
+"at": "2026-10-05T14:36:22.630Z",
+"opp": "Oswald",
+"opp_elo": 1558,
+"game": 1152243,
+"map": "Trophy",
+"us": "B",
+"won": true,
+"cls": "elim",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1151584,
+"at": "2026-10-05T14:29:47.033Z",
+"opp": "Oswald",
+"opp_elo": 1559,
+"game": 1151584,
+"map": "Slithery Fight",
+"us": "B",
+"won": false,
+"cls": "onlyTheirs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1151584,
+"at": "2026-10-05T14:29:47.033Z",
+"opp": "Oswald",
+"opp_elo": 1559,
+"game": 1151585,
+"map": "Portals",
+"us": "B",
+"won": false,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1151584,
+"at": "2026-10-05T14:29:47.033Z",
+"opp": "Oswald",
+"opp_elo": 1559,
+"game": 1151586,
+"map": "Maze",
+"us": "B",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1151584,
+"at": "2026-10-05T14:29:47.033Z",
+"opp": "Oswald",
+"opp_elo": 1559,
+"game": 1151587,
+"map": "Default",
+"us": "B",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1151584,
+"at": "2026-10-05T14:29:47.033Z",
+"opp": "Oswald",
+"opp_elo": 1559,
+"game": 1151588,
+"map": "Trauma",
+"us": "B",
+"won": true,
+"cls": "both",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1151546,
+"at": "2026-10-05T14:29:37.319Z",
+"opp": "my cactus died so now i\u2019m a depressed programmer",
+"opp_elo": 1622,
+"game": 1151546,
+"map": "Islands",
+"us": "B",
+"won": false,
+"cls": "onlyTheirs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1151546,
+"at": "2026-10-05T14:29:37.319Z",
+"opp": "my cactus died so now i\u2019m a depressed programmer",
+"opp_elo": 1622,
+"game": 1151547,
+"map": "Portals",
+"us": "B",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1151546,
+"at": "2026-10-05T14:29:37.319Z",
+"opp": "my cactus died so now i\u2019m a depressed programmer",
+"opp_elo": 1622,
+"game": 1151548,
+"map": "Schooltime",
+"us": "B",
+"won": true,
+"cls": "both",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1151546,
+"at": "2026-10-05T14:29:37.319Z",
+"opp": "my cactus died so now i\u2019m a depressed programmer",
+"opp_elo": 1622,
+"game": 1151549,
+"map": "Maze",
+"us": "B",
+"won": false,
+"cls": "onlyTheirs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1151546,
+"at": "2026-10-05T14:29:37.319Z",
+"opp": "my cactus died so now i\u2019m a depressed programmer",
+"opp_elo": 1622,
+"game": 1151550,
+"map": "Autarky",
+"us": "B",
+"won": false,
+"cls": "onlyTheirs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1151138,
+"at": "2026-10-05T14:24:34.067Z",
+"opp": "Oswald",
+"opp_elo": 1559,
+"game": 1151138,
+"map": "Default",
+"us": "B",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1151138,
+"at": "2026-10-05T14:24:34.067Z",
+"opp": "Oswald",
+"opp_elo": 1559,
+"game": 1151139,
+"map": "Slithery Fight",
+"us": "B",
+"won": false,
+"cls": "both",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1151138,
+"at": "2026-10-05T14:24:34.067Z",
+"opp": "Oswald",
+"opp_elo": 1559,
+"game": 1151140,
+"map": "Prisoners Dilemma",
+"us": "B",
+"won": true,
+"cls": "elim",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1151138,
+"at": "2026-10-05T14:24:34.067Z",
+"opp": "Oswald",
+"opp_elo": 1559,
+"game": 1151141,
+"map": "Islands",
+"us": "B",
+"won": false,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "new",
+"battle": 1151138,
+"at": "2026-10-05T14:24:34.067Z",
+"opp": "Oswald",
+"opp_elo": 1559,
+"game": 1151142,
+"map": "Autarky",
+"us": "B",
+"won": false,
+"cls": "onlyTheirs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1149548,
+"at": "2026-10-05T14:04:14.181Z",
+"opp": "Delta",
+"opp_elo": 1335,
+"game": 1149548,
+"map": "Portals",
+"us": "B",
+"won": false,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1149548,
+"at": "2026-10-05T14:04:14.181Z",
+"opp": "Delta",
+"opp_elo": 1335,
+"game": 1149549,
+"map": "Autarky",
+"us": "B",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1149548,
+"at": "2026-10-05T14:04:14.181Z",
+"opp": "Delta",
+"opp_elo": 1335,
+"game": 1149550,
+"map": "Trophy",
+"us": "B",
+"won": true,
+"cls": "elim",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1149548,
+"at": "2026-10-05T14:04:14.181Z",
+"opp": "Delta",
+"opp_elo": 1335,
+"game": 1149551,
+"map": "Prisoners Dilemma",
+"us": "B",
+"won": true,
+"cls": "elim",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1149548,
+"at": "2026-10-05T14:04:14.181Z",
+"opp": "Delta",
+"opp_elo": 1335,
+"game": 1149552,
+"map": "Stripes",
+"us": "B",
+"won": true,
+"cls": "elim",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1148723,
+"at": "2026-10-05T13:52:33.034Z",
+"opp": "Quantify",
+"opp_elo": 1510,
+"game": 1148723,
+"map": "Islands",
+"us": "B",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1148723,
+"at": "2026-10-05T13:52:33.034Z",
+"opp": "Quantify",
+"opp_elo": 1510,
+"game": 1148724,
+"map": "Autarky",
+"us": "B",
+"won": false,
+"cls": "onlyTheirs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1148723,
+"at": "2026-10-05T13:52:33.034Z",
+"opp": "Quantify",
+"opp_elo": 1510,
+"game": 1148725,
+"map": "Schooltime",
+"us": "B",
+"won": true,
+"cls": "both",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1148723,
+"at": "2026-10-05T13:52:33.034Z",
+"opp": "Quantify",
+"opp_elo": 1510,
+"game": 1148726,
+"map": "Around UNSW",
+"us": "B",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1148723,
+"at": "2026-10-05T13:52:33.034Z",
+"opp": "Quantify",
+"opp_elo": 1510,
+"game": 1148727,
+"map": "Default",
+"us": "B",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1148464,
+"at": "2026-10-05T13:48:07.000Z",
+"opp": "Manners Cookies",
+"opp_elo": 1426,
+"game": 1148464,
+"map": "Tower Defense",
+"us": "A",
+"won": false,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1148464,
+"at": "2026-10-05T13:48:07.000Z",
+"opp": "Manners Cookies",
+"opp_elo": 1426,
+"game": 1148465,
+"map": "Slithery Fight",
+"us": "A",
+"won": true,
+"cls": "onlyOurs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1148464,
+"at": "2026-10-05T13:48:07.000Z",
+"opp": "Manners Cookies",
+"opp_elo": 1426,
+"game": 1148466,
+"map": "Prisoners Dilemma",
+"us": "A",
+"won": false,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1148464,
+"at": "2026-10-05T13:48:07.000Z",
+"opp": "Manners Cookies",
+"opp_elo": 1426,
+"game": 1148467,
+"map": "Autarky",
+"us": "A",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1148464,
+"at": "2026-10-05T13:48:07.000Z",
+"opp": "Manners Cookies",
+"opp_elo": 1426,
+"game": 1148468,
+"map": "Maze",
+"us": "A",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1148429,
+"at": "2026-10-05T13:47:17.380Z",
+"opp": "Oswald",
+"opp_elo": 1555,
+"game": 1148429,
+"map": "Prisoners Dilemma",
+"us": "B",
+"won": false,
+"cls": "onlyTheirs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1148429,
+"at": "2026-10-05T13:47:17.380Z",
+"opp": "Oswald",
+"opp_elo": 1555,
+"game": 1148430,
+"map": "weakhold",
+"us": "B",
+"won": false,
+"cls": "onlyTheirs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1148429,
+"at": "2026-10-05T13:47:17.380Z",
+"opp": "Oswald",
+"opp_elo": 1555,
+"game": 1148431,
+"map": "Autarky",
+"us": "B",
+"won": false,
+"cls": "onlyTheirs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1148429,
+"at": "2026-10-05T13:47:17.380Z",
+"opp": "Oswald",
+"opp_elo": 1555,
+"game": 1148432,
+"map": "Queen Of Spades",
+"us": "B",
+"won": false,
+"cls": "onlyTheirs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1148429,
+"at": "2026-10-05T13:47:17.380Z",
+"opp": "Oswald",
+"opp_elo": 1555,
+"game": 1148433,
+"map": "Trophy",
+"us": "B",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1146336,
+"at": "2026-10-05T13:20:57.022Z",
+"opp": "gdggs",
+"opp_elo": 1705,
+"game": 1146336,
+"map": "Trauma",
+"us": "B",
+"won": false,
+"cls": "both",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1146336,
+"at": "2026-10-05T13:20:57.022Z",
+"opp": "gdggs",
+"opp_elo": 1705,
+"game": 1146337,
+"map": "Australia",
+"us": "B",
+"won": false,
+"cls": "onlyTheirs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1146336,
+"at": "2026-10-05T13:20:57.022Z",
+"opp": "gdggs",
+"opp_elo": 1705,
+"game": 1146338,
+"map": "Default",
+"us": "B",
+"won": false,
+"cls": "onlyTheirs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1146336,
+"at": "2026-10-05T13:20:57.022Z",
+"opp": "gdggs",
+"opp_elo": 1705,
+"game": 1146339,
+"map": "Devil",
+"us": "B",
+"won": true,
+"cls": "elim",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1146336,
+"at": "2026-10-05T13:20:57.022Z",
+"opp": "gdggs",
+"opp_elo": 1705,
+"game": 1146340,
+"map": "weakhold",
+"us": "B",
+"won": false,
+"cls": "onlyTheirs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1145012,
+"at": "2026-10-05T13:03:28.171Z",
+"opp": "Atlas",
+"opp_elo": 1614,
+"game": 1145012,
+"map": "Queen Of Spades",
+"us": "B",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1145012,
+"at": "2026-10-05T13:03:28.171Z",
+"opp": "Atlas",
+"opp_elo": 1614,
+"game": 1145013,
+"map": "Devil",
+"us": "B",
+"won": false,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1145012,
+"at": "2026-10-05T13:03:28.171Z",
+"opp": "Atlas",
+"opp_elo": 1614,
+"game": 1145014,
+"map": "Autarky",
+"us": "B",
+"won": true,
+"cls": "elim",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1145012,
+"at": "2026-10-05T13:03:28.171Z",
+"opp": "Atlas",
+"opp_elo": 1614,
+"game": 1145015,
+"map": "Prisoners Dilemma",
+"us": "B",
+"won": false,
+"cls": "elim",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1145012,
+"at": "2026-10-05T13:03:28.171Z",
+"opp": "Atlas",
+"opp_elo": 1614,
+"game": 1145016,
+"map": "Australia",
+"us": "B",
+"won": false,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1144235,
+"at": "2026-10-05T12:51:31.947Z",
+"opp": "Quantify",
+"opp_elo": 1495,
+"game": 1144235,
+"map": "Slithery Fight",
+"us": "B",
+"won": false,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1144235,
+"at": "2026-10-05T12:51:31.947Z",
+"opp": "Quantify",
+"opp_elo": 1495,
+"game": 1144236,
+"map": "Maze",
+"us": "B",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1144235,
+"at": "2026-10-05T12:51:31.947Z",
+"opp": "Quantify",
+"opp_elo": 1495,
+"game": 1144237,
+"map": "Australia",
+"us": "B",
+"won": false,
+"cls": "onlyTheirs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1144235,
+"at": "2026-10-05T12:51:31.947Z",
+"opp": "Quantify",
+"opp_elo": 1495,
+"game": 1144238,
+"map": "Autarky",
+"us": "B",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1144235,
+"at": "2026-10-05T12:51:31.947Z",
+"opp": "Quantify",
+"opp_elo": 1495,
+"game": 1144239,
+"map": "weakhold",
+"us": "B",
+"won": false,
+"cls": "elim",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1144091,
+"at": "2026-10-05T12:49:32.053Z",
+"opp": "Oswald",
+"opp_elo": 1563,
+"game": 1144091,
+"map": "Maze",
+"us": "B",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1144091,
+"at": "2026-10-05T12:49:32.053Z",
+"opp": "Oswald",
+"opp_elo": 1563,
+"game": 1144092,
+"map": "Autarky",
+"us": "B",
+"won": true,
+"cls": "elim",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1144091,
+"at": "2026-10-05T12:49:32.053Z",
+"opp": "Oswald",
+"opp_elo": 1563,
+"game": 1144093,
+"map": "Schooltime",
+"us": "B",
+"won": false,
+"cls": "both",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1144091,
+"at": "2026-10-05T12:49:32.053Z",
+"opp": "Oswald",
+"opp_elo": 1563,
+"game": 1144094,
+"map": "Portals",
+"us": "B",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1144091,
+"at": "2026-10-05T12:49:32.053Z",
+"opp": "Oswald",
+"opp_elo": 1563,
+"game": 1144095,
+"map": "Queen Of Spades",
+"us": "B",
+"won": true,
+"cls": "onlyOurs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1143966,
+"at": "2026-10-05T12:46:57.531Z",
+"opp": "Manners Cookies",
+"opp_elo": 1427,
+"game": 1143966,
+"map": "Prisoners Dilemma",
+"us": "B",
+"won": false,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1143966,
+"at": "2026-10-05T12:46:57.531Z",
+"opp": "Manners Cookies",
+"opp_elo": 1427,
+"game": 1143967,
+"map": "Autarky",
+"us": "B",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1143966,
+"at": "2026-10-05T12:46:57.531Z",
+"opp": "Manners Cookies",
+"opp_elo": 1427,
+"game": 1143968,
+"map": "Trauma",
+"us": "B",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1143966,
+"at": "2026-10-05T12:46:57.531Z",
+"opp": "Manners Cookies",
+"opp_elo": 1427,
+"game": 1143969,
+"map": "Islands",
+"us": "B",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1143966,
+"at": "2026-10-05T12:46:57.531Z",
+"opp": "Manners Cookies",
+"opp_elo": 1427,
+"game": 1143970,
+"map": "Tower Defense",
+"us": "B",
+"won": false,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1141975,
+"at": "2026-10-05T12:19:31.035Z",
+"opp": "\ud83e\udee7\ud83d\udc1f",
+"opp_elo": 1466,
+"game": 1141975,
+"map": "Islands",
+"us": "B",
+"won": true,
+"cls": "none",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1141975,
+"at": "2026-10-05T12:19:31.035Z",
+"opp": "\ud83e\udee7\ud83d\udc1f",
+"opp_elo": 1466,
+"game": 1141976,
+"map": "Autarky",
+"us": "B",
+"won": false,
+"cls": "onlyTheirs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1141975,
+"at": "2026-10-05T12:19:31.035Z",
+"opp": "\ud83e\udee7\ud83d\udc1f",
+"opp_elo": 1466,
+"game": 1141977,
+"map": "Tower Defense",
+"us": "B",
+"won": false,
+"cls": "onlyTheirs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1141975,
+"at": "2026-10-05T12:19:31.035Z",
+"opp": "\ud83e\udee7\ud83d\udc1f",
+"opp_elo": 1466,
+"game": 1141978,
+"map": "Portals",
+"us": "B",
+"won": false,
+"cls": "onlyTheirs",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+},
+{
+"grp": "old",
+"battle": 1141975,
+"at": "2026-10-05T12:19:31.035Z",
+"opp": "\ud83e\udee7\ud83d\udc1f",
+"opp_elo": 1466,
+"game": 1141979,
+"map": "Stripes",
+"us": "B",
+"won": true,
+"cls": "elim",
+"names": {
+"A": "",
+"B": ""
+},
+"our_cpu_max": null
+}
+]
