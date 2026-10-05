@@ -1472,7 +1472,11 @@ class Brain {
         // CPP_QUEEN_TACTICS: the queen keeps the incumbent's move unless it survives
         // fewer look-ahead steps (or fewer full lines when no move is fully safe)
         // than another legal move; among the best, the incumbent's score decides.
-        if (params::CPP_QUEEN_TACTICS2 && init.id <= 1 && scores.size() >= 2) {
+        // CPP_QUEEN_EARLY: in the opening the queen is half our economy (Trophy starts
+        // with a queen and one worker each); the opponent's queen eats and splits from
+        // round 7 while ours ate 2 pearls in 120 rounds even against a passive bot (4 Oct)
+        bool queen_early = obs.round < params::CPP_QUEEN_EARLY;
+        if (params::CPP_QUEEN_TACTICS2 && init.id <= 1 && scores.size() >= 2 && !queen_early) {
             // CPP_QUEEN_CALM_CAP: extra escape lines matter against threats; with no enemy
             // head in view a low cap lets the queen take a safe single corridor to food
             // (D3, 4 Oct: a global cap 1-2 won Stripes 16/24 vs 4 but lost elsewhere)
@@ -1526,7 +1530,7 @@ class Brain {
             if (!flee.empty()) return std::string("MOVE ") + path + flee;
         }
         if (params::CPP_MULTISTEP && (!(params::CPP_QUEEN && init.id <= 1) || params::CPP_MULTISTEP_QUEEN)
-            && !(params::CPP_QUEEN_TACTICS2 && init.id <= 1 && !params::CPP_MULTISTEP_QUEEN))   // the checked move is the final move
+            && !(params::CPP_QUEEN_TACTICS2 && init.id <= 1 && !params::CPP_MULTISTEP_QUEEN && !queen_early))   // the checked move is the final move
             path += extra_steps(obs, best_dir);
         return std::string("MOVE ") + path;
     }

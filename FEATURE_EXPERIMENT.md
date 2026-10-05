@@ -1107,3 +1107,16 @@ Report repair, manifest, equivalence checks and both diagnostics are done
 (DIAGNOSTIC_FINDINGS.md). None of the six behaviour candidates confirmed:
 hub-path, goal-path, portal trust (alone / with caps / calm caps) and feed travel.
 v11t stays the control and the recommended upload.
+- **Overnight 4-5 Oct: opening economy.**
+  - Elimination losses are the largest net deficit, and 71 of 146 come from the nicked
+    family.
+  - In Trophy openings against nicked, their queen (id 1) eats from round 7 and splits
+    like a worker, while our queen barely eats: 2 pearls in 120 rounds even against
+    turtle. Split policy is identical on both sides (4 → 2+2).
+  - New switch CPP_QUEEN_EARLY: before round N the queen moves like a worker (no
+    corrected-search override, extra pearl steps allowed). In v11t the light queen's
+    move scoring is otherwise worker scoring (LIGHT_SAFE 1, reach and dead-end
+    penalties 0).
+  - Probe: CPP_QUEEN_EARLY 40 also fixes Stripes (workers 69 / 20 vs 0 / 0), because the
+    queen founds the portal pocket in the opening.
+  - D7 screen queued: e40 and e80 on base results/v11t12-bot, seeds 861001-2.
