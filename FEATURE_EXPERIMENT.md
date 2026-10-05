@@ -1094,3 +1094,16 @@ Stage 1 is the overnight-friendly first run; stage 3 is the next night.
   - Stripes queen founding is closed for now. The bug (portal moves scored as death) is
     documented and the switches stay off. Any revisit needs a fix confined to the portal
     move itself, not a weaker escape preference.
+- **D6 feed-travel confirmation** (untouched seeds 851001-3, 10 opponents +
+  versions/v11t, 1,122 games): base 627, **ft1 631, +0.4 pp [-1.2, +2.0]**,
+  equal-family +0.023; vs v11t 54 vs 51; portals 43 vs 40, australia 34 vs 31,
+  trauma 44 vs 47. The narrow interval says the switch rarely changes a game; D4's
+  +2.9 pp was mostly seed luck. **Unconfirmed, not adopted** (below the +2 pp
+  hurdle). The transport diagnosis stands (most late surplus never reaches the
+  king), but departing up to 60 rounds earlier is not enough to move it.
+
+### 4 Oct summary
+Report repair, manifest, equivalence checks and both diagnostics are done
+(DIAGNOSTIC_FINDINGS.md). None of the six behaviour candidates confirmed:
+hub-path, goal-path, portal trust (alone / with caps / calm caps) and feed travel.
+v11t stays the control and the recommended upload.
