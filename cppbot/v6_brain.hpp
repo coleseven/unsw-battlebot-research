@@ -261,6 +261,8 @@ inline double food_value(const WorldMemory& mem, const Obs& obs, int cell, int h
     return value;
 }
 struct Terms { double food = 0, hub = 0, progress = 0; int unseen = 0, stale = 0, room = 0, exits = 0, expanded = 0; };
+// CPP_MOVE_DEBUG: per-turn buffer of LOG MD lines, appended to the action by Brain::turn
+inline std::string& move_debug_buf() { static std::string buf; return buf; }
 
 // CPP_GOAL_PATH: walking distance from the exploration goal over remembered
 // terrain (kelp blocks, known portals are followed, unknown edges count as open
@@ -728,7 +730,11 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
         }
         if (mem.goal.has_value()) {
             bool poor = mem.local_rate.has_value() && *mem.local_rate < params::POOR_RATE;
-            value += params::W_GOAL * tm.progress * (poor ? params::POOR_MULT : 1.0) * (protectedFlag ? params::KING_GOAL_MULT : 1.0);
+            // CPP_EXPLORE_MULT: with no food or hub in reach the v3 ranker (W_V3 * v3, 70-106
+            // points, ~15 between moves) decided every move and goal progress added <= 10:
+            // on weakhold (4 Oct) our dragons stayed in the food-less start zones.
+            double explore = (tm.food <= 0 && tm.hub <= 0) ? params::CPP_EXPLORE_MULT : 1.0;
+            value += explore * params::W_GOAL * tm.progress * (poor ? params::POOR_MULT : 1.0) * (protectedFlag ? params::KING_GOAL_MULT : 1.0);
         }
         if (!mem.hubs.empty()) {
             int crowd = 0;
@@ -824,6 +830,13 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
         value += params::W_V3 * v3[direction];
         value += params::W_STRAIGHT * (direction == obs.facing ? 1.0 : 0.0);
         scores.emplace_back(direction, value);
+        if (params::CPP_MOVE_DEBUG) {
+            char b[200];
+            std::snprintf(b, sizeof b, "%cLOG MD %d %d %c food %.1f uns %d stale %d room %.0f/%.0f ex %d prog %.2f hub %.2f v3 %.2f tot %.1f",
+                          10, obs.round, did, direction, tm.food, tm.unseen, tm.stale, room, need, tm.exits, tm.progress, tm.hub,
+                          params::W_V3 * v3[direction], value);
+            move_debug_buf() += b;
+        }
         if (tracing) {
             std::array<double, MV_N> f{};
             const auto& row = v3rows[direction];
@@ -1378,9 +1391,11 @@ class Brain {
 
     std::string turn(const Obs& obs) {
         mover_log.clear();
+        move_debug_buf().clear();
         std::string action = decide(obs);
         if (action.empty()) return action;
         action += mover_log;
+        if (params::CPP_MOVE_DEBUG) action += move_debug_buf();
         if ((!params::CPP_QUEEN || params::CPP_QUEEN_KB) && params::CPP_KING_BEACON && obs.round >= params::CPP_KB_ROUND - feed_shift()) action += king_lines(obs);
         else if (params::CPP_SONAR_HUB) action += sonar_lines(obs);
         // last, so it wins the backward direction over a beacon

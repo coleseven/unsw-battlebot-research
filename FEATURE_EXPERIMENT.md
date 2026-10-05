@@ -1150,3 +1150,14 @@ v11t stays the control and the recommended upload.
   - Frozen as versions/v12s (hash 4962bed1d8d0a92b, battlebot-v12s.zip).
   - **Recommended upload over v11t** (Stripes only, about +1.2 pp overall,
     no change elsewhere).
+- **Weakhold root cause** (debug-only CPP_MOVE_DEBUG, LOG MD lines). With no food or
+  hub in reach, the v3 ranker term (W_V3 x v3, 70-106 points, ~15 between moves)
+  decides every move; exploration adds < 1 point and goal progress <= 10. The ranker
+  keeps our dragons in the food-less start zones.
+- CPP_EXPLORE_MULT multiplies goal progress for moves whose search finds no food or
+  hub. Weakhold probe, centre share (base 0.08 / 0.09):
+  - x10: 0.05 / 0.35.
+  - x10 + CPP_GOAL_PATH: 0.42 / 0.44.
+  - **x30 + goal path: 0.62 / 0.49** (nicked 0.68).
+- D10 screen queued: x10gp and x30gp on base results/v11t15-bot, 6 opponents, seeds
+  891001-2.
