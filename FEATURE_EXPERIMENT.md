@@ -1161,3 +1161,12 @@ v11t stays the control and the recommended upload.
   - **x30 + goal path: 0.62 / 0.49** (nicked 0.68).
 - D10 screen queued: x10gp and x30gp on base results/v11t15-bot, 6 opponents, seeds
   891001-2.
+- **D10 explore screen** (base results/v11t15-bot, equivalence 68/68, 6 opponents,
+  seeds 891001-2, 408 games; base 213):
+  - **x10gp 238, +6.1 pp [-0.7, +13.0]; x30gp 238, +6.2 pp [-0.5, +13.1]** (equal-family
+    +0.092).
+  - x30gp by map: tower defense 22 vs 8, weakhold 18 vs 12, schooltime 20 vs 15,
+    around_unsw 14 vs 11, dilemma 8 vs 6; stripes 4 vs 7, trophy 10 vs 12, trauma 16 vs
+    18.
+  - D11 untouched confirmation queued: x30gp, and x30gp + v12s's small-map queen early
+    (seeds 901001-3, 10 opponents + versions/v11t, 1,122 games each).
