@@ -1199,3 +1199,11 @@ v11t stays the control and the recommended upload.
     the hunter 35/68 (our queen alive 21; its queen alive 28).
 - D12 queued: base versions/v12x; dq (CPP_DOOMED_SPARE_QUEEN) and bg2
   (CPP_QUEEN_BODYGUARD 2); 7 opponents incl. raider and hunter; seeds 921001-2.
+- **D12 queen defence on v12x** (7 opponents incl. raider and hunter, seeds 921001-2,
+  476 games; base 254, queen alive 154):
+  - dq 260, +1.3 pp [-3.4, +6.1] (queen alive 164; vs hunter 24 vs 26).
+  - bg2 254, +0.0 pp (the rule practically never fires).
+  - Neither adopted.
+- Live v12x after 95 games: 44/95 (46%) against opponents averaging 1559; rating 1517.
+  - Classes: elim 13-16, only ours 7-0, only theirs 0-16, both 3-4, none 21-15.
+  - Weak maps: Trophy 1/5, Autarky 2/8, Dilemma 3/10, Portals 3/10.
