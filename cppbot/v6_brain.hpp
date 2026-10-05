@@ -330,6 +330,14 @@ inline Terms search_one(const WorldMemory& mem, const Obs& obs, char team, int d
         if (arrival >= params::DEPTH_MAX) continue;
         for (char step : DIRS) {
             auto nxt = mem.nav.destination(cell, step);
+            // CPP_SEARCH_UNKNOWN: an unseen cell's edges are unknown, so without this the
+            // search never reaches unexplored ground and W_UNSEEN only works where a book
+            // fills the map. On weakhold (no book, 4 Oct) our dragons spent 92% of rounds
+            // 30-199 in the empty start zones; nicked threaded the maze to the food.
+            if (!nxt && params::CPP_SEARCH_UNKNOWN && mem.nav.edges[mem.nav.edge_key(cell, step)] == NONE) {
+                int x = cell % mem.width, y = cell / mem.width, i = didx(step);
+                nxt = ((y + DYi[i] + mem.height) % mem.height) * mem.width + (x + DXi[i] + mem.width) % mem.width;
+            }
             if (!nxt || blocked(mem, *nxt, arrival + 1, team, did, own_free)) continue;
             int new_cost = cost + 1 + (mem.nav.seen[*nxt] < 0 ? 1 : 0);
             auto nb = best.find(*nxt);
@@ -1475,7 +1483,11 @@ class Brain {
         // CPP_QUEEN_EARLY: in the opening the queen is half our economy (Trophy starts
         // with a queen and one worker each); the opponent's queen eats and splits from
         // round 7 while ours ate 2 pearls in 120 rounds even against a passive bot (4 Oct)
-        bool queen_early = obs.round < params::CPP_QUEEN_EARLY;
+        // CPP_QUEEN_EARLY_AREA_MAX: on a small map the queen is a larger share of the
+        // opening economy; D8 (4 Oct) doubled Stripes wins (40 vs 20 of 66) but lost on
+        // larger maps (queen of spades 31 vs 44)
+        bool queen_early = obs.round < params::CPP_QUEEN_EARLY &&
+                           (params::CPP_QUEEN_EARLY_AREA_MAX == 0 || init.width * init.height <= params::CPP_QUEEN_EARLY_AREA_MAX);
         if (params::CPP_QUEEN_TACTICS2 && init.id <= 1 && scores.size() >= 2 && !queen_early) {
             // CPP_QUEEN_CALM_CAP: extra escape lines matter against threats; with no enemy
             // head in view a low cap lets the queen take a safe single corridor to food

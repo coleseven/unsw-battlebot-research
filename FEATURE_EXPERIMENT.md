@@ -1128,3 +1128,25 @@ v11t stays the control and the recommended upload.
   - e80: 222, +0.5 pp.
   - D8 untouched confirmation of e40 queued (seeds 871001-3, 10 opponents +
     versions/v11t).
+- **D8 queen early confirmation** (untouched seeds 871001-3, 10 opponents +
+  versions/v11t, 1,122 games): base 634, e40 647, +1.2 pp [-2.4, +4.9]
+  (unconfirmed overall).
+  - **Stripes 40 vs 20 of 66.** Queen of Spades 31 vs 44, Australia 37 vs 44,
+    Portals 37 vs 42.
+  - vs v11t 57 vs 51; vs v92 26 vs 35.
+- Weakhold (v11t wins 1 of 48 against the nicked family):
+  - Our dragons spend 92% of rounds 30-199 in the empty start zones. Nicked
+    threads the western maze into the central fast spawners by round ~53.
+  - Its fast spawners sit in one-wide dead ends. Both sides run a lethal
+    enter-eat-split-die loop there in the opening.
+  - Probes (W_TRAP 0, goal path, W_UNSEEN x3, GOAL off, dead-end look-ahead,
+    CPP_SEARCH_UNKNOWN = search through unknown edges) did not get us into the
+    maze (centre share 0.05-0.14 vs nicked 0.68). Open.
+- **v12s**: CPP_QUEEN_EARLY 40 limited to maps of at most 300 cells
+  (CPP_QUEEN_EARLY_AREA_MAX; only Stripes in the ranked rotation).
+  - Equivalence: 64/64 non-Stripes games identical to v11t.
+  - **D9 Stripes, untouched seeds 881001-6: 53 vs 25 of 132.**
+  - Sandbox max 8.2M points/turn.
+  - Frozen as versions/v12s (hash 4962bed1d8d0a92b, battlebot-v12s.zip).
+  - **Recommended upload over v11t** (Stripes only, about +1.2 pp overall,
+    no change elsewhere).

@@ -196,6 +196,8 @@ CPP_FEED_TRAVEL = 0.0  # small workers start feeding this many rounds earlier pe
 CPP_FEED_TRAVEL_CAP = 60  # at most this many rounds earlier
 CPP_QUEEN_CALM_CAP = 0  # corrected search: full-line cap used when no enemy head is in view (0 = always CPP_QUEEN_FULL_CAP)
 CPP_QUEEN_EARLY = 0  # before this round the queen moves like a worker (no corrected-search override, extra pearl steps allowed)
+CPP_SEARCH_UNKNOWN = 0  # move search expands through unknown edges (assumed open), so unexplored areas carry exploration value
+CPP_QUEEN_EARLY_AREA_MAX = 0  # CPP_QUEEN_EARLY applies only on maps of at most this many cells (0 = all maps)
 CPP_QUEEN_TACTICS = 0   # Q4: exact short escape search for our queen (id 0/1), any mode
 CPP_QUEEN_TACTICS_DEPTH = 3  # Q4: look-ahead steps (view radius is 3)
 CPP_QUEEN_TACTICS_MARGIN = 0  # Q4: extra steps per turn assumed for threat heads

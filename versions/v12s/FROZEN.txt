@@ -1,0 +1,13 @@
+frozen v12s at 2026-10-05
+v11t + CPP_QUEEN_EARLY 40 with CPP_QUEEN_EARLY_AREA_MAX 300: on maps of at most 300 cells
+(in the ranked rotation only Stripes, 24x12) the queen moves like a worker for the first 40
+rounds (no corrected-search override, extra pearl steps allowed). All other new switches off.
+bot hash 4962bed1d8d0a92b (battlebot-v12s.zip verified)
+Evidence:
+- equivalence vs v11t on 17 maps x 2 sides x 2 opponents: 64/64 non-Stripes games identical;
+  only the 4 Stripes games differ
+- Stripes, untouched seeds: D8 (all-map version) 40 vs 20 of 66; D9 (this build, seeds
+  881001-6, 11 opponents incl. v11q) 53 vs 25 of 132
+- 1.2.9 judge sandbox (stripes x2, unsw, islands, autarky, trophy): max 8.2M points/turn
+Expected effect: about +20 pp on Stripes, about +1.2 pp over the 17-map rotation; no change
+elsewhere.
