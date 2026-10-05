@@ -1179,3 +1179,23 @@ v11t stays the control and the recommended upload.
     26 vs 30, stripes 17 vs 20 (x30gp alone 11).
   - **Adopted as v12x** (versions/v12x, hash 515739481d60c57f, battlebot-v12x.zip).
     Sandbox max 12.1M points/turn. **Recommended upload** (supersedes v12s).
+
+### 5 October: user-confirmed v12x upload
+
+- User reports v12x uploaded on 2026-10-05 at 10:04:34; timezone was not specified.
+- Latest user-confirmed live version is now v12x. Its previously recorded local hash is 515739481d60c57f; server submission identity/hash has not been independently checked here.
+- Preserve this timestamp as supplied. Normalize it against server timestamps and check submission identity before assigning games around the cutoff. This update records deployment, not new performance evidence.
+
+
+### 5 Oct: live v12x review and queen defence vs hunters
+
+- Live review (results/live-review-20261005/REVIEW.md; v12x live ~14:20 UTC):
+  - First 13 battles: 31/65 against opponents averaging 1549.
+  - Our queen's deaths: enemy head-on 23, kelp 14, own dragons 12. Before: 10, 29, 3.
+  - Prisoners Dilemma 1/6 and Autarky 1/6.
+- **opp-hunter** (results/opp-hunter): v12x + CPP_QUEEN_HUNT 1, bonus 1000, pull 800,
+  ATTACK_MAXLEN 8. Our own lineage, a queen-aware specialist.
+  - Check (68 games each vs v12x): v12x beat the raider 41/68 (our queen alive 22) and
+    the hunter 35/68 (our queen alive 21; its queen alive 28).
+- D12 queued: base versions/v12x; dq (CPP_DOOMED_SPARE_QUEEN) and bg2
+  (CPP_QUEEN_BODYGUARD 2); 7 opponents incl. raider and hunter; seeds 921001-2.
