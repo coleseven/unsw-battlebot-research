@@ -1,0 +1,17 @@
+frozen v12x at 2026-10-05
+v11t + CPP_EXPLORE_MULT 30 + CPP_GOAL_PATH 1 + CPP_QUEEN_EARLY 40 (CPP_QUEEN_EARLY_AREA_MAX 300).
+- With no food or hub in a move's search, goal progress (by walking distance over remembered
+  terrain, unknown edges open) is weighted x30, so purposeful exploration beats the v3 ranker
+  that kept our dragons in food-less start zones.
+- On small maps (in the rotation only Stripes) the queen moves like a worker for 40 rounds.
+bot hash 515739481d60c57f (= D11 variant x30gp_s; battlebot-v12x.zip verified)
+Evidence:
+- D10 screen (408 games, seeds 891001-2): x30gp +6.2 pp [-0.5, +13.1].
+- D11 untouched confirmation (1,122 games, seeds 901001-3, 10 opponents + v11t):
+  **+4.7 pp [+0.6, +8.9]**; vs v11t 60/102.
+  - Tower defense 52 vs 28, weakhold 45 vs 24, portals 38 vs 32, slithery 50 vs 44,
+    trauma 50 vs 43, trophy 36 vs 32.
+  - Australia 38 vs 42, autarky 35 vs 39, dilemma 26 vs 30, stripes 17 vs 20.
+- Equivalence of the base build with v11t: 68/68.
+- 1.2.9 judge sandbox (unsw, australia, islands, autarky, weakhold, tower defense, stripes,
+  trophy): max 12.1M points/turn.

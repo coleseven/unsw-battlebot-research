@@ -1170,3 +1170,12 @@ v11t stays the control and the recommended upload.
     18.
   - D11 untouched confirmation queued: x30gp, and x30gp + v12s's small-map queen early
     (seeds 901001-3, 10 opponents + versions/v11t, 1,122 games each).
+- **D11 confirmation** (untouched seeds 901001-3, 10 opponents + versions/v11t, 1,122
+  games; base 631):
+  - x30gp: 678, +4.2 pp [-0.1, +8.6].
+  - **x30gp_s (+ small-map queen early): 684, +4.7 pp [+0.6, +8.9]**; vs v11t 60/102.
+  - By map: tower defense 52 vs 28, weakhold 45 vs 24, portals 38 vs 32, slithery 50 vs
+    44, trauma 50 vs 43, trophy 36 vs 32; australia 38 vs 42, autarky 35 vs 39, dilemma
+    26 vs 30, stripes 17 vs 20 (x30gp alone 11).
+  - **Adopted as v12x** (versions/v12x, hash 515739481d60c57f, battlebot-v12x.zip).
+    Sandbox max 12.1M points/turn. **Recommended upload** (supersedes v12s).
