@@ -1216,3 +1216,10 @@ v11t stays the control and the recommended upload.
   W_V3 tuned under the old rules, before v12x.
 - D13 queued: base versions/v12x; W_V3 x0.5 (12.35) and x0.25 (6.18); the D12 panel
   (7 opponents incl. raider and hunter); seeds 941001-2.
+- **Live v12x, 532 games / 103 battles (to 6 Oct 20:20 UTC):** 288 won (54%) against
+  opponents averaging 1549; **rating 1512 -> 1595**.
+  - Classes: elim 80-68, only ours 53-0, only theirs 0-74, both alive 25-37, both
+    dead 130-65.
+  - Maps: Maze 79%, Tower Defense 75%, Queen of Spades 65%, Default 64%, Slithery 63%,
+    Schooltime 62%, Trophy 60%; weakhold 50% (14/28); **Autarky 32% (12/38), Australia
+    39%, Dilemma 41%, Portals 44%**, Stripes 46%.
