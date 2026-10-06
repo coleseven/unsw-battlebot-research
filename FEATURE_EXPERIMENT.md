@@ -1223,3 +1223,14 @@ v11t stays the control and the recommended upload.
   - Maps: Maze 79%, Tower Defense 75%, Queen of Spades 65%, Default 64%, Slithery 63%,
     Schooltime 62%, Trophy 60%; weakhold 50% (14/28); **Autarky 32% (12/38), Australia
     39%, Dilemma 41%, Portals 44%**, Stripes 46%.
+- **D13 ranker weight** (base v12x, D12 panel, seeds 941001-2, 476 games; base 253):
+  - x0.5: 259, +1.3 pp [-4.4, +6.9]. x0.25: 238, -3.2 pp.
+  - Autarky 14 and 13 vs 16. **Rejected**: the tuned weight stands; Autarky's problem is
+    elsewhere.
+- **Live weak-map anatomy** (v12x, 532 games):
+  - Autarky 12/38 and Australia 11/28 lose mostly to our queen being rammed head-on
+    (rounds < 350) while theirs survives (only-theirs 12 and 13). In 17 of 26 Autarky
+    losses we had more peak material.
+  - Dilemma 16/39 loses by elimination (16; more material in only 3 of 23).
+  - **Portals 18/41: 13 of 26 queen deaths in losses were our own dragons** (head-on
+    and body), a portal-blind friendly-fire pattern.
