@@ -1255,3 +1255,9 @@ v11t stays the control and the recommended upload.
 - D15 queued after D14: a sprinter check (v12x vs raider and sprinter), then
   CPP_QUEEN_SPRINT 1 and 2 on v12x against the D12 panel + opp-sprinter (8 opponents,
   seeds 961001-2, 544 games each).
+- **D14 dq confirmation on v12x** (untouched seeds 951001-3, 10 opponents + opp-hunter,
+  1,122 games): base 653, **dq 663, +0.9 pp [-1.2, +3.0]**, queen alive 375 vs 347;
+  portals 32 vs 36.
+  - Three runs are all small (C10 -0.2, D12 +1.3, D14 +0.9 pp).
+  - Below the +2 pp hurdle on its own; held as a low-cost companion for the D15
+    outcome, not adopted alone.
