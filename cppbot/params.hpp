@@ -180,6 +180,7 @@ inline constexpr int CPP_SEARCH_UNKNOWN = 0;
 inline constexpr int CPP_QUEEN_EARLY_AREA_MAX = 0;
 inline constexpr int CPP_MOVE_DEBUG = 0;
 inline constexpr double CPP_EXPLORE_MULT = 1.0;
+inline constexpr int CPP_QUEEN_HUNT_SPRINT = 0;
 inline constexpr int CPP_QUEEN_TACTICS = 0;
 inline constexpr int CPP_QUEEN_TACTICS_DEPTH = 3;
 inline constexpr int CPP_QUEEN_TACTICS_MARGIN = 0;

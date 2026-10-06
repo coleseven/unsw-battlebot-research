@@ -200,6 +200,7 @@ CPP_SEARCH_UNKNOWN = 0  # move search expands through unknown edges (assumed ope
 CPP_QUEEN_EARLY_AREA_MAX = 0  # CPP_QUEEN_EARLY applies only on maps of at most this many cells (0 = all maps)
 CPP_MOVE_DEBUG = 0  # debug only: log each candidate move's score terms (LOG MD lines)
 CPP_EXPLORE_MULT = 1.0  # goal-progress multiplier for a move whose search finds no food and no hub (1 = off)
+CPP_QUEEN_HUNT_SPRINT = 0  # opponent model: a worker rams a visible enemy queen head using up to this many paid (sprint) steps (0 = off)
 CPP_QUEEN_TACTICS = 0   # Q4: exact short escape search for our queen (id 0/1), any mode
 CPP_QUEEN_TACTICS_DEPTH = 3  # Q4: look-ahead steps (view radius is 3)
 CPP_QUEEN_TACTICS_MARGIN = 0  # Q4: extra steps per turn assumed for threat heads

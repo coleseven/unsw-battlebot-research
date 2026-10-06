@@ -1242,3 +1242,16 @@ v11t stays the control and the recommended upload.
   - dq was neutral locally (C10 -0.2 pp, D12 +1.3 pp), but the live friendly-fire share
     (12 of 49 queen deaths in the first 65 games; 13 of 26 in Portals losses) is the
     interaction evidence for reconsidering it.
+- **Live queen-ram anatomy** (results/live-review-20261005/queen_ram_diag.py):
+  - **117 of 244 v12x losses** include an enemy head-on killing our queen.
+  - Rammers are mostly length 2-3, and **most use paid sprint steps**: steps vs free
+    steps (2,1) 45, (3,1) 9, (3,2) 6, (4,2) 6, ...
+  - The rammer was in our queen's 7x7 view at its last turn in 114 of 117 cases, at
+    distance 1-2 in 80.
+  - C9's sprint-aware threat model lost locally because no panel opponent sprints into
+    queens.
+- New opponent model CPP_QUEEN_HUNT_SPRINT (a worker rams a visible enemy queen head
+  using free plus up to N paid steps). **opp-sprinter** = v12x + N=3 (our lineage).
+- D15 queued after D14: a sprinter check (v12x vs raider and sprinter), then
+  CPP_QUEEN_SPRINT 1 and 2 on v12x against the D12 panel + opp-sprinter (8 opponents,
+  seeds 961001-2, 544 games each).

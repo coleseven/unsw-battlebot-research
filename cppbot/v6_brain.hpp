@@ -1447,6 +1447,38 @@ class Brain {
         if (split && params::CPP_RESCUE_EVERY > 0 && protectedFlag && obs.round - last_split < params::CPP_RESCUE_EVERY)
             split.reset();
         if (split) { last_split = obs.round; return *split; }
+        // CPP_QUEEN_HUNT_SPRINT (opponent model, 6 Oct): 70+ of 117 live rams that killed
+        // our queen used paid sprint steps (each extra step costs a segment) from 1-2 cells
+        // away. A worker that can reach a visible enemy queen's head this turn, with its
+        // free steps plus up to N paid ones and keeping length >= 1, rams it.
+        if (params::CPP_QUEEN_HUNT_SPRINT > 0 && init.id > 1) {
+            int reach = (obs.length + 3) / 4 + std::min(params::CPP_QUEEN_HUNT_SPRINT, obs.length - 1);
+            int target = -1;
+            for (int k = 0; k < 49; ++k)
+                if (obs.occ[k] && obs.occ[k]->head && obs.occ[k]->team != init.team && obs.occ[k]->id <= 1) target = k;
+            if (target >= 0) {
+                std::array<int, 49> prev; prev.fill(-2); std::array<char, 49> how{};
+                prev[CENTER] = -1;
+                std::vector<int> fr{CENTER};
+                for (int dpt = 0; dpt < reach && prev[target] == -2 && !fr.empty(); ++dpt) {
+                    std::vector<int> nx;
+                    for (int c : fr) for (char d : DIRS) {
+                        if (c == CENTER && obs.length > 1 && didx(d) == OPP[didx(obs.facing)]) continue;
+                        if (obs.edge(c, d) != OPEN) continue;
+                        int n = Obs::step(c, d);
+                        if (n < 0 || prev[n] != -2) continue;
+                        if (obs.occ[n] && n != target) continue;
+                        prev[n] = c; how[n] = d; nx.push_back(n);
+                    }
+                    fr.swap(nx);
+                }
+                if (prev[target] != -2) {
+                    std::string path;
+                    for (int c = target; c != CENTER; c = prev[c]) path.insert(path.begin(), how[c]);
+                    return std::string("MOVE ") + path;
+                }
+            }
+        }
         MoverTrace trace;
         trace.want = params::CPP_MOVER != 0 || params::CPP_MOVER_LOG > 0;
         if (trace.want) {
