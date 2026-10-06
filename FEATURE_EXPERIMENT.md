@@ -1234,3 +1234,11 @@ v11t stays the control and the recommended upload.
   - Dilemma 16/39 loses by elimination (16; more material in only 3 of 23).
   - **Portals 18/41: 13 of 26 queen deaths in losses were our own dragons** (head-on
     and body), a portal-blind friendly-fire pattern.
+- Portals friendly queen kills (live losses):
+  - 7 of 13 were a worker's ordinary step into our queen's head (no portal involved; 5
+    with the queen beside a portal edge). A legal step cannot enter an occupied cell, so
+    these match the trapped-worker fallback that CPP_DOOMED_SPARE_QUEEN fixes.
+  - The other 6 were our queen moving into its own dragons.
+  - dq was neutral locally (C10 -0.2 pp, D12 +1.3 pp), but the live friendly-fire share
+    (12 of 49 queen deaths in the first 65 games; 13 of 26 in Portals losses) is the
+    interaction evidence for reconsidering it.
