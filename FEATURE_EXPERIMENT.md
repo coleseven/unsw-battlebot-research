@@ -1207,3 +1207,12 @@ v11t stays the control and the recommended upload.
 - Live v12x after 95 games: 44/95 (46%) against opponents averaging 1559; rating 1517.
   - Classes: elim 13-16, only ours 7-0, only theirs 0-16, both 3-4, none 21-15.
   - Weak maps: Trophy 1/5, Autarky 2/8, Dilemma 3/10, Portals 3/10.
+
+### 6 Oct: v3 ranker weight
+
+- Ranker influence (results/ranker_flip.py, v12x debug build vs v92, 8 maps, both
+  sides): W_V3 x v3 flips the chosen move in **17-36% of decisions with food in reach**
+  (autarky 36%, trophy 31%, dilemma 30%) and 11-19% without. The ranker was trained and
+  W_V3 tuned under the old rules, before v12x.
+- D13 queued: base versions/v12x; W_V3 x0.5 (12.35) and x0.25 (6.18); the D12 panel
+  (7 opponents incl. raider and hunter); seeds 941001-2.
