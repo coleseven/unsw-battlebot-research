@@ -1296,3 +1296,17 @@ v11t stays the control and the recommended upload.
     to a cell outside every small enemy's free+1 reach, with >= 2 exits.
 - D16 queued: base results/v12x2-bot (equivalence with v12x first); sps3 (sprint 1,
   maxlen 3) and flight; D12 panel + opp-sprinter; seeds 971001-2.
+- **Prisoners Dilemma diagnosis** (live v12x, 39 games;
+  results/live-review-20261005/pd_diag.py, pd_fast.py):
+  - The 8 every-turn spawners sit in two one-wide wrapping columns: column 14 is ours,
+    where our length-11 founder starts, and column 17 is theirs.
+  - In losses we grow 13 vs 23 per 40 rounds early, then 5-8 vs 25.
+  - **In losses the opponent eats 38 pearls per game from our column against our 9**; in
+    wins we hold it (23 vs 18).
+  - Our length-11 founder splits at round 0 in every game.
+- Long founders also start on Autarky (14), Slithery (25), Around UNSW (10) and Big Empty
+  (6).
+- New switch CPP_BIG_START_KEEP: a dragon that starts at length >= 8 does not split
+  before round N.
+- D17 queued after D16: base results/v12x3-bot (equivalence with v12x first); bk100 and
+  bk200; D16 panel; seeds 981001-2.

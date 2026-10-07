@@ -1039,6 +1039,7 @@ class Brain {
     Init init;
     WorldMemory memory;
     std::optional<int> born_round;
+    int start_len = -1;   // length at this dragon's first turn (CPP_BIG_START_KEEP)
     int last_split = -1000;   // round of this dragon's last split (CPP_RESCUE_EVERY)
 
     // CPP_FEED_SHIFT_LARGE: big maps start the cash-in schedule earlier (drops there
@@ -1410,6 +1411,7 @@ class Brain {
         if ((!params::CPP_QUEEN || params::CPP_QUEEN_KB) && params::CPP_KING_BEACON) receive_king(obs);
         if (params::GOAL) memory.update_goal(obs, init.id);
         if (!born_round) born_round = obs.round;
+        if (start_len < 0) start_len = obs.length;
         bool protectedFlag = king_protected(obs, *born_round);
         bool queen = params::CPP_QUEEN && init.id <= 1;
         if (queen) protectedFlag = true;
@@ -1434,6 +1436,12 @@ class Brain {
         // CPP_QUEEN_LIGHT_KEEP: the queen splits only if it keeps at least this length
         if (split && params::CPP_QUEEN_LIGHT && init.id <= 1 && obs.length - params::CHILD < params::CPP_QUEEN_LIGHT_KEEP) split.reset();
         if (split && params::CPP_SPLIT_SAFE && !child_can_escape(obs)) split.reset();
+        // CPP_BIG_START_KEEP: on Prisoners Dilemma (live, 6 Oct) our length-11 founder split
+        // at round 0 in every game; in losses the opponent then ate 38 pearls per game from
+        // our fast-spawner column against our 9. A long founder keeps its length (to loop
+        // its column) until the given round.
+        if (split && params::CPP_BIG_START_KEEP > 0 && *born_round == 0 && start_len >= params::CPP_BIG_START_LEN &&
+            obs.round < params::CPP_BIG_START_KEEP) split.reset();
         // CPP_QUEEN_SPLIT_EXITS: a split costs the queen its move and skips the escape
         // search; 131 of 674 v11t queen deaths (3 Oct) were a boxed-in queen within two
         // rounds of an ordinary split made with only one or two free exits
