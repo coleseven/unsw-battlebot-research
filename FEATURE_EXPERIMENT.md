@@ -1324,3 +1324,18 @@ v11t stays the control and the recommended upload.
   - Mixed and not robust; not adopted. Keying it to founder length would overfit.
 - D18 queued: untouched confirmation of flight + dq bundled (base results/v12x3-bot,
   seeds 991001-3; 10 opponents + hunter + sprinter; 1,224 games each).
+- **D18 flight + dq confirmation** (untouched seeds 991001-3, 10 opponents + hunter +
+  sprinter, 1,224 games): base 720, **fdq 739, +1.6 pp [-1.6, +4.7]**, equal-family
+  +0.005, queen alive 438 vs 415.
+  - Consistent small positives (flight D16 +1.7, dq D14 +0.9, bundle +1.6) but below the
+    +2 pp hurdle with an interval spanning 0. **Unconfirmed; not promoted.** v12x stays.
+
+### 7 Oct overnight summary
+
+- Closed:
+  - Sprint masks (D15, D16 sps3 -6.6 pp): any union "forbidden" reach hurts the queen.
+  - Big-start keep (D17): mixed, +0.2 pp.
+- Open, small, repeatable: paid queen flight + dq (+1.6 to +1.7 pp, never significant).
+- The live queen-ram problem stays the main loss source. It needs a different decision
+  model (scenario scoring of a few opponent responses) or a counter-measure our panel can
+  validate.
