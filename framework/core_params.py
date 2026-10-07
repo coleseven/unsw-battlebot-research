@@ -206,6 +206,7 @@ CPP_QUEEN_PAID_FLIGHT = 0  # queen (length >= 3) pays one segment for a 2-step e
 CPP_BIG_START_KEEP = 0  # a dragon that starts the game at length >= CPP_BIG_START_LEN does not split before this round (0 = off)
 CPP_BIG_START_LEN = 8
 CPP_ESCORT_SPRINT = 0  # a worker sprint-rams a small enemy head within this many cells of our visible queen (0 = off)
+CPP_EXPLORE_QUEEN = 1  # CPP_EXPLORE_MULT also applies to the queen (1 = v12x; 0 = workers only)
 CPP_QUEEN_TACTICS = 0   # Q4: exact short escape search for our queen (id 0/1), any mode
 CPP_QUEEN_TACTICS_DEPTH = 3  # Q4: look-ahead steps (view radius is 3)
 CPP_QUEEN_TACTICS_MARGIN = 0  # Q4: extra steps per turn assumed for threat heads

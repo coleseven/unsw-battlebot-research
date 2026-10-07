@@ -733,7 +733,9 @@ inline std::vector<std::pair<char, double>> score_moves(WorldMemory& mem, const 
             // CPP_EXPLORE_MULT: with no food or hub in reach the v3 ranker (W_V3 * v3, 70-106
             // points, ~15 between moves) decided every move and goal progress added <= 10:
             // on weakhold (4 Oct) our dragons stayed in the food-less start zones.
-            double explore = (tm.food <= 0 && tm.hub <= 0) ? params::CPP_EXPLORE_MULT : 1.0;
+            // CPP_EXPLORE_QUEEN 0: the queen keeps the old goal weight (live, 7 Oct: on open
+            // maps such as Australia most v12x losses were our queen rammed while roaming)
+            double explore = (tm.food <= 0 && tm.hub <= 0 && (params::CPP_EXPLORE_QUEEN || did > 1)) ? params::CPP_EXPLORE_MULT : 1.0;
             value += explore * params::W_GOAL * tm.progress * (poor ? params::POOR_MULT : 1.0) * (protectedFlag ? params::KING_GOAL_MULT : 1.0);
         }
         if (!mem.hubs.empty()) {

@@ -1352,3 +1352,8 @@ v11t stays the control and the recommended upload.
     dead 179-97.
   - Weakest: Australia 38%, Autarky 39%, Stripes 42%, around_unsw 44%, Portals 45%.
     Dilemma now 50%; Tower Defense 81%.
+- New switch CPP_EXPLORE_QUEEN (1 = v12x): 0 exempts the queen from the exploration
+  multiplier. Hypothesis: on open maps (Australia 38% live; D11 australia 38 vs 42) the
+  queen roams into rams.
+- D20 queued: base results/v12x5-bot (equivalence first); eq0; D16 panel; seeds
+  1011001-2.
