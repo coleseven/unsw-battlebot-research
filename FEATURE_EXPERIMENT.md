@@ -1339,3 +1339,10 @@ v11t stays the control and the recommended upload.
 - The live queen-ram problem stays the main loss source. It needs a different decision
   model (scenario scoring of a few opponent responses) or a counter-measure our panel can
   validate.
+- Long founders' corridor share (PD 3/11, autarky 6/14, slithery 0/25, unsw 4/10) gives
+  no clean trigger for a PD-only keep; dropped.
+- New switch CPP_ESCORT_SPRINT: a worker of length >= 2 that can reach a small enemy head
+  (length <= 3) within R cells of our visible queen this turn (free plus up to 2 paid
+  steps) rams it first.
+- D19 queued: base results/v12x4-bot (equivalence with v12x first); es3 and es4; D16
+  panel (with sprinter); seeds 1001001-2.

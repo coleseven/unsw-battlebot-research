@@ -1455,6 +1455,53 @@ class Brain {
         if (split && params::CPP_RESCUE_EVERY > 0 && protectedFlag && obs.round - last_split < params::CPP_RESCUE_EVERY)
             split.reset();
         if (split) { last_split = obs.round; return *split; }
+        // CPP_ESCORT_SPRINT: 117 of 244 live v12x losses had our queen rammed, mostly by
+        // length-2/3 enemies sprinting from 1-2 cells (6-7 Oct). Penalties and reach masks
+        // on the queen all lost; instead a worker that can reach such an enemy head this
+        // turn (free plus paid steps, keeping length >= 1) rams it first, if that head is
+        // within R cells of our visible queen.
+        if (params::CPP_ESCORT_SPRINT > 0 && init.id > 1 && obs.length >= 2) {
+            int qk = -1;
+            for (int k = 0; k < 49; ++k)
+                if (obs.occ[k] && obs.occ[k]->head && obs.occ[k]->team == init.team && obs.occ[k]->id <= 1) qk = k;
+            if (qk >= 0) {
+                std::vector<int> targets;
+                for (int k = 0; k < 49; ++k) {
+                    const auto& p = obs.occ[k];
+                    if (!p || !p->head || p->team == init.team) continue;
+                    if (std::abs(k / 7 - qk / 7) + std::abs(k % 7 - qk % 7) > params::CPP_ESCORT_SPRINT) continue;
+                    int seglen = 0; for (int c = 0; c < 49; ++c) if (obs.occ[c] && obs.occ[c]->id == p->id) ++seglen;
+                    if (seglen <= 3) targets.push_back(k);
+                }
+                if (!targets.empty()) {
+                    int reach = (obs.length + 3) / 4 + std::min(2, obs.length - 1);
+                    std::array<int, 49> prev; prev.fill(-2); std::array<char, 49> how{};
+                    prev[CENTER] = -1;
+                    std::vector<int> fr{CENTER};
+                    int hit = -1;
+                    for (int dpt = 0; dpt < reach && hit < 0 && !fr.empty(); ++dpt) {
+                        std::vector<int> nx;
+                        for (int c : fr) for (char d : DIRS) {
+                            if (c == CENTER && obs.length > 1 && didx(d) == OPP[didx(obs.facing)]) continue;
+                            if (obs.edge(c, d) != OPEN) continue;
+                            int n = Obs::step(c, d);
+                            if (n < 0 || prev[n] != -2 || n == qk) continue;
+                            bool tgt = std::find(targets.begin(), targets.end(), n) != targets.end();
+                            if (obs.occ[n] && !tgt) continue;
+                            prev[n] = c; how[n] = d;
+                            if (tgt) { hit = n; break; }
+                            nx.push_back(n);
+                        }
+                        fr.swap(nx);
+                    }
+                    if (hit >= 0) {
+                        std::string path;
+                        for (int c = hit; c != CENTER; c = prev[c]) path.insert(path.begin(), how[c]);
+                        return std::string("MOVE ") + path;
+                    }
+                }
+            }
+        }
         // CPP_QUEEN_HUNT_SPRINT (opponent model, 6 Oct): 70+ of 117 live rams that killed
         // our queen used paid sprint steps (each extra step costs a segment) from 1-2 cells
         // away. A worker that can reach a visible enemy queen's head this turn, with its

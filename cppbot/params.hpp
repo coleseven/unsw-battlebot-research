@@ -185,6 +185,7 @@ inline constexpr int CPP_QUEEN_SPRINT_MAXLEN = 0;
 inline constexpr int CPP_QUEEN_PAID_FLIGHT = 0;
 inline constexpr int CPP_BIG_START_KEEP = 0;
 inline constexpr int CPP_BIG_START_LEN = 8;
+inline constexpr int CPP_ESCORT_SPRINT = 0;
 inline constexpr int CPP_QUEEN_TACTICS = 0;
 inline constexpr int CPP_QUEEN_TACTICS_DEPTH = 3;
 inline constexpr int CPP_QUEEN_TACTICS_MARGIN = 0;
