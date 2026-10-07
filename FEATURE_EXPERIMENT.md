@@ -1357,3 +1357,8 @@ v11t stays the control and the recommended upload.
   queen roams into rams.
 - D20 queued: base results/v12x5-bot (equivalence first); eq0; D16 panel; seeds
   1011001-2.
+- **D19 escort sprint** (base results/v12x4-bot, equivalence 68/68; D16 panel; 544 games;
+  base 277):
+  - es3: 277, +0.0 pp (vs sprinter 31 vs 27, leviathan 54 vs 58).
+  - es4: 266, -2.0 pp.
+  - **Rejected**: the interceptors cost as much as they save.
