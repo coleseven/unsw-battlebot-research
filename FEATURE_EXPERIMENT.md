@@ -1377,3 +1377,13 @@ v11t stays the control and the recommended upload.
     vs 8, around_unsw 17 vs 15, trauma 25 vs 23, weakhold 23 vs 21; autarky 17 vs 19.
   - D22 untouched confirmation queued: hs1, and hs1 + paid flight + dq (seeds 1031001-3;
     10 opponents + hunter + sprinter; 1,224 games each).
+- **D22 confirmation** (untouched seeds 1031001-3, 10 opponents + hunter + sprinter,
+  1,224 games; base 671, our queen alive 363, theirs 211):
+  - **hs1: 717, +3.8 pp [+1.6, +5.9]**, their queen alive 121.
+  - **hs1fdq (+ paid flight + dq): 741, +5.7 pp [+2.4, +9.1]**, equal-family +0.134, our
+    queen alive 445, theirs 129.
+  - hs1fdq by map: australia 53 vs 37, autarky 50 vs 35, around_unsw 46 vs 39, tower
+    defense, trauma, weakhold, queen of spades, stripes up; maze 45 vs 51, schooltime 42
+    vs 45.
+  - **Adopted as v12z** (versions/v12z, hash 5a2c6685c062fff3, battlebot-v12z.zip).
+    Sandbox max 12.4M points/turn. **Recommended upload over v12x.**

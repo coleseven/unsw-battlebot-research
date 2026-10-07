@@ -1,0 +1,17 @@
+frozen v12z at 2026-10-07
+v12x + CPP_QUEEN_HUNT_SPRINT 1 + CPP_QUEEN_PAID_FLIGHT 1 + CPP_DOOMED_SPARE_QUEEN 1.
+- Hunt sprint: a worker that can reach a visible enemy queen's head this turn, with its free
+  steps plus one paid (sprint) step, rams it (the ladder's main way of killing our queen).
+- Paid flight: a queen of length >= 3 pays one segment for a 2-step escape when a small
+  enemy (length <= 3) could sprint-reach its chosen cell.
+- Doomed spare queen: a trapped worker never spends its last move on our queen's head.
+bot hash 5a2c6685c062fff3 (= D22 variant hs1fdq; battlebot-v12z.zip verified)
+Evidence:
+- D21 screen (544 games): hunt sprint 1 +4.0 pp [+0.6, +7.4].
+- D22 untouched confirmation (seeds 1031001-3, 10 opponents + hunter + sprinter, 1,224 games):
+  - **+5.7 pp [+2.4, +9.1]**, equal-family +0.134.
+  - Our queen alive 445 vs 363; theirs 129 vs 211.
+  - Australia 53 vs 37, autarky 50 vs 35, around_unsw 46 vs 39; maze 45 vs 51.
+  - Hunt sprint alone: +3.8 pp [+1.6, +5.9].
+- Base build (results/v12x5-bot) equivalence with v12x: 68/68.
+- 1.2.9 judge sandbox (8 maps): max 12.4M points/turn.
