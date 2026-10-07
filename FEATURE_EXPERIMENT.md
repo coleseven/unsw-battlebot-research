@@ -1316,3 +1316,11 @@ v11t stays the control and the recommended upload.
     113. Rejected; the sprint-mask approach is closed.
   - flight (paid queen flight): 303, +1.7 pp [-0.9, +4.4], queen alive 157, vs sprinter
     36 vs 36. Mildly positive, unclear; a candidate to bundle with dq.
+- **D17 big-start keep** (base results/v12x3-bot, equivalence 68/68; 544 games; base
+  273):
+  - bk100 and bk200 identical: 274, +0.2 pp.
+  - Dilemma 11 vs 7, around_unsw 18 vs 14; autarky 12 vs 17, slithery 16 vs 18 (32 games
+    per map).
+  - Mixed and not robust; not adopted. Keying it to founder length would overfit.
+- D18 queued: untouched confirmation of flight + dq bundled (base results/v12x3-bot,
+  seeds 991001-3; 10 opponents + hunter + sprinter; 1,224 games each).
