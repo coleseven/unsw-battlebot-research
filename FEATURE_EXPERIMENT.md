@@ -1346,3 +1346,9 @@ v11t stays the control and the recommended upload.
   steps) rams it first.
 - D19 queued: base results/v12x4-bot (equivalence with v12x first); es3 and es4; D16
   panel (with sprinter); seeds 1001001-2.
+- **Live v12x, 772 games / 154 battles (to 7 Oct 12:50 UTC):** 415 won (54%) against
+  opponents averaging 1567; rating 1601.
+  - Classes: elim 120-101, only ours 81-0, **only theirs 0-111**, both alive 35-48, both
+    dead 179-97.
+  - Weakest: Australia 38%, Autarky 39%, Stripes 42%, around_unsw 44%, Portals 45%.
+    Dilemma now 50%; Tower Defense 81%.
