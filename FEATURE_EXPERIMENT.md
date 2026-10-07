@@ -1310,3 +1310,9 @@ v11t stays the control and the recommended upload.
   before round N.
 - D17 queued after D16: base results/v12x3-bot (equivalence with v12x first); bk100 and
   bk200; D16 panel; seeds 981001-2.
+- **D16** (base results/v12x2-bot, equivalence 68/68 vs v12x; D12 panel + sprinter, 544
+  games; base 294, queen alive 146):
+  - sps3 (sprint mask, small heads only): 258, **-6.6 pp [-11.6, -2.0]**, queen alive
+    113. Rejected; the sprint-mask approach is closed.
+  - flight (paid queen flight): 303, +1.7 pp [-0.9, +4.4], queen alive 157, vs sprinter
+    36 vs 36. Mildly positive, unclear; a candidate to bundle with dq.
