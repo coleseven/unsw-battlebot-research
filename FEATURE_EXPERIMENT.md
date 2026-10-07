@@ -1362,3 +1362,9 @@ v11t stays the control and the recommended upload.
   - es3: 277, +0.0 pp (vs sprinter 31 vs 27, leviathan 54 vs 58).
   - es4: 266, -2.0 pp.
   - **Rejected**: the interceptors cost as much as they save.
+- **D20 explore queen** (base results/v12x5-bot, equivalence 68/68; 544 games; base 292):
+  eq0 282, -1.8 pp [-4.4, +0.7]; australia 13 vs 16. **Rejected**: the queen's
+  exploration is not the cause.
+- Note from the sprinter check: **opp-sprinter (v12x + sprint-ramming enemy queens) beat
+  v12x 39/68**. D21 tests CPP_QUEEN_HUNT_SPRINT on our own bot (1, 2, 3 paid steps; base
+  results/v12x5-bot; D16 panel incl. sprinter; seeds 1021001-2).
