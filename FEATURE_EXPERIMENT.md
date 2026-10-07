@@ -1368,3 +1368,12 @@ v11t stays the control and the recommended upload.
 - Note from the sprinter check: **opp-sprinter (v12x + sprint-ramming enemy queens) beat
   v12x 39/68**. D21 tests CPP_QUEEN_HUNT_SPRINT on our own bot (1, 2, 3 paid steps; base
   results/v12x5-bot; D16 panel incl. sprinter; seeds 1021001-2).
+- **D21 CPP_QUEEN_HUNT_SPRINT on our bot** (base results/v12x5-bot; D16 panel incl. sprinter;
+  seeds 1021001-2; 544 games; base 283, their queen alive 110):
+  - **hs1 (1 paid step): 305, +4.0 pp [+0.6, +7.4]**, their queen alive 71, only-theirs
+    12 vs 35; better against every opponent family.
+  - hs2 and hs3: 297, +2.6 pp each.
+  - hs1 by map: **australia 21 vs 14**, tower defense 24 vs 21, dilemma 9 vs 6, stripes 10
+    vs 8, around_unsw 17 vs 15, trauma 25 vs 23, weakhold 23 vs 21; autarky 17 vs 19.
+  - D22 untouched confirmation queued: hs1, and hs1 + paid flight + dq (seeds 1031001-3;
+    10 opponents + hunter + sprinter; 1,224 games each).
