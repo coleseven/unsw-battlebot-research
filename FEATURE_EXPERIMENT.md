@@ -1261,3 +1261,15 @@ v11t stays the control and the recommended upload.
   - Three runs are all small (C10 -0.2, D12 +1.3, D14 +0.9 pp).
   - Below the +2 pp hurdle on its own; held as a low-cost companion for the D15
     outcome, not adopted alone.
+- **Sprinter check** (68 games each vs v12x): raider 41/68 (our queen alive 22),
+  **opp-sprinter 29/68 (our queen alive 18)**. It is the toughest panel opponent and
+  closest to the live weakness.
+- **D15 CPP_QUEEN_SPRINT on v12x** (D12 panel + opp-sprinter, 8 opponents, seeds
+  961001-2, 544 games; base 273, queen alive 159):
+  - sp1: 266, -1.3 pp, queen alive 116, vs sprinter 29 vs 33.
+  - sp2: 263, -1.8 pp, queen alive 108.
+  - **Rejected even against sprinters.** A union "forbidden reach" mask collapses the
+    queen's options.
+  - The queen-ram problem needs a different representation, for example scoring a few
+    plausible opponent responses separately (NEXT_STEPS_2026-10-04 section 6), not wider
+    masks or penalties.
