@@ -1584,6 +1584,46 @@ class Brain {
                 best_dir = std::get<3>(*top);
         }
         std::string path(1, best_dir);
+        // CPP_QUEEN_PAID_FLIGHT: 75 of 117 live rams that killed our queen were sprints by
+        // small enemies (6 Oct). If a visible enemy head of length <= 3 can reach the chosen
+        // cell with its free steps plus one paid step, a queen of length >= 3 pays one
+        // segment for a 2-step move to a cell outside every such reach with >= 2 open exits.
+        if (params::CPP_QUEEN_PAID_FLIGHT && init.id <= 1 && obs.length >= 3) {
+            std::vector<std::pair<int, int>> threats;   // (view index, reach in steps)
+            for (int k = 0; k < 49; ++k) {
+                const auto& p = obs.occ[k];
+                if (!p || !p->head || p->team == init.team) continue;
+                int seglen = 0; for (int c = 0; c < 49; ++c) if (obs.occ[c] && obs.occ[c]->id == p->id) ++seglen;
+                int reach = std::max(1, (seglen + 3) / 4) + (seglen <= 3 && seglen >= 2 ? 1 : 0);
+                threats.emplace_back(k, reach);
+            }
+            auto hit = [&](int c) {
+                for (auto& [k, r] : threats) if (std::abs(k / 7 - c / 7) + std::abs(k % 7 - c % 7) <= r) return true;
+                return false;
+            };
+            int first = Obs::step(CENTER, best_dir);
+            if (first >= 0 && obs.edge(CENTER, best_dir) == OPEN && hit(first)) {
+                int best_end = -1; std::string best_path;
+                for (char a : DIRS) {
+                    if (didx(a) == OPP[didx(obs.facing)] || obs.edge(CENTER, a) != OPEN) continue;
+                    int c1 = Obs::step(CENTER, a);
+                    if (c1 < 0 || obs.occ[c1]) continue;
+                    for (char b2 : DIRS) {
+                        if (didx(b2) == OPP[didx(a)] || obs.edge(c1, b2) != OPEN) continue;
+                        int c2 = Obs::step(c1, b2);
+                        if (c2 < 0 || c2 == CENTER || obs.occ[c2] || hit(c2)) continue;
+                        int exits = 0;
+                        for (char e : DIRS) {
+                            if (didx(e) == OPP[didx(b2)] || obs.edge(c2, e) != OPEN) continue;
+                            int c3 = Obs::step(c2, e);
+                            if (c3 >= 0 && !obs.occ[c3] && c3 != c1) ++exits;
+                        }
+                        if (exits >= 2 && (best_end < 0 || exits > best_end)) { best_end = exits; best_path = std::string(1, a) + b2; }
+                    }
+                }
+                if (!best_path.empty()) return std::string("MOVE ") + best_path;
+            }
+        }
         if (params::CPP_QUEEN_FLIGHT && init.id <= 1) {
             std::string flee = queen_flight(obs, best_dir);
             if (!flee.empty()) return std::string("MOVE ") + path + flee;
@@ -1756,7 +1796,10 @@ class Brain {
             // CPP_QUEEN_SPRINT: beyond its free steps a head may sprint (each extra step
             // costs a segment); a length-2/3 enemy rammed 187 of 674 v11t queens (3 Oct),
             // often from two cells away. One sprint, capped, at most length - 1 paid steps.
-            int bonus = std::min(seg[p->id] - 1, params::CPP_QUEEN_SPRINT);
+            // CPP_QUEEN_SPRINT_MAXLEN: live rams (6 Oct) were mostly length-2/3 dragons;
+            // long heads rarely sprint into a queen, and masking their sprint reach boxed it in
+            int bonus = (params::CPP_QUEEN_SPRINT_MAXLEN > 0 && seg[p->id] > params::CPP_QUEEN_SPRINT_MAXLEN) ? 0
+                        : std::min(seg[p->id] - 1, params::CPP_QUEEN_SPRINT);
             if (bonus < 0) bonus = 0;
             for (int c = 0; c < 49; ++c) if (dist[c] > 0) {
                 int dd = std::max(1, dist[c] - bonus);

@@ -1273,3 +1273,26 @@ v11t stays the control and the recommended upload.
   - The queen-ram problem needs a different representation, for example scoring a few
     plausible opponent responses separately (NEXT_STEPS_2026-10-04 section 6), not wider
     masks or penalties.
+
+### 6-7 Oct overnight: sprint rams, Astra audits
+
+- Astra's audits (results/strategy-review-20261006):
+  - queen-ram-audit: 117 rams in 244 losses; 75 used paid steps. Measured at the
+    queen's last turn, the rammer was visible in 104 and within 2 cells in 39.
+  - immediate-queen-kill-audit: our workers rarely get adjacent chances at the enemy
+    queen (7 in 10 games, 3 taken).
+  - completed-experiment-audit: flip counts for D11-D14.
+- **Queen step check** (results/strategy-review-20261006/queen_step_check.py; queen's
+  last move before each ram):
+  - 74 moves stayed outside every visible enemy's free reach and were killed by a paid
+    sprint (66 with a free-safe alternative).
+  - 31 had no free-safe move.
+  - Only 8 stepped avoidably into a free reach.
+  - The corrected search works; sprints are the gap. 76 of 117 rammers were length 2-3,
+    while D15's mask gave every visible head a sprint bonus.
+- New switches:
+  - CPP_QUEEN_SPRINT_MAXLEN: the sprint bonus applies only to small heads.
+  - CPP_QUEEN_PAID_FLIGHT: a queen of length >= 3 pays one segment for a 2-step escape
+    to a cell outside every small enemy's free+1 reach, with >= 2 exits.
+- D16 queued: base results/v12x2-bot (equivalence with v12x first); sps3 (sprint 1,
+  maxlen 3) and flight; D12 panel + opp-sprinter; seeds 971001-2.
