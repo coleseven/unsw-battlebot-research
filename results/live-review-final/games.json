@@ -1,0 +1,3884 @@
+[
+{
+"battle": 1395082,
+"at": "2026-10-07T23:15:03.313Z",
+"opp": "PoGang",
+"opp_elo": 1578,
+"game": 1395082,
+"map": "Trauma",
+"us": "B",
+"won": false,
+"cls": "both",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 1,
+"queen_paid_flight": 1
+},
+"events": [
+[
+247,
+"queen paid move",
+"NW",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 11,
+"longest": 19,
+"total": 55
+},
+"theirs": {
+"dragons": 5,
+"longest": 18,
+"total": 63
+}
+}
+},
+{
+"battle": 1395082,
+"at": "2026-10-07T23:15:03.313Z",
+"opp": "PoGang",
+"opp_elo": 1578,
+"game": 1395083,
+"map": "Tower Defense",
+"us": "B",
+"won": true,
+"cls": "elim",
+"rounds": 222,
+"counts": {
+"our_paid_moves": 2,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 1
+},
+"events": [
+[
+221,
+"we rammed their queen",
+"SW",
+3,
+"paid"
+]
+],
+"final": {
+"ours": {
+"dragons": 47,
+"longest": 3,
+"total": 104
+},
+"theirs": {
+"dragons": 0,
+"longest": 0,
+"total": 0
+}
+}
+},
+{
+"battle": 1395082,
+"at": "2026-10-07T23:15:03.313Z",
+"opp": "PoGang",
+"opp_elo": 1578,
+"game": 1395084,
+"map": "Devil",
+"us": "B",
+"won": false,
+"cls": "elim",
+"rounds": 197,
+"counts": {
+"our_queen_rammed": 1
+},
+"events": [
+[
+65,
+"our queen rammed",
+"S",
+2
+]
+],
+"final": {
+"ours": {
+"dragons": 0,
+"longest": 0,
+"total": 0
+},
+"theirs": {
+"dragons": 33,
+"longest": 12,
+"total": 139
+}
+}
+},
+{
+"battle": 1395082,
+"at": "2026-10-07T23:15:03.313Z",
+"opp": "PoGang",
+"opp_elo": 1578,
+"game": 1395085,
+"map": "Trophy",
+"us": "B",
+"won": true,
+"cls": "elim",
+"rounds": 181,
+"counts": {
+"our_queen_rammed": 1,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 0
+},
+"events": [
+[
+21,
+"our queen rammed",
+"WW",
+3
+],
+[
+164,
+"we rammed their queen",
+"N",
+3,
+"free"
+]
+],
+"final": {
+"ours": {
+"dragons": 54,
+"longest": 7,
+"total": 151
+},
+"theirs": {
+"dragons": 0,
+"longest": 0,
+"total": 0
+}
+}
+},
+{
+"battle": 1395082,
+"at": "2026-10-07T23:15:03.313Z",
+"opp": "PoGang",
+"opp_elo": 1578,
+"game": 1395086,
+"map": "Maze",
+"us": "B",
+"won": true,
+"cls": "none",
+"rounds": 500,
+"counts": {},
+"events": [],
+"final": {
+"ours": {
+"dragons": 2,
+"longest": 76,
+"total": 78
+},
+"theirs": {
+"dragons": 5,
+"longest": 48,
+"total": 124
+}
+}
+},
+{
+"battle": 1395659,
+"at": "2026-10-07T23:20:42.756Z",
+"opp": "linux-container",
+"opp_elo": 1702,
+"game": 1395659,
+"map": "Prisoners Dilemma",
+"us": "B",
+"won": true,
+"cls": "onlyOurs",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 2,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 1,
+"queen_paid_flight": 1
+},
+"events": [
+[
+94,
+"we rammed their queen",
+"SW",
+3,
+"paid"
+],
+[
+120,
+"queen paid move",
+"NW",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 13,
+"longest": 23,
+"total": 81
+},
+"theirs": {
+"dragons": 1,
+"longest": 6,
+"total": 6
+}
+}
+},
+{
+"battle": 1395659,
+"at": "2026-10-07T23:20:42.756Z",
+"opp": "linux-container",
+"opp_elo": 1702,
+"game": 1395660,
+"map": "Australia",
+"us": "B",
+"won": true,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 2,
+"our_queen_rammed": 1,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 1
+},
+"events": [
+[
+244,
+"our queen rammed",
+"NN",
+3
+],
+[
+343,
+"we rammed their queen",
+"ES",
+4,
+"paid"
+]
+],
+"final": {
+"ours": {
+"dragons": 12,
+"longest": 26,
+"total": 121
+},
+"theirs": {
+"dragons": 58,
+"longest": 24,
+"total": 356
+}
+}
+},
+{
+"battle": 1395659,
+"at": "2026-10-07T23:20:42.756Z",
+"opp": "linux-container",
+"opp_elo": 1702,
+"game": 1395661,
+"map": "Schooltime",
+"us": "B",
+"won": true,
+"cls": "both",
+"rounds": 500,
+"counts": {},
+"events": [],
+"final": {
+"ours": {
+"dragons": 6,
+"longest": 24,
+"total": 71
+},
+"theirs": {
+"dragons": 47,
+"longest": 17,
+"total": 226
+}
+}
+},
+{
+"battle": 1395659,
+"at": "2026-10-07T23:20:42.756Z",
+"opp": "linux-container",
+"opp_elo": 1702,
+"game": 1395662,
+"map": "weakhold",
+"us": "B",
+"won": false,
+"cls": "both",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 1
+},
+"events": [],
+"final": {
+"ours": {
+"dragons": 7,
+"longest": 4,
+"total": 20
+},
+"theirs": {
+"dragons": 5,
+"longest": 10,
+"total": 35
+}
+}
+},
+{
+"battle": 1395659,
+"at": "2026-10-07T23:20:42.756Z",
+"opp": "linux-container",
+"opp_elo": 1702,
+"game": 1395663,
+"map": "Trauma",
+"us": "B",
+"won": false,
+"cls": "both",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 1,
+"queen_paid_flight": 1
+},
+"events": [
+[
+243,
+"queen paid move",
+"NN",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 16,
+"longest": 14,
+"total": 66
+},
+"theirs": {
+"dragons": 21,
+"longest": 23,
+"total": 86
+}
+}
+},
+{
+"battle": 1398233,
+"at": "2026-10-07T23:56:44.346Z",
+"opp": "WLYYY",
+"opp_elo": 1491,
+"game": 1398233,
+"map": "Maze",
+"us": "B",
+"won": true,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 1,
+"queen_paid_flight": 1,
+"our_queen_rammed": 1
+},
+"events": [
+[
+152,
+"queen paid move",
+"EE",
+3
+],
+[
+212,
+"our queen rammed",
+"WW",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 1,
+"longest": 56,
+"total": 56
+},
+"theirs": {
+"dragons": 5,
+"longest": 50,
+"total": 100
+}
+}
+},
+{
+"battle": 1398233,
+"at": "2026-10-07T23:56:44.346Z",
+"opp": "WLYYY",
+"opp_elo": 1491,
+"game": 1398234,
+"map": "Autarky",
+"us": "B",
+"won": true,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 5,
+"queen_paid_flight": 3
+},
+"events": [
+[
+13,
+"queen paid move",
+"NN",
+3
+],
+[
+34,
+"queen paid move",
+"SW",
+3
+],
+[
+116,
+"queen paid move",
+"SW",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 21,
+"longest": 17,
+"total": 109
+},
+"theirs": {
+"dragons": 1,
+"longest": 7,
+"total": 7
+}
+}
+},
+{
+"battle": 1398233,
+"at": "2026-10-07T23:56:44.346Z",
+"opp": "WLYYY",
+"opp_elo": 1491,
+"game": 1398235,
+"map": "Prisoners Dilemma",
+"us": "B",
+"won": true,
+"cls": "elim",
+"rounds": 173,
+"counts": {
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 0,
+"our_paid_moves": 1,
+"queen_paid_flight": 1,
+"our_queen_rammed": 1
+},
+"events": [
+[
+18,
+"we rammed their queen",
+"N",
+2,
+"free"
+],
+[
+42,
+"queen paid move",
+"SS",
+3
+],
+[
+138,
+"our queen rammed",
+"WW",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 19,
+"longest": 3,
+"total": 46
+},
+"theirs": {
+"dragons": 0,
+"longest": 0,
+"total": 0
+}
+}
+},
+{
+"battle": 1398233,
+"at": "2026-10-07T23:56:44.346Z",
+"opp": "WLYYY",
+"opp_elo": 1491,
+"game": 1398236,
+"map": "Slithery Fight",
+"us": "B",
+"won": true,
+"cls": "onlyOurs",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 1,
+"queen_paid_flight": 1
+},
+"events": [
+[
+121,
+"queen paid move",
+"ES",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 7,
+"longest": 40,
+"total": 123
+},
+"theirs": {
+"dragons": 3,
+"longest": 54,
+"total": 120
+}
+}
+},
+{
+"battle": 1398233,
+"at": "2026-10-07T23:56:44.346Z",
+"opp": "WLYYY",
+"opp_elo": 1491,
+"game": 1398237,
+"map": "Trauma",
+"us": "B",
+"won": true,
+"cls": "onlyOurs",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 1,
+"queen_paid_flight": 1
+},
+"events": [
+[
+259,
+"queen paid move",
+"SS",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 2,
+"longest": 21,
+"total": 26
+},
+"theirs": {
+"dragons": 4,
+"longest": 22,
+"total": 43
+}
+}
+},
+{
+"battle": 1399838,
+"at": "2026-10-08T00:17:32.265Z",
+"opp": "hm",
+"opp_elo": 1701,
+"game": 1399838,
+"map": "Slithery Fight",
+"us": "B",
+"won": true,
+"cls": "onlyOurs",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 1,
+"queen_paid_flight": 1,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 0
+},
+"events": [
+[
+165,
+"queen paid move",
+"NN",
+3
+],
+[
+171,
+"we rammed their queen",
+"NWN",
+11,
+"free"
+]
+],
+"final": {
+"ours": {
+"dragons": 8,
+"longest": 33,
+"total": 116
+},
+"theirs": {
+"dragons": 18,
+"longest": 46,
+"total": 208
+}
+}
+},
+{
+"battle": 1399838,
+"at": "2026-10-08T00:17:32.265Z",
+"opp": "hm",
+"opp_elo": 1701,
+"game": 1399839,
+"map": "Prisoners Dilemma",
+"us": "B",
+"won": true,
+"cls": "elim",
+"rounds": 366,
+"counts": {
+"our_paid_moves": 1,
+"queen_paid_flight": 1
+},
+"events": [
+[
+193,
+"queen paid move",
+"EN",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 12,
+"longest": 3,
+"total": 28
+},
+"theirs": {
+"dragons": 0,
+"longest": 0,
+"total": 0
+}
+}
+},
+{
+"battle": 1399838,
+"at": "2026-10-08T00:17:32.265Z",
+"opp": "hm",
+"opp_elo": 1701,
+"game": 1399840,
+"map": "Australia",
+"us": "B",
+"won": false,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 1,
+"queen_paid_flight": 1,
+"our_queen_rammed": 1
+},
+"events": [
+[
+115,
+"queen paid move",
+"NE",
+3
+],
+[
+265,
+"our queen rammed",
+"NN",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 6,
+"longest": 11,
+"total": 45
+},
+"theirs": {
+"dragons": 12,
+"longest": 40,
+"total": 294
+}
+}
+},
+{
+"battle": 1399838,
+"at": "2026-10-08T00:17:32.265Z",
+"opp": "hm",
+"opp_elo": 1701,
+"game": 1399841,
+"map": "weakhold",
+"us": "B",
+"won": true,
+"cls": "none",
+"rounds": 500,
+"counts": {},
+"events": [],
+"final": {
+"ours": {
+"dragons": 19,
+"longest": 11,
+"total": 69
+},
+"theirs": {
+"dragons": 2,
+"longest": 10,
+"total": 12
+}
+}
+},
+{
+"battle": 1399838,
+"at": "2026-10-08T00:17:32.265Z",
+"opp": "hm",
+"opp_elo": 1701,
+"game": 1399842,
+"map": "Portals",
+"us": "B",
+"won": false,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 1,
+"queen_paid_flight": 1
+},
+"events": [
+[
+54,
+"queen paid move",
+"NN",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 2,
+"longest": 14,
+"total": 23
+},
+"theirs": {
+"dragons": 7,
+"longest": 18,
+"total": 62
+}
+}
+},
+{
+"battle": 1400678,
+"at": "2026-10-08T00:27:13.257Z",
+"opp": "No Idea",
+"opp_elo": 1602,
+"game": 1400678,
+"map": "Trophy",
+"us": "B",
+"won": true,
+"cls": "elim",
+"rounds": 228,
+"counts": {
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 0
+},
+"events": [
+[
+79,
+"we rammed their queen",
+"N",
+3,
+"free"
+]
+],
+"final": {
+"ours": {
+"dragons": 57,
+"longest": 11,
+"total": 188
+},
+"theirs": {
+"dragons": 0,
+"longest": 0,
+"total": 0
+}
+}
+},
+{
+"battle": 1400678,
+"at": "2026-10-08T00:27:13.257Z",
+"opp": "No Idea",
+"opp_elo": 1602,
+"game": 1400679,
+"map": "Devil",
+"us": "B",
+"won": true,
+"cls": "elim",
+"rounds": 436,
+"counts": {},
+"events": [],
+"final": {
+"ours": {
+"dragons": 44,
+"longest": 4,
+"total": 104
+},
+"theirs": {
+"dragons": 0,
+"longest": 0,
+"total": 0
+}
+}
+},
+{
+"battle": 1400678,
+"at": "2026-10-08T00:27:13.257Z",
+"opp": "No Idea",
+"opp_elo": 1602,
+"game": 1400680,
+"map": "Australia",
+"us": "B",
+"won": true,
+"cls": "onlyOurs",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 2,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 1,
+"queen_paid_flight": 1
+},
+"events": [
+[
+157,
+"we rammed their queen",
+"NE",
+3,
+"paid"
+],
+[
+295,
+"queen paid move",
+"NW",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 12,
+"longest": 54,
+"total": 195
+},
+"theirs": {
+"dragons": 7,
+"longest": 20,
+"total": 114
+}
+}
+},
+{
+"battle": 1400678,
+"at": "2026-10-08T00:27:13.257Z",
+"opp": "No Idea",
+"opp_elo": 1602,
+"game": 1400681,
+"map": "Default",
+"us": "B",
+"won": true,
+"cls": "onlyOurs",
+"rounds": 500,
+"counts": {
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 0,
+"our_paid_moves": 3,
+"queen_paid_flight": 3
+},
+"events": [
+[
+118,
+"we rammed their queen",
+"E",
+2,
+"free"
+],
+[
+165,
+"queen paid move",
+"EE",
+3
+],
+[
+207,
+"queen paid move",
+"NN",
+3
+],
+[
+377,
+"queen paid move",
+"NN",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 3,
+"longest": 21,
+"total": 40
+},
+"theirs": {
+"dragons": 8,
+"longest": 34,
+"total": 96
+}
+}
+},
+{
+"battle": 1400678,
+"at": "2026-10-08T00:27:13.257Z",
+"opp": "No Idea",
+"opp_elo": 1602,
+"game": 1400682,
+"map": "Autarky",
+"us": "B",
+"won": true,
+"cls": "onlyOurs",
+"rounds": 500,
+"counts": {
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 0
+},
+"events": [
+[
+421,
+"we rammed their queen",
+"E",
+3,
+"free"
+]
+],
+"final": {
+"ours": {
+"dragons": 35,
+"longest": 18,
+"total": 144
+},
+"theirs": {
+"dragons": 3,
+"longest": 4,
+"total": 9
+}
+}
+},
+{
+"battle": 1403141,
+"at": "2026-10-08T00:58:38.243Z",
+"opp": "zzz3nith was here",
+"opp_elo": 1645,
+"game": 1403141,
+"map": "Portals",
+"us": "B",
+"won": true,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 2,
+"queen_paid_flight": 2
+},
+"events": [
+[
+33,
+"queen paid move",
+"EE",
+3
+],
+[
+231,
+"queen paid move",
+"WW",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 3,
+"longest": 23,
+"total": 40
+},
+"theirs": {
+"dragons": 6,
+"longest": 21,
+"total": 70
+}
+}
+},
+{
+"battle": 1403141,
+"at": "2026-10-08T00:58:38.243Z",
+"opp": "zzz3nith was here",
+"opp_elo": 1645,
+"game": 1403142,
+"map": "Islands",
+"us": "B",
+"won": false,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 0
+},
+"events": [
+[
+95,
+"we rammed their queen",
+"S",
+2,
+"free"
+]
+],
+"final": {
+"ours": {
+"dragons": 5,
+"longest": 18,
+"total": 46
+},
+"theirs": {
+"dragons": 13,
+"longest": 36,
+"total": 196
+}
+}
+},
+{
+"battle": 1403141,
+"at": "2026-10-08T00:58:38.243Z",
+"opp": "zzz3nith was here",
+"opp_elo": 1645,
+"game": 1403143,
+"map": "Tower Defense",
+"us": "B",
+"won": true,
+"cls": "elim",
+"rounds": 361,
+"counts": {
+"our_paid_moves": 1,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 1
+},
+"events": [
+[
+201,
+"we rammed their queen",
+"NW",
+3,
+"paid"
+]
+],
+"final": {
+"ours": {
+"dragons": 42,
+"longest": 4,
+"total": 101
+},
+"theirs": {
+"dragons": 0,
+"longest": 0,
+"total": 0
+}
+}
+},
+{
+"battle": 1403141,
+"at": "2026-10-08T00:58:38.243Z",
+"opp": "zzz3nith was here",
+"opp_elo": 1645,
+"game": 1403144,
+"map": "Trophy",
+"us": "B",
+"won": false,
+"cls": "elim",
+"rounds": 163,
+"counts": {
+"our_queen_rammed": 1
+},
+"events": [
+[
+124,
+"our queen rammed",
+"S",
+2
+]
+],
+"final": {
+"ours": {
+"dragons": 0,
+"longest": 0,
+"total": 0
+},
+"theirs": {
+"dragons": 44,
+"longest": 11,
+"total": 117
+}
+}
+},
+{
+"battle": 1403141,
+"at": "2026-10-08T00:58:38.243Z",
+"opp": "zzz3nith was here",
+"opp_elo": 1645,
+"game": 1403145,
+"map": "Autarky",
+"us": "B",
+"won": true,
+"cls": "elim",
+"rounds": 439,
+"counts": {
+"our_paid_moves": 7,
+"queen_paid_flight": 3,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 1
+},
+"events": [
+[
+134,
+"queen paid move",
+"EE",
+3
+],
+[
+232,
+"queen paid move",
+"NN",
+3
+],
+[
+252,
+"queen paid move",
+"ES",
+3
+],
+[
+438,
+"we rammed their queen",
+"NE",
+3,
+"paid"
+]
+],
+"final": {
+"ours": {
+"dragons": 54,
+"longest": 3,
+"total": 126
+},
+"theirs": {
+"dragons": 0,
+"longest": 0,
+"total": 0
+}
+}
+},
+{
+"battle": 1633883,
+"at": "2026-10-11T00:53:56.550Z",
+"opp": "Eric Allen Le",
+"opp_elo": 1624,
+"game": 1633883,
+"map": "Slithery Fight",
+"us": "B",
+"won": true,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 1,
+"queen_paid_flight": 1
+},
+"events": [
+[
+55,
+"queen paid move",
+"NN",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 8,
+"longest": 41,
+"total": 141
+},
+"theirs": {
+"dragons": 15,
+"longest": 40,
+"total": 197
+}
+}
+},
+{
+"battle": 1633883,
+"at": "2026-10-11T00:53:56.550Z",
+"opp": "Eric Allen Le",
+"opp_elo": 1624,
+"game": 1633884,
+"map": "Devil",
+"us": "B",
+"won": false,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 2,
+"queen_paid_flight": 2
+},
+"events": [
+[
+280,
+"queen paid move",
+"NE",
+3
+],
+[
+431,
+"queen paid move",
+"ES",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 2,
+"longest": 7,
+"total": 13
+},
+"theirs": {
+"dragons": 4,
+"longest": 31,
+"total": 96
+}
+}
+},
+{
+"battle": 1633883,
+"at": "2026-10-11T00:53:56.550Z",
+"opp": "Eric Allen Le",
+"opp_elo": 1624,
+"game": 1633885,
+"map": "Islands",
+"us": "B",
+"won": true,
+"cls": "onlyOurs",
+"rounds": 500,
+"counts": {},
+"events": [],
+"final": {
+"ours": {
+"dragons": 10,
+"longest": 37,
+"total": 153
+},
+"theirs": {
+"dragons": 14,
+"longest": 26,
+"total": 113
+}
+}
+},
+{
+"battle": 1633883,
+"at": "2026-10-11T00:53:56.550Z",
+"opp": "Eric Allen Le",
+"opp_elo": 1624,
+"game": 1633886,
+"map": "Athena",
+"us": "B",
+"won": true,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 1,
+"queen_paid_flight": 1
+},
+"events": [
+[
+219,
+"queen paid move",
+"SW",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 16,
+"longest": 74,
+"total": 331
+},
+"theirs": {
+"dragons": 43,
+"longest": 50,
+"total": 511
+}
+}
+},
+{
+"battle": 1633883,
+"at": "2026-10-11T00:53:56.550Z",
+"opp": "Eric Allen Le",
+"opp_elo": 1624,
+"game": 1633887,
+"map": "Around UNSW",
+"us": "B",
+"won": true,
+"cls": "onlyOurs",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 1
+},
+"events": [],
+"final": {
+"ours": {
+"dragons": 15,
+"longest": 36,
+"total": 260
+},
+"theirs": {
+"dragons": 11,
+"longest": 47,
+"total": 250
+}
+}
+},
+{
+"battle": 1634559,
+"at": "2026-10-11T01:01:21.610Z",
+"opp": "waddledee",
+"opp_elo": 1606,
+"game": 1634559,
+"map": "Athena",
+"us": "B",
+"won": false,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_queen_rammed": 1
+},
+"events": [
+[
+258,
+"our queen rammed",
+"WW",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 17,
+"longest": 34,
+"total": 354
+},
+"theirs": {
+"dragons": 24,
+"longest": 49,
+"total": 288
+}
+}
+},
+{
+"battle": 1634559,
+"at": "2026-10-11T01:01:21.610Z",
+"opp": "waddledee",
+"opp_elo": 1606,
+"game": 1634560,
+"map": "Hive",
+"us": "B",
+"won": false,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_queen_rammed": 1
+},
+"events": [
+[
+169,
+"our queen rammed",
+"NNE",
+4
+]
+],
+"final": {
+"ours": {
+"dragons": 10,
+"longest": 45,
+"total": 219
+},
+"theirs": {
+"dragons": 33,
+"longest": 58,
+"total": 379
+}
+}
+},
+{
+"battle": 1634559,
+"at": "2026-10-11T01:01:21.610Z",
+"opp": "waddledee",
+"opp_elo": 1606,
+"game": 1634561,
+"map": "Schooltime",
+"us": "B",
+"won": true,
+"cls": "both",
+"rounds": 500,
+"counts": {},
+"events": [],
+"final": {
+"ours": {
+"dragons": 9,
+"longest": 52,
+"total": 229
+},
+"theirs": {
+"dragons": 38,
+"longest": 23,
+"total": 241
+}
+}
+},
+{
+"battle": 1634559,
+"at": "2026-10-11T01:01:21.610Z",
+"opp": "waddledee",
+"opp_elo": 1606,
+"game": 1634562,
+"map": "Atlantis",
+"us": "B",
+"won": false,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_queen_rammed": 1
+},
+"events": [
+[
+117,
+"our queen rammed",
+"SS",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 11,
+"longest": 9,
+"total": 37
+},
+"theirs": {
+"dragons": 42,
+"longest": 51,
+"total": 224
+}
+}
+},
+{
+"battle": 1634559,
+"at": "2026-10-11T01:01:21.610Z",
+"opp": "waddledee",
+"opp_elo": 1606,
+"game": 1634563,
+"map": "Trauma",
+"us": "B",
+"won": true,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_queen_rammed": 1
+},
+"events": [
+[
+277,
+"our queen rammed",
+"SW",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 2,
+"longest": 19,
+"total": 23
+},
+"theirs": {
+"dragons": 21,
+"longest": 9,
+"total": 81
+}
+}
+},
+{
+"battle": 1635703,
+"at": "2026-10-11T01:14:59.130Z",
+"opp": "err404",
+"opp_elo": 1734,
+"game": 1635703,
+"map": "Australia",
+"us": "B",
+"won": false,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 1,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 1
+},
+"events": [
+[
+258,
+"we rammed their queen",
+"EEE",
+6,
+"paid"
+]
+],
+"final": {
+"ours": {
+"dragons": 17,
+"longest": 34,
+"total": 219
+},
+"theirs": {
+"dragons": 14,
+"longest": 37,
+"total": 250
+}
+}
+},
+{
+"battle": 1635703,
+"at": "2026-10-11T01:14:59.130Z",
+"opp": "err404",
+"opp_elo": 1734,
+"game": 1635704,
+"map": "Caution",
+"us": "B",
+"won": false,
+"cls": "elim",
+"rounds": 46,
+"counts": {},
+"events": [],
+"final": {
+"ours": {
+"dragons": 0,
+"longest": 0,
+"total": 0
+},
+"theirs": {
+"dragons": 4,
+"longest": 3,
+"total": 9
+}
+}
+},
+{
+"battle": 1635703,
+"at": "2026-10-11T01:14:59.130Z",
+"opp": "err404",
+"opp_elo": 1734,
+"game": 1635705,
+"map": "Prisoners Dilemma",
+"us": "B",
+"won": true,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 1,
+"queen_paid_flight": 1,
+"our_queen_rammed": 1
+},
+"events": [
+[
+82,
+"queen paid move",
+"ES",
+3
+],
+[
+146,
+"our queen rammed",
+"NW",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 3,
+"longest": 21,
+"total": 26
+},
+"theirs": {
+"dragons": 1,
+"longest": 18,
+"total": 18
+}
+}
+},
+{
+"battle": 1635703,
+"at": "2026-10-11T01:14:59.130Z",
+"opp": "err404",
+"opp_elo": 1734,
+"game": 1635706,
+"map": "Stripes",
+"us": "B",
+"won": false,
+"cls": "elim",
+"rounds": 111,
+"counts": {
+"our_queen_rammed": 1
+},
+"events": [
+[
+110,
+"our queen rammed",
+"E",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 0,
+"longest": 0,
+"total": 0
+},
+"theirs": {
+"dragons": 22,
+"longest": 4,
+"total": 54
+}
+}
+},
+{
+"battle": 1635703,
+"at": "2026-10-11T01:14:59.130Z",
+"opp": "err404",
+"opp_elo": 1734,
+"game": 1635707,
+"map": "Maze",
+"us": "B",
+"won": false,
+"cls": "onlyTheirs",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 1,
+"queen_paid_flight": 1
+},
+"events": [
+[
+89,
+"queen paid move",
+"NN",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 1,
+"longest": 64,
+"total": 64
+},
+"theirs": {
+"dragons": 8,
+"longest": 33,
+"total": 136
+}
+}
+},
+{
+"battle": 1637082,
+"at": "2026-10-11T01:40:44.631Z",
+"opp": "solo\ud83d\ude0e",
+"opp_elo": 1723,
+"game": 1637082,
+"map": "weakhold",
+"us": "A",
+"won": false,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 0
+},
+"events": [
+[
+297,
+"we rammed their queen",
+"S",
+2,
+"free"
+]
+],
+"final": {
+"ours": {
+"dragons": 9,
+"longest": 6,
+"total": 32
+},
+"theirs": {
+"dragons": 5,
+"longest": 11,
+"total": 19
+}
+}
+},
+{
+"battle": 1637082,
+"at": "2026-10-11T01:40:44.631Z",
+"opp": "solo\ud83d\ude0e",
+"opp_elo": 1723,
+"game": 1637083,
+"map": "Athena",
+"us": "A",
+"won": true,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 1,
+"queen_paid_flight": 1,
+"our_queen_rammed": 1
+},
+"events": [
+[
+63,
+"queen paid move",
+"NN",
+3
+],
+[
+178,
+"our queen rammed",
+"NW",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 10,
+"longest": 74,
+"total": 217
+},
+"theirs": {
+"dragons": 60,
+"longest": 65,
+"total": 521
+}
+}
+},
+{
+"battle": 1637082,
+"at": "2026-10-11T01:40:44.631Z",
+"opp": "solo\ud83d\ude0e",
+"opp_elo": 1723,
+"game": 1637084,
+"map": "Maze",
+"us": "A",
+"won": true,
+"cls": "none",
+"rounds": 500,
+"counts": {},
+"events": [],
+"final": {
+"ours": {
+"dragons": 1,
+"longest": 96,
+"total": 96
+},
+"theirs": {
+"dragons": 27,
+"longest": 79,
+"total": 236
+}
+}
+},
+{
+"battle": 1637082,
+"at": "2026-10-11T01:40:44.631Z",
+"opp": "solo\ud83d\ude0e",
+"opp_elo": 1723,
+"game": 1637085,
+"map": "Thermopylae",
+"us": "A",
+"won": true,
+"cls": "onlyOurs",
+"rounds": 500,
+"counts": {},
+"events": [],
+"final": {
+"ours": {
+"dragons": 7,
+"longest": 3,
+"total": 15
+},
+"theirs": {
+"dragons": 24,
+"longest": 46,
+"total": 141
+}
+}
+},
+{
+"battle": 1637082,
+"at": "2026-10-11T01:40:44.631Z",
+"opp": "solo\ud83d\ude0e",
+"opp_elo": 1723,
+"game": 1637086,
+"map": "Slithery Fight",
+"us": "A",
+"won": true,
+"cls": "onlyOurs",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 3,
+"queen_paid_flight": 3
+},
+"events": [
+[
+48,
+"queen paid move",
+"EE",
+3
+],
+[
+372,
+"queen paid move",
+"ES",
+4
+],
+[
+374,
+"queen paid move",
+"NW",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 12,
+"longest": 49,
+"total": 230
+},
+"theirs": {
+"dragons": 13,
+"longest": 100,
+"total": 263
+}
+}
+},
+{
+"battle": 1637898,
+"at": "2026-10-11T01:53:00.521Z",
+"opp": "Average Individuals (AI)",
+"opp_elo": 1607,
+"game": 1637898,
+"map": "Maze",
+"us": "B",
+"won": true,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 1
+},
+"events": [],
+"final": {
+"ours": {
+"dragons": 1,
+"longest": 59,
+"total": 59
+},
+"theirs": {
+"dragons": 25,
+"longest": 45,
+"total": 184
+}
+}
+},
+{
+"battle": 1637898,
+"at": "2026-10-11T01:53:00.521Z",
+"opp": "Average Individuals (AI)",
+"opp_elo": 1607,
+"game": 1637899,
+"map": "Schooltime",
+"us": "B",
+"won": true,
+"cls": "onlyOurs",
+"rounds": 500,
+"counts": {},
+"events": [],
+"final": {
+"ours": {
+"dragons": 5,
+"longest": 28,
+"total": 94
+},
+"theirs": {
+"dragons": 11,
+"longest": 57,
+"total": 303
+}
+}
+},
+{
+"battle": 1637898,
+"at": "2026-10-11T01:53:00.521Z",
+"opp": "Average Individuals (AI)",
+"opp_elo": 1607,
+"game": 1637900,
+"map": "Around UNSW",
+"us": "B",
+"won": true,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 1,
+"queen_paid_flight": 1
+},
+"events": [
+[
+352,
+"queen paid move",
+"ES",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 5,
+"longest": 46,
+"total": 140
+},
+"theirs": {
+"dragons": 27,
+"longest": 45,
+"total": 366
+}
+}
+},
+{
+"battle": 1637898,
+"at": "2026-10-11T01:53:00.521Z",
+"opp": "Average Individuals (AI)",
+"opp_elo": 1607,
+"game": 1637901,
+"map": "Maelstrom",
+"us": "B",
+"won": true,
+"cls": "onlyOurs",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 2,
+"queen_paid_flight": 2
+},
+"events": [
+[
+182,
+"queen paid move",
+"ES",
+3
+],
+[
+313,
+"queen paid move",
+"ES",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 7,
+"longest": 40,
+"total": 160
+},
+"theirs": {
+"dragons": 13,
+"longest": 69,
+"total": 334
+}
+}
+},
+{
+"battle": 1637898,
+"at": "2026-10-11T01:53:00.521Z",
+"opp": "Average Individuals (AI)",
+"opp_elo": 1607,
+"game": 1637902,
+"map": "Trolley Problem",
+"us": "B",
+"won": false,
+"cls": "none",
+"rounds": 500,
+"counts": {},
+"events": [],
+"final": {
+"ours": {
+"dragons": 3,
+"longest": 24,
+"total": 28
+},
+"theirs": {
+"dragons": 26,
+"longest": 28,
+"total": 185
+}
+}
+},
+{
+"battle": 1638494,
+"at": "2026-10-11T02:05:22.152Z",
+"opp": "Yueci Li",
+"opp_elo": 1733,
+"game": 1638494,
+"map": "Maze",
+"us": "B",
+"won": false,
+"cls": "onlyTheirs",
+"rounds": 500,
+"counts": {},
+"events": [],
+"final": {
+"ours": {
+"dragons": 4,
+"longest": 48,
+"total": 88
+},
+"theirs": {
+"dragons": 30,
+"longest": 25,
+"total": 234
+}
+}
+},
+{
+"battle": 1638494,
+"at": "2026-10-11T02:05:22.152Z",
+"opp": "Yueci Li",
+"opp_elo": 1733,
+"game": 1638495,
+"map": "Slithery Fight",
+"us": "B",
+"won": true,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 3,
+"queen_paid_flight": 1,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 1
+},
+"events": [
+[
+186,
+"queen paid move",
+"WS",
+3
+],
+[
+193,
+"we rammed their queen",
+"EEE",
+8,
+"paid"
+]
+],
+"final": {
+"ours": {
+"dragons": 19,
+"longest": 30,
+"total": 198
+},
+"theirs": {
+"dragons": 22,
+"longest": 25,
+"total": 196
+}
+}
+},
+{
+"battle": 1638494,
+"at": "2026-10-11T02:05:22.152Z",
+"opp": "Yueci Li",
+"opp_elo": 1733,
+"game": 1638496,
+"map": "Thermopylae",
+"us": "B",
+"won": false,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 2,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 1,
+"queen_paid_flight": 1,
+"our_queen_rammed": 1
+},
+"events": [
+[
+84,
+"we rammed their queen",
+"WW",
+3,
+"paid"
+],
+[
+278,
+"queen paid move",
+"NE",
+4
+],
+[
+289,
+"our queen rammed",
+"S",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 14,
+"longest": 20,
+"total": 89
+},
+"theirs": {
+"dragons": 24,
+"longest": 21,
+"total": 166
+}
+}
+},
+{
+"battle": 1638494,
+"at": "2026-10-11T02:05:22.152Z",
+"opp": "Yueci Li",
+"opp_elo": 1733,
+"game": 1638497,
+"map": "Metro",
+"us": "B",
+"won": true,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 2,
+"queen_paid_flight": 1,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 1
+},
+"events": [
+[
+85,
+"queen paid move",
+"EE",
+3
+],
+[
+185,
+"we rammed their queen",
+"SWWSW",
+14,
+"paid"
+]
+],
+"final": {
+"ours": {
+"dragons": 16,
+"longest": 48,
+"total": 376
+},
+"theirs": {
+"dragons": 38,
+"longest": 33,
+"total": 421
+}
+}
+},
+{
+"battle": 1638494,
+"at": "2026-10-11T02:05:22.152Z",
+"opp": "Yueci Li",
+"opp_elo": 1733,
+"game": 1638498,
+"map": "Portals",
+"us": "B",
+"won": false,
+"cls": "onlyTheirs",
+"rounds": 500,
+"counts": {},
+"events": [],
+"final": {
+"ours": {
+"dragons": 3,
+"longest": 24,
+"total": 47
+},
+"theirs": {
+"dragons": 2,
+"longest": 15,
+"total": 27
+}
+}
+},
+{
+"battle": 1811831,
+"at": "2026-10-12T21:41:12.814Z",
+"opp": "CaprioticThunders",
+"opp_elo": 1600,
+"game": 1811831,
+"map": "weakhold",
+"us": "B",
+"won": false,
+"cls": "onlyTheirs",
+"rounds": 500,
+"counts": {},
+"events": [],
+"final": {
+"ours": {
+"dragons": 3,
+"longest": 5,
+"total": 13
+},
+"theirs": {
+"dragons": 8,
+"longest": 18,
+"total": 56
+}
+}
+},
+{
+"battle": 1811831,
+"at": "2026-10-12T21:41:12.814Z",
+"opp": "CaprioticThunders",
+"opp_elo": 1600,
+"game": 1811832,
+"map": "Queen Of Spades",
+"us": "B",
+"won": true,
+"cls": "elim",
+"rounds": 193,
+"counts": {
+"our_paid_moves": 2,
+"queen_paid_flight": 1,
+"our_queen_rammed": 1,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 1
+},
+"events": [
+[
+86,
+"queen paid move",
+"EN",
+3
+],
+[
+179,
+"our queen rammed",
+"E",
+2
+],
+[
+192,
+"we rammed their queen",
+"SS",
+3,
+"paid"
+]
+],
+"final": {
+"ours": {
+"dragons": 30,
+"longest": 4,
+"total": 70
+},
+"theirs": {
+"dragons": 0,
+"longest": 0,
+"total": 0
+}
+}
+},
+{
+"battle": 1811831,
+"at": "2026-10-12T21:41:12.814Z",
+"opp": "CaprioticThunders",
+"opp_elo": 1600,
+"game": 1811833,
+"map": "Default",
+"us": "B",
+"won": true,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 1,
+"queen_paid_flight": 1,
+"our_queen_rammed": 1,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 0
+},
+"events": [
+[
+135,
+"queen paid move",
+"WW",
+3
+],
+[
+187,
+"our queen rammed",
+"EEE",
+4
+],
+[
+197,
+"we rammed their queen",
+"E",
+2,
+"free"
+]
+],
+"final": {
+"ours": {
+"dragons": 9,
+"longest": 35,
+"total": 167
+},
+"theirs": {
+"dragons": 1,
+"longest": 30,
+"total": 30
+}
+}
+},
+{
+"battle": 1811831,
+"at": "2026-10-12T21:41:12.814Z",
+"opp": "CaprioticThunders",
+"opp_elo": 1600,
+"game": 1811834,
+"map": "Trauma",
+"us": "B",
+"won": true,
+"cls": "onlyOurs",
+"rounds": 500,
+"counts": {
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 0
+},
+"events": [
+[
+381,
+"we rammed their queen",
+"SSES",
+13,
+"free"
+]
+],
+"final": {
+"ours": {
+"dragons": 7,
+"longest": 22,
+"total": 90
+},
+"theirs": {
+"dragons": 5,
+"longest": 6,
+"total": 18
+}
+}
+},
+{
+"battle": 1811831,
+"at": "2026-10-12T21:41:12.814Z",
+"opp": "CaprioticThunders",
+"opp_elo": 1600,
+"game": 1811835,
+"map": "Portals",
+"us": "B",
+"won": true,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 1,
+"queen_paid_flight": 1
+},
+"events": [
+[
+49,
+"queen paid move",
+"ES",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 5,
+"longest": 21,
+"total": 61
+},
+"theirs": {
+"dragons": 8,
+"longest": 18,
+"total": 80
+}
+}
+},
+{
+"battle": 1811446,
+"at": "2026-10-12T21:43:34.181Z",
+"opp": "pizza",
+"opp_elo": 1699,
+"game": 1811446,
+"map": "Detention",
+"us": "A",
+"won": true,
+"cls": "both",
+"rounds": 500,
+"counts": {},
+"events": [],
+"final": {
+"ours": {
+"dragons": 13,
+"longest": 113,
+"total": 410
+},
+"theirs": {
+"dragons": 13,
+"longest": 61,
+"total": 307
+}
+}
+},
+{
+"battle": 1811446,
+"at": "2026-10-12T21:43:34.181Z",
+"opp": "pizza",
+"opp_elo": 1699,
+"game": 1811447,
+"map": "Autarky",
+"us": "A",
+"won": false,
+"cls": "elim",
+"rounds": 234,
+"counts": {
+"our_paid_moves": 2,
+"queen_paid_flight": 1,
+"our_queen_rammed": 1
+},
+"events": [
+[
+46,
+"queen paid move",
+"EE",
+3
+],
+[
+184,
+"our queen rammed",
+"N",
+2
+]
+],
+"final": {
+"ours": {
+"dragons": 0,
+"longest": 0,
+"total": 0
+},
+"theirs": {
+"dragons": 64,
+"longest": 4,
+"total": 145
+}
+}
+},
+{
+"battle": 1811446,
+"at": "2026-10-12T21:43:34.181Z",
+"opp": "pizza",
+"opp_elo": 1699,
+"game": 1811448,
+"map": "Ouroboros",
+"us": "A",
+"won": true,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 2,
+"queen_paid_flight": 1,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 1,
+"our_queen_rammed": 1
+},
+"events": [
+[
+23,
+"queen paid move",
+"EE",
+3
+],
+[
+75,
+"we rammed their queen",
+"SS",
+3,
+"paid"
+],
+[
+232,
+"our queen rammed",
+"E",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 14,
+"longest": 101,
+"total": 395
+},
+"theirs": {
+"dragons": 24,
+"longest": 27,
+"total": 255
+}
+}
+},
+{
+"battle": 1811446,
+"at": "2026-10-12T21:43:34.181Z",
+"opp": "pizza",
+"opp_elo": 1699,
+"game": 1811449,
+"map": "Hive",
+"us": "A",
+"won": false,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 1,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 1,
+"our_queen_rammed": 1
+},
+"events": [
+[
+42,
+"we rammed their queen",
+"NW",
+2,
+"paid"
+],
+[
+249,
+"our queen rammed",
+"N",
+2
+]
+],
+"final": {
+"ours": {
+"dragons": 19,
+"longest": 55,
+"total": 399
+},
+"theirs": {
+"dragons": 21,
+"longest": 90,
+"total": 322
+}
+}
+},
+{
+"battle": 1811446,
+"at": "2026-10-12T21:43:34.181Z",
+"opp": "pizza",
+"opp_elo": 1699,
+"game": 1811450,
+"map": "Prisoners Dilemma",
+"us": "A",
+"won": false,
+"cls": "elim",
+"rounds": 264,
+"counts": {
+"our_paid_moves": 3,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 1,
+"queen_paid_flight": 1,
+"our_queen_rammed": 1
+},
+"events": [
+[
+29,
+"we rammed their queen",
+"SS",
+3,
+"paid"
+],
+[
+113,
+"queen paid move",
+"NN",
+3
+],
+[
+247,
+"our queen rammed",
+"S",
+2
+]
+],
+"final": {
+"ours": {
+"dragons": 0,
+"longest": 0,
+"total": 0
+},
+"theirs": {
+"dragons": 51,
+"longest": 3,
+"total": 120
+}
+}
+},
+{
+"battle": 1812278,
+"at": "2026-10-12T21:56:09.955Z",
+"opp": "Um_nik da real goat",
+"opp_elo": 1797,
+"game": 1812278,
+"map": "Ouroboros",
+"us": "A",
+"won": true,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 6,
+"queen_paid_flight": 3,
+"our_queen_rammed": 1,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 1
+},
+"events": [
+[
+126,
+"queen paid move",
+"WW",
+3
+],
+[
+145,
+"queen paid move",
+"EE",
+3
+],
+[
+161,
+"queen paid move",
+"EE",
+3
+],
+[
+182,
+"our queen rammed",
+"WW",
+3
+],
+[
+458,
+"we rammed their queen",
+"SESS",
+9,
+"paid"
+]
+],
+"final": {
+"ours": {
+"dragons": 7,
+"longest": 102,
+"total": 211
+},
+"theirs": {
+"dragons": 18,
+"longest": 54,
+"total": 616
+}
+}
+},
+{
+"battle": 1812278,
+"at": "2026-10-12T21:56:09.955Z",
+"opp": "Um_nik da real goat",
+"opp_elo": 1797,
+"game": 1812279,
+"map": "Ezam",
+"us": "A",
+"won": false,
+"cls": "elim",
+"rounds": 447,
+"counts": {
+"our_paid_moves": 2,
+"queen_paid_flight": 2,
+"our_queen_rammed": 1
+},
+"events": [
+[
+199,
+"queen paid move",
+"WW",
+3
+],
+[
+346,
+"queen paid move",
+"WN",
+3
+],
+[
+400,
+"our queen rammed",
+"ENE",
+4
+]
+],
+"final": {
+"ours": {
+"dragons": 0,
+"longest": 0,
+"total": 0
+},
+"theirs": {
+"dragons": 26,
+"longest": 48,
+"total": 266
+}
+}
+},
+{
+"battle": 1812278,
+"at": "2026-10-12T21:56:09.955Z",
+"opp": "Um_nik da real goat",
+"opp_elo": 1797,
+"game": 1812280,
+"map": "Metro",
+"us": "A",
+"won": false,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 3,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 1,
+"queen_paid_flight": 2
+},
+"events": [
+[
+98,
+"we rammed their queen",
+"NNN",
+5,
+"paid"
+],
+[
+204,
+"queen paid move",
+"NN",
+3
+],
+[
+237,
+"queen paid move",
+"NN",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 15,
+"longest": 49,
+"total": 304
+},
+"theirs": {
+"dragons": 11,
+"longest": 82,
+"total": 364
+}
+}
+},
+{
+"battle": 1812278,
+"at": "2026-10-12T21:56:09.955Z",
+"opp": "Um_nik da real goat",
+"opp_elo": 1797,
+"game": 1812281,
+"map": "Trophy",
+"us": "A",
+"won": true,
+"cls": "elim",
+"rounds": 267,
+"counts": {
+"our_paid_moves": 1,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 1
+},
+"events": [
+[
+91,
+"we rammed their queen",
+"NN",
+3,
+"paid"
+]
+],
+"final": {
+"ours": {
+"dragons": 56,
+"longest": 15,
+"total": 205
+},
+"theirs": {
+"dragons": 0,
+"longest": 0,
+"total": 0
+}
+}
+},
+{
+"battle": 1812278,
+"at": "2026-10-12T21:56:09.955Z",
+"opp": "Um_nik da real goat",
+"opp_elo": 1797,
+"game": 1812282,
+"map": "Maelstrom",
+"us": "A",
+"won": false,
+"cls": "none",
+"rounds": 500,
+"counts": {},
+"events": [],
+"final": {
+"ours": {
+"dragons": 7,
+"longest": 26,
+"total": 111
+},
+"theirs": {
+"dragons": 13,
+"longest": 106,
+"total": 394
+}
+}
+},
+{
+"battle": 1813598,
+"at": "2026-10-12T22:13:34.557Z",
+"opp": "Git Gud",
+"opp_elo": 1563,
+"game": 1813598,
+"map": "Atlantis",
+"us": "B",
+"won": false,
+"cls": "both",
+"rounds": 500,
+"counts": {},
+"events": [],
+"final": {
+"ours": {
+"dragons": 20,
+"longest": 6,
+"total": 63
+},
+"theirs": {
+"dragons": 3,
+"longest": 10,
+"total": 21
+}
+}
+},
+{
+"battle": 1813598,
+"at": "2026-10-12T22:13:34.557Z",
+"opp": "Git Gud",
+"opp_elo": 1563,
+"game": 1813599,
+"map": "Slithery Fight",
+"us": "B",
+"won": true,
+"cls": "onlyOurs",
+"rounds": 500,
+"counts": {},
+"events": [],
+"final": {
+"ours": {
+"dragons": 15,
+"longest": 29,
+"total": 202
+},
+"theirs": {
+"dragons": 37,
+"longest": 39,
+"total": 221
+}
+}
+},
+{
+"battle": 1813598,
+"at": "2026-10-12T22:13:34.557Z",
+"opp": "Git Gud",
+"opp_elo": 1563,
+"game": 1813600,
+"map": "Trophy",
+"us": "B",
+"won": true,
+"cls": "elim",
+"rounds": 444,
+"counts": {
+"our_queen_rammed": 1,
+"our_paid_moves": 2,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 0
+},
+"events": [
+[
+73,
+"our queen rammed",
+"NEE",
+4
+],
+[
+156,
+"we rammed their queen",
+"W",
+2,
+"free"
+]
+],
+"final": {
+"ours": {
+"dragons": 26,
+"longest": 23,
+"total": 114
+},
+"theirs": {
+"dragons": 0,
+"longest": 0,
+"total": 0
+}
+}
+},
+{
+"battle": 1813598,
+"at": "2026-10-12T22:13:34.557Z",
+"opp": "Git Gud",
+"opp_elo": 1563,
+"game": 1813601,
+"map": "Default",
+"us": "B",
+"won": false,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 2,
+"queen_paid_flight": 2,
+"our_queen_rammed": 1,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 0
+},
+"events": [
+[
+101,
+"queen paid move",
+"SW",
+3
+],
+[
+289,
+"queen paid move",
+"NN",
+3
+],
+[
+352,
+"our queen rammed",
+"WW",
+3
+],
+[
+478,
+"we rammed their queen",
+"SWWSS",
+18,
+"free"
+]
+],
+"final": {
+"ours": {
+"dragons": 2,
+"longest": 16,
+"total": 23
+},
+"theirs": {
+"dragons": 8,
+"longest": 23,
+"total": 67
+}
+}
+},
+{
+"battle": 1813598,
+"at": "2026-10-12T22:13:34.557Z",
+"opp": "Git Gud",
+"opp_elo": 1563,
+"game": 1813602,
+"map": "Australia",
+"us": "B",
+"won": true,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 1,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 1
+},
+"events": [
+[
+399,
+"we rammed their queen",
+"NNN",
+5,
+"paid"
+]
+],
+"final": {
+"ours": {
+"dragons": 22,
+"longest": 52,
+"total": 416
+},
+"theirs": {
+"dragons": 10,
+"longest": 19,
+"total": 66
+}
+}
+},
+{
+"battle": 1814507,
+"at": "2026-10-12T22:29:48.498Z",
+"opp": "Atlas",
+"opp_elo": 1522,
+"game": 1814507,
+"map": "Default",
+"us": "B",
+"won": true,
+"cls": "onlyOurs",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 6,
+"queen_paid_flight": 3
+},
+"events": [
+[
+397,
+"queen paid move",
+"EE",
+4
+],
+[
+404,
+"queen paid move",
+"NE",
+4
+],
+[
+406,
+"queen paid move",
+"SW",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 5,
+"longest": 16,
+"total": 50
+},
+"theirs": {
+"dragons": 8,
+"longest": 20,
+"total": 98
+}
+}
+},
+{
+"battle": 1814507,
+"at": "2026-10-12T22:29:48.498Z",
+"opp": "Atlas",
+"opp_elo": 1522,
+"game": 1814508,
+"map": "weakhold",
+"us": "B",
+"won": false,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 0
+},
+"events": [
+[
+192,
+"we rammed their queen",
+"E",
+3,
+"free"
+]
+],
+"final": {
+"ours": {
+"dragons": 1,
+"longest": 3,
+"total": 3
+},
+"theirs": {
+"dragons": 11,
+"longest": 14,
+"total": 73
+}
+}
+},
+{
+"battle": 1814507,
+"at": "2026-10-12T22:29:48.498Z",
+"opp": "Atlas",
+"opp_elo": 1522,
+"game": 1814509,
+"map": "Devil",
+"us": "B",
+"won": false,
+"cls": "elim",
+"rounds": 480,
+"counts": {
+"our_queen_rammed": 1
+},
+"events": [
+[
+447,
+"our queen rammed",
+"NNN",
+16
+]
+],
+"final": {
+"ours": {
+"dragons": 0,
+"longest": 0,
+"total": 0
+},
+"theirs": {
+"dragons": 11,
+"longest": 16,
+"total": 108
+}
+}
+},
+{
+"battle": 1814507,
+"at": "2026-10-12T22:29:48.498Z",
+"opp": "Atlas",
+"opp_elo": 1522,
+"game": 1814510,
+"map": "Trauma",
+"us": "B",
+"won": true,
+"cls": "onlyOurs",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 1,
+"queen_paid_flight": 1
+},
+"events": [
+[
+245,
+"queen paid move",
+"SE",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 3,
+"longest": 13,
+"total": 25
+},
+"theirs": {
+"dragons": 4,
+"longest": 28,
+"total": 59
+}
+}
+},
+{
+"battle": 1814507,
+"at": "2026-10-12T22:29:48.498Z",
+"opp": "Atlas",
+"opp_elo": 1522,
+"game": 1814511,
+"map": "Around UNSW",
+"us": "B",
+"won": true,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 1,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 1
+},
+"events": [
+[
+320,
+"we rammed their queen",
+"ES",
+4,
+"paid"
+]
+],
+"final": {
+"ours": {
+"dragons": 16,
+"longest": 43,
+"total": 247
+},
+"theirs": {
+"dragons": 17,
+"longest": 34,
+"total": 270
+}
+}
+},
+{
+"battle": 1815410,
+"at": "2026-10-12T22:40:47.044Z",
+"opp": "aisakastrats",
+"opp_elo": 1656,
+"game": 1815410,
+"map": "Australia",
+"us": "B",
+"won": false,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 2,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 1,
+"our_queen_rammed": 1
+},
+"events": [
+[
+29,
+"we rammed their queen",
+"WW",
+3,
+"paid"
+],
+[
+234,
+"our queen rammed",
+"SS",
+4
+]
+],
+"final": {
+"ours": {
+"dragons": 5,
+"longest": 18,
+"total": 64
+},
+"theirs": {
+"dragons": 13,
+"longest": 59,
+"total": 196
+}
+}
+},
+{
+"battle": 1815410,
+"at": "2026-10-12T22:40:47.044Z",
+"opp": "aisakastrats",
+"opp_elo": 1656,
+"game": 1815411,
+"map": "Islands",
+"us": "B",
+"won": false,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 0,
+"our_queen_rammed": 1
+},
+"events": [
+[
+58,
+"we rammed their queen",
+"E",
+2,
+"free"
+],
+[
+354,
+"our queen rammed",
+"EESS",
+7
+]
+],
+"final": {
+"ours": {
+"dragons": 2,
+"longest": 15,
+"total": 25
+},
+"theirs": {
+"dragons": 8,
+"longest": 52,
+"total": 163
+}
+}
+},
+{
+"battle": 1815410,
+"at": "2026-10-12T22:40:47.044Z",
+"opp": "aisakastrats",
+"opp_elo": 1656,
+"game": 1815412,
+"map": "Ouroboros",
+"us": "B",
+"won": false,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 0
+},
+"events": [
+[
+39,
+"we rammed their queen",
+"S",
+3,
+"free"
+]
+],
+"final": {
+"ours": {
+"dragons": 7,
+"longest": 43,
+"total": 191
+},
+"theirs": {
+"dragons": 11,
+"longest": 89,
+"total": 283
+}
+}
+},
+{
+"battle": 1815410,
+"at": "2026-10-12T22:40:47.044Z",
+"opp": "aisakastrats",
+"opp_elo": 1656,
+"game": 1815413,
+"map": "Trolley Problem (Buffed)",
+"us": "B",
+"won": true,
+"cls": "onlyOurs",
+"rounds": 500,
+"counts": {},
+"events": [],
+"final": {
+"ours": {
+"dragons": 19,
+"longest": 55,
+"total": 210
+},
+"theirs": {
+"dragons": 4,
+"longest": 21,
+"total": 46
+}
+}
+},
+{
+"battle": 1815410,
+"at": "2026-10-12T22:40:47.044Z",
+"opp": "aisakastrats",
+"opp_elo": 1656,
+"game": 1815414,
+"map": "Devil",
+"us": "B",
+"won": true,
+"cls": "onlyOurs",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 2,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 1
+},
+"events": [
+[
+257,
+"we rammed their queen",
+"EE",
+3,
+"paid"
+]
+],
+"final": {
+"ours": {
+"dragons": 6,
+"longest": 21,
+"total": 83
+},
+"theirs": {
+"dragons": 9,
+"longest": 5,
+"total": 26
+}
+}
+},
+{
+"battle": 1816291,
+"at": "2026-10-12T22:47:55.407Z",
+"opp": "mlp",
+"opp_elo": 1561,
+"game": 1816291,
+"map": "Trophy",
+"us": "B",
+"won": true,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 9,
+"queen_paid_flight": 1,
+"our_queen_rammed": 1,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 1
+},
+"events": [
+[
+61,
+"queen paid move",
+"EE",
+3
+],
+[
+119,
+"our queen rammed",
+"NE",
+3
+],
+[
+202,
+"we rammed their queen",
+"SS",
+3,
+"paid"
+]
+],
+"final": {
+"ours": {
+"dragons": 9,
+"longest": 31,
+"total": 118
+},
+"theirs": {
+"dragons": 8,
+"longest": 13,
+"total": 58
+}
+}
+},
+{
+"battle": 1816291,
+"at": "2026-10-12T22:47:55.407Z",
+"opp": "mlp",
+"opp_elo": 1561,
+"game": 1816292,
+"map": "Ouroboros",
+"us": "B",
+"won": true,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 2,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 1,
+"our_queen_rammed": 1
+},
+"events": [
+[
+103,
+"we rammed their queen",
+"NN",
+3,
+"paid"
+],
+[
+111,
+"our queen rammed",
+"NNN",
+4
+]
+],
+"final": {
+"ours": {
+"dragons": 37,
+"longest": 60,
+"total": 620
+},
+"theirs": {
+"dragons": 48,
+"longest": 35,
+"total": 526
+}
+}
+},
+{
+"battle": 1816291,
+"at": "2026-10-12T22:47:55.407Z",
+"opp": "mlp",
+"opp_elo": 1561,
+"game": 1816293,
+"map": "Around UNSW",
+"us": "B",
+"won": true,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 0,
+"our_queen_rammed": 1
+},
+"events": [
+[
+164,
+"we rammed their queen",
+"E",
+2,
+"free"
+],
+[
+171,
+"our queen rammed",
+"SSS",
+4
+]
+],
+"final": {
+"ours": {
+"dragons": 18,
+"longest": 50,
+"total": 256
+},
+"theirs": {
+"dragons": 55,
+"longest": 25,
+"total": 470
+}
+}
+},
+{
+"battle": 1816291,
+"at": "2026-10-12T22:47:55.407Z",
+"opp": "mlp",
+"opp_elo": 1561,
+"game": 1816294,
+"map": "Portals",
+"us": "B",
+"won": true,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 2,
+"queen_paid_flight": 2
+},
+"events": [
+[
+49,
+"queen paid move",
+"WW",
+3
+],
+[
+156,
+"queen paid move",
+"WW",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 4,
+"longest": 18,
+"total": 53
+},
+"theirs": {
+"dragons": 10,
+"longest": 14,
+"total": 72
+}
+}
+},
+{
+"battle": 1816291,
+"at": "2026-10-12T22:47:55.407Z",
+"opp": "mlp",
+"opp_elo": 1561,
+"game": 1816295,
+"map": "Stripes",
+"us": "B",
+"won": true,
+"cls": "elim",
+"rounds": 255,
+"counts": {
+"our_paid_moves": 1,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 0
+},
+"events": [
+[
+142,
+"we rammed their queen",
+"S",
+2,
+"free"
+]
+],
+"final": {
+"ours": {
+"dragons": 22,
+"longest": 4,
+"total": 50
+},
+"theirs": {
+"dragons": 0,
+"longest": 0,
+"total": 0
+}
+}
+},
+{
+"battle": 1816211,
+"at": "2026-10-12T22:53:03.656Z",
+"opp": "the meowl",
+"opp_elo": 1595,
+"game": 1816211,
+"map": "Around UNSW",
+"us": "A",
+"won": true,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 1,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 1
+},
+"events": [
+[
+279,
+"we rammed their queen",
+"ENWNN",
+14,
+"paid"
+]
+],
+"final": {
+"ours": {
+"dragons": 18,
+"longest": 39,
+"total": 272
+},
+"theirs": {
+"dragons": 49,
+"longest": 31,
+"total": 340
+}
+}
+},
+{
+"battle": 1816211,
+"at": "2026-10-12T22:53:03.656Z",
+"opp": "the meowl",
+"opp_elo": 1595,
+"game": 1816212,
+"map": "Ouroboros",
+"us": "A",
+"won": true,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_queen_rammed": 1,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 0
+},
+"events": [
+[
+117,
+"our queen rammed",
+"ESSS",
+10
+],
+[
+129,
+"we rammed their queen",
+"NNN",
+10,
+"free"
+]
+],
+"final": {
+"ours": {
+"dragons": 27,
+"longest": 61,
+"total": 552
+},
+"theirs": {
+"dragons": 44,
+"longest": 27,
+"total": 518
+}
+}
+},
+{
+"battle": 1816211,
+"at": "2026-10-12T22:53:03.656Z",
+"opp": "the meowl",
+"opp_elo": 1595,
+"game": 1816213,
+"map": "Whale Song",
+"us": "A",
+"won": false,
+"cls": "onlyTheirs",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 1,
+"queen_paid_flight": 1,
+"our_queen_rammed": 1
+},
+"events": [
+[
+274,
+"queen paid move",
+"NN",
+3
+],
+[
+436,
+"our queen rammed",
+"NNNEE",
+9
+]
+],
+"final": {
+"ours": {
+"dragons": 22,
+"longest": 43,
+"total": 326
+},
+"theirs": {
+"dragons": 60,
+"longest": 13,
+"total": 243
+}
+}
+},
+{
+"battle": 1816211,
+"at": "2026-10-12T22:53:03.656Z",
+"opp": "the meowl",
+"opp_elo": 1595,
+"game": 1816214,
+"map": "Autarky",
+"us": "A",
+"won": false,
+"cls": "onlyTheirs",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 1,
+"queen_paid_flight": 1,
+"our_queen_rammed": 1
+},
+"events": [
+[
+202,
+"queen paid move",
+"ES",
+3
+],
+[
+214,
+"our queen rammed",
+"NN",
+3
+]
+],
+"final": {
+"ours": {
+"dragons": 10,
+"longest": 41,
+"total": 119
+},
+"theirs": {
+"dragons": 8,
+"longest": 7,
+"total": 23
+}
+}
+},
+{
+"battle": 1816211,
+"at": "2026-10-12T22:53:03.656Z",
+"opp": "the meowl",
+"opp_elo": 1595,
+"game": 1816215,
+"map": "Metro",
+"us": "A",
+"won": true,
+"cls": "none",
+"rounds": 500,
+"counts": {
+"our_paid_moves": 2,
+"queen_paid_flight": 1,
+"our_queen_rammed": 1,
+"their_queen_rammed_by_us": 1,
+"...with a paid step": 1
+},
+"events": [
+[
+97,
+"queen paid move",
+"NN",
+3
+],
+[
+112,
+"our queen rammed",
+"EEE",
+4
+],
+[
+207,
+"we rammed their queen",
+"SSS",
+5,
+"paid"
+]
+],
+"final": {
+"ours": {
+"dragons": 19,
+"longest": 59,
+"total": 390
+},
+"theirs": {
+"dragons": 42,
+"longest": 27,
+"total": 453
+}
+}
+}
+]

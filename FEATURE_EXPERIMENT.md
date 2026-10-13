@@ -1387,3 +1387,25 @@ v11t stays the control and the recommended upload.
     vs 45.
   - **Adopted as v12z** (versions/v12z, hash 5a2c6685c062fff3, battlebot-v12z.zip).
     Sandbox max 12.4M points/turn. **Recommended upload over v12x.**
+
+### 12 Oct: project close-out (PROJECT_WRITEUP.md)
+
+- **v12z vs v12x head-to-head** (showcase/h2h_v12z.py; 17 current maps, both sides, fresh
+  seeds 1041001-4, 136 games): **v12z 91/136, queen alive 65 vs 22**. Weakest: stripes
+  3/8, trophy 3/8; best: autarky, slithery, trauma 7/8.
+- **Live identity of the 7 Oct upload** (results/final_v12z_check.py,
+  results/live-review-final): a new submission starts ~23:10 UTC 7 Oct (per-battle Elo
+  swings jump). In 150 v12x-era games our dragons made 0 paid moves; in 100 sampled games
+  after the upload, paid moves in 62 games (120 moves, 64 by the queen), we rammed their
+  queen 43 times (25 paid) vs 35 rams on ours (v12x sample of 150: 29 vs 54). The live bot
+  behaves as v12z; no server hash was checked.
+- **Live v12z, 7 Oct 23:10 to 12 Oct 22:53 UTC** (results/final_ladder_battles.json):
+  948/1,995 games (47.5%) against opponents averaging 1632; rating 1598 -> spike 1763
+  (max 1807, 8 Oct) -> 1604.
+- **New ranked maps** by 11-12 Oct (13 names, none in our books: Athena, Atlantis,
+  Caution, Detention, Ezam, Hive, Maelstrom, Metro, Ouroboros, Thermopylae, Trolley
+  Problem, Trolley Problem (Buffed), Whale Song): 25 of 70 sampled games; won 12/25 on
+  them vs 51/75 on known maps (whole sample).
+- **Final ladder (12 Oct ~22:50 UTC):** rank 153 of 1,001 at 1604; rank 100 at 1813.
+- Showcase replays for the writeup: showcase/make_showcase.py (132 single-seed games,
+  each frozen version against its predecessor; illustrations, not evidence).
