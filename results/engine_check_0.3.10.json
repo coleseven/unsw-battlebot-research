@@ -1,0 +1,77 @@
+[
+ [
+  "maps/trophy.map",
+  "versions/v7",
+  "opponents/splitter",
+  "A",
+  126,
+  133,
+  0,
+  57,
+  0,
+  {
+   "A:W": 6,
+   "B:H": 2,
+   "A:H": 4
+  },
+  null
+ ],
+ [
+  "maps/default_small.map",
+  "versions/v6",
+  "versions/v3",
+  "A",
+  500,
+  82,
+  4,
+  10,
+  1,
+  {
+   "A:W": 70,
+   "B:W": 51,
+   "A:H": 35,
+   "B:H": 23,
+   "B:O": 11,
+   "A:O": 22,
+   "A:A": 33
+  },
+  null
+ ],
+ [
+  "maps/server/Portals.map",
+  "versions/v7",
+  "versions/v6",
+  "A",
+  500,
+  41,
+  8,
+  7,
+  3,
+  {
+   "A:W": 103,
+   "B:W": 1,
+   "A:O": 21,
+   "A:H": 26,
+   "A:A": 10
+  },
+  null
+ ],
+ [
+  "maps/server/Slithery_Fight.map",
+  "versions/v3",
+  "opponents/greedy",
+  "A",
+  20,
+  74,
+  0,
+  28,
+  0,
+  {
+   "B:S": 1,
+   "A:W": 26,
+   "A:O": 1,
+   "B:W": 6
+  },
+  null
+ ]
+]

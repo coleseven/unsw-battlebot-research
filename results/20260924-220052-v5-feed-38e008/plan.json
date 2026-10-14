@@ -1,0 +1,39 @@
+{
+  "question": "Does earlier local rendezvous/feeding grow a protected king more reliably?",
+  "mechanism": "Feed length-2..4 dragons from round 440 only beside a collectible, unthreatened long ally; nudge visible short dragons toward it from 430.",
+  "limits": "One deterministic local game per map and side, six maps, one worker. Bot seeds do not independently reseed the engine.",
+  "seed": 47001,
+  "workers": 1,
+  "king_hash": "acf0bbe02fa71c44",
+  "baseline_hash": "bf33497158a49a7b",
+  "live_hash": "ffe736af6c14ea33",
+  "bot_hashes": {
+    "early_king": "acf0bbe02fa71c44",
+    "additive": "bf33497158a49a7b",
+    "feed_king": "dc90ec0b5ed58aeb"
+  },
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-220052-v5-feed-38e008\\maps\\big_empty.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-220052-v5-feed-38e008\\maps\\default.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-220052-v5-feed-38e008\\maps\\schooltime.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-220052-v5-feed-38e008\\maps\\stronghold.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-220052-v5-feed-38e008\\maps\\Trauma.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-220052-v5-feed-38e008\\maps\\trophy.map"
+  ],
+  "map_hashes": {
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-220052-v5-feed-38e008\\maps\\big_empty.map": "6cb3b7be72a4e27e",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-220052-v5-feed-38e008\\maps\\default.map": "6bd7abf2ed51a7f6",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-220052-v5-feed-38e008\\maps\\schooltime.map": "726c404f3b34b4ed",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-220052-v5-feed-38e008\\maps\\stronghold.map": "02455e481fe56e1e",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-220052-v5-feed-38e008\\maps\\Trauma.map": "dcf39d713c060e5d",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-220052-v5-feed-38e008\\maps\\trophy.map": "5f1f6b23d6edb944"
+  },
+  "source_hashes": {
+    "experiments\\v5\\brain.py": "6f3244504b3b6736",
+    "framework\\v5_feeding.py": "3f5dd322b411ebe5",
+    "framework\\v5_king.py": "9f6e4aa59ed95c8f",
+    "framework\\v5_hotspot.py": "786b752611a4b24f",
+    "bcsim\\v5_initial.py": "3c9ebbfb2c062d55",
+    "bcsim\\v5_feed_trial.py": "12af7de9b34dc248"
+  }
+}

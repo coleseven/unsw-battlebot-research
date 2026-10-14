@@ -1,0 +1,110 @@
+base: 24/450 games, 30s
+base: 48/450 games, 92s
+base: 72/450 games, 113s
+base: 96/450 games, 160s
+base: 120/450 games, 195s
+base: 144/450 games, 236s
+base: 168/450 games, 272s
+base: 192/450 games, 318s
+base: 216/450 games, 335s
+base: 240/450 games, 351s
+base: 264/450 games, 374s
+base: 288/450 games, 419s
+base: 312/450 games, 520s
+base: 336/450 games, 580s
+base: 360/450 games, 685s
+base: 384/450 games, 757s
+base: 408/450 games, 875s
+base: 432/450 games, 958s
+base: 450/450 games, 1074s
+fpr80: 24/450 games, 28s
+fpr80: 48/450 games, 88s
+fpr80: 72/450 games, 107s
+fpr80: 96/450 games, 153s
+fpr80: 120/450 games, 189s
+fpr80: 144/450 games, 232s
+fpr80: 168/450 games, 269s
+fpr80: 192/450 games, 315s
+fpr80: 216/450 games, 332s
+fpr80: 240/450 games, 350s
+fpr80: 264/450 games, 376s
+fpr80: 288/450 games, 426s
+fpr80: 312/450 games, 527s
+fpr80: 336/450 games, 596s
+fpr80: 360/450 games, 688s
+fpr80: 384/450 games, 763s
+fpr80: 408/450 games, 924s
+fpr80: 432/450 games, 961s
+fpr80: 450/450 games, 1066s
+anchor80: 24/450 games, 25s
+anchor80: 48/450 games, 82s
+anchor80: 72/450 games, 101s
+anchor80: 96/450 games, 143s
+anchor80: 120/450 games, 176s
+anchor80: 144/450 games, 218s
+anchor80: 168/450 games, 254s
+anchor80: 192/450 games, 298s
+anchor80: 216/450 games, 318s
+anchor80: 240/450 games, 334s
+anchor80: 264/450 games, 358s
+anchor80: 288/450 games, 402s
+anchor80: 312/450 games, 495s
+anchor80: 336/450 games, 556s
+anchor80: 360/450 games, 647s
+anchor80: 384/450 games, 716s
+anchor80: 408/450 games, 855s
+anchor80: 432/450 games, 911s
+anchor80: 450/450 games, 1031s
+anchor150: 24/450 games, 27s
+anchor150: 48/450 games, 82s
+anchor150: 72/450 games, 102s
+anchor150: 96/450 games, 145s
+anchor150: 120/450 games, 181s
+anchor150: 144/450 games, 222s
+anchor150: 168/450 games, 256s
+anchor150: 192/450 games, 298s
+anchor150: 216/450 games, 317s
+anchor150: 240/450 games, 333s
+anchor150: 264/450 games, 357s
+anchor150: 288/450 games, 400s
+anchor150: 312/450 games, 489s
+anchor150: 336/450 games, 558s
+anchor150: 360/450 games, 645s
+anchor150: 384/450 games, 723s
+anchor150: 408/450 games, 877s
+anchor150: 432/450 games, 918s
+anchor150: 450/450 games, 1029s
+anchor80_r20: 24/450 games, 27s
+anchor80_r20: 48/450 games, 80s
+anchor80_r20: 72/450 games, 103s
+anchor80_r20: 96/450 games, 143s
+anchor80_r20: 120/450 games, 180s
+anchor80_r20: 144/450 games, 223s
+anchor80_r20: 168/450 games, 257s
+anchor80_r20: 192/450 games, 300s
+anchor80_r20: 216/450 games, 320s
+anchor80_r20: 240/450 games, 336s
+anchor80_r20: 264/450 games, 360s
+anchor80_r20: 288/450 games, 409s
+anchor80_r20: 312/450 games, 501s
+anchor80_r20: 336/450 games, 565s
+anchor80_r20: 360/450 games, 655s
+anchor80_r20: 384/450 games, 725s
+anchor80_r20: 408/450 games, 882s
+anchor80_r20: 432/450 games, 921s
+anchor80_r20: 450/450 games, 1036s
+# Ablation report: 20260929-092956-ablate-1fdc1e
+
+3 seeds, opponents cpp_nicked_v75, cpp_leviathan3, v7-base-bot, nicked_v44, nicked_lab; 11 official + 4 extra maps, both sides. Objective: aligned. Delta = variant score minus base score on the same (opponent, map, seed, side); positive means removing the group helped. 95% CI resamples (map, seed) blocks.
+
+base: mean margin +0.119, wins 258/450; by opponent: cpp_nicked_v75 -0.210, cpp_leviathan3 +0.408, v7-base-bot +0.335, nicked_v44 +0.229, nicked_lab -0.169
+
+| variant | current pool delta [95% CI] | pool verdict | other maps | delta all 15 [95% CI] | verdict | vs cpp_nicked_v75 | vs cpp_leviathan3 | vs v7-base-bot | vs nicked_v44 | vs nicked_lab | official | extra | wins |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| fpr80 | -0.008 [-0.063, +0.046] | neutral | +0.010 | -0.002 [-0.045, +0.039] | neutral | +0.014 | +0.065 | -0.009 | +0.032 | -0.112 | -0.008 | +0.013 | 260/450 |
+| anchor80 | -0.008 [-0.068, +0.053] | neutral | +0.029 | +0.004 [-0.040, +0.050] | neutral | -0.029 | +0.052 | +0.013 | +0.096 | -0.112 | +0.011 | -0.014 | 262/450 |
+| anchor150 | +0.015 [-0.046, +0.068] | neutral | +0.010 | +0.014 [-0.028, +0.052] | neutral | -0.046 | +0.025 | +0.049 | +0.012 | +0.028 | -0.012 | +0.086 | 265/450 |
+| anchor80_r20 | -0.020 [-0.084, +0.042] | neutral | +0.026 | -0.005 [-0.051, +0.040] | neutral | +0.006 | +0.003 | +0.033 | +0.026 | -0.090 | -0.009 | +0.007 | 258/450 |
+
+Noise: seed-to-seed SD of base's margin within a (opponent, map, side) cell 0.587 over 150 cells. Expected paired CI half-width with K seeds, 1.96 * sqrt(2 * 0.587^2 / (150 * K)): K=2: 0.094, K=3: 0.077, K=4: 0.066, K=6: 0.054, K=8: 0.047
+

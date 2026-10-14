@@ -1,18 +1,21 @@
 # Team 777 at UNSW Battlecode 2026: every version of the bot, what it did and what we learned
 
-Written 12 October 2026. This is the narrative account of the whole project, from the
-first greedy bot on 22 September to the last upload on 7 October, with the ladder
-position as it stood on 12 October. It is written as source material for a video: each
+Completed and reviewed 14 October 2026, using evidence saved through 12 October. This
+is the narrative account of the project, from the first greedy bot on 22 September to
+the last locally frozen release, v12z, on 7 October, with the ladder position as it
+stood on 12 October. This is a historical snapshot, not the final competition result.
+It is written as source material for a video: each
 chapter covers one version of the bot, says exactly what that version was, what was
 tested, what worked and what did not, and names matches that show the idea (or the
 weakness) on screen.
 
-**How this relates to the other documents.** `PROJECT_HISTORY.md` and
-`docs/project-history/` are Astra's audited archive; they cover 22 September to
-3 October and are the place to check a number's provenance. `FEATURE_EXPERIMENT.md` is
-the running experiment log from v7 onward, including everything after Astra's cutoff
-(v12s, v12x, v12z). This document tells the story in order and does not replace either.
-Nothing in Astra's files was changed to write it.
+**How this relates to the other documents.** [PROJECT_HISTORY.md](PROJECT_HISTORY.md)
+and chapters 1–6 of [the archive](docs/project-history/) preserve the audited account
+through 3 October. [Chapter 7](docs/project-history/07_V12_AND_CLOSEOUT.md) extends it
+through v12z and the saved 12 October results, with a C9–D22 experiment ledger and
+explicit corrections. [FEATURE_EXPERIMENT.md](FEATURE_EXPERIMENT.md) is the running
+experiment log from v7 onward. This document tells the story in order; the older
+snapshot's cutoff and original evidence remain unchanged.
 
 **Two kinds of match are cited.**
 
@@ -20,30 +23,39 @@ Nothing in Astra's files was changed to write it.
   (`https://game.battlecode.au/visualiser?match=<battle id>`). A battle is five games;
   the text names the map so you can pick the right game.
 - **Showcase replays.** 132 games played for this writeup between frozen versions of our
-  own bot: each version against the one before it, both sides, one seed, under the rules
-  of its era. They are in `showcase/replays/` and are named
+  own bot: selected successive releases, both sides, one seed, under an old-rules or
+  queen-rules runtime. These are reconstructed illustrations, not the original matches.
+  They are in `showcase/replays/` and are named
   `<side A>-vs-<side B>-<map>-s20261012.replay`. Open them in VS Code like any local
-  replay. The same seed and bots always replay the same game
-  (`showcase/make_showcase.py` regenerates them). `showcase/timeline.py <replay>` prints
+  replay. Reproduction also requires the recorded engine, maps, build and deterministic
+  runner settings (`showcase/make_showcase.py` describes the fixtures).
+  `showcase/timeline.py <replay>` prints
   the round-by-round numbers quoted here.
 
 Showcase replays are illustrations, chosen because they show a mechanism clearly. They
 are one seed each and are not evidence of strength; a newer version sometimes loses them.
 The evidence is the multi-seed, multi-opponent experiments quoted in each chapter.
 
-**Reading the numbers.** "A vs B of N" is always candidate wins against control wins over
-the same N games (same maps, sides, seeds and opponents). "pp" is percentage points of
-win score. A "screen" is a first test (400 to 550 games); a "confirmation" is a second
-test on seeds the candidate has never seen (1,000 to 1,200 games). A range in brackets
-is a bootstrap interval.
+**Reading the numbers.** In panel comparisons, "A vs B of N" means candidate and control
+each played N matched fixtures (same maps, sides, seeds and opponents); it is not their
+direct head-to-head record. Direct matches are labelled separately. "pp" means
+percentage points of win score, with a draw worth half a win. Earlier logs also report
+the signed outcome metric (win +1, draw 0, loss −1); its delta is twice the win-score
+delta, so +0.070 is +3.5 pp, not +7 pp. Older composite objectives are different again.
+A "screen" selects candidates; a "confirmation" tests reserved seeds. Run sizes vary.
+Intervals are the saved bootstrap intervals, not a new correction for the many ideas
+tested. [The evidence chapter](docs/project-history/06_EVIDENCE_AND_GAPS.md) documents
+these distinctions.
 
 ---
 
 ## 1. The whole story in one page
 
-A solo entrant, team "777", played the UNSW Battlecode 2026 ladder (21 September to
-17 October, about 1,000 teams). The bot went through 17 frozen versions and 11 uploads in
-16 days of development.
+Team "777" played the UNSW Battlecode 2026 ladder, with about 1,000 teams in the saved
+12 October standings. The repository retains 17 frozen version directories and the
+history records additional intermediate builds. Eleven deployment stages are described
+below; some dates and the last version's server identity are inferred, rather than
+verified against a submission hash.
 
 The arc has three parts:
 
@@ -60,8 +72,9 @@ The arc has three parts:
    fixed whole maps (v12s, v12x). The last version (v12z) copied what the ladder was
    doing to us: small workers that spend a body segment to sprint into the enemy queen.
 
-**Where it ended.** On 12 October the team was **rank 153 of 1,001 at rating 1604**, with
-3,421 game wins. The closest approach to the top 100 was **rank 108 of 973** on
+**Where the saved record ends.** On 12 October the team was **rank 153 of 1,001 at rating
+1604**, with a cumulative wins field of 3,421. The closest recorded approach to the top
+100 was **rank 108 of 973** on
 3 October, 31 rating points short. The rating needed for rank 100 rose from 1533 on
 2 October to 1813 on 12 October; ours rose from 1445 to 1604 over the same days.
 
@@ -71,16 +84,18 @@ The arc has three parts:
    78% of games won against 34%. Nothing later came close.
 2. **The scoring rule decides the strategy.** Under "longest dragon" the answer was king
    feeding. Under "longest queen" it was queen survival and queen killing. The rule
-   change on 1 October made the previous best idea irrelevant overnight.
+   change on 1 October made queen survival the first priority. King feeding still mattered
+   when queen scores tied or both queens died.
 3. **Caution almost always lost.** Trap avoidance, wider threat zones, guards, refuges,
    split restrictions and sprint-aware fear all made dragons survive less or win less.
-   More than a dozen such ideas were tested. The only safety work that paid was making
-   the queen's escape search correct, not making it more fearful.
+   More than a dozen such ideas were tested. Correcting the queen's escape search helped;
+   late paid flight and friendly-fire avoidance also entered the successful v12z bundle.
+   The failures reject those tested rules, not the possibility of better defence.
 4. **Testing errors cost more than strategy errors.** A wall-clock bug made a 0/22 bot
    look like a 12/22 bot. A single-seed tuning win reversed on three seeds. Seven "new"
    maps turned out to have no food in them. Each was caught, but only by distrust.
-5. **Watching games beat turning knobs.** Every gain after 3 October came from reading
-   one replay closely and finding a specific wrong decision. The broad retunes and
+5. **Watching games beat turning knobs.** The retained changes after 3 October came from
+   replay diagnoses of specific decisions. The broad retunes and
    learned models tried in the days before had found nothing.
 
 ---
@@ -119,7 +134,9 @@ the **queens**. At round 500 the longest surviving queen wins; a dead queen scor
 If both are dead (or tied) the old rule applies. Every dragon also got free extra steps:
 one quarter of its length, rounded up. A child never inherits queen status.
 
-A ranked **battle** is five games on five maps. Rating moves with the share of games won.
+Ordinary ladder **battles** in the retained exports have five games. Five-game format
+alone does not establish ranked status. The site's rating system also changed during
+the project; a pooled win fraction is not an exact prediction of a version's rating.
 
 ---
 
@@ -142,11 +159,11 @@ A ranked **battle** is five games on five maps. Rating moves with the share of g
 | v10o | 1 Oct | Sonar hub sharing for lost dragons | Yes, 2 Oct | 563 vs 542 of 900 |
 | v11ms | 2 Oct | Free extra steps to grab a pearl | No | 474 vs 447 of 792 |
 | v11q | 2 Oct | Light queen, 3-step escape search | Yes, 2 Oct | Queen alive 79 vs 24; 80/120 vs v10o |
-| v11t | 3 Oct | Corrected queen search | No | 571 vs 534 of 1,020; 75/136 vs v11q |
+| v11t | 3 Oct | Corrected queen search | Not confirmed | 571 vs 534 of 1,020; 75/136 vs v11q |
 | v11u | 3 Oct | Queen refuge | No (rejected) | 392 vs 358, then 641 vs 627 |
 | v12s | 5 Oct | Queen plays as a worker early on tiny maps | No | Stripes 53 vs 25 of 132 |
 | v12x | 5 Oct | Exploration that beats the ranker's pull | Yes, 5 Oct | +4.7 pp [+0.6, +8.9]; 60/102 vs v11t |
-| v12z | 7 Oct | Sprint rams on enemy queens, paid queen flight | Yes, 7 Oct | +5.7 pp [+2.4, +9.1]; 91/136 vs v12x |
+| v12z | 7 Oct | Sprint rams on enemy queens, paid queen flight | Inferred, 7 Oct | +5.7 pp [+2.4, +9.1]; 91/136 vs v12x |
 
 Content hashes and verified zips for each frozen version are in `versions/*/FROZEN.txt`.
 
@@ -425,8 +442,10 @@ heavy job at a time, at most 12 workers), a build cache that stopped recompiling
 bot in every worker, and, once Windows' memory test flagged bad regions, removing a RAM
 overclock.
 
-There is nothing to show on screen for the port itself: v7-base and v6 play the same
-moves. That is the point of it.
+The parity result compares C++ with its matched Python reference. The showcase's frozen
+v6 is an earlier strategy snapshot, so its matches against v7-base are not a pure
+language-port comparison (the saved showcase is 6–2 for v7-base). Do not present those
+games as evidence that translating the same policy improved its decisions.
 
 ---
 
@@ -765,8 +784,10 @@ wrong in specific ways:
 | C3 (with a worker-yield rule) | 476 | 255 / 91 | **285 / 175** |
 | C5 confirmation | 1,020 | 534 / 207 | **571 / 346** |
 
-C5's interval was +0.070 [−0.003, +0.141], just touching zero; the decision rested on
-three positive runs in a row. Directly against v11q: **75 of 136, queens alive 48
+C5's signed-outcome delta was +0.070 [−0.003, +0.141], or approximately **+3.5 pp
+[−0.15, +7.05]** of win score; its interval includes zero. The decision used the
+positive runs and survival evidence, although C3 also changed worker yielding and is
+not a pure replication of the search alone. Directly against v11q: **75 of 136, queens alive 48
 against 26**. CPU cost peaked at 8.4 million points.
 
 Four opponents built from our own lineage joined the panel here (a careful queen, a
@@ -785,19 +806,21 @@ time. Every earlier survival gain had cost wins.
 - **Splitting only with enough exits.** A replay audit of 674 queen deaths found 358
   against walls, 241 of them within two rounds of the queen splitting. The natural fix,
   "do not split in a tight spot", scored 377 and 382 against 402, with fewer queens
-  alive. Splitting down to length 2 was protecting her; the audit had found where queens
-  die, not why.
+  alive. The restriction failed; this does not prove that every split was safe. Some
+  queens were already trapped before the split, and the replay association alone cannot
+  establish whether a different split decision would have saved them.
 - **Fear of sprinting enemies** (assume every nearby head can sprint): 370 and 373
   against 394.
 - **A trapped worker avoids dying on its own queen:** 645 against 647, queens alive 371
-  against 356. Harmless and neutral; kept on the shelf (it ships in v12z).
+  against 356. Neutral overall, with wins and losses changing; kept on the shelf (it
+  ships in the v12z bundle).
 - **Bodyguard workers** that trade with enemy heads near the queen: 381 and 379 against
   385. The situation almost never arises.
 
 **A weakness found at freeze.** In the 136-game match against v11q, v11t scored **0 of 8
 on Stripes** and 1 of 8 on Tower Defense. The next chapter is about why.
 
-**Status.** Recommended for upload and never uploaded as far as the record shows; v11q
+**Status.** Recommended for upload, with no confirmed deployment in the retained record; v11q
 stayed live until v12x.
 
 **Matches to show.**
@@ -906,8 +929,10 @@ directly. By map: Tower Defense 52 against 28, weakhold 45 against 24; slightly 
 Australia (38 against 42), Autarky (35 against 39) and Prisoners Dilemma (26 against 30).
 CPU cost 12.1 million points.
 
-**How it did live.** Uploaded 5 October (10:04 local time; the first battle with the new
-bot is at 14:24 UTC). Over the next two days: **415 of 772 games (54%) against opponents
+**How it did live.** The user confirmed upload on **5 October at 10:04:34**, without a
+timezone. The existing analysis assigns a new-version cohort around 14:20–14:24 UTC;
+that mapping is inferred and must not turn the supplied timestamp into a confirmed UTC
+time. In the saved two-day cohort: **415 of 772 games (54%) against opponents
 averaging 1567, and the rating went from 1512 to 1601.** Tower Defense was won 81% of
 the time (30 of 37), Maze and Schooltime 67%. weakhold, close to unwinnable before,
 finished at 47% (18 of 38).
@@ -923,12 +948,17 @@ finished at 47% (18 of 38).
 | Both queens dead | 179 | 97 |
 
 In the first 532 of those games, **117 of the 244 losses had our queen killed by an
-enemy head-on**. In 75 of those the
-rammer had paid for extra steps: a small dragon of length 2 or 3 giving up a segment to
-reach her. A check of the queen's last move before each ram found that in 74 cases she
+enemy head-on**. In **75 of those 117**, the replay event audit confirms executed paid
+steps. Rammers were length 2 or 3 in 76 cases; these are overlapping, not identical,
+groups. At the queen's last decision the future rammer was visible in **104 cases**,
+and within two cells in **39**. Earlier diagnostics said 114 and 80 because they used
+positions from later in the turn; those figures are superseded by the
+[corrected event audit](results/strategy-review-20261006/queen-ram-audit.json).
+A check of the queen's last move before each ram found that in 74 cases she
 had stayed outside every visible enemy's free reach, as designed, and was killed by a
-paid sprint anyway. Only 8 times did she step avoidably into reach. The corrected search
-was doing its job; the ladder had found the gap around it.
+paid sprint anyway. Only 8 times did she step avoidably into free reach. These diagnostics
+identify a gap in the tested threat model; they do not show that all 117 deaths were
+avoidable, or that preventing a ram would have won the game.
 
 **What did not work against it** (each on 476 to 1,224 games):
 
@@ -974,7 +1004,7 @@ was doing its job; the ladder had found the gap around it.
 
 ---
 
-## 18. v12z: do unto others (6–7 October, last upload)
+## 18. v12z: do unto others (6–7 October, last frozen release)
 
 **The idea.** Every defence against sprint rams had failed. A sparring opponent had been
 built to reproduce the ladder's behaviour locally: v12x with one extra rule, workers
@@ -1004,30 +1034,41 @@ attack was stronger than the bot it was attacking, so it was tested as our own f
 With all three rules our queen was alive at the end of 445 games against 363, and the
 opponent's in 129 against 211. Australia went 53 against 37 and Autarky 50 against 35,
 the two worst live maps. Maze (45 against 51) and Schooltime (42 against 45) slipped.
-One paid step was better than two or three: beyond one, the rammers cost more than they
-kill. CPU cost 12.4 million points.
+One paid step scored better than two or three on this screen. This supports the chosen
+cap, without isolating whether extra length cost, changed paths or different targets
+caused the difference. CPU cost 12.4 million points.
+
+The bundle's 741 wins versus 717 for hunting alone is useful incremental evidence, but
+D22 did not separately test hunt + flight and hunt + trapped-worker avoidance. It does
+not identify either defensive component's individual benefit or prove an interaction.
 
 The direct match against v12x was not part of the original tests. It was played for this
 writeup on four fresh seeds, 17 maps, both sides: **v12z won 91 of 136, with queens
 alive 65 against 22** (`showcase/games-h2h-v12z.json`). It was weakest on Stripes and
 Trophy (3 of 8 each).
 
-**Was it really uploaded?** The ladder shows a new submission starting at about 23:10 UTC
-on 7 October (rating swings per battle jump, as they do after every upload). Its
-behaviour identifies it. In 150 games from the v12x period our dragons never paid for a
-step. In a sample of 100 games after the upload, they paid for steps in 62 games, the
-queen fled with a paid step 64 times, and **we rammed the enemy queen 43 times (25 with
-a paid step) against 35 rams on ours**. In the v12x sample it was 29 rams by us against
+**Was it really uploaded?** The existing analysis infers a submission change around
+23:10 UTC on 7 October from rating behaviour and replay signatures. No server hash or
+user confirmation establishes v12z's exact deployment. In 150 games attributed to the
+v12x period, our dragons made no requests exceeding their free movement budget. In the
+100-game post-cutoff sample, such requests occurred in 62 games: 120 requests overall,
+64 by the queen. The saved checker counts requested action length, rather than auditing
+every executed step, so these are **paid-step requests**, not 120 verified paid moves.
+It also records **43 enemy queens rammed by us (25 with a paid-step request) against
+35 rams on ours**. This behaviour is consistent with v12z. In the v12x sample it was
+29 rams by us against
 54 on ours. Games where only our queen survived went from 10% of games to 19 of 100;
 games where only theirs survived from 14% to 6 of 100.
 
-**How it did live.** This is the sober part. The rating jumped to 1763 within three
-hours and touched **1807**, then fell back as the matchmaking found stronger opponents:
+**How it did live.** This is the sober part. The saved rating jumped to 1763 within three
+hours and touched **1807**, then fell back; meanwhile the sampled opponents were stronger:
 45% of games won on 8 October against opponents averaging 1665. From the upload to
-12 October the bot won **948 of 1,995 games (47.5%) against opponents averaging 1632**,
-and the rating finished at **1604**, where v12x had left it. By the usual Elo arithmetic
-that record is worth about 1615, against about 1590 for v12x's record: a real but small
-step, far smaller than the local +5.7 pp suggested.
+12 October the five-game-battle export records **948 wins in 1,995 games (47.5%) against
+opponents averaging 1632**, and the saved rating ends at **1604**. That export does not
+retain ranked flags, submission hashes or draw counts. The cohorts also differ in maps,
+opponents and time. They therefore do not estimate a causal live gain from v12z, and
+converting them through a simple Elo formula would not reproduce the site's rating.
+The local gain is demonstrated on the frozen panel; a sustained top-100 result is not.
 
 Two things were moving underneath it:
 
@@ -1036,8 +1077,10 @@ Two things were moving underneath it:
 - **The maps.** By 11 and 12 October, 25 of the 70 sampled games were on 13 maps the bot
   had never seen (Athena, Atlantis, Caution, Detention, Ezam, Hive, Maelstrom, Metro,
   Ouroboros, Thermopylae, Trolley Problem, its "Buffed" variant, and Whale Song). The
-  map books that carried v10h mean nothing there. In the sample the bot won 12 of 25 on
-  new maps and 51 of 75 on known ones; small numbers, same direction.
+  map books do not provide their complete geometry; local vision, exploration and memory
+  still work. In the full 100-game sample the bot won 12 of 25 on new maps and 51 of 75
+  on known ones. This small, deliberately time-stratified replay sample cannot isolate
+  the effect of missing books from opponent strength and other map differences.
 
 **Matches to show.**
 
@@ -1078,10 +1121,12 @@ Two things were moving underneath it:
 
 ---
 
-## 19. What never worked
+## 19. What was tried and not retained
 
-Grouped by idea, across the whole project. Each line was a controlled test; details and
-run folders are in the two logs.
+Grouped by idea, across the whole project. Each row summarizes tested configurations;
+it is not evidence that every possible version of the idea must fail. Details and run
+folders are in the two logs. Small diagnostics and invalid historical tests are marked
+separately in the archive.
 
 | Idea | Forms tried | Typical result |
 |---|---|---|
@@ -1110,8 +1155,9 @@ The method that every late result relies on:
 
 - **Paired games.** Candidate and control play the same map, side, seed and opponent, so
   the difference between them is the only thing that varies.
-- **A screen, then a confirmation on untouched seeds.** A candidate needs both, and a
-  practical gain of about +2 pp, to be adopted.
+- **A screen, then a confirmation on untouched seeds.** The later protocol aimed for
+  both and a practical gain of about +2 pp. Historical decisions had exceptions: v11q
+  used direct matches and queen survival, while v11t's interval included zero.
 - **A mixed panel.** Up to twelve opponents: several builds of the public bot "nicked",
   other public bots, our own older versions, and specialists built from our own code to
   play styles the public bots do not (queen hunters, sprinters). Third-party bots were
@@ -1134,9 +1180,12 @@ It was built up from mistakes:
 | Panel of bots that all lose their queens | 2–5 Oct | Queen survival undervalued; no opponent sprinted | Queen-aware specialists, then a sprinter |
 | Believing a screen | throughout | Refuge +34, goal path +3.7 pp, feed travel +2.9 pp all vanished | Nothing is adopted without the second run |
 
-The last row is the one to dwell on. From 3 October onward, seven screens showed a gain
-of 2 pp or more. Three survived confirmation (the corrected queen search, exploration,
-sprint rams). Four did not (refuge, goal path, feed travel, queen-early on every map).
+Several attractive screens weakened on reserved seeds: refuge, goal path, feed travel
+and queen-early on every map. Corrected queen search was retained with a qualified
+uncertainty claim; exploration and sprint rams had positive confirmation intervals.
+The narrowed Stripes opening also passed its dedicated six-seed test. These are
+different evidence standards and should not be collapsed into one count of
+"statistically proven improvements."
 
 ---
 
@@ -1154,11 +1203,14 @@ sprint rams). Four did not (refuge, goal path, feed travel, queen-early on every
 | 3 Oct, later | v11q | 1553 | 115 | 1598 |
 | 5 Oct | v12x uploaded | ~1520 | | |
 | 7 Oct | v12x | ~1600 | | |
-| 8 Oct | v12z, first hours | 1763, peak 1807 | | |
+| 8 Oct | v12z-attributed cohort, first hours | 1763, peak 1807 | | |
 | 9–10 Oct | v12z | 1628 to 1652 | | |
 | 12 Oct | v12z | **1604** | **153 of 1,001** | 1813 |
 
-Live record by version, ranked five-game battles only:
+Saved five-game-battle cohorts, attributed to versions by the existing timestamp
+analysis. The compact export omits the ranked flag, so this table is **not a certified
+ranked-only record**. Counts are wins; the omitted draw field prevents reporting exact
+W–D–L or half-draw win scores here.
 
 | Live bot | Games won | Share | Average opponent |
 |---|---|---|---|
@@ -1167,15 +1219,16 @@ Live record by version, ranked five-game battles only:
 | v12x | 472 of 895 | 52.7% | 1572 |
 | v12z | 948 of 1,995 | 47.5% | 1632 |
 
-A team's rating settles where it wins about half its games, so these shares say less
-than the opponent column: each version held its own against a stronger field than the
-last. On 12 October the top team stood at 2616 and every team in the top ten was
-written in C++.
+The later cohorts faced higher average recorded opponent ratings. That helps explain
+why raw win shares are a poor version ranking, but it does not control for changing
+maps, opponent styles, rating rules or selection. These data cannot establish the size
+of a live improvement independently of the local experiments.
 
-**The honest summary.** The bot improved at every step by its own measurements and
-finished about where it had been a week earlier relative to everyone else. From 2 to
-12 October the rating needed for rank 100 rose by about 27 points a day; the bot's rose
-by about 16.
+The retained local changes improved the measured panel, but **the saved record does not
+demonstrate a top-100 finish**. Rank 108 was the closest recorded snapshot; rank 153 is
+the 12 October snapshot. The field, map pool and ratings changed alongside the bot, so
+this history does not extrapolate a fixed daily rating gap or promise a ranking from a
+local win-rate gain.
 
 ---
 
@@ -1183,17 +1236,19 @@ by about 16.
 
 Problems that were diagnosed and not solved:
 
-- **Dodging a sprint ram.** Half of live losses. Fear-based masks fail. The untested idea
+- **Dodging a sprint ram.** 117 of 244 losses in the audited v12x cohort, not an estimate
+  for all later play. Tested fear-based masks failed. The untested idea
   is to score a handful of specific enemy replies separately instead of forbidding every
   reachable cell.
 - **Prisoners Dilemma's home column.** Opponents eat from our fast spawners; we do not
   hold them.
 - **Late-game transport.** Two thirds of surplus worker length is too far from the king
   to arrive by round 500.
-- **Maps with no book.** A third of games by the end. The bot's best single feature
-  under the old rules was knowing the map.
-- **A panel that looks like the ladder.** Local gains of 4 to 6 pp became much smaller
-  live. The sparring opponents were public bots and our own relatives; the top teams'
+- **Maps with no book.** 25 of 70 sampled games dated 11–12 October, rather than a census
+  of the ladder. Map completion was a valuable old-rules change; the feature-removal
+  study's largest individual loss came from removing the v3 ranker.
+- **A panel that looks like the ladder.** Local gains of 4 to 6 pp did not establish a
+  sustained ranking improvement. The sparring opponents were public bots and our own relatives; the top teams'
   behaviour was only ever seen in replays.
 
 ---

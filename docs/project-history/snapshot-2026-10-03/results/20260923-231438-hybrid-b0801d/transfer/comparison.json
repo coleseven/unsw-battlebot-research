@@ -1,0 +1,89 @@
+{
+  "linear_vs_reference_v2": {
+    "wins": 210,
+    "draws": 32,
+    "losses": 14,
+    "score": 0.8828125,
+    "family_ci95": [
+      0.78125,
+      0.953125
+    ],
+    "map_scores": {
+      "plain_open_small": 0.9375,
+      "plain_open_large": 0.875,
+      "plain_baffles_small": 1.0,
+      "plain_baffles_large": 0.9375,
+      "plain_dense_small": 1.0,
+      "plain_dense_large": 0.5,
+      "plain_scarce_small": 0.875,
+      "plain_scarce_large": 1.0,
+      "portal_open_small": 1.0,
+      "portal_open_large": 0.8125,
+      "portal_baffles_small": 0.875,
+      "portal_baffles_large": 0.875,
+      "portal_dense_small": 0.9375,
+      "portal_dense_large": 0.5,
+      "portal_scarce_small": 1.0,
+      "portal_scarce_large": 1.0
+    },
+    "threshold_passed": true
+  },
+  "neural_vs_reference_v2": {
+    "wins": 206,
+    "draws": 32,
+    "losses": 18,
+    "score": 0.8671875,
+    "family_ci95": [
+      0.79296875,
+      0.9296875
+    ],
+    "map_scores": {
+      "plain_open_small": 0.875,
+      "plain_open_large": 0.75,
+      "plain_baffles_small": 0.9375,
+      "plain_baffles_large": 0.9375,
+      "plain_dense_small": 1.0,
+      "plain_dense_large": 0.5,
+      "plain_scarce_small": 0.875,
+      "plain_scarce_large": 1.0,
+      "portal_open_small": 1.0,
+      "portal_open_large": 0.8125,
+      "portal_baffles_small": 0.875,
+      "portal_baffles_large": 0.9375,
+      "portal_dense_small": 1.0,
+      "portal_dense_large": 0.5,
+      "portal_scarce_small": 0.875,
+      "portal_scarce_large": 1.0
+    },
+    "threshold_passed": true
+  },
+  "linear_vs_neural": {
+    "wins": 10,
+    "draws": 4,
+    "losses": 18,
+    "score": 0.375,
+    "family_ci95": [
+      0.25,
+      0.53125
+    ],
+    "map_scores": {
+      "plain_open_small": 0.5,
+      "plain_baffles_small": 0.0,
+      "plain_open_large": 0.5,
+      "plain_baffles_large": 0.0,
+      "plain_dense_large": 0.5,
+      "plain_dense_small": 0.0,
+      "plain_scarce_small": 0.5,
+      "plain_scarce_large": 0.0,
+      "portal_open_small": 1.0,
+      "portal_baffles_small": 1.0,
+      "portal_open_large": 0.5,
+      "portal_dense_small": 0.0,
+      "portal_dense_large": 0.5,
+      "portal_scarce_small": 0.5,
+      "portal_baffles_large": 0.0,
+      "portal_scarce_large": 0.5
+    },
+    "threshold_passed": false
+  }
+}

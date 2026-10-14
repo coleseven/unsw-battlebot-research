@@ -1,0 +1,47 @@
+{
+  "games": [
+    {
+      "map": "Trauma",
+      "side": "A",
+      "changed_events": true,
+      "winner": "B",
+      "portal_steps": null
+    },
+    {
+      "map": "Trauma",
+      "side": "B",
+      "changed_events": true,
+      "winner": "A",
+      "portal_steps": null
+    },
+    {
+      "map": "default",
+      "side": "A",
+      "changed_events": true,
+      "winner": "B",
+      "portal_steps": null
+    },
+    {
+      "map": "default",
+      "side": "B",
+      "changed_events": true,
+      "winner": "A",
+      "portal_steps": null
+    },
+    {
+      "map": "queen_of_spades",
+      "side": "A",
+      "changed_events": true,
+      "winner": "B",
+      "portal_steps": null
+    },
+    {
+      "map": "queen_of_spades",
+      "side": "B",
+      "changed_events": true,
+      "winner": "A",
+      "portal_steps": null
+    }
+  ],
+  "changed_count": 6
+}

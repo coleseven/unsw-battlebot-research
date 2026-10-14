@@ -1,0 +1,48 @@
+Fatal Python error: _PyThreadState_Attach: non-NULL old thread state
+Python runtime state: initialized
+
+Current thread 0x000028a4 (most recent call first):
+  Garbage-collecting
+  File "results\20260925-212726-full-change-52675f\bots\candidate\bc.py", line 140 in edge
+  File "results\20260925-212726-full-change-52675f\bots\candidate\action_value.py", line 39 in features
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\local_v6_clock.py", line 45 in features
+  File "results\20260925-212726-full-change-52675f\bots\candidate\core_search.py", line 191 in score_moves
+  File "results\20260925-212726-full-change-52675f\bots\candidate\brain.py", line 45 in turn
+  File "results\20260925-212726-full-change-52675f\bots\candidate\bc.py", line 202 in step
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\match.py", line 119 in ask
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\match.py", line 221 in reply
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\engine.py", line 86 in _bot_reply
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\wasmtime\_func.py", line 199 in trampoline
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\wasmtime\_bindings.py", line 3545 in wasmtime_func_call
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\wasmtime\_func.py", line 94 in __call__
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\engine.py", line 118 in run
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\match.py", line 233 in play
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\arena.py", line 82 in _job
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\bounded.py", line 21 in measured_job
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\process.py", line 254 in _process_worker
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\process.py", line 108 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\process.py", line 320 in _bootstrap
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 135 in _main
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 122 in spawn_main
+  File "<string>", line 1 in <module>
+
+Extension modules: psutil._psutil_windows (total: 1)
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\full_change_test.py", line 115, in <module>
+    screen(args.experiment)
+    ~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\full_change_test.py", line 85, in screen
+    games = guarded.stage(out, "full", [bots / "candidate"], opponents,
+                          maps, [plan["seed"]], plan["workers"], True)
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\guarded.py", line 38, in stage
+    games = bounded.run(jobs, workers, folder, name)
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\bounded.py", line 44, in run
+    game = future.result()
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 443, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 395, in __get_result
+    raise self._exception
+concurrent.futures.process.BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.

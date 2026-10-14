@@ -1,0 +1,52 @@
+{
+  "base": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v11t10-bot",
+  "base_hash": "5286c048886605af",
+  "params": "params.hpp",
+  "variants": {
+    "base": {},
+    "ft1": {
+      "CPP_FEED_TRAVEL": 1.0
+    }
+  },
+  "opponents": [
+    "cpp_nicked_v92",
+    "cpp_nicked_v75",
+    "cpp_leviathan3",
+    "v7-base-bot",
+    "nicked_v44",
+    "nicked_lab",
+    "opp-careful-queen",
+    "opp-raider",
+    "opp-growth-queen",
+    "opp-economy",
+    "v11t"
+  ],
+  "official_maps": [
+    "trophy",
+    "queen_of_spades",
+    "default",
+    "devil",
+    "trauma",
+    "schooltime",
+    "autarky",
+    "dilemma",
+    "slithery_fight",
+    "portals",
+    "australia",
+    "islands",
+    "maze",
+    "stripes",
+    "tower_defense",
+    "unsw",
+    "weakhold"
+  ],
+  "extra_maps": [],
+  "seeds": [
+    851001,
+    851002,
+    851003
+  ],
+  "objective": "wins",
+  "unswbc": "1.2.9",
+  "deterministic_v6_clock": true
+}

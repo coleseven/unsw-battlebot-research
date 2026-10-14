@@ -1,0 +1,43 @@
+{
+  "question": "Does bounded per-dragon terrain memory help, and does known-pair portal routing add value?",
+  "modes": [
+    "terrain_memory",
+    "portal_memory"
+  ],
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-140214-navigation-e8864d\\maps\\arena_728547b8376892d9.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-140214-navigation-e8864d\\maps\\big_empty_685baf0e797207b7.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-140214-navigation-e8864d\\maps\\Colosseum_3042ccc262f0211a.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-140214-navigation-e8864d\\maps\\default_afc3707a967881d6.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-140214-navigation-e8864d\\maps\\default_small_f98ab391cccf33b1.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-140214-navigation-e8864d\\maps\\queen_of_spades_6cdb74a7a52d715a.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-140214-navigation-e8864d\\maps\\schooltime_8be7eda86910a849.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-140214-navigation-e8864d\\maps\\trophy_fd985019831fe135.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-140214-navigation-e8864d\\maps\\Devil_1b2147f4a8a775d2.map"
+  ],
+  "live_hash": "ffe736af6c14ea33",
+  "baseline_hash": "9f29ab4138b51d26",
+  "candidate_hashes": {
+    "terrain_memory": "95d36abdc462808a",
+    "portal_memory": "3b455960023ec39a"
+  },
+  "screen_seeds": [
+    20000,
+    20001,
+    20002,
+    20003
+  ],
+  "validation_seeds": [
+    21000,
+    21001,
+    21002,
+    21003,
+    21004,
+    21005,
+    21006,
+    21007
+  ],
+  "selection": "After judge-runtime preflight, screen both candidates and control against v2. Highest new score above .5 advances unchanged; ties prefer terrain_memory. No winner means stop. Screen is 216 games; selected validation is 864 games.",
+  "gate": "Fresh-seed validation direct v2 map-cluster CI lower > .5 AND paired pool gain map-cluster CI lower > 0, plus exact replay and judge-budget checks. Novel-map confirmation needed before promotion if validation passes.",
+  "limits": "96 expanded nodes, 12 steps; food sightings expire after 8 rounds. Static terrain persists. No shared memory or sonar. Unknown occupancy is uncertain. No unpaired portal traversal; no emergency portal fallback combination."
+}

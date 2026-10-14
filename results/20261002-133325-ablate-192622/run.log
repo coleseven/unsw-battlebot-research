@@ -1,0 +1,125 @@
+guard: waiting for running experiment 'ablate 20261002-122654-ablate-9e01f6' (pid 22712)
+base: 24/420 games, 53s
+base: 48/420 games, 88s
+base: 72/420 games, 142s
+base: 96/420 games, 188s
+base: 120/420 games, 242s
+base: 144/420 games, 283s
+base: 168/420 games, 333s
+base: 192/420 games, 371s
+base: 216/420 games, 401s
+base: 240/420 games, 432s
+base: 264/420 games, 508s
+base: 288/420 games, 574s
+base: 312/420 games, 674s
+base: 336/420 games, 773s
+base: 360/420 games, 882s
+base: 384/420 games, 926s
+base: 408/420 games, 951s
+base: 420/420 games, 966s
+flight: 24/420 games, 51s
+flight: 48/420 games, 85s
+flight: 72/420 games, 138s
+flight: 96/420 games, 182s
+flight: 120/420 games, 233s
+flight: 144/420 games, 274s
+flight: 168/420 games, 324s
+flight: 192/420 games, 358s
+flight: 216/420 games, 387s
+flight: 240/420 games, 416s
+flight: 264/420 games, 496s
+flight: 288/420 games, 556s
+flight: 312/420 games, 653s
+flight: 336/420 games, 748s
+flight: 360/420 games, 854s
+flight: 384/420 games, 899s
+flight: 408/420 games, 923s
+flight: 420/420 games, 938s
+qfood3: 24/420 games, 50s
+qfood3: 48/420 games, 83s
+qfood3: 72/420 games, 128s
+qfood3: 96/420 games, 180s
+qfood3: 120/420 games, 228s
+qfood3: 144/420 games, 268s
+qfood3: 168/420 games, 319s
+qfood3: 192/420 games, 353s
+qfood3: 216/420 games, 383s
+qfood3: 240/420 games, 411s
+qfood3: 264/420 games, 488s
+qfood3: 288/420 games, 550s
+qfood3: 312/420 games, 658s
+qfood3: 336/420 games, 755s
+qfood3: 360/420 games, 855s
+qfood3: 384/420 games, 899s
+qfood3: 408/420 games, 928s
+qfood3: 420/420 games, 941s
+qkeep6: 24/420 games, 48s
+qkeep6: 48/420 games, 81s
+qkeep6: 72/420 games, 134s
+qkeep6: 96/420 games, 176s
+qkeep6: 120/420 games, 230s
+qkeep6: 144/420 games, 269s
+qkeep6: 168/420 games, 319s
+qkeep6: 192/420 games, 353s
+qkeep6: 216/420 games, 381s
+qkeep6: 240/420 games, 413s
+qkeep6: 264/420 games, 488s
+qkeep6: 288/420 games, 550s
+qkeep6: 312/420 games, 645s
+qkeep6: 336/420 games, 768s
+qkeep6: 360/420 games, 869s
+qkeep6: 384/420 games, 913s
+qkeep6: 408/420 games, 937s
+qkeep6: 420/420 games, 953s
+qfood3_keep6: 24/420 games, 51s
+qfood3_keep6: 48/420 games, 90s
+qfood3_keep6: 72/420 games, 134s
+qfood3_keep6: 96/420 games, 178s
+qfood3_keep6: 120/420 games, 230s
+qfood3_keep6: 144/420 games, 271s
+qfood3_keep6: 168/420 games, 322s
+qfood3_keep6: 192/420 games, 357s
+qfood3_keep6: 216/420 games, 384s
+qfood3_keep6: 240/420 games, 415s
+qfood3_keep6: 264/420 games, 496s
+qfood3_keep6: 288/420 games, 558s
+qfood3_keep6: 312/420 games, 665s
+qfood3_keep6: 336/420 games, 758s
+qfood3_keep6: 360/420 games, 874s
+qfood3_keep6: 384/420 games, 905s
+qfood3_keep6: 408/420 games, 926s
+qfood3_keep6: 420/420 games, 945s
+all3: 24/420 games, 51s
+all3: 48/420 games, 89s
+all3: 72/420 games, 133s
+all3: 96/420 games, 178s
+all3: 120/420 games, 231s
+all3: 144/420 games, 273s
+all3: 168/420 games, 326s
+all3: 192/420 games, 363s
+all3: 216/420 games, 391s
+all3: 240/420 games, 421s
+all3: 264/420 games, 500s
+all3: 288/420 games, 567s
+all3: 312/420 games, 672s
+all3: 336/420 games, 758s
+all3: 360/420 games, 868s
+all3: 384/420 games, 906s
+all3: 408/420 games, 927s
+all3: 420/420 games, 944s
+# Ablation report: 20261002-133325-ablate-192622
+
+2 seeds, opponents cpp_nicked_v92, cpp_nicked_v75, cpp_leviathan3, v7-base-bot, nicked_v44, nicked_lab, v11q; 11 official + 4 extra maps, both sides. Objective: wins. Delta = variant score minus base score on the same (opponent, map, seed, side); positive means removing the group helped. 95% CI resamples (map, seed) blocks.
+
+base: mean margin +0.210, wins 254/420; by opponent: cpp_nicked_v92 -0.433, cpp_nicked_v75 -0.067, cpp_leviathan3 +0.667, v7-base-bot +0.433, nicked_v44 +0.667, nicked_lab +0.200, v11q +0.000
+
+| variant | current pool delta [95% CI] | pool verdict | other maps | delta all 15 [95% CI] | verdict | vs cpp_nicked_v92 | vs cpp_nicked_v75 | vs cpp_leviathan3 | vs v7-base-bot | vs nicked_v44 | vs nicked_lab | vs v11q | official | extra | wins |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| flight | -0.029 [-0.071, +0.007] | neutral | +0.014 | -0.014 [-0.048, +0.014] | neutral | +0.000 | -0.033 | +0.033 | +0.000 | -0.100 | -0.067 | +0.067 | -0.019 | +0.000 | 251/420 |
+| qfood3 | -0.021 [-0.136, +0.079] | neutral | -0.071 | -0.038 [-0.133, +0.067] | neutral | -0.033 | -0.067 | -0.100 | +0.033 | +0.033 | -0.133 | +0.000 | -0.052 | +0.000 | 246/420 |
+| qkeep6 | -0.043 [-0.150, +0.057] | neutral | -0.314 | -0.133 [-0.233, -0.038] | essential | -0.133 | -0.167 | -0.067 | -0.200 | -0.133 | -0.200 | -0.033 | -0.195 | +0.036 | 226/420 |
+| qfood3_keep6 | -0.036 [-0.157, +0.079] | neutral | -0.200 | -0.090 [-0.205, +0.019] | neutral | -0.033 | -0.100 | -0.033 | -0.167 | +0.033 | -0.267 | -0.067 | -0.130 | +0.018 | 235/420 |
+| all3 | -0.029 [-0.143, +0.100] | neutral | -0.286 | -0.114 [-0.224, -0.010] | essential | +0.000 | -0.133 | -0.167 | -0.067 | -0.067 | -0.233 | -0.133 | -0.175 | +0.054 | 230/420 |
+
+Noise: seed-to-seed SD of base's margin within a (opponent, map, side) cell 0.816 over 210 cells. Expected paired CI half-width with K seeds, 1.96 * sqrt(2 * 0.816^2 / (210 * K)): K=2: 0.110, K=3: 0.090, K=4: 0.078, K=6: 0.064, K=8: 0.055
+

@@ -1,0 +1,63 @@
+{
+  "official_direct_portal": {
+    "wins": 85,
+    "draws": 0,
+    "losses": 75,
+    "score": 0.53125,
+    "cluster_ci95": [
+      0.46875,
+      0.59375
+    ],
+    "pair_ci95": [
+      0.46875,
+      0.6
+    ],
+    "map_scores": {
+      "official_Colosseum_3042ccc262f0211a": 0.53125,
+      "official_default_afc3707a967881d6": 0.625,
+      "official_queen_of_spades_6cdb74a7a52d715a": 0.46875,
+      "official_schooltime_8be7eda86910a849": 0.4375,
+      "official_trophy_fd985019831fe135": 0.59375
+    }
+  },
+  "paired_pool": {
+    "difference": 0.008680555555555556,
+    "map_cluster_ci95": [
+      -0.003472222222222222,
+      0.023726851851851853
+    ],
+    "paired_block_ci95": [
+      -0.006944444444444444,
+      0.023148148148148147
+    ],
+    "maps": 9,
+    "blocks": 432,
+    "matched_games": 864
+  },
+  "transfer": {
+    "wins": 172,
+    "draws": 1,
+    "losses": 83,
+    "score": 0.673828125,
+    "cluster_ci95": [
+      0.634765625,
+      0.70703125
+    ],
+    "pair_ci95": [
+      0.6171875,
+      0.7265625
+    ],
+    "map_scores": {
+      "new_open_small": 0.703125,
+      "new_open_large": 0.53125,
+      "new_baffles_small": 0.75,
+      "new_baffles_large": 0.625,
+      "new_dense_small": 0.65625,
+      "new_dense_large": 0.6875,
+      "new_scarce_small": 0.6875,
+      "new_scarce_large": 0.75
+    }
+  },
+  "no_portal_matched_games": 384,
+  "performance_gate": false
+}

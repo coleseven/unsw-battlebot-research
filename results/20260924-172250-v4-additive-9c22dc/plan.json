@@ -1,0 +1,39 @@
+{
+  "question": "Does adding only feeding and sonar routing to frozen v3 beat v3 or the old grower+feed+sonar route?",
+  "baseline_hash": "69382825b699723d",
+  "old_route_hash": "a3bd27841857e668",
+  "live_hash": "ffe736af6c14ea33",
+  "bot_hashes": {
+    "reference_v3": "69382825b699723d",
+    "old_route": "a3bd27841857e668",
+    "additive": "bf33497158a49a7b"
+  },
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-172250-v4-additive-9c22dc\\maps\\big_empty_685baf0e797207b7.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-172250-v4-additive-9c22dc\\maps\\default_afc3707a967881d6.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-172250-v4-additive-9c22dc\\maps\\schooltime_8be7eda86910a849.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-172250-v4-additive-9c22dc\\maps\\stronghold_fb60e37176a8d1d3.map"
+  ],
+  "map_hashes": {
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-172250-v4-additive-9c22dc\\maps\\big_empty_685baf0e797207b7.map": "8183641362aab7e9",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-172250-v4-additive-9c22dc\\maps\\default_afc3707a967881d6.map": "8cbd2473c772cb2d",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-172250-v4-additive-9c22dc\\maps\\schooltime_8be7eda86910a849.map": "448616c71781d224",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-172250-v4-additive-9c22dc\\maps\\stronghold_fb60e37176a8d1d3.map": "88b0f451cc44c7dc"
+  },
+  "seed": 44001,
+  "workers": 1,
+  "pool_games": 16,
+  "direct_games": 8,
+  "pairings": "additive and old_route each vs v3, then additive directly vs old_route; both sides per map",
+  "selection": "Exploratory. No promotion from one seed/four familiar maps. Compare paired scores and replay mechanism.",
+  "limits": "In-process one-worker games after host crash; judge CPU and fresh-opponent validation remain required.",
+  "source_hashes": {
+    "experiments\\v4\\additive_brain.py": "b109edc10f93dd60",
+    "framework\\v4_feeding.py": "8820106b26a9f916",
+    "framework\\v4_sonar.py": "b71efb98470400e5",
+    "bcsim\\v4_additive.py": "0b74064f523f591a",
+    "bcsim\\match.py": "d546d7f5532b71f6",
+    "bcsim\\guarded.py": "87ac3dd271b72d9a",
+    "bcsim\\bounded.py": "c60b1fa2106c485f"
+  }
+}

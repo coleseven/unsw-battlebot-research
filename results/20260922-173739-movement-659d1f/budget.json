@@ -1,0 +1,505 @@
+{
+  "summary": {
+    "control_450": {
+      "turns": 16,
+      "max_points": 32923620,
+      "max_memory_bytes": 21561344,
+      "failures": 0
+    },
+    "trap": {
+      "turns": 16,
+      "max_points": 45183025,
+      "max_memory_bytes": 21561344,
+      "failures": 0
+    },
+    "sprint": {
+      "turns": 16,
+      "max_points": 45161019,
+      "max_memory_bytes": 21561344,
+      "failures": 0
+    }
+  },
+  "turns": [
+    {
+      "bot": "control_450",
+      "hash": "2e0e1867b6cf7cda",
+      "category": "long",
+      "phase": "cold",
+      "points": 23780710,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE E\n"
+    },
+    {
+      "bot": "control_450",
+      "hash": "2e0e1867b6cf7cda",
+      "category": "long",
+      "phase": "warm",
+      "points": 12607115,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE E\n"
+    },
+    {
+      "bot": "control_450",
+      "hash": "2e0e1867b6cf7cda",
+      "category": "dense",
+      "phase": "cold",
+      "points": 22554356,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n"
+    },
+    {
+      "bot": "control_450",
+      "hash": "2e0e1867b6cf7cda",
+      "category": "dense",
+      "phase": "warm",
+      "points": 11409406,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n"
+    },
+    {
+      "bot": "control_450",
+      "hash": "2e0e1867b6cf7cda",
+      "category": "enemy_heads",
+      "phase": "cold",
+      "points": 28338117,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE W\n"
+    },
+    {
+      "bot": "control_450",
+      "hash": "2e0e1867b6cf7cda",
+      "category": "enemy_heads",
+      "phase": "warm",
+      "points": 17151509,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE W\n"
+    },
+    {
+      "bot": "control_450",
+      "hash": "2e0e1867b6cf7cda",
+      "category": "round_0",
+      "phase": "cold",
+      "points": 32923620,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE W\n"
+    },
+    {
+      "bot": "control_450",
+      "hash": "2e0e1867b6cf7cda",
+      "category": "round_0",
+      "phase": "warm",
+      "points": 21745319,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE W\n"
+    },
+    {
+      "bot": "control_450",
+      "hash": "2e0e1867b6cf7cda",
+      "category": "sprint_trigger",
+      "phase": "cold",
+      "points": 23559345,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE S\n"
+    },
+    {
+      "bot": "control_450",
+      "hash": "2e0e1867b6cf7cda",
+      "category": "sprint_trigger",
+      "phase": "warm",
+      "points": 12412109,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE S\n"
+    },
+    {
+      "bot": "control_450",
+      "hash": "2e0e1867b6cf7cda",
+      "category": "round_100",
+      "phase": "cold",
+      "points": 32560632,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE S\n"
+    },
+    {
+      "bot": "control_450",
+      "hash": "2e0e1867b6cf7cda",
+      "category": "round_100",
+      "phase": "warm",
+      "points": 21382160,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE S\n"
+    },
+    {
+      "bot": "control_450",
+      "hash": "2e0e1867b6cf7cda",
+      "category": "round_300",
+      "phase": "cold",
+      "points": 26223729,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE E\n"
+    },
+    {
+      "bot": "control_450",
+      "hash": "2e0e1867b6cf7cda",
+      "category": "round_300",
+      "phase": "warm",
+      "points": 15052469,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE E\n"
+    },
+    {
+      "bot": "control_450",
+      "hash": "2e0e1867b6cf7cda",
+      "category": "round_460",
+      "phase": "cold",
+      "points": 29698997,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE S\n"
+    },
+    {
+      "bot": "control_450",
+      "hash": "2e0e1867b6cf7cda",
+      "category": "round_460",
+      "phase": "warm",
+      "points": 18530465,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE S\n"
+    },
+    {
+      "bot": "trap",
+      "hash": "b76c7b9c943a1d5d",
+      "category": "long",
+      "phase": "cold",
+      "points": 35147329,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE E\n"
+    },
+    {
+      "bot": "trap",
+      "hash": "b76c7b9c943a1d5d",
+      "category": "long",
+      "phase": "warm",
+      "points": 20480173,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE E\n"
+    },
+    {
+      "bot": "trap",
+      "hash": "b76c7b9c943a1d5d",
+      "category": "dense",
+      "phase": "cold",
+      "points": 34603165,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n"
+    },
+    {
+      "bot": "trap",
+      "hash": "b76c7b9c943a1d5d",
+      "category": "dense",
+      "phase": "warm",
+      "points": 19976943,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n"
+    },
+    {
+      "bot": "trap",
+      "hash": "b76c7b9c943a1d5d",
+      "category": "enemy_heads",
+      "phase": "cold",
+      "points": 40291061,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE W\n"
+    },
+    {
+      "bot": "trap",
+      "hash": "b76c7b9c943a1d5d",
+      "category": "enemy_heads",
+      "phase": "warm",
+      "points": 25625360,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE W\n"
+    },
+    {
+      "bot": "trap",
+      "hash": "b76c7b9c943a1d5d",
+      "category": "round_0",
+      "phase": "cold",
+      "points": 45152378,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE W\n"
+    },
+    {
+      "bot": "trap",
+      "hash": "b76c7b9c943a1d5d",
+      "category": "round_0",
+      "phase": "warm",
+      "points": 30481044,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE W\n"
+    },
+    {
+      "bot": "trap",
+      "hash": "b76c7b9c943a1d5d",
+      "category": "sprint_trigger",
+      "phase": "cold",
+      "points": 35003314,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE S\n"
+    },
+    {
+      "bot": "trap",
+      "hash": "b76c7b9c943a1d5d",
+      "category": "sprint_trigger",
+      "phase": "warm",
+      "points": 20424096,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE S\n"
+    },
+    {
+      "bot": "trap",
+      "hash": "b76c7b9c943a1d5d",
+      "category": "round_100",
+      "phase": "cold",
+      "points": 45183025,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE S\n"
+    },
+    {
+      "bot": "trap",
+      "hash": "b76c7b9c943a1d5d",
+      "category": "round_100",
+      "phase": "warm",
+      "points": 30512250,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE S\n"
+    },
+    {
+      "bot": "trap",
+      "hash": "b76c7b9c943a1d5d",
+      "category": "round_300",
+      "phase": "cold",
+      "points": 37780470,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE E\n"
+    },
+    {
+      "bot": "trap",
+      "hash": "b76c7b9c943a1d5d",
+      "category": "round_300",
+      "phase": "warm",
+      "points": 23118035,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE E\n"
+    },
+    {
+      "bot": "trap",
+      "hash": "b76c7b9c943a1d5d",
+      "category": "round_460",
+      "phase": "cold",
+      "points": 41409778,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE S\n"
+    },
+    {
+      "bot": "trap",
+      "hash": "b76c7b9c943a1d5d",
+      "category": "round_460",
+      "phase": "warm",
+      "points": 26753372,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE S\n"
+    },
+    {
+      "bot": "sprint",
+      "hash": "f503f1c32975c93b",
+      "category": "long",
+      "phase": "cold",
+      "points": 35130130,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE E\n"
+    },
+    {
+      "bot": "sprint",
+      "hash": "f503f1c32975c93b",
+      "category": "long",
+      "phase": "warm",
+      "points": 20467761,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE E\n"
+    },
+    {
+      "bot": "sprint",
+      "hash": "f503f1c32975c93b",
+      "category": "dense",
+      "phase": "cold",
+      "points": 35516918,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n"
+    },
+    {
+      "bot": "sprint",
+      "hash": "f503f1c32975c93b",
+      "category": "dense",
+      "phase": "warm",
+      "points": 20879712,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n"
+    },
+    {
+      "bot": "sprint",
+      "hash": "f503f1c32975c93b",
+      "category": "enemy_heads",
+      "phase": "cold",
+      "points": 40269677,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE W\n"
+    },
+    {
+      "bot": "sprint",
+      "hash": "f503f1c32975c93b",
+      "category": "enemy_heads",
+      "phase": "warm",
+      "points": 25609450,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE W\n"
+    },
+    {
+      "bot": "sprint",
+      "hash": "f503f1c32975c93b",
+      "category": "round_0",
+      "phase": "cold",
+      "points": 45131278,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE W\n"
+    },
+    {
+      "bot": "sprint",
+      "hash": "f503f1c32975c93b",
+      "category": "round_0",
+      "phase": "warm",
+      "points": 30462051,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE W\n"
+    },
+    {
+      "bot": "sprint",
+      "hash": "f503f1c32975c93b",
+      "category": "sprint_trigger",
+      "phase": "cold",
+      "points": 35488107,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE SW\n"
+    },
+    {
+      "bot": "sprint",
+      "hash": "f503f1c32975c93b",
+      "category": "sprint_trigger",
+      "phase": "warm",
+      "points": 20849426,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE SW\n"
+    },
+    {
+      "bot": "sprint",
+      "hash": "f503f1c32975c93b",
+      "category": "round_100",
+      "phase": "cold",
+      "points": 45161019,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE S\n"
+    },
+    {
+      "bot": "sprint",
+      "hash": "f503f1c32975c93b",
+      "category": "round_100",
+      "phase": "warm",
+      "points": 30493111,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE S\n"
+    },
+    {
+      "bot": "sprint",
+      "hash": "f503f1c32975c93b",
+      "category": "round_300",
+      "phase": "cold",
+      "points": 37762923,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE E\n"
+    },
+    {
+      "bot": "sprint",
+      "hash": "f503f1c32975c93b",
+      "category": "round_300",
+      "phase": "warm",
+      "points": 23105864,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE E\n"
+    },
+    {
+      "bot": "sprint",
+      "hash": "f503f1c32975c93b",
+      "category": "round_460",
+      "phase": "cold",
+      "points": 41392243,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE S\n"
+    },
+    {
+      "bot": "sprint",
+      "hash": "f503f1c32975c93b",
+      "category": "round_460",
+      "phase": "warm",
+      "points": 26739675,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE S\n"
+    }
+  ],
+  "limits": "sampled observations, repeated cold/warm; not full games or a worst-case guarantee"
+}

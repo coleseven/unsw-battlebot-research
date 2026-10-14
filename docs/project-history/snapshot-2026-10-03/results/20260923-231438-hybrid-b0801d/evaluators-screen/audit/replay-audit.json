@@ -1,0 +1,132 @@
+{
+  "counts": {
+    "games": 352,
+    "verified_candidate_turns": 3782827,
+    "splits": 54542,
+    "late_splits": 0,
+    "heuristic_turns": 1223049,
+    "heuristic_preserve_turns": 0,
+    "heuristic_preserved_split_opportunities": 0,
+    "linear_turns": 1256306,
+    "linear_preserve_turns": 0,
+    "linear_preserved_split_opportunities": 0,
+    "neural_turns": 1303472,
+    "neural_preserve_turns": 0,
+    "neural_preserved_split_opportunities": 0
+  },
+  "samples": {
+    "heuristic__long": {
+      "bot": "heuristic",
+      "score": 44,
+      "init": "ID 41\nTEAM B\nMAP 64 64\nUNIT_LIMIT 64\n",
+      "id": 41,
+      "round": 499,
+      "block": "ROUND 499\nDIR E\nLENGTH 44\nUNIT_COUNT 47\nNUM_MSGS 0\n12 35 0 371\n13 35 0 520\n14 35 0 54\n15 35 0 520\n16 35 1 216\n17 35 0 91\n18 35 0 67\n12 36 0 107\n13 36 0 244\n14 36 0 250\n15 36 0 347\n16 36 0 543\n17 36 0 537\n18 36 0 288\n12 37 0 82\n13 37 0 213\n14 37 0 187\n15 37 0 244\n16 37 0 242\n17 37 0 318\n18 37 0 137\n12 38 0 404\n13 38 0 208\n14 38 0 130\n15 38 0 365\n16 38 0 11\n17 38 0 125\n18 38 0 202\n12 39 0 2\n13 39 0 591\n14 39 0 41\n15 39 0 205\n16 39 0 350\n17 39 0 145\n18 39 0 579\n12 40 0 93\n13 40 0 72\n14 40 0 186\n15 40 1 466\n16 40 0 366\n17 40 0 55\n18 40 0 105\n12 41 0 60\n13 41 0 302\n14 41 0 19\n15 41 0 239\n16 41 0 88\n17 41 0 147\n18 41 0 105\nDRAGON_BODIES 23\nB 138 12 35 S 0\nB 138 13 35 W 0\nB 138 14 35 W 0\nB 138 12 36 S 0\nB 138 15 36 E 0\nB 138 16 36 E 1\nB 138 12 37 E 0\nB 138 13 37 E 0\nB 138 14 37 E 0\nB 138 15 37 N 0\nB 41 12 38 E 0\nB 41 13 38 E 0\nB 41 14 38 E 0\nB 41 15 38 E 1\nB 41 12 39 N 0\nB 41 12 40 N 0\nB 41 12 41 N 0\nB 41 13 41 W 0\nB 41 14 41 W 0\nB 41 15 41 W 0\nB 41 16 41 W 0\nB 41 17 41 W 0\nB 41 18 41 W 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n",
+      "source": "results\\20260923-231438-hybrid-b0801d\\evaluators-screen\\replays\\reference_v2-vs-heuristic-big_empty_685baf0e797207b7-s28003.replay"
+    },
+    "heuristic__dense": {
+      "bot": "heuristic",
+      "score": 43,
+      "init": "ID 903\nTEAM B\nMAP 11 11\nUNIT_LIMIT 64\n",
+      "id": 903,
+      "round": 486,
+      "block": "ROUND 486\nDIR S\nLENGTH 15\nUNIT_COUNT 2\nNUM_MSGS 0\n3 4 0 6\n4 4 0 13\n5 4 0 10\n6 4 0 5\n7 4 0 1\n8 4 0 8\n9 4 0 2\n3 5 0 1\n4 5 0 6\n5 5 0 14\n6 5 0 6\n7 5 0 1\n8 5 0 1\n9 5 0 1\n3 6 1 1\n4 6 0 5\n5 6 0 10\n6 6 0 13\n7 6 0 6\n8 6 0 6\n9 6 0 5\n3 7 0 10\n4 7 0 1\n5 7 0 7\n6 7 0 13\n7 7 0 8\n8 7 0 14\n9 7 0 7\n3 8 1 2\n4 8 1 2\n5 8 0 7\n6 8 0 8\n7 8 0 10\n8 8 0 5\n9 8 0 14\n3 9 0 9\n4 9 0 11\n5 9 0 15\n6 9 0 7\n7 9 0 19\n8 9 0 8\n9 9 0 5\n3 10 0 -1\n4 10 0 -1\n5 10 0 -1\n6 10 0 -1\n7 10 0 -1\n8 10 0 -1\n9 10 0 -1\nDRAGON_BODIES 43\nA 904 3 4 W 0\nA 904 4 4 E 0\nA 904 5 4 S 0\nB 903 6 4 S 0\nB 903 7 4 W 0\nB 903 8 4 W 0\nB 903 9 4 S 0\nA 904 3 5 E 0\nA 904 4 5 N 0\nA 904 5 5 S 0\nB 903 6 5 S 0\nB 903 8 5 N 0\nB 903 9 5 W 0\nA 904 5 6 S 0\nB 903 6 6 S 0\nB 916 7 6 S 0\nB 916 8 6 W 0\nB 916 9 6 W 0\nA 904 3 7 W 1\nA 904 4 7 W 0\nA 904 5 7 W 0\nB 903 6 7 S 1\nB 916 7 7 S 0\nB 916 8 7 N 1\nB 916 9 7 N 0\nB 916 5 8 S 0\nB 916 6 8 W 0\nB 916 7 8 E 0\nB 916 8 8 N 0\nB 916 9 8 N 0\nB 916 3 9 S 0\nB 916 4 9 W 0\nB 916 5 9 W 0\nB 916 6 9 N 0\nB 916 7 9 W 0\nB 916 8 9 E 0\nB 916 9 9 N 0\nB 916 3 10 E 0\nB 916 4 10 E 0\nB 916 5 10 E 0\nB 916 6 10 E 0\nB 916 7 10 E 0\nB 916 8 10 N 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\nw w w w w w w\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n",
+      "source": "results\\20260923-231438-hybrid-b0801d\\evaluators-screen\\replays\\reference_v2-vs-heuristic-arena_728547b8376892d9-s28002.replay"
+    },
+    "heuristic__enemy_heads": {
+      "bot": "heuristic",
+      "score": 12,
+      "init": "ID 813\nTEAM B\nMAP 11 11\nUNIT_LIMIT 64\n",
+      "id": 813,
+      "round": 396,
+      "block": "ROUND 396\nDIR W\nLENGTH 3\nUNIT_COUNT 7\nNUM_MSGS 0\n0 3 0 -1\n1 3 0 10\n2 3 0 7\n3 3 1 17\n4 3 0 10\n5 3 0 11\n6 3 0 15\n0 4 0 -1\n1 4 0 17\n2 4 0 4\n3 4 0 2\n4 4 0 2\n5 4 0 8\n6 4 0 8\n0 5 0 -1\n1 5 0 5\n2 5 0 5\n3 5 0 6\n4 5 0 1\n5 5 0 8\n6 5 0 1\n0 6 0 -1\n1 6 0 13\n2 6 0 1\n3 6 0 8\n4 6 0 8\n5 6 0 8\n6 6 0 2\n0 7 0 -1\n1 7 0 16\n2 7 0 3\n3 7 0 5\n4 7 0 15\n5 7 0 11\n6 7 0 10\n0 8 0 -1\n1 8 0 1\n2 8 0 4\n3 8 0 7\n4 8 0 10\n5 8 0 8\n6 8 0 6\n0 9 0 -1\n1 9 0 7\n2 9 0 13\n3 9 0 9\n4 9 0 11\n5 9 0 16\n6 9 0 1\nDRAGON_BODIES 31\nA 818 4 3 W 1\nA 818 5 3 W 0\nA 814 1 4 E 0\nA 814 2 4 E 1\nA 812 3 4 W 1\nA 812 4 4 W 0\nA 804 6 4 W 1\nA 821 1 5 W 1\nA 821 2 5 W 0\nA 807 1 6 W 1\nA 807 2 6 W 0\nB 813 3 6 W 1\nB 813 4 6 W 0\nB 813 5 6 W 0\nA 817 1 7 N 1\nA 790 3 7 S 0\nA 781 4 7 W 1\nA 781 5 7 W 0\nA 781 6 7 W 0\nA 817 1 8 N 0\nA 790 2 8 W 1\nA 790 3 8 W 0\nA 816 4 8 N 1\nA 741 5 8 E 0\nA 741 6 8 S 0\nA 810 0 9 W 1\nA 810 1 9 W 0\nA 816 3 9 E 0\nA 816 4 9 N 0\nA 741 5 9 W 1\nA 741 6 9 W 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\nw . . . . . . .\nw . . . . . . .\nw . . . . . . .\nw . . . . . . .\nw . . . . . . .\nw . . . . . . .\nw . . . . . . .\n",
+      "source": "results\\20260923-231438-hybrid-b0801d\\evaluators-screen\\replays\\reference_v2-vs-heuristic-arena_728547b8376892d9-s28002.replay"
+    },
+    "heuristic__population": {
+      "bot": "heuristic",
+      "score": 64,
+      "init": "ID 21\nTEAM A\nMAP 64 64\nUNIT_LIMIT 64\n",
+      "id": 21,
+      "round": 63,
+      "block": "ROUND 63\nDIR N\nLENGTH 2\nUNIT_COUNT 64\nNUM_MSGS 0\n13 0 0 325\n14 0 0 401\n15 0 0 458\n16 0 0 513\n17 0 0 348\n18 0 0 248\n19 0 0 2\n13 1 0 127\n14 1 0 22\n15 1 0 476\n16 1 0 466\n17 1 0 559\n18 1 0 127\n19 1 0 148\n13 2 0 203\n14 2 0 359\n15 2 0 214\n16 2 0 554\n17 2 0 355\n18 2 0 357\n19 2 0 344\n13 3 0 568\n14 3 0 253\n15 3 0 79\n16 3 0 535\n17 3 0 104\n18 3 0 257\n19 3 0 284\n13 4 0 524\n14 4 0 634\n15 4 0 304\n16 4 0 332\n17 4 0 11\n18 4 0 620\n19 4 0 660\n13 5 0 153\n14 5 0 426\n15 5 0 101\n16 5 0 154\n17 5 0 276\n18 5 0 319\n19 5 0 297\n13 6 0 681\n14 6 0 348\n15 6 0 565\n16 6 0 167\n17 6 0 34\n18 6 0 324\n19 6 0 601\nDRAGON_BODIES 5\nA 63 13 0 N 0\nA 21 16 3 N 1\nA 21 16 4 N 0\nA 97 18 5 S 0\nA 97 18 6 S 1\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n",
+      "source": "results\\20260923-231438-hybrid-b0801d\\evaluators-screen\\replays\\heuristic-vs-reference_v2-big_empty_685baf0e797207b7-s28000.replay"
+    },
+    "linear__long": {
+      "bot": "linear",
+      "score": 39,
+      "init": "ID 68\nTEAM A\nMAP 64 64\nUNIT_LIMIT 64\n",
+      "id": 68,
+      "round": 488,
+      "block": "ROUND 488\nDIR E\nLENGTH 39\nUNIT_COUNT 52\nNUM_MSGS 0\n20 40 0 204\n21 40 0 110\n22 40 0 27\n23 40 0 315\n24 40 0 524\n25 40 0 223\n26 40 0 473\n20 41 0 588\n21 41 0 254\n22 41 0 653\n23 41 0 97\n24 41 0 218\n25 41 0 476\n26 41 0 285\n20 42 0 175\n21 42 0 63\n22 42 0 266\n23 42 0 127\n24 42 0 202\n25 42 0 433\n26 42 0 291\n20 43 0 84\n21 43 0 83\n22 43 0 24\n23 43 0 464\n24 43 0 190\n25 43 0 213\n26 43 0 58\n20 44 0 317\n21 44 0 87\n22 44 0 83\n23 44 0 506\n24 44 0 285\n25 44 0 256\n26 44 0 405\n20 45 0 124\n21 45 0 501\n22 45 0 246\n23 45 0 202\n24 45 0 313\n25 45 0 219\n26 45 0 120\n20 46 0 84\n21 46 0 160\n22 46 0 372\n23 46 0 39\n24 46 0 180\n25 46 0 34\n26 46 0 20\nDRAGON_BODIES 27\nA 279 20 40 E 0\nA 279 21 40 E 0\nA 279 22 40 E 0\nA 279 23 40 N 0\nA 68 26 40 S 0\nA 279 20 41 N 0\nA 68 25 41 S 0\nA 68 26 41 W 0\nA 68 25 42 S 0\nA 68 20 43 E 0\nA 68 21 43 E 0\nA 68 22 43 E 0\nA 68 23 43 E 1\nA 68 25 43 S 0\nA 68 20 44 W 0\nA 68 21 44 W 0\nA 68 22 44 W 0\nA 68 23 44 W 0\nA 68 24 44 W 0\nA 68 25 44 W 0\nB 288 20 46 E 0\nB 288 21 46 E 0\nB 288 22 46 E 0\nB 288 23 46 E 0\nB 288 24 46 E 0\nB 288 25 46 E 0\nB 288 26 46 E 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n",
+      "source": "results\\20260923-231438-hybrid-b0801d\\evaluators-screen\\replays\\linear-vs-reference_v2-big_empty_685baf0e797207b7-s28000.replay"
+    },
+    "linear__dense": {
+      "bot": "linear",
+      "score": 41,
+      "init": "ID 384\nTEAM A\nMAP 11 11\nUNIT_LIMIT 64\n",
+      "id": 384,
+      "round": 220,
+      "block": "ROUND 220\nDIR E\nLENGTH 4\nUNIT_COUNT 13\nNUM_MSGS 0\n10 1 0 -1\n0 1 0 -1\n1 1 0 9\n2 1 0 12\n3 1 0 3\n4 1 0 10\n5 1 0 6\n10 2 0 -1\n0 2 0 -1\n1 2 0 6\n2 2 0 7\n3 2 0 13\n4 2 1 9\n5 2 0 4\n10 3 0 -1\n0 3 0 -1\n1 3 0 3\n2 3 0 5\n3 3 0 4\n4 3 0 6\n5 3 0 4\n10 4 0 -1\n0 4 0 -1\n1 4 0 15\n2 4 0 16\n3 4 0 12\n4 4 0 5\n5 4 0 3\n10 5 0 -1\n0 5 0 -1\n1 5 0 14\n2 5 0 10\n3 5 0 2\n4 5 0 4\n5 5 0 8\n10 6 0 -1\n0 6 0 -1\n1 6 0 10\n2 6 0 2\n3 6 0 9\n4 6 0 1\n5 6 0 3\n10 7 0 -1\n0 7 0 -1\n1 7 0 18\n2 7 0 16\n3 7 0 8\n4 7 0 7\n5 7 0 4\nDRAGON_BODIES 41\nA 395 10 1 W 0\nA 402 0 1 N 1\nA 407 2 1 S 0\nA 372 3 1 E 0\nA 372 4 1 E 0\nA 372 5 1 E 1\nA 421 10 2 N 1\nA 402 0 2 N 0\nB 405 1 2 S 0\nA 407 2 2 S 1\nA 372 3 2 N 0\nB 418 5 2 S 0\nA 421 10 3 N 0\nB 405 1 3 S 1\nA 414 2 3 W 1\nA 414 3 3 W 0\nA 414 4 3 W 0\nB 418 5 3 S 1\nA 358 10 4 S 0\nA 384 1 4 E 0\nA 384 2 4 E 1\nA 382 3 4 W 1\nA 382 4 4 W 0\nB 385 5 4 N 1\nA 358 10 5 S 1\nA 384 0 5 E 0\nA 384 1 5 N 0\nA 382 3 5 E 0\nA 382 4 5 N 0\nB 385 5 5 N 0\nB 404 10 6 S 0\nB 403 0 6 S 0\nB 420 2 6 E 0\nB 420 3 6 E 1\nA 419 4 6 E 0\nA 419 5 6 E 1\nB 404 10 7 S 0\nB 403 0 7 S 1\nA 417 1 7 N 1\nB 410 3 7 S 0\nB 410 4 7 W 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. w . . . . . .\n. w . . . . . .\n. w . . . . . .\n. w . . . . . .\n. w . . . . . .\n. w . . . . . .\n. w . . . . . .\n",
+      "source": "results\\20260923-231438-hybrid-b0801d\\evaluators-screen\\replays\\linear-vs-reference_v2-arena_728547b8376892d9-s28003.replay"
+    },
+    "linear__enemy_heads": {
+      "bot": "linear",
+      "score": 12,
+      "init": "ID 105\nTEAM A\nMAP 11 11\nUNIT_LIMIT 64\n",
+      "id": 105,
+      "round": 67,
+      "block": "ROUND 67\nDIR W\nLENGTH 3\nUNIT_COUNT 10\nNUM_MSGS 0\n4 7 0 3\n5 7 0 4\n6 7 0 10\n7 7 0 3\n8 7 0 13\n9 7 0 8\n10 7 0 -1\n4 8 0 3\n5 8 0 1\n6 8 0 8\n7 8 0 12\n8 8 0 6\n9 8 0 10\n10 8 0 -1\n4 9 0 13\n5 9 0 2\n6 9 0 14\n7 9 0 17\n8 9 0 5\n9 9 1 12\n10 9 0 -1\n4 10 0 -1\n5 10 0 -1\n6 10 0 -1\n7 10 0 -1\n8 10 0 -1\n9 10 0 -1\n10 10 0 -1\n4 0 0 -1\n5 0 0 -1\n6 0 0 -1\n7 0 0 -1\n8 0 0 -1\n9 0 0 -1\n10 0 0 -1\n4 1 0 14\n5 1 1 2\n6 1 1 13\n7 1 0 10\n8 1 0 8\n9 1 0 10\n10 1 0 -1\n4 2 0 8\n5 2 0 1\n6 2 0 3\n7 2 0 2\n8 2 1 16\n9 2 0 4\n10 2 0 -1\nDRAGON_BODIES 30\nB 82 4 7 W 1\nB 82 5 7 W 0\nB 119 6 7 S 0\nB 113 7 7 E 0\nB 113 8 7 E 1\nA 53 10 7 S 0\nB 86 5 8 N 1\nB 119 6 8 S 1\nB 121 7 8 E 0\nB 121 8 8 E 1\nA 53 10 8 S 1\nB 86 4 9 E 0\nB 86 5 9 N 0\nB 104 6 9 W 1\nB 104 7 9 W 0\nA 64 4 10 E 0\nA 64 5 10 E 1\nA 105 7 10 W 1\nA 105 8 10 W 0\nA 105 9 10 W 0\nB 120 6 0 W 1\nB 120 7 0 W 0\nB 74 8 0 E 0\nB 74 9 0 E 1\nB 112 4 1 E 1\nB 114 9 1 N 1\nB 110 5 2 N 1\nB 110 6 2 S 0\nB 109 7 2 N 1\nB 114 9 2 N 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\nw w w w w w w\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . w\n. . . . . . . w\n. . . . . . . w\n. . . . . . . w\n. . . . . . . w\n. . . . . . . w\n. . . . . . . w\n",
+      "source": "results\\20260923-231438-hybrid-b0801d\\evaluators-screen\\replays\\linear-vs-reference_v2-arena_728547b8376892d9-s28001.replay"
+    },
+    "linear__population": {
+      "bot": "linear",
+      "score": 64,
+      "init": "ID 75\nTEAM B\nMAP 64 64\nUNIT_LIMIT 64\n",
+      "id": 75,
+      "round": 62,
+      "block": "ROUND 62\nDIR E\nLENGTH 2\nUNIT_COUNT 64\nNUM_MSGS 0\n1 34 0 75\n2 34 0 511\n3 34 0 450\n4 34 0 177\n5 34 0 576\n6 34 0 460\n7 34 0 51\n1 35 0 18\n2 35 0 178\n3 35 0 254\n4 35 0 190\n5 35 0 9\n6 35 0 457\n7 35 0 504\n1 36 0 206\n2 36 0 368\n3 36 0 678\n4 36 0 326\n5 36 0 316\n6 36 0 110\n7 36 0 88\n1 37 0 614\n2 37 0 590\n3 37 0 299\n4 37 0 426\n5 37 0 157\n6 37 0 542\n7 37 0 440\n1 38 0 145\n2 38 0 94\n3 38 0 44\n4 38 0 84\n5 38 0 345\n6 38 0 606\n7 38 0 46\n1 39 0 519\n2 39 0 562\n3 39 0 495\n4 39 0 411\n5 39 0 676\n6 39 0 657\n7 39 0 504\n1 40 0 656\n2 40 0 677\n3 40 0 653\n4 40 0 316\n5 40 0 462\n6 40 0 239\n7 40 0 479\nDRAGON_BODIES 4\nB 75 3 37 E 0\nB 75 4 37 E 1\nA 49 1 40 W 1\nA 49 2 40 W 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n",
+      "source": "results\\20260923-231438-hybrid-b0801d\\evaluators-screen\\replays\\reference_v2-vs-linear-big_empty_685baf0e797207b7-s28000.replay"
+    },
+    "neural__long": {
+      "bot": "neural",
+      "score": 43,
+      "init": "ID 236\nTEAM B\nMAP 60 40\nUNIT_LIMIT 64\n",
+      "id": 236,
+      "round": 278,
+      "block": "ROUND 278\nDIR N\nLENGTH 43\nUNIT_COUNT 64\nNUM_MSGS 0\n34 35 0 -1\n35 35 0 -1\n36 35 0 -1\n37 35 0 -1\n38 35 0 -1\n39 35 0 -1\n40 35 0 -1\n34 36 0 -1\n35 36 0 -1\n36 36 0 -1\n37 36 0 -1\n38 36 0 -1\n39 36 0 -1\n40 36 0 -1\n34 37 0 -1\n35 37 0 -1\n36 37 0 -1\n37 37 0 -1\n38 37 0 -1\n39 37 0 -1\n40 37 0 -1\n34 38 0 -1\n35 38 0 -1\n36 38 0 -1\n37 38 0 71\n38 38 0 38\n39 38 0 61\n40 38 0 112\n34 39 0 -1\n35 39 1 49\n36 39 1 6\n37 39 0 5\n38 39 0 176\n39 39 0 25\n40 39 0 136\n34 0 0 -1\n35 0 0 -1\n36 0 0 -1\n37 0 0 -1\n38 0 0 -1\n39 0 0 -1\n40 0 0 -1\n34 1 0 39\n35 1 0 -1\n36 1 0 -1\n37 1 0 -1\n38 1 0 -1\n39 1 0 -1\n40 1 0 -1\nDRAGON_BODIES 11\nB 236 37 38 N 1\nB 236 40 38 S 0\nB 236 37 39 N 0\nB 236 38 39 W 0\nB 236 39 39 W 0\nB 236 40 39 W 0\nB 125 36 0 E 0\nB 125 37 0 E 1\nB 70 35 1 N 1\nB 125 36 1 N 0\nB 7 39 1 S 0\n. . w . . . .\n. . . w . . .\n. . . . . . .\n. . . w . . .\n. w w . . . .\nw w w w w w w\n. . . . . . .\n. . . . . . .\n. . . w . . . .\n. . . . w . . .\n. . . . w . . .\n. . . w . . . .\n. w . . . . . .\n. . . . . . . .\n. . . . . . . .\n",
+      "source": "results\\20260923-231438-hybrid-b0801d\\evaluators-screen\\replays\\reference_v2-vs-neural-schooltime_8be7eda86910a849-s28003.replay"
+    },
+    "neural__dense": {
+      "bot": "neural",
+      "score": 41,
+      "init": "ID 99\nTEAM B\nMAP 64 64\nUNIT_LIMIT 64\n",
+      "id": 99,
+      "round": 300,
+      "block": "ROUND 300\nDIR N\nLENGTH 22\nUNIT_COUNT 64\nNUM_MSGS 0\n57 33 0 16\n58 33 0 144\n59 33 0 49\n60 33 0 255\n61 33 0 383\n62 33 0 204\n63 33 0 224\n57 34 0 225\n58 34 0 23\n59 34 0 538\n60 34 0 191\n61 34 0 376\n62 34 0 152\n63 34 0 215\n57 35 0 129\n58 35 0 102\n59 35 0 576\n60 35 0 445\n61 35 0 79\n62 35 0 430\n63 35 0 118\n57 36 0 279\n58 36 0 65\n59 36 0 436\n60 36 0 36\n61 36 0 513\n62 36 0 296\n63 36 0 8\n57 37 0 425\n58 37 0 430\n59 37 0 535\n60 37 0 386\n61 37 0 300\n62 37 0 425\n63 37 0 383\n57 38 1 319\n58 38 0 182\n59 38 0 181\n60 38 0 154\n61 38 0 320\n62 38 0 407\n63 38 0 113\n57 39 0 126\n58 39 1 256\n59 39 0 528\n60 39 0 416\n61 39 0 335\n62 39 0 65\n63 39 0 589\nDRAGON_BODIES 41\nB 58 57 33 S 0\nB 58 58 33 N 0\nA 186 59 33 N 0\nA 186 60 33 W 0\nA 186 61 33 W 0\nB 58 57 34 S 0\nB 58 58 34 N 0\nB 99 59 34 S 0\nB 99 60 34 W 0\nA 186 61 34 N 0\nA 186 62 34 W 0\nB 58 57 35 E 0\nB 58 58 35 N 0\nB 99 59 35 S 0\nB 99 60 35 N 0\nB 99 61 35 W 0\nB 99 62 35 W 0\nB 99 63 35 W 0\nB 99 57 36 S 0\nB 99 58 36 W 0\nB 99 59 36 W 0\nB 99 60 36 N 1\nA 52 61 36 E 0\nA 52 62 36 E 1\nB 99 57 37 E 0\nB 99 58 37 E 0\nB 99 59 37 E 0\nB 99 60 37 N 0\nA 52 61 37 N 0\nA 52 62 37 W 0\nA 52 63 37 W 0\nA 55 58 38 W 1\nA 55 59 38 W 0\nA 55 60 38 W 0\nA 55 61 38 W 0\nA 55 62 38 W 0\nA 52 63 38 N 0\nB 50 57 39 S 0\nA 55 60 39 E 0\nA 55 61 39 E 0\nA 55 62 39 N 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n",
+      "source": "results\\20260923-231438-hybrid-b0801d\\evaluators-screen\\replays\\reference_v2-vs-neural-big_empty_685baf0e797207b7-s28002.replay"
+    },
+    "neural__enemy_heads": {
+      "bot": "neural",
+      "score": 14,
+      "init": "ID 57\nTEAM B\nMAP 11 11\nUNIT_LIMIT 64\n",
+      "id": 57,
+      "round": 39,
+      "block": "ROUND 39\nDIR W\nLENGTH 3\nUNIT_COUNT 5\nNUM_MSGS 0\n1 1 0 4\n2 1 0 3\n3 1 0 11\n4 1 0 15\n5 1 0 1\n6 1 0 11\n7 1 0 2\n1 2 0 7\n2 2 0 14\n3 2 0 4\n4 2 0 18\n5 2 0 6\n6 2 0 4\n7 2 0 10\n1 3 0 15\n2 3 0 10\n3 3 0 15\n4 3 0 10\n5 3 0 9\n6 3 0 17\n7 3 0 11\n1 4 0 7\n2 4 0 13\n3 4 0 4\n4 4 0 7\n5 4 0 7\n6 4 0 12\n7 4 0 9\n1 5 0 8\n2 5 0 4\n3 5 0 5\n4 5 0 8\n5 5 0 5\n6 5 0 8\n7 5 0 5\n1 6 0 10\n2 6 0 2\n3 6 0 9\n4 6 0 12\n5 6 0 7\n6 6 0 7\n7 6 0 4\n1 7 0 11\n2 7 0 6\n3 7 0 11\n4 7 0 17\n5 7 0 9\n6 7 0 10\n7 7 0 15\nDRAGON_BODIES 38\nA 61 2 1 S 0\nA 35 5 1 W 1\nA 35 6 1 W 0\nA 35 7 1 W 0\nA 61 1 2 W 1\nA 61 2 2 W 0\nA 41 3 2 E 0\nA 41 4 2 E 1\nB 63 7 2 E 0\nA 62 1 3 S 0\nA 62 2 3 W 0\nA 69 3 3 S 0\nB 57 5 3 S 0\nA 68 7 3 W 1\nA 62 1 4 S 1\nA 69 3 4 S 1\nB 57 4 4 W 1\nB 57 5 4 W 0\nA 32 7 4 N 1\nA 44 1 5 W 1\nA 44 2 5 W 0\nA 67 3 5 N 1\nA 54 4 5 S 0\nA 54 5 5 W 0\nA 55 6 5 S 0\nA 32 7 5 N 0\nA 70 1 6 W 1\nA 70 2 6 W 0\nA 67 3 6 N 0\nA 54 4 6 S 1\nA 55 5 6 W 1\nA 55 6 6 W 0\nA 65 7 6 N 1\nA 49 1 7 S 0\nA 67 3 7 N 0\nA 36 5 7 E 0\nA 36 6 7 E 1\nA 65 7 7 N 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n",
+      "source": "results\\20260923-231438-hybrid-b0801d\\evaluators-screen\\replays\\reference_v2-vs-neural-arena_728547b8376892d9-s28001.replay"
+    },
+    "neural__population": {
+      "bot": "neural",
+      "score": 64,
+      "init": "ID 36\nTEAM A\nMAP 64 64\nUNIT_LIMIT 64\n",
+      "id": 36,
+      "round": 62,
+      "block": "ROUND 62\nDIR N\nLENGTH 2\nUNIT_COUNT 64\nNUM_MSGS 0\n6 18 0 21\n7 18 0 147\n8 18 0 525\n9 18 0 130\n10 18 0 683\n11 18 0 640\n12 18 0 552\n6 19 0 465\n7 19 0 24\n8 19 0 479\n9 19 0 645\n10 19 0 70\n11 19 0 409\n12 19 0 599\n6 20 0 229\n7 20 0 533\n8 20 0 667\n9 20 0 597\n10 20 0 156\n11 20 0 30\n12 20 0 131\n6 21 0 453\n7 21 0 422\n8 21 0 555\n9 21 0 510\n10 21 0 184\n11 21 0 192\n12 21 0 630\n6 22 0 62\n7 22 0 248\n8 22 0 610\n9 22 0 585\n10 22 0 277\n11 22 0 292\n12 22 0 12\n6 23 0 651\n7 23 0 67\n8 23 0 191\n9 23 0 224\n10 23 0 664\n11 23 0 518\n12 23 0 4\n6 24 0 364\n7 24 0 664\n8 24 0 143\n9 24 0 593\n10 24 0 62\n11 24 0 194\n12 24 0 355\nDRAGON_BODIES 5\nA 109 6 19 W 1\nA 109 7 19 W 0\nA 36 9 21 N 1\nA 36 9 22 N 0\nA 12 10 24 N 1\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n",
+      "source": "results\\20260923-231438-hybrid-b0801d\\evaluators-screen\\replays\\neural-vs-reference_v2-big_empty_685baf0e797207b7-s28000.replay"
+    }
+  },
+  "hashes": {
+    "heuristic": "05b8282e08cc9cc4",
+    "linear": "69382825b699723d",
+    "neural": "8b30b4590f0f6e5c"
+  }
+}

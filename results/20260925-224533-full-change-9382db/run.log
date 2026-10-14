@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\full_change_test.py", line 115, in <module>
+    screen(args.experiment)
+    ~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\full_change_test.py", line 85, in screen
+    games = guarded.stage(out, "full", [bots / "candidate"], opponents,
+                          maps, [plan["seed"]], plan["workers"], True)
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\guarded.py", line 38, in stage
+    games = bounded.run(jobs, workers, folder, name)
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\bounded.py", line 49, in run
+    raise RuntimeError(f"Match failed; partial results saved: {game}")
+RuntimeError: Match failed; partial results saved: {'map': 'queen_of_spades', 'bot_a': 'candidate', 'bot_b': 'v61b-goal-bot', 'seed': 53001, 'winner': None, 'reason': 'error', 'error': 'ToolError: C:/Users/Sea7/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT.LLVM_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: reopening C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-224533-full-change-9382db\\bots\\candidate\\.unswbc-build\\bot.exe: Permission denied\nC:/Users/Sea7/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT.LLVM_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: final link failed: Permission denied\ncollect2.exe: error: ld returned 1 exit status\n', 'deaths': {}, 'block': ['v61b-goal-bot', 'queen_of_spades', 53001], 'worker': {'pid': 24252, 'rss_bytes': 49627136}}

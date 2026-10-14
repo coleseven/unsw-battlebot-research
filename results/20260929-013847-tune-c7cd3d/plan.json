@@ -1,0 +1,189 @@
+{
+  "base": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10b-bot",
+  "base_hash": "196ab7f8cc123d39",
+  "params": "params.hpp",
+  "space": {
+    "G_FOOD": {
+      "low": 0.5,
+      "high": 6.0,
+      "scale": [
+        "W_PEARL",
+        "W_MEM_PEARL"
+      ]
+    },
+    "G_SPAWN": {
+      "low": 0.25,
+      "high": 3.0,
+      "scale": [
+        "W_SPAWN"
+      ]
+    },
+    "G_V3": {
+      "low": 0.5,
+      "high": 5.0,
+      "scale": [
+        "W_V3"
+      ]
+    },
+    "G_ATTACK": {
+      "low": 0.5,
+      "high": 5.0,
+      "scale": [
+        "W_ATTACK",
+        "W_TRADE"
+      ]
+    },
+    "G_HEADSAFE": {
+      "low": 0.25,
+      "high": 3.0,
+      "scale": [
+        "W_HEAD_ENEMY",
+        "W_HEAD_TEAM",
+        "W_AHEAD"
+      ]
+    },
+    "G_TRAP": {
+      "low": 0.0,
+      "high": 1.5,
+      "scale": [
+        "W_TRAP",
+        "W_LETHAL"
+      ]
+    },
+    "G_FEED": {
+      "low": 0.25,
+      "high": 4.0,
+      "scale": [
+        "W_CASH"
+      ]
+    },
+    "FEED_ROUND": [
+      340,
+      470,
+      "int"
+    ],
+    "SPLIT_UNTIL_LARGE": [
+      200,
+      460,
+      "int"
+    ],
+    "SPLIT_UNTIL_SMALL": [
+      300,
+      480,
+      "int"
+    ],
+    "CAP": [
+      32,
+      64,
+      "int"
+    ],
+    "FLOOR": [
+      8,
+      36,
+      "int"
+    ],
+    "CPP_KB_ROUND": [
+      200,
+      420,
+      "int"
+    ],
+    "CPP_KB_MINLEN": [
+      4,
+      16,
+      "int"
+    ],
+    "CPP_BIG_FEED_ROUND": [
+      340,
+      480,
+      "int"
+    ],
+    "CPP_BIG_FEED_MARGIN": [
+      1,
+      12,
+      "int"
+    ],
+    "CPP_DEADEND_PEN": [
+      0.0,
+      150.0
+    ]
+  },
+  "start": {
+    "G_FOOD": 1.0,
+    "G_SPAWN": 1.0,
+    "G_V3": 1.0,
+    "G_ATTACK": 1.0,
+    "G_HEADSAFE": 1.0,
+    "G_TRAP": 1.0,
+    "G_FEED": 1.0,
+    "FEED_ROUND": 403.0,
+    "SPLIT_UNTIL_LARGE": 321.0,
+    "SPLIT_UNTIL_SMALL": 450.0,
+    "CAP": 56.0,
+    "FLOOR": 24.0,
+    "CPP_KB_ROUND": 300.0,
+    "CPP_KB_MINLEN": 8.0,
+    "CPP_BIG_FEED_ROUND": 430.0,
+    "CPP_BIG_FEED_MARGIN": 4.0,
+    "CPP_DEADEND_PEN": 20.0
+  },
+  "base_values": {
+    "W_PEARL": 179.4,
+    "W_MEM_PEARL": 44.85,
+    "W_SPAWN": 37.206,
+    "W_V3": 24.705,
+    "W_ATTACK": 419.295,
+    "W_TRADE": 27.953,
+    "W_HEAD_ENEMY": 105.684,
+    "W_HEAD_TEAM": 105.684,
+    "W_AHEAD": 35.228,
+    "W_TRAP": 5.223,
+    "W_LETHAL": 52.23,
+    "W_CASH": 75.736
+  },
+  "opponents": [
+    "cpp_nicked_v75",
+    "cpp_leviathan3",
+    "v7-base-bot",
+    "nicked_v44"
+  ],
+  "maps": [
+    "trophy",
+    "queen_of_spades",
+    "default",
+    "Devil",
+    "Trauma",
+    "schooltime",
+    "Autarky",
+    "Prisoners_Dilemma",
+    "Slithery_Fight",
+    "Portals",
+    "Autarky_p1",
+    "Devil_p1",
+    "Portals_p1",
+    "Prisoners_Dilemma_p1",
+    "Slithery_Fight_p1",
+    "Trauma_p1",
+    "default_p1",
+    "queen_of_spades_p1",
+    "schooltime_p1",
+    "trophy_p1"
+  ],
+  "seed": 111001,
+  "seeds_per_gen": 1,
+  "objective": "aligned",
+  "worst_weight": 0.0,
+  "backend": "cmaes-lra",
+  "eval_mean": true,
+  "map_sample": "pair",
+  "warm_from": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260927-194503-tune-ccc4cd",
+  "warm_mean": "base",
+  "fixed": {
+    "CPP_DEADEND_LOOK": 12,
+    "CPP_DEADEND_PEN": 20.0
+  },
+  "unswbc": "1.1.0",
+  "popsize": 12,
+  "generations": 40,
+  "sigma": 0.25,
+  "deterministic_v6_clock": true
+}

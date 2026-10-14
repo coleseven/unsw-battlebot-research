@@ -1,0 +1,71 @@
+{
+  "games": [
+    {
+      "map": "Trauma",
+      "side": "A",
+      "changed_actions": true,
+      "first_changed_action_index": 34,
+      "old_portal_steps": 12,
+      "new_portal_steps": 6,
+      "old_pearls": 409,
+      "new_pearls": 474,
+      "winner": "B"
+    },
+    {
+      "map": "Trauma",
+      "side": "B",
+      "changed_actions": true,
+      "first_changed_action_index": 35,
+      "old_portal_steps": 18,
+      "new_portal_steps": 5,
+      "old_pearls": 464,
+      "new_pearls": 475,
+      "winner": "A"
+    },
+    {
+      "map": "default",
+      "side": "A",
+      "changed_actions": true,
+      "first_changed_action_index": 357,
+      "old_portal_steps": 0,
+      "new_portal_steps": 13,
+      "old_pearls": 165,
+      "new_pearls": 375,
+      "winner": "B"
+    },
+    {
+      "map": "default",
+      "side": "B",
+      "changed_actions": true,
+      "first_changed_action_index": 907,
+      "old_portal_steps": 0,
+      "new_portal_steps": 3,
+      "old_pearls": 37,
+      "new_pearls": 133,
+      "winner": "A"
+    },
+    {
+      "map": "queen_of_spades",
+      "side": "A",
+      "changed_actions": true,
+      "first_changed_action_index": 145,
+      "old_portal_steps": 0,
+      "new_portal_steps": 4,
+      "old_pearls": 10,
+      "new_pearls": 7,
+      "winner": "B"
+    },
+    {
+      "map": "queen_of_spades",
+      "side": "B",
+      "changed_actions": true,
+      "first_changed_action_index": 298,
+      "old_portal_steps": 0,
+      "new_portal_steps": 5,
+      "old_pearls": 9,
+      "new_pearls": 148,
+      "winner": "A"
+    }
+  ],
+  "changed_action_games": 6
+}

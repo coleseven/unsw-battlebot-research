@@ -1,0 +1,103 @@
+{
+  "base": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10q-bot",
+  "base_hash": "d671d2eeb7c0ce7d",
+  "params": "params.hpp",
+  "variants": {
+    "base": {},
+    "v7_weights": {
+      "W_V3": 10.0,
+      "W_PEARL": 80.0,
+      "W_MEM_PEARL": 20.0,
+      "W_SPAWN": 30.0,
+      "W_TRAP": 10.0,
+      "W_LETHAL": 100.0,
+      "W_ATTACK": 150.0,
+      "W_TRADE": 10.0,
+      "W_HEAD_ENEMY": 60.0,
+      "W_HEAD_TEAM": 60.0,
+      "W_AHEAD": 20.0,
+      "W_UNSEEN": 8.0,
+      "W_STALE": 3.0,
+      "W_GOAL": 3.0,
+      "W_FAN_EARLY": 8.0,
+      "W_FAN_LATE": 1.5,
+      "W_HUB": 60.0,
+      "W_CASH": 80.0,
+      "LEARN_EVERY": 10,
+      "POOR_MULT": 2.5,
+      "FEED_ROUND": 410,
+      "SPLIT_UNTIL_LARGE": 300,
+      "CPP_TRAP_OPEN": 1.0
+    },
+    "v7_v3": {
+      "W_V3": 10.0
+    },
+    "v7_food": {
+      "W_PEARL": 80.0,
+      "W_MEM_PEARL": 20.0,
+      "W_SPAWN": 30.0
+    },
+    "v7_safety": {
+      "W_TRAP": 10.0,
+      "W_LETHAL": 100.0,
+      "CPP_TRAP_OPEN": 1.0
+    },
+    "v7_fight": {
+      "W_ATTACK": 150.0,
+      "W_TRADE": 10.0,
+      "W_HEAD_ENEMY": 60.0,
+      "W_HEAD_TEAM": 60.0,
+      "W_AHEAD": 20.0
+    },
+    "v7_explore": {
+      "W_UNSEEN": 8.0,
+      "W_STALE": 3.0,
+      "W_GOAL": 3.0,
+      "W_FAN_EARLY": 8.0,
+      "W_FAN_LATE": 1.5,
+      "LEARN_EVERY": 10,
+      "W_HUB": 60.0
+    },
+    "no_kb_feed": {
+      "CPP_KING_BEACON": 0,
+      "CPP_BIG_FEED": 0
+    }
+  },
+  "opponents": [
+    "cpp_nicked_v92",
+    "cpp_nicked_v75",
+    "cpp_leviathan3",
+    "v7-base-bot",
+    "nicked_v44",
+    "nicked_lab"
+  ],
+  "official_maps": [
+    "default_small",
+    "trophy",
+    "queen_of_spades",
+    "default",
+    "Devil",
+    "stronghold",
+    "Trauma",
+    "schooltime",
+    "big_empty",
+    "arena",
+    "Colosseum"
+  ],
+  "extra_maps": [
+    "Australia",
+    "Islands",
+    "Maze",
+    "Stripes",
+    "Tower_Defense",
+    "Around_UNSW",
+    "weakhold"
+  ],
+  "seeds": [
+    421001,
+    421002
+  ],
+  "objective": "aligned",
+  "unswbc": "1.1.0",
+  "deterministic_v6_clock": true
+}

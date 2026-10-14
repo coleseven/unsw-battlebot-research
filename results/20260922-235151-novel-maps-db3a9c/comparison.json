@@ -1,0 +1,25 @@
+{
+  "wins": 124,
+  "draws": 0,
+  "losses": 4,
+  "score": 0.96875,
+  "family_ci95": [
+    0.9296875,
+    1.0
+  ],
+  "pair_ci95": [
+    0.9375,
+    0.9921875
+  ],
+  "map_scores": {
+    "open_small": 1.0,
+    "open_large": 0.8125,
+    "baffles_small": 1.0,
+    "baffles_large": 1.0,
+    "dense_small": 1.0,
+    "dense_large": 1.0,
+    "scarce_small": 1.0,
+    "scarce_large": 0.9375
+  },
+  "transfer_gate": true
+}

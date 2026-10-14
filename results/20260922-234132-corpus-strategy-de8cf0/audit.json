@@ -1,0 +1,7311 @@
+{
+  "index_hash": "757aa0dff2552509",
+  "battles": [
+    {
+      "battle": 41504,
+      "at": "2026-09-22T12:30:46.455Z",
+      "ranked": true,
+      "a": {
+        "id": 213,
+        "name": "Sponge(Albert and Bob)",
+        "elo": 2004
+      },
+      "b": {
+        "id": 545,
+        "name": "dev test 1 :P",
+        "elo": 2005
+      },
+      "outcome": "a",
+      "submission_a": 1983,
+      "submission_b": 1302,
+      "games": [
+        {
+          "game": 41504,
+          "winner": "b",
+          "map": "Big_Empty",
+          "file": "41504.replay"
+        },
+        {
+          "game": 41505,
+          "winner": "a",
+          "map": "Default",
+          "file": "41505.replay"
+        },
+        {
+          "game": 41506,
+          "winner": "a",
+          "map": "Arena",
+          "file": "41506.replay"
+        },
+        {
+          "game": 41507,
+          "winner": "b",
+          "map": "trophy",
+          "file": "41507.replay"
+        },
+        {
+          "game": 41508,
+          "winner": "a",
+          "map": "schooltime",
+          "file": "41508.replay"
+        }
+      ]
+    },
+    {
+      "battle": 40799,
+      "at": "2026-09-22T12:12:44.701Z",
+      "ranked": true,
+      "a": {
+        "id": 213,
+        "name": "Sponge(Albert and Bob)",
+        "elo": 1999
+      },
+      "b": {
+        "id": 70,
+        "name": "cheji bt",
+        "elo": 1992
+      },
+      "outcome": "b",
+      "submission_a": 1747,
+      "submission_b": 1717,
+      "games": [
+        {
+          "game": 40799,
+          "winner": "b",
+          "map": "trophy",
+          "file": "40799.replay"
+        },
+        {
+          "game": 40800,
+          "winner": "b",
+          "map": "Big_Empty",
+          "file": "40800.replay"
+        },
+        {
+          "game": 40801,
+          "winner": "a",
+          "map": "Arena",
+          "file": "40801.replay"
+        },
+        {
+          "game": 40802,
+          "winner": "b",
+          "map": "Default",
+          "file": "40802.replay"
+        },
+        {
+          "game": 40803,
+          "winner": "a",
+          "map": "default_small",
+          "file": "40803.replay"
+        }
+      ]
+    },
+    {
+      "battle": 38441,
+      "at": "2026-09-22T11:10:32.142Z",
+      "ranked": true,
+      "a": {
+        "id": 545,
+        "name": "dev test 1 :P",
+        "elo": 2015
+      },
+      "b": {
+        "id": 213,
+        "name": "Sponge(Albert and Bob)",
+        "elo": 1977
+      },
+      "outcome": "b",
+      "submission_a": 1302,
+      "submission_b": 1747,
+      "games": [
+        {
+          "game": 38441,
+          "winner": "b",
+          "map": "default_small",
+          "file": "38441.replay"
+        },
+        {
+          "game": 38442,
+          "winner": "b",
+          "map": "Default",
+          "file": "38442.replay"
+        },
+        {
+          "game": 38443,
+          "winner": "a",
+          "map": "Arena",
+          "file": "38443.replay"
+        },
+        {
+          "game": 38444,
+          "winner": "b",
+          "map": "trophy",
+          "file": "38444.replay"
+        },
+        {
+          "game": 38445,
+          "winner": "a",
+          "map": "schooltime",
+          "file": "38445.replay"
+        }
+      ]
+    },
+    {
+      "battle": 41116,
+      "at": "2026-09-22T12:19:40.582Z",
+      "ranked": true,
+      "a": {
+        "id": 213,
+        "name": "Sponge(Albert and Bob)",
+        "elo": 1973
+      },
+      "b": {
+        "id": 70,
+        "name": "cheji bt",
+        "elo": 1991
+      },
+      "outcome": "a",
+      "submission_a": 1983,
+      "submission_b": 1717,
+      "games": [
+        {
+          "game": 41116,
+          "winner": "a",
+          "map": "Arena",
+          "file": "41116.replay"
+        },
+        {
+          "game": 41117,
+          "winner": "a",
+          "map": "schooltime",
+          "file": "41117.replay"
+        },
+        {
+          "game": 41118,
+          "winner": "a",
+          "map": "queen_of_spades",
+          "file": "41118.replay"
+        },
+        {
+          "game": 41119,
+          "winner": "a",
+          "map": "default_small",
+          "file": "41119.replay"
+        },
+        {
+          "game": 41120,
+          "winner": "b",
+          "map": "Big_Empty",
+          "file": "41120.replay"
+        }
+      ]
+    },
+    {
+      "battle": 40304,
+      "at": "2026-09-22T12:06:55.391Z",
+      "ranked": true,
+      "a": {
+        "id": 213,
+        "name": "Sponge(Albert and Bob)",
+        "elo": 1971
+      },
+      "b": {
+        "id": 27,
+        "name": "PPP",
+        "elo": 1961
+      },
+      "outcome": "a",
+      "submission_a": 1747,
+      "submission_b": 1920,
+      "games": [
+        {
+          "game": 40304,
+          "winner": "b",
+          "map": "Arena",
+          "file": "40304.replay"
+        },
+        {
+          "game": 40305,
+          "winner": "a",
+          "map": "Default",
+          "file": "40305.replay"
+        },
+        {
+          "game": 40306,
+          "winner": "a",
+          "map": "default_small",
+          "file": "40306.replay"
+        },
+        {
+          "game": 40307,
+          "winner": "a",
+          "map": "Big_Empty",
+          "file": "40307.replay"
+        },
+        {
+          "game": 40308,
+          "winner": "a",
+          "map": "schooltime",
+          "file": "40308.replay"
+        }
+      ]
+    },
+    {
+      "battle": 43448,
+      "at": "2026-09-22T13:43:09.098Z",
+      "ranked": true,
+      "a": {
+        "id": 213,
+        "name": "Sponge(Albert and Bob)",
+        "elo": 1954
+      },
+      "b": {
+        "id": 545,
+        "name": "dev test 1 :P",
+        "elo": 2070
+      },
+      "outcome": "b",
+      "submission_a": 1983,
+      "submission_b": 2050,
+      "games": [
+        {
+          "game": 43448,
+          "winner": "b",
+          "map": "trophy",
+          "file": "43448.replay"
+        },
+        {
+          "game": 43449,
+          "winner": "b",
+          "map": "queen_of_spades",
+          "file": "43449.replay"
+        },
+        {
+          "game": 43450,
+          "winner": "b",
+          "map": "Devil",
+          "file": "43450.replay"
+        },
+        {
+          "game": 43451,
+          "winner": "b",
+          "map": "default_small",
+          "file": "43451.replay"
+        },
+        {
+          "game": 43452,
+          "winner": "b",
+          "map": "default",
+          "file": "43452.replay"
+        }
+      ]
+    },
+    {
+      "battle": 42818,
+      "at": "2026-09-22T13:19:56.375Z",
+      "ranked": true,
+      "a": {
+        "id": 70,
+        "name": "cheji bt",
+        "elo": 1949
+      },
+      "b": {
+        "id": 545,
+        "name": "dev test 1 :P",
+        "elo": 1991
+      },
+      "outcome": "b",
+      "submission_a": 1717,
+      "submission_b": 1302,
+      "games": [
+        {
+          "game": 42818,
+          "winner": "b",
+          "map": "queen_of_spades",
+          "file": "42818.replay"
+        },
+        {
+          "game": 42819,
+          "winner": "b",
+          "map": "default",
+          "file": "42819.replay"
+        },
+        {
+          "game": 42820,
+          "winner": "a",
+          "map": "schooltime",
+          "file": "42820.replay"
+        },
+        {
+          "game": 42821,
+          "winner": "a",
+          "map": "Devil",
+          "file": "42821.replay"
+        },
+        {
+          "game": 42822,
+          "winner": "b",
+          "map": "trophy",
+          "file": "42822.replay"
+        }
+      ]
+    },
+    {
+      "battle": 38923,
+      "at": "2026-09-22T11:38:59.791Z",
+      "ranked": true,
+      "a": {
+        "id": 280,
+        "name": "SHINK AI 6500",
+        "elo": 1937
+      },
+      "b": {
+        "id": 213,
+        "name": "Sponge(Albert and Bob)",
+        "elo": 1964
+      },
+      "outcome": "b",
+      "submission_a": 1744,
+      "submission_b": 1747,
+      "games": [
+        {
+          "game": 38923,
+          "winner": "b",
+          "map": "Big_Empty",
+          "file": "38923.replay"
+        },
+        {
+          "game": 38924,
+          "winner": "b",
+          "map": "Default",
+          "file": "38924.replay"
+        },
+        {
+          "game": 38925,
+          "winner": "a",
+          "map": "Colosseum",
+          "file": "38925.replay"
+        },
+        {
+          "game": 38926,
+          "winner": "b",
+          "map": "default_small",
+          "file": "38926.replay"
+        },
+        {
+          "game": 38927,
+          "winner": "a",
+          "map": "trophy",
+          "file": "38927.replay"
+        }
+      ]
+    },
+    {
+      "battle": 43891,
+      "at": "2026-09-22T14:07:26.199Z",
+      "ranked": true,
+      "a": {
+        "id": 213,
+        "name": "Sponge(Albert and Bob)",
+        "elo": 1989
+      },
+      "b": {
+        "id": 206,
+        "name": "Stockfish",
+        "elo": 1935
+      },
+      "outcome": "a",
+      "submission_a": 1983,
+      "submission_b": 2057,
+      "games": [
+        {
+          "game": 43891,
+          "winner": "a",
+          "map": "default",
+          "file": "43891.replay"
+        },
+        {
+          "game": 43892,
+          "winner": "a",
+          "map": "Devil",
+          "file": "43892.replay"
+        },
+        {
+          "game": 43893,
+          "winner": "b",
+          "map": "trophy",
+          "file": "43893.replay"
+        },
+        {
+          "game": 43894,
+          "winner": "a",
+          "map": "big_empty",
+          "file": "43894.replay"
+        },
+        {
+          "game": 43895,
+          "winner": "a",
+          "map": "default_small",
+          "file": "43895.replay"
+        }
+      ]
+    },
+    {
+      "battle": 44401,
+      "at": "2026-09-22T14:13:37.571Z",
+      "ranked": true,
+      "a": {
+        "id": 91,
+        "name": "SSS",
+        "elo": 1981
+      },
+      "b": {
+        "id": 27,
+        "name": "PPP",
+        "elo": 1927
+      },
+      "outcome": "a",
+      "submission_a": 712,
+      "submission_b": 1920,
+      "games": [
+        {
+          "game": 44401,
+          "winner": "b",
+          "map": "default_small",
+          "file": "44401.replay"
+        },
+        {
+          "game": 44402,
+          "winner": "a",
+          "map": "big_empty",
+          "file": "44402.replay"
+        },
+        {
+          "game": 44403,
+          "winner": "b",
+          "map": "queen_of_spades",
+          "file": "44403.replay"
+        },
+        {
+          "game": 44404,
+          "winner": "a",
+          "map": "big_empty",
+          "file": "44404.replay"
+        },
+        {
+          "game": 44405,
+          "winner": "a",
+          "map": "Devil",
+          "file": "44405.replay"
+        }
+      ]
+    },
+    {
+      "battle": 40314,
+      "at": "2026-09-22T12:08:05.908Z",
+      "ranked": true,
+      "a": {
+        "id": 70,
+        "name": "cheji bt",
+        "elo": 1969
+      },
+      "b": {
+        "id": 280,
+        "name": "SHINK AI 6500",
+        "elo": 1927
+      },
+      "outcome": "a",
+      "submission_a": 1717,
+      "submission_b": 1744,
+      "games": [
+        {
+          "game": 40314,
+          "winner": "b",
+          "map": "schooltime",
+          "file": "40314.replay"
+        },
+        {
+          "game": 40315,
+          "winner": "a",
+          "map": "default_small",
+          "file": "40315.replay"
+        },
+        {
+          "game": 40316,
+          "winner": "a",
+          "map": "trophy",
+          "file": "40316.replay"
+        },
+        {
+          "game": 40317,
+          "winner": "a",
+          "map": "Arena",
+          "file": "40317.replay"
+        },
+        {
+          "game": 40318,
+          "winner": "a",
+          "map": "Default",
+          "file": "40318.replay"
+        }
+      ]
+    },
+    {
+      "battle": 39408,
+      "at": "2026-09-22T11:50:05.007Z",
+      "ranked": true,
+      "a": {
+        "id": 27,
+        "name": "PPP",
+        "elo": 1926
+      },
+      "b": {
+        "id": 280,
+        "name": "SHINK AI 6500",
+        "elo": 1974
+      },
+      "outcome": "a",
+      "submission_a": 1920,
+      "submission_b": 1744,
+      "games": [
+        {
+          "game": 39408,
+          "winner": "a",
+          "map": "Arena",
+          "file": "39408.replay"
+        },
+        {
+          "game": 39409,
+          "winner": "b",
+          "map": "schooltime",
+          "file": "39409.replay"
+        },
+        {
+          "game": 39410,
+          "winner": "a",
+          "map": "Colosseum",
+          "file": "39410.replay"
+        },
+        {
+          "game": 39411,
+          "winner": "a",
+          "map": "Big_Empty",
+          "file": "39411.replay"
+        },
+        {
+          "game": 39412,
+          "winner": "a",
+          "map": "queen_of_spades",
+          "file": "39412.replay"
+        }
+      ]
+    }
+  ],
+  "games": [
+    {
+      "battle": 41504,
+      "game": 41504,
+      "map": "Big_Empty",
+      "file_hash": "2099a80db7602d44",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 64,
+            "actions": 26223,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 25840,
+            "sprint_actions": 137,
+            "extra_steps": 286,
+            "max_sprint_steps": 6,
+            "splits": 383,
+            "late_splits": 17,
+            "deaths_O": 5,
+            "deaths_H": 344,
+            "deaths_S": 1
+          },
+          "split_lengths": {
+            "6": 41,
+            "4": 190,
+            "5": 55,
+            "7": 21,
+            "8": 14,
+            "16": 4,
+            "14": 9,
+            "15": 3,
+            "12": 5,
+            "9": 7,
+            "10": 8,
+            "11": 1,
+            "23": 4,
+            "20": 5,
+            "18": 4,
+            "26": 2,
+            "21": 3,
+            "13": 4,
+            "24": 2,
+            "31": 1
+          },
+          "child_sizes": {
+            "4": 39,
+            "2": 225,
+            "3": 54,
+            "5": 21,
+            "12": 7,
+            "10": 2,
+            "14": 2,
+            "21": 4,
+            "7": 4,
+            "18": 4,
+            "24": 2,
+            "16": 3,
+            "19": 3,
+            "13": 2,
+            "11": 4,
+            "8": 2,
+            "6": 2,
+            "22": 2,
+            "29": 1
+          },
+          "split_phases": {
+            "0-49": 28,
+            "50-99": 52,
+            "100-149": 47,
+            "150-199": 49,
+            "200-249": 45,
+            "250-299": 38,
+            "300-349": 56,
+            "350-399": 36,
+            "400-449": 15,
+            "450-499": 17
+          },
+          "won": false
+        },
+        "B": {
+          "counts": {
+            "max_population": 64,
+            "actions": 29899,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 432,
+            "late_splits": 30,
+            "move_actions": 29467,
+            "sprint_actions": 156,
+            "extra_steps": 328,
+            "max_sprint_steps": 7,
+            "deaths_H": 344,
+            "deaths_S": 15,
+            "deaths_O": 12
+          },
+          "split_lengths": {
+            "6": 53,
+            "4": 153,
+            "8": 25,
+            "5": 54,
+            "7": 35,
+            "11": 13,
+            "9": 20,
+            "12": 8,
+            "10": 19,
+            "17": 6,
+            "15": 11,
+            "16": 3,
+            "14": 6,
+            "20": 3,
+            "13": 10,
+            "19": 2,
+            "18": 4,
+            "21": 2,
+            "23": 1,
+            "22": 2,
+            "33": 1,
+            "25": 1
+          },
+          "child_sizes": {
+            "2": 383,
+            "4": 6,
+            "16": 2,
+            "13": 3,
+            "11": 6,
+            "21": 1,
+            "12": 2,
+            "8": 7,
+            "9": 4,
+            "7": 6,
+            "5": 3,
+            "20": 2,
+            "18": 1,
+            "31": 1,
+            "23": 1,
+            "10": 2,
+            "15": 1,
+            "6": 1
+          },
+          "split_phases": {
+            "0-49": 52,
+            "50-99": 30,
+            "100-149": 47,
+            "150-199": 54,
+            "200-249": 48,
+            "250-299": 39,
+            "300-349": 56,
+            "350-399": 41,
+            "400-449": 35,
+            "450-499": 30
+          },
+          "won": true
+        }
+      }
+    },
+    {
+      "battle": 41504,
+      "game": 41505,
+      "map": "Default",
+      "file_hash": "1287a1822b614e5a",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 27,
+            "actions": 8385,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 162,
+            "late_splits": 7,
+            "move_actions": 8223,
+            "sprint_actions": 15,
+            "extra_steps": 23,
+            "max_sprint_steps": 4,
+            "deaths_H": 107,
+            "deaths_W": 19,
+            "deaths_S": 7,
+            "deaths_O": 23
+          },
+          "split_lengths": {
+            "4": 139,
+            "5": 6,
+            "6": 5,
+            "8": 2,
+            "26": 1,
+            "24": 1,
+            "22": 1,
+            "20": 1,
+            "18": 1,
+            "16": 1,
+            "14": 1,
+            "12": 1,
+            "10": 1,
+            "7": 1
+          },
+          "child_sizes": {
+            "2": 143,
+            "3": 6,
+            "4": 5,
+            "6": 1,
+            "24": 1,
+            "22": 1,
+            "20": 1,
+            "18": 1,
+            "16": 1,
+            "14": 1,
+            "5": 1
+          },
+          "split_phases": {
+            "0-49": 11,
+            "50-99": 13,
+            "100-149": 16,
+            "150-199": 30,
+            "200-249": 15,
+            "250-299": 14,
+            "300-349": 19,
+            "350-399": 28,
+            "400-449": 9,
+            "450-499": 7
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 42,
+            "actions": 13654,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 187,
+            "late_splits": 15,
+            "move_actions": 13467,
+            "sprint_actions": 24,
+            "extra_steps": 29,
+            "max_sprint_steps": 4,
+            "deaths_H": 125,
+            "deaths_W": 12,
+            "deaths_O": 19,
+            "deaths_S": 3
+          },
+          "split_lengths": {
+            "4": 173,
+            "7": 3,
+            "5": 4,
+            "6": 4,
+            "10": 1,
+            "8": 1,
+            "9": 1
+          },
+          "child_sizes": {
+            "2": 187
+          },
+          "split_phases": {
+            "0-49": 13,
+            "50-99": 12,
+            "100-149": 14,
+            "150-199": 20,
+            "200-249": 20,
+            "250-299": 28,
+            "300-349": 21,
+            "350-399": 35,
+            "400-449": 9,
+            "450-499": 15
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 41504,
+      "game": 41506,
+      "map": "Arena",
+      "file_hash": "d5c9983c8b556268",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 10,
+            "actions": 84,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 71,
+            "sprint_actions": 4,
+            "extra_steps": 10,
+            "max_sprint_steps": 4,
+            "splits": 13,
+            "late_splits": 0,
+            "deaths_H": 4
+          },
+          "split_lengths": {
+            "4": 13
+          },
+          "child_sizes": {
+            "2": 13
+          },
+          "split_phases": {
+            "0-49": 13
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 4,
+            "actions": 36,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 33,
+            "sprint_actions": 5,
+            "extra_steps": 13,
+            "max_sprint_steps": 4,
+            "splits": 3,
+            "late_splits": 0,
+            "deaths_H": 4
+          },
+          "split_lengths": {
+            "4": 3
+          },
+          "child_sizes": {
+            "2": 3
+          },
+          "split_phases": {
+            "0-49": 3
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 41504,
+      "game": 41507,
+      "map": "trophy",
+      "file_hash": "7f2b0ddfa6cd3f7e",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 11,
+            "actions": 2462,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 2407,
+            "sprint_actions": 4,
+            "extra_steps": 6,
+            "max_sprint_steps": 4,
+            "splits": 55,
+            "late_splits": 0,
+            "deaths_W": 5,
+            "deaths_H": 49,
+            "deaths_S": 3
+          },
+          "split_lengths": {
+            "4": 55
+          },
+          "child_sizes": {
+            "2": 55
+          },
+          "split_phases": {
+            "0-49": 9,
+            "50-99": 7,
+            "100-149": 9,
+            "150-199": 11,
+            "200-249": 11,
+            "250-299": 7,
+            "300-349": 1
+          },
+          "won": false
+        },
+        "B": {
+          "counts": {
+            "max_population": 64,
+            "actions": 22205,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 21842,
+            "sprint_actions": 20,
+            "extra_steps": 23,
+            "max_sprint_steps": 3,
+            "splits": 363,
+            "late_splits": 6,
+            "deaths_H": 143,
+            "deaths_O": 68,
+            "deaths_W": 88,
+            "deaths_S": 6
+          },
+          "split_lengths": {
+            "4": 328,
+            "5": 20,
+            "7": 8,
+            "8": 3,
+            "6": 4
+          },
+          "child_sizes": {
+            "2": 363
+          },
+          "split_phases": {
+            "0-49": 19,
+            "50-99": 34,
+            "100-149": 40,
+            "150-199": 51,
+            "200-249": 51,
+            "250-299": 40,
+            "300-349": 49,
+            "350-399": 48,
+            "400-449": 25,
+            "450-499": 6
+          },
+          "won": true
+        }
+      }
+    },
+    {
+      "battle": 41504,
+      "game": 41508,
+      "map": "schooltime",
+      "file_hash": "85bc842c12a923c2",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 64,
+            "actions": 22540,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 330,
+            "late_splits": 0,
+            "move_actions": 22210,
+            "sprint_actions": 16,
+            "extra_steps": 22,
+            "max_sprint_steps": 4,
+            "deaths_H": 64,
+            "deaths_W": 89,
+            "deaths_O": 64,
+            "deaths_S": 53
+          },
+          "split_lengths": {
+            "4": 175,
+            "5": 27,
+            "6": 18,
+            "9": 9,
+            "8": 16,
+            "29": 1,
+            "7": 7,
+            "17": 7,
+            "10": 7,
+            "18": 5,
+            "33": 1,
+            "16": 3,
+            "36": 2,
+            "12": 12,
+            "15": 6,
+            "34": 1,
+            "13": 7,
+            "38": 1,
+            "43": 1,
+            "41": 2,
+            "14": 3,
+            "30": 3,
+            "11": 5,
+            "39": 1,
+            "37": 1,
+            "20": 2,
+            "27": 2,
+            "31": 1,
+            "59": 1,
+            "49": 1,
+            "28": 1,
+            "57": 1
+          },
+          "child_sizes": {
+            "2": 178,
+            "3": 27,
+            "4": 17,
+            "7": 8,
+            "6": 16,
+            "27": 1,
+            "5": 7,
+            "15": 7,
+            "8": 7,
+            "16": 5,
+            "31": 1,
+            "34": 2,
+            "10": 12,
+            "13": 6,
+            "32": 1,
+            "11": 7,
+            "36": 1,
+            "41": 1,
+            "39": 2,
+            "12": 3,
+            "28": 3,
+            "9": 5,
+            "37": 1,
+            "35": 1,
+            "18": 2,
+            "14": 2,
+            "25": 2,
+            "29": 1,
+            "57": 1,
+            "47": 1,
+            "26": 1,
+            "55": 1
+          },
+          "split_phases": {
+            "0-49": 10,
+            "50-99": 70,
+            "100-149": 67,
+            "150-199": 23,
+            "200-249": 30,
+            "250-299": 33,
+            "300-349": 35,
+            "350-399": 32,
+            "400-449": 30
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 17,
+            "actions": 2975,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 141,
+            "late_splits": 0,
+            "move_actions": 2834,
+            "sprint_actions": 57,
+            "extra_steps": 66,
+            "max_sprint_steps": 4,
+            "deaths_H": 92,
+            "deaths_S": 35,
+            "deaths_O": 17
+          },
+          "split_lengths": {
+            "4": 128,
+            "5": 3,
+            "9": 2,
+            "14": 1,
+            "12": 1,
+            "10": 1,
+            "8": 1,
+            "6": 2,
+            "7": 1,
+            "11": 1
+          },
+          "child_sizes": {
+            "2": 128,
+            "3": 3,
+            "7": 2,
+            "12": 1,
+            "10": 1,
+            "8": 1,
+            "6": 1,
+            "4": 2,
+            "5": 1,
+            "9": 1
+          },
+          "split_phases": {
+            "0-49": 8,
+            "50-99": 35,
+            "100-149": 20,
+            "150-199": 21,
+            "200-249": 18,
+            "250-299": 21,
+            "300-349": 14,
+            "350-399": 4
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 40799,
+      "game": 40799,
+      "map": "trophy",
+      "file_hash": "8248dea6463426ff",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 10,
+            "actions": 825,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 799,
+            "sprint_actions": 2,
+            "extra_steps": 2,
+            "max_sprint_steps": 2,
+            "splits": 26,
+            "late_splits": 0,
+            "deaths_H": 25,
+            "deaths_W": 2,
+            "deaths_O": 1
+          },
+          "split_lengths": {
+            "4": 26
+          },
+          "child_sizes": {
+            "2": 26
+          },
+          "split_phases": {
+            "0-49": 5,
+            "50-99": 9,
+            "100-149": 9,
+            "150-199": 3
+          },
+          "won": false
+        },
+        "B": {
+          "counts": {
+            "max_population": 62,
+            "actions": 5440,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 5336,
+            "sprint_actions": 3,
+            "extra_steps": 4,
+            "max_sprint_steps": 3,
+            "splits": 99,
+            "late_splits": 0,
+            "deaths_S": 1,
+            "deaths_H": 33,
+            "deaths_A": 5,
+            "deaths_O": 1
+          },
+          "split_lengths": {
+            "4": 99
+          },
+          "child_sizes": {
+            "2": 99
+          },
+          "split_phases": {
+            "0-49": 19,
+            "50-99": 31,
+            "100-149": 37,
+            "150-199": 12
+          },
+          "won": true
+        }
+      }
+    },
+    {
+      "battle": 40799,
+      "game": 40800,
+      "map": "Big_Empty",
+      "file_hash": "b16adb09ac2488b2",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 64,
+            "actions": 27883,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 27481,
+            "sprint_actions": 142,
+            "extra_steps": 288,
+            "max_sprint_steps": 6,
+            "splits": 402,
+            "late_splits": 45,
+            "deaths_H": 331,
+            "deaths_S": 4,
+            "deaths_O": 19
+          },
+          "split_lengths": {
+            "6": 39,
+            "4": 138,
+            "5": 48,
+            "7": 21,
+            "11": 15,
+            "8": 18,
+            "10": 10,
+            "9": 16,
+            "14": 16,
+            "19": 6,
+            "17": 7,
+            "15": 6,
+            "13": 8,
+            "12": 14,
+            "16": 5,
+            "20": 7,
+            "28": 3,
+            "26": 3,
+            "18": 6,
+            "24": 8,
+            "21": 3,
+            "25": 1,
+            "23": 3,
+            "22": 1
+          },
+          "child_sizes": {
+            "4": 35,
+            "2": 199,
+            "3": 46,
+            "5": 19,
+            "9": 9,
+            "6": 5,
+            "12": 14,
+            "13": 4,
+            "15": 4,
+            "8": 5,
+            "7": 7,
+            "10": 11,
+            "18": 6,
+            "26": 3,
+            "24": 3,
+            "22": 8,
+            "11": 6,
+            "17": 3,
+            "16": 4,
+            "14": 3,
+            "19": 3,
+            "23": 1,
+            "21": 3,
+            "20": 1
+          },
+          "split_phases": {
+            "0-49": 30,
+            "50-99": 58,
+            "100-149": 51,
+            "150-199": 36,
+            "200-249": 34,
+            "250-299": 44,
+            "300-349": 45,
+            "350-399": 36,
+            "400-449": 23,
+            "450-499": 45
+          },
+          "won": false
+        },
+        "B": {
+          "counts": {
+            "max_population": 64,
+            "actions": 28406,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 27981,
+            "sprint_actions": 111,
+            "extra_steps": 168,
+            "max_sprint_steps": 3,
+            "splits": 408,
+            "late_splits": 42,
+            "deaths_H": 331,
+            "deaths_A": 17
+          },
+          "split_lengths": {
+            "6": 48,
+            "4": 169,
+            "5": 74,
+            "7": 24,
+            "8": 19,
+            "11": 5,
+            "9": 11,
+            "10": 7,
+            "12": 6,
+            "17": 4,
+            "25": 2,
+            "14": 3,
+            "21": 2,
+            "23": 4,
+            "15": 1,
+            "13": 4,
+            "20": 1,
+            "30": 7,
+            "16": 2,
+            "28": 4,
+            "19": 2,
+            "24": 3,
+            "18": 1,
+            "26": 1,
+            "29": 1,
+            "22": 1,
+            "27": 1,
+            "31": 1
+          },
+          "child_sizes": {
+            "4": 25,
+            "2": 223,
+            "3": 58,
+            "5": 23,
+            "9": 3,
+            "7": 7,
+            "8": 6,
+            "6": 12,
+            "10": 6,
+            "15": 4,
+            "23": 2,
+            "12": 3,
+            "19": 2,
+            "21": 4,
+            "13": 1,
+            "11": 4,
+            "18": 1,
+            "28": 7,
+            "14": 2,
+            "26": 4,
+            "17": 2,
+            "22": 3,
+            "16": 1,
+            "24": 1,
+            "27": 1,
+            "20": 1,
+            "25": 1,
+            "29": 1
+          },
+          "split_phases": {
+            "0-49": 31,
+            "50-99": 56,
+            "100-149": 50,
+            "150-199": 34,
+            "200-249": 35,
+            "250-299": 45,
+            "300-349": 49,
+            "350-399": 35,
+            "400-449": 31,
+            "450-499": 42
+          },
+          "won": true
+        }
+      }
+    },
+    {
+      "battle": 40799,
+      "game": 40801,
+      "map": "Arena",
+      "file_hash": "f87e70075637a97c",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 7,
+            "actions": 50,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 42,
+            "sprint_actions": 3,
+            "extra_steps": 10,
+            "max_sprint_steps": 6,
+            "splits": 8,
+            "late_splits": 0,
+            "deaths_H": 4
+          },
+          "split_lengths": {
+            "4": 8
+          },
+          "child_sizes": {
+            "2": 8
+          },
+          "split_phases": {
+            "0-49": 8
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 4,
+            "actions": 32,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 29,
+            "sprint_actions": 0,
+            "extra_steps": 0,
+            "max_sprint_steps": 1,
+            "splits": 3,
+            "late_splits": 0,
+            "deaths_H": 4
+          },
+          "split_lengths": {
+            "4": 3
+          },
+          "child_sizes": {
+            "2": 3
+          },
+          "split_phases": {
+            "0-49": 3
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 40799,
+      "game": 40802,
+      "map": "Default",
+      "file_hash": "48faf1ecd15e1a22",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 25,
+            "actions": 6765,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 136,
+            "late_splits": 6,
+            "move_actions": 6629,
+            "sprint_actions": 19,
+            "extra_steps": 23,
+            "max_sprint_steps": 4,
+            "deaths_H": 94,
+            "deaths_W": 16,
+            "deaths_S": 9,
+            "deaths_O": 14
+          },
+          "split_lengths": {
+            "4": 109,
+            "5": 3,
+            "10": 2,
+            "8": 2,
+            "6": 5,
+            "24": 1,
+            "25": 1,
+            "23": 1,
+            "21": 1,
+            "19": 1,
+            "17": 1,
+            "16": 1,
+            "15": 1,
+            "13": 1,
+            "11": 1,
+            "9": 2,
+            "7": 3
+          },
+          "child_sizes": {
+            "2": 116,
+            "3": 3,
+            "4": 5,
+            "23": 1,
+            "21": 1,
+            "19": 1,
+            "17": 1,
+            "15": 1,
+            "14": 1,
+            "9": 1,
+            "5": 3,
+            "7": 1,
+            "6": 1
+          },
+          "split_phases": {
+            "0-49": 8,
+            "50-99": 10,
+            "100-149": 11,
+            "150-199": 15,
+            "200-249": 16,
+            "250-299": 30,
+            "300-349": 19,
+            "350-399": 14,
+            "400-449": 7,
+            "450-499": 6
+          },
+          "won": false
+        },
+        "B": {
+          "counts": {
+            "max_population": 64,
+            "actions": 18918,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 177,
+            "late_splits": 13,
+            "move_actions": 18717,
+            "sprint_actions": 16,
+            "extra_steps": 19,
+            "max_sprint_steps": 3,
+            "deaths_A": 24,
+            "deaths_H": 90,
+            "deaths_O": 6
+          },
+          "split_lengths": {
+            "4": 158,
+            "6": 3,
+            "5": 10,
+            "7": 2,
+            "9": 1,
+            "16": 1,
+            "14": 1,
+            "12": 1
+          },
+          "child_sizes": {
+            "2": 164,
+            "4": 2,
+            "5": 2,
+            "3": 5,
+            "7": 1,
+            "14": 1,
+            "12": 1,
+            "10": 1
+          },
+          "split_phases": {
+            "0-49": 14,
+            "50-99": 8,
+            "100-149": 16,
+            "150-199": 22,
+            "200-249": 30,
+            "250-299": 30,
+            "300-349": 19,
+            "350-399": 14,
+            "400-449": 11,
+            "450-499": 13
+          },
+          "won": true
+        }
+      }
+    },
+    {
+      "battle": 40799,
+      "game": 40803,
+      "map": "default_small",
+      "file_hash": "c98c42f1c2fe25e6",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 21,
+            "actions": 751,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 725,
+            "sprint_actions": 3,
+            "extra_steps": 3,
+            "max_sprint_steps": 2,
+            "splits": 26,
+            "late_splits": 0,
+            "deaths_H": 4,
+            "deaths_S": 1,
+            "deaths_W": 3
+          },
+          "split_lengths": {
+            "4": 26
+          },
+          "child_sizes": {
+            "2": 26
+          },
+          "split_phases": {
+            "0-49": 14,
+            "50-99": 12
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 4,
+            "actions": 176,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 174,
+            "sprint_actions": 0,
+            "extra_steps": 0,
+            "max_sprint_steps": 1,
+            "splits": 2,
+            "late_splits": 0,
+            "deaths_H": 4
+          },
+          "split_lengths": {
+            "4": 2
+          },
+          "child_sizes": {
+            "2": 2
+          },
+          "split_phases": {
+            "0-49": 2
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 38441,
+      "game": 38441,
+      "map": "default_small",
+      "file_hash": "ce9406ff91d84925",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 5,
+            "actions": 204,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 200,
+            "sprint_actions": 0,
+            "extra_steps": 0,
+            "max_sprint_steps": 1,
+            "splits": 4,
+            "late_splits": 0,
+            "deaths_H": 6
+          },
+          "split_lengths": {
+            "4": 4
+          },
+          "child_sizes": {
+            "2": 4
+          },
+          "split_phases": {
+            "0-49": 4
+          },
+          "won": false
+        },
+        "B": {
+          "counts": {
+            "max_population": 21,
+            "actions": 652,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 628,
+            "sprint_actions": 3,
+            "extra_steps": 3,
+            "max_sprint_steps": 2,
+            "splits": 24,
+            "late_splits": 0,
+            "deaths_H": 6
+          },
+          "split_lengths": {
+            "4": 24
+          },
+          "child_sizes": {
+            "2": 24
+          },
+          "split_phases": {
+            "0-49": 12,
+            "50-99": 12
+          },
+          "won": true
+        }
+      }
+    },
+    {
+      "battle": 38441,
+      "game": 38442,
+      "map": "Default",
+      "file_hash": "f188e4b95e362816",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 11,
+            "actions": 1173,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 13,
+            "late_splits": 0,
+            "move_actions": 1160,
+            "sprint_actions": 4,
+            "extra_steps": 4,
+            "max_sprint_steps": 2,
+            "deaths_H": 16,
+            "deaths_O": 1
+          },
+          "split_lengths": {
+            "4": 13
+          },
+          "child_sizes": {
+            "2": 13
+          },
+          "split_phases": {
+            "0-49": 10,
+            "50-99": 2,
+            "100-149": 1
+          },
+          "won": false
+        },
+        "B": {
+          "counts": {
+            "max_population": 31,
+            "actions": 2662,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 44,
+            "late_splits": 0,
+            "move_actions": 2618,
+            "sprint_actions": 3,
+            "extra_steps": 6,
+            "max_sprint_steps": 4,
+            "deaths_H": 16,
+            "deaths_S": 1,
+            "deaths_W": 1
+          },
+          "split_lengths": {
+            "4": 43,
+            "5": 1
+          },
+          "child_sizes": {
+            "2": 43,
+            "3": 1
+          },
+          "split_phases": {
+            "0-49": 11,
+            "50-99": 10,
+            "100-149": 17,
+            "150-199": 6
+          },
+          "won": true
+        }
+      }
+    },
+    {
+      "battle": 38441,
+      "game": 38443,
+      "map": "Arena",
+      "file_hash": "d5cb87c4fba7e8a1",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 21,
+            "actions": 197,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 167,
+            "sprint_actions": 12,
+            "extra_steps": 19,
+            "max_sprint_steps": 4,
+            "splits": 30,
+            "late_splits": 0,
+            "deaths_H": 10,
+            "deaths_S": 1
+          },
+          "split_lengths": {
+            "4": 30
+          },
+          "child_sizes": {
+            "2": 30
+          },
+          "split_phases": {
+            "0-49": 30
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 4,
+            "actions": 60,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 53,
+            "sprint_actions": 2,
+            "extra_steps": 4,
+            "max_sprint_steps": 4,
+            "splits": 7,
+            "late_splits": 0,
+            "deaths_H": 8
+          },
+          "split_lengths": {
+            "4": 7
+          },
+          "child_sizes": {
+            "2": 7
+          },
+          "split_phases": {
+            "0-49": 7
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 38441,
+      "game": 38444,
+      "map": "trophy",
+      "file_hash": "7fa4f7fbfed62dfb",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 34,
+            "actions": 11559,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 11275,
+            "sprint_actions": 36,
+            "extra_steps": 51,
+            "max_sprint_steps": 4,
+            "splits": 284,
+            "late_splits": 12,
+            "deaths_W": 43,
+            "deaths_O": 46,
+            "deaths_H": 185
+          },
+          "split_lengths": {
+            "4": 265,
+            "5": 9,
+            "7": 2,
+            "6": 4,
+            "8": 1,
+            "9": 2,
+            "11": 1
+          },
+          "child_sizes": {
+            "2": 284
+          },
+          "split_phases": {
+            "0-49": 20,
+            "50-99": 25,
+            "100-149": 31,
+            "150-199": 36,
+            "200-249": 32,
+            "250-299": 38,
+            "300-349": 26,
+            "350-399": 41,
+            "400-449": 23,
+            "450-499": 12
+          },
+          "won": false
+        },
+        "B": {
+          "counts": {
+            "max_population": 28,
+            "actions": 8956,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 8790,
+            "sprint_actions": 40,
+            "extra_steps": 67,
+            "max_sprint_steps": 5,
+            "splits": 166,
+            "late_splits": 13,
+            "deaths_H": 131,
+            "deaths_W": 10,
+            "deaths_S": 5,
+            "deaths_O": 3
+          },
+          "split_lengths": {
+            "4": 133,
+            "5": 7,
+            "6": 6,
+            "7": 5,
+            "11": 3,
+            "9": 3,
+            "8": 2,
+            "18": 1,
+            "16": 1,
+            "14": 1,
+            "12": 2,
+            "15": 1,
+            "13": 1
+          },
+          "child_sizes": {
+            "2": 135,
+            "3": 7,
+            "4": 6,
+            "5": 5,
+            "9": 3,
+            "7": 3,
+            "6": 2,
+            "16": 1,
+            "14": 1,
+            "10": 1,
+            "13": 1,
+            "11": 1
+          },
+          "split_phases": {
+            "0-49": 8,
+            "50-99": 19,
+            "100-149": 15,
+            "150-199": 27,
+            "200-249": 12,
+            "250-299": 17,
+            "300-349": 16,
+            "350-399": 21,
+            "400-449": 18,
+            "450-499": 13
+          },
+          "won": true
+        }
+      }
+    },
+    {
+      "battle": 38441,
+      "game": 38445,
+      "map": "schooltime",
+      "file_hash": "ed97e3ac4a7c3040",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 60,
+            "actions": 17954,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 312,
+            "late_splits": 17,
+            "move_actions": 17642,
+            "sprint_actions": 161,
+            "extra_steps": 206,
+            "max_sprint_steps": 4,
+            "deaths_H": 221,
+            "deaths_S": 31,
+            "deaths_O": 34
+          },
+          "split_lengths": {
+            "4": 277,
+            "18": 1,
+            "16": 2,
+            "14": 4,
+            "12": 1,
+            "10": 2,
+            "8": 4,
+            "15": 1,
+            "6": 4,
+            "5": 6,
+            "9": 1,
+            "21": 1,
+            "11": 1,
+            "17": 4,
+            "20": 1,
+            "28": 1,
+            "7": 1
+          },
+          "child_sizes": {
+            "2": 277,
+            "16": 1,
+            "14": 2,
+            "12": 4,
+            "10": 1,
+            "8": 2,
+            "6": 4,
+            "13": 1,
+            "4": 4,
+            "3": 6,
+            "7": 1,
+            "19": 1,
+            "9": 1,
+            "15": 4,
+            "18": 1,
+            "26": 1,
+            "5": 1
+          },
+          "split_phases": {
+            "0-49": 8,
+            "50-99": 38,
+            "100-149": 39,
+            "150-199": 51,
+            "200-249": 26,
+            "250-299": 38,
+            "300-349": 38,
+            "350-399": 47,
+            "400-449": 10,
+            "450-499": 17
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 64,
+            "actions": 26062,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 505,
+            "late_splits": 59,
+            "move_actions": 25557,
+            "sprint_actions": 38,
+            "extra_steps": 66,
+            "max_sprint_steps": 6,
+            "deaths_O": 89,
+            "deaths_H": 189,
+            "deaths_W": 113,
+            "deaths_S": 56
+          },
+          "split_lengths": {
+            "4": 243,
+            "7": 29,
+            "5": 56,
+            "6": 49,
+            "9": 23,
+            "8": 19,
+            "13": 8,
+            "12": 17,
+            "10": 12,
+            "11": 15,
+            "17": 7,
+            "15": 6,
+            "14": 7,
+            "16": 3,
+            "31": 1,
+            "34": 1,
+            "32": 1,
+            "30": 1,
+            "19": 1,
+            "28": 1,
+            "26": 1,
+            "24": 1,
+            "22": 1,
+            "20": 1,
+            "18": 1
+          },
+          "child_sizes": {
+            "2": 262,
+            "5": 29,
+            "3": 56,
+            "4": 49,
+            "6": 14,
+            "7": 18,
+            "11": 6,
+            "10": 16,
+            "8": 11,
+            "9": 14,
+            "15": 6,
+            "13": 5,
+            "12": 6,
+            "29": 1,
+            "32": 1,
+            "14": 2,
+            "30": 1,
+            "28": 1,
+            "17": 1,
+            "26": 1,
+            "24": 1,
+            "22": 1,
+            "20": 1,
+            "18": 1,
+            "16": 1
+          },
+          "split_phases": {
+            "0-49": 10,
+            "50-99": 59,
+            "100-149": 67,
+            "150-199": 58,
+            "200-249": 47,
+            "250-299": 48,
+            "300-349": 48,
+            "350-399": 62,
+            "400-449": 47,
+            "450-499": 59
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 41116,
+      "game": 41116,
+      "map": "Arena",
+      "file_hash": "f87e70075637a97c",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 7,
+            "actions": 50,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 42,
+            "sprint_actions": 3,
+            "extra_steps": 10,
+            "max_sprint_steps": 6,
+            "splits": 8,
+            "late_splits": 0,
+            "deaths_H": 4
+          },
+          "split_lengths": {
+            "4": 8
+          },
+          "child_sizes": {
+            "2": 8
+          },
+          "split_phases": {
+            "0-49": 8
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 4,
+            "actions": 32,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 29,
+            "sprint_actions": 0,
+            "extra_steps": 0,
+            "max_sprint_steps": 1,
+            "splits": 3,
+            "late_splits": 0,
+            "deaths_H": 4
+          },
+          "split_lengths": {
+            "4": 3
+          },
+          "child_sizes": {
+            "2": 3
+          },
+          "split_phases": {
+            "0-49": 3
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 41116,
+      "game": 41117,
+      "map": "schooltime",
+      "file_hash": "db60ea9c2135705a",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 64,
+            "actions": 24565,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 610,
+            "late_splits": 76,
+            "move_actions": 23955,
+            "sprint_actions": 90,
+            "extra_steps": 112,
+            "max_sprint_steps": 5,
+            "deaths_W": 106,
+            "deaths_H": 303,
+            "deaths_O": 81,
+            "deaths_S": 64
+          },
+          "split_lengths": {
+            "4": 377,
+            "5": 48,
+            "6": 44,
+            "7": 20,
+            "10": 17,
+            "8": 22,
+            "11": 13,
+            "9": 11,
+            "12": 13,
+            "14": 4,
+            "17": 1,
+            "15": 3,
+            "13": 8,
+            "29": 1,
+            "21": 2,
+            "19": 2,
+            "16": 3,
+            "42": 1,
+            "40": 2,
+            "20": 3,
+            "18": 2,
+            "39": 1,
+            "37": 1,
+            "35": 1,
+            "33": 1,
+            "36": 1,
+            "34": 1,
+            "32": 1,
+            "30": 2,
+            "28": 1,
+            "26": 1,
+            "24": 1,
+            "22": 1
+          },
+          "child_sizes": {
+            "2": 400,
+            "3": 48,
+            "4": 44,
+            "5": 20,
+            "9": 13,
+            "7": 11,
+            "6": 12,
+            "12": 4,
+            "10": 11,
+            "8": 12,
+            "11": 8,
+            "19": 2,
+            "17": 2,
+            "14": 3,
+            "18": 3,
+            "16": 2,
+            "37": 1,
+            "35": 1,
+            "33": 1,
+            "13": 2,
+            "31": 1,
+            "34": 1,
+            "32": 1,
+            "30": 1,
+            "28": 2,
+            "26": 1,
+            "24": 1,
+            "22": 1,
+            "20": 1
+          },
+          "split_phases": {
+            "0-49": 9,
+            "50-99": 72,
+            "100-149": 71,
+            "150-199": 61,
+            "200-249": 65,
+            "250-299": 68,
+            "300-349": 61,
+            "350-399": 70,
+            "400-449": 57,
+            "450-499": 76
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 64,
+            "actions": 24135,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 500,
+            "late_splits": 47,
+            "move_actions": 23502,
+            "sprint_actions": 54,
+            "extra_steps": 63,
+            "max_sprint_steps": 3,
+            "deaths_A": 133,
+            "deaths_H": 299,
+            "deaths_S": 3,
+            "deaths_O": 5
+          },
+          "split_lengths": {
+            "4": 392,
+            "5": 53,
+            "12": 1,
+            "11": 1,
+            "9": 2,
+            "7": 9,
+            "6": 30,
+            "13": 2,
+            "8": 7,
+            "15": 1,
+            "10": 1,
+            "17": 1
+          },
+          "child_sizes": {
+            "2": 429,
+            "10": 1,
+            "3": 32,
+            "5": 8,
+            "4": 22,
+            "7": 1,
+            "11": 1,
+            "13": 1,
+            "6": 3,
+            "8": 1,
+            "15": 1
+          },
+          "split_phases": {
+            "0-49": 10,
+            "50-99": 29,
+            "100-149": 58,
+            "150-199": 85,
+            "200-249": 50,
+            "250-299": 52,
+            "300-349": 56,
+            "350-399": 49,
+            "400-449": 64,
+            "450-499": 47
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 41116,
+      "game": 41118,
+      "map": "queen_of_spades",
+      "file_hash": "1441b6b2837eb5ca",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 32,
+            "actions": 3964,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 3871,
+            "sprint_actions": 5,
+            "extra_steps": 5,
+            "max_sprint_steps": 2,
+            "deaths_H": 15,
+            "splits": 93,
+            "late_splits": 0,
+            "deaths_W": 25,
+            "deaths_S": 16,
+            "deaths_O": 11
+          },
+          "split_lengths": {
+            "4": 85,
+            "6": 2,
+            "11": 1,
+            "9": 1,
+            "7": 1,
+            "5": 3
+          },
+          "child_sizes": {
+            "2": 85,
+            "4": 2,
+            "9": 1,
+            "7": 1,
+            "5": 1,
+            "3": 3
+          },
+          "split_phases": {
+            "0-49": 4,
+            "50-99": 25,
+            "100-149": 19,
+            "150-199": 35,
+            "200-249": 10
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 4,
+            "actions": 510,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 505,
+            "sprint_actions": 1,
+            "extra_steps": 1,
+            "max_sprint_steps": 2,
+            "deaths_H": 7,
+            "splits": 5,
+            "late_splits": 0
+          },
+          "split_lengths": {
+            "4": 5
+          },
+          "child_sizes": {
+            "2": 5
+          },
+          "split_phases": {
+            "0-49": 1,
+            "50-99": 1,
+            "100-149": 3
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 41116,
+      "game": 41119,
+      "map": "default_small",
+      "file_hash": "c98c42f1c2fe25e6",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 21,
+            "actions": 751,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 725,
+            "sprint_actions": 3,
+            "extra_steps": 3,
+            "max_sprint_steps": 2,
+            "splits": 26,
+            "late_splits": 0,
+            "deaths_H": 4,
+            "deaths_S": 1,
+            "deaths_W": 3
+          },
+          "split_lengths": {
+            "4": 26
+          },
+          "child_sizes": {
+            "2": 26
+          },
+          "split_phases": {
+            "0-49": 14,
+            "50-99": 12
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 4,
+            "actions": 176,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 174,
+            "sprint_actions": 0,
+            "extra_steps": 0,
+            "max_sprint_steps": 1,
+            "splits": 2,
+            "late_splits": 0,
+            "deaths_H": 4
+          },
+          "split_lengths": {
+            "4": 2
+          },
+          "child_sizes": {
+            "2": 2
+          },
+          "split_phases": {
+            "0-49": 2
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 41116,
+      "game": 41120,
+      "map": "Big_Empty",
+      "file_hash": "b16adb09ac2488b2",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 64,
+            "actions": 27883,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 27481,
+            "sprint_actions": 142,
+            "extra_steps": 288,
+            "max_sprint_steps": 6,
+            "splits": 402,
+            "late_splits": 45,
+            "deaths_H": 331,
+            "deaths_S": 4,
+            "deaths_O": 19
+          },
+          "split_lengths": {
+            "6": 39,
+            "4": 138,
+            "5": 48,
+            "7": 21,
+            "11": 15,
+            "8": 18,
+            "10": 10,
+            "9": 16,
+            "14": 16,
+            "19": 6,
+            "17": 7,
+            "15": 6,
+            "13": 8,
+            "12": 14,
+            "16": 5,
+            "20": 7,
+            "28": 3,
+            "26": 3,
+            "18": 6,
+            "24": 8,
+            "21": 3,
+            "25": 1,
+            "23": 3,
+            "22": 1
+          },
+          "child_sizes": {
+            "4": 35,
+            "2": 199,
+            "3": 46,
+            "5": 19,
+            "9": 9,
+            "6": 5,
+            "12": 14,
+            "13": 4,
+            "15": 4,
+            "8": 5,
+            "7": 7,
+            "10": 11,
+            "18": 6,
+            "26": 3,
+            "24": 3,
+            "22": 8,
+            "11": 6,
+            "17": 3,
+            "16": 4,
+            "14": 3,
+            "19": 3,
+            "23": 1,
+            "21": 3,
+            "20": 1
+          },
+          "split_phases": {
+            "0-49": 30,
+            "50-99": 58,
+            "100-149": 51,
+            "150-199": 36,
+            "200-249": 34,
+            "250-299": 44,
+            "300-349": 45,
+            "350-399": 36,
+            "400-449": 23,
+            "450-499": 45
+          },
+          "won": false
+        },
+        "B": {
+          "counts": {
+            "max_population": 64,
+            "actions": 28406,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 27981,
+            "sprint_actions": 111,
+            "extra_steps": 168,
+            "max_sprint_steps": 3,
+            "splits": 408,
+            "late_splits": 42,
+            "deaths_H": 331,
+            "deaths_A": 17
+          },
+          "split_lengths": {
+            "6": 48,
+            "4": 169,
+            "5": 74,
+            "7": 24,
+            "8": 19,
+            "11": 5,
+            "9": 11,
+            "10": 7,
+            "12": 6,
+            "17": 4,
+            "25": 2,
+            "14": 3,
+            "21": 2,
+            "23": 4,
+            "15": 1,
+            "13": 4,
+            "20": 1,
+            "30": 7,
+            "16": 2,
+            "28": 4,
+            "19": 2,
+            "24": 3,
+            "18": 1,
+            "26": 1,
+            "29": 1,
+            "22": 1,
+            "27": 1,
+            "31": 1
+          },
+          "child_sizes": {
+            "4": 25,
+            "2": 223,
+            "3": 58,
+            "5": 23,
+            "9": 3,
+            "7": 7,
+            "8": 6,
+            "6": 12,
+            "10": 6,
+            "15": 4,
+            "23": 2,
+            "12": 3,
+            "19": 2,
+            "21": 4,
+            "13": 1,
+            "11": 4,
+            "18": 1,
+            "28": 7,
+            "14": 2,
+            "26": 4,
+            "17": 2,
+            "22": 3,
+            "16": 1,
+            "24": 1,
+            "27": 1,
+            "20": 1,
+            "25": 1,
+            "29": 1
+          },
+          "split_phases": {
+            "0-49": 31,
+            "50-99": 56,
+            "100-149": 50,
+            "150-199": 34,
+            "200-249": 35,
+            "250-299": 45,
+            "300-349": 49,
+            "350-399": 35,
+            "400-449": 31,
+            "450-499": 42
+          },
+          "won": true
+        }
+      }
+    },
+    {
+      "battle": 40304,
+      "game": 40304,
+      "map": "Arena",
+      "file_hash": "d647c66a5f72a4f0",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 9,
+            "actions": 271,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 238,
+            "sprint_actions": 18,
+            "extra_steps": 38,
+            "max_sprint_steps": 6,
+            "splits": 33,
+            "late_splits": 0,
+            "deaths_H": 34
+          },
+          "split_lengths": {
+            "4": 33
+          },
+          "child_sizes": {
+            "2": 33
+          },
+          "split_phases": {
+            "0-49": 30,
+            "50-99": 3
+          },
+          "won": false
+        },
+        "B": {
+          "counts": {
+            "max_population": 22,
+            "actions": 639,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 561,
+            "sprint_actions": 0,
+            "extra_steps": 0,
+            "max_sprint_steps": 1,
+            "splits": 78,
+            "late_splits": 0,
+            "deaths_H": 34,
+            "deaths_O": 9,
+            "deaths_S": 12,
+            "deaths_W": 2
+          },
+          "split_lengths": {
+            "4": 78
+          },
+          "child_sizes": {
+            "2": 78
+          },
+          "split_phases": {
+            "0-49": 53,
+            "50-99": 25
+          },
+          "won": true
+        }
+      }
+    },
+    {
+      "battle": 40304,
+      "game": 40305,
+      "map": "Default",
+      "file_hash": "92babb9b59bfb6d9",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 64,
+            "actions": 21158,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 192,
+            "late_splits": 10,
+            "move_actions": 20966,
+            "sprint_actions": 25,
+            "extra_steps": 30,
+            "max_sprint_steps": 4,
+            "deaths_H": 86,
+            "deaths_W": 17,
+            "deaths_O": 23,
+            "deaths_S": 11
+          },
+          "split_lengths": {
+            "4": 168,
+            "7": 2,
+            "5": 7,
+            "8": 4,
+            "6": 7,
+            "11": 2,
+            "9": 2
+          },
+          "child_sizes": {
+            "2": 169,
+            "5": 2,
+            "3": 7,
+            "6": 4,
+            "4": 7,
+            "9": 2,
+            "7": 1
+          },
+          "split_phases": {
+            "0-49": 15,
+            "50-99": 14,
+            "100-149": 19,
+            "150-199": 32,
+            "200-249": 22,
+            "250-299": 31,
+            "300-349": 18,
+            "350-399": 15,
+            "400-449": 16,
+            "450-499": 10
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 16,
+            "actions": 3613,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 123,
+            "late_splits": 3,
+            "move_actions": 3490,
+            "sprint_actions": 0,
+            "extra_steps": 0,
+            "max_sprint_steps": 1,
+            "deaths_H": 98,
+            "deaths_S": 5,
+            "deaths_W": 11,
+            "deaths_O": 12
+          },
+          "split_lengths": {
+            "4": 123
+          },
+          "child_sizes": {
+            "2": 123
+          },
+          "split_phases": {
+            "0-49": 15,
+            "50-99": 14,
+            "100-149": 17,
+            "150-199": 14,
+            "200-249": 11,
+            "250-299": 13,
+            "300-349": 16,
+            "350-399": 13,
+            "400-449": 7,
+            "450-499": 3
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 40304,
+      "game": 40306,
+      "map": "default_small",
+      "file_hash": "974a7bea69bef2fb",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 27,
+            "actions": 2011,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 1953,
+            "sprint_actions": 9,
+            "extra_steps": 14,
+            "max_sprint_steps": 4,
+            "splits": 58,
+            "late_splits": 0,
+            "deaths_H": 30,
+            "deaths_O": 2,
+            "deaths_W": 2
+          },
+          "split_lengths": {
+            "4": 58
+          },
+          "child_sizes": {
+            "2": 58
+          },
+          "split_phases": {
+            "0-49": 9,
+            "50-99": 24,
+            "100-149": 25
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 9,
+            "actions": 649,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 617,
+            "sprint_actions": 0,
+            "extra_steps": 0,
+            "max_sprint_steps": 1,
+            "splits": 32,
+            "late_splits": 0,
+            "deaths_W": 2,
+            "deaths_H": 30,
+            "deaths_S": 2
+          },
+          "split_lengths": {
+            "4": 32
+          },
+          "child_sizes": {
+            "2": 32
+          },
+          "split_phases": {
+            "0-49": 10,
+            "50-99": 12,
+            "100-149": 10
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 40304,
+      "game": 40307,
+      "map": "Big_Empty",
+      "file_hash": "22071f64544499c5",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 64,
+            "actions": 28711,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 28327,
+            "sprint_actions": 117,
+            "extra_steps": 187,
+            "max_sprint_steps": 6,
+            "splits": 384,
+            "late_splits": 45,
+            "deaths_H": 273,
+            "deaths_S": 23,
+            "deaths_O": 27
+          },
+          "split_lengths": {
+            "6": 23,
+            "4": 135,
+            "5": 22,
+            "7": 8,
+            "8": 12,
+            "9": 11,
+            "10": 9,
+            "23": 2,
+            "12": 12,
+            "20": 12,
+            "21": 7,
+            "18": 10,
+            "22": 8,
+            "13": 14,
+            "11": 13,
+            "17": 7,
+            "19": 15,
+            "15": 8,
+            "14": 11,
+            "24": 6,
+            "34": 1,
+            "16": 8,
+            "26": 6,
+            "33": 2,
+            "27": 1,
+            "31": 4,
+            "25": 4,
+            "32": 3,
+            "28": 7,
+            "29": 1,
+            "30": 1,
+            "36": 1
+          },
+          "child_sizes": {
+            "4": 25,
+            "2": 166,
+            "3": 20,
+            "5": 8,
+            "6": 4,
+            "21": 2,
+            "10": 12,
+            "18": 10,
+            "19": 7,
+            "16": 10,
+            "20": 8,
+            "11": 12,
+            "9": 10,
+            "15": 6,
+            "17": 15,
+            "13": 6,
+            "7": 5,
+            "12": 9,
+            "8": 5,
+            "22": 6,
+            "32": 1,
+            "14": 7,
+            "24": 6,
+            "31": 2,
+            "25": 1,
+            "29": 4,
+            "23": 4,
+            "30": 3,
+            "26": 7,
+            "27": 1,
+            "28": 1,
+            "34": 1
+          },
+          "split_phases": {
+            "0-49": 27,
+            "50-99": 81,
+            "100-149": 34,
+            "150-199": 23,
+            "200-249": 30,
+            "250-299": 45,
+            "300-349": 39,
+            "350-399": 33,
+            "400-449": 27,
+            "450-499": 45
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 64,
+            "actions": 29199,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 411,
+            "late_splits": 24,
+            "move_actions": 28788,
+            "sprint_actions": 0,
+            "extra_steps": 0,
+            "max_sprint_steps": 1,
+            "deaths_H": 273,
+            "deaths_O": 53,
+            "deaths_S": 51
+          },
+          "split_lengths": {
+            "6": 47,
+            "4": 191,
+            "5": 66,
+            "8": 19,
+            "10": 12,
+            "7": 28,
+            "9": 18,
+            "11": 7,
+            "16": 1,
+            "17": 2,
+            "18": 2,
+            "12": 6,
+            "14": 3,
+            "29": 1,
+            "13": 3,
+            "15": 4,
+            "20": 1
+          },
+          "child_sizes": {
+            "2": 411
+          },
+          "split_phases": {
+            "0-49": 36,
+            "50-99": 76,
+            "100-149": 40,
+            "150-199": 28,
+            "200-249": 40,
+            "250-299": 54,
+            "300-349": 48,
+            "350-399": 31,
+            "400-449": 34,
+            "450-499": 24
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 40304,
+      "game": 40308,
+      "map": "schooltime",
+      "file_hash": "a629b25023b51d76",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 64,
+            "actions": 25257,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 595,
+            "late_splits": 62,
+            "move_actions": 24662,
+            "sprint_actions": 60,
+            "extra_steps": 93,
+            "max_sprint_steps": 5,
+            "deaths_H": 244,
+            "deaths_W": 113,
+            "deaths_O": 104,
+            "deaths_S": 77
+          },
+          "split_lengths": {
+            "4": 318,
+            "5": 70,
+            "7": 35,
+            "15": 6,
+            "13": 10,
+            "11": 17,
+            "9": 22,
+            "6": 50,
+            "12": 11,
+            "10": 12,
+            "8": 29,
+            "14": 6,
+            "16": 1,
+            "17": 5,
+            "19": 2,
+            "21": 1
+          },
+          "child_sizes": {
+            "2": 347,
+            "3": 70,
+            "5": 35,
+            "4": 50,
+            "10": 7,
+            "8": 9,
+            "9": 11,
+            "7": 16,
+            "6": 23,
+            "12": 6,
+            "11": 8,
+            "14": 1,
+            "13": 5,
+            "15": 4,
+            "17": 2,
+            "19": 1
+          },
+          "split_phases": {
+            "0-49": 12,
+            "50-99": 64,
+            "100-149": 58,
+            "150-199": 83,
+            "200-249": 66,
+            "250-299": 61,
+            "300-349": 69,
+            "350-399": 61,
+            "400-449": 59,
+            "450-499": 62
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 64,
+            "actions": 23723,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 824,
+            "late_splits": 44,
+            "move_actions": 22899,
+            "sprint_actions": 0,
+            "extra_steps": 0,
+            "max_sprint_steps": 1,
+            "deaths_H": 294,
+            "deaths_O": 168,
+            "deaths_W": 215,
+            "deaths_S": 128
+          },
+          "split_lengths": {
+            "4": 808,
+            "5": 15,
+            "6": 1
+          },
+          "child_sizes": {
+            "2": 824
+          },
+          "split_phases": {
+            "0-49": 12,
+            "50-99": 49,
+            "100-149": 81,
+            "150-199": 105,
+            "200-249": 91,
+            "250-299": 98,
+            "300-349": 108,
+            "350-399": 113,
+            "400-449": 123,
+            "450-499": 44
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 43448,
+      "game": 43448,
+      "map": "trophy",
+      "file_hash": "f61cb7ad992621e4",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 9,
+            "actions": 878,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 853,
+            "sprint_actions": 4,
+            "extra_steps": 4,
+            "max_sprint_steps": 2,
+            "splits": 25,
+            "late_splits": 0,
+            "deaths_W": 1,
+            "deaths_H": 24,
+            "deaths_O": 1,
+            "deaths_S": 1
+          },
+          "split_lengths": {
+            "4": 25
+          },
+          "child_sizes": {
+            "2": 25
+          },
+          "split_phases": {
+            "0-49": 9,
+            "50-99": 5,
+            "100-149": 10,
+            "150-199": 1
+          },
+          "won": false
+        },
+        "B": {
+          "counts": {
+            "max_population": 52,
+            "actions": 4989,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 4887,
+            "sprint_actions": 11,
+            "extra_steps": 12,
+            "max_sprint_steps": 3,
+            "splits": 102,
+            "late_splits": 0,
+            "deaths_H": 34,
+            "deaths_W": 11,
+            "deaths_O": 9,
+            "deaths_S": 1
+          },
+          "split_lengths": {
+            "4": 102
+          },
+          "child_sizes": {
+            "2": 102
+          },
+          "split_phases": {
+            "0-49": 19,
+            "50-99": 32,
+            "100-149": 26,
+            "150-199": 25
+          },
+          "won": true
+        }
+      }
+    },
+    {
+      "battle": 43448,
+      "game": 43449,
+      "map": "queen_of_spades",
+      "file_hash": "13a2bce45bf3db25",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 7,
+            "actions": 1122,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 1104,
+            "sprint_actions": 1,
+            "extra_steps": 2,
+            "max_sprint_steps": 3,
+            "splits": 18,
+            "late_splits": 0,
+            "deaths_S": 1,
+            "deaths_H": 19
+          },
+          "split_lengths": {
+            "4": 18
+          },
+          "child_sizes": {
+            "2": 18
+          },
+          "split_phases": {
+            "0-49": 3,
+            "50-99": 3,
+            "100-149": 7,
+            "150-199": 4,
+            "200-249": 1
+          },
+          "won": false
+        },
+        "B": {
+          "counts": {
+            "max_population": 58,
+            "actions": 9659,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 9474,
+            "sprint_actions": 12,
+            "extra_steps": 13,
+            "max_sprint_steps": 3,
+            "splits": 185,
+            "late_splits": 0,
+            "deaths_H": 71,
+            "deaths_S": 35,
+            "deaths_O": 29
+          },
+          "split_lengths": {
+            "4": 180,
+            "5": 5
+          },
+          "child_sizes": {
+            "2": 180,
+            "3": 5
+          },
+          "split_phases": {
+            "0-49": 8,
+            "50-99": 22,
+            "100-149": 36,
+            "150-199": 26,
+            "200-249": 24,
+            "250-299": 36,
+            "300-349": 27,
+            "350-399": 6
+          },
+          "won": true
+        }
+      }
+    },
+    {
+      "battle": 43448,
+      "game": 43450,
+      "map": "Devil",
+      "file_hash": "abfdaa52420cb227",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 17,
+            "actions": 5151,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 122,
+            "late_splits": 17,
+            "move_actions": 5029,
+            "sprint_actions": 29,
+            "extra_steps": 43,
+            "max_sprint_steps": 4,
+            "deaths_H": 88,
+            "deaths_S": 13,
+            "deaths_W": 5,
+            "deaths_O": 6
+          },
+          "split_lengths": {
+            "4": 103,
+            "5": 10,
+            "8": 2,
+            "6": 3,
+            "9": 2,
+            "7": 2
+          },
+          "child_sizes": {
+            "2": 104,
+            "3": 10,
+            "4": 3,
+            "7": 2,
+            "5": 2,
+            "6": 1
+          },
+          "split_phases": {
+            "0-49": 7,
+            "50-99": 9,
+            "100-149": 7,
+            "150-199": 11,
+            "200-249": 15,
+            "250-299": 13,
+            "300-349": 18,
+            "350-399": 15,
+            "400-449": 10,
+            "450-499": 17
+          },
+          "won": false
+        },
+        "B": {
+          "counts": {
+            "max_population": 36,
+            "actions": 12330,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 564,
+            "late_splits": 28,
+            "move_actions": 11766,
+            "sprint_actions": 21,
+            "extra_steps": 28,
+            "max_sprint_steps": 5,
+            "deaths_H": 426,
+            "deaths_W": 63,
+            "deaths_O": 59
+          },
+          "split_lengths": {
+            "4": 523,
+            "6": 10,
+            "5": 12,
+            "7": 5,
+            "10": 4,
+            "8": 4,
+            "13": 1,
+            "11": 1,
+            "16": 1,
+            "14": 1,
+            "12": 1,
+            "9": 1
+          },
+          "child_sizes": {
+            "2": 564
+          },
+          "split_phases": {
+            "0-49": 23,
+            "50-99": 64,
+            "100-149": 74,
+            "150-199": 63,
+            "200-249": 55,
+            "250-299": 71,
+            "300-349": 76,
+            "350-399": 81,
+            "400-449": 29,
+            "450-499": 28
+          },
+          "won": true
+        }
+      }
+    },
+    {
+      "battle": 43448,
+      "game": 43451,
+      "map": "default_small",
+      "file_hash": "ee517200eaf1f71a",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 15,
+            "actions": 3621,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 3515,
+            "sprint_actions": 28,
+            "extra_steps": 41,
+            "max_sprint_steps": 5,
+            "splits": 106,
+            "late_splits": 7,
+            "deaths_H": 87,
+            "deaths_W": 8,
+            "deaths_O": 7,
+            "deaths_S": 3
+          },
+          "split_lengths": {
+            "4": 106
+          },
+          "child_sizes": {
+            "2": 106
+          },
+          "split_phases": {
+            "0-49": 7,
+            "50-99": 16,
+            "100-149": 14,
+            "150-199": 15,
+            "200-249": 15,
+            "250-299": 3,
+            "300-349": 12,
+            "350-399": 11,
+            "400-449": 6,
+            "450-499": 7
+          },
+          "won": false
+        },
+        "B": {
+          "counts": {
+            "max_population": 43,
+            "actions": 12167,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 11902,
+            "sprint_actions": 3,
+            "extra_steps": 3,
+            "max_sprint_steps": 2,
+            "splits": 265,
+            "late_splits": 31,
+            "deaths_H": 135,
+            "deaths_W": 65,
+            "deaths_O": 39
+          },
+          "split_lengths": {
+            "4": 245,
+            "5": 8,
+            "6": 6,
+            "10": 2,
+            "8": 2,
+            "7": 1,
+            "9": 1
+          },
+          "child_sizes": {
+            "2": 245,
+            "3": 8,
+            "4": 6,
+            "8": 2,
+            "6": 2,
+            "5": 1,
+            "7": 1
+          },
+          "split_phases": {
+            "0-49": 8,
+            "50-99": 14,
+            "100-149": 21,
+            "150-199": 22,
+            "200-249": 24,
+            "250-299": 32,
+            "300-349": 33,
+            "350-399": 35,
+            "400-449": 45,
+            "450-499": 31
+          },
+          "won": true
+        }
+      }
+    },
+    {
+      "battle": 43448,
+      "game": 43452,
+      "map": "default",
+      "file_hash": "f5935319054c3b1f",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 29,
+            "actions": 7917,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 137,
+            "late_splits": 5,
+            "move_actions": 7780,
+            "sprint_actions": 15,
+            "extra_steps": 20,
+            "max_sprint_steps": 5,
+            "deaths_H": 96,
+            "deaths_O": 25,
+            "deaths_S": 4,
+            "deaths_W": 9
+          },
+          "split_lengths": {
+            "4": 130,
+            "5": 6,
+            "7": 1
+          },
+          "child_sizes": {
+            "2": 130,
+            "3": 6,
+            "5": 1
+          },
+          "split_phases": {
+            "0-49": 14,
+            "50-99": 9,
+            "100-149": 16,
+            "150-199": 23,
+            "200-249": 20,
+            "250-299": 15,
+            "300-349": 20,
+            "350-399": 7,
+            "400-449": 8,
+            "450-499": 5
+          },
+          "won": false
+        },
+        "B": {
+          "counts": {
+            "max_population": 62,
+            "actions": 17276,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 181,
+            "late_splits": 6,
+            "move_actions": 17095,
+            "sprint_actions": 25,
+            "extra_steps": 34,
+            "max_sprint_steps": 4,
+            "deaths_H": 92,
+            "deaths_O": 22,
+            "deaths_W": 15,
+            "deaths_S": 6
+          },
+          "split_lengths": {
+            "4": 160,
+            "8": 4,
+            "6": 6,
+            "7": 2,
+            "5": 8,
+            "9": 1
+          },
+          "child_sizes": {
+            "2": 163,
+            "6": 3,
+            "4": 6,
+            "5": 2,
+            "3": 7
+          },
+          "split_phases": {
+            "0-49": 13,
+            "50-99": 9,
+            "100-149": 17,
+            "150-199": 22,
+            "200-249": 18,
+            "250-299": 26,
+            "300-349": 26,
+            "350-399": 16,
+            "400-449": 28,
+            "450-499": 6
+          },
+          "won": true
+        }
+      }
+    },
+    {
+      "battle": 42818,
+      "game": 42818,
+      "map": "queen_of_spades",
+      "file_hash": "d012502d86fcc060",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 6,
+            "actions": 1002,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 952,
+            "sprint_actions": 1,
+            "extra_steps": 1,
+            "max_sprint_steps": 2,
+            "splits": 39,
+            "late_splits": 0,
+            "deaths_H": 25,
+            "deaths_A": 11,
+            "deaths_S": 5
+          },
+          "split_lengths": {
+            "4": 29,
+            "8": 1,
+            "6": 1,
+            "7": 2,
+            "5": 6
+          },
+          "child_sizes": {
+            "2": 34,
+            "3": 3,
+            "5": 2
+          },
+          "split_phases": {
+            "50-99": 4,
+            "100-149": 12,
+            "150-199": 7,
+            "200-249": 10,
+            "250-299": 6
+          },
+          "won": false
+        },
+        "B": {
+          "counts": {
+            "max_population": 43,
+            "actions": 7435,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 7300,
+            "sprint_actions": 18,
+            "extra_steps": 19,
+            "max_sprint_steps": 3,
+            "splits": 135,
+            "late_splits": 0,
+            "deaths_O": 18,
+            "deaths_S": 24,
+            "deaths_H": 53
+          },
+          "split_lengths": {
+            "4": 134,
+            "5": 1
+          },
+          "child_sizes": {
+            "2": 134,
+            "3": 1
+          },
+          "split_phases": {
+            "0-49": 8,
+            "50-99": 23,
+            "100-149": 20,
+            "150-199": 24,
+            "200-249": 16,
+            "250-299": 27,
+            "300-349": 17
+          },
+          "won": true
+        }
+      }
+    },
+    {
+      "battle": 42818,
+      "game": 42819,
+      "map": "default",
+      "file_hash": "a2cb09a638f63d4a",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 16,
+            "actions": 4738,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 99,
+            "late_splits": 6,
+            "move_actions": 4618,
+            "sprint_actions": 1,
+            "extra_steps": 1,
+            "max_sprint_steps": 2,
+            "deaths_H": 66,
+            "deaths_A": 21,
+            "deaths_S": 4,
+            "deaths_O": 4
+          },
+          "split_lengths": {
+            "4": 85,
+            "5": 7,
+            "7": 3,
+            "6": 2,
+            "11": 1,
+            "9": 1
+          },
+          "child_sizes": {
+            "2": 92,
+            "5": 1,
+            "3": 5,
+            "6": 1
+          },
+          "split_phases": {
+            "0-49": 10,
+            "50-99": 6,
+            "100-149": 14,
+            "150-199": 6,
+            "200-249": 2,
+            "250-299": 9,
+            "300-349": 33,
+            "350-399": 9,
+            "400-449": 4,
+            "450-499": 6
+          },
+          "won": false
+        },
+        "B": {
+          "counts": {
+            "max_population": 64,
+            "actions": 18508,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 236,
+            "late_splits": 19,
+            "move_actions": 18272,
+            "sprint_actions": 17,
+            "extra_steps": 17,
+            "max_sprint_steps": 2,
+            "deaths_H": 96,
+            "deaths_O": 32,
+            "deaths_W": 56,
+            "deaths_S": 14
+          },
+          "split_lengths": {
+            "4": 222,
+            "7": 3,
+            "5": 6,
+            "6": 3,
+            "11": 1,
+            "9": 1
+          },
+          "child_sizes": {
+            "2": 236
+          },
+          "split_phases": {
+            "0-49": 12,
+            "50-99": 10,
+            "100-149": 22,
+            "150-199": 30,
+            "200-249": 23,
+            "250-299": 49,
+            "300-349": 37,
+            "350-399": 27,
+            "400-449": 7,
+            "450-499": 19
+          },
+          "won": true
+        }
+      }
+    },
+    {
+      "battle": 42818,
+      "game": 42820,
+      "map": "schooltime",
+      "file_hash": "44e142398c29f0eb",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 64,
+            "actions": 26043,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 461,
+            "late_splits": 41,
+            "move_actions": 25413,
+            "sprint_actions": 13,
+            "extra_steps": 17,
+            "max_sprint_steps": 3,
+            "deaths_H": 221,
+            "deaths_A": 169,
+            "deaths_O": 10,
+            "deaths_S": 1
+          },
+          "split_lengths": {
+            "4": 209,
+            "15": 9,
+            "5": 81,
+            "11": 11,
+            "6": 45,
+            "7": 31,
+            "12": 7,
+            "10": 12,
+            "13": 7,
+            "8": 16,
+            "9": 13,
+            "33": 1,
+            "14": 5,
+            "18": 1,
+            "31": 1,
+            "16": 2,
+            "24": 1,
+            "23": 1,
+            "21": 2,
+            "19": 1,
+            "17": 3,
+            "29": 2
+          },
+          "child_sizes": {
+            "2": 232,
+            "13": 9,
+            "3": 69,
+            "9": 10,
+            "4": 41,
+            "10": 7,
+            "5": 30,
+            "6": 14,
+            "7": 12,
+            "8": 11,
+            "31": 1,
+            "12": 5,
+            "16": 1,
+            "29": 1,
+            "14": 2,
+            "22": 1,
+            "21": 1,
+            "11": 6,
+            "19": 2,
+            "17": 1,
+            "15": 3,
+            "27": 2
+          },
+          "split_phases": {
+            "0-49": 7,
+            "50-99": 35,
+            "100-149": 65,
+            "150-199": 38,
+            "200-249": 42,
+            "250-299": 42,
+            "300-349": 56,
+            "350-399": 72,
+            "400-449": 63,
+            "450-499": 41
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 52,
+            "actions": 15696,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 473,
+            "late_splits": 31,
+            "move_actions": 15223,
+            "sprint_actions": 189,
+            "extra_steps": 231,
+            "max_sprint_steps": 4,
+            "deaths_H": 297,
+            "deaths_O": 60,
+            "deaths_S": 97
+          },
+          "split_lengths": {
+            "4": 380,
+            "8": 9,
+            "6": 19,
+            "7": 15,
+            "5": 27,
+            "12": 1,
+            "10": 2,
+            "9": 3,
+            "11": 1,
+            "16": 4,
+            "17": 4,
+            "19": 1,
+            "15": 3,
+            "14": 3,
+            "18": 1
+          },
+          "child_sizes": {
+            "2": 380,
+            "6": 9,
+            "4": 19,
+            "5": 15,
+            "3": 27,
+            "10": 1,
+            "8": 2,
+            "7": 3,
+            "9": 1,
+            "14": 4,
+            "15": 4,
+            "17": 1,
+            "13": 3,
+            "12": 3,
+            "16": 1
+          },
+          "split_phases": {
+            "0-49": 11,
+            "50-99": 53,
+            "100-149": 65,
+            "150-199": 65,
+            "200-249": 65,
+            "250-299": 55,
+            "300-349": 62,
+            "350-399": 52,
+            "400-449": 14,
+            "450-499": 31
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 42818,
+      "game": 42821,
+      "map": "Devil",
+      "file_hash": "66ca8fd141b7da0b",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 44,
+            "actions": 2295,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 74,
+            "late_splits": 0,
+            "move_actions": 2202,
+            "sprint_actions": 2,
+            "extra_steps": 2,
+            "max_sprint_steps": 2,
+            "deaths_A": 19,
+            "deaths_H": 16
+          },
+          "split_lengths": {
+            "4": 61,
+            "5": 13
+          },
+          "child_sizes": {
+            "2": 69,
+            "3": 5
+          },
+          "split_phases": {
+            "0-49": 23,
+            "50-99": 46,
+            "100-149": 5
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 10,
+            "actions": 543,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 24,
+            "late_splits": 0,
+            "move_actions": 519,
+            "sprint_actions": 4,
+            "extra_steps": 4,
+            "max_sprint_steps": 2,
+            "deaths_H": 22,
+            "deaths_O": 4,
+            "deaths_W": 1
+          },
+          "split_lengths": {
+            "4": 24
+          },
+          "child_sizes": {
+            "2": 24
+          },
+          "split_phases": {
+            "0-49": 12,
+            "50-99": 12
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 42818,
+      "game": 42822,
+      "map": "trophy",
+      "file_hash": "395da755301554fc",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 8,
+            "actions": 669,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 657,
+            "sprint_actions": 1,
+            "extra_steps": 1,
+            "max_sprint_steps": 2,
+            "splits": 12,
+            "late_splits": 0,
+            "deaths_H": 14
+          },
+          "split_lengths": {
+            "4": 11,
+            "5": 1
+          },
+          "child_sizes": {
+            "2": 11,
+            "3": 1
+          },
+          "split_phases": {
+            "0-49": 8,
+            "50-99": 3,
+            "100-149": 1
+          },
+          "won": false
+        },
+        "B": {
+          "counts": {
+            "max_population": 61,
+            "actions": 4982,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 4874,
+            "sprint_actions": 7,
+            "extra_steps": 9,
+            "max_sprint_steps": 3,
+            "splits": 108,
+            "late_splits": 0,
+            "deaths_H": 26,
+            "deaths_W": 19,
+            "deaths_O": 6
+          },
+          "split_lengths": {
+            "4": 108
+          },
+          "child_sizes": {
+            "2": 108
+          },
+          "split_phases": {
+            "0-49": 18,
+            "50-99": 35,
+            "100-149": 41,
+            "150-199": 14
+          },
+          "won": true
+        }
+      }
+    },
+    {
+      "battle": 38923,
+      "game": 38923,
+      "map": "Big_Empty",
+      "file_hash": "f45ab6b7eda4ad2d",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 64,
+            "actions": 29172,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 28781,
+            "sprint_actions": 311,
+            "extra_steps": 481,
+            "max_sprint_steps": 4,
+            "splits": 391,
+            "late_splits": 28,
+            "deaths_H": 313,
+            "deaths_S": 10,
+            "deaths_O": 7
+          },
+          "split_lengths": {
+            "6": 41,
+            "4": 221,
+            "5": 61,
+            "8": 5,
+            "7": 16,
+            "15": 6,
+            "11": 4,
+            "10": 12,
+            "9": 5,
+            "18": 2,
+            "16": 4,
+            "14": 3,
+            "24": 1,
+            "12": 2,
+            "17": 1,
+            "13": 2,
+            "22": 1,
+            "21": 1,
+            "19": 1,
+            "20": 1,
+            "29": 1
+          },
+          "child_sizes": {
+            "4": 36,
+            "2": 245,
+            "3": 56,
+            "13": 6,
+            "9": 4,
+            "8": 12,
+            "7": 6,
+            "16": 2,
+            "14": 4,
+            "12": 2,
+            "22": 1,
+            "10": 2,
+            "15": 1,
+            "11": 3,
+            "6": 3,
+            "5": 4,
+            "19": 1,
+            "17": 1,
+            "18": 1,
+            "27": 1
+          },
+          "split_phases": {
+            "0-49": 24,
+            "50-99": 74,
+            "100-149": 51,
+            "150-199": 34,
+            "200-249": 32,
+            "250-299": 40,
+            "300-349": 31,
+            "350-399": 40,
+            "400-449": 37,
+            "450-499": 28
+          },
+          "won": false
+        },
+        "B": {
+          "counts": {
+            "max_population": 64,
+            "actions": 26732,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 26392,
+            "sprint_actions": 113,
+            "extra_steps": 233,
+            "max_sprint_steps": 6,
+            "splits": 340,
+            "late_splits": 10,
+            "deaths_H": 313,
+            "deaths_O": 5
+          },
+          "split_lengths": {
+            "6": 31,
+            "4": 185,
+            "5": 47,
+            "9": 10,
+            "7": 12,
+            "11": 7,
+            "8": 10,
+            "13": 4,
+            "19": 5,
+            "17": 4,
+            "10": 3,
+            "21": 4,
+            "20": 2,
+            "16": 4,
+            "15": 3,
+            "12": 3,
+            "26": 1,
+            "25": 2,
+            "22": 1,
+            "23": 1,
+            "28": 1
+          },
+          "child_sizes": {
+            "4": 31,
+            "2": 222,
+            "3": 46,
+            "7": 4,
+            "5": 12,
+            "11": 1,
+            "8": 2,
+            "17": 2,
+            "19": 3,
+            "6": 2,
+            "15": 3,
+            "14": 2,
+            "24": 1,
+            "10": 1,
+            "23": 2,
+            "20": 1,
+            "13": 1,
+            "9": 1,
+            "21": 1,
+            "26": 1,
+            "18": 1
+          },
+          "split_phases": {
+            "0-49": 32,
+            "50-99": 64,
+            "100-149": 51,
+            "150-199": 34,
+            "200-249": 34,
+            "250-299": 38,
+            "300-349": 29,
+            "350-399": 40,
+            "400-449": 8,
+            "450-499": 10
+          },
+          "won": true
+        }
+      }
+    },
+    {
+      "battle": 38923,
+      "game": 38924,
+      "map": "Default",
+      "file_hash": "75e1181f6f107b00",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 29,
+            "actions": 8030,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 176,
+            "late_splits": 5,
+            "move_actions": 7854,
+            "sprint_actions": 34,
+            "extra_steps": 40,
+            "max_sprint_steps": 3,
+            "deaths_H": 118,
+            "deaths_O": 32,
+            "deaths_W": 26
+          },
+          "split_lengths": {
+            "4": 153,
+            "10": 3,
+            "8": 3,
+            "9": 2,
+            "6": 3,
+            "13": 1,
+            "11": 2,
+            "7": 4,
+            "5": 4,
+            "18": 1
+          },
+          "child_sizes": {
+            "2": 153,
+            "8": 3,
+            "6": 3,
+            "7": 2,
+            "4": 3,
+            "11": 1,
+            "9": 2,
+            "5": 4,
+            "3": 4,
+            "16": 1
+          },
+          "split_phases": {
+            "0-49": 22,
+            "50-99": 18,
+            "100-149": 20,
+            "150-199": 23,
+            "200-249": 25,
+            "250-299": 32,
+            "300-349": 9,
+            "350-399": 9,
+            "400-449": 13,
+            "450-499": 5
+          },
+          "won": false
+        },
+        "B": {
+          "counts": {
+            "max_population": 43,
+            "actions": 8924,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 108,
+            "late_splits": 8,
+            "move_actions": 8816,
+            "sprint_actions": 16,
+            "extra_steps": 19,
+            "max_sprint_steps": 4,
+            "deaths_H": 68,
+            "deaths_W": 3,
+            "deaths_O": 8
+          },
+          "split_lengths": {
+            "4": 90,
+            "7": 3,
+            "5": 4,
+            "11": 3,
+            "9": 4,
+            "6": 2,
+            "12": 1,
+            "10": 1
+          },
+          "child_sizes": {
+            "2": 91,
+            "5": 3,
+            "3": 4,
+            "9": 3,
+            "7": 3,
+            "4": 2,
+            "10": 1,
+            "8": 1
+          },
+          "split_phases": {
+            "0-49": 10,
+            "50-99": 5,
+            "100-149": 9,
+            "150-199": 12,
+            "200-249": 5,
+            "250-299": 11,
+            "300-349": 20,
+            "350-399": 11,
+            "400-449": 17,
+            "450-499": 8
+          },
+          "won": true
+        }
+      }
+    },
+    {
+      "battle": 38923,
+      "game": 38925,
+      "map": "Colosseum",
+      "file_hash": "a323ca15b0927405",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 31,
+            "actions": 798,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 43,
+            "late_splits": 0,
+            "move_actions": 755,
+            "sprint_actions": 6,
+            "extra_steps": 7,
+            "max_sprint_steps": 3,
+            "deaths_H": 13,
+            "deaths_O": 1
+          },
+          "split_lengths": {
+            "4": 43
+          },
+          "child_sizes": {
+            "2": 43
+          },
+          "split_phases": {
+            "0-49": 32,
+            "50-99": 11
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 5,
+            "actions": 148,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 8,
+            "late_splits": 0,
+            "move_actions": 140,
+            "sprint_actions": 1,
+            "extra_steps": 1,
+            "max_sprint_steps": 2,
+            "deaths_H": 9
+          },
+          "split_lengths": {
+            "4": 8
+          },
+          "child_sizes": {
+            "2": 8
+          },
+          "split_phases": {
+            "0-49": 8
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 38923,
+      "game": 38926,
+      "map": "default_small",
+      "file_hash": "efdff1b6e26362e7",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 6,
+            "actions": 298,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 285,
+            "sprint_actions": 3,
+            "extra_steps": 5,
+            "max_sprint_steps": 3,
+            "splits": 13,
+            "late_splits": 0,
+            "deaths_H": 14,
+            "deaths_W": 1
+          },
+          "split_lengths": {
+            "4": 13
+          },
+          "child_sizes": {
+            "2": 13
+          },
+          "split_phases": {
+            "0-49": 5,
+            "50-99": 7,
+            "100-149": 1
+          },
+          "won": false
+        },
+        "B": {
+          "counts": {
+            "max_population": 26,
+            "actions": 1362,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 1325,
+            "sprint_actions": 5,
+            "extra_steps": 8,
+            "max_sprint_steps": 4,
+            "splits": 37,
+            "late_splits": 0,
+            "deaths_H": 14,
+            "deaths_S": 1
+          },
+          "split_lengths": {
+            "4": 37
+          },
+          "child_sizes": {
+            "2": 37
+          },
+          "split_phases": {
+            "0-49": 11,
+            "50-99": 19,
+            "100-149": 7
+          },
+          "won": true
+        }
+      }
+    },
+    {
+      "battle": 38923,
+      "game": 38927,
+      "map": "trophy",
+      "file_hash": "d9be55297ac03675",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 59,
+            "actions": 10893,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 10750,
+            "sprint_actions": 23,
+            "extra_steps": 31,
+            "max_sprint_steps": 4,
+            "splits": 143,
+            "late_splits": 0,
+            "deaths_H": 72,
+            "deaths_W": 15,
+            "deaths_O": 5
+          },
+          "split_lengths": {
+            "4": 142,
+            "5": 1
+          },
+          "child_sizes": {
+            "2": 143
+          },
+          "split_phases": {
+            "0-49": 21,
+            "50-99": 27,
+            "100-149": 23,
+            "150-199": 24,
+            "200-249": 27,
+            "250-299": 21
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 9,
+            "actions": 1580,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 1527,
+            "sprint_actions": 5,
+            "extra_steps": 8,
+            "max_sprint_steps": 5,
+            "splits": 53,
+            "late_splits": 0,
+            "deaths_H": 50,
+            "deaths_O": 4,
+            "deaths_W": 1
+          },
+          "split_lengths": {
+            "4": 53
+          },
+          "child_sizes": {
+            "2": 53
+          },
+          "split_phases": {
+            "0-49": 7,
+            "50-99": 10,
+            "100-149": 11,
+            "150-199": 10,
+            "200-249": 10,
+            "250-299": 5
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 43891,
+      "game": 43891,
+      "map": "default",
+      "file_hash": "8eeb11830e8f92dc",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 62,
+            "actions": 15961,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 195,
+            "late_splits": 9,
+            "move_actions": 15766,
+            "sprint_actions": 25,
+            "extra_steps": 29,
+            "max_sprint_steps": 3,
+            "deaths_H": 87,
+            "deaths_O": 22,
+            "deaths_W": 17,
+            "deaths_S": 12
+          },
+          "split_lengths": {
+            "4": 171,
+            "6": 7,
+            "5": 7,
+            "7": 4,
+            "10": 1,
+            "8": 3,
+            "9": 2
+          },
+          "child_sizes": {
+            "2": 171,
+            "4": 7,
+            "3": 7,
+            "5": 4,
+            "8": 1,
+            "6": 3,
+            "7": 2
+          },
+          "split_phases": {
+            "0-49": 10,
+            "50-99": 14,
+            "100-149": 17,
+            "150-199": 27,
+            "200-249": 16,
+            "250-299": 22,
+            "300-349": 36,
+            "350-399": 28,
+            "400-449": 16,
+            "450-499": 9
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 24,
+            "actions": 6519,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 86,
+            "late_splits": 0,
+            "move_actions": 6433,
+            "sprint_actions": 35,
+            "extra_steps": 35,
+            "max_sprint_steps": 2,
+            "deaths_H": 59,
+            "deaths_O": 13,
+            "deaths_W": 13,
+            "deaths_S": 5
+          },
+          "split_lengths": {
+            "4": 54,
+            "5": 18,
+            "7": 3,
+            "6": 5,
+            "11": 1,
+            "9": 3,
+            "8": 2
+          },
+          "child_sizes": {
+            "2": 69,
+            "3": 9,
+            "4": 4,
+            "7": 2,
+            "5": 2
+          },
+          "split_phases": {
+            "0-49": 15,
+            "50-99": 8,
+            "100-149": 10,
+            "150-199": 13,
+            "200-249": 9,
+            "250-299": 16,
+            "300-349": 6,
+            "350-399": 3,
+            "400-449": 6
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 43891,
+      "game": 43892,
+      "map": "Devil",
+      "file_hash": "fea350cd78518415",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 62,
+            "actions": 10193,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 353,
+            "late_splits": 0,
+            "move_actions": 9840,
+            "sprint_actions": 40,
+            "extra_steps": 82,
+            "max_sprint_steps": 6,
+            "deaths_H": 79,
+            "deaths_O": 49,
+            "deaths_S": 112,
+            "deaths_W": 59
+          },
+          "split_lengths": {
+            "4": 312,
+            "5": 20,
+            "11": 1,
+            "9": 1,
+            "7": 3,
+            "10": 1,
+            "8": 3,
+            "6": 12
+          },
+          "child_sizes": {
+            "2": 312,
+            "3": 20,
+            "9": 1,
+            "7": 1,
+            "5": 3,
+            "8": 1,
+            "6": 3,
+            "4": 12
+          },
+          "split_phases": {
+            "0-49": 17,
+            "50-99": 51,
+            "100-149": 57,
+            "150-199": 66,
+            "200-249": 81,
+            "250-299": 81
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 21,
+            "actions": 3135,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 3027,
+            "sprint_actions": 19,
+            "extra_steps": 20,
+            "max_sprint_steps": 3,
+            "splits": 108,
+            "late_splits": 0,
+            "deaths_S": 22,
+            "deaths_H": 79,
+            "deaths_O": 7,
+            "deaths_W": 3
+          },
+          "split_lengths": {
+            "4": 78,
+            "5": 19,
+            "6": 8,
+            "8": 2,
+            "7": 1
+          },
+          "child_sizes": {
+            "2": 98,
+            "4": 1,
+            "3": 9
+          },
+          "split_phases": {
+            "0-49": 25,
+            "50-99": 21,
+            "100-149": 20,
+            "150-199": 20,
+            "200-249": 14,
+            "250-299": 8
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 43891,
+      "game": 43893,
+      "map": "trophy",
+      "file_hash": "a6f30d35b5d3dc12",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 25,
+            "actions": 6117,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 5949,
+            "sprint_actions": 59,
+            "extra_steps": 74,
+            "max_sprint_steps": 5,
+            "splits": 168,
+            "late_splits": 15,
+            "deaths_W": 7,
+            "deaths_H": 151,
+            "deaths_S": 5,
+            "deaths_O": 2
+          },
+          "split_lengths": {
+            "4": 141,
+            "9": 4,
+            "7": 3,
+            "5": 10,
+            "11": 1,
+            "8": 2,
+            "10": 4,
+            "6": 3
+          },
+          "child_sizes": {
+            "2": 149,
+            "7": 3,
+            "5": 3,
+            "3": 8,
+            "9": 1,
+            "4": 3,
+            "8": 1
+          },
+          "split_phases": {
+            "0-49": 13,
+            "50-99": 21,
+            "100-149": 26,
+            "150-199": 14,
+            "200-249": 16,
+            "250-299": 13,
+            "300-349": 18,
+            "350-399": 18,
+            "400-449": 14,
+            "450-499": 15
+          },
+          "won": false
+        },
+        "B": {
+          "counts": {
+            "max_population": 46,
+            "actions": 13290,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 13063,
+            "sprint_actions": 74,
+            "extra_steps": 95,
+            "max_sprint_steps": 4,
+            "splits": 227,
+            "late_splits": 31,
+            "deaths_H": 157,
+            "deaths_O": 15,
+            "deaths_S": 8,
+            "deaths_W": 5
+          },
+          "split_lengths": {
+            "4": 119,
+            "5": 26,
+            "6": 12,
+            "7": 14,
+            "14": 8,
+            "8": 8,
+            "18": 2,
+            "16": 5,
+            "9": 11,
+            "15": 6,
+            "13": 6,
+            "11": 4,
+            "19": 1,
+            "17": 2,
+            "12": 1,
+            "10": 2
+          },
+          "child_sizes": {
+            "2": 131,
+            "4": 12,
+            "5": 14,
+            "3": 14,
+            "12": 8,
+            "6": 8,
+            "16": 2,
+            "14": 5,
+            "7": 11,
+            "13": 6,
+            "11": 6,
+            "9": 4,
+            "17": 1,
+            "15": 2,
+            "10": 1,
+            "8": 2
+          },
+          "split_phases": {
+            "0-49": 14,
+            "50-99": 17,
+            "100-149": 28,
+            "150-199": 43,
+            "200-249": 9,
+            "250-299": 11,
+            "300-349": 18,
+            "350-399": 24,
+            "400-449": 32,
+            "450-499": 31
+          },
+          "won": true
+        }
+      }
+    },
+    {
+      "battle": 43891,
+      "game": 43894,
+      "map": "big_empty",
+      "file_hash": "706d78f6cc068931",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 64,
+            "actions": 28576,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 28285,
+            "sprint_actions": 90,
+            "extra_steps": 216,
+            "max_sprint_steps": 6,
+            "splits": 291,
+            "late_splits": 34,
+            "deaths_H": 194,
+            "deaths_O": 26,
+            "deaths_S": 11
+          },
+          "split_lengths": {
+            "6": 17,
+            "4": 88,
+            "5": 21,
+            "11": 7,
+            "14": 14,
+            "10": 13,
+            "8": 12,
+            "9": 8,
+            "7": 10,
+            "16": 3,
+            "13": 7,
+            "32": 1,
+            "22": 9,
+            "19": 3,
+            "15": 7,
+            "12": 6,
+            "23": 8,
+            "26": 5,
+            "25": 7,
+            "20": 9,
+            "29": 7,
+            "35": 2,
+            "21": 8,
+            "27": 9,
+            "33": 1,
+            "28": 2,
+            "17": 1,
+            "40": 1,
+            "38": 3,
+            "30": 1,
+            "24": 1
+          },
+          "child_sizes": {
+            "4": 15,
+            "2": 120,
+            "3": 19,
+            "9": 4,
+            "12": 8,
+            "5": 11,
+            "6": 7,
+            "8": 8,
+            "14": 3,
+            "11": 6,
+            "7": 4,
+            "30": 1,
+            "20": 9,
+            "17": 3,
+            "13": 6,
+            "10": 5,
+            "21": 8,
+            "24": 5,
+            "23": 7,
+            "18": 7,
+            "27": 7,
+            "33": 2,
+            "19": 7,
+            "25": 9,
+            "31": 1,
+            "26": 2,
+            "15": 1,
+            "38": 1,
+            "36": 3,
+            "28": 1,
+            "22": 1
+          },
+          "split_phases": {
+            "0-49": 26,
+            "50-99": 48,
+            "100-149": 19,
+            "150-199": 21,
+            "200-249": 16,
+            "250-299": 33,
+            "300-349": 33,
+            "350-399": 28,
+            "400-449": 33,
+            "450-499": 34
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 64,
+            "actions": 26136,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 25822,
+            "sprint_actions": 134,
+            "extra_steps": 197,
+            "max_sprint_steps": 4,
+            "splits": 314,
+            "late_splits": 36,
+            "deaths_H": 194,
+            "deaths_O": 41,
+            "deaths_S": 18
+          },
+          "split_lengths": {
+            "6": 17,
+            "4": 59,
+            "5": 16,
+            "9": 17,
+            "12": 12,
+            "11": 13,
+            "19": 9,
+            "8": 16,
+            "7": 12,
+            "10": 15,
+            "22": 6,
+            "21": 7,
+            "15": 13,
+            "13": 13,
+            "16": 10,
+            "14": 13,
+            "18": 9,
+            "24": 5,
+            "20": 11,
+            "30": 4,
+            "17": 11,
+            "25": 3,
+            "23": 3,
+            "31": 3,
+            "32": 2,
+            "33": 2,
+            "27": 3,
+            "35": 1,
+            "28": 3,
+            "26": 4,
+            "36": 1,
+            "34": 1
+          },
+          "child_sizes": {
+            "2": 76,
+            "7": 17,
+            "4": 10,
+            "10": 12,
+            "9": 13,
+            "17": 9,
+            "6": 16,
+            "5": 12,
+            "8": 15,
+            "3": 7,
+            "20": 6,
+            "19": 7,
+            "13": 13,
+            "11": 13,
+            "14": 10,
+            "12": 13,
+            "16": 9,
+            "22": 5,
+            "18": 11,
+            "28": 4,
+            "15": 10,
+            "23": 3,
+            "21": 3,
+            "29": 3,
+            "30": 2,
+            "31": 2,
+            "25": 3,
+            "33": 1,
+            "26": 3,
+            "24": 4,
+            "34": 1,
+            "32": 1
+          },
+          "split_phases": {
+            "0-49": 31,
+            "50-99": 28,
+            "100-149": 19,
+            "150-199": 20,
+            "200-249": 25,
+            "250-299": 36,
+            "300-349": 36,
+            "350-399": 36,
+            "400-449": 47,
+            "450-499": 36
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 43891,
+      "game": 43895,
+      "map": "default_small",
+      "file_hash": "f4f595caca3b88da",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 36,
+            "actions": 4177,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 4092,
+            "sprint_actions": 19,
+            "extra_steps": 23,
+            "max_sprint_steps": 4,
+            "splits": 85,
+            "late_splits": 0,
+            "deaths_H": 30,
+            "deaths_O": 6,
+            "deaths_S": 7,
+            "deaths_W": 11
+          },
+          "split_lengths": {
+            "4": 83,
+            "5": 2
+          },
+          "child_sizes": {
+            "2": 83,
+            "3": 2
+          },
+          "split_phases": {
+            "0-49": 8,
+            "50-99": 20,
+            "100-149": 25,
+            "150-199": 29,
+            "200-249": 3
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 12,
+            "actions": 999,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 968,
+            "sprint_actions": 5,
+            "extra_steps": 5,
+            "max_sprint_steps": 2,
+            "splits": 31,
+            "late_splits": 0,
+            "deaths_H": 30,
+            "deaths_S": 2,
+            "deaths_W": 1
+          },
+          "split_lengths": {
+            "4": 23,
+            "5": 3,
+            "8": 1,
+            "6": 3,
+            "7": 1
+          },
+          "child_sizes": {
+            "2": 30,
+            "4": 1
+          },
+          "split_phases": {
+            "0-49": 4,
+            "50-99": 12,
+            "100-149": 5,
+            "150-199": 8,
+            "200-249": 2
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 44401,
+      "game": 44401,
+      "map": "default_small",
+      "file_hash": "21d73ced6e6a6d4a",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 11,
+            "actions": 1795,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 1741,
+            "sprint_actions": 3,
+            "extra_steps": 3,
+            "max_sprint_steps": 2,
+            "splits": 54,
+            "late_splits": 0,
+            "deaths_H": 56
+          },
+          "split_lengths": {
+            "4": 54
+          },
+          "child_sizes": {
+            "2": 54
+          },
+          "split_phases": {
+            "0-49": 7,
+            "50-99": 11,
+            "100-149": 11,
+            "150-199": 4,
+            "200-249": 12,
+            "250-299": 7,
+            "300-349": 2
+          },
+          "won": false
+        },
+        "B": {
+          "counts": {
+            "max_population": 32,
+            "actions": 6286,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 6068,
+            "sprint_actions": 0,
+            "extra_steps": 0,
+            "max_sprint_steps": 1,
+            "splits": 218,
+            "late_splits": 0,
+            "deaths_H": 56,
+            "deaths_W": 50,
+            "deaths_S": 53,
+            "deaths_O": 34
+          },
+          "split_lengths": {
+            "4": 218
+          },
+          "child_sizes": {
+            "2": 218
+          },
+          "split_phases": {
+            "0-49": 10,
+            "50-99": 25,
+            "100-149": 31,
+            "150-199": 38,
+            "200-249": 35,
+            "250-299": 48,
+            "300-349": 31
+          },
+          "won": true
+        }
+      }
+    },
+    {
+      "battle": 44401,
+      "game": 44402,
+      "map": "big_empty",
+      "file_hash": "fa0b0edf9aac3523",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 64,
+            "actions": 28763,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 28607,
+            "sprint_actions": 577,
+            "extra_steps": 591,
+            "max_sprint_steps": 3,
+            "splits": 156,
+            "late_splits": 18,
+            "deaths_H": 70,
+            "deaths_S": 9,
+            "deaths_O": 22
+          },
+          "split_lengths": {
+            "6": 8,
+            "4": 67,
+            "5": 6,
+            "7": 6,
+            "9": 10,
+            "8": 8,
+            "13": 3,
+            "16": 7,
+            "12": 2,
+            "10": 4,
+            "24": 1,
+            "11": 7,
+            "22": 1,
+            "18": 4,
+            "15": 1,
+            "17": 1,
+            "14": 2,
+            "21": 2,
+            "23": 4,
+            "30": 2,
+            "20": 4,
+            "31": 2,
+            "26": 1,
+            "19": 1,
+            "29": 1,
+            "36": 1
+          },
+          "child_sizes": {
+            "4": 8,
+            "2": 67,
+            "3": 6,
+            "5": 6,
+            "7": 10,
+            "6": 8,
+            "11": 3,
+            "14": 7,
+            "10": 2,
+            "8": 4,
+            "22": 1,
+            "9": 7,
+            "20": 1,
+            "16": 4,
+            "13": 1,
+            "15": 1,
+            "12": 2,
+            "19": 2,
+            "21": 4,
+            "28": 2,
+            "18": 4,
+            "29": 2,
+            "24": 1,
+            "17": 1,
+            "27": 1,
+            "34": 1
+          },
+          "split_phases": {
+            "0-49": 30,
+            "50-99": 41,
+            "100-149": 11,
+            "150-199": 10,
+            "200-249": 3,
+            "250-299": 9,
+            "300-349": 14,
+            "350-399": 5,
+            "400-449": 15,
+            "450-499": 18
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 64,
+            "actions": 29202,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 306,
+            "late_splits": 21,
+            "move_actions": 28896,
+            "sprint_actions": 0,
+            "extra_steps": 0,
+            "max_sprint_steps": 1,
+            "deaths_H": 70,
+            "deaths_S": 91,
+            "deaths_O": 107
+          },
+          "split_lengths": {
+            "6": 31,
+            "4": 109,
+            "5": 30,
+            "10": 17,
+            "7": 23,
+            "11": 21,
+            "9": 16,
+            "12": 10,
+            "8": 20,
+            "13": 12,
+            "16": 4,
+            "14": 6,
+            "18": 1,
+            "17": 2,
+            "15": 4
+          },
+          "child_sizes": {
+            "2": 306
+          },
+          "split_phases": {
+            "0-49": 36,
+            "50-99": 39,
+            "100-149": 18,
+            "150-199": 25,
+            "200-249": 19,
+            "250-299": 38,
+            "300-349": 38,
+            "350-399": 35,
+            "400-449": 37,
+            "450-499": 21
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 44401,
+      "game": 44403,
+      "map": "queen_of_spades",
+      "file_hash": "fb5bb3ed4888dac9",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 8,
+            "actions": 1424,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 1381,
+            "sprint_actions": 6,
+            "extra_steps": 7,
+            "max_sprint_steps": 3,
+            "splits": 43,
+            "late_splits": 0,
+            "deaths_S": 15,
+            "deaths_H": 26,
+            "deaths_O": 3
+          },
+          "split_lengths": {
+            "4": 42,
+            "6": 1
+          },
+          "child_sizes": {
+            "2": 42,
+            "4": 1
+          },
+          "split_phases": {
+            "0-49": 10,
+            "50-99": 10,
+            "100-149": 7,
+            "150-199": 5,
+            "200-249": 10,
+            "250-299": 1
+          },
+          "won": false
+        },
+        "B": {
+          "counts": {
+            "max_population": 41,
+            "actions": 11838,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 11541,
+            "sprint_actions": 0,
+            "extra_steps": 0,
+            "max_sprint_steps": 1,
+            "splits": 297,
+            "late_splits": 17,
+            "deaths_H": 102,
+            "deaths_W": 80,
+            "deaths_O": 58,
+            "deaths_S": 36
+          },
+          "split_lengths": {
+            "4": 297
+          },
+          "child_sizes": {
+            "2": 297
+          },
+          "split_phases": {
+            "0-49": 9,
+            "50-99": 9,
+            "100-149": 28,
+            "150-199": 25,
+            "200-249": 25,
+            "250-299": 37,
+            "300-349": 41,
+            "350-399": 56,
+            "400-449": 50,
+            "450-499": 17
+          },
+          "won": true
+        }
+      }
+    },
+    {
+      "battle": 44401,
+      "game": 44404,
+      "map": "big_empty",
+      "file_hash": "3e43fee9f359c58c",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 64,
+            "actions": 28763,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 28607,
+            "sprint_actions": 577,
+            "extra_steps": 591,
+            "max_sprint_steps": 3,
+            "splits": 156,
+            "late_splits": 18,
+            "deaths_H": 70,
+            "deaths_S": 9,
+            "deaths_O": 22
+          },
+          "split_lengths": {
+            "6": 8,
+            "4": 67,
+            "5": 6,
+            "7": 6,
+            "9": 10,
+            "8": 8,
+            "13": 3,
+            "16": 7,
+            "12": 2,
+            "10": 4,
+            "24": 1,
+            "11": 7,
+            "22": 1,
+            "18": 4,
+            "15": 1,
+            "17": 1,
+            "14": 2,
+            "21": 2,
+            "23": 4,
+            "30": 2,
+            "20": 4,
+            "31": 2,
+            "26": 1,
+            "19": 1,
+            "29": 1,
+            "36": 1
+          },
+          "child_sizes": {
+            "4": 8,
+            "2": 67,
+            "3": 6,
+            "5": 6,
+            "7": 10,
+            "6": 8,
+            "11": 3,
+            "14": 7,
+            "10": 2,
+            "8": 4,
+            "22": 1,
+            "9": 7,
+            "20": 1,
+            "16": 4,
+            "13": 1,
+            "15": 1,
+            "12": 2,
+            "19": 2,
+            "21": 4,
+            "28": 2,
+            "18": 4,
+            "29": 2,
+            "24": 1,
+            "17": 1,
+            "27": 1,
+            "34": 1
+          },
+          "split_phases": {
+            "0-49": 30,
+            "50-99": 41,
+            "100-149": 11,
+            "150-199": 10,
+            "200-249": 3,
+            "250-299": 9,
+            "300-349": 14,
+            "350-399": 5,
+            "400-449": 15,
+            "450-499": 18
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 64,
+            "actions": 29202,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 306,
+            "late_splits": 21,
+            "move_actions": 28896,
+            "sprint_actions": 0,
+            "extra_steps": 0,
+            "max_sprint_steps": 1,
+            "deaths_H": 70,
+            "deaths_S": 91,
+            "deaths_O": 107
+          },
+          "split_lengths": {
+            "6": 31,
+            "4": 109,
+            "5": 30,
+            "10": 17,
+            "7": 23,
+            "11": 21,
+            "9": 16,
+            "12": 10,
+            "8": 20,
+            "13": 12,
+            "16": 4,
+            "14": 6,
+            "18": 1,
+            "17": 2,
+            "15": 4
+          },
+          "child_sizes": {
+            "2": 306
+          },
+          "split_phases": {
+            "0-49": 36,
+            "50-99": 39,
+            "100-149": 18,
+            "150-199": 25,
+            "200-249": 19,
+            "250-299": 38,
+            "300-349": 38,
+            "350-399": 35,
+            "400-449": 37,
+            "450-499": 21
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 44401,
+      "game": 44405,
+      "map": "Devil",
+      "file_hash": "dfa7b96aaf823b7b",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 50,
+            "actions": 17383,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 408,
+            "late_splits": 7,
+            "move_actions": 16975,
+            "sprint_actions": 244,
+            "extra_steps": 252,
+            "max_sprint_steps": 3,
+            "deaths_H": 101,
+            "deaths_O": 74,
+            "deaths_S": 209
+          },
+          "split_lengths": {
+            "4": 395,
+            "5": 8,
+            "6": 3,
+            "8": 1,
+            "10": 1
+          },
+          "child_sizes": {
+            "2": 395,
+            "3": 8,
+            "4": 3,
+            "6": 1,
+            "8": 1
+          },
+          "split_phases": {
+            "0-49": 23,
+            "50-99": 44,
+            "100-149": 58,
+            "150-199": 50,
+            "200-249": 52,
+            "250-299": 60,
+            "300-349": 57,
+            "350-399": 43,
+            "400-449": 14,
+            "450-499": 7
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 18,
+            "actions": 5470,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 284,
+            "late_splits": 15,
+            "move_actions": 5186,
+            "sprint_actions": 0,
+            "extra_steps": 0,
+            "max_sprint_steps": 1,
+            "deaths_H": 101,
+            "deaths_O": 38,
+            "deaths_S": 89,
+            "deaths_W": 55
+          },
+          "split_lengths": {
+            "4": 284
+          },
+          "child_sizes": {
+            "2": 284
+          },
+          "split_phases": {
+            "0-49": 15,
+            "50-99": 18,
+            "100-149": 29,
+            "150-199": 31,
+            "200-249": 33,
+            "250-299": 37,
+            "300-349": 36,
+            "350-399": 35,
+            "400-449": 35,
+            "450-499": 15
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 40314,
+      "game": 40314,
+      "map": "schooltime",
+      "file_hash": "511d0592b4207773",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 64,
+            "actions": 16699,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 372,
+            "late_splits": 55,
+            "move_actions": 16209,
+            "sprint_actions": 15,
+            "extra_steps": 20,
+            "max_sprint_steps": 3,
+            "deaths_H": 187,
+            "deaths_A": 118,
+            "deaths_O": 9
+          },
+          "split_lengths": {
+            "4": 268,
+            "6": 17,
+            "12": 3,
+            "5": 51,
+            "7": 12,
+            "10": 3,
+            "9": 5,
+            "13": 1,
+            "8": 9,
+            "11": 2,
+            "14": 1
+          },
+          "child_sizes": {
+            "2": 292,
+            "5": 12,
+            "3": 35,
+            "4": 12,
+            "8": 3,
+            "7": 5,
+            "11": 1,
+            "6": 7,
+            "9": 2,
+            "10": 2,
+            "12": 1
+          },
+          "split_phases": {
+            "0-49": 6,
+            "50-99": 13,
+            "100-149": 14,
+            "150-199": 11,
+            "200-249": 29,
+            "250-299": 61,
+            "300-349": 68,
+            "350-399": 56,
+            "400-449": 59,
+            "450-499": 55
+          },
+          "won": false
+        },
+        "B": {
+          "counts": {
+            "max_population": 64,
+            "actions": 23175,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 478,
+            "late_splits": 33,
+            "move_actions": 22697,
+            "sprint_actions": 155,
+            "extra_steps": 193,
+            "max_sprint_steps": 4,
+            "deaths_H": 297,
+            "deaths_W": 94,
+            "deaths_S": 11,
+            "deaths_O": 56
+          },
+          "split_lengths": {
+            "4": 302,
+            "5": 43,
+            "6": 27,
+            "7": 19,
+            "17": 2,
+            "9": 14,
+            "8": 17,
+            "19": 6,
+            "12": 8,
+            "13": 6,
+            "16": 2,
+            "14": 2,
+            "11": 7,
+            "10": 9,
+            "15": 5,
+            "25": 1,
+            "24": 2,
+            "23": 1,
+            "22": 1,
+            "20": 1,
+            "21": 1,
+            "18": 1,
+            "28": 1
+          },
+          "child_sizes": {
+            "2": 319,
+            "3": 40,
+            "4": 33,
+            "15": 2,
+            "5": 12,
+            "7": 14,
+            "6": 14,
+            "17": 3,
+            "14": 1,
+            "8": 18,
+            "9": 7,
+            "11": 3,
+            "23": 1,
+            "22": 2,
+            "20": 1,
+            "10": 4,
+            "19": 1,
+            "16": 1,
+            "26": 1,
+            "13": 1
+          },
+          "split_phases": {
+            "0-49": 17,
+            "50-99": 75,
+            "100-149": 66,
+            "150-199": 43,
+            "200-249": 48,
+            "250-299": 64,
+            "300-349": 75,
+            "350-399": 19,
+            "400-449": 38,
+            "450-499": 33
+          },
+          "won": true
+        }
+      }
+    },
+    {
+      "battle": 40314,
+      "game": 40315,
+      "map": "default_small",
+      "file_hash": "e5cc0fe11d04fd60",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 15,
+            "actions": 953,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 914,
+            "sprint_actions": 1,
+            "extra_steps": 1,
+            "max_sprint_steps": 2,
+            "splits": 37,
+            "late_splits": 0,
+            "deaths_H": 23,
+            "deaths_A": 2
+          },
+          "split_lengths": {
+            "4": 37
+          },
+          "child_sizes": {
+            "2": 37
+          },
+          "split_phases": {
+            "0-49": 7,
+            "50-99": 18,
+            "100-149": 12
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 8,
+            "actions": 599,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 577,
+            "sprint_actions": 11,
+            "extra_steps": 13,
+            "max_sprint_steps": 3,
+            "splits": 22,
+            "late_splits": 0,
+            "deaths_H": 23,
+            "deaths_W": 1
+          },
+          "split_lengths": {
+            "4": 22
+          },
+          "child_sizes": {
+            "2": 22
+          },
+          "split_phases": {
+            "0-49": 9,
+            "50-99": 11,
+            "100-149": 2
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 40314,
+      "game": 40316,
+      "map": "trophy",
+      "file_hash": "b8f40fc242478433",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 46,
+            "actions": 2958,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 2872,
+            "sprint_actions": 0,
+            "extra_steps": 0,
+            "max_sprint_steps": 1,
+            "splits": 83,
+            "late_splits": 0,
+            "deaths_H": 37,
+            "deaths_A": 3
+          },
+          "split_lengths": {
+            "4": 81,
+            "5": 2
+          },
+          "child_sizes": {
+            "2": 82,
+            "3": 1
+          },
+          "split_phases": {
+            "0-49": 12,
+            "50-99": 39,
+            "100-149": 31,
+            "150-199": 1
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 8,
+            "actions": 749,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 710,
+            "sprint_actions": 20,
+            "extra_steps": 25,
+            "max_sprint_steps": 3,
+            "splits": 39,
+            "late_splits": 0,
+            "deaths_H": 39,
+            "deaths_O": 2
+          },
+          "split_lengths": {
+            "4": 39
+          },
+          "child_sizes": {
+            "2": 39
+          },
+          "split_phases": {
+            "0-49": 12,
+            "50-99": 12,
+            "100-149": 15
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 40314,
+      "game": 40317,
+      "map": "Arena",
+      "file_hash": "94f79ca8e0baa492",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 17,
+            "actions": 163,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 135,
+            "sprint_actions": 2,
+            "extra_steps": 2,
+            "max_sprint_steps": 2,
+            "splits": 25,
+            "late_splits": 0,
+            "deaths_H": 7,
+            "deaths_A": 3
+          },
+          "split_lengths": {
+            "4": 23,
+            "5": 2
+          },
+          "child_sizes": {
+            "2": 23,
+            "3": 2
+          },
+          "split_phases": {
+            "0-49": 25
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 5,
+            "actions": 64,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 58,
+            "sprint_actions": 6,
+            "extra_steps": 10,
+            "max_sprint_steps": 4,
+            "splits": 6,
+            "late_splits": 0,
+            "deaths_H": 7
+          },
+          "split_lengths": {
+            "4": 6
+          },
+          "child_sizes": {
+            "2": 6
+          },
+          "split_phases": {
+            "0-49": 6
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 40314,
+      "game": 40318,
+      "map": "Default",
+      "file_hash": "903f7e3964ccc5f7",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 62,
+            "actions": 11656,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 150,
+            "late_splits": 17,
+            "move_actions": 11501,
+            "sprint_actions": 8,
+            "extra_steps": 10,
+            "max_sprint_steps": 3,
+            "deaths_H": 81,
+            "deaths_O": 6,
+            "deaths_A": 5
+          },
+          "split_lengths": {
+            "4": 147,
+            "6": 2,
+            "5": 1
+          },
+          "child_sizes": {
+            "2": 149,
+            "4": 1
+          },
+          "split_phases": {
+            "0-49": 13,
+            "50-99": 6,
+            "100-149": 10,
+            "150-199": 10,
+            "200-249": 11,
+            "250-299": 8,
+            "300-349": 27,
+            "350-399": 23,
+            "400-449": 25,
+            "450-499": 17
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 35,
+            "actions": 8559,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 175,
+            "late_splits": 5,
+            "move_actions": 8384,
+            "sprint_actions": 38,
+            "extra_steps": 44,
+            "max_sprint_steps": 3,
+            "deaths_H": 141,
+            "deaths_O": 14,
+            "deaths_W": 23
+          },
+          "split_lengths": {
+            "4": 160,
+            "7": 3,
+            "5": 1,
+            "18": 1,
+            "8": 2,
+            "19": 1,
+            "17": 2,
+            "13": 2,
+            "11": 1,
+            "9": 1,
+            "6": 1
+          },
+          "child_sizes": {
+            "2": 160,
+            "5": 3,
+            "3": 1,
+            "16": 1,
+            "6": 2,
+            "17": 1,
+            "15": 1,
+            "4": 2,
+            "11": 2,
+            "9": 1,
+            "7": 1
+          },
+          "split_phases": {
+            "0-49": 21,
+            "50-99": 16,
+            "100-149": 18,
+            "150-199": 23,
+            "200-249": 30,
+            "250-299": 17,
+            "300-349": 22,
+            "350-399": 10,
+            "400-449": 13,
+            "450-499": 5
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 39408,
+      "game": 39408,
+      "map": "Arena",
+      "file_hash": "bbce67f27a02f81c",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 22,
+            "actions": 230,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 194,
+            "sprint_actions": 0,
+            "extra_steps": 0,
+            "max_sprint_steps": 1,
+            "splits": 36,
+            "late_splits": 0,
+            "deaths_H": 8,
+            "deaths_S": 2,
+            "deaths_O": 5,
+            "deaths_W": 1
+          },
+          "split_lengths": {
+            "4": 36
+          },
+          "child_sizes": {
+            "2": 36
+          },
+          "split_phases": {
+            "0-49": 36
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 4,
+            "actions": 51,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 44,
+            "sprint_actions": 4,
+            "extra_steps": 4,
+            "max_sprint_steps": 2,
+            "splits": 7,
+            "late_splits": 0,
+            "deaths_H": 8
+          },
+          "split_lengths": {
+            "4": 6,
+            "5": 1
+          },
+          "child_sizes": {
+            "2": 6,
+            "3": 1
+          },
+          "split_phases": {
+            "0-49": 7
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 39408,
+      "game": 39409,
+      "map": "schooltime",
+      "file_hash": "e5192bc71e08429f",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 33,
+            "actions": 6533,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 375,
+            "late_splits": 38,
+            "move_actions": 6158,
+            "sprint_actions": 0,
+            "extra_steps": 0,
+            "max_sprint_steps": 1,
+            "deaths_W": 144,
+            "deaths_H": 141,
+            "deaths_S": 41,
+            "deaths_O": 46
+          },
+          "split_lengths": {
+            "4": 375
+          },
+          "child_sizes": {
+            "2": 375
+          },
+          "split_phases": {
+            "0-49": 14,
+            "50-99": 42,
+            "100-149": 32,
+            "150-199": 17,
+            "200-249": 35,
+            "250-299": 34,
+            "300-349": 32,
+            "350-399": 41,
+            "400-449": 90,
+            "450-499": 38
+          },
+          "won": false
+        },
+        "B": {
+          "counts": {
+            "max_population": 64,
+            "actions": 25122,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 437,
+            "late_splits": 48,
+            "move_actions": 24685,
+            "sprint_actions": 91,
+            "extra_steps": 110,
+            "max_sprint_steps": 3,
+            "deaths_W": 68,
+            "deaths_H": 219,
+            "deaths_O": 88,
+            "deaths_S": 16
+          },
+          "split_lengths": {
+            "4": 241,
+            "6": 28,
+            "7": 17,
+            "5": 41,
+            "16": 6,
+            "9": 15,
+            "11": 10,
+            "10": 10,
+            "12": 7,
+            "13": 6,
+            "8": 20,
+            "17": 13,
+            "18": 3,
+            "14": 3,
+            "27": 1,
+            "32": 1,
+            "19": 5,
+            "22": 2,
+            "46": 1,
+            "23": 1,
+            "21": 1,
+            "29": 1,
+            "15": 4
+          },
+          "child_sizes": {
+            "2": 256,
+            "4": 29,
+            "3": 44,
+            "14": 6,
+            "7": 12,
+            "9": 9,
+            "8": 14,
+            "10": 7,
+            "6": 19,
+            "5": 8,
+            "15": 10,
+            "16": 3,
+            "25": 1,
+            "30": 1,
+            "20": 1,
+            "17": 4,
+            "23": 1,
+            "11": 5,
+            "19": 1,
+            "13": 4,
+            "12": 2
+          },
+          "split_phases": {
+            "0-49": 14,
+            "50-99": 50,
+            "100-149": 91,
+            "150-199": 41,
+            "200-249": 38,
+            "250-299": 61,
+            "300-349": 30,
+            "350-399": 19,
+            "400-449": 45,
+            "450-499": 48
+          },
+          "won": true
+        }
+      }
+    },
+    {
+      "battle": 39408,
+      "game": 39410,
+      "map": "Colosseum",
+      "file_hash": "ea246f4eae43395d",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 17,
+            "actions": 237,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 22,
+            "late_splits": 0,
+            "move_actions": 215,
+            "sprint_actions": 0,
+            "extra_steps": 0,
+            "max_sprint_steps": 1,
+            "deaths_H": 7
+          },
+          "split_lengths": {
+            "4": 22
+          },
+          "child_sizes": {
+            "2": 22
+          },
+          "split_phases": {
+            "0-49": 22
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 5,
+            "actions": 89,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 8,
+            "late_splits": 0,
+            "move_actions": 81,
+            "sprint_actions": 0,
+            "extra_steps": 0,
+            "max_sprint_steps": 1,
+            "deaths_H": 9
+          },
+          "split_lengths": {
+            "4": 8
+          },
+          "child_sizes": {
+            "2": 8
+          },
+          "split_phases": {
+            "0-49": 8
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 39408,
+      "game": 39411,
+      "map": "Big_Empty",
+      "file_hash": "b6623e279e680d0e",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 64,
+            "actions": 29447,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "splits": 538,
+            "late_splits": 30,
+            "move_actions": 28909,
+            "sprint_actions": 0,
+            "extra_steps": 0,
+            "max_sprint_steps": 1,
+            "deaths_H": 429,
+            "deaths_S": 35,
+            "deaths_O": 41
+          },
+          "split_lengths": {
+            "6": 48,
+            "4": 282,
+            "5": 86,
+            "9": 22,
+            "7": 40,
+            "8": 19,
+            "10": 13,
+            "11": 9,
+            "16": 2,
+            "13": 7,
+            "20": 1,
+            "14": 2,
+            "12": 3,
+            "15": 2,
+            "18": 1,
+            "21": 1
+          },
+          "child_sizes": {
+            "2": 538
+          },
+          "split_phases": {
+            "0-49": 50,
+            "50-99": 68,
+            "100-149": 69,
+            "150-199": 51,
+            "200-249": 50,
+            "250-299": 63,
+            "300-349": 55,
+            "350-399": 53,
+            "400-449": 49,
+            "450-499": 30
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 64,
+            "actions": 28155,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 27649,
+            "sprint_actions": 488,
+            "extra_steps": 688,
+            "max_sprint_steps": 4,
+            "splits": 506,
+            "late_splits": 55,
+            "deaths_H": 429,
+            "deaths_O": 8,
+            "deaths_S": 8
+          },
+          "split_lengths": {
+            "6": 42,
+            "4": 319,
+            "9": 12,
+            "7": 27,
+            "5": 59,
+            "8": 10,
+            "10": 6,
+            "11": 6,
+            "12": 5,
+            "13": 5,
+            "27": 1,
+            "14": 3,
+            "15": 5,
+            "23": 1,
+            "16": 2,
+            "17": 1,
+            "18": 2
+          },
+          "child_sizes": {
+            "4": 42,
+            "2": 344,
+            "7": 12,
+            "3": 52,
+            "6": 8,
+            "8": 8,
+            "9": 6,
+            "5": 12,
+            "11": 5,
+            "25": 1,
+            "12": 3,
+            "13": 4,
+            "21": 1,
+            "10": 4,
+            "14": 1,
+            "15": 1,
+            "16": 2
+          },
+          "split_phases": {
+            "0-49": 25,
+            "50-99": 73,
+            "100-149": 67,
+            "150-199": 60,
+            "200-249": 45,
+            "250-299": 57,
+            "300-349": 42,
+            "350-399": 44,
+            "400-449": 38,
+            "450-499": 55
+          },
+          "won": false
+        }
+      }
+    },
+    {
+      "battle": 39408,
+      "game": 39412,
+      "map": "queen_of_spades",
+      "file_hash": "5e99abe41bf332da",
+      "stats": {
+        "A": {
+          "counts": {
+            "max_population": 17,
+            "actions": 663,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 635,
+            "sprint_actions": 0,
+            "extra_steps": 0,
+            "max_sprint_steps": 1,
+            "splits": 28,
+            "late_splits": 0,
+            "deaths_H": 8,
+            "deaths_W": 3,
+            "deaths_S": 1,
+            "deaths_O": 1
+          },
+          "split_lengths": {
+            "4": 28
+          },
+          "child_sizes": {
+            "2": 28
+          },
+          "split_phases": {
+            "0-49": 9,
+            "50-99": 19
+          },
+          "won": true
+        },
+        "B": {
+          "counts": {
+            "max_population": 6,
+            "actions": 289,
+            "budget_exceeded": 0,
+            "timed_out": 0,
+            "move_actions": 277,
+            "sprint_actions": 0,
+            "extra_steps": 0,
+            "max_sprint_steps": 1,
+            "splits": 12,
+            "late_splits": 0,
+            "deaths_W": 3,
+            "deaths_H": 10,
+            "deaths_O": 1
+          },
+          "split_lengths": {
+            "4": 12
+          },
+          "child_sizes": {
+            "2": 12
+          },
+          "split_phases": {
+            "0-49": 11,
+            "50-99": 1
+          },
+          "won": false
+        }
+      }
+    }
+  ],
+  "policies": {
+    "213:1983": {
+      "counts": {
+        "max_population": 64,
+        "actions": 200620,
+        "budget_exceeded": 0,
+        "timed_out": 0,
+        "move_actions": 197038,
+        "sprint_actions": 729,
+        "extra_steps": 1299,
+        "max_sprint_steps": 6,
+        "splits": 3582,
+        "late_splits": 232,
+        "deaths_O": 347,
+        "deaths_H": 2080,
+        "deaths_S": 318,
+        "deaths_W": 364
+      },
+      "split_lengths": {
+        "6": 191,
+        "4": 2383,
+        "5": 263,
+        "7": 94,
+        "8": 94,
+        "16": 19,
+        "14": 47,
+        "15": 25,
+        "12": 51,
+        "9": 61,
+        "10": 62,
+        "11": 44,
+        "23": 15,
+        "20": 27,
+        "18": 18,
+        "26": 12,
+        "21": 16,
+        "13": 34,
+        "24": 13,
+        "31": 2,
+        "22": 12,
+        "29": 9,
+        "17": 16,
+        "33": 3,
+        "36": 3,
+        "34": 2,
+        "38": 4,
+        "43": 1,
+        "41": 2,
+        "30": 6,
+        "39": 2,
+        "37": 2,
+        "27": 11,
+        "59": 1,
+        "49": 1,
+        "28": 7,
+        "57": 1,
+        "19": 11,
+        "42": 1,
+        "40": 3,
+        "35": 3,
+        "32": 2,
+        "25": 8
+      },
+      "child_sizes": {
+        "4": 182,
+        "2": 2550,
+        "3": 256,
+        "5": 93,
+        "12": 36,
+        "10": 41,
+        "14": 14,
+        "21": 15,
+        "7": 43,
+        "18": 23,
+        "24": 12,
+        "16": 15,
+        "19": 15,
+        "13": 20,
+        "11": 31,
+        "8": 37,
+        "6": 50,
+        "22": 13,
+        "29": 2,
+        "20": 12,
+        "27": 8,
+        "15": 12,
+        "31": 3,
+        "34": 3,
+        "32": 2,
+        "36": 4,
+        "41": 1,
+        "39": 2,
+        "28": 6,
+        "9": 34,
+        "37": 2,
+        "35": 2,
+        "25": 11,
+        "57": 1,
+        "47": 1,
+        "26": 7,
+        "55": 1,
+        "17": 8,
+        "33": 3,
+        "30": 2,
+        "23": 8,
+        "38": 1
+      },
+      "split_phases": {
+        "0-49": 250,
+        "50-99": 505,
+        "100-149": 478,
+        "150-199": 456,
+        "200-249": 393,
+        "250-299": 384,
+        "300-349": 354,
+        "350-399": 309,
+        "400-449": 221,
+        "450-499": 232
+      },
+      "games": 20,
+      "name": "Sponge(Albert and Bob)",
+      "team": 213
+    },
+    "545:1302": {
+      "counts": {
+        "max_population": 64,
+        "actions": 147020,
+        "budget_exceeded": 0,
+        "timed_out": 0,
+        "splits": 2745,
+        "late_splits": 130,
+        "move_actions": 144275,
+        "sprint_actions": 710,
+        "extra_steps": 1019,
+        "max_sprint_steps": 7,
+        "deaths_H": 1640,
+        "deaths_S": 226,
+        "deaths_O": 317,
+        "deaths_W": 219
+      },
+      "split_lengths": {
+        "6": 93,
+        "4": 2242,
+        "8": 44,
+        "5": 130,
+        "7": 68,
+        "11": 18,
+        "9": 30,
+        "12": 11,
+        "10": 25,
+        "17": 14,
+        "15": 15,
+        "16": 9,
+        "14": 14,
+        "20": 4,
+        "13": 10,
+        "19": 3,
+        "18": 6,
+        "21": 3,
+        "23": 1,
+        "22": 2,
+        "33": 1,
+        "25": 1,
+        "28": 1
+      },
+      "child_sizes": {
+        "2": 2554,
+        "4": 31,
+        "16": 4,
+        "13": 7,
+        "11": 6,
+        "21": 1,
+        "12": 10,
+        "8": 12,
+        "9": 7,
+        "7": 12,
+        "5": 20,
+        "20": 2,
+        "18": 2,
+        "31": 1,
+        "23": 1,
+        "10": 5,
+        "15": 9,
+        "6": 15,
+        "3": 37,
+        "14": 6,
+        "19": 1,
+        "26": 1,
+        "17": 1
+      },
+      "split_phases": {
+        "0-49": 228,
+        "50-99": 309,
+        "100-149": 340,
+        "150-199": 366,
+        "200-249": 299,
+        "250-299": 335,
+        "300-349": 320,
+        "350-399": 295,
+        "400-449": 123,
+        "450-499": 130
+      },
+      "games": 15,
+      "name": "dev test 1 :P",
+      "team": 545
+    },
+    "213:1747": {
+      "counts": {
+        "max_population": 64,
+        "actions": 190820,
+        "budget_exceeded": 0,
+        "timed_out": 0,
+        "move_actions": 187668,
+        "sprint_actions": 624,
+        "extra_steps": 1103,
+        "max_sprint_steps": 6,
+        "splits": 3152,
+        "late_splits": 258,
+        "deaths_H": 1929,
+        "deaths_W": 281,
+        "deaths_O": 299,
+        "deaths_S": 188
+      },
+      "split_lengths": {
+        "4": 1842,
+        "6": 212,
+        "5": 265,
+        "7": 118,
+        "11": 76,
+        "8": 96,
+        "10": 49,
+        "9": 93,
+        "14": 41,
+        "19": 30,
+        "17": 31,
+        "15": 31,
+        "13": 46,
+        "12": 60,
+        "16": 23,
+        "20": 22,
+        "28": 12,
+        "26": 11,
+        "18": 18,
+        "24": 16,
+        "21": 16,
+        "25": 8,
+        "23": 7,
+        "22": 11,
+        "31": 5,
+        "34": 2,
+        "32": 4,
+        "30": 2,
+        "33": 2,
+        "27": 1,
+        "29": 1,
+        "36": 1
+      },
+      "child_sizes": {
+        "2": 2030,
+        "4": 210,
+        "3": 260,
+        "5": 116,
+        "9": 54,
+        "6": 55,
+        "12": 35,
+        "13": 22,
+        "15": 24,
+        "8": 33,
+        "7": 58,
+        "10": 49,
+        "18": 18,
+        "26": 12,
+        "24": 11,
+        "22": 15,
+        "11": 34,
+        "17": 24,
+        "16": 16,
+        "14": 17,
+        "19": 15,
+        "23": 8,
+        "21": 7,
+        "20": 11,
+        "29": 5,
+        "32": 2,
+        "30": 4,
+        "28": 2,
+        "31": 2,
+        "25": 1,
+        "27": 1,
+        "34": 1
+      },
+      "split_phases": {
+        "0-49": 274,
+        "50-99": 473,
+        "100-149": 384,
+        "150-199": 339,
+        "200-249": 276,
+        "250-299": 330,
+        "300-349": 303,
+        "350-399": 293,
+        "400-449": 222,
+        "450-499": 258
+      },
+      "games": 20,
+      "name": "Sponge(Albert and Bob)",
+      "team": 213
+    },
+    "70:1717": {
+      "counts": {
+        "max_population": 64,
+        "actions": 173407,
+        "budget_exceeded": 0,
+        "timed_out": 0,
+        "move_actions": 169901,
+        "sprint_actions": 340,
+        "extra_steps": 478,
+        "max_sprint_steps": 3,
+        "splits": 2959,
+        "late_splits": 263,
+        "deaths_S": 14,
+        "deaths_H": 1784,
+        "deaths_A": 547,
+        "deaths_O": 41
+      },
+      "split_lengths": {
+        "4": 1953,
+        "6": 196,
+        "5": 375,
+        "7": 107,
+        "8": 71,
+        "11": 25,
+        "9": 44,
+        "10": 30,
+        "12": 24,
+        "17": 12,
+        "25": 4,
+        "14": 13,
+        "21": 6,
+        "23": 9,
+        "15": 12,
+        "13": 18,
+        "20": 2,
+        "30": 14,
+        "16": 7,
+        "28": 8,
+        "19": 5,
+        "24": 7,
+        "18": 3,
+        "26": 2,
+        "29": 4,
+        "22": 2,
+        "27": 2,
+        "31": 3,
+        "33": 1
+      },
+      "child_sizes": {
+        "2": 2174,
+        "4": 128,
+        "3": 274,
+        "5": 101,
+        "9": 18,
+        "7": 33,
+        "8": 27,
+        "6": 49,
+        "10": 23,
+        "15": 12,
+        "23": 4,
+        "12": 13,
+        "19": 6,
+        "21": 9,
+        "13": 12,
+        "11": 16,
+        "18": 2,
+        "28": 14,
+        "14": 7,
+        "26": 8,
+        "17": 5,
+        "22": 7,
+        "16": 3,
+        "24": 2,
+        "27": 4,
+        "20": 2,
+        "25": 2,
+        "29": 3,
+        "31": 1
+      },
+      "split_phases": {
+        "0-49": 227,
+        "50-99": 351,
+        "100-149": 378,
+        "150-199": 260,
+        "200-249": 244,
+        "250-299": 298,
+        "300-349": 357,
+        "350-399": 293,
+        "400-449": 288,
+        "450-499": 263
+      },
+      "games": 20,
+      "name": "cheji bt",
+      "team": 70
+    },
+    "27:1920": {
+      "counts": {
+        "max_population": 64,
+        "actions": 176931,
+        "budget_exceeded": 0,
+        "timed_out": 0,
+        "move_actions": 173053,
+        "sprint_actions": 0,
+        "extra_steps": 0,
+        "max_sprint_steps": 1,
+        "splits": 3878,
+        "late_splits": 213,
+        "deaths_H": 1721,
+        "deaths_O": 679,
+        "deaths_S": 637,
+        "deaths_W": 563
+      },
+      "split_lengths": {
+        "4": 2992,
+        "6": 158,
+        "5": 227,
+        "8": 78,
+        "10": 59,
+        "7": 114,
+        "9": 72,
+        "11": 58,
+        "16": 11,
+        "17": 6,
+        "18": 5,
+        "12": 29,
+        "14": 17,
+        "29": 1,
+        "13": 34,
+        "15": 14,
+        "20": 2,
+        "21": 1
+      },
+      "child_sizes": {
+        "2": 3878
+      },
+      "split_phases": {
+        "0-49": 363,
+        "50-99": 435,
+        "100-149": 373,
+        "150-199": 359,
+        "200-249": 358,
+        "250-299": 460,
+        "300-349": 443,
+        "350-399": 412,
+        "400-449": 462,
+        "450-499": 213
+      },
+      "games": 15,
+      "name": "PPP",
+      "team": 27
+    },
+    "545:2050": {
+      "counts": {
+        "max_population": 62,
+        "actions": 56421,
+        "budget_exceeded": 0,
+        "timed_out": 0,
+        "move_actions": 55124,
+        "sprint_actions": 72,
+        "extra_steps": 90,
+        "max_sprint_steps": 5,
+        "splits": 1297,
+        "late_splits": 65,
+        "deaths_H": 758,
+        "deaths_W": 154,
+        "deaths_O": 158,
+        "deaths_S": 42
+      },
+      "split_lengths": {
+        "4": 1210,
+        "5": 33,
+        "6": 22,
+        "7": 8,
+        "10": 6,
+        "8": 10,
+        "13": 1,
+        "11": 1,
+        "16": 1,
+        "14": 1,
+        "12": 1,
+        "9": 3
+      },
+      "child_sizes": {
+        "2": 1254,
+        "3": 20,
+        "4": 12,
+        "8": 2,
+        "6": 5,
+        "5": 3,
+        "7": 1
+      },
+      "split_phases": {
+        "0-49": 71,
+        "50-99": 141,
+        "100-149": 174,
+        "150-199": 158,
+        "200-249": 121,
+        "250-299": 165,
+        "300-349": 162,
+        "350-399": 138,
+        "400-449": 102,
+        "450-499": 65
+      },
+      "games": 5,
+      "name": "dev test 1 :P",
+      "team": 545
+    },
+    "280:1744": {
+      "counts": {
+        "max_population": 64,
+        "actions": 136043,
+        "budget_exceeded": 0,
+        "timed_out": 0,
+        "move_actions": 133587,
+        "sprint_actions": 1190,
+        "extra_steps": 1651,
+        "max_sprint_steps": 4,
+        "splits": 2456,
+        "late_splits": 174,
+        "deaths_H": 1712,
+        "deaths_S": 45,
+        "deaths_O": 214,
+        "deaths_W": 231
+      },
+      "split_lengths": {
+        "6": 142,
+        "4": 1687,
+        "5": 211,
+        "8": 57,
+        "7": 86,
+        "15": 20,
+        "11": 30,
+        "10": 40,
+        "9": 49,
+        "18": 10,
+        "16": 14,
+        "14": 11,
+        "24": 3,
+        "12": 22,
+        "17": 19,
+        "13": 22,
+        "22": 4,
+        "21": 3,
+        "19": 13,
+        "20": 2,
+        "29": 2,
+        "25": 1,
+        "23": 3,
+        "28": 1,
+        "27": 2,
+        "32": 1,
+        "46": 1
+      },
+      "child_sizes": {
+        "4": 145,
+        "2": 1769,
+        "3": 198,
+        "13": 15,
+        "9": 29,
+        "8": 55,
+        "7": 47,
+        "16": 10,
+        "14": 12,
+        "12": 7,
+        "22": 3,
+        "10": 17,
+        "15": 15,
+        "11": 19,
+        "6": 49,
+        "5": 43,
+        "19": 3,
+        "17": 9,
+        "18": 1,
+        "27": 1,
+        "23": 2,
+        "20": 2,
+        "26": 1,
+        "25": 2,
+        "30": 1,
+        "21": 1
+      },
+      "split_phases": {
+        "0-49": 234,
+        "50-99": 375,
+        "100-149": 354,
+        "150-199": 248,
+        "200-249": 245,
+        "250-299": 292,
+        "300-349": 209,
+        "350-399": 141,
+        "400-449": 184,
+        "450-499": 174
+      },
+      "games": 15,
+      "name": "SHINK AI 6500",
+      "team": 280
+    },
+    "206:2057": {
+      "counts": {
+        "max_population": 64,
+        "actions": 50079,
+        "budget_exceeded": 0,
+        "timed_out": 0,
+        "splits": 766,
+        "late_splits": 67,
+        "move_actions": 49313,
+        "sprint_actions": 267,
+        "extra_steps": 352,
+        "max_sprint_steps": 4,
+        "deaths_H": 519,
+        "deaths_O": 76,
+        "deaths_W": 22,
+        "deaths_S": 55
+      },
+      "split_lengths": {
+        "4": 333,
+        "5": 82,
+        "7": 31,
+        "6": 45,
+        "11": 18,
+        "9": 31,
+        "8": 29,
+        "14": 21,
+        "18": 11,
+        "16": 15,
+        "15": 19,
+        "13": 19,
+        "19": 10,
+        "17": 13,
+        "12": 13,
+        "10": 17,
+        "22": 6,
+        "21": 7,
+        "24": 5,
+        "20": 11,
+        "30": 4,
+        "25": 3,
+        "23": 3,
+        "31": 3,
+        "32": 2,
+        "33": 2,
+        "27": 3,
+        "35": 1,
+        "28": 3,
+        "26": 4,
+        "36": 1,
+        "34": 1
+      },
+      "child_sizes": {
+        "2": 404,
+        "3": 39,
+        "4": 28,
+        "7": 30,
+        "5": 28,
+        "12": 21,
+        "6": 24,
+        "16": 11,
+        "14": 15,
+        "13": 19,
+        "11": 19,
+        "9": 17,
+        "17": 10,
+        "15": 12,
+        "10": 13,
+        "8": 17,
+        "20": 6,
+        "19": 7,
+        "22": 5,
+        "18": 11,
+        "28": 4,
+        "23": 3,
+        "21": 3,
+        "29": 3,
+        "30": 2,
+        "31": 2,
+        "25": 3,
+        "33": 1,
+        "26": 3,
+        "24": 4,
+        "34": 1,
+        "32": 1
+      },
+      "split_phases": {
+        "0-49": 89,
+        "50-99": 86,
+        "100-149": 82,
+        "150-199": 104,
+        "200-249": 59,
+        "250-299": 71,
+        "300-349": 60,
+        "350-399": 63,
+        "400-449": 85,
+        "450-499": 67
+      },
+      "games": 5,
+      "name": "Stockfish",
+      "team": 206
+    },
+    "91:712": {
+      "counts": {
+        "max_population": 64,
+        "actions": 78128,
+        "budget_exceeded": 0,
+        "timed_out": 0,
+        "move_actions": 77311,
+        "sprint_actions": 1407,
+        "extra_steps": 1444,
+        "max_sprint_steps": 3,
+        "splits": 817,
+        "late_splits": 43,
+        "deaths_H": 323,
+        "deaths_S": 242,
+        "deaths_O": 121
+      },
+      "split_lengths": {
+        "4": 625,
+        "6": 20,
+        "5": 20,
+        "7": 12,
+        "9": 20,
+        "8": 17,
+        "13": 6,
+        "16": 14,
+        "12": 4,
+        "10": 9,
+        "24": 2,
+        "11": 14,
+        "22": 2,
+        "18": 8,
+        "15": 2,
+        "17": 2,
+        "14": 4,
+        "21": 4,
+        "23": 8,
+        "30": 4,
+        "20": 8,
+        "31": 4,
+        "26": 2,
+        "19": 2,
+        "29": 2,
+        "36": 2
+      },
+      "child_sizes": {
+        "2": 625,
+        "4": 20,
+        "3": 20,
+        "5": 12,
+        "7": 20,
+        "6": 17,
+        "11": 6,
+        "14": 14,
+        "10": 4,
+        "8": 9,
+        "22": 2,
+        "9": 14,
+        "20": 2,
+        "16": 8,
+        "13": 2,
+        "15": 2,
+        "12": 4,
+        "19": 4,
+        "21": 8,
+        "28": 4,
+        "18": 8,
+        "29": 4,
+        "24": 2,
+        "17": 2,
+        "27": 2,
+        "34": 2
+      },
+      "split_phases": {
+        "0-49": 100,
+        "50-99": 147,
+        "100-149": 98,
+        "150-199": 79,
+        "200-249": 80,
+        "250-299": 86,
+        "300-349": 87,
+        "350-399": 53,
+        "400-449": 44,
+        "450-499": 43
+      },
+      "games": 5,
+      "name": "SSS",
+      "team": 91
+    }
+  },
+  "limits": "Twelve highest-minimum-recorded-Elo complete battles with distinct submission pairs. Observational, selection-biased, possibly repeated policies; not independent policy tests or causal evidence that frequent actions are good. No private source code accessed."
+}

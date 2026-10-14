@@ -1,0 +1,40 @@
+{
+  "base": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\versions\\v11u",
+  "base_hash": "e05b504928e4024c",
+  "params": "params.hpp",
+  "variants": {
+    "base": {}
+  },
+  "opponents": [
+    "v11t"
+  ],
+  "official_maps": [
+    "trophy",
+    "queen_of_spades",
+    "default",
+    "devil",
+    "trauma",
+    "schooltime",
+    "autarky",
+    "dilemma",
+    "slithery_fight",
+    "portals",
+    "australia",
+    "islands",
+    "maze",
+    "stripes",
+    "tower_defense",
+    "unsw",
+    "weakhold"
+  ],
+  "extra_maps": [],
+  "seeds": [
+    741001,
+    741002,
+    741003,
+    741004
+  ],
+  "objective": "wins",
+  "unswbc": "1.2.9",
+  "deterministic_v6_clock": true
+}

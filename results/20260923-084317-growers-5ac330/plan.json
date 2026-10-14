@@ -1,0 +1,56 @@
+{
+  "question": "Can earlier growth or a quarter of dedicated growers improve v2's round-limit losses?",
+  "modes": {
+    "stop425": [
+      425,
+      null
+    ],
+    "stop400": [
+      400,
+      null
+    ],
+    "stop350": [
+      350,
+      null
+    ],
+    "quarter350": [
+      475,
+      350
+    ],
+    "quarter400": [
+      475,
+      400
+    ]
+  },
+  "live_hash": "ffe736af6c14ea33",
+  "baseline_hash": "9f29ab4138b51d26",
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-084317-growers-5ac330\\maps\\arena_728547b8376892d9.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-084317-growers-5ac330\\maps\\big_empty_685baf0e797207b7.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-084317-growers-5ac330\\maps\\Colosseum_3042ccc262f0211a.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-084317-growers-5ac330\\maps\\default_afc3707a967881d6.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-084317-growers-5ac330\\maps\\default_small_f98ab391cccf33b1.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-084317-growers-5ac330\\maps\\queen_of_spades_6cdb74a7a52d715a.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-084317-growers-5ac330\\maps\\schooltime_8be7eda86910a849.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-084317-growers-5ac330\\maps\\trophy_fd985019831fe135.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-084317-growers-5ac330\\maps\\Devil_1b2147f4a8a775d2.map"
+  ],
+  "screen_seeds": [
+    15000,
+    15001
+  ],
+  "validation_seeds": [
+    16000,
+    16001,
+    16002,
+    16003,
+    16004,
+    16005,
+    16006,
+    16007
+  ],
+  "selection": "Highest screen score among new policies, ties in declared mode order; score must exceed .5. Exactly one policy validates unchanged. Movement, split threshold and split size stay fixed.",
+  "gate": "Direct v2 score 95% map-cluster lower bound > .5 AND paired pool gain 95% map-cluster lower bound > 0; replay and sandbox checks required before promotion.",
+  "limits": "Familiar official maps and scripted opponents. New bot RNG seeds, not unseen map families. Role assignment is local and deterministic, not a globally elected champion.",
+  "workers": 6
+}

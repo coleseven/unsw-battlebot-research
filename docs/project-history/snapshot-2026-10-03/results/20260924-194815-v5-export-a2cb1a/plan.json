@@ -1,0 +1,33 @@
+{
+  "question": "Does observation-gated Trauma scouting retain its advantage on fresh seeds while leaving stronghold unchanged?",
+  "hypothesis": "Fission exports length from the dead end; visible opening tiles gate the route to Trauma.",
+  "limits": "Known 48x24 maps, four fresh seeds, both sides, one worker; exploratory only.",
+  "seeds": [
+    45003,
+    45004,
+    45005,
+    45006
+  ],
+  "workers": 1,
+  "baseline_hash": "bf33497158a49a7b",
+  "live_hash": "ffe736af6c14ea33",
+  "bot_hashes": {
+    "additive": "bf33497158a49a7b",
+    "export_scout": "a67ebf2b6eb44faa"
+  },
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-194815-v5-export-a2cb1a\\maps\\stronghold.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-194815-v5-export-a2cb1a\\maps\\Trauma.map"
+  ],
+  "map_hashes": {
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-194815-v5-export-a2cb1a\\maps\\stronghold.map": "02455e481fe56e1e",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-194815-v5-export-a2cb1a\\maps\\Trauma.map": "dcf39d713c060e5d"
+  },
+  "source_hashes": {
+    "experiments\\v5\\brain.py": "2530dc4415c505b8",
+    "framework\\v5_hotspot.py": "786b752611a4b24f",
+    "framework\\v5_king.py": "9f6e4aa59ed95c8f",
+    "bcsim\\v5_initial.py": "4aac8153c39da7ed",
+    "bcsim\\v5_export.py": "f772cd54073e348c"
+  }
+}

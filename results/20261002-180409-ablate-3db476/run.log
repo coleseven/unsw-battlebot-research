@@ -1,0 +1,90 @@
+base: 24/924 games, 31s
+base: 48/924 games, 99s
+base: 72/924 games, 125s
+base: 96/924 games, 242s
+base: 120/924 games, 289s
+base: 144/924 games, 317s
+base: 168/924 games, 379s
+base: 192/924 games, 422s
+base: 216/924 games, 470s
+base: 240/924 games, 548s
+base: 264/924 games, 596s
+base: 288/924 games, 625s
+base: 312/924 games, 690s
+base: 336/924 games, 727s
+base: 360/924 games, 842s
+base: 384/924 games, 876s
+base: 408/924 games, 910s
+base: 432/924 games, 947s
+base: 456/924 games, 969s
+base: 480/924 games, 999s
+base: 504/924 games, 1031s
+base: 528/924 games, 1058s
+base: 552/924 games, 1114s
+base: 576/924 games, 1204s
+base: 600/924 games, 1278s
+base: 624/924 games, 1444s
+base: 648/924 games, 1544s
+base: 672/924 games, 1610s
+base: 696/924 games, 1696s
+base: 720/924 games, 1844s
+base: 744/924 games, 1970s
+base: 768/924 games, 2113s
+base: 792/924 games, 2215s
+base: 816/924 games, 2245s
+base: 840/924 games, 2277s
+base: 864/924 games, 2299s
+base: 888/924 games, 2338s
+base: 912/924 games, 2351s
+base: 924/924 games, 2367s
+travel: 24/924 games, 29s
+travel: 48/924 games, 99s
+travel: 72/924 games, 122s
+travel: 96/924 games, 201s
+travel: 120/924 games, 266s
+travel: 144/924 games, 294s
+travel: 168/924 games, 348s
+travel: 192/924 games, 396s
+travel: 216/924 games, 457s
+travel: 240/924 games, 525s
+travel: 264/924 games, 573s
+travel: 288/924 games, 603s
+travel: 312/924 games, 664s
+travel: 336/924 games, 702s
+travel: 360/924 games, 805s
+travel: 384/924 games, 842s
+travel: 408/924 games, 875s
+travel: 432/924 games, 909s
+travel: 456/924 games, 930s
+travel: 480/924 games, 960s
+travel: 504/924 games, 990s
+travel: 528/924 games, 1015s
+travel: 552/924 games, 1067s
+travel: 576/924 games, 1153s
+travel: 600/924 games, 1220s
+travel: 624/924 games, 1382s
+travel: 648/924 games, 1472s
+travel: 672/924 games, 1529s
+travel: 696/924 games, 1617s
+travel: 720/924 games, 1760s
+travel: 744/924 games, 1886s
+travel: 768/924 games, 2054s
+travel: 792/924 games, 2138s
+travel: 816/924 games, 2168s
+travel: 840/924 games, 2198s
+travel: 864/924 games, 2220s
+travel: 888/924 games, 2260s
+travel: 912/924 games, 2273s
+travel: 924/924 games, 2288s
+# Ablation report: 20261002-180409-ablate-3db476
+
+3 seeds, opponents cpp_nicked_v92, cpp_nicked_v75, cpp_leviathan3, v7-base-bot, nicked_v44, nicked_lab, v11q; 11 official + 11 extra maps, both sides. Objective: wins. Delta = variant score minus base score on the same (opponent, map, seed, side); positive means removing the group helped. 95% CI resamples (map, seed) blocks.
+
+base: mean margin +0.212, wins 560/924; by opponent: cpp_nicked_v92 -0.303, cpp_nicked_v75 +0.015, cpp_leviathan3 +0.636, v7-base-bot +0.576, nicked_v44 +0.470, nicked_lab +0.091, v11q +0.000
+
+| variant | current pool delta [95% CI] | pool verdict | other maps | delta all 15 [95% CI] | verdict | vs cpp_nicked_v92 | vs cpp_nicked_v75 | vs cpp_leviathan3 | vs v7-base-bot | vs nicked_v44 | vs nicked_lab | vs v11q | official | extra | wins |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| travel | +0.000 [-0.071, +0.071] | neutral | -0.012 | -0.006 [-0.056, +0.043] | neutral | -0.030 | -0.076 | +0.061 | +0.015 | +0.030 | -0.076 | +0.030 | -0.048 | +0.035 | 557/924 |
+
+Noise: seed-to-seed SD of base's margin within a (opponent, map, side) cell 0.837 over 308 cells. Expected paired CI half-width with K seeds, 1.96 * sqrt(2 * 0.837^2 / (308 * K)): K=2: 0.094, K=3: 0.076, K=4: 0.066, K=6: 0.054, K=8: 0.047
+

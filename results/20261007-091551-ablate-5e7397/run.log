@@ -1,0 +1,82 @@
+base: 24/544 games, 58s
+base: 48/544 games, 164s
+base: 72/544 games, 224s
+base: 96/544 games, 290s
+base: 120/544 games, 394s
+base: 144/544 games, 480s
+base: 168/544 games, 694s
+base: 192/544 games, 841s
+base: 216/544 games, 895s
+base: 240/544 games, 959s
+base: 264/544 games, 983s
+base: 288/544 games, 1011s
+base: 312/544 games, 1058s
+base: 336/544 games, 1080s
+base: 360/544 games, 1115s
+base: 384/544 games, 1167s
+base: 408/544 games, 1186s
+base: 432/544 games, 1227s
+base: 456/544 games, 1279s
+base: 480/544 games, 1300s
+base: 504/544 games, 1335s
+base: 528/544 games, 1373s
+base: 544/544 games, 1397s
+eq0: 24/544 games, 69s
+eq0: 48/544 games, 192s
+eq0: 72/544 games, 263s
+eq0: 96/544 games, 331s
+eq0: 120/544 games, 447s
+eq0: 144/544 games, 543s
+eq0: 168/544 games, 744s
+eq0: 192/544 games, 888s
+eq0: 216/544 games, 929s
+eq0: 240/544 games, 990s
+eq0: 264/544 games, 1015s
+eq0: 288/544 games, 1041s
+eq0: 312/544 games, 1087s
+eq0: 336/544 games, 1107s
+eq0: 360/544 games, 1138s
+eq0: 384/544 games, 1188s
+eq0: 408/544 games, 1206s
+eq0: 432/544 games, 1247s
+eq0: 456/544 games, 1295s
+eq0: 480/544 games, 1314s
+eq0: 504/544 games, 1347s
+eq0: 528/544 games, 1382s
+eq0: 544/544 games, 1406s
+# Ablation report: 20261007-091551-ablate-5e7397
+
+2 seeds [1011001, 1011002], opponents cpp_nicked_v92, cpp_leviathan3, nicked_lab, opp-careful-queen, opp-raider, opp-hunter, opp-sprinter, opp-economy (families: cpp_leviathan3 1, nicked 2, ours 5); 17 maps from the run's plan (around_unsw, australia, autarky, default, devil, islands, maze, portals, prisoners_dilemma, queen_of_spades, schooltime, slithery_fight, stripes, tower_defense, trauma, trophy, weakhold), both sides. Objective: wins. Delta = variant score minus base score on the same (opponent, map, seed, side), where the variant is the base plus that group's parameter changes: **positive means the variant scored higher than the base**. 95% CI resamples (map, seed) blocks. Equal-map and equal-family deltas weight each map / opponent family equally.
+
+base: mean margin +0.074, wins 292/544; by opponent: cpp_nicked_v92 -0.118, cpp_leviathan3 +0.706, nicked_lab +0.088, opp-careful-queen +0.176, opp-raider -0.147, opp-hunter -0.206, opp-sprinter -0.118, opp-economy +0.206
+
+Objective wins is the signed outcome (win +1, draw 0, loss -1); the win-score column (win 1, draw 0.5, loss 0) is delta / 2 in percentage points.
+
+| variant | delta all 17 maps [95% CI] | verdict | win-score pp [95% CI] | equal-map delta | equal-family delta | vs cpp_nicked_v92 | vs cpp_leviathan3 | vs nicked_lab | vs opp-careful-queen | vs opp-raider | vs opp-hunter | vs opp-sprinter | vs opp-economy | wins |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| eq0 | -0.037 [-0.088, +0.015] | unclear | -1.8 [-4.4, +0.7] | -0.037 | -0.005 | -0.088 | +0.176 | -0.235 | -0.176 | +0.147 | +0.029 | -0.088 | -0.059 | 282/544 |
+
+Per map (wins/games; delta vs base):
+
+| map | base | eq0 |
+|---|---|---|
+| around_unsw | 20/32 | 20/32 (+0.000) |
+| australia | 16/32 | 13/32 (-0.188) |
+| autarky | 16/32 | 14/32 (-0.125) |
+| default | 19/32 | 15/32 (-0.250) |
+| devil | 14/32 | 15/32 (+0.062) |
+| islands | 18/32 | 15/32 (-0.188) |
+| maze | 18/32 | 20/32 (+0.125) |
+| portals | 16/32 | 16/32 (+0.000) |
+| prisoners_dilemma | 9/32 | 9/32 (+0.000) |
+| queen_of_spades | 15/32 | 13/32 (-0.125) |
+| schooltime | 21/32 | 21/32 (+0.000) |
+| slithery_fight | 21/32 | 21/32 (+0.000) |
+| stripes | 8/32 | 9/32 (+0.062) |
+| tower_defense | 23/32 | 23/32 (+0.000) |
+| trauma | 23/32 | 22/32 (-0.062) |
+| trophy | 14/32 | 15/32 (+0.062) |
+| weakhold | 21/32 | 21/32 (+0.000) |
+
+Noise: seed-to-seed SD of base's margin within a (opponent, map, side) cell 0.907 over 272 cells. Expected paired CI half-width with K seeds, 1.96 * sqrt(2 * 0.907^2 / (272 * K)): K=2: 0.108, K=3: 0.088, K=4: 0.076, K=6: 0.062, K=8: 0.054
+

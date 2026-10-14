@@ -1,0 +1,43 @@
+{
+  "question": "Can last-resort portal use improve v2 on portal maps without changing ordinary movement?",
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-085446-portal-9297e0\\maps\\Colosseum_3042ccc262f0211a.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-085446-portal-9297e0\\maps\\default_afc3707a967881d6.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-085446-portal-9297e0\\maps\\queen_of_spades_6cdb74a7a52d715a.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-085446-portal-9297e0\\maps\\schooltime_8be7eda86910a849.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-085446-portal-9297e0\\maps\\trophy_fd985019831fe135.map"
+  ],
+  "seeds": [
+    17000,
+    17001,
+    17002,
+    17003,
+    17004,
+    17005,
+    17006,
+    17007,
+    17008,
+    17009,
+    17010,
+    17011,
+    17012,
+    17013,
+    17014,
+    17015,
+    17016,
+    17017,
+    17018,
+    17019,
+    17020,
+    17021,
+    17022,
+    17023
+  ],
+  "selection": "none; one fixed candidate, no policy tuning or grower combination",
+  "gate": "Direct v2 score 95% map-cluster lower bound > .5; no-invalid-action and runtime checks",
+  "baseline_hash": "9f29ab4138b51d26",
+  "candidate_hash": "f972d364f8744605",
+  "live_hash": "ffe736af6c14ea33",
+  "workers": 2,
+  "limits": "Five familiar portal maps; unobserved destinations remain uncertain. Known legal ordinary moves and direct enemy-head trades stay unchanged. Targeted fallback, not a portal-aware global planner or ladder-strength claim."
+}

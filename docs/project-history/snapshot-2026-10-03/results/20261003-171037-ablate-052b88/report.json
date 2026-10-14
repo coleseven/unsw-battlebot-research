@@ -1,0 +1,22 @@
+{
+  "ref100": {
+    "delta": 0.1,
+    "lo": 0.029411764705882353,
+    "hi": 0.17647058823529413,
+    "verdict": "harmful (drop)",
+    "pool_delta": 0.04,
+    "pool_lo": 0.01,
+    "pool_hi": 0.07,
+    "pool_verdict": "harmful (drop)"
+  },
+  "ref250": {
+    "delta": 0.07941176470588235,
+    "lo": 0.0029411764705882353,
+    "hi": 0.15588235294117647,
+    "verdict": "harmful (drop)",
+    "pool_delta": 0.05,
+    "pool_lo": -0.05,
+    "pool_hi": 0.14,
+    "pool_verdict": "neutral"
+  }
+}

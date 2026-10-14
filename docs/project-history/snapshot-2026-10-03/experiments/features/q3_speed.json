@@ -1,0 +1,5 @@
+{"q_ms": {"CPP_QUEEN": 1, "CPP_MULTISTEP": 1},
+ "q_ms_s7": {"CPP_QUEEN": 1, "CPP_MULTISTEP": 1, "SPLIT_AT": 7},
+ "q_ms_s11": {"CPP_QUEEN": 1, "CPP_MULTISTEP": 1, "SPLIT_AT": 11},
+ "q_s7": {"CPP_QUEEN": 1, "SPLIT_AT": 7},
+ "ms_s7": {"CPP_MULTISTEP": 1, "SPLIT_AT": 7}}

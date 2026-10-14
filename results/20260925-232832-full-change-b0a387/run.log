@@ -1,0 +1,61 @@
+full: 24/132 games, 80s
+full: 48/132 games, 177s
+full: 72/132 games, 358s
+full: 96/132 games, 524s
+full: 120/132 games, 596s
+full: 132/132 games, 668s
+{
+  "maps": [
+    "default_small",
+    "trophy",
+    "queen_of_spades",
+    "default",
+    "Devil",
+    "stronghold",
+    "Trauma",
+    "schooltime",
+    "big_empty",
+    "arena",
+    "Colosseum"
+  ],
+  "games": 132,
+  "workers": 6,
+  "opponents": {
+    "v61b-goal-bot": {
+      "wins": 12,
+      "draws": 0,
+      "losses": 10,
+      "score": 0.5454545454545454
+    },
+    "additive": {
+      "wins": 22,
+      "draws": 0,
+      "losses": 0,
+      "score": 1.0
+    },
+    "nicked": {
+      "wins": 14,
+      "draws": 0,
+      "losses": 8,
+      "score": 0.6363636363636364
+    },
+    "nicked_v44": {
+      "wins": 9,
+      "draws": 0,
+      "losses": 13,
+      "score": 0.4090909090909091
+    },
+    "v3": {
+      "wins": 22,
+      "draws": 0,
+      "losses": 0,
+      "score": 1.0
+    },
+    "ctmes": {
+      "wins": 21,
+      "draws": 0,
+      "losses": 1,
+      "score": 0.9545454545454546
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "results": {
+    "feed_base": {
+      "wins": 1,
+      "draws": 0,
+      "losses": 3,
+      "score": 0.25
+    },
+    "beacon": {
+      "wins": 1,
+      "draws": 0,
+      "losses": 3,
+      "score": 0.25
+    },
+    "route": {
+      "wins": 2,
+      "draws": 0,
+      "losses": 2,
+      "score": 0.5
+    },
+    "route_vs_beacon": {
+      "wins": 2,
+      "draws": 0,
+      "losses": 2,
+      "score": 0.5
+    }
+  },
+  "delivery": {
+    "beacon": {
+      "pings": 1125,
+      "friendly_hits": 385,
+      "enemy_hits": 110,
+      "misses": 630,
+      "candidate_received": 385
+    },
+    "route": {
+      "pings": 1198,
+      "friendly_hits": 410,
+      "enemy_hits": 125,
+      "misses": 663,
+      "candidate_received": 410
+    }
+  },
+  "beacon_base_outcomes_identical": true,
+  "feasibility_pass": true,
+  "is_promotion": false
+}

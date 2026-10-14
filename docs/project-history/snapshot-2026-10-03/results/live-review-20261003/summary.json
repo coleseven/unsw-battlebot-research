@@ -1,0 +1,116 @@
+{
+  "games": 95,
+  "from": "2026-10-03T12:12:22.755Z",
+  "to": "2026-10-03T18:19:55.958Z",
+  "classes": {
+    "elimination": {
+      "loss": 18,
+      "win": 6
+    },
+    "longest/total": {
+      "win": 31,
+      "loss": 22
+    },
+    "queen survival": {
+      "win": 6,
+      "loss": 10
+    },
+    "queen length": {
+      "loss": 1,
+      "win": 1
+    }
+  },
+  "maps": {
+    "Devil": {
+      "loss": 4,
+      "win": 1
+    },
+    "weakhold": {
+      "win": 1,
+      "loss": 3
+    },
+    "Islands": {
+      "win": 2,
+      "loss": 1
+    },
+    "Maze": {
+      "loss": 2,
+      "win": 3
+    },
+    "Autarky": {
+      "loss": 3,
+      "win": 2
+    },
+    "Prisoners Dilemma": {
+      "win": 1,
+      "loss": 4
+    },
+    "Trophy": {
+      "loss": 5,
+      "win": 2
+    },
+    "Slithery Fight": {
+      "win": 5,
+      "loss": 2
+    },
+    "Default": {
+      "loss": 4,
+      "win": 2
+    },
+    "Schooltime": {
+      "win": 6
+    },
+    "Stripes": {
+      "loss": 5,
+      "win": 2
+    },
+    "Queen Of Spades": {
+      "loss": 3,
+      "win": 3
+    },
+    "Australia": {
+      "win": 1,
+      "loss": 1
+    },
+    "Portals": {
+      "loss": 5,
+      "win": 4
+    },
+    "Tower Defense": {
+      "loss": 3,
+      "win": 1
+    },
+    "Trauma": {
+      "loss": 2,
+      "win": 4
+    },
+    "Around UNSW": {
+      "loss": 4,
+      "win": 4
+    }
+  },
+  "sides": {
+    "B": {
+      "loss": 31,
+      "win": 24
+    },
+    "A": {
+      "win": 20,
+      "loss": 20
+    }
+  },
+  "queen_survival": {
+    "ours": 14,
+    "theirs": 23
+  },
+  "queen_deaths": {
+    "enemy H": 32,
+    "W": 39,
+    "S": 1,
+    "friendly H": 5,
+    "friendly O": 4
+  },
+  "median_queen_death_round": 140,
+  "median_queen_death_length": 3,
+  "unique_games": 95
+}

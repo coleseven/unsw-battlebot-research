@@ -1,0 +1,487 @@
+{
+  "summary": {
+    "reference_v2": {
+      "turns": 26,
+      "max_points": 30961586,
+      "max_memory_bytes": 21561344,
+      "failures": 0
+    },
+    "portal_escape": {
+      "turns": 26,
+      "max_points": 33185559,
+      "max_memory_bytes": 21561344,
+      "failures": 0
+    }
+  },
+  "turns": [
+    {
+      "bot": "reference_v2",
+      "category": "long",
+      "phase": "cold",
+      "points": 21827848,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE E\n"
+    },
+    {
+      "bot": "reference_v2",
+      "category": "long",
+      "phase": "warm",
+      "points": 12597358,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE E\n"
+    },
+    {
+      "bot": "reference_v2",
+      "category": "dense",
+      "phase": "cold",
+      "points": 17450842,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "reference_v2",
+      "category": "dense",
+      "phase": "warm",
+      "points": 8347609,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "reference_v2",
+      "category": "enemy_heads",
+      "phase": "cold",
+      "points": 17061174,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "reference_v2",
+      "category": "enemy_heads",
+      "phase": "warm",
+      "points": 7931544,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "reference_v2",
+      "category": "round_0",
+      "phase": "cold",
+      "points": 30961586,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE W\n"
+    },
+    {
+      "bot": "reference_v2",
+      "category": "round_0",
+      "phase": "warm",
+      "points": 21733629,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE W\n"
+    },
+    {
+      "bot": "reference_v2",
+      "category": "sprint_trigger",
+      "phase": "cold",
+      "points": 16934239,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "reference_v2",
+      "category": "sprint_trigger",
+      "phase": "warm",
+      "points": 7813149,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "reference_v2",
+      "category": "round_100",
+      "phase": "cold",
+      "points": 16305726,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 3\n"
+    },
+    {
+      "bot": "reference_v2",
+      "category": "round_100",
+      "phase": "warm",
+      "points": 7179190,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 3\n"
+    },
+    {
+      "bot": "reference_v2",
+      "category": "round_300",
+      "phase": "cold",
+      "points": 16064680,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "reference_v2",
+      "category": "round_300",
+      "phase": "warm",
+      "points": 6985127,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "reference_v2",
+      "category": "round_460",
+      "phase": "cold",
+      "points": 27743099,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE S\n"
+    },
+    {
+      "bot": "reference_v2",
+      "category": "round_460",
+      "phase": "warm",
+      "points": 18523048,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE S\n"
+    },
+    {
+      "bot": "reference_v2",
+      "category": "long",
+      "phase": "cold",
+      "points": 17223895,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n"
+    },
+    {
+      "bot": "reference_v2",
+      "category": "long",
+      "phase": "warm",
+      "points": 8084248,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n"
+    },
+    {
+      "bot": "reference_v2",
+      "category": "dense",
+      "phase": "cold",
+      "points": 20503792,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE W\n"
+    },
+    {
+      "bot": "reference_v2",
+      "category": "dense",
+      "phase": "warm",
+      "points": 11310547,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE W\n"
+    },
+    {
+      "bot": "reference_v2",
+      "category": "enemy_heads",
+      "phase": "cold",
+      "points": 26548952,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n"
+    },
+    {
+      "bot": "reference_v2",
+      "category": "enemy_heads",
+      "phase": "warm",
+      "points": 17335717,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n"
+    },
+    {
+      "bot": "reference_v2",
+      "category": "population",
+      "phase": "cold",
+      "points": 18702624,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n"
+    },
+    {
+      "bot": "reference_v2",
+      "category": "population",
+      "phase": "warm",
+      "points": 9522590,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n"
+    },
+    {
+      "bot": "reference_v2",
+      "category": "portal_override",
+      "phase": "cold",
+      "points": 17470142,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE W\n"
+    },
+    {
+      "bot": "reference_v2",
+      "category": "portal_override",
+      "phase": "warm",
+      "points": 8328733,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE W\n"
+    },
+    {
+      "bot": "portal_escape",
+      "category": "long",
+      "phase": "cold",
+      "points": 24077690,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE E\n"
+    },
+    {
+      "bot": "portal_escape",
+      "category": "long",
+      "phase": "warm",
+      "points": 12707107,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE E\n"
+    },
+    {
+      "bot": "portal_escape",
+      "category": "dense",
+      "phase": "cold",
+      "points": 19614411,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "portal_escape",
+      "category": "dense",
+      "phase": "warm",
+      "points": 8365998,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "portal_escape",
+      "category": "enemy_heads",
+      "phase": "cold",
+      "points": 19225667,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "portal_escape",
+      "category": "enemy_heads",
+      "phase": "warm",
+      "points": 7950295,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "portal_escape",
+      "category": "round_0",
+      "phase": "cold",
+      "points": 33185559,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE W\n"
+    },
+    {
+      "bot": "portal_escape",
+      "category": "round_0",
+      "phase": "warm",
+      "points": 21816819,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE W\n"
+    },
+    {
+      "bot": "portal_escape",
+      "category": "sprint_trigger",
+      "phase": "cold",
+      "points": 19096091,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "portal_escape",
+      "category": "sprint_trigger",
+      "phase": "warm",
+      "points": 7837245,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "portal_escape",
+      "category": "round_100",
+      "phase": "cold",
+      "points": 18473240,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 3\n"
+    },
+    {
+      "bot": "portal_escape",
+      "category": "round_100",
+      "phase": "warm",
+      "points": 7208525,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 3\n"
+    },
+    {
+      "bot": "portal_escape",
+      "category": "round_300",
+      "phase": "cold",
+      "points": 18229007,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "portal_escape",
+      "category": "round_300",
+      "phase": "warm",
+      "points": 7007618,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "portal_escape",
+      "category": "round_460",
+      "phase": "cold",
+      "points": 30063869,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE S\n"
+    },
+    {
+      "bot": "portal_escape",
+      "category": "round_460",
+      "phase": "warm",
+      "points": 18699847,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE S\n"
+    },
+    {
+      "bot": "portal_escape",
+      "category": "long",
+      "phase": "cold",
+      "points": 19688092,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n"
+    },
+    {
+      "bot": "portal_escape",
+      "category": "long",
+      "phase": "warm",
+      "points": 8401760,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n"
+    },
+    {
+      "bot": "portal_escape",
+      "category": "dense",
+      "phase": "cold",
+      "points": 22867919,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE W\n"
+    },
+    {
+      "bot": "portal_escape",
+      "category": "dense",
+      "phase": "warm",
+      "points": 11537406,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE W\n"
+    },
+    {
+      "bot": "portal_escape",
+      "category": "enemy_heads",
+      "phase": "cold",
+      "points": 28774651,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n"
+    },
+    {
+      "bot": "portal_escape",
+      "category": "enemy_heads",
+      "phase": "warm",
+      "points": 17422107,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n"
+    },
+    {
+      "bot": "portal_escape",
+      "category": "population",
+      "phase": "cold",
+      "points": 20930658,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n"
+    },
+    {
+      "bot": "portal_escape",
+      "category": "population",
+      "phase": "warm",
+      "points": 9607979,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n"
+    },
+    {
+      "bot": "portal_escape",
+      "category": "portal_override",
+      "phase": "cold",
+      "points": 20189337,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n"
+    },
+    {
+      "bot": "portal_escape",
+      "category": "portal_override",
+      "phase": "warm",
+      "points": 8894755,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n"
+    }
+  ],
+  "limits": "Sampled cold/warm turns, not a full-game or worst-case guarantee."
+}

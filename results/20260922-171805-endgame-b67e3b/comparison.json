@@ -1,0 +1,43 @@
+{
+  "difference": 0.10833333333333334,
+  "map_cluster_ci95": [
+    0.041666666666666664,
+    0.16666666666666666
+  ],
+  "paired_block_ci95": [
+    0.05,
+    0.16666666666666666
+  ],
+  "maps": 5,
+  "blocks": 60,
+  "matched_games": 120,
+  "selected": "stop_450",
+  "success_gate_passed": true,
+  "splitter_score": 0.825,
+  "splitter_score_ci95": [
+    0.7,
+    0.925
+  ],
+  "diagnostics": {
+    "perpetual": {
+      "games": 120,
+      "wins": 95,
+      "length_decisions": 35,
+      "length_wins": 16,
+      "losses": 25,
+      "length_losses": 19,
+      "elimination_losses": 6,
+      "mean_longest_in_length_decisions": 7.0
+    },
+    "stop_450": {
+      "games": 120,
+      "wins": 108,
+      "length_decisions": 34,
+      "length_wins": 28,
+      "losses": 12,
+      "length_losses": 6,
+      "elimination_losses": 6,
+      "mean_longest_in_length_decisions": 13.147058823529411
+    }
+  }
+}

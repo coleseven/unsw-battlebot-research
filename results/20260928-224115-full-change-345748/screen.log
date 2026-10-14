@@ -1,0 +1,70 @@
+full: 24/270 games, 70s
+full: 48/270 games, 232s
+full: 72/270 games, 275s
+full: 96/270 games, 377s
+full: 120/270 games, 422s
+full: 144/270 games, 488s
+full: 168/270 games, 522s
+full: 192/270 games, 554s
+full: 216/270 games, 582s
+full: 240/270 games, 640s
+full: 264/270 games, 672s
+full: 270/270 games, 695s
+{
+  "maps": [
+    "default_small",
+    "trophy",
+    "queen_of_spades",
+    "default",
+    "Devil",
+    "stronghold",
+    "Trauma",
+    "schooltime",
+    "big_empty",
+    "arena",
+    "Colosseum",
+    "Autarky",
+    "Prisoners_Dilemma",
+    "Slithery_Fight",
+    "Portals"
+  ],
+  "games": 270,
+  "workers": 12,
+  "opponents": {
+    "nicked_lab": {
+      "wins": 37,
+      "draws": 0,
+      "losses": 53,
+      "score": 0.4111111111111111
+    },
+    "v6": {
+      "wins": 74,
+      "draws": 0,
+      "losses": 16,
+      "score": 0.8222222222222222
+    },
+    "ctmes": {
+      "wins": 87,
+      "draws": 0,
+      "losses": 3,
+      "score": 0.9666666666666667
+    }
+  },
+  "per_map_wins": {
+    "Autarky": "18/18",
+    "Colosseum": "16/18",
+    "Devil": "14/18",
+    "Portals": "15/18",
+    "Prisoners_Dilemma": "14/18",
+    "Slithery_Fight": "11/18",
+    "Trauma": "9/18",
+    "arena": "13/18",
+    "big_empty": "10/18",
+    "default": "14/18",
+    "default_small": "14/18",
+    "queen_of_spades": "14/18",
+    "schooltime": "12/18",
+    "stronghold": "12/18",
+    "trophy": "12/18"
+  }
+}

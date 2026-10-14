@@ -1,0 +1,22 @@
+showcase old: 24/72 games, 37s
+showcase old: 48/72 games, 82s
+showcase old: 72/72 games, 106s
+v1 vs splitter: 1 wins, 0 draws, 7 losses of 8
+v2 vs v1: 7 wins, 0 draws, 1 losses of 8
+v3 vs v2: 5 wins, 0 draws, 3 losses of 8
+v6 vs v3: 8 wins, 0 draws, 0 losses of 8
+v7-base vs v6: 6 wins, 0 draws, 2 losses of 8
+v9 vs v7-base: 7 wins, 0 draws, 1 losses of 8
+v10 vs v9: 4 wins, 0 draws, 4 losses of 8
+v10h vs v10: 6 wins, 0 draws, 2 losses of 8
+v10o vs v10h: 5 wins, 0 draws, 3 losses of 8
+OLD DONE rc=0
+showcase queen: 24/60 games, 26s
+showcase queen: 48/60 games, 52s
+showcase queen: 60/60 games, 79s
+v11ms vs v10o: 7 wins, 0 draws, 5 losses of 12
+v11q vs v11ms: 6 wins, 1 draws, 5 losses of 12
+v11t vs v11q: 8 wins, 0 draws, 4 losses of 12
+v12x vs v11t: 6 wins, 0 draws, 6 losses of 12
+v12z vs v12x: 4 wins, 0 draws, 8 losses of 12
+QUEEN DONE rc=0

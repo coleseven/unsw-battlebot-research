@@ -1,0 +1,85 @@
+{
+  "counts": {
+    "games": 864,
+    "verified_candidate_turns": 3838621,
+    "splits": 81950,
+    "late_splits": 0,
+    "portal_memory_turns": 3838621,
+    "portal_memory_search_turns": 3756671,
+    "portal_memory_capped_searches": 2082390
+  },
+  "samples": {
+    "portal_memory__mapped_cells": {
+      "bot": "portal_memory",
+      "score": 1828,
+      "id": 42,
+      "round": 469,
+      "block": "ROUND 469\nDIR W\nLENGTH 25\nUNIT_COUNT 56\nNUM_MSGS 0\n25 25 0 206\n26 25 0 84\n27 25 0 15\n28 25 0 648\n29 25 0 243\n30 25 0 367\n31 25 0 149\n25 26 0 154\n26 26 0 326\n27 26 0 243\n28 26 0 66\n29 26 0 286\n30 26 0 500\n31 26 0 210\n25 27 0 56\n26 27 0 74\n27 27 0 606\n28 27 0 488\n29 27 0 144\n30 27 0 266\n31 27 0 651\n25 28 0 512\n26 28 0 222\n27 28 0 274\n28 28 0 71\n29 28 0 71\n30 28 0 203\n31 28 0 68\n25 29 0 547\n26 29 0 144\n27 29 0 14\n28 29 0 143\n29 29 0 296\n30 29 0 408\n31 29 0 435\n25 30 0 171\n26 30 0 24\n27 30 0 37\n28 30 0 179\n29 30 0 409\n30 30 0 174\n31 30 0 217\n25 31 0 277\n26 31 0 188\n27 31 0 352\n28 31 0 265\n29 31 0 245\n30 31 0 193\n31 31 0 683\nDRAGON_BODIES 24\nB 222 31 25 S 0\nB 222 31 26 E 0\nB 222 26 27 W 1\nB 222 27 27 W 0\nB 222 28 27 W 0\nB 222 29 27 W 0\nB 222 30 27 W 0\nB 222 31 27 W 0\nB 306 25 28 E 0\nB 306 26 28 E 0\nB 306 27 28 S 0\nA 42 28 28 W 1\nA 42 29 28 W 0\nA 42 30 28 W 0\nB 306 27 29 S 1\nA 297 29 29 S 0\nA 42 30 29 N 0\nA 42 31 29 W 0\nA 297 29 30 S 0\nA 42 31 30 N 0\nA 297 27 31 W 1\nA 297 28 31 W 0\nA 297 29 31 W 0\nA 42 31 31 N 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n",
+      "init": "ID 42\nTEAM A\nMAP 64 64\nUNIT_LIMIT 64\n",
+      "source": "results\\20260923-140427-navigation-6e47f4\\validation\\replays\\portal_memory-vs-splitter-big_empty_685baf0e797207b7-s21006.replay"
+    },
+    "portal_memory__portal_pairs": {
+      "bot": "portal_memory",
+      "score": 12,
+      "id": 10,
+      "round": 228,
+      "block": "ROUND 228\nDIR N\nLENGTH 3\nUNIT_COUNT 13\nNUM_MSGS 0\n19 11 0 331\n20 11 0 222\n21 11 0 302\n22 11 0 1790\n23 11 0 1305\n24 11 0 2464\n25 11 0 2635\n19 12 0 277\n20 12 1 59\n21 12 0 48\n22 12 0 2942\n23 12 0 1716\n24 12 0 2648\n25 12 0 585\n19 13 0 94\n20 13 1 461\n21 13 0 349\n22 13 0 1927\n23 13 0 112\n24 13 0 3046\n25 13 0 2378\n19 14 0 127\n20 14 0 474\n21 14 0 392\n22 14 0 964\n23 14 0 2894\n24 14 0 2720\n25 14 0 3314\n19 15 1 336\n20 15 0 426\n21 15 0 501\n22 15 0 1764\n23 15 0 2845\n24 15 0 1407\n25 15 0 1781\n19 16 1 343\n20 16 1 127\n21 16 0 513\n22 16 0 1692\n23 16 0 215\n24 16 0 2112\n25 16 0 1397\n19 17 0 452\n20 17 0 198\n21 17 0 16\n22 17 0 74\n23 17 0 1165\n24 17 0 650\n25 17 0 2443\nDRAGON_BODIES 7\nA 10 22 14 N 1\nA 10 22 15 N 0\nB 22 23 15 N 1\nA 10 22 16 N 0\nB 22 23 16 N 0\nB 42 22 17 W 1\nB 42 23 17 W 0\n7 . . . . . .\n. . . . . . .\n. 8 . . . . .\nw w w . . . .\n2 . . . . . .\n. . . . . . .\n. 3 . . . . .\nw w w . . . .\n. . . w . . . .\n. . . w . . . .\n. . . w . . . .\n. . . w . . . .\n. . . w . . . .\n. . . w . . . .\n. . . w . . . .\n",
+      "init": "ID 10\nTEAM A\nMAP 32 32\nUNIT_LIMIT 64\n",
+      "source": "results\\20260923-140427-navigation-6e47f4\\validation\\replays\\portal_memory-vs-reference_v2-default_afc3707a967881d6-s21002.replay"
+    },
+    "portal_memory__food_entries": {
+      "bot": "portal_memory",
+      "score": 77,
+      "id": 825,
+      "round": 478,
+      "block": "ROUND 478\nDIR N\nLENGTH 15\nUNIT_COUNT 2\nNUM_MSGS 0\n6 1 0 6\n7 1 0 8\n8 1 1 12\n9 1 0 6\n10 1 0 -1\n0 1 0 -1\n1 1 0 2\n6 2 0 10\n7 2 1 10\n8 2 1 4\n9 2 0 4\n10 2 1 -1\n0 2 1 -1\n1 2 0 6\n6 3 0 9\n7 3 1 8\n8 3 1 18\n9 3 0 9\n10 3 0 -1\n0 3 0 -1\n1 3 1 15\n6 4 1 13\n7 4 1 9\n8 4 0 2\n9 4 0 10\n10 4 1 -1\n0 4 1 -1\n1 4 0 13\n6 5 0 6\n7 5 0 9\n8 5 0 9\n9 5 0 9\n10 5 0 -1\n0 5 0 -1\n1 5 1 9\n6 6 0 4\n7 6 0 14\n8 6 1 14\n9 6 0 13\n10 6 1 -1\n0 6 1 -1\n1 6 0 10\n6 7 0 5\n7 7 0 1\n8 7 0 2\n9 7 1 15\n10 7 0 -1\n0 7 0 -1\n1 7 0 9\nDRAGON_BODIES 16\nA 796 6 1 S 0\nA 796 7 1 W 0\nA 796 9 1 N 0\nA 796 6 2 S 0\nA 796 6 3 W 0\nB 825 9 4 N 1\nB 827 6 5 S 0\nB 825 7 5 E 0\nB 825 8 5 E 0\nB 825 9 5 N 0\nB 827 6 6 W 0\nB 825 7 6 N 0\nB 825 1 6 S 0\nB 825 6 7 E 0\nB 825 7 7 N 0\nB 825 1 7 S 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . w . .\n. . . . . w . .\n. . . . . w . .\n. . . . . w . .\n. . . . . w . .\n. . . . . w . .\n. . . . . w . .\n",
+      "init": "ID 825\nTEAM B\nMAP 11 11\nUNIT_LIMIT 64\n",
+      "source": "results\\20260923-140427-navigation-6e47f4\\validation\\replays\\reference_v2-vs-portal_memory-arena_728547b8376892d9-s21002.replay"
+    },
+    "portal_memory__search_nodes": {
+      "bot": "portal_memory",
+      "score": 96,
+      "id": 0,
+      "round": 4,
+      "block": "ROUND 4\nDIR E\nLENGTH 3\nUNIT_COUNT 1\nNUM_MSGS 0\n3 3 0 8\n4 3 0 14\n5 3 0 13\n6 3 0 8\n7 3 0 10\n8 3 0 12\n9 3 0 4\n3 4 0 14\n4 4 0 13\n5 4 0 10\n6 4 0 14\n7 4 0 6\n8 4 0 5\n9 4 0 14\n3 5 0 3\n4 5 0 3\n5 5 0 5\n6 5 0 3\n7 5 0 3\n8 5 0 5\n9 5 0 11\n3 6 0 6\n4 6 0 14\n5 6 0 10\n6 6 0 13\n7 6 0 14\n8 6 0 5\n9 6 0 15\n3 7 0 10\n4 7 0 8\n5 7 0 13\n6 7 0 14\n7 7 0 8\n8 7 0 13\n9 7 0 11\n3 8 0 8\n4 8 0 9\n5 8 0 3\n6 8 0 5\n7 8 0 5\n8 8 0 8\n9 8 0 5\n3 9 0 5\n4 9 0 11\n5 9 0 3\n6 9 0 3\n7 9 0 14\n8 9 0 3\n9 9 0 5\nDRAGON_BODIES 5\nB 1 6 3 N 0\nB 1 6 4 N 0\nA 0 4 6 E 0\nA 0 5 6 E 0\nA 0 6 6 E 1\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n",
+      "init": "ID 0\nTEAM A\nMAP 11 11\nUNIT_LIMIT 64\n",
+      "source": "results\\20260923-140427-navigation-6e47f4\\validation\\replays\\portal_memory-vs-reference_v2-arena_728547b8376892d9-s21002.replay"
+    },
+    "portal_memory__long": {
+      "bot": "portal_memory",
+      "score": 59,
+      "init": "ID 70\nTEAM B\nMAP 64 64\nUNIT_LIMIT 64\n",
+      "id": 70,
+      "round": 432,
+      "block": "ROUND 432\nDIR E\nLENGTH 59\nUNIT_COUNT 64\nNUM_MSGS 0\n43 31 0 107\n44 31 0 513\n45 31 0 221\n46 31 0 259\n47 31 0 30\n48 31 0 258\n49 31 0 508\n43 32 0 104\n44 32 0 73\n45 32 0 213\n46 32 0 183\n47 32 0 228\n48 32 0 69\n49 32 0 54\n43 33 0 353\n44 33 0 199\n45 33 0 67\n46 33 0 204\n47 33 0 135\n48 33 0 78\n49 33 0 72\n43 34 0 293\n44 34 0 516\n45 34 0 61\n46 34 0 215\n47 34 0 487\n48 34 0 12\n49 34 0 193\n43 35 0 161\n44 35 0 340\n45 35 0 122\n46 35 0 27\n47 35 0 400\n48 35 0 471\n49 35 0 445\n43 36 0 245\n44 36 0 262\n45 36 0 232\n46 36 0 123\n47 36 0 16\n48 36 0 254\n49 36 0 594\n43 37 0 154\n44 37 0 39\n45 37 0 672\n46 37 0 170\n47 37 0 96\n48 37 0 187\n49 37 0 314\nDRAGON_BODIES 21\nB 70 43 31 W 0\nB 70 44 31 W 0\nB 70 45 31 W 0\nB 70 46 31 W 0\nB 70 47 31 W 0\nB 70 48 31 E 0\nB 70 49 31 S 0\nB 70 47 32 N 0\nB 70 48 32 W 0\nB 70 49 32 W 0\nB 42 47 33 E 0\nB 42 48 33 E 0\nB 42 49 33 E 0\nB 70 43 34 E 0\nB 70 44 34 E 0\nB 70 45 34 E 0\nB 70 46 34 E 1\nB 42 47 34 N 0\nB 126 43 36 W 0\nB 126 44 36 W 0\nB 126 44 37 N 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n",
+      "source": "results\\20260923-140427-navigation-6e47f4\\validation\\replays\\hunter-vs-portal_memory-big_empty_685baf0e797207b7-s21007.replay"
+    },
+    "portal_memory__dense": {
+      "bot": "portal_memory",
+      "score": 45,
+      "init": "ID 49\nTEAM A\nMAP 64 64\nUNIT_LIMIT 64\n",
+      "id": 49,
+      "round": 381,
+      "block": "ROUND 381\nDIR N\nLENGTH 21\nUNIT_COUNT 64\nNUM_MSGS 0\n21 20 0 179\n22 20 0 217\n23 20 0 437\n24 20 0 38\n25 20 0 197\n26 20 0 472\n27 20 0 419\n21 21 0 36\n22 21 0 343\n23 21 0 232\n24 21 0 57\n25 21 0 23\n26 21 0 304\n27 21 0 169\n21 22 0 428\n22 22 0 145\n23 22 0 150\n24 22 0 75\n25 22 0 302\n26 22 0 293\n27 22 0 40\n21 23 0 80\n22 23 0 133\n23 23 0 327\n24 23 0 283\n25 23 0 70\n26 23 0 632\n27 23 0 249\n21 24 0 421\n22 24 0 543\n23 24 0 74\n24 24 0 4\n25 24 0 63\n26 24 0 345\n27 24 0 376\n21 25 0 359\n22 25 0 17\n23 25 0 13\n24 25 0 352\n25 25 0 294\n26 25 0 172\n27 25 0 103\n21 26 0 26\n22 26 0 151\n23 26 0 103\n24 26 0 196\n25 26 0 242\n26 26 0 414\n27 26 0 331\nDRAGON_BODIES 45\nA 23 21 20 S 0\nA 23 22 20 W 0\nA 49 24 20 E 0\nA 49 25 20 S 0\nA 49 26 20 N 0\nA 49 27 20 W 0\nA 23 21 21 W 0\nA 23 22 21 N 0\nA 49 25 21 S 0\nA 67 26 21 S 0\nA 67 27 21 W 0\nA 23 21 22 S 0\nA 23 22 22 N 0\nA 23 23 22 S 0\nA 49 25 22 S 0\nA 67 26 22 S 0\nA 67 27 22 N 0\nA 23 21 23 S 0\nA 23 22 23 N 0\nA 23 23 23 S 0\nA 49 24 23 N 1\nA 49 25 23 S 0\nA 67 26 23 S 0\nA 67 27 23 N 0\nA 23 21 24 S 0\nA 23 22 24 N 0\nA 23 23 24 S 0\nA 49 24 24 N 0\nA 49 25 24 W 0\nA 67 26 24 S 1\nA 67 27 24 N 0\nA 23 21 25 S 0\nA 23 22 25 N 0\nA 23 23 25 S 0\nA 102 24 25 S 0\nA 102 25 25 W 0\nA 102 26 25 W 0\nA 67 27 25 N 0\nA 23 21 26 W 0\nA 23 22 26 N 0\nA 23 23 26 S 0\nA 102 24 26 E 0\nA 102 25 26 S 0\nA 102 26 26 N 0\nA 67 27 26 N 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n",
+      "source": "results\\20260923-140427-navigation-6e47f4\\validation\\replays\\portal_memory-vs-hunter-big_empty_685baf0e797207b7-s21004.replay"
+    },
+    "portal_memory__enemy_heads": {
+      "bot": "portal_memory",
+      "score": 15,
+      "init": "ID 351\nTEAM B\nMAP 11 11\nUNIT_LIMIT 64\n",
+      "id": 351,
+      "round": 206,
+      "block": "ROUND 206\nDIR W\nLENGTH 2\nUNIT_COUNT 2\nNUM_MSGS 0\n2 1 0 9\n3 1 0 3\n4 1 0 6\n5 1 0 1\n6 1 0 10\n7 1 0 3\n8 1 0 13\n2 2 0 1\n3 2 0 8\n4 2 0 3\n5 2 0 1\n6 2 0 7\n7 2 0 5\n8 2 0 3\n2 3 0 19\n3 3 0 8\n4 3 0 4\n5 3 1 18\n6 3 0 8\n7 3 0 4\n8 3 0 1\n2 4 0 11\n3 4 0 14\n4 4 0 1\n5 4 0 4\n6 4 0 15\n7 4 0 6\n8 4 0 8\n2 5 0 13\n3 5 0 7\n4 5 0 3\n5 5 0 13\n6 5 0 3\n7 5 0 7\n8 5 1 13\n2 6 0 8\n3 6 0 6\n4 6 0 15\n5 6 0 4\n6 6 0 1\n7 6 0 14\n8 6 0 11\n2 7 0 1\n3 7 0 4\n4 7 0 8\n5 7 0 18\n6 7 0 4\n7 7 0 8\n8 7 0 19\nDRAGON_BODIES 36\nA 346 3 1 S 1\nA 336 4 1 W 1\nA 336 5 1 W 0\nA 296 7 1 E 0\nA 296 8 1 E 1\nA 355 3 2 N 1\nA 353 4 2 S 0\nA 339 5 2 E 0\nA 339 6 2 E 1\nA 335 8 2 S 0\nA 340 2 3 E 1\nA 355 3 3 N 0\nA 353 4 3 S 1\nB 314 6 3 E 0\nB 314 7 3 E 1\nA 335 8 3 S 1\nA 348 2 4 W 1\nA 348 3 4 W 0\nB 351 5 4 W 1\nB 351 6 4 W 0\nA 283 8 4 E 0\nA 322 3 5 E 0\nA 322 4 5 E 1\nA 352 5 5 N 1\nA 322 3 6 N 0\nA 341 4 6 N 1\nA 352 5 6 N 0\nA 338 6 6 E 0\nA 338 7 6 E 1\nA 317 8 6 W 1\nA 305 2 7 S 0\nA 341 4 7 N 0\nA 290 5 7 W 1\nA 290 6 7 W 0\nA 344 7 7 S 0\nA 344 8 7 W 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n",
+      "source": "results\\20260923-140427-navigation-6e47f4\\validation\\replays\\reference_v2-vs-portal_memory-arena_728547b8376892d9-s21006.replay"
+    },
+    "portal_memory__population": {
+      "bot": "portal_memory",
+      "score": 64,
+      "init": "ID 25\nTEAM A\nMAP 64 64\nUNIT_LIMIT 64\n",
+      "id": 25,
+      "round": 86,
+      "block": "ROUND 86\nDIR W\nLENGTH 3\nUNIT_COUNT 64\nNUM_MSGS 0\n7 14 0 612\n8 14 0 217\n9 14 0 110\n10 14 0 88\n11 14 0 392\n12 14 0 414\n13 14 0 189\n7 15 0 93\n8 15 0 121\n9 15 0 414\n10 15 0 117\n11 15 0 318\n12 15 0 493\n13 15 0 10\n7 16 0 659\n8 16 0 551\n9 16 0 543\n10 16 0 422\n11 16 0 327\n12 16 0 284\n13 16 0 299\n7 17 0 428\n8 17 0 575\n9 17 0 36\n10 17 0 325\n11 17 0 513\n12 17 0 232\n13 17 0 143\n7 18 0 123\n8 18 0 501\n9 18 0 106\n10 18 0 659\n11 18 0 616\n12 18 0 528\n13 18 0 241\n7 19 1 588\n8 19 0 455\n9 19 0 621\n10 19 0 46\n11 19 0 385\n12 19 0 575\n13 19 0 187\n7 20 0 509\n8 20 0 643\n9 20 0 573\n10 20 0 132\n11 20 0 6\n12 20 0 107\n13 20 0 397\nDRAGON_BODIES 9\nA 63 7 15 W 0\nA 25 11 16 S 0\nA 135 7 17 N 1\nA 25 10 17 W 1\nA 25 11 17 W 0\nA 71 12 17 S 0\nA 135 7 18 N 0\nA 71 12 18 S 0\nA 71 12 19 S 1\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n",
+      "source": "results\\20260923-140427-navigation-6e47f4\\validation\\replays\\portal_memory-vs-reference_v2-big_empty_685baf0e797207b7-s21000.replay"
+    }
+  }
+}

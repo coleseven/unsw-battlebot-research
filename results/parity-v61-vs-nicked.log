@@ -1,0 +1,37 @@
+default_small-nicked-A.replay              16x16    turns= 15878  OK
+default_small-nicked-B.replay              16x16    turns= 15569  OK
+trophy-nicked-A.replay                     25x25    turns= 32223  OK
+trophy-nicked-B.replay                     25x25    turns= 31547  OK
+queen_of_spades-nicked-A.replay            25x35    turns= 15317  OK
+queen_of_spades-nicked-B.replay            25x35    turns=  7873  OK
+default-nicked-A.replay                    32x32    turns= 30422  OK
+default-nicked-B.replay                    32x32    turns= 31252  OK
+Devil-nicked-A.replay                      32x16    turns= 26247  OK
+Devil-nicked-B.replay                      32x16    turns= 23152  OK
+stronghold-nicked-A.replay                 48x24    turns= 35579  OK
+stronghold-nicked-B.replay                 48x24    turns= 38145  OK
+Trauma-nicked-A.replay                     48x24    turns= 15848  OK
+Trauma-nicked-B.replay                     48x24    turns= 24982  OK
+schooltime-nicked-A.replay                 60x40    turns= 43376  OK
+schooltime-nicked-B.replay                 60x40    turns= 44519  OK
+big_empty-nicked-A.replay                  64x64    turns= 56681  OK
+big_empty-nicked-B.replay                  64x64    turns= 56694  OK
+arena-nicked-A.replay                      11x11    turns=  5009  OK
+arena-nicked-B.replay                      11x11    turns=  6559  OK
+Colosseum-nicked-A.replay                  16x16    turns=  5985  OK
+Colosseum-nicked-B.replay                  16x16    turns=  6993  OK
+
+=== per map size ===
+  11x11    turns=  11568 mismatched_dragons=0
+  16x16    turns=  44425 mismatched_dragons=0
+  25x25    turns=  63770 mismatched_dragons=0
+  25x35    turns=  23190 mismatched_dragons=0
+  32x16    turns=  49399 mismatched_dragons=0
+  32x32    turns=  61674 mismatched_dragons=0
+  48x24    turns= 114554 mismatched_dragons=0
+  60x40    turns=  87895 mismatched_dragons=0
+  64x64    turns= 113375 mismatched_dragons=0
+
+TOTAL dragon-turns compared: 569850
+TOTAL mismatched dragons:    0
+G1: PASS

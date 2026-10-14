@@ -1,0 +1,32 @@
+{
+  "y150": {
+    "delta": 0.012605042016806723,
+    "lo": 0.0,
+    "hi": 0.029411764705882353,
+    "verdict": "neutral",
+    "pool_delta": 0.0,
+    "pool_lo": 0.0,
+    "pool_hi": 0.0,
+    "pool_verdict": "neutral"
+  },
+  "y300": {
+    "delta": 0.012605042016806723,
+    "lo": 0.0,
+    "hi": 0.029411764705882353,
+    "verdict": "neutral",
+    "pool_delta": 0.0,
+    "pool_lo": 0.0,
+    "pool_hi": 0.0,
+    "pool_verdict": "neutral"
+  },
+  "y150_t2": {
+    "delta": 0.12605042016806722,
+    "lo": 0.025210084033613446,
+    "hi": 0.2184873949579832,
+    "verdict": "harmful (drop)",
+    "pool_delta": 0.1,
+    "pool_lo": -0.02857142857142857,
+    "pool_hi": 0.2571428571428571,
+    "pool_verdict": "neutral"
+  }
+}

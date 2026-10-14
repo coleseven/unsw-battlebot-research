@@ -1,0 +1,36 @@
+{
+  "question": "Can v2's hysteretic grower roles help when v3 movement is kept intact?",
+  "baseline_hash": "69382825b699723d",
+  "live_hash": "ffe736af6c14ea33",
+  "candidate_hashes": {
+    "mature": "179cf9015b8ae8f3",
+    "opportunity": "2c2babaa5da74cfb"
+  },
+  "opponent_hashes": {
+    "ctmes": "8b08ab70a6837573",
+    "nicked": "d6dd50765f54f638"
+  },
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-115357-v4-grower-374d2b\\maps\\default_afc3707a967881d6.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-115357-v4-grower-374d2b\\maps\\default_small_f98ab391cccf33b1.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-115357-v4-grower-374d2b\\maps\\queen_of_spades_6cdb74a7a52d715a.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-115357-v4-grower-374d2b\\maps\\Trauma_d014b28abbd1abb0.map"
+  ],
+  "map_hashes": {
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-115357-v4-grower-374d2b\\maps\\default_afc3707a967881d6.map": "8cbd2473c772cb2d",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-115357-v4-grower-374d2b\\maps\\default_small_f98ab391cccf33b1.map": "b1f09be73e876dce",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-115357-v4-grower-374d2b\\maps\\queen_of_spades_6cdb74a7a52d715a.map": "bf9886dc024dc300",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-115357-v4-grower-374d2b\\maps\\Trauma_d014b28abbd1abb0.map": "c1977dce278badd5"
+  },
+  "screen_seed": 42000,
+  "direct_seed": 42000,
+  "screen_games": 48,
+  "direct_games": 16,
+  "selection": "Exploratory: positive paired gain over v3 against both stronger opponents and at least 50% direct v3 score; choose larger paired gain.",
+  "future_gate": "Fresh layouts and opponent versions with positive map-cluster lower bound, exact replay audit and sandbox budget before v4 freeze.",
+  "limits": "Only four familiar maps and one seed; competitors are pinned local source snapshots, not the live ladder. The grower-role thresholds were imported unchanged from the earlier v2 ablation. No opponent code is copied into candidates.",
+  "source_hashes": {
+    "experiments\\v4\\grower_brain.py": "98fbc01c5c15d84b",
+    "bcsim\\v4_grower.py": "0f5dc926b5b6f832"
+  }
+}

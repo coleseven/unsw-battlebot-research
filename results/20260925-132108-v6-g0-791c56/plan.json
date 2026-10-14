@@ -1,0 +1,34 @@
+{
+  "question": "Does the hand-default v6 core improve G0 trajectory margin by 0.15?",
+  "scope": "Diagnostic G0 only; full eleven-map suite required before promotion.",
+  "seed": 61001,
+  "workers": 6,
+  "v6_hash": "01206802d453a7ac",
+  "nicked_hash": "d6dd50765f54f638",
+  "baseline_hash": "23a140e48e5f7d89",
+  "live_hash": "ffe736af6c14ea33",
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-132108-v6-g0-791c56\\maps\\default_small.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-132108-v6-g0-791c56\\maps\\trophy.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-132108-v6-g0-791c56\\maps\\queen_of_spades.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-132108-v6-g0-791c56\\maps\\Devil.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-132108-v6-g0-791c56\\maps\\big_empty.map"
+  ],
+  "map_hashes": {
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-132108-v6-g0-791c56\\maps\\default_small.map": "8ac4b2eedcf19f85",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-132108-v6-g0-791c56\\maps\\trophy.map": "5f1f6b23d6edb944",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-132108-v6-g0-791c56\\maps\\queen_of_spades.map": "126d71b464432685",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-132108-v6-g0-791c56\\maps\\Devil.map": "a09e8f2d3bdd1e40",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-132108-v6-g0-791c56\\maps\\big_empty.map": "6cb3b7be72a4e27e"
+  },
+  "source_hashes": {
+    "framework\\core_params.py": "462be1c1b3061ad8",
+    "framework\\core_memory.py": "56f527521b1bc00b",
+    "framework\\core_search.py": "65a20ceaf4a277be",
+    "framework\\core_split.py": "ccb9719d540ea921",
+    "framework\\core_king.py": "496022e9a1a39b33",
+    "experiments\\v6\\brain.py": "5d40b3bdde5a7b3f",
+    "bcsim\\v6_initial.py": "17291a79a33e72f1",
+    "bcsim\\v6_g0.py": "38593b08f56060e6"
+  }
+}

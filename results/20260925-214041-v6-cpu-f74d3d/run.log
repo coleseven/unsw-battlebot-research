@@ -1,0 +1,1185 @@
+start default_small A
+sandbox round 0, 1 metered turns, 4 living dragons, 1s, 98 MiB RSS
+sandbox round 50, 192 metered turns, 15 living dragons, 7s, 183 MiB RSS
+sandbox round 100, 755 metered turns, 24 living dragons, 31s, 411 MiB RSS
+sandbox round 150, 1624 metered turns, 28 living dragons, 53s, 631 MiB RSS
+sandbox round 200, 2711 metered turns, 36 living dragons, 89s, 824 MiB RSS
+sandbox round 250, 4104 metered turns, 37 living dragons, 126s, 968 MiB RSS
+sandbox round 300, 5775 metered turns, 35 living dragons, 167s, 1068 MiB RSS
+{
+  "metrics": {
+    "turns": 6801,
+    "max_points": 81075483,
+    "p50_points": 52989079,
+    "p99_points": 61056173,
+    "max_memory_bytes": 22085632,
+    "first_turn_max_points": 76812890,
+    "hard_fallback_logs": 0,
+    "sampled_host_rss_bytes": 1120251904,
+    "seconds": 183.38027330000477
+  },
+  "errors": [],
+  "exception": null,
+  "final": {
+    "terminated": true,
+    "end_reason": "eliminated",
+    "winner": "A",
+    "a": {
+      "dragons": 40,
+      "longest": 4,
+      "total": 95
+    },
+    "b": {
+      "dragons": 0,
+      "longest": 0,
+      "total": 0
+    }
+  }
+}
+done 1/22 pass_so_far=True
+start default_small B
+sandbox round 0, 0 metered turns, 4 living dragons, 1s, 89 MiB RSS
+sandbox round 50, 168 metered turns, 15 living dragons, 8s, 174 MiB RSS
+sandbox round 100, 559 metered turns, 27 living dragons, 19s, 282 MiB RSS
+sandbox round 150, 1278 metered turns, 28 living dragons, 38s, 472 MiB RSS
+sandbox round 200, 2278 metered turns, 33 living dragons, 70s, 656 MiB RSS
+sandbox round 250, 3642 metered turns, 36 living dragons, 100s, 875 MiB RSS
+sandbox round 300, 5103 metered turns, 36 living dragons, 127s, 930 MiB RSS
+sandbox round 350, 6795 metered turns, 34 living dragons, 171s, 1173 MiB RSS
+sandbox round 400, 8616 metered turns, 38 living dragons, 226s, 1323 MiB RSS
+{
+  "metrics": {
+    "turns": 8819,
+    "max_points": 81822840,
+    "p50_points": 53122008,
+    "p99_points": 60091202,
+    "max_memory_bytes": 22151168,
+    "first_turn_max_points": 77311494,
+    "hard_fallback_logs": 0,
+    "sampled_host_rss_bytes": 1388277760,
+    "seconds": 234.09790069999872
+  },
+  "errors": [],
+  "exception": null,
+  "final": {
+    "terminated": true,
+    "end_reason": "eliminated",
+    "winner": "B",
+    "a": {
+      "dragons": 0,
+      "longest": 0,
+      "total": 0
+    },
+    "b": {
+      "dragons": 42,
+      "longest": 3,
+      "total": 94
+    }
+  }
+}
+done 2/22 pass_so_far=True
+start trophy A
+sandbox round 0, 1 metered turns, 4 living dragons, 2s, 98 MiB RSS
+sandbox round 50, 232 metered turns, 19 living dragons, 18s, 233 MiB RSS
+sandbox round 100, 1208 metered turns, 46 living dragons, 44s, 480 MiB RSS
+sandbox round 150, 2747 metered turns, 56 living dragons, 73s, 720 MiB RSS
+sandbox round 200, 4679 metered turns, 69 living dragons, 104s, 949 MiB RSS
+sandbox round 250, 7039 metered turns, 72 living dragons, 126s, 1183 MiB RSS
+sandbox round 300, 9788 metered turns, 78 living dragons, 153s, 1515 MiB RSS
+sandbox round 350, 12576 metered turns, 78 living dragons, 174s, 1640 MiB RSS
+sandbox round 400, 15401 metered turns, 75 living dragons, 200s, 1737 MiB RSS
+sandbox round 450, 17418 metered turns, 53 living dragons, 227s, 1938 MiB RSS
+{
+  "metrics": {
+    "turns": 18119,
+    "max_points": 82478173,
+    "p50_points": 53818190,
+    "p99_points": 63987936,
+    "max_memory_bytes": 22216704,
+    "first_turn_max_points": 80843862,
+    "hard_fallback_logs": 0,
+    "sampled_host_rss_bytes": 2033008640,
+    "seconds": 235.64693580000312
+  },
+  "errors": [],
+  "exception": null,
+  "final": {
+    "terminated": true,
+    "end_reason": "round_limit",
+    "winner": "A",
+    "a": {
+      "dragons": 8,
+      "longest": 21,
+      "total": 98
+    },
+    "b": {
+      "dragons": 20,
+      "longest": 7,
+      "total": 94
+    }
+  }
+}
+done 3/22 pass_so_far=True
+start trophy B
+sandbox round 0, 0 metered turns, 4 living dragons, 1s, 89 MiB RSS
+sandbox round 50, 420 metered turns, 26 living dragons, 14s, 395 MiB RSS
+sandbox round 100, 1766 metered turns, 46 living dragons, 28s, 684 MiB RSS
+sandbox round 150, 4008 metered turns, 60 living dragons, 47s, 945 MiB RSS
+sandbox round 200, 6815 metered turns, 62 living dragons, 65s, 1175 MiB RSS
+sandbox round 250, 9646 metered turns, 62 living dragons, 88s, 1360 MiB RSS
+sandbox round 300, 12474 metered turns, 61 living dragons, 110s, 1589 MiB RSS
+sandbox round 350, 15339 metered turns, 59 living dragons, 133s, 1944 MiB RSS
+sandbox round 400, 18258 metered turns, 59 living dragons, 162s, 1814 MiB RSS
+sandbox round 450, 20176 metered turns, 34 living dragons, 206s, 2102 MiB RSS
+{
+  "metrics": {
+    "turns": 20870,
+    "max_points": 82187614,
+    "p50_points": 53827226,
+    "p99_points": 64352332,
+    "max_memory_bytes": 22216704,
+    "first_turn_max_points": 80994687,
+    "hard_fallback_logs": 0,
+    "sampled_host_rss_bytes": 2204237824,
+    "seconds": 214.48793230000592
+  },
+  "errors": [],
+  "exception": null,
+  "final": {
+    "terminated": true,
+    "end_reason": "round_limit",
+    "winner": "B",
+    "a": {
+      "dragons": 7,
+      "longest": 9,
+      "total": 37
+    },
+    "b": {
+      "dragons": 12,
+      "longest": 21,
+      "total": 167
+    }
+  }
+}
+done 4/22 pass_so_far=True
+start queen_of_spades A
+sandbox round 0, 1 metered turns, 4 living dragons, 1s, 99 MiB RSS
+sandbox round 50, 101 metered turns, 5 living dragons, 2s, 123 MiB RSS
+sandbox round 100, 253 metered turns, 7 living dragons, 4s, 152 MiB RSS
+sandbox round 150, 453 metered turns, 10 living dragons, 5s, 156 MiB RSS
+sandbox round 200, 899 metered turns, 17 living dragons, 13s, 329 MiB RSS
+sandbox round 250, 1545 metered turns, 21 living dragons, 22s, 429 MiB RSS
+sandbox round 300, 2637 metered turns, 33 living dragons, 40s, 620 MiB RSS
+sandbox round 350, 4142 metered turns, 40 living dragons, 67s, 997 MiB RSS
+sandbox round 400, 5868 metered turns, 40 living dragons, 86s, 970 MiB RSS
+sandbox round 450, 7835 metered turns, 41 living dragons, 105s, 1291 MiB RSS
+{
+  "metrics": {
+    "turns": 9524,
+    "max_points": 80520080,
+    "p50_points": 53233227,
+    "p99_points": 57265787,
+    "max_memory_bytes": 22085632,
+    "first_turn_max_points": 77444248,
+    "hard_fallback_logs": 0,
+    "sampled_host_rss_bytes": 1353900032,
+    "seconds": 116.47909120000259
+  },
+  "errors": [],
+  "exception": null,
+  "final": {
+    "terminated": true,
+    "end_reason": "round_limit",
+    "winner": "A",
+    "a": {
+      "dragons": 25,
+      "longest": 13,
+      "total": 93
+    },
+    "b": {
+      "dragons": 3,
+      "longest": 2,
+      "total": 6
+    }
+  }
+}
+done 5/22 pass_so_far=True
+start queen_of_spades B
+sandbox round 0, 0 metered turns, 4 living dragons, 1s, 91 MiB RSS
+sandbox round 50, 136 metered turns, 6 living dragons, 3s, 144 MiB RSS
+sandbox round 100, 532 metered turns, 13 living dragons, 13s, 377 MiB RSS
+sandbox round 150, 1452 metered turns, 26 living dragons, 27s, 544 MiB RSS
+sandbox round 200, 2761 metered turns, 30 living dragons, 43s, 770 MiB RSS
+sandbox round 250, 4235 metered turns, 35 living dragons, 60s, 998 MiB RSS
+sandbox round 300, 5904 metered turns, 37 living dragons, 78s, 1172 MiB RSS
+sandbox round 350, 7891 metered turns, 46 living dragons, 103s, 1219 MiB RSS
+sandbox round 400, 10094 metered turns, 49 living dragons, 125s, 1449 MiB RSS
+sandbox round 450, 12450 metered turns, 52 living dragons, 150s, 1442 MiB RSS
+{
+  "metrics": {
+    "turns": 14595,
+    "max_points": 82188119,
+    "p50_points": 53336268,
+    "p99_points": 57532228,
+    "max_memory_bytes": 22151168,
+    "first_turn_max_points": 77868383,
+    "hard_fallback_logs": 0,
+    "sampled_host_rss_bytes": 1519878144,
+    "seconds": 162.96576139998797
+  },
+  "errors": [],
+  "exception": null,
+  "final": {
+    "terminated": true,
+    "end_reason": "round_limit",
+    "winner": "B",
+    "a": {
+      "dragons": 3,
+      "longest": 3,
+      "total": 7
+    },
+    "b": {
+      "dragons": 34,
+      "longest": 9,
+      "total": 118
+    }
+  }
+}
+done 6/22 pass_so_far=True
+start default A
+sandbox round 0, 1 metered turns, 8 living dragons, 1s, 98 MiB RSS
+sandbox round 50, 486 metered turns, 23 living dragons, 9s, 267 MiB RSS
+sandbox round 100, 1129 metered turns, 32 living dragons, 13s, 313 MiB RSS
+sandbox round 150, 1923 metered turns, 42 living dragons, 19s, 391 MiB RSS
+sandbox round 200, 2922 metered turns, 46 living dragons, 29s, 548 MiB RSS
+sandbox round 250, 4282 metered turns, 55 living dragons, 42s, 701 MiB RSS
+sandbox round 300, 6034 metered turns, 68 living dragons, 59s, 1020 MiB RSS
+sandbox round 350, 7894 metered turns, 67 living dragons, 69s, 1017 MiB RSS
+sandbox round 400, 9456 metered turns, 63 living dragons, 78s, 993 MiB RSS
+sandbox round 450, 10623 metered turns, 59 living dragons, 86s, 1059 MiB RSS
+{
+  "metrics": {
+    "turns": 11367,
+    "max_points": 82040767,
+    "p50_points": 53283040,
+    "p99_points": 57713463,
+    "max_memory_bytes": 22282240,
+    "first_turn_max_points": 65440042,
+    "hard_fallback_logs": 0,
+    "sampled_host_rss_bytes": 1110913024,
+    "seconds": 91.25018450000789
+  },
+  "errors": [],
+  "exception": null,
+  "final": {
+    "terminated": true,
+    "end_reason": "round_limit",
+    "winner": "A",
+    "a": {
+      "dragons": 13,
+      "longest": 14,
+      "total": 105
+    },
+    "b": {
+      "dragons": 37,
+      "longest": 9,
+      "total": 113
+    }
+  }
+}
+done 7/22 pass_so_far=True
+start default B
+sandbox round 0, 0 metered turns, 8 living dragons, 1s, 90 MiB RSS
+sandbox round 50, 400 metered turns, 24 living dragons, 7s, 215 MiB RSS
+sandbox round 100, 850 metered turns, 33 living dragons, 10s, 247 MiB RSS
+sandbox round 150, 1340 metered turns, 43 living dragons, 14s, 291 MiB RSS
+sandbox round 200, 1936 metered turns, 51 living dragons, 19s, 360 MiB RSS
+sandbox round 250, 2969 metered turns, 66 living dragons, 33s, 512 MiB RSS
+sandbox round 300, 4111 metered turns, 71 living dragons, 43s, 616 MiB RSS
+sandbox round 350, 5315 metered turns, 76 living dragons, 52s, 696 MiB RSS
+sandbox round 400, 6516 metered turns, 82 living dragons, 60s, 673 MiB RSS
+sandbox round 450, 7465 metered turns, 76 living dragons, 66s, 700 MiB RSS
+{
+  "metrics": {
+    "turns": 7993,
+    "max_points": 80951498,
+    "p50_points": 53105688,
+    "p99_points": 56920291,
+    "max_memory_bytes": 22282240,
+    "first_turn_max_points": 65906386,
+    "hard_fallback_logs": 0,
+    "sampled_host_rss_bytes": 734195712,
+    "seconds": 71.0405000000028
+  },
+  "errors": [],
+  "exception": null,
+  "final": {
+    "terminated": true,
+    "end_reason": "round_limit",
+    "winner": "B",
+    "a": {
+      "dragons": 52,
+      "longest": 11,
+      "total": 153
+    },
+    "b": {
+      "dragons": 10,
+      "longest": 17,
+      "total": 62
+    }
+  }
+}
+done 8/22 pass_so_far=True
+start Devil A
+sandbox round 0, 1 metered turns, 6 living dragons, 1s, 98 MiB RSS
+sandbox round 50, 472 metered turns, 27 living dragons, 13s, 380 MiB RSS
+sandbox round 100, 1733 metered turns, 43 living dragons, 43s, 806 MiB RSS
+sandbox round 150, 3481 metered turns, 56 living dragons, 78s, 1258 MiB RSS
+sandbox round 200, 5691 metered turns, 61 living dragons, 120s, 1472 MiB RSS
+sandbox round 250, 8252 metered turns, 66 living dragons, 162s, 1777 MiB RSS
+sandbox round 300, 10909 metered turns, 69 living dragons, 209s, 1913 MiB RSS
+sandbox round 350, 13723 metered turns, 63 living dragons, 252s, 2004 MiB RSS
+sandbox round 400, 16588 metered turns, 63 living dragons, 298s, 2176 MiB RSS
+sandbox round 450, 18555 metered turns, 33 living dragons, 356s, 2087 MiB RSS
+{
+  "metrics": {
+    "turns": 19313,
+    "max_points": 82751666,
+    "p50_points": 48819121,
+    "p99_points": 57705494,
+    "max_memory_bytes": 22151168,
+    "first_turn_max_points": 58656541,
+    "hard_fallback_logs": 0,
+    "sampled_host_rss_bytes": 2282266624,
+    "seconds": 361.62158989999443
+  },
+  "errors": [],
+  "exception": null,
+  "final": {
+    "terminated": true,
+    "end_reason": "round_limit",
+    "winner": "A",
+    "a": {
+      "dragons": 9,
+      "longest": 32,
+      "total": 114
+    },
+    "b": {
+      "dragons": 2,
+      "longest": 12,
+      "total": 20
+    }
+  }
+}
+done 9/22 pass_so_far=True
+start Devil B
+sandbox round 0, 0 metered turns, 6 living dragons, 1s, 89 MiB RSS
+sandbox round 50, 393 metered turns, 23 living dragons, 10s, 306 MiB RSS
+sandbox round 100, 1210 metered turns, 47 living dragons, 28s, 600 MiB RSS
+sandbox round 150, 2590 metered turns, 44 living dragons, 58s, 845 MiB RSS
+sandbox round 200, 4313 metered turns, 51 living dragons, 91s, 1109 MiB RSS
+sandbox round 250, 6675 metered turns, 61 living dragons, 136s, 1512 MiB RSS
+sandbox round 300, 9297 metered turns, 57 living dragons, 186s, 1862 MiB RSS
+sandbox round 350, 11936 metered turns, 59 living dragons, 237s, 1848 MiB RSS
+sandbox round 400, 14703 metered turns, 61 living dragons, 283s, 2099 MiB RSS
+sandbox round 450, 16497 metered turns, 33 living dragons, 324s, 1903 MiB RSS
+{
+  "metrics": {
+    "turns": 17254,
+    "max_points": 83508055,
+    "p50_points": 48794146,
+    "p99_points": 58593360,
+    "max_memory_bytes": 22151168,
+    "first_turn_max_points": 58834553,
+    "hard_fallback_logs": 0,
+    "sampled_host_rss_bytes": 2201849856,
+    "seconds": 333.6607998999971
+  },
+  "errors": [],
+  "exception": null,
+  "final": {
+    "terminated": true,
+    "end_reason": "round_limit",
+    "winner": "B",
+    "a": {
+      "dragons": 7,
+      "longest": 9,
+      "total": 28
+    },
+    "b": {
+      "dragons": 10,
+      "longest": 27,
+      "total": 121
+    }
+  }
+}
+done 10/22 pass_so_far=True
+start stronghold A
+sandbox round 0, 1 metered turns, 4 living dragons, 1s, 98 MiB RSS
+sandbox round 50, 331 metered turns, 21 living dragons, 7s, 237 MiB RSS
+sandbox round 100, 1078 metered turns, 39 living dragons, 14s, 376 MiB RSS
+sandbox round 150, 2346 metered turns, 60 living dragons, 25s, 543 MiB RSS
+sandbox round 200, 4240 metered turns, 80 living dragons, 44s, 841 MiB RSS
+sandbox round 250, 6369 metered turns, 84 living dragons, 62s, 1128 MiB RSS
+sandbox round 300, 8467 metered turns, 82 living dragons, 79s, 1153 MiB RSS
+sandbox round 350, 10386 metered turns, 76 living dragons, 92s, 1215 MiB RSS
+sandbox round 400, 11992 metered turns, 75 living dragons, 109s, 1392 MiB RSS
+sandbox round 450, 12927 metered turns, 48 living dragons, 118s, 1430 MiB RSS
+{
+  "metrics": {
+    "turns": 13498,
+    "max_points": 82472908,
+    "p50_points": 53824745,
+    "p99_points": 60978311,
+    "max_memory_bytes": 22151168,
+    "first_turn_max_points": 76889816,
+    "hard_fallback_logs": 0,
+    "sampled_host_rss_bytes": 1500418048,
+    "seconds": 125.94691109999258
+  },
+  "errors": [],
+  "exception": null,
+  "final": {
+    "terminated": true,
+    "end_reason": "round_limit",
+    "winner": "A",
+    "a": {
+      "dragons": 10,
+      "longest": 14,
+      "total": 100
+    },
+    "b": {
+      "dragons": 16,
+      "longest": 11,
+      "total": 82
+    }
+  }
+}
+done 11/22 pass_so_far=True
+start stronghold B
+sandbox round 0, 0 metered turns, 4 living dragons, 1s, 90 MiB RSS
+sandbox round 50, 244 metered turns, 21 living dragons, 6s, 218 MiB RSS
+sandbox round 100, 1001 metered turns, 38 living dragons, 14s, 382 MiB RSS
+sandbox round 150, 2153 metered turns, 61 living dragons, 25s, 577 MiB RSS
+sandbox round 200, 3853 metered turns, 81 living dragons, 44s, 851 MiB RSS
+sandbox round 250, 5858 metered turns, 80 living dragons, 59s, 1057 MiB RSS
+sandbox round 300, 7864 metered turns, 80 living dragons, 79s, 1174 MiB RSS
+sandbox round 350, 9670 metered turns, 80 living dragons, 89s, 1232 MiB RSS
+sandbox round 400, 11412 metered turns, 79 living dragons, 103s, 1373 MiB RSS
+sandbox round 450, 12829 metered turns, 61 living dragons, 113s, 1340 MiB RSS
+{
+  "metrics": {
+    "turns": 13550,
+    "max_points": 82170583,
+    "p50_points": 53871129,
+    "p99_points": 60645829,
+    "max_memory_bytes": 22085632,
+    "first_turn_max_points": 77156300,
+    "hard_fallback_logs": 0,
+    "sampled_host_rss_bytes": 1439698944,
+    "seconds": 122.50759750000725
+  },
+  "errors": [],
+  "exception": null,
+  "final": {
+    "terminated": true,
+    "end_reason": "round_limit",
+    "winner": "B",
+    "a": {
+      "dragons": 12,
+      "longest": 12,
+      "total": 68
+    },
+    "b": {
+      "dragons": 13,
+      "longest": 19,
+      "total": 107
+    }
+  }
+}
+done 12/22 pass_so_far=True
+start Trauma A
+sandbox round 0, 1 metered turns, 4 living dragons, 1s, 98 MiB RSS
+sandbox round 50, 201 metered turns, 9 living dragons, 4s, 153 MiB RSS
+sandbox round 100, 405 metered turns, 10 living dragons, 5s, 161 MiB RSS
+sandbox round 150, 665 metered turns, 11 living dragons, 7s, 185 MiB RSS
+sandbox round 200, 963 metered turns, 17 living dragons, 9s, 220 MiB RSS
+sandbox round 250, 1436 metered turns, 20 living dragons, 12s, 262 MiB RSS
+sandbox round 300, 1936 metered turns, 20 living dragons, 15s, 267 MiB RSS
+sandbox round 350, 2481 metered turns, 23 living dragons, 17s, 286 MiB RSS
+sandbox round 400, 3035 metered turns, 33 living dragons, 20s, 298 MiB RSS
+sandbox round 450, 3635 metered turns, 32 living dragons, 24s, 305 MiB RSS
+{
+  "metrics": {
+    "turns": 4187,
+    "max_points": 80694950,
+    "p50_points": 53182147,
+    "p99_points": 57937438,
+    "max_memory_bytes": 22020096,
+    "first_turn_max_points": 76927030,
+    "hard_fallback_logs": 0,
+    "sampled_host_rss_bytes": 320483328,
+    "seconds": 26.621377000003122
+  },
+  "errors": [],
+  "exception": null,
+  "final": {
+    "terminated": true,
+    "end_reason": "round_limit",
+    "winner": "A",
+    "a": {
+      "dragons": 9,
+      "longest": 10,
+      "total": 36
+    },
+    "b": {
+      "dragons": 15,
+      "longest": 5,
+      "total": 38
+    }
+  }
+}
+done 13/22 pass_so_far=True
+start Trauma B
+sandbox round 0, 0 metered turns, 4 living dragons, 1s, 89 MiB RSS
+sandbox round 50, 200 metered turns, 8 living dragons, 4s, 154 MiB RSS
+sandbox round 100, 423 metered turns, 10 living dragons, 5s, 170 MiB RSS
+sandbox round 150, 675 metered turns, 11 living dragons, 6s, 176 MiB RSS
+sandbox round 200, 1015 metered turns, 15 living dragons, 9s, 201 MiB RSS
+sandbox round 250, 1371 metered turns, 18 living dragons, 10s, 211 MiB RSS
+sandbox round 300, 1772 metered turns, 18 living dragons, 13s, 251 MiB RSS
+sandbox round 350, 2216 metered turns, 25 living dragons, 16s, 297 MiB RSS
+sandbox round 400, 2780 metered turns, 27 living dragons, 19s, 316 MiB RSS
+sandbox round 450, 3380 metered turns, 28 living dragons, 22s, 317 MiB RSS
+{
+  "metrics": {
+    "turns": 3980,
+    "max_points": 80554841,
+    "p50_points": 53147751,
+    "p99_points": 56089348,
+    "max_memory_bytes": 22020096,
+    "first_turn_max_points": 77179172,
+    "hard_fallback_logs": 0,
+    "sampled_host_rss_bytes": 332726272,
+    "seconds": 25.39296569999715
+  },
+  "errors": [],
+  "exception": null,
+  "final": {
+    "terminated": true,
+    "end_reason": "round_limit",
+    "winner": "A",
+    "a": {
+      "dragons": 15,
+      "longest": 5,
+      "total": 39
+    },
+    "b": {
+      "dragons": 12,
+      "longest": 5,
+      "total": 36
+    }
+  }
+}
+done 14/22 pass_so_far=True
+start schooltime A
+sandbox round 0, 1 metered turns, 6 living dragons, 1s, 98 MiB RSS
+sandbox round 50, 324 metered turns, 19 living dragons, 7s, 233 MiB RSS
+sandbox round 100, 1486 metered turns, 68 living dragons, 38s, 754 MiB RSS
+sandbox round 150, 3942 metered turns, 108 living dragons, 68s, 1183 MiB RSS
+sandbox round 200, 6769 metered turns, 114 living dragons, 89s, 1490 MiB RSS
+sandbox round 250, 9599 metered turns, 120 living dragons, 113s, 1558 MiB RSS
+sandbox round 300, 12429 metered turns, 119 living dragons, 138s, 1912 MiB RSS
+sandbox round 350, 15216 metered turns, 115 living dragons, 158s, 2061 MiB RSS
+sandbox round 400, 17938 metered turns, 112 living dragons, 184s, 1854 MiB RSS
+sandbox round 450, 20089 metered turns, 95 living dragons, 200s, 2021 MiB RSS
+{
+  "metrics": {
+    "turns": 21664,
+    "max_points": 82105911,
+    "p50_points": 53036959,
+    "p99_points": 58892624,
+    "max_memory_bytes": 22151168,
+    "first_turn_max_points": 76464333,
+    "hard_fallback_logs": 0,
+    "sampled_host_rss_bytes": 2161410048,
+    "seconds": 215.20232709999254
+  },
+  "errors": [],
+  "exception": null,
+  "final": {
+    "terminated": true,
+    "end_reason": "round_limit",
+    "winner": "A",
+    "a": {
+      "dragons": 29,
+      "longest": 18,
+      "total": 309
+    },
+    "b": {
+      "dragons": 31,
+      "longest": 14,
+      "total": 159
+    }
+  }
+}
+done 15/22 pass_so_far=True
+start schooltime B
+sandbox round 0, 0 metered turns, 6 living dragons, 1s, 90 MiB RSS
+sandbox round 50, 330 metered turns, 19 living dragons, 6s, 219 MiB RSS
+sandbox round 100, 1563 metered turns, 66 living dragons, 44s, 897 MiB RSS
+sandbox round 150, 4079 metered turns, 103 living dragons, 82s, 1371 MiB RSS
+sandbox round 200, 6912 metered turns, 107 living dragons, 103s, 1486 MiB RSS
+sandbox round 250, 9728 metered turns, 113 living dragons, 123s, 1379 MiB RSS
+sandbox round 300, 12553 metered turns, 115 living dragons, 145s, 1667 MiB RSS
+sandbox round 350, 15360 metered turns, 113 living dragons, 171s, 1630 MiB RSS
+sandbox round 400, 18143 metered turns, 111 living dragons, 199s, 2033 MiB RSS
+sandbox round 450, 20347 metered turns, 101 living dragons, 219s, 2126 MiB RSS
+{
+  "metrics": {
+    "turns": 22180,
+    "max_points": 80771318,
+    "p50_points": 52920601,
+    "p99_points": 59616195,
+    "max_memory_bytes": 22151168,
+    "first_turn_max_points": 76256479,
+    "hard_fallback_logs": 0,
+    "sampled_host_rss_bytes": 2229723136,
+    "seconds": 238.82733529999678
+  },
+  "errors": [],
+  "exception": null,
+  "final": {
+    "terminated": true,
+    "end_reason": "round_limit",
+    "winner": "B",
+    "a": {
+      "dragons": 35,
+      "longest": 15,
+      "total": 149
+    },
+    "b": {
+      "dragons": 36,
+      "longest": 26,
+      "total": 375
+    }
+  }
+}
+done 16/22 pass_so_far=True
+start big_empty A
+sandbox round 0, 1 metered turns, 6 living dragons, 1s, 99 MiB RSS
+sandbox round 50, 929 metered turns, 80 living dragons, 29s, 746 MiB RSS
+sandbox round 100, 3687 metered turns, 120 living dragons, 45s, 971 MiB RSS
+sandbox round 150, 6487 metered turns, 120 living dragons, 57s, 1004 MiB RSS
+sandbox round 200, 9298 metered turns, 120 living dragons, 71s, 1111 MiB RSS
+sandbox round 250, 12128 metered turns, 121 living dragons, 90s, 1332 MiB RSS
+sandbox round 300, 15038 metered turns, 123 living dragons, 109s, 1491 MiB RSS
+sandbox round 350, 17995 metered turns, 124 living dragons, 133s, 1769 MiB RSS
+sandbox round 400, 20970 metered turns, 122 living dragons, 158s, 1787 MiB RSS
+sandbox round 450, 23927 metered turns, 122 living dragons, 185s, 2213 MiB RSS
+{
+  "metrics": {
+    "turns": 26708,
+    "max_points": 82340040,
+    "p50_points": 53280234,
+    "p99_points": 63936770,
+    "max_memory_bytes": 22413312,
+    "first_turn_max_points": 81375641,
+    "hard_fallback_logs": 0,
+    "sampled_host_rss_bytes": 2321235968,
+    "seconds": 216.6625720000011
+  },
+  "errors": [],
+  "exception": null,
+  "final": {
+    "terminated": true,
+    "end_reason": "round_limit",
+    "winner": "A",
+    "a": {
+      "dragons": 55,
+      "longest": 39,
+      "total": 1131
+    },
+    "b": {
+      "dragons": 41,
+      "longest": 25,
+      "total": 481
+    }
+  }
+}
+done 17/22 pass_so_far=True
+start big_empty B
+sandbox round 0, 0 metered turns, 6 living dragons, 1s, 90 MiB RSS
+sandbox round 50, 922 metered turns, 78 living dragons, 27s, 701 MiB RSS
+sandbox round 100, 3677 metered turns, 120 living dragons, 45s, 957 MiB RSS
+sandbox round 150, 6477 metered turns, 120 living dragons, 57s, 1004 MiB RSS
+sandbox round 200, 9286 metered turns, 120 living dragons, 72s, 1125 MiB RSS
+sandbox round 250, 12102 metered turns, 120 living dragons, 88s, 1219 MiB RSS
+sandbox round 300, 14932 metered turns, 122 living dragons, 107s, 1410 MiB RSS
+sandbox round 350, 17800 metered turns, 121 living dragons, 126s, 1601 MiB RSS
+sandbox round 400, 20802 metered turns, 123 living dragons, 156s, 1733 MiB RSS
+sandbox round 450, 23717 metered turns, 121 living dragons, 188s, 2110 MiB RSS
+{
+  "metrics": {
+    "turns": 26578,
+    "max_points": 82054792,
+    "p50_points": 53286335,
+    "p99_points": 62723058,
+    "max_memory_bytes": 22413312,
+    "first_turn_max_points": 81532130,
+    "hard_fallback_logs": 0,
+    "sampled_host_rss_bytes": 2212786176,
+    "seconds": 221.7864903999871
+  },
+  "errors": [],
+  "exception": null,
+  "final": {
+    "terminated": true,
+    "end_reason": "round_limit",
+    "winner": "B",
+    "a": {
+      "dragons": 38,
+      "longest": 24,
+      "total": 427
+    },
+    "b": {
+      "dragons": 56,
+      "longest": 40,
+      "total": 1193
+    }
+  }
+}
+done 18/22 pass_so_far=True
+start arena A
+sandbox round 0, 1 metered turns, 2 living dragons, 1s, 98 MiB RSS
+{
+  "metrics": {
+    "turns": 34,
+    "max_points": 78551503,
+    "p50_points": 52789647,
+    "p99_points": 78551503,
+    "max_memory_bytes": 21757952,
+    "first_turn_max_points": 78551503,
+    "hard_fallback_logs": 0,
+    "sampled_host_rss_bytes": 103288832,
+    "seconds": 4.461017199995695
+  },
+  "errors": [],
+  "exception": null,
+  "final": {
+    "terminated": true,
+    "end_reason": "eliminated",
+    "winner": "A",
+    "a": {
+      "dragons": 6,
+      "longest": 4,
+      "total": 16
+    },
+    "b": {
+      "dragons": 0,
+      "longest": 0,
+      "total": 0
+    }
+  }
+}
+done 19/22 pass_so_far=True
+start arena B
+sandbox round 0, 0 metered turns, 2 living dragons, 1s, 89 MiB RSS
+sandbox round 50, 585 metered turns, 24 living dragons, 36s, 684 MiB RSS
+{
+  "metrics": {
+    "turns": 1560,
+    "max_points": 78196230,
+    "p50_points": 32460014,
+    "p99_points": 61426533,
+    "max_memory_bytes": 21889024,
+    "first_turn_max_points": 78196230,
+    "hard_fallback_logs": 0,
+    "sampled_host_rss_bytes": 717832192,
+    "seconds": 84.35997289999796
+  },
+  "errors": [],
+  "exception": null,
+  "final": {
+    "terminated": true,
+    "end_reason": "eliminated",
+    "winner": "B",
+    "a": {
+      "dragons": 0,
+      "longest": 0,
+      "total": 0
+    },
+    "b": {
+      "dragons": 25,
+      "longest": 4,
+      "total": 61
+    }
+  }
+}
+done 20/22 pass_so_far=True
+start Colosseum A
+sandbox round 0, 1 metered turns, 2 living dragons, 1s, 98 MiB RSS
+sandbox round 50, 298 metered turns, 24 living dragons, 8s, 264 MiB RSS
+sandbox round 100, 1039 metered turns, 38 living dragons, 23s, 585 MiB RSS
+sandbox round 150, 2188 metered turns, 43 living dragons, 50s, 906 MiB RSS
+sandbox round 200, 4160 metered turns, 51 living dragons, 92s, 1206 MiB RSS
+{
+  "metrics": {
+    "turns": 4657,
+    "max_points": 79662285,
+    "p50_points": 53212138,
+    "p99_points": 73789718,
+    "max_memory_bytes": 22020096,
+    "first_turn_max_points": 77666646,
+    "hard_fallback_logs": 0,
+    "sampled_host_rss_bytes": 1264701440,
+    "seconds": 97.55801219999557
+  },
+  "errors": [],
+  "exception": null,
+  "final": {
+    "terminated": true,
+    "end_reason": "eliminated",
+    "winner": "A",
+    "a": {
+      "dragons": 46,
+      "longest": 4,
+      "total": 109
+    },
+    "b": {
+      "dragons": 0,
+      "longest": 0,
+      "total": 0
+    }
+  }
+}
+done 21/22 pass_so_far=True
+start Colosseum B
+sandbox round 0, 0 metered turns, 2 living dragons, 1s, 89 MiB RSS
+sandbox round 50, 454 metered turns, 30 living dragons, 13s, 387 MiB RSS
+sandbox round 100, 1465 metered turns, 37 living dragons, 35s, 749 MiB RSS
+sandbox round 150, 3247 metered turns, 43 living dragons, 67s, 1048 MiB RSS
+{
+  "metrics": {
+    "turns": 4392,
+    "max_points": 77969599,
+    "p50_points": 53224876,
+    "p99_points": 69914465,
+    "max_memory_bytes": 22020096,
+    "first_turn_max_points": 77949219,
+    "hard_fallback_logs": 0,
+    "sampled_host_rss_bytes": 1098940416,
+    "seconds": 85.76989789999789
+  },
+  "errors": [],
+  "exception": null,
+  "final": {
+    "terminated": true,
+    "end_reason": "eliminated",
+    "winner": "B",
+    "a": {
+      "dragons": 0,
+      "longest": 0,
+      "total": 0
+    },
+    "b": {
+      "dragons": 43,
+      "longest": 4,
+      "total": 109
+    }
+  }
+}
+done 22/22 pass_so_far=True
+{
+  "games_done": 22,
+  "games_expected": 22,
+  "pass": true,
+  "rows": [
+    {
+      "map": "default_small",
+      "side": "A",
+      "max_points": 81075483,
+      "p99_points": 61056173,
+      "first_turn_max_points": 76812890,
+      "soft_guard_logs": 0,
+      "hard_fallback_logs": 0,
+      "cpu_or_bot_errors": 0,
+      "invalid_action_deaths": 0,
+      "intentional_feed_deaths": 0,
+      "exception": null
+    },
+    {
+      "map": "default_small",
+      "side": "B",
+      "max_points": 81822840,
+      "p99_points": 60091202,
+      "first_turn_max_points": 77311494,
+      "soft_guard_logs": 0,
+      "hard_fallback_logs": 0,
+      "cpu_or_bot_errors": 0,
+      "invalid_action_deaths": 0,
+      "intentional_feed_deaths": 0,
+      "exception": null
+    },
+    {
+      "map": "trophy",
+      "side": "A",
+      "max_points": 82478173,
+      "p99_points": 63987936,
+      "first_turn_max_points": 80843862,
+      "soft_guard_logs": 0,
+      "hard_fallback_logs": 0,
+      "cpu_or_bot_errors": 0,
+      "invalid_action_deaths": 0,
+      "intentional_feed_deaths": 75,
+      "exception": null
+    },
+    {
+      "map": "trophy",
+      "side": "B",
+      "max_points": 82187614,
+      "p99_points": 64352332,
+      "first_turn_max_points": 80994687,
+      "soft_guard_logs": 0,
+      "hard_fallback_logs": 0,
+      "cpu_or_bot_errors": 0,
+      "invalid_action_deaths": 0,
+      "intentional_feed_deaths": 107,
+      "exception": null
+    },
+    {
+      "map": "queen_of_spades",
+      "side": "A",
+      "max_points": 80520080,
+      "p99_points": 57265787,
+      "first_turn_max_points": 77444248,
+      "soft_guard_logs": 0,
+      "hard_fallback_logs": 0,
+      "cpu_or_bot_errors": 0,
+      "invalid_action_deaths": 0,
+      "intentional_feed_deaths": 10,
+      "exception": null
+    },
+    {
+      "map": "queen_of_spades",
+      "side": "B",
+      "max_points": 82188119,
+      "p99_points": 57532228,
+      "first_turn_max_points": 77868383,
+      "soft_guard_logs": 0,
+      "hard_fallback_logs": 0,
+      "cpu_or_bot_errors": 0,
+      "invalid_action_deaths": 0,
+      "intentional_feed_deaths": 3,
+      "exception": null
+    },
+    {
+      "map": "default",
+      "side": "A",
+      "max_points": 82040767,
+      "p99_points": 57713463,
+      "first_turn_max_points": 65440042,
+      "soft_guard_logs": 0,
+      "hard_fallback_logs": 0,
+      "cpu_or_bot_errors": 0,
+      "invalid_action_deaths": 0,
+      "intentional_feed_deaths": 12,
+      "exception": null
+    },
+    {
+      "map": "default",
+      "side": "B",
+      "max_points": 80951498,
+      "p99_points": 56920291,
+      "first_turn_max_points": 65906386,
+      "soft_guard_logs": 0,
+      "hard_fallback_logs": 0,
+      "cpu_or_bot_errors": 0,
+      "invalid_action_deaths": 0,
+      "intentional_feed_deaths": 6,
+      "exception": null
+    },
+    {
+      "map": "Devil",
+      "side": "A",
+      "max_points": 82751666,
+      "p99_points": 57705494,
+      "first_turn_max_points": 58656541,
+      "soft_guard_logs": 0,
+      "hard_fallback_logs": 0,
+      "cpu_or_bot_errors": 0,
+      "invalid_action_deaths": 0,
+      "intentional_feed_deaths": 96,
+      "exception": null
+    },
+    {
+      "map": "Devil",
+      "side": "B",
+      "max_points": 83508055,
+      "p99_points": 58593360,
+      "first_turn_max_points": 58834553,
+      "soft_guard_logs": 0,
+      "hard_fallback_logs": 0,
+      "cpu_or_bot_errors": 0,
+      "invalid_action_deaths": 0,
+      "intentional_feed_deaths": 86,
+      "exception": null
+    },
+    {
+      "map": "stronghold",
+      "side": "A",
+      "max_points": 82472908,
+      "p99_points": 60978311,
+      "first_turn_max_points": 76889816,
+      "soft_guard_logs": 0,
+      "hard_fallback_logs": 0,
+      "cpu_or_bot_errors": 0,
+      "invalid_action_deaths": 0,
+      "intentional_feed_deaths": 30,
+      "exception": null
+    },
+    {
+      "map": "stronghold",
+      "side": "B",
+      "max_points": 82170583,
+      "p99_points": 60645829,
+      "first_turn_max_points": 77156300,
+      "soft_guard_logs": 0,
+      "hard_fallback_logs": 0,
+      "cpu_or_bot_errors": 0,
+      "invalid_action_deaths": 0,
+      "intentional_feed_deaths": 29,
+      "exception": null
+    },
+    {
+      "map": "Trauma",
+      "side": "A",
+      "max_points": 80694950,
+      "p99_points": 57937438,
+      "first_turn_max_points": 76927030,
+      "soft_guard_logs": 0,
+      "hard_fallback_logs": 0,
+      "cpu_or_bot_errors": 0,
+      "invalid_action_deaths": 0,
+      "intentional_feed_deaths": 3,
+      "exception": null
+    },
+    {
+      "map": "Trauma",
+      "side": "B",
+      "max_points": 80554841,
+      "p99_points": 56089348,
+      "first_turn_max_points": 77179172,
+      "soft_guard_logs": 0,
+      "hard_fallback_logs": 0,
+      "cpu_or_bot_errors": 0,
+      "invalid_action_deaths": 0,
+      "intentional_feed_deaths": 0,
+      "exception": null
+    },
+    {
+      "map": "schooltime",
+      "side": "A",
+      "max_points": 82105911,
+      "p99_points": 58892624,
+      "first_turn_max_points": 76464333,
+      "soft_guard_logs": 0,
+      "hard_fallback_logs": 0,
+      "cpu_or_bot_errors": 0,
+      "invalid_action_deaths": 0,
+      "intentional_feed_deaths": 26,
+      "exception": null
+    },
+    {
+      "map": "schooltime",
+      "side": "B",
+      "max_points": 80771318,
+      "p99_points": 59616195,
+      "first_turn_max_points": 76256479,
+      "soft_guard_logs": 0,
+      "hard_fallback_logs": 0,
+      "cpu_or_bot_errors": 0,
+      "invalid_action_deaths": 0,
+      "intentional_feed_deaths": 27,
+      "exception": null
+    },
+    {
+      "map": "big_empty",
+      "side": "A",
+      "max_points": 82340040,
+      "p99_points": 63936770,
+      "first_turn_max_points": 81375641,
+      "soft_guard_logs": 0,
+      "hard_fallback_logs": 0,
+      "cpu_or_bot_errors": 0,
+      "invalid_action_deaths": 0,
+      "intentional_feed_deaths": 33,
+      "exception": null
+    },
+    {
+      "map": "big_empty",
+      "side": "B",
+      "max_points": 82054792,
+      "p99_points": 62723058,
+      "first_turn_max_points": 81532130,
+      "soft_guard_logs": 0,
+      "hard_fallback_logs": 0,
+      "cpu_or_bot_errors": 0,
+      "invalid_action_deaths": 0,
+      "intentional_feed_deaths": 32,
+      "exception": null
+    },
+    {
+      "map": "arena",
+      "side": "A",
+      "max_points": 78551503,
+      "p99_points": 78551503,
+      "first_turn_max_points": 78551503,
+      "soft_guard_logs": 0,
+      "hard_fallback_logs": 0,
+      "cpu_or_bot_errors": 0,
+      "invalid_action_deaths": 0,
+      "intentional_feed_deaths": 0,
+      "exception": null
+    },
+    {
+      "map": "arena",
+      "side": "B",
+      "max_points": 78196230,
+      "p99_points": 61426533,
+      "first_turn_max_points": 78196230,
+      "soft_guard_logs": 0,
+      "hard_fallback_logs": 0,
+      "cpu_or_bot_errors": 0,
+      "invalid_action_deaths": 0,
+      "intentional_feed_deaths": 0,
+      "exception": null
+    },
+    {
+      "map": "Colosseum",
+      "side": "A",
+      "max_points": 79662285,
+      "p99_points": 73789718,
+      "first_turn_max_points": 77666646,
+      "soft_guard_logs": 0,
+      "hard_fallback_logs": 0,
+      "cpu_or_bot_errors": 0,
+      "invalid_action_deaths": 0,
+      "intentional_feed_deaths": 0,
+      "exception": null
+    },
+    {
+      "map": "Colosseum",
+      "side": "B",
+      "max_points": 77969599,
+      "p99_points": 69914465,
+      "first_turn_max_points": 77949219,
+      "soft_guard_logs": 0,
+      "hard_fallback_logs": 0,
+      "cpu_or_bot_errors": 0,
+      "invalid_action_deaths": 0,
+      "intentional_feed_deaths": 0,
+      "exception": null
+    }
+  ]
+}

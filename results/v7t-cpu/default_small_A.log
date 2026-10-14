@@ -1,0 +1,31 @@
+loaded wasm vs python in the judge's sandbox
+running round 2/500 --  last: 2.0s  eta: 16m50s  dragons: 2 vs 2
+running round 51/500 --  last: 11ms  eta: 22.7s  dragons: 9 vs 2
+round 59: bot 1 (team B) died: hit itself
+round 60: bot 2 (team A) died: lost a head-to-head
+round 60: bot 10 (team A) died: lost a head-to-head
+round 68: bot 5 (team A) died: hit a wall
+round 72: bot 0 (team A) died: hit a wall
+round 78: bot 21 (team A) died: hit a wall
+round 89: bot 24 (team A) died: hit a wall
+round 89: bot 20 (team B) died: lost a head-to-head
+round 89: bot 28 (team A) died: lost a head-to-head
+running round 101/500 --  last: 40ms  eta: 16.5s  dragons: 20 vs 2
+round 100: bot 27 (team A) died: hit a wall
+round 103: bot 17 (team A) died: hit a wall
+round 107: bot 3 (team B) died: lost a head-to-head
+round 107: bot 22 (team A) died: lost a head-to-head
+round 109: bot 19 (team A) died: hit a wall
+round 111: bot 30 (team A) died: hit a wall
+round 119: bot 11 (team A) died: hit a wall
+round 121: bot 25 (team B) died: lost a head-to-head
+round 121: bot 9 (team A) died: lost a head-to-head
+round 122: bot 32 (team A) died: hit a wall
+round 126: bot 33 (team B) died: hit another dragon
+team A wins after 127 rounds (by elimination) (5.3s)
+team A points per turn: p50 4.8M  p99 5.7M  mean 4.8M  max 5.9M  (1608 turns)
+team B points per turn: p50 15.0M  p99 22.8M  mean 15.3M  max 25.3M  (245 turns)
+wrote replay: results\v7t-cpu\default_small_A.replay
+
+unswbc 1.1.0 is out, you have 0.3.10.
+  C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\python.exe -m pip install --upgrade unswbc

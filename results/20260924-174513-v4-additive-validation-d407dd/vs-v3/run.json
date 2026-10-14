@@ -1,0 +1,42 @@
+{
+  "time": "2026-09-24 17:45:22",
+  "git": "8e1000d+dirty",
+  "python": "3.14.2",
+  "unswbc": "0.3.10",
+  "engine": "5412052f33ddb160",
+  "bots": {
+    "additive": {
+      "path": "results\\20260924-174513-v4-additive-validation-d407dd\\bots\\additive",
+      "hash": "bf33497158a49a7b"
+    },
+    "reference_v3": {
+      "path": "results\\20260924-174513-v4-additive-validation-d407dd\\bots\\reference_v3",
+      "hash": "69382825b699723d"
+    }
+  },
+  "maps": {
+    "Devil": {
+      "file": "a09e8f2d3bdd1e40",
+      "signature": "1b2147f4a8a775d2"
+    },
+    "Trauma": {
+      "file": "dcf39d713c060e5d",
+      "signature": "d014b28abbd1abb0"
+    },
+    "queen_of_spades": {
+      "file": "126d71b464432685",
+      "signature": "6cdb74a7a52d715a"
+    },
+    "Colosseum": {
+      "file": "c7549a41ea26600f",
+      "signature": "3042ccc262f0211a"
+    }
+  },
+  "settings": {
+    "seeds": [
+      44002,
+      44003
+    ],
+    "workers": 1
+  }
+}

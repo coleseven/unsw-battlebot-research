@@ -1,0 +1,2105 @@
+C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\cma\s.py:17: UserWarning: Could not import matplotlib.pyplot, therefore ``cma.plot()`` etc. is not available
+  _warnings.warn('Could not import matplotlib.pyplot, therefore'
+gen0: 24/240 games, 152s
+Exception in thread Thread-4199 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5499 (_drain):
+Exception in thread Thread-4109 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+gen0: 48/240 games, 328s
+Exception in thread Thread-3823 (_drain):
+Exception in thread Thread-3367 (_drain):
+Traceback (most recent call last):
+Exception in thread Thread-3368 (_drain):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5777 (_drain):
+Exception in thread Thread-3829 (_drain):
+Exception in thread Thread-5275 (_drain):
+Exception in thread Thread-3955 (_drain):
+Exception in thread Thread-5525 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5529 (_drain):
+Traceback (most recent call last):
+Exception in thread Thread-3933 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5537 (_drain):
+Exception in thread Thread-3960 (_drain):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-3821 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5197 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5221 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5219 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5913 (_drain):
+Exception in thread Thread-5914 (_drain):
+Exception in thread Thread-5233 (_drain):
+Traceback (most recent call last):
+Exception in thread Thread-5133 (_drain):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5141 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5837 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5155 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5251 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5217 (_drain):
+Exception in thread Thread-5877 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5257 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-3971 (_drain):
+Exception in thread Thread-3972 (_drain):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+MemoryError
+Exception in thread Thread-3969 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-3963 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exception in thread Thread-3961 (_drain):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5987 (_drain):
+Exception in thread Thread-3845 (_drain):
+Exception in thread Thread-5988 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MemoryError
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+Exception in thread Thread-3851 (_drain):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+Traceback (most recent call last):
+MemoryError
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+Exception in thread Thread-3865 (_drain):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+Traceback (most recent call last):
+MemoryError
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-3875 (_drain):
+Exception in thread Thread-3877 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exception in thread Thread-6049 (_drain):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exception in thread Thread-6053 (_drain):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+MemoryError
+Traceback (most recent call last):
+Exception in thread Thread-3885 (_drain):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+MemoryError
+MemoryError
+Exception in thread Thread-6105 (_drain):
+Exception in thread Thread-6107 (_drain):
+Exception in thread Thread-6129 (_drain):
+Exception in thread Thread-3895 (_drain):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+MemoryError
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-4025 (_drain):
+Exception in thread Thread-4026 (_drain):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MemoryError
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-6239 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-4021 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5993 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5843 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-4103 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-4111 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-4189 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5268 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5269 (_drain):
+Exception in thread Thread-5270 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5271 (_drain):
+Exception in thread Thread-5272 (_drain):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5147 (_drain):
+Exception in thread Thread-5151 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5297 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5303 (_drain):
+Traceback (most recent call last):
+Exception in thread Thread-5191 (_drain):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5199 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5311 (_drain):
+Exception in thread Thread-5213 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5231 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5251 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5199 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5215 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5237 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-6018 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-6020 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5897 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5919 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5933 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5939 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5947 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-4195 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-4237 (_drain):
+Exception in thread Thread-4238 (_drain):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+MemoryError
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-4240 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-4375 (_drain):
+Exception in thread Thread-4376 (_drain):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+MemoryError
+Exception in thread Thread-6246 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-4395 (_drain):
+Exception in thread Thread-4396 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+MemoryError
+Exception in thread Thread-6244 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-6248 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-4394 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-6249 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+Exception in thread Thread-6250 (_drain):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-4414 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-4629 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-3911 (_drain):
+Traceback (most recent call last):
+Exception in thread Thread-3913 (_drain):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-6133 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-6167 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-6169 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-3927 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-6259 (_drain):
+Exception in thread Thread-6260 (_drain):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+MemoryError
+Exception in thread Thread-3823 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-3861 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-3869 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-3897 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-6263 (_drain):
+Exception in thread Thread-6264 (_drain):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+MemoryError
+Exception in thread Thread-5853 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5873 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5883 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5937 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-6007 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-6015 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-6023 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-6035 (_drain):
+Exception in thread Thread-6036 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-6034 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5229 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5283 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5289 (_drain):
+Exception in thread Thread-4649 (_drain):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5319 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-4651 (_drain):
+Exception in thread Thread-4652 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5185 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-4471 (_drain):
+Exception in thread Thread-4501 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-4689 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-6273 (_drain):
+Exception in thread Thread-6059 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+Traceback (most recent call last):
+MemoryError
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-6137 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-6171 (_drain):
+Exception in thread Thread-6175 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5143 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5189 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5215 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5307 (_drain):
+Exception in thread Thread-5308 (_drain):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+MemoryError
+Exception in thread Thread-4551 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-4713 (_drain):
+Exception in thread Thread-4714 (_drain):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+MemoryError
+Exception in thread Thread-5279 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-4745 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-4547 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-4665 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-4727 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5225 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5229 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5373 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-4065 (_drain):
+Exception in thread Thread-4066 (_drain):
+Traceback (most recent call last):
+Exception in thread Thread-5377 (_drain):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+Exception in thread Thread-5378 (_drain):
+MemoryError
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5223 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5231 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5269 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5295 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5315 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5337 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5367 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5369 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-4053 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-4043 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-6111 (_drain):
+Exception in thread Thread-6112 (_drain):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+MemoryError
+Exception in thread Thread-6009 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-6091 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-6099 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-6333 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-6113 (_drain):
+Exception in thread Thread-6125 (_drain):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+MemoryError
+Exception in thread Thread-6269 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5413 (_drain):
+Exception in thread Thread-5414 (_drain):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+MemoryError
+Exception in thread Thread-5418 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5277 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5309 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5419 (_drain):
+Exception in thread Thread-5420 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+Traceback (most recent call last):
+MemoryError
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5421 (_drain):
+Exception in thread Thread-5422 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+Exception in thread Thread-5423 (_drain):
+Exception in thread Thread-5424 (_drain):
+Exception in thread Thread-5163 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+Traceback (most recent call last):
+Traceback (most recent call last):
+MemoryError
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError
+MemoryError
+Exception in thread Thread-5247 (_drain):
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62, in _drain
+    chunk = self._stream.read(CHUNK)
+MemoryError

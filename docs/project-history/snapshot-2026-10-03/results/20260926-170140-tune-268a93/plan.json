@@ -1,0 +1,144 @@
+{
+  "base": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7-base-bot",
+  "base_hash": "bec48091e76579a1",
+  "params": "params.hpp",
+  "space": {
+    "W_PEARL": [
+      30,
+      160
+    ],
+    "W_SPAWN": [
+      0,
+      80
+    ],
+    "W_UNSEEN": [
+      0,
+      30
+    ],
+    "W_TRAP": [
+      2,
+      30
+    ],
+    "W_HEAD_ENEMY": [
+      15,
+      150
+    ],
+    "W_HEAD_TEAM": [
+      15,
+      150
+    ],
+    "W_ATTACK": [
+      40,
+      300
+    ],
+    "W_HUNT": [
+      0,
+      100
+    ],
+    "W_DEFEND": [
+      0,
+      40
+    ],
+    "W_HUB": [
+      0,
+      150
+    ],
+    "W_GOAL": [
+      0,
+      8
+    ],
+    "POOR_MULT": [
+      1,
+      5
+    ],
+    "W_CASH": [
+      0,
+      160
+    ],
+    "FEED_ROUND": [
+      360,
+      470,
+      "int"
+    ],
+    "SPLIT_UNTIL_LARGE": [
+      200,
+      460,
+      "int"
+    ],
+    "SPLIT_UNTIL_SMALL": [
+      300,
+      480,
+      "int"
+    ],
+    "CAP": [
+      32,
+      64,
+      "int"
+    ],
+    "FLOOR": [
+      8,
+      36,
+      "int"
+    ],
+    "N_SEARCH": [
+      200,
+      3000,
+      "int"
+    ],
+    "DEPTH_MAX": [
+      12,
+      40,
+      "int"
+    ],
+    "CPP_PATH_DIST": [
+      0,
+      1,
+      "int"
+    ]
+  },
+  "start": {
+    "W_PEARL": 80.0,
+    "W_SPAWN": 30.0,
+    "W_UNSEEN": 8.0,
+    "W_TRAP": 10.0,
+    "W_HEAD_ENEMY": 60.0,
+    "W_HEAD_TEAM": 60.0,
+    "W_ATTACK": 150.0,
+    "W_HUNT": 40.0,
+    "W_DEFEND": 15.0,
+    "W_HUB": 60.0,
+    "W_GOAL": 3.0,
+    "POOR_MULT": 2.5,
+    "W_CASH": 80.0,
+    "FEED_ROUND": 410.0,
+    "SPLIT_UNTIL_LARGE": 300.0,
+    "SPLIT_UNTIL_SMALL": 450.0,
+    "CAP": 56.0,
+    "FLOOR": 24.0,
+    "N_SEARCH": 200.0,
+    "DEPTH_MAX": 16.0,
+    "CPP_PATH_DIST": 0.0
+  },
+  "opponents": [
+    "nicked",
+    "v61b-goal-bot"
+  ],
+  "maps": [
+    "default_small",
+    "trophy",
+    "queen_of_spades",
+    "Devil",
+    "big_empty",
+    "Autarky",
+    "Prisoners_Dilemma",
+    "Slithery_Fight",
+    "Portals"
+  ],
+  "seed": 53001,
+  "seeds_per_gen": 2,
+  "unswbc": "1.1.0",
+  "popsize": 12,
+  "generations": 20,
+  "sigma": 0.2,
+  "deterministic_v6_clock": true
+}

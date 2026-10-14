@@ -1,0 +1,106 @@
+guard: waiting for running experiment 'ablate 20261002-200810-ablate-394220' (pid 64720)
+base: 24/420 games, 46s
+base: 48/420 games, 79s
+base: 72/420 games, 132s
+base: 96/420 games, 177s
+base: 120/420 games, 220s
+base: 144/420 games, 263s
+base: 168/420 games, 319s
+base: 192/420 games, 359s
+base: 216/420 games, 389s
+base: 240/420 games, 417s
+base: 264/420 games, 482s
+base: 288/420 games, 542s
+base: 312/420 games, 655s
+base: 336/420 games, 727s
+base: 360/420 games, 857s
+base: 384/420 games, 890s
+base: 408/420 games, 912s
+base: 420/420 games, 928s
+safe3: 24/420 games, 46s
+safe3: 48/420 games, 77s
+safe3: 72/420 games, 128s
+safe3: 96/420 games, 171s
+safe3: 120/420 games, 214s
+safe3: 144/420 games, 256s
+safe3: 168/420 games, 299s
+safe3: 192/420 games, 332s
+safe3: 216/420 games, 360s
+safe3: 240/420 games, 388s
+safe3: 264/420 games, 450s
+safe3: 288/420 games, 507s
+safe3: 312/420 games, 615s
+safe3: 336/420 games, 684s
+safe3: 360/420 games, 803s
+safe3: 384/420 games, 835s
+safe3: 408/420 games, 867s
+safe3: 420/420 games, 878s
+safe6: 24/420 games, 46s
+safe6: 48/420 games, 77s
+safe6: 72/420 games, 130s
+safe6: 96/420 games, 173s
+safe6: 120/420 games, 216s
+safe6: 144/420 games, 258s
+safe6: 168/420 games, 301s
+safe6: 192/420 games, 335s
+safe6: 216/420 games, 362s
+safe6: 240/420 games, 390s
+safe6: 264/420 games, 452s
+safe6: 288/420 games, 509s
+safe6: 312/420 games, 610s
+safe6: 336/420 games, 685s
+safe6: 360/420 games, 806s
+safe6: 384/420 games, 840s
+safe6: 408/420 games, 862s
+safe6: 420/420 games, 877s
+safe3_g2: 24/420 games, 48s
+safe3_g2: 48/420 games, 80s
+safe3_g2: 72/420 games, 130s
+safe3_g2: 96/420 games, 173s
+safe3_g2: 120/420 games, 220s
+safe3_g2: 144/420 games, 261s
+safe3_g2: 168/420 games, 305s
+safe3_g2: 192/420 games, 336s
+safe3_g2: 216/420 games, 366s
+safe3_g2: 240/420 games, 392s
+safe3_g2: 264/420 games, 451s
+safe3_g2: 288/420 games, 508s
+safe3_g2: 312/420 games, 614s
+safe3_g2: 336/420 games, 680s
+safe3_g2: 360/420 games, 788s
+safe3_g2: 384/420 games, 828s
+safe3_g2: 408/420 games, 849s
+safe3_g2: 420/420 games, 865s
+safe3_d4: 24/420 games, 45s
+safe3_d4: 48/420 games, 72s
+safe3_d4: 72/420 games, 124s
+safe3_d4: 96/420 games, 163s
+safe3_d4: 120/420 games, 206s
+safe3_d4: 144/420 games, 246s
+safe3_d4: 168/420 games, 287s
+safe3_d4: 192/420 games, 321s
+safe3_d4: 216/420 games, 349s
+safe3_d4: 240/420 games, 375s
+safe3_d4: 264/420 games, 430s
+safe3_d4: 288/420 games, 490s
+safe3_d4: 312/420 games, 600s
+safe3_d4: 336/420 games, 667s
+safe3_d4: 360/420 games, 795s
+safe3_d4: 384/420 games, 827s
+safe3_d4: 408/420 games, 851s
+safe3_d4: 420/420 games, 866s
+# Ablation report: 20261002-221412-ablate-3a1e25
+
+2 seeds, opponents cpp_nicked_v92, cpp_nicked_v75, cpp_leviathan3, v7-base-bot, nicked_v44, nicked_lab, v11q; 11 official + 4 extra maps, both sides. Objective: wins. Delta = variant score minus base score on the same (opponent, map, seed, side); positive means removing the group helped. 95% CI resamples (map, seed) blocks.
+
+base: mean margin +0.229, wins 258/420; by opponent: cpp_nicked_v92 -0.167, cpp_nicked_v75 -0.233, cpp_leviathan3 +0.533, v7-base-bot +0.667, nicked_v44 +0.633, nicked_lab +0.167, v11q +0.000
+
+| variant | current pool delta [95% CI] | pool verdict | other maps | delta all 15 [95% CI] | verdict | vs cpp_nicked_v92 | vs cpp_nicked_v75 | vs cpp_leviathan3 | vs v7-base-bot | vs nicked_v44 | vs nicked_lab | vs v11q | official | extra | wins |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| safe3 | +0.014 [-0.029, +0.050] | neutral | -0.071 | -0.014 [-0.052, +0.024] | neutral | -0.033 | -0.067 | -0.067 | -0.067 | +0.033 | +0.000 | +0.100 | -0.019 | +0.000 | 255/420 |
+| safe6 | +0.014 [-0.036, +0.064] | neutral | -0.086 | -0.019 [-0.062, +0.019] | neutral | -0.033 | -0.067 | -0.100 | -0.067 | +0.033 | +0.033 | +0.067 | -0.026 | +0.000 | 254/420 |
+| safe3_g2 | +0.021 [-0.114, +0.157] | neutral | -0.086 | -0.014 [-0.114, +0.086] | neutral | -0.167 | +0.267 | +0.167 | -0.233 | +0.000 | -0.100 | -0.033 | +0.006 | -0.071 | 255/420 |
+| safe3_d4 | +0.114 [+0.014, +0.221] | harmful (drop) | -0.014 | +0.071 [-0.005, +0.157] | neutral | -0.100 | +0.100 | +0.267 | -0.133 | +0.067 | +0.067 | +0.233 | +0.091 | +0.018 | 273/420 |
+
+Noise: seed-to-seed SD of base's margin within a (opponent, map, side) cell 0.851 over 210 cells. Expected paired CI half-width with K seeds, 1.96 * sqrt(2 * 0.851^2 / (210 * K)): K=2: 0.115, K=3: 0.094, K=4: 0.081, K=6: 0.066, K=8: 0.058
+

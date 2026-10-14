@@ -1,0 +1,219 @@
+base: 24/240 games, 52s
+base: 48/240 games, 98s
+base: 72/240 games, 160s
+base: 96/240 games, 201s
+base: 120/240 games, 242s
+base: 144/240 games, 312s
+base: 168/240 games, 457s
+base: 192/240 games, 578s
+base: 216/240 games, 655s
+base: 240/240 games, 823s
+no_food: 24/240 games, 53s
+no_food: 48/240 games, 102s
+no_food: 72/240 games, 163s
+no_food: 96/240 games, 202s
+no_food: 120/240 games, 250s
+no_food: 144/240 games, 326s
+no_food: 168/240 games, 483s
+no_food: 192/240 games, 620s
+no_food: 216/240 games, 683s
+no_food: 240/240 games, 844s
+no_spawn: 24/240 games, 53s
+no_spawn: 48/240 games, 100s
+no_spawn: 72/240 games, 164s
+no_spawn: 96/240 games, 204s
+no_spawn: 120/240 games, 246s
+no_spawn: 144/240 games, 332s
+no_spawn: 168/240 games, 487s
+no_spawn: 192/240 games, 614s
+no_spawn: 216/240 games, 671s
+no_spawn: 240/240 games, 836s
+no_explore: 24/240 games, 51s
+no_explore: 48/240 games, 97s
+no_explore: 72/240 games, 160s
+no_explore: 96/240 games, 197s
+no_explore: 120/240 games, 240s
+no_explore: 144/240 games, 303s
+no_explore: 168/240 games, 442s
+no_explore: 192/240 games, 583s
+no_explore: 216/240 games, 637s
+no_explore: 240/240 games, 791s
+no_trap: 24/240 games, 51s
+no_trap: 48/240 games, 98s
+no_trap: 72/240 games, 157s
+no_trap: 96/240 games, 195s
+no_trap: 120/240 games, 243s
+no_trap: 144/240 games, 308s
+no_trap: 168/240 games, 451s
+no_trap: 192/240 games, 590s
+no_trap: 216/240 games, 643s
+no_trap: 240/240 games, 787s
+no_deadend: 24/240 games, 49s
+no_deadend: 48/240 games, 98s
+no_deadend: 72/240 games, 160s
+no_deadend: 96/240 games, 199s
+no_deadend: 120/240 games, 242s
+no_deadend: 144/240 games, 306s
+no_deadend: 168/240 games, 456s
+no_deadend: 192/240 games, 582s
+no_deadend: 216/240 games, 631s
+no_deadend: 240/240 games, 789s
+no_headsafe: 24/240 games, 47s
+no_headsafe: 48/240 games, 95s
+no_headsafe: 72/240 games, 158s
+no_headsafe: 96/240 games, 196s
+no_headsafe: 120/240 games, 239s
+no_headsafe: 144/240 games, 301s
+no_headsafe: 168/240 games, 433s
+no_headsafe: 192/240 games, 550s
+no_headsafe: 216/240 games, 610s
+no_headsafe: 240/240 games, 765s
+no_revisit: 24/240 games, 50s
+no_revisit: 48/240 games, 97s
+no_revisit: 72/240 games, 158s
+no_revisit: 96/240 games, 196s
+no_revisit: 120/240 games, 235s
+no_revisit: 144/240 games, 305s
+no_revisit: 168/240 games, 442s
+no_revisit: 192/240 games, 572s
+no_revisit: 216/240 games, 626s
+no_revisit: 240/240 games, 783s
+no_fan: 24/240 games, 51s
+no_fan: 48/240 games, 97s
+no_fan: 72/240 games, 155s
+no_fan: 96/240 games, 196s
+no_fan: 120/240 games, 237s
+no_fan: 144/240 games, 308s
+no_fan: 168/240 games, 452s
+no_fan: 192/240 games, 572s
+no_fan: 216/240 games, 637s
+no_fan: 240/240 games, 787s
+no_straight: 24/240 games, 50s
+no_straight: 48/240 games, 97s
+no_straight: 72/240 games, 159s
+no_straight: 96/240 games, 198s
+no_straight: 120/240 games, 239s
+no_straight: 144/240 games, 310s
+no_straight: 168/240 games, 445s
+no_straight: 192/240 games, 581s
+no_straight: 216/240 games, 638s
+no_straight: 240/240 games, 796s
+no_portal: 24/240 games, 50s
+no_portal: 48/240 games, 95s
+no_portal: 72/240 games, 150s
+no_portal: 96/240 games, 193s
+no_portal: 120/240 games, 236s
+no_portal: 144/240 games, 302s
+no_portal: 168/240 games, 442s
+no_portal: 192/240 games, 575s
+no_portal: 216/240 games, 623s
+no_portal: 240/240 games, 780s
+no_v3model: 24/240 games, 47s
+no_v3model: 48/240 games, 94s
+no_v3model: 72/240 games, 151s
+no_v3model: 96/240 games, 190s
+no_v3model: 120/240 games, 239s
+no_v3model: 144/240 games, 316s
+no_v3model: 168/240 games, 482s
+no_v3model: 192/240 games, 634s
+no_v3model: 216/240 games, 688s
+no_v3model: 240/240 games, 844s
+no_attack: 24/240 games, 53s
+no_attack: 48/240 games, 100s
+no_attack: 72/240 games, 163s
+no_attack: 96/240 games, 202s
+no_attack: 120/240 games, 244s
+no_attack: 144/240 games, 321s
+no_attack: 168/240 games, 463s
+no_attack: 192/240 games, 583s
+no_attack: 216/240 games, 649s
+no_attack: 240/240 games, 802s
+no_hunt: 24/240 games, 49s
+no_hunt: 48/240 games, 96s
+no_hunt: 72/240 games, 158s
+no_hunt: 96/240 games, 197s
+no_hunt: 120/240 games, 239s
+no_hunt: 144/240 games, 309s
+no_hunt: 168/240 games, 446s
+no_hunt: 192/240 games, 578s
+no_hunt: 216/240 games, 636s
+no_hunt: 240/240 games, 793s
+no_defend: 24/240 games, 50s
+no_defend: 48/240 games, 96s
+no_defend: 72/240 games, 156s
+no_defend: 96/240 games, 196s
+no_defend: 120/240 games, 236s
+no_defend: 144/240 games, 304s
+no_defend: 168/240 games, 446s
+no_defend: 192/240 games, 585s
+no_defend: 216/240 games, 635s
+no_defend: 240/240 games, 796s
+no_hub: 24/240 games, 48s
+no_hub: 48/240 games, 92s
+no_hub: 72/240 games, 151s
+no_hub: 96/240 games, 188s
+no_hub: 120/240 games, 227s
+no_hub: 144/240 games, 287s
+no_hub: 168/240 games, 433s
+no_hub: 192/240 games, 557s
+no_hub: 216/240 games, 606s
+no_hub: 240/240 games, 756s
+no_goal: 24/240 games, 49s
+no_goal: 48/240 games, 97s
+no_goal: 72/240 games, 158s
+no_goal: 96/240 games, 196s
+no_goal: 120/240 games, 241s
+no_goal: 144/240 games, 299s
+no_goal: 168/240 games, 445s
+no_goal: 192/240 games, 576s
+no_goal: 216/240 games, 637s
+no_goal: 240/240 games, 797s
+no_feed: 24/240 games, 52s
+no_feed: 48/240 games, 97s
+no_feed: 72/240 games, 157s
+no_feed: 96/240 games, 198s
+no_feed: 120/240 games, 239s
+no_feed: 144/240 games, 308s
+no_feed: 168/240 games, 451s
+no_feed: 192/240 games, 585s
+no_feed: 216/240 games, 641s
+no_feed: 240/240 games, 802s
+no_protect: 24/240 games, 49s
+no_protect: 48/240 games, 94s
+no_protect: 72/240 games, 155s
+no_protect: 96/240 games, 195s
+no_protect: 120/240 games, 237s
+no_protect: 144/240 games, 306s
+no_protect: 168/240 games, 464s
+no_protect: 192/240 games, 587s
+no_protect: 216/240 games, 639s
+no_protect: 240/240 games, 798s
+# Ablation report: 20260926-214429-ablate-346278
+
+4 seeds, opponents v7-base-bot, nicked; 11 official + 4 extra maps, both sides. Objective: aligned. Delta = variant score minus base score on the same (opponent, map, seed, side); positive means removing the group helped. 95% CI resamples (map, seed) blocks.
+
+base: mean margin +0.134, wins 141/240; by opponent: v7-base-bot +0.000, nicked +0.267
+
+| variant | delta all [95% CI] | verdict | vs v7-base-bot | vs nicked | official | extra | wins |
+|---|---|---|---|---|---|---|---|
+| no_food | -0.248 [-0.355, -0.143] | essential | -0.309 | -0.188 | -0.282 | -0.155 | 103/240 |
+| no_spawn | -0.115 [-0.205, -0.026] | essential | -0.168 | -0.063 | -0.150 | -0.020 | 123/240 |
+| no_explore | +0.002 [-0.080, +0.078] | neutral | +0.039 | -0.034 | +0.044 | -0.113 | 142/240 |
+| no_trap | +0.065 [-0.013, +0.147] | neutral | +0.123 | +0.007 | -0.025 | +0.315 | 154/240 |
+| no_deadend | -0.037 [-0.112, +0.037] | neutral | -0.076 | +0.002 | -0.065 | +0.041 | 134/240 |
+| no_headsafe | -0.019 [-0.089, +0.059] | neutral | -0.077 | +0.039 | -0.022 | -0.011 | 139/240 |
+| no_revisit | +0.035 [-0.052, +0.121] | neutral | -0.039 | +0.109 | +0.004 | +0.121 | 147/240 |
+| no_fan | +0.018 [-0.055, +0.094] | neutral | +0.063 | -0.027 | +0.047 | -0.061 | 146/240 |
+| no_straight | -0.003 [-0.080, +0.076] | neutral | -0.019 | +0.013 | -0.043 | +0.107 | 141/240 |
+| no_portal | -0.012 [-0.066, +0.041] | neutral | -0.003 | -0.020 | -0.003 | -0.035 | 139/240 |
+| no_v3model | -0.327 [-0.415, -0.240] | essential | -0.320 | -0.334 | -0.381 | -0.179 | 92/240 |
+| no_attack | -0.085 [-0.165, -0.002] | essential | -0.173 | +0.004 | -0.117 | +0.004 | 130/240 |
+| no_hunt | +0.026 [-0.043, +0.093] | neutral | +0.021 | +0.032 | +0.011 | +0.069 | 146/240 |
+| no_defend | +0.056 [+0.016, +0.098] | harmful (drop) | +0.092 | +0.019 | +0.063 | +0.034 | 153/240 |
+| no_hub | -0.060 [-0.130, +0.015] | neutral | -0.081 | -0.039 | -0.040 | -0.115 | 130/240 |
+| no_goal | +0.029 [-0.077, +0.138] | neutral | +0.047 | +0.011 | +0.019 | +0.056 | 147/240 |
+| no_feed | -0.054 [-0.110, +0.001] | neutral | -0.048 | -0.060 | -0.045 | -0.077 | 130/240 |
+| no_protect | +0.011 [-0.025, +0.047] | neutral | -0.043 | +0.066 | +0.004 | +0.030 | 143/240 |
+
+Noise: seed-to-seed SD of base's margin within a (opponent, map, side) cell 0.649 over 60 cells. Expected paired CI half-width with K seeds, 1.96 * sqrt(2 * 0.649^2 / (60 * K)): K=2: 0.164, K=3: 0.134, K=4: 0.116, K=6: 0.095, K=8: 0.082
+

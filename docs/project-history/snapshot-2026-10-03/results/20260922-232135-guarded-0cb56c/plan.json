@@ -1,0 +1,55 @@
+{
+  "question": "Can explicit head-risk, tail-release, or food guards repair trap-policy transfer?",
+  "modes": [
+    "head_guard",
+    "tail_guard",
+    "food_guard"
+  ],
+  "control": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-232135-guarded-0cb56c\\bots\\control_450",
+  "live_hash": "ffe736af6c14ea33",
+  "official_maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-232135-guarded-0cb56c\\maps\\official_arena_728547b8376892d9.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-232135-guarded-0cb56c\\maps\\official_big_empty_685baf0e797207b7.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-232135-guarded-0cb56c\\maps\\official_Colosseum_3042ccc262f0211a.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-232135-guarded-0cb56c\\maps\\official_default_afc3707a967881d6.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-232135-guarded-0cb56c\\maps\\official_default_small_f98ab391cccf33b1.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-232135-guarded-0cb56c\\maps\\official_queen_of_spades_6cdb74a7a52d715a.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-232135-guarded-0cb56c\\maps\\official_schooltime_8be7eda86910a849.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-232135-guarded-0cb56c\\maps\\official_trophy_fd985019831fe135.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-232135-guarded-0cb56c\\maps\\official_Devil_1b2147f4a8a775d2.map"
+  ],
+  "stress_maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-232135-guarded-0cb56c\\maps\\arena_baffles.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-232135-guarded-0cb56c\\maps\\arena_pockets.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-232135-guarded-0cb56c\\maps\\arena_slow_food.map"
+  ],
+  "screen_seeds": [
+    7000,
+    7001
+  ],
+  "validation_seeds": [
+    8000,
+    8001,
+    8002,
+    8003,
+    8004,
+    8005,
+    8006,
+    8007
+  ],
+  "stress_seeds": [
+    8100,
+    8101,
+    8102,
+    8103,
+    8104,
+    8105,
+    8106,
+    8107
+  ],
+  "selection": "Highest official-map screen score among the three new modes, ties in listed mode order. Must exceed .5; old trap is diagnostic only. Exactly one candidate validates unchanged.",
+  "gate": "Official-map direct reference score 95% map-cluster lower bound > .5 AND paired pool-score improvement 95% map-cluster lower bound > 0; stress combined score >= .5 and no stress-map score below .375; sampled sandbox and replay audit required.",
+  "limits": "All maps are now familiar; validation reserves bot RNG seeds, NOT unseen map families. Synthetic Arena maps are a related stress family. No tuning after selection.",
+  "workers": 6,
+  "worker_batch": "fresh pool each 12*workers games; 1 GiB RSS / 4 GiB available guards"
+}

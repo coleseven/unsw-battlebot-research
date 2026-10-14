@@ -1,0 +1,197 @@
+{
+ "rows": [
+  {
+   "map": "Portals",
+   "opp": "cpp_nicked_v92",
+   "side": "A",
+   "off": true,
+   "zero": true,
+   "log8": true,
+   "logged_decisions": 1052,
+   "feature_widths": [
+    64
+   ]
+  },
+  {
+   "map": "Portals",
+   "opp": "cpp_nicked_v92",
+   "side": "B",
+   "off": true,
+   "zero": true,
+   "log8": true,
+   "logged_decisions": 1010,
+   "feature_widths": [
+    64
+   ]
+  },
+  {
+   "map": "Portals",
+   "opp": "v7-base-bot",
+   "side": "A",
+   "off": true,
+   "zero": true,
+   "log8": true,
+   "logged_decisions": 977,
+   "feature_widths": [
+    64
+   ]
+  },
+  {
+   "map": "Portals",
+   "opp": "v7-base-bot",
+   "side": "B",
+   "off": true,
+   "zero": true,
+   "log8": true,
+   "logged_decisions": 1081,
+   "feature_widths": [
+    64
+   ]
+  },
+  {
+   "map": "trophy",
+   "opp": "cpp_nicked_v92",
+   "side": "A",
+   "off": true,
+   "zero": true,
+   "log8": true,
+   "logged_decisions": 76,
+   "feature_widths": [
+    64
+   ]
+  },
+  {
+   "map": "trophy",
+   "opp": "cpp_nicked_v92",
+   "side": "B",
+   "off": true,
+   "zero": true,
+   "log8": true,
+   "logged_decisions": 1445,
+   "feature_widths": [
+    64
+   ]
+  },
+  {
+   "map": "trophy",
+   "opp": "v7-base-bot",
+   "side": "A",
+   "off": true,
+   "zero": true,
+   "log8": true,
+   "logged_decisions": 2050,
+   "feature_widths": [
+    64
+   ]
+  },
+  {
+   "map": "trophy",
+   "opp": "v7-base-bot",
+   "side": "B",
+   "off": true,
+   "zero": true,
+   "log8": true,
+   "logged_decisions": 2044,
+   "feature_widths": [
+    64
+   ]
+  },
+  {
+   "map": "Prisoners_Dilemma",
+   "opp": "cpp_nicked_v92",
+   "side": "A",
+   "off": true,
+   "zero": true,
+   "log8": true,
+   "logged_decisions": 152,
+   "feature_widths": [
+    64
+   ]
+  },
+  {
+   "map": "Prisoners_Dilemma",
+   "opp": "cpp_nicked_v92",
+   "side": "B",
+   "off": true,
+   "zero": true,
+   "log8": true,
+   "logged_decisions": 143,
+   "feature_widths": [
+    64
+   ]
+  },
+  {
+   "map": "Prisoners_Dilemma",
+   "opp": "v7-base-bot",
+   "side": "A",
+   "off": true,
+   "zero": true,
+   "log8": true,
+   "logged_decisions": 370,
+   "feature_widths": [
+    64
+   ]
+  },
+  {
+   "map": "Prisoners_Dilemma",
+   "opp": "v7-base-bot",
+   "side": "B",
+   "off": true,
+   "zero": true,
+   "log8": true,
+   "logged_decisions": 1065,
+   "feature_widths": [
+    64
+   ]
+  },
+  {
+   "map": "Maze",
+   "opp": "cpp_nicked_v92",
+   "side": "A",
+   "off": true,
+   "zero": true,
+   "log8": true,
+   "logged_decisions": 221,
+   "feature_widths": [
+    64
+   ]
+  },
+  {
+   "map": "Maze",
+   "opp": "cpp_nicked_v92",
+   "side": "B",
+   "off": true,
+   "zero": true,
+   "log8": true,
+   "logged_decisions": 239,
+   "feature_widths": [
+    64
+   ]
+  },
+  {
+   "map": "Maze",
+   "opp": "v7-base-bot",
+   "side": "A",
+   "off": true,
+   "zero": true,
+   "log8": true,
+   "logged_decisions": 246,
+   "feature_widths": [
+    64
+   ]
+  },
+  {
+   "map": "Maze",
+   "opp": "v7-base-bot",
+   "side": "B",
+   "off": true,
+   "zero": true,
+   "log8": true,
+   "logged_decisions": 240,
+   "feature_widths": [
+    64
+   ]
+  }
+ ],
+ "pass": true
+}

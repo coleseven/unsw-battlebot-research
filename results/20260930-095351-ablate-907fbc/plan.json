@@ -1,0 +1,50 @@
+{
+  "base": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10j-bot",
+  "base_hash": "720f529cfea709b5",
+  "params": "params.hpp",
+  "variants": {
+    "base": {},
+    "kb2": {
+      "CPP_KB_V2": 1
+    },
+    "kb2hub": {
+      "CPP_KB_V2": 1,
+      "CPP_HUB_SEP_FIX": 1
+    }
+  },
+  "opponents": [
+    "cpp_nicked_v92",
+    "cpp_nicked_v75",
+    "cpp_leviathan3",
+    "v7-base-bot",
+    "nicked_v44",
+    "nicked_lab"
+  ],
+  "official_maps": [
+    "default_small",
+    "trophy",
+    "queen_of_spades",
+    "default",
+    "Devil",
+    "stronghold",
+    "Trauma",
+    "schooltime",
+    "big_empty",
+    "arena",
+    "Colosseum"
+  ],
+  "extra_maps": [
+    "Autarky",
+    "Prisoners_Dilemma",
+    "Slithery_Fight",
+    "Portals"
+  ],
+  "seeds": [
+    211001,
+    211002,
+    211003
+  ],
+  "objective": "aligned",
+  "unswbc": "1.1.0",
+  "deterministic_v6_clock": true
+}

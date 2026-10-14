@@ -1,0 +1,29 @@
+{
+  "games": [
+    {
+      "map": "default_small",
+      "side": "A",
+      "changed_actions": true,
+      "winner": "B"
+    },
+    {
+      "map": "default_small",
+      "side": "B",
+      "changed_actions": true,
+      "winner": "A"
+    },
+    {
+      "map": "Trauma",
+      "side": "A",
+      "changed_actions": true,
+      "winner": "B"
+    },
+    {
+      "map": "Trauma",
+      "side": "B",
+      "changed_actions": true,
+      "winner": "A"
+    }
+  ],
+  "changed_action_games": 4
+}

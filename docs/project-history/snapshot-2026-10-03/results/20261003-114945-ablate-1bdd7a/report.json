@@ -1,0 +1,22 @@
+{
+  "nobookmap": {
+    "delta": -0.06372549019607843,
+    "lo": -0.17647058823529413,
+    "hi": 0.0392156862745098,
+    "verdict": "neutral",
+    "pool_delta": -0.21666666666666667,
+    "pool_lo": -0.45,
+    "pool_hi": -0.03333333333333333,
+    "pool_verdict": "essential"
+  },
+  "nobooks": {
+    "delta": -0.12745098039215685,
+    "lo": -0.27450980392156865,
+    "hi": 0.004901960784313725,
+    "verdict": "neutral",
+    "pool_delta": -0.4,
+    "pool_lo": -0.6666666666666666,
+    "pool_hi": -0.16666666666666666,
+    "pool_verdict": "essential"
+  }
+}

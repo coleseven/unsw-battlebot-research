@@ -1,0 +1,138 @@
+base: 24/1224 games, 45s
+base: 48/1224 games, 124s
+base: 72/1224 games, 285s
+base: 96/1224 games, 316s
+base: 120/1224 games, 378s
+base: 144/1224 games, 453s
+base: 168/1224 games, 573s
+base: 192/1224 games, 615s
+base: 216/1224 games, 674s
+base: 240/1224 games, 743s
+base: 264/1224 games, 859s
+base: 288/1224 games, 939s
+base: 312/1224 games, 989s
+base: 336/1224 games, 1050s
+base: 360/1224 games, 1073s
+base: 384/1224 games, 1115s
+base: 408/1224 games, 1158s
+base: 432/1224 games, 1233s
+base: 456/1224 games, 1339s
+base: 480/1224 games, 1550s
+base: 504/1224 games, 1626s
+base: 528/1224 games, 1761s
+base: 552/1224 games, 1909s
+base: 576/1224 games, 2133s
+base: 600/1224 games, 2286s
+base: 624/1224 games, 2361s
+base: 648/1224 games, 2401s
+base: 672/1224 games, 2432s
+base: 696/1224 games, 2462s
+base: 720/1224 games, 2493s
+base: 744/1224 games, 2525s
+base: 768/1224 games, 2554s
+base: 792/1224 games, 2596s
+base: 816/1224 games, 2619s
+base: 840/1224 games, 2646s
+base: 864/1224 games, 2671s
+base: 888/1224 games, 2727s
+base: 912/1224 games, 2742s
+base: 936/1224 games, 2775s
+base: 960/1224 games, 2805s
+base: 984/1224 games, 2851s
+base: 1008/1224 games, 2866s
+base: 1032/1224 games, 2904s
+base: 1056/1224 games, 2938s
+base: 1080/1224 games, 2972s
+base: 1104/1224 games, 3008s
+base: 1128/1224 games, 3045s
+base: 1152/1224 games, 3067s
+base: 1176/1224 games, 3111s
+base: 1200/1224 games, 3154s
+base: 1224/1224 games, 3192s
+fdq: 24/1224 games, 57s
+fdq: 48/1224 games, 120s
+fdq: 72/1224 games, 271s
+fdq: 96/1224 games, 301s
+fdq: 120/1224 games, 360s
+fdq: 144/1224 games, 430s
+fdq: 168/1224 games, 549s
+fdq: 192/1224 games, 598s
+fdq: 216/1224 games, 654s
+fdq: 240/1224 games, 730s
+fdq: 264/1224 games, 848s
+fdq: 288/1224 games, 924s
+fdq: 312/1224 games, 974s
+fdq: 336/1224 games, 1028s
+fdq: 360/1224 games, 1050s
+fdq: 384/1224 games, 1090s
+fdq: 408/1224 games, 1131s
+fdq: 432/1224 games, 1208s
+fdq: 456/1224 games, 1310s
+fdq: 480/1224 games, 1500s
+fdq: 504/1224 games, 1578s
+fdq: 528/1224 games, 1699s
+fdq: 552/1224 games, 1852s
+fdq: 576/1224 games, 2069s
+fdq: 600/1224 games, 2227s
+fdq: 624/1224 games, 2297s
+fdq: 648/1224 games, 2337s
+fdq: 672/1224 games, 2371s
+fdq: 696/1224 games, 2404s
+fdq: 720/1224 games, 2434s
+fdq: 744/1224 games, 2465s
+fdq: 768/1224 games, 2495s
+fdq: 792/1224 games, 2537s
+fdq: 816/1224 games, 2562s
+fdq: 840/1224 games, 2587s
+fdq: 864/1224 games, 2614s
+fdq: 888/1224 games, 2668s
+fdq: 912/1224 games, 2685s
+fdq: 936/1224 games, 2716s
+fdq: 960/1224 games, 2746s
+fdq: 984/1224 games, 2791s
+fdq: 1008/1224 games, 2808s
+fdq: 1032/1224 games, 2846s
+fdq: 1056/1224 games, 2882s
+fdq: 1080/1224 games, 2916s
+fdq: 1104/1224 games, 2951s
+fdq: 1128/1224 games, 2979s
+fdq: 1152/1224 games, 3005s
+fdq: 1176/1224 games, 3049s
+fdq: 1200/1224 games, 3091s
+fdq: 1224/1224 games, 3129s
+# Ablation report: 20261007-022453-ablate-02982a
+
+3 seeds [991001, 991002, 991003], opponents cpp_nicked_v92, cpp_nicked_v75, cpp_leviathan3, v7-base-bot, nicked_v44, nicked_lab, opp-careful-queen, opp-raider, opp-growth-queen, opp-economy, opp-hunter, opp-sprinter (families: cpp_leviathan3 1, nicked 4, ours 7); 17 maps from the run's plan (around_unsw, australia, autarky, default, devil, islands, maze, portals, prisoners_dilemma, queen_of_spades, schooltime, slithery_fight, stripes, tower_defense, trauma, trophy, weakhold), both sides. Objective: wins. Delta = variant score minus base score on the same (opponent, map, seed, side), where the variant is the base plus that group's parameter changes: **positive means the variant scored higher than the base**. 95% CI resamples (map, seed) blocks. Equal-map and equal-family deltas weight each map / opponent family equally.
+
+base: mean margin +0.176, wins 720/1224; by opponent: cpp_nicked_v92 -0.275, cpp_nicked_v75 -0.098, cpp_leviathan3 +0.745, v7-base-bot +0.608, nicked_v44 +0.451, nicked_lab +0.078, opp-careful-queen +0.098, opp-raider +0.039, opp-growth-queen +0.294, opp-economy +0.333, opp-hunter -0.078, opp-sprinter -0.078
+
+Objective wins is the signed outcome (win +1, draw 0, loss -1); the win-score column (win 1, draw 0.5, loss 0) is delta / 2 in percentage points.
+
+| variant | delta all 17 maps [95% CI] | verdict | win-score pp [95% CI] | equal-map delta | equal-family delta | vs cpp_nicked_v92 | vs cpp_nicked_v75 | vs cpp_leviathan3 | vs v7-base-bot | vs nicked_v44 | vs nicked_lab | vs opp-careful-queen | vs opp-raider | vs opp-growth-queen | vs opp-economy | vs opp-hunter | vs opp-sprinter | wins |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| fdq | +0.031 [-0.031, +0.093] | unclear | +1.6 [-1.6, +4.7] | +0.031 | +0.005 | +0.039 | +0.157 | -0.098 | +0.039 | +0.137 | +0.098 | +0.020 | -0.196 | +0.039 | +0.039 | +0.118 | -0.020 | 739/1224 |
+
+Per map (wins/games; delta vs base):
+
+| map | base | fdq |
+|---|---|---|
+| around_unsw | 40/72 | 42/72 (+0.056) |
+| australia | 42/72 | 44/72 (+0.056) |
+| autarky | 42/72 | 36/72 (-0.167) |
+| default | 44/72 | 47/72 (+0.083) |
+| devil | 46/72 | 47/72 (+0.028) |
+| islands | 41/72 | 39/72 (-0.056) |
+| maze | 44/72 | 52/72 (+0.222) |
+| portals | 40/72 | 38/72 (-0.056) |
+| prisoners_dilemma | 28/72 | 30/72 (+0.056) |
+| queen_of_spades | 49/72 | 54/72 (+0.139) |
+| schooltime | 40/72 | 45/72 (+0.139) |
+| slithery_fight | 51/72 | 47/72 (-0.111) |
+| stripes | 23/72 | 24/72 (+0.028) |
+| tower_defense | 55/72 | 58/72 (+0.083) |
+| trauma | 52/72 | 51/72 (-0.028) |
+| trophy | 38/72 | 39/72 (+0.028) |
+| weakhold | 45/72 | 46/72 (+0.028) |
+
+Noise: seed-to-seed SD of base's margin within a (opponent, map, side) cell 0.834 over 408 cells. Expected paired CI half-width with K seeds, 1.96 * sqrt(2 * 0.834^2 / (408 * K)): K=2: 0.081, K=3: 0.066, K=4: 0.057, K=6: 0.047, K=8: 0.040
+

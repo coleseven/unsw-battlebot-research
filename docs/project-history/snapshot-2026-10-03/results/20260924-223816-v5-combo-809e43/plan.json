@@ -1,0 +1,32 @@
+{
+  "question": "Can the Trauma scout and round-400 king improve together?",
+  "limits": "Two known maps vs additive; Trauma only vs stronger nicked. Both sides, one worker. No release from this screen.",
+  "seed": 52001,
+  "workers": 1,
+  "live_hash": "ffe736af6c14ea33",
+  "source_bot_hashes": {
+    "additive": "bf33497158a49a7b",
+    "nicked": "d6dd50765f54f638"
+  },
+  "bot_hashes": {
+    "scout_king": "23a140e48e5f7d89",
+    "additive": "bf33497158a49a7b",
+    "nicked": "d6dd50765f54f638"
+  },
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-223816-v5-combo-809e43\\maps\\Trauma.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-223816-v5-combo-809e43\\maps\\stronghold.map"
+  ],
+  "map_hashes": {
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-223816-v5-combo-809e43\\maps\\Trauma.map": "dcf39d713c060e5d",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-223816-v5-combo-809e43\\maps\\stronghold.map": "02455e481fe56e1e"
+  },
+  "source_hashes": {
+    "experiments\\v5\\brain.py": "2a6a00d8ff7f8414",
+    "framework\\v5_king.py": "9bc156ce875e13b5",
+    "framework\\v5_hotspot.py": "786b752611a4b24f",
+    "framework\\v5_feeding.py": "3f5dd322b411ebe5",
+    "bcsim\\v5_initial.py": "f3e5e8092944a54e",
+    "bcsim\\v5_combo.py": "3641faf5ed6db8c7"
+  }
+}

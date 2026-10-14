@@ -1,0 +1,54 @@
+{
+  "base": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10e-bot",
+  "base_hash": "87afa489008a0e9a",
+  "params": "params.hpp",
+  "variants": {
+    "base": {},
+    "book": {
+      "CPP_BOOK_MAP": 1
+    },
+    "bookgrad15": {
+      "CPP_BOOK_MAP": 1,
+      "CPP_HUB_GRAD": 15.0
+    },
+    "bookgrad8": {
+      "CPP_BOOK_MAP": 1,
+      "CPP_HUB_GRAD": 8.0
+    }
+  },
+  "opponents": [
+    "cpp_nicked_v75",
+    "cpp_leviathan3",
+    "v7-base-bot",
+    "nicked_v44",
+    "nicked_lab",
+    "v6"
+  ],
+  "official_maps": [
+    "default_small",
+    "trophy",
+    "queen_of_spades",
+    "default",
+    "Devil",
+    "stronghold",
+    "Trauma",
+    "schooltime",
+    "big_empty",
+    "arena",
+    "Colosseum"
+  ],
+  "extra_maps": [
+    "Autarky",
+    "Prisoners_Dilemma",
+    "Slithery_Fight",
+    "Portals"
+  ],
+  "seeds": [
+    137001,
+    137002,
+    137003
+  ],
+  "objective": "aligned",
+  "unswbc": "1.1.0",
+  "deterministic_v6_clock": true
+}

@@ -1,0 +1,7948 @@
+{
+  "candidate": "results\\20260922-232921-fission-5df835\\bots\\split4",
+  "hash": "9f29ab4138b51d26",
+  "opponent": "results\\20260922-232921-fission-5df835\\bots\\reference_450",
+  "opponent_hash": "2e0e1867b6cf7cda",
+  "map": "maps\\arena.map",
+  "map_hash": "b4bab09603289c2d",
+  "metrics": {
+    "turns": 1208,
+    "max_points": 31248216,
+    "p50_points": 11545976,
+    "p99_points": 22763774,
+    "max_memory_bytes": 21561344,
+    "sampled_host_rss_bytes": 691339264,
+    "seconds": 112.4718853000013
+  },
+  "errors": [],
+  "exception": null,
+  "notices": [],
+  "deaths": [
+    {
+      "round": 21,
+      "id": 4,
+      "team": "A",
+      "reason": "W"
+    },
+    {
+      "round": 21,
+      "id": 10,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 21,
+      "id": 12,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 22,
+      "id": 7,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 23,
+      "id": 18,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 23,
+      "id": 0,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 23,
+      "id": 19,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 26,
+      "id": 23,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 27,
+      "id": 20,
+      "team": "B",
+      "reason": "H"
+    },
+    {
+      "round": 27,
+      "id": 6,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 28,
+      "id": 2,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 28,
+      "id": 29,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 28,
+      "id": 30,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 29,
+      "id": 27,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 30,
+      "id": 25,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 31,
+      "id": 5,
+      "team": "B",
+      "reason": "W"
+    },
+    {
+      "round": 31,
+      "id": 34,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 32,
+      "id": 16,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 32,
+      "id": 22,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 33,
+      "id": 13,
+      "team": "A",
+      "reason": "W"
+    },
+    {
+      "round": 34,
+      "id": 44,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 34,
+      "id": 40,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 34,
+      "id": 42,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 35,
+      "id": 15,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 36,
+      "id": 9,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 36,
+      "id": 45,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 37,
+      "id": 8,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 38,
+      "id": 26,
+      "team": "B",
+      "reason": "O"
+    },
+    {
+      "round": 38,
+      "id": 28,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 38,
+      "id": 17,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 38,
+      "id": 35,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 38,
+      "id": 51,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 38,
+      "id": 39,
+      "team": "B",
+      "reason": "H"
+    },
+    {
+      "round": 39,
+      "id": 33,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 39,
+      "id": 49,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 40,
+      "id": 41,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 41,
+      "id": 32,
+      "team": "B",
+      "reason": "H"
+    },
+    {
+      "round": 41,
+      "id": 11,
+      "team": "B",
+      "reason": "H"
+    },
+    {
+      "round": 41,
+      "id": 47,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 42,
+      "id": 43,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 42,
+      "id": 53,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 44,
+      "id": 58,
+      "team": "A",
+      "reason": "W"
+    },
+    {
+      "round": 45,
+      "id": 1,
+      "team": "B",
+      "reason": "W"
+    },
+    {
+      "round": 45,
+      "id": 24,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 45,
+      "id": 55,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 45,
+      "id": 31,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 45,
+      "id": 56,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 46,
+      "id": 67,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 47,
+      "id": 21,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 47,
+      "id": 48,
+      "team": "A",
+      "reason": "W"
+    },
+    {
+      "round": 48,
+      "id": 65,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 48,
+      "id": 62,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 48,
+      "id": 73,
+      "team": "A",
+      "reason": "W"
+    },
+    {
+      "round": 49,
+      "id": 63,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 50,
+      "id": 76,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 51,
+      "id": 61,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 51,
+      "id": 52,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 51,
+      "id": 77,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 51,
+      "id": 66,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 52,
+      "id": 72,
+      "team": "B",
+      "reason": "O"
+    },
+    {
+      "round": 53,
+      "id": 80,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 54,
+      "id": 57,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 54,
+      "id": 37,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 54,
+      "id": 85,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 54,
+      "id": 60,
+      "team": "B",
+      "reason": "H"
+    },
+    {
+      "round": 55,
+      "id": 70,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 55,
+      "id": 84,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 55,
+      "id": 86,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 56,
+      "id": 3,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 57,
+      "id": 90,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 57,
+      "id": 91,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 57,
+      "id": 93,
+      "team": "A",
+      "reason": "W"
+    },
+    {
+      "round": 58,
+      "id": 79,
+      "team": "A",
+      "reason": "W"
+    },
+    {
+      "round": 58,
+      "id": 69,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 58,
+      "id": 88,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 59,
+      "id": 59,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 59,
+      "id": 89,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 61,
+      "id": 83,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 62,
+      "id": 38,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 62,
+      "id": 100,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 62,
+      "id": 54,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 62,
+      "id": 99,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 62,
+      "id": 101,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 63,
+      "id": 82,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 63,
+      "id": 102,
+      "team": "A",
+      "reason": "W"
+    },
+    {
+      "round": 65,
+      "id": 14,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 66,
+      "id": 78,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 66,
+      "id": 104,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 67,
+      "id": 111,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 67,
+      "id": 36,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 67,
+      "id": 74,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 67,
+      "id": 71,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 67,
+      "id": 92,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 67,
+      "id": 113,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 68,
+      "id": 107,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 68,
+      "id": 115,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 69,
+      "id": 64,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 71,
+      "id": 81,
+      "team": "A",
+      "reason": "W"
+    },
+    {
+      "round": 71,
+      "id": 94,
+      "team": "A",
+      "reason": "W"
+    },
+    {
+      "round": 71,
+      "id": 109,
+      "team": "A",
+      "reason": "W"
+    },
+    {
+      "round": 71,
+      "id": 124,
+      "team": "A",
+      "reason": "O"
+    },
+    {
+      "round": 72,
+      "id": 68,
+      "team": "A",
+      "reason": "W"
+    },
+    {
+      "round": 73,
+      "id": 103,
+      "team": "B",
+      "reason": "H"
+    },
+    {
+      "round": 73,
+      "id": 46,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 75,
+      "id": 117,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 75,
+      "id": 87,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 77,
+      "id": 50,
+      "team": "B",
+      "reason": "O"
+    },
+    {
+      "round": 77,
+      "id": 97,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 77,
+      "id": 98,
+      "team": "A",
+      "reason": "H"
+    },
+    {
+      "round": 77,
+      "id": 114,
+      "team": "A",
+      "reason": "O"
+    }
+  ],
+  "final": {
+    "terminated": true,
+    "end_reason": "eliminated",
+    "winner": "A",
+    "a": {
+      "dragons": 23,
+      "longest": 3,
+      "total": 54
+    },
+    "b": {
+      "dragons": 0,
+      "longest": 0,
+      "total": 0
+    }
+  },
+  "turns": [
+    {
+      "round": 0,
+      "id": 0,
+      "points": 31248216,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 1,
+      "id": 0,
+      "points": 20275351,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 2,
+      "id": 0,
+      "points": 19502727,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 3,
+      "id": 0,
+      "points": 20216468,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 4,
+      "id": 0,
+      "points": 19849957,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 5,
+      "id": 0,
+      "points": 20164311,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 6,
+      "id": 0,
+      "points": 20031396,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 7,
+      "id": 0,
+      "points": 19789877,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 8,
+      "id": 0,
+      "points": 18227989,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 9,
+      "id": 0,
+      "points": 18042453,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 10,
+      "id": 0,
+      "points": 6441943,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 10,
+      "id": 2,
+      "points": 28387265,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 11,
+      "id": 0,
+      "points": 15825413,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 11,
+      "id": 2,
+      "points": 19452309,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 12,
+      "id": 0,
+      "points": 15180228,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 12,
+      "id": 2,
+      "points": 17686392,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 13,
+      "id": 0,
+      "points": 6557823,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 13,
+      "id": 2,
+      "points": 6432679,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 13,
+      "id": 3,
+      "points": 26055606,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 13,
+      "id": 4,
+      "points": 27552916,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 14,
+      "id": 0,
+      "points": 13018498,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 14,
+      "id": 2,
+      "points": 17312856,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 14,
+      "id": 3,
+      "points": 15883378,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 14,
+      "id": 4,
+      "points": 17762994,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 15,
+      "id": 0,
+      "points": 13866586,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 15,
+      "id": 2,
+      "points": 17614567,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 15,
+      "id": 3,
+      "points": 14839001,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 15,
+      "id": 4,
+      "points": 16296330,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 16,
+      "id": 0,
+      "points": 14039744,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 16,
+      "id": 2,
+      "points": 19434735,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 16,
+      "id": 3,
+      "points": 6760069,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 16,
+      "id": 4,
+      "points": 11655816,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 16,
+      "id": 6,
+      "points": 21593448,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 17,
+      "id": 0,
+      "points": 7421325,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 17,
+      "id": 2,
+      "points": 6681997,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 17,
+      "id": 3,
+      "points": 14517101,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 17,
+      "id": 4,
+      "points": 13141619,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 17,
+      "id": 6,
+      "points": 16604884,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 17,
+      "id": 7,
+      "points": 20854380,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 17,
+      "id": 8,
+      "points": 24788437,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 18,
+      "id": 0,
+      "points": 10639906,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 18,
+      "id": 2,
+      "points": 17212926,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 18,
+      "id": 3,
+      "points": 14062771,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 18,
+      "id": 4,
+      "points": 11921646,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 18,
+      "id": 6,
+      "points": 12818450,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 18,
+      "id": 7,
+      "points": 11424093,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 18,
+      "id": 8,
+      "points": 16011302,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 19,
+      "id": 0,
+      "points": 9097744,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 19,
+      "id": 2,
+      "points": 16956460,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 19,
+      "id": 3,
+      "points": 13506422,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 19,
+      "id": 4,
+      "points": 7318298,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 19,
+      "id": 6,
+      "points": 7782594,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 19,
+      "id": 7,
+      "points": 9049871,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 19,
+      "id": 8,
+      "points": 15784039,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 19,
+      "id": 9,
+      "points": 19590050,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 19,
+      "id": 10,
+      "points": 18926495,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 20,
+      "id": 0,
+      "points": 12643460,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 20,
+      "id": 2,
+      "points": 7090601,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 20,
+      "id": 3,
+      "points": 6839622,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 20,
+      "id": 4,
+      "points": 9871204,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 20,
+      "id": 6,
+      "points": 9475575,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 20,
+      "id": 7,
+      "points": 10629376,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 20,
+      "id": 8,
+      "points": 7957476,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 20,
+      "id": 9,
+      "points": 12828225,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 20,
+      "id": 10,
+      "points": 9010245,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 20,
+      "id": 12,
+      "points": 24097985,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 20,
+      "id": 13,
+      "points": 19347398,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 20,
+      "id": 14,
+      "points": 21703218,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 21,
+      "id": 0,
+      "points": 9261055,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 21,
+      "id": 2,
+      "points": 15072594,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 21,
+      "id": 3,
+      "points": 12652382,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 21,
+      "id": 4,
+      "points": 7915195,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 21,
+      "id": 6,
+      "points": 9070739,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 21,
+      "id": 7,
+      "points": 12070616,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 21,
+      "id": 8,
+      "points": 12060834,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 21,
+      "id": 9,
+      "points": 13431339,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 21,
+      "id": 10,
+      "points": 7932995,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 21,
+      "id": 12,
+      "points": 7527850,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 21,
+      "id": 13,
+      "points": 11059237,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 21,
+      "id": 14,
+      "points": 11547831,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 22,
+      "id": 0,
+      "points": 11946540,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 22,
+      "id": 2,
+      "points": 17992683,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 22,
+      "id": 3,
+      "points": 14516414,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 22,
+      "id": 6,
+      "points": 7871104,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 22,
+      "id": 7,
+      "points": 7969099,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 22,
+      "id": 8,
+      "points": 12247093,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 22,
+      "id": 9,
+      "points": 12507279,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 22,
+      "id": 13,
+      "points": 12651870,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 22,
+      "id": 14,
+      "points": 11061105,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 22,
+      "id": 15,
+      "points": 21684093,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 23,
+      "id": 0,
+      "points": 10289494,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 23,
+      "id": 2,
+      "points": 7644449,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 23,
+      "id": 3,
+      "points": 7391148,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 23,
+      "id": 6,
+      "points": 10502529,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 23,
+      "id": 8,
+      "points": 7979015,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 23,
+      "id": 9,
+      "points": 12894407,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 23,
+      "id": 13,
+      "points": 7938770,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 23,
+      "id": 14,
+      "points": 10860876,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 23,
+      "id": 15,
+      "points": 12669070,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 23,
+      "id": 16,
+      "points": 24123051,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 23,
+      "id": 17,
+      "points": 18960719,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 23,
+      "id": 18,
+      "points": 17000962,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 23,
+      "id": 19,
+      "points": 17200834,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 24,
+      "id": 2,
+      "points": 16032030,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 24,
+      "id": 3,
+      "points": 14716170,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 24,
+      "id": 6,
+      "points": 15520875,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 24,
+      "id": 8,
+      "points": 12678295,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 24,
+      "id": 9,
+      "points": 14354399,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 24,
+      "id": 13,
+      "points": 14354831,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 24,
+      "id": 14,
+      "points": 11542369,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 24,
+      "id": 15,
+      "points": 11344133,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 24,
+      "id": 16,
+      "points": 14819103,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 24,
+      "id": 17,
+      "points": 9712597,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 25,
+      "id": 2,
+      "points": 13914869,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 25,
+      "id": 3,
+      "points": 10897987,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 25,
+      "id": 6,
+      "points": 10752346,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 25,
+      "id": 8,
+      "points": 13178559,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 25,
+      "id": 9,
+      "points": 7215899,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 25,
+      "id": 13,
+      "points": 9280935,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 25,
+      "id": 14,
+      "points": 11670525,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 25,
+      "id": 15,
+      "points": 10551315,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 25,
+      "id": 16,
+      "points": 7673588,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 25,
+      "id": 17,
+      "points": 10951296,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 25,
+      "id": 21,
+      "points": 20732848,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 25,
+      "id": 22,
+      "points": 22763774,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 26,
+      "id": 2,
+      "points": 7876036,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 26,
+      "id": 3,
+      "points": 12290238,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 26,
+      "id": 6,
+      "points": 7993096,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 26,
+      "id": 8,
+      "points": 8524214,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 26,
+      "id": 9,
+      "points": 13773870,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 26,
+      "id": 13,
+      "points": 11415576,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 26,
+      "id": 14,
+      "points": 13305260,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 26,
+      "id": 15,
+      "points": 11253361,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 26,
+      "id": 16,
+      "points": 13928804,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 26,
+      "id": 17,
+      "points": 11550500,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 26,
+      "id": 21,
+      "points": 11707761,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 26,
+      "id": 22,
+      "points": 13528270,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 26,
+      "id": 23,
+      "points": 17495768,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 26,
+      "id": 24,
+      "points": 21072472,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 26,
+      "id": 25,
+      "points": 18873125,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 27,
+      "id": 2,
+      "points": 10603301,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 27,
+      "id": 3,
+      "points": 12994437,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 27,
+      "id": 6,
+      "points": 8541788,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 27,
+      "id": 8,
+      "points": 9872679,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 27,
+      "id": 9,
+      "points": 14636013,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 27,
+      "id": 13,
+      "points": 11561979,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 27,
+      "id": 14,
+      "points": 7427027,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 27,
+      "id": 15,
+      "points": 12915189,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 27,
+      "id": 16,
+      "points": 13345340,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 27,
+      "id": 17,
+      "points": 11877600,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 27,
+      "id": 21,
+      "points": 11977035,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 27,
+      "id": 22,
+      "points": 13200117,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 27,
+      "id": 24,
+      "points": 12163520,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 27,
+      "id": 25,
+      "points": 10169155,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 27,
+      "id": 27,
+      "points": 18799747,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 28,
+      "id": 2,
+      "points": 8162476,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 28,
+      "id": 3,
+      "points": 7869053,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 28,
+      "id": 8,
+      "points": 11273922,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 28,
+      "id": 9,
+      "points": 12895803,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 28,
+      "id": 13,
+      "points": 10568092,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 28,
+      "id": 14,
+      "points": 12168019,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 28,
+      "id": 15,
+      "points": 13379495,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 28,
+      "id": 16,
+      "points": 7929083,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 28,
+      "id": 17,
+      "points": 11307548,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 28,
+      "id": 21,
+      "points": 9102612,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 28,
+      "id": 22,
+      "points": 7464655,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 28,
+      "id": 24,
+      "points": 11527077,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 28,
+      "id": 25,
+      "points": 9525719,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 28,
+      "id": 27,
+      "points": 9375059,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 28,
+      "id": 28,
+      "points": 18924997,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 28,
+      "id": 29,
+      "points": 22718024,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 28,
+      "id": 30,
+      "points": 17372767,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 29,
+      "id": 3,
+      "points": 12014136,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 29,
+      "id": 8,
+      "points": 15203370,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 29,
+      "id": 9,
+      "points": 7711925,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 29,
+      "id": 13,
+      "points": 10253096,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 29,
+      "id": 14,
+      "points": 12866850,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 29,
+      "id": 15,
+      "points": 14374500,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 29,
+      "id": 16,
+      "points": 12920540,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 29,
+      "id": 17,
+      "points": 11100172,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 29,
+      "id": 21,
+      "points": 9273444,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 29,
+      "id": 22,
+      "points": 13148283,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 29,
+      "id": 24,
+      "points": 8180715,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 29,
+      "id": 25,
+      "points": 9475468,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 29,
+      "id": 27,
+      "points": 7811267,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 29,
+      "id": 28,
+      "points": 14070362,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 29,
+      "id": 31,
+      "points": 21206883,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 29,
+      "id": 33,
+      "points": 18565102,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 30,
+      "id": 3,
+      "points": 12139971,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 30,
+      "id": 8,
+      "points": 8352369,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 30,
+      "id": 9,
+      "points": 11801582,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 30,
+      "id": 13,
+      "points": 11243327,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 30,
+      "id": 14,
+      "points": 7682278,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 30,
+      "id": 15,
+      "points": 13903137,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 30,
+      "id": 16,
+      "points": 13992933,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 30,
+      "id": 17,
+      "points": 10365806,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 30,
+      "id": 21,
+      "points": 9269459,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 30,
+      "id": 22,
+      "points": 13664829,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 30,
+      "id": 24,
+      "points": 12203961,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 30,
+      "id": 25,
+      "points": 8014635,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 30,
+      "id": 28,
+      "points": 11778151,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 30,
+      "id": 31,
+      "points": 10916566,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 30,
+      "id": 33,
+      "points": 12074118,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 30,
+      "id": 34,
+      "points": 19367546,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 30,
+      "id": 35,
+      "points": 21388431,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 31,
+      "id": 3,
+      "points": 9081218,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 31,
+      "id": 8,
+      "points": 10666517,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 31,
+      "id": 9,
+      "points": 12464136,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 31,
+      "id": 13,
+      "points": 9193498,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 31,
+      "id": 14,
+      "points": 11857963,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 31,
+      "id": 15,
+      "points": 8384731,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 31,
+      "id": 16,
+      "points": 8003827,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 31,
+      "id": 17,
+      "points": 10471951,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 31,
+      "id": 21,
+      "points": 8879716,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 31,
+      "id": 22,
+      "points": 8336693,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 31,
+      "id": 24,
+      "points": 9733672,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 31,
+      "id": 28,
+      "points": 10270466,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 31,
+      "id": 31,
+      "points": 10675496,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 31,
+      "id": 33,
+      "points": 13915661,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 31,
+      "id": 34,
+      "points": 8416617,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 31,
+      "id": 35,
+      "points": 11225190,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 31,
+      "id": 36,
+      "points": 20059802,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 31,
+      "id": 37,
+      "points": 18968798,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 31,
+      "id": 38,
+      "points": 19327810,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 32,
+      "id": 3,
+      "points": 13053371,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 32,
+      "id": 8,
+      "points": 11398435,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 32,
+      "id": 9,
+      "points": 9317849,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 32,
+      "id": 13,
+      "points": 9126610,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 32,
+      "id": 14,
+      "points": 12194828,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 32,
+      "id": 15,
+      "points": 12708741,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 32,
+      "id": 16,
+      "points": 9607703,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 32,
+      "id": 17,
+      "points": 9116859,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 32,
+      "id": 21,
+      "points": 9033689,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 32,
+      "id": 22,
+      "points": 8482155,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 32,
+      "id": 24,
+      "points": 11079726,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 32,
+      "id": 28,
+      "points": 11103140,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 32,
+      "id": 31,
+      "points": 10945385,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 32,
+      "id": 33,
+      "points": 11614185,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 32,
+      "id": 35,
+      "points": 11055866,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 32,
+      "id": 36,
+      "points": 10332694,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 32,
+      "id": 37,
+      "points": 11545976,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 32,
+      "id": 38,
+      "points": 12407211,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 33,
+      "id": 3,
+      "points": 14255069,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 33,
+      "id": 8,
+      "points": 11499269,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 33,
+      "id": 9,
+      "points": 11375769,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 33,
+      "id": 13,
+      "points": 8284628,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 33,
+      "id": 14,
+      "points": 10194294,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 33,
+      "id": 15,
+      "points": 12655891,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 33,
+      "id": 17,
+      "points": 7887609,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 33,
+      "id": 21,
+      "points": 11999324,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 33,
+      "id": 24,
+      "points": 8346462,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 33,
+      "id": 28,
+      "points": 11267816,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 33,
+      "id": 31,
+      "points": 12743840,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 33,
+      "id": 33,
+      "points": 12431356,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 33,
+      "id": 35,
+      "points": 11797367,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 33,
+      "id": 36,
+      "points": 10957051,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 33,
+      "id": 37,
+      "points": 8291249,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 33,
+      "id": 38,
+      "points": 11439491,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 33,
+      "id": 40,
+      "points": 19976916,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 33,
+      "id": 41,
+      "points": 22111188,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 33,
+      "id": 42,
+      "points": 19090302,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 34,
+      "id": 3,
+      "points": 7934158,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 34,
+      "id": 8,
+      "points": 11107269,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 34,
+      "id": 9,
+      "points": 13198208,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 34,
+      "id": 14,
+      "points": 9595694,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 34,
+      "id": 15,
+      "points": 9761715,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 34,
+      "id": 17,
+      "points": 10013146,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 34,
+      "id": 21,
+      "points": 7955811,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 34,
+      "id": 24,
+      "points": 14012483,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 34,
+      "id": 28,
+      "points": 12327996,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 34,
+      "id": 31,
+      "points": 11657342,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 34,
+      "id": 33,
+      "points": 11810757,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 34,
+      "id": 35,
+      "points": 10898130,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 34,
+      "id": 36,
+      "points": 14157483,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 34,
+      "id": 37,
+      "points": 12078811,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 34,
+      "id": 38,
+      "points": 10569039,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 34,
+      "id": 40,
+      "points": 8346341,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 34,
+      "id": 41,
+      "points": 11510720,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 34,
+      "id": 42,
+      "points": 8820435,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 34,
+      "id": 43,
+      "points": 19831764,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 35,
+      "id": 3,
+      "points": 11166105,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 35,
+      "id": 8,
+      "points": 13337019,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 35,
+      "id": 9,
+      "points": 8102937,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 35,
+      "id": 14,
+      "points": 8188463,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 35,
+      "id": 15,
+      "points": 8339422,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 35,
+      "id": 17,
+      "points": 10397244,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 35,
+      "id": 21,
+      "points": 9992026,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 35,
+      "id": 24,
+      "points": 12867664,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 35,
+      "id": 28,
+      "points": 14322657,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 35,
+      "id": 31,
+      "points": 11025507,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 35,
+      "id": 33,
+      "points": 9723987,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 35,
+      "id": 35,
+      "points": 13083680,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 35,
+      "id": 36,
+      "points": 14161075,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 35,
+      "id": 37,
+      "points": 11895842,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 35,
+      "id": 38,
+      "points": 9554524,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 35,
+      "id": 41,
+      "points": 12354624,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 35,
+      "id": 43,
+      "points": 11652174,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 35,
+      "id": 45,
+      "points": 19163732,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 35,
+      "id": 46,
+      "points": 18830834,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 36,
+      "id": 3,
+      "points": 12211313,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 36,
+      "id": 8,
+      "points": 8384650,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 36,
+      "id": 9,
+      "points": 9475871,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 36,
+      "id": 14,
+      "points": 12473453,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 36,
+      "id": 17,
+      "points": 10121352,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 36,
+      "id": 21,
+      "points": 10686089,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 36,
+      "id": 24,
+      "points": 11771191,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 36,
+      "id": 28,
+      "points": 8007535,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 36,
+      "id": 31,
+      "points": 10890754,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 36,
+      "id": 33,
+      "points": 8624721,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 36,
+      "id": 35,
+      "points": 11643221,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 36,
+      "id": 36,
+      "points": 14499497,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 36,
+      "id": 37,
+      "points": 10484296,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 36,
+      "id": 38,
+      "points": 9717405,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 36,
+      "id": 41,
+      "points": 12416108,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 36,
+      "id": 43,
+      "points": 13193175,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 36,
+      "id": 45,
+      "points": 8683882,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 36,
+      "id": 46,
+      "points": 11097182,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 36,
+      "id": 47,
+      "points": 20132281,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 36,
+      "id": 48,
+      "points": 19046190,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 36,
+      "id": 49,
+      "points": 20339120,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 37,
+      "id": 3,
+      "points": 13129230,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 37,
+      "id": 8,
+      "points": 8569258,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 37,
+      "id": 14,
+      "points": 11277472,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 37,
+      "id": 17,
+      "points": 10553116,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 37,
+      "id": 21,
+      "points": 11538475,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 37,
+      "id": 24,
+      "points": 12172638,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 37,
+      "id": 28,
+      "points": 12254180,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 37,
+      "id": 31,
+      "points": 9728937,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 37,
+      "id": 33,
+      "points": 9402684,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 37,
+      "id": 35,
+      "points": 10433526,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 37,
+      "id": 36,
+      "points": 13307819,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 37,
+      "id": 37,
+      "points": 11164160,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 37,
+      "id": 38,
+      "points": 10767065,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 37,
+      "id": 41,
+      "points": 9294050,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 37,
+      "id": 43,
+      "points": 11143684,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 37,
+      "id": 46,
+      "points": 13285314,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 37,
+      "id": 47,
+      "points": 11491391,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 37,
+      "id": 48,
+      "points": 11538786,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 37,
+      "id": 49,
+      "points": 11393636,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 38,
+      "id": 3,
+      "points": 12145520,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 38,
+      "id": 14,
+      "points": 12588616,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 38,
+      "id": 17,
+      "points": 9871012,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 38,
+      "id": 21,
+      "points": 12217519,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 38,
+      "id": 24,
+      "points": 14521714,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 38,
+      "id": 28,
+      "points": 7972598,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 38,
+      "id": 31,
+      "points": 11087932,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 38,
+      "id": 33,
+      "points": 10585360,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 38,
+      "id": 35,
+      "points": 8324525,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 38,
+      "id": 36,
+      "points": 7833628,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 38,
+      "id": 37,
+      "points": 11744256,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 38,
+      "id": 38,
+      "points": 12703940,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 38,
+      "id": 41,
+      "points": 11820488,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 38,
+      "id": 43,
+      "points": 11839271,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 38,
+      "id": 46,
+      "points": 8382841,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 38,
+      "id": 47,
+      "points": 12061557,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 38,
+      "id": 48,
+      "points": 12421002,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 38,
+      "id": 49,
+      "points": 14632150,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 38,
+      "id": 52,
+      "points": 20395991,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 39,
+      "id": 3,
+      "points": 7498829,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 39,
+      "id": 14,
+      "points": 9914311,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 39,
+      "id": 21,
+      "points": 13829392,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 39,
+      "id": 24,
+      "points": 12894583,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 39,
+      "id": 31,
+      "points": 12553045,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 39,
+      "id": 33,
+      "points": 8248511,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 39,
+      "id": 36,
+      "points": 13977425,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 39,
+      "id": 37,
+      "points": 13421285,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 39,
+      "id": 38,
+      "points": 16099459,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 39,
+      "id": 41,
+      "points": 10313631,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 39,
+      "id": 43,
+      "points": 10569039,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 39,
+      "id": 46,
+      "points": 12662018,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 39,
+      "id": 47,
+      "points": 11361180,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 39,
+      "id": 48,
+      "points": 9428538,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 39,
+      "id": 49,
+      "points": 8338855,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 39,
+      "id": 52,
+      "points": 12159019,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 39,
+      "id": 53,
+      "points": 22617600,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 40,
+      "id": 3,
+      "points": 12626184,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 40,
+      "id": 14,
+      "points": 11257577,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 40,
+      "id": 21,
+      "points": 9829977,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 40,
+      "id": 24,
+      "points": 13629259,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 40,
+      "id": 31,
+      "points": 11586786,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 40,
+      "id": 36,
+      "points": 12271588,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 40,
+      "id": 37,
+      "points": 13176779,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 40,
+      "id": 38,
+      "points": 14423613,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 40,
+      "id": 41,
+      "points": 8395603,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 40,
+      "id": 43,
+      "points": 13424784,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 40,
+      "id": 46,
+      "points": 13679248,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 40,
+      "id": 47,
+      "points": 9043709,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 40,
+      "id": 48,
+      "points": 7860665,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 40,
+      "id": 52,
+      "points": 14534855,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 40,
+      "id": 53,
+      "points": 11436704,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 40,
+      "id": 54,
+      "points": 20681318,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 41,
+      "id": 3,
+      "points": 10591796,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 41,
+      "id": 14,
+      "points": 11406187,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 41,
+      "id": 21,
+      "points": 9250029,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 41,
+      "id": 24,
+      "points": 7468016,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 41,
+      "id": 31,
+      "points": 10720634,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 41,
+      "id": 36,
+      "points": 11315094,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 41,
+      "id": 37,
+      "points": 7574685,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 41,
+      "id": 38,
+      "points": 13814268,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 41,
+      "id": 43,
+      "points": 7456608,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 41,
+      "id": 46,
+      "points": 14896229,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 41,
+      "id": 47,
+      "points": 7694752,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 41,
+      "id": 48,
+      "points": 10091790,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 41,
+      "id": 52,
+      "points": 14299660,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 41,
+      "id": 53,
+      "points": 14062180,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 41,
+      "id": 54,
+      "points": 10665640,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 41,
+      "id": 55,
+      "points": 26208059,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 41,
+      "id": 56,
+      "points": 23663539,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 41,
+      "id": 57,
+      "points": 22648924,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 42,
+      "id": 3,
+      "points": 12054265,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 42,
+      "id": 14,
+      "points": 10138838,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 42,
+      "id": 21,
+      "points": 9274554,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 42,
+      "id": 24,
+      "points": 14928416,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 42,
+      "id": 31,
+      "points": 10573651,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 42,
+      "id": 36,
+      "points": 12712167,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 42,
+      "id": 37,
+      "points": 12850597,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 42,
+      "id": 38,
+      "points": 12871787,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 42,
+      "id": 43,
+      "points": 10763460,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 42,
+      "id": 46,
+      "points": 8891703,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 42,
+      "id": 48,
+      "points": 9822510,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 42,
+      "id": 52,
+      "points": 13108174,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 42,
+      "id": 53,
+      "points": 7834778,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 42,
+      "id": 54,
+      "points": 9881292,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 42,
+      "id": 55,
+      "points": 16379383,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 42,
+      "id": 56,
+      "points": 16238496,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 42,
+      "id": 57,
+      "points": 15708367,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 43,
+      "id": 3,
+      "points": 11216345,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 43,
+      "id": 14,
+      "points": 14026913,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 43,
+      "id": 21,
+      "points": 13366766,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 43,
+      "id": 24,
+      "points": 13133945,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 43,
+      "id": 31,
+      "points": 7860568,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 43,
+      "id": 36,
+      "points": 11446004,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 43,
+      "id": 37,
+      "points": 13904919,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 43,
+      "id": 38,
+      "points": 11847885,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 43,
+      "id": 46,
+      "points": 9946954,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 43,
+      "id": 48,
+      "points": 11970357,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 43,
+      "id": 52,
+      "points": 15781697,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 43,
+      "id": 54,
+      "points": 8200558,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 43,
+      "id": 55,
+      "points": 16094848,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 43,
+      "id": 56,
+      "points": 14261430,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 43,
+      "id": 57,
+      "points": 15145207,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 43,
+      "id": 58,
+      "points": 19047678,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 43,
+      "id": 59,
+      "points": 20899674,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 44,
+      "id": 3,
+      "points": 8055196,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 44,
+      "id": 14,
+      "points": 10871841,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 44,
+      "id": 21,
+      "points": 10948668,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 44,
+      "id": 24,
+      "points": 7761932,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 44,
+      "id": 31,
+      "points": 10501888,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 44,
+      "id": 36,
+      "points": 11905812,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 44,
+      "id": 37,
+      "points": 10681593,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 44,
+      "id": 38,
+      "points": 12947209,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 44,
+      "id": 46,
+      "points": 10567402,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 44,
+      "id": 48,
+      "points": 9323375,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 44,
+      "id": 52,
+      "points": 16779739,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 44,
+      "id": 54,
+      "points": 9535771,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 44,
+      "id": 55,
+      "points": 7473101,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 44,
+      "id": 56,
+      "points": 14556125,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 44,
+      "id": 57,
+      "points": 14084279,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 44,
+      "id": 58,
+      "points": 8602999,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 44,
+      "id": 59,
+      "points": 12920537,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 44,
+      "id": 61,
+      "points": 20481443,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 44,
+      "id": 62,
+      "points": 21354289,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 44,
+      "id": 63,
+      "points": 21602744,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 45,
+      "id": 3,
+      "points": 10560206,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 45,
+      "id": 14,
+      "points": 9151849,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 45,
+      "id": 21,
+      "points": 7655163,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 45,
+      "id": 24,
+      "points": 9123375,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 45,
+      "id": 31,
+      "points": 10242496,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 45,
+      "id": 36,
+      "points": 12150637,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 45,
+      "id": 37,
+      "points": 9367296,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 45,
+      "id": 38,
+      "points": 14750272,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 45,
+      "id": 46,
+      "points": 12765729,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 45,
+      "id": 48,
+      "points": 10120060,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 45,
+      "id": 52,
+      "points": 13559055,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 45,
+      "id": 54,
+      "points": 11105093,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 45,
+      "id": 55,
+      "points": 7984422,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 45,
+      "id": 56,
+      "points": 7787396,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 45,
+      "id": 57,
+      "points": 16730120,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 45,
+      "id": 59,
+      "points": 15517008,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 45,
+      "id": 61,
+      "points": 13132079,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 45,
+      "id": 62,
+      "points": 16102484,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 45,
+      "id": 63,
+      "points": 12964666,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 45,
+      "id": 64,
+      "points": 20051350,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 46,
+      "id": 3,
+      "points": 9792089,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 46,
+      "id": 14,
+      "points": 9160458,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 46,
+      "id": 21,
+      "points": 14806016,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 46,
+      "id": 36,
+      "points": 7423561,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 46,
+      "id": 37,
+      "points": 11533665,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 46,
+      "id": 38,
+      "points": 12901182,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 46,
+      "id": 46,
+      "points": 11648258,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 46,
+      "id": 48,
+      "points": 7858751,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 46,
+      "id": 52,
+      "points": 7829137,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 46,
+      "id": 54,
+      "points": 10910394,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 46,
+      "id": 57,
+      "points": 14134002,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 46,
+      "id": 59,
+      "points": 7517044,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 46,
+      "id": 61,
+      "points": 13776685,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 46,
+      "id": 62,
+      "points": 14337349,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 46,
+      "id": 63,
+      "points": 9690561,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 46,
+      "id": 64,
+      "points": 11481589,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 46,
+      "id": 65,
+      "points": 21649848,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 46,
+      "id": 66,
+      "points": 21737341,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 46,
+      "id": 67,
+      "points": 17692435,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 46,
+      "id": 68,
+      "points": 22186434,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 47,
+      "id": 3,
+      "points": 10218477,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 47,
+      "id": 14,
+      "points": 9502966,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 47,
+      "id": 21,
+      "points": 7668253,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 47,
+      "id": 36,
+      "points": 12641306,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 47,
+      "id": 37,
+      "points": 9612800,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 47,
+      "id": 38,
+      "points": 8074980,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 47,
+      "id": 46,
+      "points": 10473224,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 47,
+      "id": 48,
+      "points": 7678875,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 47,
+      "id": 52,
+      "points": 13887170,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 47,
+      "id": 54,
+      "points": 13047708,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 47,
+      "id": 57,
+      "points": 7335181,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 47,
+      "id": 59,
+      "points": 12980929,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 47,
+      "id": 61,
+      "points": 13095721,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 47,
+      "id": 62,
+      "points": 7845900,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 47,
+      "id": 63,
+      "points": 9801660,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 47,
+      "id": 64,
+      "points": 11950075,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 47,
+      "id": 65,
+      "points": 11323825,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 47,
+      "id": 66,
+      "points": 15284021,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 47,
+      "id": 68,
+      "points": 9786903,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 47,
+      "id": 69,
+      "points": 20420022,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 47,
+      "id": 70,
+      "points": 21118601,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 47,
+      "id": 71,
+      "points": 20299703,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 48,
+      "id": 3,
+      "points": 10233934,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 48,
+      "id": 14,
+      "points": 10251755,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 48,
+      "id": 36,
+      "points": 10651979,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 48,
+      "id": 37,
+      "points": 9829473,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 48,
+      "id": 38,
+      "points": 13098568,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 48,
+      "id": 46,
+      "points": 10976704,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 48,
+      "id": 52,
+      "points": 16064413,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 48,
+      "id": 54,
+      "points": 7790243,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 48,
+      "id": 57,
+      "points": 14612371,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 48,
+      "id": 59,
+      "points": 11642305,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 48,
+      "id": 61,
+      "points": 10601291,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 48,
+      "id": 62,
+      "points": 8220178,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 48,
+      "id": 63,
+      "points": 9404636,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 48,
+      "id": 64,
+      "points": 10808888,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 48,
+      "id": 66,
+      "points": 7573263,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 48,
+      "id": 68,
+      "points": 9382494,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 48,
+      "id": 69,
+      "points": 12644150,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 48,
+      "id": 70,
+      "points": 11824305,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 48,
+      "id": 71,
+      "points": 12003606,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 48,
+      "id": 73,
+      "points": 16720524,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 48,
+      "id": 74,
+      "points": 20247865,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 49,
+      "id": 3,
+      "points": 12074650,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 49,
+      "id": 14,
+      "points": 11298588,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 49,
+      "id": 36,
+      "points": 7758012,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 49,
+      "id": 37,
+      "points": 11124749,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 49,
+      "id": 38,
+      "points": 12600797,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 49,
+      "id": 46,
+      "points": 13191785,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 49,
+      "id": 52,
+      "points": 7926055,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 49,
+      "id": 54,
+      "points": 10871231,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 49,
+      "id": 57,
+      "points": 14382483,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 49,
+      "id": 59,
+      "points": 11387547,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 49,
+      "id": 61,
+      "points": 12289100,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 49,
+      "id": 63,
+      "points": 7750452,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 49,
+      "id": 64,
+      "points": 10635999,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 49,
+      "id": 66,
+      "points": 11620538,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 49,
+      "id": 68,
+      "points": 10889032,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 49,
+      "id": 69,
+      "points": 9274617,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 49,
+      "id": 70,
+      "points": 11790751,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 49,
+      "id": 71,
+      "points": 10051674,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 49,
+      "id": 74,
+      "points": 9566154,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 49,
+      "id": 75,
+      "points": 22090243,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 49,
+      "id": 76,
+      "points": 18907344,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 50,
+      "id": 3,
+      "points": 12458992,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 50,
+      "id": 14,
+      "points": 11362095,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 50,
+      "id": 36,
+      "points": 11816514,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 50,
+      "id": 37,
+      "points": 11325091,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 50,
+      "id": 38,
+      "points": 12469767,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 50,
+      "id": 46,
+      "points": 13961062,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 50,
+      "id": 52,
+      "points": 11529683,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 50,
+      "id": 54,
+      "points": 11397914,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 50,
+      "id": 57,
+      "points": 11607481,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 50,
+      "id": 59,
+      "points": 9725676,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 50,
+      "id": 61,
+      "points": 12910491,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 50,
+      "id": 64,
+      "points": 7804922,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 50,
+      "id": 66,
+      "points": 10376010,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 50,
+      "id": 68,
+      "points": 9651306,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 50,
+      "id": 69,
+      "points": 8379305,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 50,
+      "id": 70,
+      "points": 11712997,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 50,
+      "id": 71,
+      "points": 10818514,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 50,
+      "id": 74,
+      "points": 12711665,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 50,
+      "id": 75,
+      "points": 10452270,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 50,
+      "id": 76,
+      "points": 8225741,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 50,
+      "id": 77,
+      "points": 19032247,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 50,
+      "id": 78,
+      "points": 19720029,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 51,
+      "id": 3,
+      "points": 11079042,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 51,
+      "id": 14,
+      "points": 8171204,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 51,
+      "id": 36,
+      "points": 11058976,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 51,
+      "id": 37,
+      "points": 10302730,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 51,
+      "id": 38,
+      "points": 7834104,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 51,
+      "id": 46,
+      "points": 8023930,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 51,
+      "id": 52,
+      "points": 8437786,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 51,
+      "id": 54,
+      "points": 10604091,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 51,
+      "id": 57,
+      "points": 13127177,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 51,
+      "id": 59,
+      "points": 9337804,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 51,
+      "id": 64,
+      "points": 10740127,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 51,
+      "id": 66,
+      "points": 8123596,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 51,
+      "id": 68,
+      "points": 11476963,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 51,
+      "id": 69,
+      "points": 12478920,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 51,
+      "id": 70,
+      "points": 10562784,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 51,
+      "id": 71,
+      "points": 13397029,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 51,
+      "id": 74,
+      "points": 11011482,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 51,
+      "id": 75,
+      "points": 12136972,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 51,
+      "id": 78,
+      "points": 10390922,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 51,
+      "id": 79,
+      "points": 20073455,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 51,
+      "id": 80,
+      "points": 19345956,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 51,
+      "id": 81,
+      "points": 21813399,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 52,
+      "id": 3,
+      "points": 9934903,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 52,
+      "id": 14,
+      "points": 10037422,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 52,
+      "id": 36,
+      "points": 12379009,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 52,
+      "id": 37,
+      "points": 8002095,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 52,
+      "id": 38,
+      "points": 11939476,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 52,
+      "id": 46,
+      "points": 10787007,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 52,
+      "id": 54,
+      "points": 11698369,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 52,
+      "id": 57,
+      "points": 7974425,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 52,
+      "id": 59,
+      "points": 10716037,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 52,
+      "id": 64,
+      "points": 13515415,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 52,
+      "id": 68,
+      "points": 9563352,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 52,
+      "id": 69,
+      "points": 11972739,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 52,
+      "id": 70,
+      "points": 10470482,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 52,
+      "id": 71,
+      "points": 12069966,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 52,
+      "id": 74,
+      "points": 10757103,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 52,
+      "id": 75,
+      "points": 10646183,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 52,
+      "id": 78,
+      "points": 9360296,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 52,
+      "id": 79,
+      "points": 12318055,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 52,
+      "id": 80,
+      "points": 9703627,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 52,
+      "id": 81,
+      "points": 13805914,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 52,
+      "id": 82,
+      "points": 19779059,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 52,
+      "id": 83,
+      "points": 21242368,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 53,
+      "id": 3,
+      "points": 9610174,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 53,
+      "id": 14,
+      "points": 10858220,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 53,
+      "id": 36,
+      "points": 12453880,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 53,
+      "id": 37,
+      "points": 9779393,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 53,
+      "id": 38,
+      "points": 13081310,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 53,
+      "id": 46,
+      "points": 10670189,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 53,
+      "id": 54,
+      "points": 9521407,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 53,
+      "id": 57,
+      "points": 11949422,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 53,
+      "id": 59,
+      "points": 10207104,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 53,
+      "id": 64,
+      "points": 10996193,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 53,
+      "id": 68,
+      "points": 8812886,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 53,
+      "id": 69,
+      "points": 11780466,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 53,
+      "id": 70,
+      "points": 8155328,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 53,
+      "id": 71,
+      "points": 8249030,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 53,
+      "id": 74,
+      "points": 10582272,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 53,
+      "id": 75,
+      "points": 12474020,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 53,
+      "id": 78,
+      "points": 9565369,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 53,
+      "id": 79,
+      "points": 13260809,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 53,
+      "id": 80,
+      "points": 8515527,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 53,
+      "id": 81,
+      "points": 11844244,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 53,
+      "id": 82,
+      "points": 10134145,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 53,
+      "id": 83,
+      "points": 10605758,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 53,
+      "id": 84,
+      "points": 21518557,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 53,
+      "id": 85,
+      "points": 19436647,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 54,
+      "id": 3,
+      "points": 12099609,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 54,
+      "id": 14,
+      "points": 9852467,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 54,
+      "id": 36,
+      "points": 9760637,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 54,
+      "id": 37,
+      "points": 8169856,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 54,
+      "id": 38,
+      "points": 10811046,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 54,
+      "id": 46,
+      "points": 13249120,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 54,
+      "id": 54,
+      "points": 9320370,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 54,
+      "id": 59,
+      "points": 9391390,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 54,
+      "id": 64,
+      "points": 14682102,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 54,
+      "id": 68,
+      "points": 10263355,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 54,
+      "id": 69,
+      "points": 15033712,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 54,
+      "id": 70,
+      "points": 12402694,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 54,
+      "id": 71,
+      "points": 14778446,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 54,
+      "id": 74,
+      "points": 9696844,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 54,
+      "id": 75,
+      "points": 10654979,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 54,
+      "id": 78,
+      "points": 10714072,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 54,
+      "id": 79,
+      "points": 14370508,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 54,
+      "id": 81,
+      "points": 10742477,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 54,
+      "id": 82,
+      "points": 11428515,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 54,
+      "id": 83,
+      "points": 16040210,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 54,
+      "id": 84,
+      "points": 11513793,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 55,
+      "id": 3,
+      "points": 9224454,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 55,
+      "id": 14,
+      "points": 8674905,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 55,
+      "id": 36,
+      "points": 11162876,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 55,
+      "id": 38,
+      "points": 12573682,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 55,
+      "id": 46,
+      "points": 15222761,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 55,
+      "id": 54,
+      "points": 9679756,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 55,
+      "id": 59,
+      "points": 12717411,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 55,
+      "id": 64,
+      "points": 7539370,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 55,
+      "id": 68,
+      "points": 11822284,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 55,
+      "id": 69,
+      "points": 15925738,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 55,
+      "id": 70,
+      "points": 13889752,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 55,
+      "id": 71,
+      "points": 9395469,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 55,
+      "id": 74,
+      "points": 9839527,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 55,
+      "id": 75,
+      "points": 11378738,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 55,
+      "id": 78,
+      "points": 13020900,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 55,
+      "id": 79,
+      "points": 14144345,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 55,
+      "id": 81,
+      "points": 10068965,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 55,
+      "id": 82,
+      "points": 11803562,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 55,
+      "id": 83,
+      "points": 7724205,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 55,
+      "id": 84,
+      "points": 7988854,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 55,
+      "id": 86,
+      "points": 16834443,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 55,
+      "id": 87,
+      "points": 21727708,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 56,
+      "id": 3,
+      "points": 7767725,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 56,
+      "id": 14,
+      "points": 13431026,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 56,
+      "id": 36,
+      "points": 12651304,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 56,
+      "id": 38,
+      "points": 10545567,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 56,
+      "id": 46,
+      "points": 16104479,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 56,
+      "id": 54,
+      "points": 11145003,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 56,
+      "id": 59,
+      "points": 14676689,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 56,
+      "id": 64,
+      "points": 9606329,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 56,
+      "id": 68,
+      "points": 14547002,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 56,
+      "id": 69,
+      "points": 7519730,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 56,
+      "id": 71,
+      "points": 9873270,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 56,
+      "id": 74,
+      "points": 12622552,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 56,
+      "id": 75,
+      "points": 12106791,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 56,
+      "id": 78,
+      "points": 12354428,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 56,
+      "id": 79,
+      "points": 7617544,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 56,
+      "id": 81,
+      "points": 9294265,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 56,
+      "id": 82,
+      "points": 10830554,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 56,
+      "id": 83,
+      "points": 14226729,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 56,
+      "id": 87,
+      "points": 10597307,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 56,
+      "id": 88,
+      "points": 22493391,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 56,
+      "id": 89,
+      "points": 21350181,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 57,
+      "id": 14,
+      "points": 11751914,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 57,
+      "id": 36,
+      "points": 14579022,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 57,
+      "id": 38,
+      "points": 11928511,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 57,
+      "id": 46,
+      "points": 14668766,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 57,
+      "id": 54,
+      "points": 10781833,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 57,
+      "id": 59,
+      "points": 7681201,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 57,
+      "id": 64,
+      "points": 8938152,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 57,
+      "id": 68,
+      "points": 11860607,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 57,
+      "id": 69,
+      "points": 15823219,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 57,
+      "id": 71,
+      "points": 9163714,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 57,
+      "id": 74,
+      "points": 7682303,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 57,
+      "id": 75,
+      "points": 14059136,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 57,
+      "id": 78,
+      "points": 10686974,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 57,
+      "id": 79,
+      "points": 9249820,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 57,
+      "id": 81,
+      "points": 8167714,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 57,
+      "id": 82,
+      "points": 7770913,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 57,
+      "id": 83,
+      "points": 13878965,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 57,
+      "id": 87,
+      "points": 10290244,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 57,
+      "id": 88,
+      "points": 16168311,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 57,
+      "id": 89,
+      "points": 13560238,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 57,
+      "id": 90,
+      "points": 18794459,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 57,
+      "id": 91,
+      "points": 17036328,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 57,
+      "id": 92,
+      "points": 21595612,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 57,
+      "id": 93,
+      "points": 17253876,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 58,
+      "id": 14,
+      "points": 7444086,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 58,
+      "id": 36,
+      "points": 13347924,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 58,
+      "id": 38,
+      "points": 13886225,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 58,
+      "id": 46,
+      "points": 15262310,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 58,
+      "id": 54,
+      "points": 12796005,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 58,
+      "id": 59,
+      "points": 13033986,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 58,
+      "id": 64,
+      "points": 11209297,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 58,
+      "id": 68,
+      "points": 12723088,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 58,
+      "id": 69,
+      "points": 10220850,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 58,
+      "id": 71,
+      "points": 11230594,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 58,
+      "id": 74,
+      "points": 11910203,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 58,
+      "id": 75,
+      "points": 13711067,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 58,
+      "id": 78,
+      "points": 9846356,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 58,
+      "id": 79,
+      "points": 8028961,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 58,
+      "id": 81,
+      "points": 11743866,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 58,
+      "id": 82,
+      "points": 12107849,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 58,
+      "id": 83,
+      "points": 10348302,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 58,
+      "id": 87,
+      "points": 12110350,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 58,
+      "id": 88,
+      "points": 8034595,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 58,
+      "id": 89,
+      "points": 14466802,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 58,
+      "id": 92,
+      "points": 11544038,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 58,
+      "id": 94,
+      "points": 18703933,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 59,
+      "id": 14,
+      "points": 8952989,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 59,
+      "id": 36,
+      "points": 16285800,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 59,
+      "id": 38,
+      "points": 13676908,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 59,
+      "id": 46,
+      "points": 14084489,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 59,
+      "id": 54,
+      "points": 7734499,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 59,
+      "id": 59,
+      "points": 9137049,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 59,
+      "id": 64,
+      "points": 11396275,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 59,
+      "id": 68,
+      "points": 7825273,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 59,
+      "id": 71,
+      "points": 12842071,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 59,
+      "id": 74,
+      "points": 11810519,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 59,
+      "id": 75,
+      "points": 13700103,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 59,
+      "id": 78,
+      "points": 10970057,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 59,
+      "id": 81,
+      "points": 11698000,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 59,
+      "id": 82,
+      "points": 14072732,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 59,
+      "id": 83,
+      "points": 12438137,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 59,
+      "id": 87,
+      "points": 9563249,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 59,
+      "id": 89,
+      "points": 7934912,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 59,
+      "id": 92,
+      "points": 11506520,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 59,
+      "id": 94,
+      "points": 11432757,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 59,
+      "id": 95,
+      "points": 20051347,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 59,
+      "id": 96,
+      "points": 21519894,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 60,
+      "id": 14,
+      "points": 11661411,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 60,
+      "id": 36,
+      "points": 7682605,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 60,
+      "id": 38,
+      "points": 15296352,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 60,
+      "id": 46,
+      "points": 7727291,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 60,
+      "id": 54,
+      "points": 11736357,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 60,
+      "id": 64,
+      "points": 11567901,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 60,
+      "id": 68,
+      "points": 11199652,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 60,
+      "id": 71,
+      "points": 7677018,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 60,
+      "id": 74,
+      "points": 7653759,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 60,
+      "id": 75,
+      "points": 12671919,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 60,
+      "id": 78,
+      "points": 9990591,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 60,
+      "id": 81,
+      "points": 11587879,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 60,
+      "id": 82,
+      "points": 12243117,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 60,
+      "id": 83,
+      "points": 7784888,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 60,
+      "id": 87,
+      "points": 11513049,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 60,
+      "id": 92,
+      "points": 12429076,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 60,
+      "id": 94,
+      "points": 10835802,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 60,
+      "id": 95,
+      "points": 10771631,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 60,
+      "id": 96,
+      "points": 9848314,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 60,
+      "id": 97,
+      "points": 24507808,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 60,
+      "id": 98,
+      "points": 22185294,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 60,
+      "id": 99,
+      "points": 19220539,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 60,
+      "id": 100,
+      "points": 22326741,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 60,
+      "id": 101,
+      "points": 21632356,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 61,
+      "id": 14,
+      "points": 9637600,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 61,
+      "id": 36,
+      "points": 12832144,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 61,
+      "id": 38,
+      "points": 7736740,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 61,
+      "id": 46,
+      "points": 10295099,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 61,
+      "id": 54,
+      "points": 10686239,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 61,
+      "id": 64,
+      "points": 12321874,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 61,
+      "id": 68,
+      "points": 10381424,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 61,
+      "id": 71,
+      "points": 10396643,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 61,
+      "id": 74,
+      "points": 11887890,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 61,
+      "id": 75,
+      "points": 9972118,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 61,
+      "id": 78,
+      "points": 9593394,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 61,
+      "id": 81,
+      "points": 11847039,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 61,
+      "id": 82,
+      "points": 10733702,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 61,
+      "id": 83,
+      "points": 8307690,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 61,
+      "id": 87,
+      "points": 11405900,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 61,
+      "id": 92,
+      "points": 10729119,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 61,
+      "id": 94,
+      "points": 11068149,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 61,
+      "id": 95,
+      "points": 12397741,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 61,
+      "id": 96,
+      "points": 12648196,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 61,
+      "id": 97,
+      "points": 10746973,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 61,
+      "id": 98,
+      "points": 13077275,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 61,
+      "id": 99,
+      "points": 9591962,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 61,
+      "id": 100,
+      "points": 13896729,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 61,
+      "id": 101,
+      "points": 9444264,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 61,
+      "id": 102,
+      "points": 21910174,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 62,
+      "id": 14,
+      "points": 8166203,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 62,
+      "id": 36,
+      "points": 11488035,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 62,
+      "id": 38,
+      "points": 7882073,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 62,
+      "id": 46,
+      "points": 10481677,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 62,
+      "id": 54,
+      "points": 7908239,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 62,
+      "id": 64,
+      "points": 14412319,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 62,
+      "id": 68,
+      "points": 12606400,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 62,
+      "id": 71,
+      "points": 13740121,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 62,
+      "id": 74,
+      "points": 14403262,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 62,
+      "id": 75,
+      "points": 11933828,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 62,
+      "id": 78,
+      "points": 10493159,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 62,
+      "id": 81,
+      "points": 10905803,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 62,
+      "id": 82,
+      "points": 12098382,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 62,
+      "id": 87,
+      "points": 10984211,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 62,
+      "id": 92,
+      "points": 9460087,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 62,
+      "id": 94,
+      "points": 14360080,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 62,
+      "id": 95,
+      "points": 11492940,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 62,
+      "id": 96,
+      "points": 11085169,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 62,
+      "id": 97,
+      "points": 11076526,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 62,
+      "id": 98,
+      "points": 13145093,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 62,
+      "id": 99,
+      "points": 8119715,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 62,
+      "id": 101,
+      "points": 7939013,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 62,
+      "id": 102,
+      "points": 8766995,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 62,
+      "id": 104,
+      "points": 20590325,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 63,
+      "id": 14,
+      "points": 11568941,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 63,
+      "id": 36,
+      "points": 10658107,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 63,
+      "id": 46,
+      "points": 7775432,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 63,
+      "id": 64,
+      "points": 13689154,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 63,
+      "id": 68,
+      "points": 12241788,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 63,
+      "id": 71,
+      "points": 9190716,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 63,
+      "id": 74,
+      "points": 11509329,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 63,
+      "id": 75,
+      "points": 12006144,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 63,
+      "id": 78,
+      "points": 11908251,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 63,
+      "id": 81,
+      "points": 10444682,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 63,
+      "id": 82,
+      "points": 7624300,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 63,
+      "id": 87,
+      "points": 12772294,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 63,
+      "id": 92,
+      "points": 9132150,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 63,
+      "id": 94,
+      "points": 13980137,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 63,
+      "id": 95,
+      "points": 9738617,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 63,
+      "id": 96,
+      "points": 12220247,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 63,
+      "id": 97,
+      "points": 11199466,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 63,
+      "id": 98,
+      "points": 10626690,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 63,
+      "id": 102,
+      "points": 7762956,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 63,
+      "id": 104,
+      "points": 13175368,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 63,
+      "id": 105,
+      "points": 19079273,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 64,
+      "id": 14,
+      "points": 9996863,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 64,
+      "id": 36,
+      "points": 11618943,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 64,
+      "id": 46,
+      "points": 13460082,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 64,
+      "id": 64,
+      "points": 7874117,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 64,
+      "id": 68,
+      "points": 12627220,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 64,
+      "id": 71,
+      "points": 9342057,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 64,
+      "id": 74,
+      "points": 7587544,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 64,
+      "id": 75,
+      "points": 14309767,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 64,
+      "id": 78,
+      "points": 11670862,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 64,
+      "id": 81,
+      "points": 11516769,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 64,
+      "id": 87,
+      "points": 12723876,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 64,
+      "id": 92,
+      "points": 10938588,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 64,
+      "id": 94,
+      "points": 7340851,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 64,
+      "id": 95,
+      "points": 10570472,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 64,
+      "id": 96,
+      "points": 12013446,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 64,
+      "id": 97,
+      "points": 13142909,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 64,
+      "id": 98,
+      "points": 10786476,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 64,
+      "id": 104,
+      "points": 11117297,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 64,
+      "id": 105,
+      "points": 13255994,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 64,
+      "id": 106,
+      "points": 21751954,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 64,
+      "id": 107,
+      "points": 21554449,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 64,
+      "id": 108,
+      "points": 19361064,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 65,
+      "id": 14,
+      "points": 8122207,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 65,
+      "id": 36,
+      "points": 13942853,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 65,
+      "id": 46,
+      "points": 13483671,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 65,
+      "id": 64,
+      "points": 12119465,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 65,
+      "id": 68,
+      "points": 10684852,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 65,
+      "id": 71,
+      "points": 12722793,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 65,
+      "id": 74,
+      "points": 12030379,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 65,
+      "id": 75,
+      "points": 9151230,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 65,
+      "id": 78,
+      "points": 10679668,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 65,
+      "id": 81,
+      "points": 12410627,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 65,
+      "id": 87,
+      "points": 10667523,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 65,
+      "id": 92,
+      "points": 11674541,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 65,
+      "id": 94,
+      "points": 10251350,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 65,
+      "id": 95,
+      "points": 12925560,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 65,
+      "id": 96,
+      "points": 11209965,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 65,
+      "id": 97,
+      "points": 13095585,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 65,
+      "id": 98,
+      "points": 9801783,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 65,
+      "id": 104,
+      "points": 10240384,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 65,
+      "id": 105,
+      "points": 10851582,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 65,
+      "id": 106,
+      "points": 12324407,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 65,
+      "id": 107,
+      "points": 11680475,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 65,
+      "id": 108,
+      "points": 12440477,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 66,
+      "id": 36,
+      "points": 7911315,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 66,
+      "id": 46,
+      "points": 14634782,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 66,
+      "id": 64,
+      "points": 10860456,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 66,
+      "id": 68,
+      "points": 9417449,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 66,
+      "id": 71,
+      "points": 7701935,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 66,
+      "id": 74,
+      "points": 11082766,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 66,
+      "id": 75,
+      "points": 7954157,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 66,
+      "id": 78,
+      "points": 10635547,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 66,
+      "id": 81,
+      "points": 13040570,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 66,
+      "id": 87,
+      "points": 13106467,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 66,
+      "id": 92,
+      "points": 11050687,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 66,
+      "id": 94,
+      "points": 10878108,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 66,
+      "id": 95,
+      "points": 7850963,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 66,
+      "id": 96,
+      "points": 10986358,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 66,
+      "id": 97,
+      "points": 11060909,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 66,
+      "id": 98,
+      "points": 10624882,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 66,
+      "id": 104,
+      "points": 8033345,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 66,
+      "id": 105,
+      "points": 11287359,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 66,
+      "id": 106,
+      "points": 10072801,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 66,
+      "id": 107,
+      "points": 12598869,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 66,
+      "id": 108,
+      "points": 11686316,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 66,
+      "id": 109,
+      "points": 20915259,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 66,
+      "id": 110,
+      "points": 19961912,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 66,
+      "id": 111,
+      "points": 19142970,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 66,
+      "id": 112,
+      "points": 22599767,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 67,
+      "id": 36,
+      "points": 7769192,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 67,
+      "id": 46,
+      "points": 7713363,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 67,
+      "id": 64,
+      "points": 9473382,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 67,
+      "id": 68,
+      "points": 10790162,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 67,
+      "id": 71,
+      "points": 8034882,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 67,
+      "id": 75,
+      "points": 12068707,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 67,
+      "id": 81,
+      "points": 9657928,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 67,
+      "id": 87,
+      "points": 7638893,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 67,
+      "id": 92,
+      "points": 8098984,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 67,
+      "id": 94,
+      "points": 10612970,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 67,
+      "id": 95,
+      "points": 14336583,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 67,
+      "id": 96,
+      "points": 13700527,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 67,
+      "id": 97,
+      "points": 11741337,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 67,
+      "id": 98,
+      "points": 12250811,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 67,
+      "id": 105,
+      "points": 13542376,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 67,
+      "id": 106,
+      "points": 9741777,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 67,
+      "id": 107,
+      "points": 13640935,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 67,
+      "id": 108,
+      "points": 7955247,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 67,
+      "id": 109,
+      "points": 11856676,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 67,
+      "id": 110,
+      "points": 11396871,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 67,
+      "id": 112,
+      "points": 13086597,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 67,
+      "id": 113,
+      "points": 17309470,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 67,
+      "id": 114,
+      "points": 22341869,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 67,
+      "id": 115,
+      "points": 21777331,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 68,
+      "id": 46,
+      "points": 11466131,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 68,
+      "id": 64,
+      "points": 8813312,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 68,
+      "id": 68,
+      "points": 11645532,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 68,
+      "id": 75,
+      "points": 13336463,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 68,
+      "id": 81,
+      "points": 7804359,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 68,
+      "id": 87,
+      "points": 13458334,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 68,
+      "id": 94,
+      "points": 12018413,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 68,
+      "id": 95,
+      "points": 12870567,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 68,
+      "id": 96,
+      "points": 12476176,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 68,
+      "id": 97,
+      "points": 8018848,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 68,
+      "id": 98,
+      "points": 11067039,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 68,
+      "id": 105,
+      "points": 7913994,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 68,
+      "id": 106,
+      "points": 11220305,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 68,
+      "id": 107,
+      "points": 7840228,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 68,
+      "id": 108,
+      "points": 12392768,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 68,
+      "id": 109,
+      "points": 11573883,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 68,
+      "id": 110,
+      "points": 7594076,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 68,
+      "id": 112,
+      "points": 14956967,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 68,
+      "id": 114,
+      "points": 13469963,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 68,
+      "id": 115,
+      "points": 8043334,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 68,
+      "id": 116,
+      "points": 19473319,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 68,
+      "id": 117,
+      "points": 21704828,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 68,
+      "id": 118,
+      "points": 19738710,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 68,
+      "id": 119,
+      "points": 19410807,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 69,
+      "id": 46,
+      "points": 13315311,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 69,
+      "id": 64,
+      "points": 8088784,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 69,
+      "id": 68,
+      "points": 11556778,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 69,
+      "id": 75,
+      "points": 13555715,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 69,
+      "id": 81,
+      "points": 9564405,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 69,
+      "id": 87,
+      "points": 12159056,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 69,
+      "id": 94,
+      "points": 10330481,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 69,
+      "id": 95,
+      "points": 14943751,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 69,
+      "id": 96,
+      "points": 11477104,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 69,
+      "id": 97,
+      "points": 11691612,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 69,
+      "id": 98,
+      "points": 11910980,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 69,
+      "id": 105,
+      "points": 11563710,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 69,
+      "id": 106,
+      "points": 11672825,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 69,
+      "id": 108,
+      "points": 12567127,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 69,
+      "id": 109,
+      "points": 10641526,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 69,
+      "id": 110,
+      "points": 14227920,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 69,
+      "id": 112,
+      "points": 7362637,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 69,
+      "id": 114,
+      "points": 12849709,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 69,
+      "id": 116,
+      "points": 11728030,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 69,
+      "id": 117,
+      "points": 12700652,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 69,
+      "id": 118,
+      "points": 10752502,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 69,
+      "id": 119,
+      "points": 10222751,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 69,
+      "id": 120,
+      "points": 18538988,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 70,
+      "id": 46,
+      "points": 10827801,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 70,
+      "id": 68,
+      "points": 7525181,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 70,
+      "id": 75,
+      "points": 7667505,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 70,
+      "id": 81,
+      "points": 9271135,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 70,
+      "id": 87,
+      "points": 11903411,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 70,
+      "id": 94,
+      "points": 10170941,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 70,
+      "id": 95,
+      "points": 11953734,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 70,
+      "id": 96,
+      "points": 10354275,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 70,
+      "id": 97,
+      "points": 12288964,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 70,
+      "id": 98,
+      "points": 11509800,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 70,
+      "id": 105,
+      "points": 10260034,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 70,
+      "id": 106,
+      "points": 13327919,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 70,
+      "id": 108,
+      "points": 7797790,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 70,
+      "id": 109,
+      "points": 9276639,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 70,
+      "id": 110,
+      "points": 9964553,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 70,
+      "id": 112,
+      "points": 12140594,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 70,
+      "id": 114,
+      "points": 12733417,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 70,
+      "id": 116,
+      "points": 12668052,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 70,
+      "id": 117,
+      "points": 9903497,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 70,
+      "id": 118,
+      "points": 10806734,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 70,
+      "id": 119,
+      "points": 11384245,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 70,
+      "id": 120,
+      "points": 11002055,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 70,
+      "id": 121,
+      "points": 18838993,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 70,
+      "id": 122,
+      "points": 20936611,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 70,
+      "id": 123,
+      "points": 20608339,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 71,
+      "id": 46,
+      "points": 10213333,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 71,
+      "id": 68,
+      "points": 8983757,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 71,
+      "id": 75,
+      "points": 11188098,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 71,
+      "id": 81,
+      "points": 7944600,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 71,
+      "id": 87,
+      "points": 13170399,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 71,
+      "id": 94,
+      "points": 8152019,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 71,
+      "id": 95,
+      "points": 9691687,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 71,
+      "id": 96,
+      "points": 11308417,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 71,
+      "id": 97,
+      "points": 13205602,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 71,
+      "id": 98,
+      "points": 11403059,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 71,
+      "id": 105,
+      "points": 9983694,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 71,
+      "id": 106,
+      "points": 13217825,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 71,
+      "id": 108,
+      "points": 10692963,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 71,
+      "id": 109,
+      "points": 8055348,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 71,
+      "id": 110,
+      "points": 10678537,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 71,
+      "id": 112,
+      "points": 8784595,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 71,
+      "id": 114,
+      "points": 9907716,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 71,
+      "id": 116,
+      "points": 10920635,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 71,
+      "id": 117,
+      "points": 9755290,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 71,
+      "id": 118,
+      "points": 11173088,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 71,
+      "id": 119,
+      "points": 8010482,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 71,
+      "id": 120,
+      "points": 10123069,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 71,
+      "id": 121,
+      "points": 10009871,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 71,
+      "id": 122,
+      "points": 9921048,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 71,
+      "id": 123,
+      "points": 11240504,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 71,
+      "id": 124,
+      "points": 17203180,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 72,
+      "id": 46,
+      "points": 11724379,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 72,
+      "id": 68,
+      "points": 7714357,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 72,
+      "id": 75,
+      "points": 10142508,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 72,
+      "id": 87,
+      "points": 13222682,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 72,
+      "id": 95,
+      "points": 9864807,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 72,
+      "id": 96,
+      "points": 10261605,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 72,
+      "id": 97,
+      "points": 13858649,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 72,
+      "id": 98,
+      "points": 10016009,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 72,
+      "id": 105,
+      "points": 11510026,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 72,
+      "id": 106,
+      "points": 13050717,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 72,
+      "id": 108,
+      "points": 9736239,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 72,
+      "id": 110,
+      "points": 14584091,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 72,
+      "id": 112,
+      "points": 11716807,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 72,
+      "id": 114,
+      "points": 10010779,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 72,
+      "id": 116,
+      "points": 9999488,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 72,
+      "id": 117,
+      "points": 11021227,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 72,
+      "id": 118,
+      "points": 13688374,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 72,
+      "id": 119,
+      "points": 13563102,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 72,
+      "id": 120,
+      "points": 10111477,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 72,
+      "id": 121,
+      "points": 12869157,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 72,
+      "id": 122,
+      "points": 10327422,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 72,
+      "id": 123,
+      "points": 11018253,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 73,
+      "id": 46,
+      "points": 8457451,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 73,
+      "id": 75,
+      "points": 10455238,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 73,
+      "id": 87,
+      "points": 11608321,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 73,
+      "id": 95,
+      "points": 12566410,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 73,
+      "id": 96,
+      "points": 10989242,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 73,
+      "id": 97,
+      "points": 11468797,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 73,
+      "id": 98,
+      "points": 9513398,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 73,
+      "id": 105,
+      "points": 13075397,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 73,
+      "id": 106,
+      "points": 13897505,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 73,
+      "id": 108,
+      "points": 10604109,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 73,
+      "id": 110,
+      "points": 13371105,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 73,
+      "id": 112,
+      "points": 13558124,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 73,
+      "id": 114,
+      "points": 11427481,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 73,
+      "id": 116,
+      "points": 7545702,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 73,
+      "id": 117,
+      "points": 11477276,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 73,
+      "id": 118,
+      "points": 11353492,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 73,
+      "id": 119,
+      "points": 16019241,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 73,
+      "id": 120,
+      "points": 9525196,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 73,
+      "id": 121,
+      "points": 11073339,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 73,
+      "id": 122,
+      "points": 16496869,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 73,
+      "id": 123,
+      "points": 11997351,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 73,
+      "id": 125,
+      "points": 18825421,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 74,
+      "id": 75,
+      "points": 8778975,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 74,
+      "id": 87,
+      "points": 12517552,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 74,
+      "id": 95,
+      "points": 13937299,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 74,
+      "id": 96,
+      "points": 11853262,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 74,
+      "id": 97,
+      "points": 12790043,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 74,
+      "id": 98,
+      "points": 9500188,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 74,
+      "id": 105,
+      "points": 12315759,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 74,
+      "id": 106,
+      "points": 13498644,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 74,
+      "id": 108,
+      "points": 11529643,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 74,
+      "id": 110,
+      "points": 12796551,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 74,
+      "id": 112,
+      "points": 11715480,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 74,
+      "id": 114,
+      "points": 12435827,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 74,
+      "id": 116,
+      "points": 10069793,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 74,
+      "id": 117,
+      "points": 10162917,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 74,
+      "id": 118,
+      "points": 16131804,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 74,
+      "id": 119,
+      "points": 14962144,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 74,
+      "id": 120,
+      "points": 12608651,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 74,
+      "id": 121,
+      "points": 9995915,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 74,
+      "id": 122,
+      "points": 15831214,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 74,
+      "id": 123,
+      "points": 12285510,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 74,
+      "id": 125,
+      "points": 11632669,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 75,
+      "id": 75,
+      "points": 10038884,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 75,
+      "id": 87,
+      "points": 8107848,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 75,
+      "id": 95,
+      "points": 13751645,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 75,
+      "id": 96,
+      "points": 14533255,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 75,
+      "id": 97,
+      "points": 10322437,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 75,
+      "id": 98,
+      "points": 11413892,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 75,
+      "id": 105,
+      "points": 11742498,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 75,
+      "id": 106,
+      "points": 12936560,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 75,
+      "id": 108,
+      "points": 12279712,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 75,
+      "id": 110,
+      "points": 13973305,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 75,
+      "id": 112,
+      "points": 12586060,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 75,
+      "id": 114,
+      "points": 13691880,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 75,
+      "id": 116,
+      "points": 11457445,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 75,
+      "id": 118,
+      "points": 15371960,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 75,
+      "id": 119,
+      "points": 11798938,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 75,
+      "id": 120,
+      "points": 13601394,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 75,
+      "id": 121,
+      "points": 8733512,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 75,
+      "id": 122,
+      "points": 13806627,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 75,
+      "id": 123,
+      "points": 14455322,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 75,
+      "id": 125,
+      "points": 12725707,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 76,
+      "id": 75,
+      "points": 13597316,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 76,
+      "id": 95,
+      "points": 12059263,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 76,
+      "id": 96,
+      "points": 7683343,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 76,
+      "id": 97,
+      "points": 9130577,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 76,
+      "id": 98,
+      "points": 9002452,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 76,
+      "id": 105,
+      "points": 10891885,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 76,
+      "id": 106,
+      "points": 13253717,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 76,
+      "id": 108,
+      "points": 11866352,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 76,
+      "id": 110,
+      "points": 11829862,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 76,
+      "id": 112,
+      "points": 9261553,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 76,
+      "id": 114,
+      "points": 7350130,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 76,
+      "id": 116,
+      "points": 12537303,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 76,
+      "id": 118,
+      "points": 7827966,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 76,
+      "id": 119,
+      "points": 7562505,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 76,
+      "id": 120,
+      "points": 15258982,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 76,
+      "id": 121,
+      "points": 10675417,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 76,
+      "id": 122,
+      "points": 7890269,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 76,
+      "id": 123,
+      "points": 11947404,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 76,
+      "id": 125,
+      "points": 12855833,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 76,
+      "id": 126,
+      "points": 18681044,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 76,
+      "id": 127,
+      "points": 20499318,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 76,
+      "id": 128,
+      "points": 23833451,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 76,
+      "id": 129,
+      "points": 18230577,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 76,
+      "id": 130,
+      "points": 23466594,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 77,
+      "id": 75,
+      "points": 13299902,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 77,
+      "id": 95,
+      "points": 10315977,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 77,
+      "id": 96,
+      "points": 11632180,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 77,
+      "id": 97,
+      "points": 7494848,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 77,
+      "id": 98,
+      "points": 7628372,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 77,
+      "id": 105,
+      "points": 7615828,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 77,
+      "id": 106,
+      "points": 11488480,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 77,
+      "id": 108,
+      "points": 13442130,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 77,
+      "id": 110,
+      "points": 10457361,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 77,
+      "id": 112,
+      "points": 9214901,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 77,
+      "id": 114,
+      "points": 7683426,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 77,
+      "id": 116,
+      "points": 13182419,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 77,
+      "id": 118,
+      "points": 11960163,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 77,
+      "id": 119,
+      "points": 8776024,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 77,
+      "id": 120,
+      "points": 11578767,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 77,
+      "id": 121,
+      "points": 11533381,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 77,
+      "id": 122,
+      "points": 9506780,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 77,
+      "id": 123,
+      "points": 10322547,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 77,
+      "id": 125,
+      "points": 12742966,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 77,
+      "id": 126,
+      "points": 14079649,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 77,
+      "id": 127,
+      "points": 12489566,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 77,
+      "id": 128,
+      "points": 13612841,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 77,
+      "id": 129,
+      "points": 15098226,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 77,
+      "id": 130,
+      "points": 12484169,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 77,
+      "id": 131,
+      "points": 22672962,
+      "memory_bytes": 21561344
+    },
+    {
+      "round": 77,
+      "id": 132,
+      "points": 18611071,
+      "memory_bytes": 21561344
+    }
+  ],
+  "limits": "One full-game runtime test. Only candidate uses judge sandbox; opponent is in-process. Not same-seed strength evaluation or a worst-case guarantee."
+}

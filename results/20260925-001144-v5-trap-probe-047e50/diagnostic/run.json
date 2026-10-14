@@ -1,0 +1,33 @@
+{
+  "time": "2026-09-25 00:11:53",
+  "git": "8e1000d+dirty",
+  "python": "3.14.2",
+  "unswbc": "0.3.10",
+  "engine": "5412052f33ddb160",
+  "bots": {
+    "trap_guard": {
+      "path": "results\\20260925-001144-v5-trap-probe-047e50\\bots\\trap_guard",
+      "hash": "c262dabcdd3f07b8"
+    },
+    "nicked": {
+      "path": "results\\20260925-001144-v5-trap-probe-047e50\\bots\\nicked",
+      "hash": "d6dd50765f54f638"
+    }
+  },
+  "maps": {
+    "default_small": {
+      "file": "8ac4b2eedcf19f85",
+      "signature": "f98ab391cccf33b1"
+    },
+    "Trauma": {
+      "file": "dcf39d713c060e5d",
+      "signature": "d014b28abbd1abb0"
+    }
+  },
+  "settings": {
+    "seeds": [
+      55001
+    ],
+    "workers": 1
+  }
+}

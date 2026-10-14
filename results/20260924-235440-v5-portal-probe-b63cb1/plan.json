@@ -1,0 +1,31 @@
+{
+  "question": "Does portal push change real decisions against nicked before full evaluation?",
+  "scope": "Diagnostic only: Trauma, Default, Queen, both sides; full 11-map test still required.",
+  "seed": 54001,
+  "workers": 1,
+  "control_hash": "23a140e48e5f7d89",
+  "nicked_hash": "d6dd50765f54f638",
+  "live_hash": "ffe736af6c14ea33",
+  "bot_hashes": {
+    "portal_push": "9353419a93287cdc",
+    "nicked": "d6dd50765f54f638"
+  },
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-235440-v5-portal-probe-b63cb1\\maps\\Trauma.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-235440-v5-portal-probe-b63cb1\\maps\\default.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-235440-v5-portal-probe-b63cb1\\maps\\queen_of_spades.map"
+  ],
+  "map_hashes": {
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-235440-v5-portal-probe-b63cb1\\maps\\Trauma.map": "dcf39d713c060e5d",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-235440-v5-portal-probe-b63cb1\\maps\\default.map": "6bd7abf2ed51a7f6",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-235440-v5-portal-probe-b63cb1\\maps\\queen_of_spades.map": "126d71b464432685"
+  },
+  "source_hashes": {
+    "experiments\\v5\\brain.py": "a81e99010327de25",
+    "framework\\v5_portal_push.py": "cfd92a7eef094c23",
+    "framework\\navigation.py": "704ce89f4a92aadd",
+    "framework\\portal_escape.py": "24bf10d4e766df94",
+    "bcsim\\v5_initial.py": "22e91e2d07761e35",
+    "bcsim\\v5_portal_probe.py": "372cc6ca9ff231eb"
+  }
+}

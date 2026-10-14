@@ -1,0 +1,101 @@
+start default_small A
+sandbox round 0, 1 metered turns, 4 living dragons, 1s, 137 MiB RSS
+sandbox round 50, 279 metered turns, 18 living dragons, 7s, 265 MiB RSS
+sandbox round 100, 910 metered turns, 26 living dragons, 15s, 373 MiB RSS
+sandbox round 150, 1824 metered turns, 34 living dragons, 31s, 625 MiB RSS
+sandbox round 200, 3082 metered turns, 42 living dragons, 48s, 710 MiB RSS
+sandbox round 250, 4635 metered turns, 38 living dragons, 64s, 923 MiB RSS
+sandbox round 300, 6107 metered turns, 35 living dragons, 83s, 1082 MiB RSS
+sandbox round 350, 7521 metered turns, 37 living dragons, 103s, 1338 MiB RSS
+sandbox round 400, 9327 metered turns, 45 living dragons, 136s, 1318 MiB RSS
+sandbox round 450, 10814 metered turns, 34 living dragons, 178s, 1341 MiB RSS
+{
+  "metrics": {
+    "turns": 12037,
+    "max_points": 81036511,
+    "p50_points": 52143545,
+    "p99_points": 57392102,
+    "max_memory_bytes": 22085632,
+    "first_turn_max_points": 73493992,
+    "hard_fallback_logs": 0,
+    "sampled_host_rss_bytes": 1406812160,
+    "seconds": 218.0727154000051
+  },
+  "errors": [],
+  "exception": null,
+  "final": {
+    "terminated": true,
+    "end_reason": "round_limit",
+    "winner": "A",
+    "a": {
+      "dragons": 24,
+      "longest": 8,
+      "total": 73
+    },
+    "b": {
+      "dragons": 4,
+      "longest": 7,
+      "total": 19
+    }
+  }
+}
+done 1/22 pass_so_far=True
+start default_small B
+sandbox round 0, 0 metered turns, 4 living dragons, 1s, 89 MiB RSS
+sandbox round 50, 198 metered turns, 21 living dragons, 11s, 189 MiB RSS
+sandbox round 100, 559 metered turns, 30 living dragons, 19s, 244 MiB RSS
+sandbox round 150, 1087 metered turns, 36 living dragons, 35s, 366 MiB RSS
+sandbox round 200, 1925 metered turns, 35 living dragons, 57s, 567 MiB RSS
+sandbox round 250, 2977 metered turns, 41 living dragons, 87s, 709 MiB RSS
+sandbox round 300, 4274 metered turns, 39 living dragons, 124s, 805 MiB RSS
+sandbox round 350, 5881 metered turns, 40 living dragons, 148s, 1014 MiB RSS
+sandbox round 400, 7416 metered turns, 37 living dragons, 168s, 1248 MiB RSS
+sandbox round 450, 9078 metered turns, 40 living dragons, 188s, 1106 MiB RSS
+{
+  "metrics": {
+    "turns": 10514,
+    "max_points": 80961083,
+    "p50_points": 50609658,
+    "p99_points": 56910130,
+    "max_memory_bytes": 22151168,
+    "first_turn_max_points": 73194769,
+    "hard_fallback_logs": 0,
+    "sampled_host_rss_bytes": 1308766208,
+    "seconds": 207.51038649999828
+  },
+  "errors": [],
+  "exception": null,
+  "final": {
+    "terminated": true,
+    "end_reason": "round_limit",
+    "winner": "B",
+    "a": {
+      "dragons": 2,
+      "longest": 5,
+      "total": 8
+    },
+    "b": {
+      "dragons": 23,
+      "longest": 9,
+      "total": 79
+    }
+  }
+}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\v6_cpu_suite.py", line 137, in <module>
+    run(args.result)
+    ~~~^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\v6_cpu_suite.py", line 119, in run
+    result = report(out, plan)
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\v6_cpu_suite.py", line 96, in report
+    population.write_json(out / "summary.json", result)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\population.py", line 29, in write_json
+    with path.open("x", encoding="utf8") as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\pathlib\__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileExistsError: [Errno 17] File exists: 'results\\20260925-184755-v6-cpu-32f2f9\\summary.json'

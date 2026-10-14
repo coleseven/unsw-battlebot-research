@@ -1,0 +1,38 @@
+{
+  "question": "Can protection from round 350 build a longer king without losing survival?",
+  "limits": "Six maps, both sides, deterministic engine, one worker; no promotion.",
+  "seed": 50001,
+  "workers": 1,
+  "king_400_hash": "acf0bbe02fa71c44",
+  "baseline_hash": "bf33497158a49a7b",
+  "live_hash": "ffe736af6c14ea33",
+  "bot_hashes": {
+    "king_350": "16e1ada2ad2ec086",
+    "king_400": "acf0bbe02fa71c44",
+    "additive": "bf33497158a49a7b"
+  },
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-222647-v5-king-350-937025\\maps\\big_empty.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-222647-v5-king-350-937025\\maps\\default.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-222647-v5-king-350-937025\\maps\\schooltime.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-222647-v5-king-350-937025\\maps\\stronghold.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-222647-v5-king-350-937025\\maps\\Trauma.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-222647-v5-king-350-937025\\maps\\trophy.map"
+  ],
+  "map_hashes": {
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-222647-v5-king-350-937025\\maps\\big_empty.map": "6cb3b7be72a4e27e",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-222647-v5-king-350-937025\\maps\\default.map": "6bd7abf2ed51a7f6",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-222647-v5-king-350-937025\\maps\\schooltime.map": "726c404f3b34b4ed",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-222647-v5-king-350-937025\\maps\\stronghold.map": "02455e481fe56e1e",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-222647-v5-king-350-937025\\maps\\Trauma.map": "dcf39d713c060e5d",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-222647-v5-king-350-937025\\maps\\trophy.map": "5f1f6b23d6edb944"
+  },
+  "source_hashes": {
+    "experiments\\v5\\brain.py": "2a6a00d8ff7f8414",
+    "framework\\v5_king.py": "9bc156ce875e13b5",
+    "framework\\v5_hotspot.py": "786b752611a4b24f",
+    "framework\\v5_feeding.py": "3f5dd322b411ebe5",
+    "bcsim\\v5_initial.py": "f3e5e8092944a54e",
+    "bcsim\\v5_king_350.py": "9fe75f1566c9d606"
+  }
+}

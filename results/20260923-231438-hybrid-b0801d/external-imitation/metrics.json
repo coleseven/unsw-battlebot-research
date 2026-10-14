@@ -1,0 +1,20 @@
+{
+  "counts": {
+    "turns": 491663,
+    "sampled": 30704,
+    "rows": 25016,
+    "non_single": 771,
+    "forced": 4255,
+    "outside_candidates": 662
+  },
+  "accuracy": {
+    "uniform_expected": 0.39240219592794096,
+    "straight": 0.5570434921650144,
+    "linear": 0.6553405820275024,
+    "mlp": 0.6586984330028781
+  },
+  "cross_entropy": {
+    "linear": 0.7963390083361853,
+    "mlp": 0.7695256648775843
+  }
+}

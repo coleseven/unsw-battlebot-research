@@ -1,0 +1,26 @@
+{
+  "results": {
+    "v3": {
+      "wins": 8,
+      "draws": 0,
+      "losses": 8,
+      "score": 0.5,
+      "pair_ci95": [
+        0.25,
+        0.75
+      ]
+    },
+    "v2": {
+      "wins": 8,
+      "draws": 0,
+      "losses": 0,
+      "score": 1.0,
+      "pair_ci95": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "sandbox_required": true,
+  "is_submission": false
+}

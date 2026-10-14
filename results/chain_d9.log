@@ -1,0 +1,29 @@
+equivalence v11t: 24/68 games, 73s
+equivalence v11t: 48/68 games, 100s
+equivalence v11t: 68/68 games, 123s
+equivalence v12s-bot: 24/68 games, 74s
+equivalence v12s-bot: 48/68 games, 101s
+equivalence v12s-bot: 68/68 games, 123s
+68 games each; identical 64; different 4
+  DIFF ('stripes', True, 'cpp_nicked_v92') {'winner': 'A', 'reason': 'elimination', 'rounds': 30, 'a_dragons': 2, 'b_dragons': 0, 'a_length': 4, 'b_length': 0, 'a_longest': 2, 'b_longest': 0, 'deaths': {'B:W': 5}, 'a_queen': 2, 'b_queen': 0, 'queen_death_round': {'B': 27}} {'winner': 'A', 'reason': 'elimination', 'rounds': 30, 'a_dragons': 5, 'b_dragons': 0, 'a_length': 10, 'b_length': 0, 'a_longest': 2, 'b_longest': 0, 'deaths': {'B:W': 5}, 'a_queen': 2, 'b_queen': 0, 'queen_death_round': {'B': 27}}
+  DIFF ('stripes', False, 'cpp_nicked_v92') {'winner': 'B', 'reason': 'elimination', 'rounds': 30, 'a_dragons': 0, 'b_dragons': 2, 'a_length': 0, 'b_length': 4, 'a_longest': 0, 'b_longest': 2, 'deaths': {'A:W': 5}, 'a_queen': 0, 'b_queen': 2, 'queen_death_round': {'A': 27}} {'winner': 'B', 'reason': 'elimination', 'rounds': 30, 'a_dragons': 0, 'b_dragons': 5, 'a_length': 0, 'b_length': 10, 'a_longest': 0, 'b_longest': 2, 'deaths': {'A:W': 5}, 'a_queen': 0, 'b_queen': 2, 'queen_death_round': {'A': 27}}
+  DIFF ('stripes', True, 'opp-raider') {'winner': 'B', 'reason': 'elimination', 'rounds': 99, 'a_dragons': 0, 'b_dragons': 13, 'a_length': 0, 'b_length': 28, 'a_longest': 0, 'b_longest': 3, 'deaths': {'B:H': 4, 'A:H': 2, 'B:W': 1}, 'a_queen': 0, 'b_queen': 3, 'queen_death_round': {'A': 86}} {'winner': 'B', 'reason': 'elimination', 'rounds': 110, 'a_dragons': 0, 'b_dragons': 14, 'a_length': 0, 'b_length': 31, 'a_longest': 0, 'b_longest': 3, 'deaths': {'B:W': 6, 'B:H': 5, 'A:H': 3, 'A:W': 1}, 'a_queen': 0, 'b_queen': 2, 'queen_death_round': {'A': 107}}
+  DIFF ('stripes', False, 'opp-raider') {'winner': 'A', 'reason': 'elimination', 'rounds': 179, 'a_dragons': 26, 'b_dragons': 0, 'a_length': 58, 'b_length': 0, 'a_longest': 3, 'b_longest': 0, 'deaths': {'A:W': 17, 'B:W': 3, 'A:O': 4, 'A:H': 8, 'B:H': 2}, 'a_queen': 0, 'b_queen': 0, 'queen_death_round': {'A': 65, 'B': 178}} {'winner': 'B', 'reason': 'elimination', 'rounds': 349, 'a_dragons': 0, 'b_dragons': 25, 'a_length': 0, 'b_length': 57, 'a_longest': 0, 'b_longest': 4, 'deaths': {'B:W': 107, 'A:W': 8, 'B:O': 16, 'B:H': 34}, 'a_queen': 0, 'b_queen': 0, 'queen_death_round': {'B': 205, 'A': 325}}
+EQUIVALENCE FAIL
+06:00 EQUIV DONE
+stripes v11t: 24/132 games, 9s
+stripes v11t: 48/132 games, 24s
+stripes v11t: 72/132 games, 47s
+stripes v11t: 96/132 games, 52s
+stripes v11t: 120/132 games, 55s
+stripes v11t: 132/132 games, 58s
+v11t wins 25 / 132
+stripes v12s-bot: 24/132 games, 9s
+stripes v12s-bot: 48/132 games, 24s
+stripes v12s-bot: 72/132 games, 56s
+stripes v12s-bot: 96/132 games, 60s
+stripes v12s-bot: 120/132 games, 64s
+stripes v12s-bot: 132/132 games, 67s
+v12s-bot wins 53 / 132
+STRIPES {'v11t': (25, 132), 'v12s-bot': (53, 132)}
+06:02 D9 DONE

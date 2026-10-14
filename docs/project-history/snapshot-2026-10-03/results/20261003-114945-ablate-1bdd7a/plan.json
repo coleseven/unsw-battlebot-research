@@ -1,0 +1,51 @@
+{
+  "base": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\versions\\v11q",
+  "base_hash": "1c547e93cdff8382",
+  "params": "params.hpp",
+  "variants": {
+    "base": {},
+    "nobookmap": {
+      "CPP_BOOK_MAP": 0
+    },
+    "nobooks": {
+      "CPP_BOOK_MAP": 0,
+      "PORTAL_BOOK": false,
+      "HUB_BOOK": false
+    }
+  },
+  "opponents": [
+    "cpp_nicked_v92",
+    "cpp_nicked_v75",
+    "cpp_leviathan3",
+    "v7-base-bot",
+    "nicked_v44",
+    "nicked_lab"
+  ],
+  "official_maps": [
+    "trophy",
+    "queen_of_spades",
+    "default",
+    "devil",
+    "trauma",
+    "schooltime",
+    "autarky",
+    "dilemma",
+    "slithery_fight",
+    "portals",
+    "australia",
+    "islands",
+    "maze",
+    "stripes",
+    "tower_defense",
+    "unsw",
+    "weakhold"
+  ],
+  "extra_maps": [],
+  "seeds": [
+    651001,
+    651002
+  ],
+  "objective": "wins",
+  "unswbc": "1.2.9",
+  "deterministic_v6_clock": true
+}

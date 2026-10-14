@@ -1,0 +1,2 @@
+TERRITORY = False
+KING = True

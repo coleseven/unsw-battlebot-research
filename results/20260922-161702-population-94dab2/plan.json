@@ -1,0 +1,49 @@
+{
+  "question": "Does splitting improve fixed greedy movement, and which live population cap?",
+  "caps": [
+    0,
+    2,
+    4,
+    8,
+    64
+  ],
+  "split_threshold": 8,
+  "split_size": "length // 2",
+  "control": "pop_00",
+  "opponents": [
+    "v1",
+    "splitter",
+    "hunter"
+  ],
+  "screen_maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-161702-population-94dab2\\maps\\big_empty_220696c19d5385bb.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-161702-population-94dab2\\maps\\default_small_25ddea344f5fb7a0.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-161702-population-94dab2\\maps\\schooltime_38ce8ffaff5c12bc.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-161702-population-94dab2\\maps\\Colosseum_40ea25a274d937f2.map"
+  ],
+  "screen_seeds": [
+    0,
+    1
+  ],
+  "holdout_maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-161702-population-94dab2\\maps\\Big_Empty_60f7d35583505a93.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-161702-population-94dab2\\maps\\arena_728547b8376892d9.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-161702-population-94dab2\\maps\\queen_of_spades_90867997b27cae7f.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-161702-population-94dab2\\maps\\Default_908dcc5cee06830e.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-161702-population-94dab2\\maps\\trophy_a3671180ec15b2b0.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-161702-population-94dab2\\maps\\default_c14ae35451fc0e61.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-161702-population-94dab2\\maps\\Devil_d0935a95185a8dd9.map"
+  ],
+  "holdout_seeds": [
+    1000,
+    1001,
+    1002,
+    1003
+  ],
+  "selection": "highest screen match score among split caps; exact ties prefer smaller cap",
+  "confirmation": "selected cap vs no-split on identical reserved matchups; map-cluster delta CI",
+  "limits": "local scripted opponents; finite maps; bot RNG seeds only; in-process, not CPU-metered",
+  "runner_hash": "ad2c7c777be472c9",
+  "template_hash": "cb9bb8a3f5228a00",
+  "baseline_hash": "ffe736af6c14ea33"
+}

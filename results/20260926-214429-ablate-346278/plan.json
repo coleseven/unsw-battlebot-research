@@ -1,0 +1,110 @@
+{
+  "base": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\versions\\v7-base",
+  "base_hash": "bec48091e76579a1",
+  "params": "params.hpp",
+  "variants": {
+    "base": {},
+    "no_food": {
+      "W_PEARL": 0.0,
+      "W_MEM_PEARL": 0.0
+    },
+    "no_spawn": {
+      "W_SPAWN": 0.0
+    },
+    "no_explore": {
+      "W_UNSEEN": 0.0,
+      "W_STALE": 0.0
+    },
+    "no_trap": {
+      "W_TRAP": 0.0,
+      "W_LETHAL": 0.0
+    },
+    "no_deadend": {
+      "W_DEADEND": 0.0,
+      "W_CORRIDOR": 0.0
+    },
+    "no_headsafe": {
+      "W_HEAD_ENEMY": 0.0,
+      "W_HEAD_TEAM": 0.0,
+      "W_AHEAD": 0.0
+    },
+    "no_revisit": {
+      "W_REVISIT": 0.0
+    },
+    "no_fan": {
+      "W_FAN_EARLY": 0.0,
+      "W_FAN_LATE": 0.0
+    },
+    "no_straight": {
+      "W_STRAIGHT": 0.0
+    },
+    "no_portal": {
+      "W_PORTAL": 0.0,
+      "W_PORTAL_UNSEEN": 0.0,
+      "W_PORTAL_SCOUT": 0.0,
+      "PORTAL_BOOK": false
+    },
+    "no_v3model": {
+      "W_V3": 0.0
+    },
+    "no_attack": {
+      "W_ATTACK": 0.0,
+      "W_TRADE": 0.0
+    },
+    "no_hunt": {
+      "W_HUNT": 0.0
+    },
+    "no_defend": {
+      "W_DEFEND": 0.0
+    },
+    "no_hub": {
+      "W_HUB": 0.0,
+      "HUB_BOOK": false,
+      "LEARN_HUBS": false
+    },
+    "no_goal": {
+      "W_GOAL": 0.0,
+      "GOAL": false
+    },
+    "no_feed": {
+      "W_CASH": 0.0,
+      "FEED_ROUND": 999
+    },
+    "no_protect": {
+      "PROTECT_MULT": 1.0,
+      "PROTECT_FOOD_MULT": 1.0
+    }
+  },
+  "opponents": [
+    "v7-base-bot",
+    "nicked"
+  ],
+  "official_maps": [
+    "default_small",
+    "trophy",
+    "queen_of_spades",
+    "default",
+    "Devil",
+    "stronghold",
+    "Trauma",
+    "schooltime",
+    "big_empty",
+    "arena",
+    "Colosseum"
+  ],
+  "extra_maps": [
+    "Autarky",
+    "Prisoners_Dilemma",
+    "Slithery_Fight",
+    "Portals"
+  ],
+  "seeds": [
+    61001,
+    61002,
+    61003,
+    61004
+  ],
+  "objective": "aligned",
+  "unswbc": "1.1.0",
+  "deterministic_v6_clock": true
+}

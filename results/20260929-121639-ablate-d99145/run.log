@@ -1,0 +1,82 @@
+base: 24/540 games, 26s
+base: 48/540 games, 88s
+base: 72/540 games, 106s
+base: 96/540 games, 152s
+base: 120/540 games, 185s
+base: 144/540 games, 228s
+base: 168/540 games, 267s
+base: 192/540 games, 306s
+base: 216/540 games, 327s
+base: 240/540 games, 344s
+base: 264/540 games, 370s
+base: 288/540 games, 416s
+base: 312/540 games, 519s
+base: 336/540 games, 585s
+base: 360/540 games, 670s
+base: 384/540 games, 756s
+base: 408/540 games, 933s
+base: 432/540 games, 966s
+base: 456/540 games, 1084s
+base: 480/540 games, 1120s
+base: 504/540 games, 1169s
+base: 528/540 games, 1212s
+base: 540/540 games, 1244s
+hubfar: 24/540 games, 27s
+hubfar: 48/540 games, 89s
+hubfar: 72/540 games, 109s
+hubfar: 96/540 games, 157s
+hubfar: 120/540 games, 193s
+hubfar: 144/540 games, 238s
+hubfar: 168/540 games, 274s
+hubfar: 192/540 games, 315s
+hubfar: 216/540 games, 336s
+hubfar: 240/540 games, 354s
+hubfar: 264/540 games, 379s
+hubfar: 288/540 games, 432s
+hubfar: 312/540 games, 525s
+hubfar: 336/540 games, 594s
+hubfar: 360/540 games, 689s
+hubfar: 384/540 games, 758s
+hubfar: 408/540 games, 927s
+hubfar: 432/540 games, 956s
+hubfar: 456/540 games, 1064s
+hubfar: 480/540 games, 1107s
+hubfar: 504/540 games, 1153s
+hubfar: 528/540 games, 1195s
+hubfar: 540/540 games, 1225s
+hubfar_strong: 24/540 games, 25s
+hubfar_strong: 48/540 games, 80s
+hubfar_strong: 72/540 games, 102s
+hubfar_strong: 96/540 games, 147s
+hubfar_strong: 120/540 games, 180s
+hubfar_strong: 144/540 games, 225s
+hubfar_strong: 168/540 games, 263s
+hubfar_strong: 192/540 games, 299s
+hubfar_strong: 216/540 games, 319s
+hubfar_strong: 240/540 games, 335s
+hubfar_strong: 264/540 games, 361s
+hubfar_strong: 288/540 games, 405s
+hubfar_strong: 312/540 games, 499s
+hubfar_strong: 336/540 games, 565s
+hubfar_strong: 360/540 games, 658s
+hubfar_strong: 384/540 games, 736s
+hubfar_strong: 408/540 games, 893s
+hubfar_strong: 432/540 games, 932s
+hubfar_strong: 456/540 games, 1048s
+hubfar_strong: 480/540 games, 1085s
+hubfar_strong: 504/540 games, 1132s
+hubfar_strong: 528/540 games, 1174s
+hubfar_strong: 540/540 games, 1205s
+# Ablation report: 20260929-121639-ablate-d99145
+
+3 seeds, opponents cpp_nicked_v75, cpp_leviathan3, v7-base-bot, nicked_v44, nicked_lab, v6; 11 official + 4 extra maps, both sides. Objective: aligned. Delta = variant score minus base score on the same (opponent, map, seed, side); positive means removing the group helped. 95% CI resamples (map, seed) blocks.
+
+base: mean margin +0.237, wins 359/540; by opponent: cpp_nicked_v75 -0.202, cpp_leviathan3 +0.507, v7-base-bot +0.407, nicked_v44 +0.306, nicked_lab -0.097, v6 +0.500
+
+| variant | current pool delta [95% CI] | pool verdict | other maps | delta all 15 [95% CI] | verdict | vs cpp_nicked_v75 | vs cpp_leviathan3 | vs v7-base-bot | vs nicked_v44 | vs nicked_lab | vs v6 | official | extra | wins |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| hubfar | -0.048 [-0.137, +0.040] | neutral | -0.071 | -0.056 [-0.136, +0.017] | neutral | -0.127 | -0.075 | -0.146 | -0.070 | +0.024 | +0.058 | -0.040 | -0.099 | 338/540 |
+| hubfar_strong | -0.041 [-0.117, +0.039] | neutral | -0.091 | -0.058 [-0.136, +0.014] | neutral | -0.127 | -0.068 | -0.081 | -0.093 | -0.007 | +0.030 | -0.059 | -0.053 | 336/540 |
+
+Noise: seed-to-seed SD of base's margin within a (opponent, map, side) cell 0.579 over 180 cells. Expected paired CI half-width with K seeds, 1.96 * sqrt(2 * 0.579^2 / (180 * K)): K=2: 0.085, K=3: 0.069, K=4: 0.060, K=6: 0.049, K=8: 0.042
+

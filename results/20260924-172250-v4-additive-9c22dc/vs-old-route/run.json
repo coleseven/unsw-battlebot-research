@@ -1,0 +1,41 @@
+{
+  "time": "2026-09-24 17:29:07",
+  "git": "8e1000d+dirty",
+  "python": "3.14.2",
+  "unswbc": "0.3.10",
+  "engine": "5412052f33ddb160",
+  "bots": {
+    "additive": {
+      "path": "results\\20260924-172250-v4-additive-9c22dc\\bots\\additive",
+      "hash": "bf33497158a49a7b"
+    },
+    "old_route": {
+      "path": "results\\20260924-172250-v4-additive-9c22dc\\bots\\old_route",
+      "hash": "a3bd27841857e668"
+    }
+  },
+  "maps": {
+    "big_empty_685baf0e797207b7": {
+      "file": "8183641362aab7e9",
+      "signature": "685baf0e797207b7"
+    },
+    "default_afc3707a967881d6": {
+      "file": "8cbd2473c772cb2d",
+      "signature": "afc3707a967881d6"
+    },
+    "schooltime_8be7eda86910a849": {
+      "file": "448616c71781d224",
+      "signature": "8be7eda86910a849"
+    },
+    "stronghold_fb60e37176a8d1d3": {
+      "file": "88b0f451cc44c7dc",
+      "signature": "fb60e37176a8d1d3"
+    }
+  },
+  "settings": {
+    "seeds": [
+      44001
+    ],
+    "workers": 1
+  }
+}

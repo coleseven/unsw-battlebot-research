@@ -1,0 +1,107 @@
+guard: waiting for running experiment 'ablate 20261001-203651-ablate-9c6006' (pid 98456)
+base: 24/360 games, 56s
+base: 48/360 games, 89s
+base: 72/360 games, 139s
+base: 96/360 games, 183s
+base: 120/360 games, 237s
+base: 144/360 games, 276s
+base: 168/360 games, 321s
+base: 192/360 games, 358s
+base: 216/360 games, 387s
+base: 240/360 games, 412s
+base: 264/360 games, 486s
+base: 288/360 games, 546s
+base: 312/360 games, 655s
+base: 336/360 games, 750s
+base: 360/360 games, 886s
+q_kb: 24/360 games, 46s
+q_kb: 48/360 games, 77s
+q_kb: 72/360 games, 130s
+q_kb: 96/360 games, 170s
+q_kb: 120/360 games, 228s
+q_kb: 144/360 games, 266s
+q_kb: 168/360 games, 316s
+q_kb: 192/360 games, 343s
+q_kb: 216/360 games, 373s
+q_kb: 240/360 games, 406s
+q_kb: 264/360 games, 479s
+q_kb: 288/360 games, 549s
+q_kb: 312/360 games, 656s
+q_kb: 336/360 games, 729s
+q_kb: 360/360 games, 887s
+qs_reach: 24/360 games, 47s
+qs_reach: 48/360 games, 78s
+qs_reach: 72/360 games, 132s
+qs_reach: 96/360 games, 173s
+qs_reach: 120/360 games, 226s
+qs_reach: 144/360 games, 266s
+qs_reach: 168/360 games, 317s
+qs_reach: 192/360 games, 346s
+qs_reach: 216/360 games, 379s
+qs_reach: 240/360 games, 407s
+qs_reach: 264/360 games, 492s
+qs_reach: 288/360 games, 564s
+qs_reach: 312/360 games, 668s
+qs_reach: 336/360 games, 762s
+qs_reach: 360/360 games, 907s
+qs_dead: 24/360 games, 46s
+qs_dead: 48/360 games, 78s
+qs_dead: 72/360 games, 131s
+qs_dead: 96/360 games, 171s
+qs_dead: 120/360 games, 228s
+qs_dead: 144/360 games, 265s
+qs_dead: 168/360 games, 315s
+qs_dead: 192/360 games, 343s
+qs_dead: 216/360 games, 373s
+qs_dead: 240/360 games, 411s
+qs_dead: 264/360 games, 478s
+qs_dead: 288/360 games, 550s
+qs_dead: 312/360 games, 656s
+qs_dead: 336/360 games, 731s
+qs_dead: 360/360 games, 893s
+qs_full: 24/360 games, 51s
+qs_full: 48/360 games, 86s
+qs_full: 72/360 games, 145s
+qs_full: 96/360 games, 190s
+qs_full: 120/360 games, 254s
+qs_full: 144/360 games, 297s
+qs_full: 168/360 games, 351s
+qs_full: 192/360 games, 386s
+qs_full: 216/360 games, 417s
+qs_full: 240/360 games, 446s
+qs_full: 264/360 games, 535s
+qs_full: 288/360 games, 601s
+qs_full: 312/360 games, 709s
+qs_full: 336/360 games, 783s
+qs_full: 360/360 games, 942s
+qs_full_nosplit: 24/360 games, 46s
+qs_full_nosplit: 48/360 games, 79s
+qs_full_nosplit: 72/360 games, 131s
+qs_full_nosplit: 96/360 games, 171s
+qs_full_nosplit: 120/360 games, 230s
+qs_full_nosplit: 144/360 games, 270s
+qs_full_nosplit: 168/360 games, 324s
+qs_full_nosplit: 192/360 games, 358s
+qs_full_nosplit: 216/360 games, 389s
+qs_full_nosplit: 240/360 games, 418s
+qs_full_nosplit: 264/360 games, 506s
+qs_full_nosplit: 288/360 games, 580s
+qs_full_nosplit: 312/360 games, 678s
+qs_full_nosplit: 336/360 games, 772s
+qs_full_nosplit: 360/360 games, 914s
+# Ablation report: 20261001-213229-ablate-a8b26d
+
+2 seeds, opponents cpp_nicked_v92, cpp_nicked_v75, cpp_leviathan3, v7-base-bot, nicked_v44, nicked_lab; 11 official + 4 extra maps, both sides. Objective: wins. Delta = variant score minus base score on the same (opponent, map, seed, side); positive means removing the group helped. 95% CI resamples (map, seed) blocks.
+
+base: mean margin +0.167, wins 210/360; by opponent: cpp_nicked_v92 -0.433, cpp_nicked_v75 -0.167, cpp_leviathan3 +0.567, v7-base-bot +0.467, nicked_v44 +0.533, nicked_lab +0.033
+
+| variant | current pool delta [95% CI] | pool verdict | other maps | delta all 15 [95% CI] | verdict | vs cpp_nicked_v92 | vs cpp_nicked_v75 | vs cpp_leviathan3 | vs v7-base-bot | vs nicked_v44 | vs nicked_lab | official | extra | wins |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| q_kb | -0.017 [-0.158, +0.108] | neutral | -0.450 | -0.161 [-0.333, +0.000] | neutral | -0.100 | -0.267 | -0.067 | -0.067 | -0.200 | -0.267 | -0.220 | +0.000 | 181/360 |
+| qs_reach | -0.008 [-0.150, +0.125] | neutral | -0.517 | -0.178 [-0.356, -0.006] | essential | -0.133 | -0.200 | -0.033 | -0.133 | -0.233 | -0.333 | -0.250 | +0.021 | 178/360 |
+| qs_dead | -0.008 [-0.150, +0.117] | neutral | -0.450 | -0.156 [-0.328, +0.000] | neutral | -0.100 | -0.300 | -0.067 | -0.067 | -0.133 | -0.267 | -0.212 | +0.000 | 182/360 |
+| qs_full | -0.033 [-0.192, +0.133] | neutral | -0.533 | -0.200 [-0.378, -0.028] | essential | -0.267 | -0.100 | -0.033 | -0.200 | -0.267 | -0.333 | -0.273 | +0.000 | 174/360 |
+| qs_full_nosplit | -0.067 [-0.225, +0.100] | neutral | -0.600 | -0.244 [-0.433, -0.061] | essential | -0.233 | -0.167 | -0.133 | -0.200 | -0.333 | -0.400 | -0.311 | -0.062 | 166/360 |
+
+Noise: seed-to-seed SD of base's margin within a (opponent, map, side) cell 0.803 over 180 cells. Expected paired CI half-width with K seeds, 1.96 * sqrt(2 * 0.803^2 / (180 * K)): K=2: 0.117, K=3: 0.096, K=4: 0.083, K=6: 0.068, K=8: 0.059
+

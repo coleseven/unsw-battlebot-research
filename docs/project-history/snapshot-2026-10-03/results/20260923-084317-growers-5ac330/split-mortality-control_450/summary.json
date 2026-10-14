@@ -1,0 +1,33 @@
+{
+  "candidate": "control_450",
+  "opponent": "reference_v2",
+  "counts": {
+    "births": 28044,
+    "child_length_2": 26985,
+    "newborn_first_turns": 27885,
+    "child_deaths": 26209,
+    "deaths_before_age5": 5676,
+    "first_own_turn_deaths": 1243,
+    "first_own_turn_death_O": 526,
+    "birth_round_deaths": 1414,
+    "deaths_before_first_turn": 159,
+    "first_own_turn_death_H": 337,
+    "children_alive_at_end": 1835,
+    "children_without_first_turn_at_end": 0,
+    "games": 144,
+    "first_own_turn_death_W": 380,
+    "child_length_3": 499,
+    "child_length_7": 39,
+    "child_length_4": 265,
+    "child_length_5": 130,
+    "child_length_8": 19,
+    "child_length_6": 89,
+    "child_length_10": 4,
+    "child_length_12": 2,
+    "child_length_9": 9,
+    "child_length_11": 2,
+    "child_length_13": 1
+  },
+  "first_own_turn_death_rate": 0.044575936883629194,
+  "limits": "Descriptive survival, not causal evidence that postponing splits helps. Deaths before age 5 are a count, not a survival-rate estimate: end-of-game censoring applies."
+}

@@ -1,0 +1,45 @@
+{
+  "time": "2026-09-25 13:25:59",
+  "git": "8e1000d+dirty",
+  "python": "3.14.2",
+  "unswbc": "0.3.10",
+  "engine": "5412052f33ddb160",
+  "bots": {
+    "v6": {
+      "path": "results\\20260925-132108-v6-g0-791c56\\bots\\v6",
+      "hash": "01206802d453a7ac"
+    },
+    "nicked": {
+      "path": "results\\20260925-132108-v6-g0-791c56\\bots\\nicked",
+      "hash": "d6dd50765f54f638"
+    }
+  },
+  "maps": {
+    "default_small": {
+      "file": "8ac4b2eedcf19f85",
+      "signature": "f98ab391cccf33b1"
+    },
+    "trophy": {
+      "file": "5f1f6b23d6edb944",
+      "signature": "fd985019831fe135"
+    },
+    "queen_of_spades": {
+      "file": "126d71b464432685",
+      "signature": "6cdb74a7a52d715a"
+    },
+    "Devil": {
+      "file": "a09e8f2d3bdd1e40",
+      "signature": "1b2147f4a8a775d2"
+    },
+    "big_empty": {
+      "file": "6cb3b7be72a4e27e",
+      "signature": "685baf0e797207b7"
+    }
+  },
+  "settings": {
+    "seeds": [
+      61001
+    ],
+    "workers": 6
+  }
+}

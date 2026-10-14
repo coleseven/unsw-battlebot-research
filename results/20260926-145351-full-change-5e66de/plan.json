@@ -1,0 +1,60 @@
+{
+  "question": "Does this unchanged candidate improve across every official map?",
+  "coverage": "all 11 distinct official maps, both sides, every opponent",
+  "seed": 53001,
+  "workers": 8,
+  "limits": "Bot seed is not an independent map-engine seed; one deterministic match per map/side/opponent.",
+  "candidate_source": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7t-mean-bot",
+  "opponent_sources": {
+    "nicked_v44": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\sparring\\nicked_v44",
+    "ctmes": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\sparring\\ctmes",
+    "v6": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\versions\\v6",
+    "v7-base-bot": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7-base-bot"
+  },
+  "source_hashes": {
+    "candidate": "6721dbb3ed79b671",
+    "nicked_v44": "5f9efb7e03ba029b",
+    "ctmes": "8b08ab70a6837573",
+    "v6": "4959b003957277f5",
+    "v7-base-bot": "bec48091e76579a1"
+  },
+  "bot_hashes": {
+    "candidate": "6721dbb3ed79b671",
+    "nicked_v44": "5f9efb7e03ba029b",
+    "ctmes": "8b08ab70a6837573",
+    "v6": "4959b003957277f5",
+    "v7-base-bot": "bec48091e76579a1"
+  },
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-145351-full-change-5e66de\\maps\\default_small.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-145351-full-change-5e66de\\maps\\trophy.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-145351-full-change-5e66de\\maps\\queen_of_spades.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-145351-full-change-5e66de\\maps\\default.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-145351-full-change-5e66de\\maps\\Devil.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-145351-full-change-5e66de\\maps\\stronghold.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-145351-full-change-5e66de\\maps\\Trauma.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-145351-full-change-5e66de\\maps\\schooltime.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-145351-full-change-5e66de\\maps\\big_empty.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-145351-full-change-5e66de\\maps\\arena.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-145351-full-change-5e66de\\maps\\Colosseum.map"
+  ],
+  "map_hashes": {
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-145351-full-change-5e66de\\maps\\default_small.map": "8ac4b2eedcf19f85",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-145351-full-change-5e66de\\maps\\trophy.map": "5f1f6b23d6edb944",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-145351-full-change-5e66de\\maps\\queen_of_spades.map": "126d71b464432685",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-145351-full-change-5e66de\\maps\\default.map": "6bd7abf2ed51a7f6",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-145351-full-change-5e66de\\maps\\Devil.map": "a09e8f2d3bdd1e40",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-145351-full-change-5e66de\\maps\\stronghold.map": "02455e481fe56e1e",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-145351-full-change-5e66de\\maps\\Trauma.map": "dcf39d713c060e5d",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-145351-full-change-5e66de\\maps\\schooltime.map": "726c404f3b34b4ed",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-145351-full-change-5e66de\\maps\\big_empty.map": "6cb3b7be72a4e27e",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-145351-full-change-5e66de\\maps\\arena.map": "b4bab09603289c2d",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-145351-full-change-5e66de\\maps\\Colosseum.map": "c7549a41ea26600f"
+  },
+  "live_hash": "ffe736af6c14ea33",
+  "runner_hash": "fd7944447760dde7",
+  "suite_hash": "d1a93371c8ab935f",
+  "match_hash": "06bf278d8fb80ff7",
+  "local_clock_hash": "7a10c8c778d132f2",
+  "deterministic_v6_clock": true
+}

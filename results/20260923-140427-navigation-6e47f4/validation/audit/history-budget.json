@@ -1,0 +1,101 @@
+{
+  "probes": [
+    {
+      "bot": "portal_memory",
+      "category": "portal_memory__mapped_cells",
+      "history_turns": 420,
+      "measured_turns": 420,
+      "max_points": 82013213,
+      "max_memory_bytes": 21692416,
+      "errors": [],
+      "source": "results\\20260923-140427-navigation-6e47f4\\validation\\replays\\portal_memory-vs-splitter-big_empty_685baf0e797207b7-s21006.replay",
+      "id": 42,
+      "through_round": 469
+    },
+    {
+      "bot": "portal_memory",
+      "category": "portal_memory__portal_pairs",
+      "history_turns": 229,
+      "measured_turns": 229,
+      "max_points": 71680229,
+      "max_memory_bytes": 21626880,
+      "errors": [],
+      "source": "results\\20260923-140427-navigation-6e47f4\\validation\\replays\\portal_memory-vs-reference_v2-default_afc3707a967881d6-s21002.replay",
+      "id": 10,
+      "through_round": 228
+    },
+    {
+      "bot": "portal_memory",
+      "category": "portal_memory__food_entries",
+      "history_turns": 53,
+      "measured_turns": 53,
+      "max_points": 72693812,
+      "max_memory_bytes": 21626880,
+      "errors": [],
+      "source": "results\\20260923-140427-navigation-6e47f4\\validation\\replays\\reference_v2-vs-portal_memory-arena_728547b8376892d9-s21002.replay",
+      "id": 825,
+      "through_round": 478
+    },
+    {
+      "bot": "portal_memory",
+      "category": "portal_memory__search_nodes",
+      "history_turns": 5,
+      "measured_turns": 5,
+      "max_points": 74274771,
+      "max_memory_bytes": 21626880,
+      "errors": [],
+      "source": "results\\20260923-140427-navigation-6e47f4\\validation\\replays\\portal_memory-vs-reference_v2-arena_728547b8376892d9-s21002.replay",
+      "id": 0,
+      "through_round": 4
+    },
+    {
+      "bot": "portal_memory",
+      "category": "portal_memory__long",
+      "history_turns": 350,
+      "measured_turns": 350,
+      "max_points": 79985075,
+      "max_memory_bytes": 21692416,
+      "errors": [],
+      "source": "results\\20260923-140427-navigation-6e47f4\\validation\\replays\\hunter-vs-portal_memory-big_empty_685baf0e797207b7-s21007.replay",
+      "id": 70,
+      "through_round": 432
+    },
+    {
+      "bot": "portal_memory",
+      "category": "portal_memory__dense",
+      "history_turns": 324,
+      "measured_turns": 324,
+      "max_points": 81539355,
+      "max_memory_bytes": 21692416,
+      "errors": [],
+      "source": "results\\20260923-140427-navigation-6e47f4\\validation\\replays\\portal_memory-vs-hunter-big_empty_685baf0e797207b7-s21004.replay",
+      "id": 49,
+      "through_round": 381
+    },
+    {
+      "bot": "portal_memory",
+      "category": "portal_memory__enemy_heads",
+      "history_turns": 1,
+      "measured_turns": 1,
+      "max_points": 38067294,
+      "max_memory_bytes": 21626880,
+      "errors": [],
+      "source": "results\\20260923-140427-navigation-6e47f4\\validation\\replays\\reference_v2-vs-portal_memory-arena_728547b8376892d9-s21006.replay",
+      "id": 351,
+      "through_round": 206
+    },
+    {
+      "bot": "portal_memory",
+      "category": "portal_memory__population",
+      "history_turns": 63,
+      "measured_turns": 63,
+      "max_points": 74897023,
+      "max_memory_bytes": 21692416,
+      "errors": [],
+      "source": "results\\20260923-140427-navigation-6e47f4\\validation\\replays\\portal_memory-vs-reference_v2-big_empty_685baf0e797207b7-s21000.replay",
+      "id": 25,
+      "through_round": 86
+    }
+  ],
+  "limits": "Recorded observation prefixes, not counterfactual full games or worst-case guarantees."
+}

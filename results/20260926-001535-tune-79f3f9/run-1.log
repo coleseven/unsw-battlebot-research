@@ -1,0 +1,653 @@
+C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\cma\s.py:17: UserWarning: Could not import matplotlib.pyplot, therefore ``cma.plot()`` etc. is not available
+  _warnings.warn('Could not import matplotlib.pyplot, therefore'
+gen0: 24/240 games, 162s
+gen0: 48/240 games, 329s
+gen0: 72/240 games, 513s
+gen0: 96/240 games, 664s
+gen0: 120/240 games, 831s
+gen0: 144/240 games, 1015s
+gen0: 168/240 games, 1211s
+gen0: 192/240 games, 1400s
+gen0: 216/240 games, 1559s
+gen0: 240/240 games, 1754s
+gen 0: best F +0.210 (14/20 wins) mean F +0.017
+gen1: 24/240 games, 194s
+gen1: 48/240 games, 371s
+gen1: 72/240 games, 561s
+gen1: 96/240 games, 734s
+gen1: 120/240 games, 879s
+gen1: 144/240 games, 1045s
+gen1: 168/240 games, 1216s
+gen1: 192/240 games, 1397s
+gen1: 216/240 games, 1564s
+gen1: 240/240 games, 1755s
+gen 1: best F +0.320 (14/20 wins) mean F -0.004
+gen2: 24/240 games, 168s
+gen2: 48/240 games, 337s
+gen2: 72/240 games, 499s
+gen2: 96/240 games, 668s
+Fatal Python error: _PyThreadState_Attach: non-NULL old thread state
+Python runtime state: initialized
+
+Thread 0x0000bd1c [Thread-5108 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000ae48 [Thread-5107 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00004bf0 [Thread-5106 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00008d90 [Thread-5105 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000623c [Thread-5104 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00008328 [Thread-5103 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00003278 [Thread-5102 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x000095e4 [Thread-5101 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00004e70 [Thread-5100 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000505c [Thread-5099 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000b2b8 [Thread-5096 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000b724 [Thread-5095 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000a8e0 [Thread-5092 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x000062dc [Thread-5091 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00005104 [Thread-5090 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000a688 [Thread-5089 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00009224 [Thread-5088 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00009014 [Thread-5087 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000b264 [Thread-5086 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00009438 [Thread-5085 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00005784 [Thread-5084 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00000648 [Thread-5083 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000a9a0 [Thread-5076 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00006f64 [Thread-5075 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000bd90 [Thread-5074 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000b9a4 [Thread-5073 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000b67c [Thread-5070 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00004004 [Thread-5069 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000bb20 [Thread-5066 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00006568 [Thread-5065 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00004fb4 [Thread-5058 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x000073b0 [Thread-5057 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00008f38 [Thread-5056 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000a70c [Thread-5055 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000c53c [Thread-5054 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00007bcc [Thread-5053 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00004eb8 [Thread-5050 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00006bd4 [Thread-5049 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000948c [Thread-5042 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00009cd8 [Thread-5041 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000574c [Thread-5038 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00008d48 [Thread-5037 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00005d64 [Thread-5024 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00008aa4 [Thread-5023 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00007a58 [Thread-5012 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000b854 [Thread-5011 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000bb4c [Thread-5006 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00008224 [Thread-5005 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00004a68 [Thread-4984 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00006038 [Thread-4983 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00007c40 [Thread-4982 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x000054a0 [Thread-4981 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000b098 [Thread-4960 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00008014 [Thread-4959 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00000a3c [Thread-4956 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00006fc4 [Thread-4955 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000bf00 [Thread-4950 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000c540 [Thread-4949 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000b0c0 [Thread-4946 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00008340 [Thread-4945 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000a214 [Thread-4942 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x000066a8 [Thread-4941 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00006308 [Thread-4938 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00004b44 [Thread-4937 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000b3ec [Thread-4930 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00009cc8 [Thread-4929 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00006cac [Thread-4922 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x000066b4 [Thread-4921 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000c158 [Thread-4920 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00009178 [Thread-4919 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x000064dc [Thread-4910 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00008590 [Thread-4909 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000510c [Thread-4874 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00006c04 [Thread-4873 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000ca90 [Thread-4858 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00009d30 [Thread-4857 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000c940 [Thread-4840 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000be34 [Thread-4839 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000b85c [Thread-4832 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000cb00 [Thread-4831 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x000059f0 [Thread-4676 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x000073f0 [Thread-4675 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000bc64 [Thread-4630 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000571c [Thread-4629 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000be80 [Thread-4606 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000b298 [Thread-4605 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00001d2c [Thread-4600 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00005418 [Thread-4599 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00006104 [Thread-4524 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00000534 [Thread-4523 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x000072f0 [Thread-4418 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00005ee4 [Thread-4417 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00006120 [Thread-4314 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000c330 [Thread-4313 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000a828 [Thread-4312 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00004f64 [Thread-4311 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x000050bc [Thread-4310 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x0000b4e8 [Thread-4309 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x000048f0 [Thread-4308 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+Thread 0x00001fc0 [Thread-4307 (_drain)] (most recent call first):
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\bot.py", line 62 in _drain
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1024 in run
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1082 in _bootstrap_inner
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\threading.py", line 1044 in _bootstrap
+
+...
+
+Extension modules: psutil._psutil_windows (total: 1)
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\tune.py", line 212, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\tune.py", line 206, in main
+    run(a.result, a.workers)
+    ~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\tune.py", line 160, in run
+    games = bounded.run(jobs, workers, gen_dir, f"gen{gen}")
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\bounded.py", line 46, in run
+    game = future.result()
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 443, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 395, in __get_result
+    raise self._exception
+concurrent.futures.process.BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.

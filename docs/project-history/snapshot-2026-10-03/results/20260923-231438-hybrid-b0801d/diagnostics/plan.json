@@ -1,0 +1,10 @@
+{
+  "subset": "All validation maps, first predeclared validation seed, both sides against reference_v2, all finalists and their paired control. No outcome filtering.",
+  "seed": 29000,
+  "candidates": [
+    "control_450",
+    "mature",
+    "linear"
+  ],
+  "limits": "Posthoc descriptive mechanisms; deaths per action and absolute deaths are not causal effects."
+}

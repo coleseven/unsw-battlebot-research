@@ -1,0 +1,239 @@
+{
+  "candidate": "results\\v6-deterministic96-bot",
+  "hash": "844014a0382b34ae",
+  "opponent": "results\\20260925-132931-full-change-982835\\bots\\scout_king",
+  "opponent_hash": "23a140e48e5f7d89",
+  "map": "results\\20260925-132931-full-change-982835\\maps\\big_empty.map",
+  "map_hash": "6cb3b7be72a4e27e",
+  "metrics": {
+    "turns": 15,
+    "max_points": 32276673,
+    "p50_points": 0,
+    "p99_points": 32276673,
+    "max_memory_bytes": 21692416,
+    "sampled_host_rss_bytes": 104873984,
+    "seconds": 11.253796600001806
+  },
+  "errors": [
+    {
+      "round": 0,
+      "id": 6,
+      "error": "exceeded CPU limit",
+      "output": ""
+    },
+    {
+      "round": 0,
+      "id": 8,
+      "error": "exceeded CPU limit",
+      "output": ""
+    },
+    {
+      "round": 0,
+      "id": 10,
+      "error": "exceeded CPU limit",
+      "output": ""
+    },
+    {
+      "round": 1,
+      "id": 12,
+      "error": "exceeded CPU limit",
+      "output": ""
+    },
+    {
+      "round": 1,
+      "id": 13,
+      "error": "exceeded CPU limit",
+      "output": ""
+    },
+    {
+      "round": 1,
+      "id": 14,
+      "error": "exceeded CPU limit",
+      "output": ""
+    },
+    {
+      "round": 2,
+      "id": 0,
+      "error": "exceeded CPU limit",
+      "output": ""
+    },
+    {
+      "round": 2,
+      "id": 2,
+      "error": "exceeded CPU limit",
+      "output": ""
+    },
+    {
+      "round": 2,
+      "id": 4,
+      "error": "exceeded CPU limit",
+      "output": ""
+    }
+  ],
+  "exception": null,
+  "notices": [],
+  "deaths": [
+    {
+      "round": 0,
+      "id": 6,
+      "team": "A",
+      "reason": "A"
+    },
+    {
+      "round": 0,
+      "id": 8,
+      "team": "A",
+      "reason": "A"
+    },
+    {
+      "round": 0,
+      "id": 10,
+      "team": "A",
+      "reason": "A"
+    },
+    {
+      "round": 1,
+      "id": 12,
+      "team": "A",
+      "reason": "A"
+    },
+    {
+      "round": 1,
+      "id": 13,
+      "team": "A",
+      "reason": "A"
+    },
+    {
+      "round": 1,
+      "id": 14,
+      "team": "A",
+      "reason": "A"
+    },
+    {
+      "round": 2,
+      "id": 0,
+      "team": "A",
+      "reason": "A"
+    },
+    {
+      "round": 2,
+      "id": 2,
+      "team": "A",
+      "reason": "A"
+    },
+    {
+      "round": 2,
+      "id": 4,
+      "team": "A",
+      "reason": "A"
+    }
+  ],
+  "final": {
+    "terminated": true,
+    "end_reason": "eliminated",
+    "winner": "B",
+    "a": {
+      "dragons": 0,
+      "longest": 0,
+      "total": 0
+    },
+    "b": {
+      "dragons": 6,
+      "longest": 3,
+      "total": 18
+    }
+  },
+  "turns": [
+    {
+      "round": 0,
+      "id": 0,
+      "points": 32275589,
+      "memory_bytes": 21692416
+    },
+    {
+      "round": 0,
+      "id": 2,
+      "points": 32276673,
+      "memory_bytes": 21692416
+    },
+    {
+      "round": 0,
+      "id": 4,
+      "points": 31928087,
+      "memory_bytes": 21692416
+    },
+    {
+      "round": 0,
+      "id": 6,
+      "points": 0,
+      "memory_bytes": 0
+    },
+    {
+      "round": 0,
+      "id": 8,
+      "points": 0,
+      "memory_bytes": 0
+    },
+    {
+      "round": 0,
+      "id": 10,
+      "points": 0,
+      "memory_bytes": 0
+    },
+    {
+      "round": 1,
+      "id": 0,
+      "points": 10209522,
+      "memory_bytes": 21692416
+    },
+    {
+      "round": 1,
+      "id": 2,
+      "points": 10206056,
+      "memory_bytes": 21692416
+    },
+    {
+      "round": 1,
+      "id": 4,
+      "points": 9976238,
+      "memory_bytes": 21692416
+    },
+    {
+      "round": 1,
+      "id": 12,
+      "points": 0,
+      "memory_bytes": 0
+    },
+    {
+      "round": 1,
+      "id": 13,
+      "points": 0,
+      "memory_bytes": 0
+    },
+    {
+      "round": 1,
+      "id": 14,
+      "points": 0,
+      "memory_bytes": 0
+    },
+    {
+      "round": 2,
+      "id": 0,
+      "points": 0,
+      "memory_bytes": 0
+    },
+    {
+      "round": 2,
+      "id": 2,
+      "points": 0,
+      "memory_bytes": 0
+    },
+    {
+      "round": 2,
+      "id": 4,
+      "points": 0,
+      "memory_bytes": 0
+    }
+  ],
+  "limits": "One full-game runtime test. Only candidate uses judge sandbox; opponent is in-process. Not same-seed strength evaluation or a worst-case guarantee."
+}

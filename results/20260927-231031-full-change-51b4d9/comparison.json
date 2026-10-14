@@ -1,0 +1,58 @@
+{
+  "maps": [
+    "default_small",
+    "trophy",
+    "queen_of_spades",
+    "default",
+    "Devil",
+    "stronghold",
+    "Trauma",
+    "schooltime",
+    "big_empty",
+    "arena",
+    "Colosseum",
+    "Autarky",
+    "Prisoners_Dilemma",
+    "Slithery_Fight",
+    "Portals"
+  ],
+  "games": 270,
+  "workers": 4,
+  "opponents": {
+    "nicked_v44": {
+      "wins": 43,
+      "draws": 0,
+      "losses": 47,
+      "score": 0.4777777777777778
+    },
+    "nicked_lab": {
+      "wins": 23,
+      "draws": 0,
+      "losses": 67,
+      "score": 0.25555555555555554
+    },
+    "v6": {
+      "wins": 58,
+      "draws": 0,
+      "losses": 32,
+      "score": 0.6444444444444445
+    }
+  },
+  "per_map_wins": {
+    "Autarky": "13/18",
+    "Colosseum": "11/18",
+    "Devil": "15/18",
+    "Portals": "5/18",
+    "Prisoners_Dilemma": "11/18",
+    "Slithery_Fight": "2/18",
+    "Trauma": "4/18",
+    "arena": "12/18",
+    "big_empty": "7/18",
+    "default": "5/18",
+    "default_small": "11/18",
+    "queen_of_spades": "6/18",
+    "schooltime": "7/18",
+    "stronghold": "6/18",
+    "trophy": "9/18"
+  }
+}

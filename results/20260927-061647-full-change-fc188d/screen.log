@@ -1,0 +1,79 @@
+full: 24/360 games, 268s
+full: 48/360 games, 557s
+full: 72/360 games, 843s
+full: 96/360 games, 1267s
+full: 120/360 games, 1484s
+full: 144/360 games, 1868s
+full: 168/360 games, 1970s
+full: 192/360 games, 2242s
+full: 216/360 games, 2389s
+full: 240/360 games, 2707s
+full: 264/360 games, 2938s
+full: 288/360 games, 3078s
+full: 312/360 games, 3301s
+full: 336/360 games, 3478s
+full: 360/360 games, 3816s
+{
+  "maps": [
+    "default_small",
+    "trophy",
+    "queen_of_spades",
+    "default",
+    "Devil",
+    "stronghold",
+    "Trauma",
+    "schooltime",
+    "big_empty",
+    "arena",
+    "Colosseum",
+    "Autarky",
+    "Prisoners_Dilemma",
+    "Slithery_Fight",
+    "Portals"
+  ],
+  "games": 360,
+  "workers": 4,
+  "opponents": {
+    "nicked_v44": {
+      "wins": 41,
+      "draws": 0,
+      "losses": 49,
+      "score": 0.45555555555555555
+    },
+    "ctmes": {
+      "wins": 87,
+      "draws": 0,
+      "losses": 3,
+      "score": 0.9666666666666667
+    },
+    "v6": {
+      "wins": 65,
+      "draws": 0,
+      "losses": 25,
+      "score": 0.7222222222222222
+    },
+    "cpp_leviathan3": {
+      "wins": 59,
+      "draws": 0,
+      "losses": 31,
+      "score": 0.6555555555555556
+    }
+  },
+  "per_map_wins": {
+    "Autarky": "23/24",
+    "Colosseum": "20/24",
+    "Devil": "21/24",
+    "Portals": "16/24",
+    "Prisoners_Dilemma": "18/24",
+    "Slithery_Fight": "9/24",
+    "Trauma": "18/24",
+    "arena": "22/24",
+    "big_empty": "13/24",
+    "default": "12/24",
+    "default_small": "19/24",
+    "queen_of_spades": "8/24",
+    "schooltime": "17/24",
+    "stronghold": "17/24",
+    "trophy": "19/24"
+  }
+}

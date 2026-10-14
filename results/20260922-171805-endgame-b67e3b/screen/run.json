@@ -1,0 +1,67 @@
+{
+  "time": "2026-09-22 17:18:05",
+  "git": "8e1000d+dirty",
+  "python": "3.14.2",
+  "unswbc": "0.3.10",
+  "engine": "5412052f33ddb160",
+  "bots": {
+    "perpetual": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-171805-endgame-b67e3b\\bots\\perpetual",
+      "hash": "853bbe8b5fd3db45"
+    },
+    "stop_200": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-171805-endgame-b67e3b\\bots\\stop_200",
+      "hash": "e7155b547b42cff8"
+    },
+    "stop_300": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-171805-endgame-b67e3b\\bots\\stop_300",
+      "hash": "39527c8bf1813514"
+    },
+    "stop_400": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-171805-endgame-b67e3b\\bots\\stop_400",
+      "hash": "7f074fb640b706bf"
+    },
+    "stop_450": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-171805-endgame-b67e3b\\bots\\stop_450",
+      "hash": "2e0e1867b6cf7cda"
+    },
+    "v1": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-171805-endgame-b67e3b\\bots\\v1",
+      "hash": "ffe736af6c14ea33"
+    },
+    "splitter": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-171805-endgame-b67e3b\\bots\\splitter",
+      "hash": "c50e10c521282fec"
+    },
+    "hunter": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-171805-endgame-b67e3b\\bots\\hunter",
+      "hash": "8622139a1a3d64a8"
+    }
+  },
+  "maps": {
+    "Devil_1b2147f4a8a775d2": {
+      "file": "a09e8f2d3bdd1e40",
+      "signature": "1b2147f4a8a775d2"
+    },
+    "Colosseum_3042ccc262f0211a": {
+      "file": "c7549a41ea26600f",
+      "signature": "3042ccc262f0211a"
+    },
+    "big_empty_685baf0e797207b7": {
+      "file": "6cb3b7be72a4e27e",
+      "signature": "685baf0e797207b7"
+    },
+    "queen_of_spades_6cdb74a7a52d715a": {
+      "file": "126d71b464432685",
+      "signature": "6cdb74a7a52d715a"
+    }
+  },
+  "settings": {
+    "seeds": [
+      2000,
+      2001
+    ],
+    "workers": 4,
+    "stage": "screen"
+  }
+}

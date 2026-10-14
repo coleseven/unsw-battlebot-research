@@ -1,0 +1,243 @@
+{
+  "bot": "candidate",
+  "opponent": "nicked",
+  "games": 22,
+  "mean_margin": -0.2931656540138092,
+  "worst_map_margin": -0.8245981594891278,
+  "F": -0.49931519388609114,
+  "map_margin": {
+    "arena": -0.11257633602131362,
+    "big_empty": -0.11430741162971755,
+    "Colosseum": 0.5749106444946963,
+    "default": -0.4385194026543382,
+    "default_small": -0.45712544899014207,
+    "Devil": -0.7688586431383366,
+    "queen_of_spades": -0.8245981594891278,
+    "schooltime": -0.03736692353076056,
+    "stronghold": -0.15881747168274318,
+    "Trauma": -0.31798380231979717,
+    "trophy": -0.5695792391903202
+  },
+  "games_detail": [
+    {
+      "map": "arena",
+      "side": "A",
+      "margin": 0.7044426691241426,
+      "final_share": 1.0,
+      "final_longest_gap": 4,
+      "elimination_round": 264,
+      "outcome": "win",
+      "samples": 50
+    },
+    {
+      "map": "arena",
+      "side": "B",
+      "margin": -0.9295953411667698,
+      "final_share": -1.0,
+      "final_longest_gap": -4,
+      "elimination_round": 64,
+      "outcome": "loss",
+      "samples": 50
+    },
+    {
+      "map": "big_empty",
+      "side": "A",
+      "margin": -0.07309352026902725,
+      "final_share": -0.4670528602461984,
+      "final_longest_gap": -10,
+      "elimination_round": null,
+      "outcome": "loss",
+      "samples": 50
+    },
+    {
+      "map": "big_empty",
+      "side": "B",
+      "margin": -0.15552130299040787,
+      "final_share": -0.44645340751043117,
+      "final_longest_gap": -14,
+      "elimination_round": null,
+      "outcome": "loss",
+      "samples": 50
+    },
+    {
+      "map": "Colosseum",
+      "side": "A",
+      "margin": 0.744820979084452,
+      "final_share": 1.0,
+      "final_longest_gap": 6,
+      "elimination_round": 437,
+      "outcome": "win",
+      "samples": 50
+    },
+    {
+      "map": "Colosseum",
+      "side": "B",
+      "margin": 0.4050003099049407,
+      "final_share": 0.5121951219512195,
+      "final_longest_gap": 10,
+      "elimination_round": null,
+      "outcome": "win",
+      "samples": 50
+    },
+    {
+      "map": "default",
+      "side": "A",
+      "margin": -0.22129579005535255,
+      "final_share": -0.5622317596566524,
+      "final_longest_gap": -9,
+      "elimination_round": null,
+      "outcome": "loss",
+      "samples": 50
+    },
+    {
+      "map": "default",
+      "side": "B",
+      "margin": -0.6557430152533239,
+      "final_share": -0.9656652360515021,
+      "final_longest_gap": -10,
+      "elimination_round": null,
+      "outcome": "loss",
+      "samples": 50
+    },
+    {
+      "map": "default_small",
+      "side": "A",
+      "margin": -0.38255397190906243,
+      "final_share": -1.0,
+      "final_longest_gap": -9,
+      "elimination_round": 444,
+      "outcome": "loss",
+      "samples": 50
+    },
+    {
+      "map": "default_small",
+      "side": "B",
+      "margin": -0.5316969260712218,
+      "final_share": -1.0,
+      "final_longest_gap": -3,
+      "elimination_round": 383,
+      "outcome": "loss",
+      "samples": 50
+    },
+    {
+      "map": "Devil",
+      "side": "A",
+      "margin": -0.6891349185364608,
+      "final_share": -1.0,
+      "final_longest_gap": -8,
+      "elimination_round": 414,
+      "outcome": "loss",
+      "samples": 50
+    },
+    {
+      "map": "Devil",
+      "side": "B",
+      "margin": -0.8485823677402123,
+      "final_share": -1.0,
+      "final_longest_gap": -4,
+      "elimination_round": 144,
+      "outcome": "loss",
+      "samples": 50
+    },
+    {
+      "map": "queen_of_spades",
+      "side": "A",
+      "margin": -0.8613885598206533,
+      "final_share": -1.0,
+      "final_longest_gap": -4,
+      "elimination_round": 205,
+      "outcome": "loss",
+      "samples": 50
+    },
+    {
+      "map": "queen_of_spades",
+      "side": "B",
+      "margin": -0.7878077591576023,
+      "final_share": -1.0,
+      "final_longest_gap": -10,
+      "elimination_round": 477,
+      "outcome": "loss",
+      "samples": 50
+    },
+    {
+      "map": "schooltime",
+      "side": "A",
+      "margin": -0.03665247019909372,
+      "final_share": -0.5118110236220472,
+      "final_longest_gap": -29,
+      "elimination_round": null,
+      "outcome": "loss",
+      "samples": 50
+    },
+    {
+      "map": "schooltime",
+      "side": "B",
+      "margin": -0.0380813768624274,
+      "final_share": -0.4824561403508772,
+      "final_longest_gap": -4,
+      "elimination_round": null,
+      "outcome": "loss",
+      "samples": 50
+    },
+    {
+      "map": "stronghold",
+      "side": "A",
+      "margin": -0.2042865396955468,
+      "final_share": -0.23478260869565218,
+      "final_longest_gap": 1,
+      "elimination_round": null,
+      "outcome": "win",
+      "samples": 50
+    },
+    {
+      "map": "stronghold",
+      "side": "B",
+      "margin": -0.11334840366993953,
+      "final_share": -0.2825112107623318,
+      "final_longest_gap": 1,
+      "elimination_round": null,
+      "outcome": "win",
+      "samples": 50
+    },
+    {
+      "map": "Trauma",
+      "side": "A",
+      "margin": -0.18287561844875447,
+      "final_share": -0.49606299212598426,
+      "final_longest_gap": -8,
+      "elimination_round": null,
+      "outcome": "loss",
+      "samples": 50
+    },
+    {
+      "map": "Trauma",
+      "side": "B",
+      "margin": -0.45309198619083985,
+      "final_share": -0.6086956521739131,
+      "final_longest_gap": -8,
+      "elimination_round": null,
+      "outcome": "loss",
+      "samples": 50
+    },
+    {
+      "map": "trophy",
+      "side": "A",
+      "margin": -0.47842124323770024,
+      "final_share": -0.9295154185022027,
+      "final_longest_gap": -3,
+      "elimination_round": null,
+      "outcome": "loss",
+      "samples": 50
+    },
+    {
+      "map": "trophy",
+      "side": "B",
+      "margin": -0.6607372351429401,
+      "final_share": -0.9665271966527197,
+      "final_longest_gap": -8,
+      "elimination_round": null,
+      "outcome": "loss",
+      "samples": 50
+    }
+  ]
+}

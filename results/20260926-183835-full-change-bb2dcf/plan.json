@@ -1,0 +1,61 @@
+{
+  "question": "Does this unchanged candidate improve across every official map?",
+  "coverage": "all 11 distinct official maps, both sides, every opponent",
+  "seeds": [
+    53001,
+    53002
+  ],
+  "workers": 8,
+  "limits": "unswbc >= 1.1 seeds the engine (pearl spawns) per match, so each seed is a distinct game; the same seed replays identically.",
+  "unswbc": "1.1.0",
+  "candidate_source": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\sparring\\cpp_kraken",
+  "opponent_sources": {
+    "nicked": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\sparring\\nicked",
+    "nicked_v44": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\sparring\\nicked_v44",
+    "v7-base": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\versions\\v7-base"
+  },
+  "source_hashes": {
+    "candidate": "36ff9ea2ece6fcdf",
+    "nicked": "d6dd50765f54f638",
+    "nicked_v44": "5f9efb7e03ba029b",
+    "v7-base": "bec48091e76579a1"
+  },
+  "bot_hashes": {
+    "candidate": "36ff9ea2ece6fcdf",
+    "nicked": "d6dd50765f54f638",
+    "nicked_v44": "5f9efb7e03ba029b",
+    "v7-base": "bec48091e76579a1"
+  },
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-183835-full-change-bb2dcf\\maps\\default_small.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-183835-full-change-bb2dcf\\maps\\trophy.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-183835-full-change-bb2dcf\\maps\\queen_of_spades.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-183835-full-change-bb2dcf\\maps\\default.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-183835-full-change-bb2dcf\\maps\\Devil.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-183835-full-change-bb2dcf\\maps\\stronghold.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-183835-full-change-bb2dcf\\maps\\Trauma.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-183835-full-change-bb2dcf\\maps\\schooltime.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-183835-full-change-bb2dcf\\maps\\big_empty.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-183835-full-change-bb2dcf\\maps\\arena.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-183835-full-change-bb2dcf\\maps\\Colosseum.map"
+  ],
+  "map_hashes": {
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-183835-full-change-bb2dcf\\maps\\default_small.map": "8ac4b2eedcf19f85",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-183835-full-change-bb2dcf\\maps\\trophy.map": "5f1f6b23d6edb944",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-183835-full-change-bb2dcf\\maps\\queen_of_spades.map": "126d71b464432685",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-183835-full-change-bb2dcf\\maps\\default.map": "6bd7abf2ed51a7f6",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-183835-full-change-bb2dcf\\maps\\Devil.map": "a09e8f2d3bdd1e40",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-183835-full-change-bb2dcf\\maps\\stronghold.map": "02455e481fe56e1e",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-183835-full-change-bb2dcf\\maps\\Trauma.map": "dcf39d713c060e5d",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-183835-full-change-bb2dcf\\maps\\schooltime.map": "726c404f3b34b4ed",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-183835-full-change-bb2dcf\\maps\\big_empty.map": "6cb3b7be72a4e27e",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-183835-full-change-bb2dcf\\maps\\arena.map": "b4bab09603289c2d",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260926-183835-full-change-bb2dcf\\maps\\Colosseum.map": "c7549a41ea26600f"
+  },
+  "live_hash": "ffe736af6c14ea33",
+  "runner_hash": "dd723dce2d47ce79",
+  "suite_hash": "d1a93371c8ab935f",
+  "match_hash": "3c7ffb270e5b1416",
+  "local_clock_hash": "7a10c8c778d132f2",
+  "deterministic_v6_clock": true
+}

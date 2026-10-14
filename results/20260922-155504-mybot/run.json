@@ -1,0 +1,44 @@
+{
+  "time": "2026-09-22 15:55:05",
+  "git": "b809acc+dirty",
+  "python": "3.14.2",
+  "unswbc": "0.3.10",
+  "engine": "5412052f33ddb160",
+  "bots": {
+    "mybot": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\mybot",
+      "hash": "ffe736af6c14ea33"
+    },
+    "splitter": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\opponents\\splitter",
+      "hash": "c50e10c521282fec"
+    },
+    "v1": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\versions\\v1",
+      "hash": "ffe736af6c14ea33"
+    }
+  },
+  "maps": {
+    "arena": {
+      "file": "b4bab09603289c2d",
+      "signature": "728547b8376892d9"
+    },
+    "Colosseum": {
+      "file": "c7549a41ea26600f",
+      "signature": "40ea25a274d937f2"
+    },
+    "default": {
+      "file": "6bd7abf2ed51a7f6",
+      "signature": "c14ae35451fc0e61"
+    }
+  },
+  "settings": {
+    "cmd": "eval",
+    "bot": "mybot",
+    "vs": "splitter,v1",
+    "maps": "arena,Colosseum,default",
+    "seeds": 3,
+    "workers": 15,
+    "save_replays": "losses"
+  }
+}

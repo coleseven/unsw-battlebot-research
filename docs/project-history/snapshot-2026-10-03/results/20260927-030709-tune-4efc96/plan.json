@@ -1,0 +1,147 @@
+{
+  "base": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7-b1-bot",
+  "base_hash": "b98a09bab93b8c7c",
+  "params": "params.hpp",
+  "space": {
+    "G_FOOD": {
+      "low": 0.25,
+      "high": 3.0,
+      "scale": [
+        "W_PEARL",
+        "W_MEM_PEARL"
+      ]
+    },
+    "G_SPAWN": {
+      "low": 0.25,
+      "high": 3.0,
+      "scale": [
+        "W_SPAWN"
+      ]
+    },
+    "G_V3": {
+      "low": 0.25,
+      "high": 3.0,
+      "scale": [
+        "W_V3"
+      ]
+    },
+    "G_HUB": {
+      "low": 0.25,
+      "high": 3.0,
+      "scale": [
+        "W_HUB"
+      ]
+    },
+    "G_ATTACK": {
+      "low": 0.25,
+      "high": 3.0,
+      "scale": [
+        "W_ATTACK",
+        "W_TRADE"
+      ]
+    },
+    "G_FEED": {
+      "low": 0.25,
+      "high": 3.0,
+      "scale": [
+        "W_CASH"
+      ]
+    },
+    "G_HEADSAFE": {
+      "low": 0.25,
+      "high": 3.0,
+      "scale": [
+        "W_HEAD_ENEMY",
+        "W_HEAD_TEAM",
+        "W_AHEAD"
+      ]
+    },
+    "G_EXPLORE": {
+      "low": 0.25,
+      "high": 3.0,
+      "scale": [
+        "W_UNSEEN",
+        "W_STALE"
+      ]
+    },
+    "G_DEADEND": {
+      "low": 0.25,
+      "high": 3.0,
+      "scale": [
+        "W_DEADEND",
+        "W_CORRIDOR"
+      ]
+    },
+    "FEED_ROUND": [
+      360,
+      470,
+      "int"
+    ],
+    "SPLIT_UNTIL_LARGE": [
+      200,
+      460,
+      "int"
+    ],
+    "SPLIT_UNTIL_SMALL": [
+      300,
+      480,
+      "int"
+    ]
+  },
+  "start": {
+    "G_FOOD": 1.0,
+    "G_SPAWN": 1.0,
+    "G_V3": 1.0,
+    "G_HUB": 1.0,
+    "G_ATTACK": 1.0,
+    "G_FEED": 1.0,
+    "G_HEADSAFE": 1.0,
+    "G_EXPLORE": 1.0,
+    "G_DEADEND": 1.0,
+    "FEED_ROUND": 410.0,
+    "SPLIT_UNTIL_LARGE": 300.0,
+    "SPLIT_UNTIL_SMALL": 450.0
+  },
+  "base_values": {
+    "W_PEARL": 80.0,
+    "W_MEM_PEARL": 20.0,
+    "W_SPAWN": 30.0,
+    "W_V3": 10.0,
+    "W_HUB": 60.0,
+    "W_ATTACK": 150.0,
+    "W_TRADE": 10.0,
+    "W_CASH": 80.0,
+    "W_HEAD_ENEMY": 60.0,
+    "W_HEAD_TEAM": 60.0,
+    "W_AHEAD": 20.0,
+    "W_UNSEEN": 8.0,
+    "W_STALE": 3.0,
+    "W_DEADEND": 60.0,
+    "W_CORRIDOR": 8.0
+  },
+  "opponents": [
+    "v7-base-bot",
+    "nicked"
+  ],
+  "maps": [
+    "trophy",
+    "queen_of_spades",
+    "default",
+    "Devil",
+    "Trauma",
+    "schooltime",
+    "Autarky",
+    "Prisoners_Dilemma",
+    "Slithery_Fight",
+    "Portals"
+  ],
+  "seed": 81001,
+  "seeds_per_gen": 2,
+  "objective": "aligned",
+  "worst_weight": 0.0,
+  "unswbc": "1.1.0",
+  "popsize": 12,
+  "generations": 20,
+  "sigma": 0.25,
+  "deterministic_v6_clock": true
+}

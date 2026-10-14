@@ -1,0 +1,82 @@
+base: 24/540 games, 29s
+base: 48/540 games, 96s
+base: 72/540 games, 119s
+base: 96/540 games, 168s
+base: 120/540 games, 196s
+base: 144/540 games, 272s
+base: 168/540 games, 293s
+base: 192/540 games, 335s
+base: 216/540 games, 375s
+base: 240/540 games, 415s
+base: 264/540 games, 466s
+base: 288/540 games, 497s
+base: 312/540 games, 523s
+base: 336/540 games, 553s
+base: 360/540 games, 580s
+base: 384/540 games, 629s
+base: 408/540 games, 729s
+base: 432/540 games, 784s
+base: 456/540 games, 913s
+base: 480/540 games, 971s
+base: 504/540 games, 1141s
+base: 528/540 games, 1197s
+base: 540/540 games, 1287s
+sum12: 24/540 games, 31s
+sum12: 48/540 games, 90s
+sum12: 72/540 games, 125s
+sum12: 96/540 games, 174s
+sum12: 120/540 games, 208s
+sum12: 144/540 games, 287s
+sum12: 168/540 games, 309s
+sum12: 192/540 games, 350s
+sum12: 216/540 games, 392s
+sum12: 240/540 games, 435s
+sum12: 264/540 games, 488s
+sum12: 288/540 games, 522s
+sum12: 312/540 games, 546s
+sum12: 336/540 games, 577s
+sum12: 360/540 games, 604s
+sum12: 384/540 games, 658s
+sum12: 408/540 games, 748s
+sum12: 432/540 games, 806s
+sum12: 456/540 games, 929s
+sum12: 480/540 games, 989s
+sum12: 504/540 games, 1141s
+sum12: 528/540 games, 1192s
+sum12: 540/540 games, 1278s
+sum64: 24/540 games, 27s
+sum64: 48/540 games, 87s
+sum64: 72/540 games, 119s
+sum64: 96/540 games, 166s
+sum64: 120/540 games, 196s
+sum64: 144/540 games, 273s
+sum64: 168/540 games, 293s
+sum64: 192/540 games, 335s
+sum64: 216/540 games, 373s
+sum64: 240/540 games, 413s
+sum64: 264/540 games, 464s
+sum64: 288/540 games, 495s
+sum64: 312/540 games, 520s
+sum64: 336/540 games, 550s
+sum64: 360/540 games, 577s
+sum64: 384/540 games, 630s
+sum64: 408/540 games, 729s
+sum64: 432/540 games, 789s
+sum64: 456/540 games, 911s
+sum64: 480/540 games, 971s
+sum64: 504/540 games, 1126s
+sum64: 528/540 games, 1175s
+sum64: 540/540 games, 1262s
+# Ablation report: 20260930-161837-ablate-05467d
+
+3 seeds, opponents cpp_nicked_v92, cpp_nicked_v75, cpp_leviathan3, v7-base-bot, nicked_v44, nicked_lab; 11 official + 4 extra maps, both sides. Objective: aligned. Delta = variant score minus base score on the same (opponent, map, seed, side); positive means removing the group helped. 95% CI resamples (map, seed) blocks.
+
+base: mean margin +0.127, wins 323/540; by opponent: cpp_nicked_v92 -0.506, cpp_nicked_v75 -0.105, cpp_leviathan3 +0.535, v7-base-bot +0.472, nicked_v44 +0.441, nicked_lab -0.075
+
+| variant | current pool delta [95% CI] | pool verdict | other maps | delta all 15 [95% CI] | verdict | vs cpp_nicked_v92 | vs cpp_nicked_v75 | vs cpp_leviathan3 | vs v7-base-bot | vs nicked_v44 | vs nicked_lab | official | extra | wins |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| sum12 | -0.017 [-0.050, +0.024] | neutral | +0.009 | -0.008 [-0.035, +0.019] | neutral | +0.049 | -0.051 | +0.027 | -0.036 | -0.031 | -0.007 | -0.017 | +0.016 | 322/540 |
+| sum64 | -0.030 [-0.064, +0.008] | neutral | -0.003 | -0.021 [-0.049, +0.007] | neutral | +0.038 | -0.054 | +0.030 | -0.049 | -0.068 | -0.024 | -0.038 | +0.026 | 316/540 |
+
+Noise: seed-to-seed SD of base's margin within a (opponent, map, side) cell 0.589 over 180 cells. Expected paired CI half-width with K seeds, 1.96 * sqrt(2 * 0.589^2 / (180 * K)): K=2: 0.086, K=3: 0.070, K=4: 0.061, K=6: 0.050, K=8: 0.043
+

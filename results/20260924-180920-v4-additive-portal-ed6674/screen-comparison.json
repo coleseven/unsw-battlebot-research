@@ -1,0 +1,37 @@
+{
+  "scores": {
+    "additive_vs_v3": {
+      "wins": 10,
+      "draws": 0,
+      "losses": 10,
+      "score": 0.5
+    },
+    "portal_vs_v3": {
+      "wins": 8,
+      "draws": 0,
+      "losses": 12,
+      "score": 0.4
+    },
+    "portal_vs_additive_stress": {
+      "wins": 1,
+      "draws": 0,
+      "losses": 1,
+      "score": 0.5
+    }
+  },
+  "paired_vs_v3_delta": {
+    "difference": -0.1,
+    "map_cluster_ci95": [
+      -0.4,
+      0.2
+    ],
+    "paired_block_ci95": [
+      -0.3,
+      0.15
+    ],
+    "maps": 5,
+    "blocks": 10,
+    "matched_games": 20
+  },
+  "is_promotion": false
+}

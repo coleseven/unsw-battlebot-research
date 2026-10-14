@@ -1,0 +1,29 @@
+{
+  "teacher": "cpp_nicked_v92",
+  "opponents": [
+    "versions/v10h",
+    "sparring/cpp_nicked_v75",
+    "sparring/cpp_leviathan3",
+    "sparring/nicked_lab",
+    "results/v7-base-bot"
+  ],
+  "maps": [
+    "default_small",
+    "trophy",
+    "queen_of_spades",
+    "default",
+    "Devil",
+    "stronghold",
+    "Trauma",
+    "schooltime",
+    "big_empty",
+    "arena",
+    "Colosseum",
+    "Autarky",
+    "Prisoners_Dilemma",
+    "Slithery_Fight",
+    "Portals"
+  ],
+  "seeds": 2,
+  "seed": 291001
+}

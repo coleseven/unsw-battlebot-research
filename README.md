@@ -1,133 +1,54 @@
 # UNSW Battlecode — team 777
 
-Competition: https://game.battlecode.au (21 Sep – 17 Oct 2026). Rules: https://game.battlecode.au/docs
+Development and research archive of a solo UNSW Battlecode 2026 bot: Python heuristics, a learned linear movement ranker, a C++ port, CMA-ES tuning, queen tactics, and the experiments that succeeded or failed.
 
-## Best tested local candidate
+**Publication edition: 14 October 2026.** Development snapshot: `a979c15` (12 October). Latest adopted local bot: **v12z**, hash `5a2c6685c062fff3`. Live snapshots stop on October 12; they are not a current leaderboard check. Top 100 was the objective, not a verified final achievement.
 
-**Upload candidate (28 Sep): `versions/v10` (`battlebot-v10.zip`, hash `c1fbdb633f1627e3`)**:
-v9 plus the sonar king beacon and big-dragon feeding (`CPP_KING_BEACON`,
-`CPP_BIG_FEED`). Vs v9, paired: +0.085 [+0.032, +0.138] (237 vs 210 of 360)
-against nicked v75 / leviathan3 / v7-base / nicked v44; held out (nicked_lab,
-v6, ctmes) +0.036 [+0.003, +0.073] (207 vs 198 of 270). Judge sandbox max
-7.6M points. See FEATURE_EXPERIMENT.md.
+## Start here
 
-**Upload candidate (28 Sep): `versions/v9` (`battlebot-v9.zip`, hash `7bad14b4e4fd110b`)**,
-the C++ bot with the v8 features (portal book for all 15 ranked maps, age-based
-portal scouting on, trap weight by local tightness) and the weights of the v9
-tuning run's generation-5 distribution mean. Held out (nicked v44, nicked_lab,
-Python v6; 15 maps, both sides, 3 seeds, paired with the live v7-base): 153 vs
-124 wins, +0.174 [+0.083, +0.265] aligned; current pool +0.187 [+0.088,
-+0.290]; even with nicked v44. Judge sandbox max 7.3M points. See
-FEATURE_EXPERIMENT.md.
+- [Project writeup](PROJECT_WRITEUP.md): the complete narrative, versions, experiments, outcomes, and suggested replay/video sequence.
+- [Audited history](PROJECT_HISTORY.md): detailed chapters, original reports, run registers, and provenance. The original October 3 snapshot is preserved and extended by a later chapter.
+- [Experiment log](FEATURE_EXPERIMENT.md): results through D22 and the October 12 head-to-head check.
+- [Research continuation](NEXT_STEPS_2026-10-14.md): completion of the interrupted review, reconciled with work that subsequently landed.
+- [Publication contents and restoration](PUBLICATION.md): Git contents, release data, checksums, and exclusions.
 
-**Recommended upload: `versions/v7-base` (`battlebot-v7-base.zip`)**, the
-untuned C++ port of v6.1. On unswbc 1.1.0 with 3 seeds it beats v6 43/66 and
-matches or beats the tuned `versions/v7` (whose single-seed gain was noise).
-See V7_EXPERIMENT.md, "unswbc 1.1.0 re-check".
+## Final local result
 
-`versions/v7` (hash `b033b4202f624d25`, upload package `battlebot-v7.zip`) is
-the C++ port of v6.1 with CMA-ES-tuned weights (tune `20260926-001535-tune-79f3f9`,
-gen 7 c05: N_SEARCH 357, DEPTH_MAX 12, all section-5 switches off). Over all 11
-maps and both sides it scored 14/22 vs nicked v44, 20/22 vs ctmes, 15/22 vs v6
-and 12/22 vs the untuned C++ bot (untuned: 9, 21, 16 of 22). Judge sandbox CPU
-max 7.0M of 100M. See [V7_EXPERIMENT.md](V7_EXPERIMENT.md), section "Tuned release".
+v12z retains v12x's exploration and small-map opening changes, adding sprint queen attacks, paid queen escape, and the trapped-worker queen-sparing rule. D22: **741/1,224 wins versus 671/1,224** for v12x, **+5.7 percentage points**, reported interval **[+2.4, +9.1]**. A separate October 12 direct comparison was **91/136 for v12z**, over 17 maps, both sides, and four fresh seeds. Recorded sandbox maximum: **12.4 million CPU points per dragon-turn**, against a 100-million limit. These are local results, not estimated ladder gains.
 
-Previous: `versions/v6` (hash `4959b003957277f5`, upload package `battlebot-v6.zip`) is
-the search-core bot: per-dragon map memory, one bounded search score per move
-with an even per-move CPU budget, founder/long-dragon kings and late feeding.
-Under the judge-calibrated local clock (`BCSIM_DETERMINISTIC_V6=1`) it scored,
-over all 11 maps and both sides: 21/22 against live v4, v3 and ctmes, 16/22
-against the previous v6 and nicked v34, and 8/22 against nicked v44. The
-22-game judge CPU suite passed (max 81.9M of 100M points). The live ladder bot
-is v4 (submission 5204) until v6 is uploaded. See
-[V6_EXPERIMENT.md](V6_EXPERIMENT.md) for the full log, and
-[TOP_TEAMS_SCOUTING.md](TOP_TEAMS_SCOUTING.md) and
-[COMPETITOR_RESEARCH.md](COMPETITOR_RESEARCH.md) for the research behind it.
-
-`cppbot/` is a 1:1 C++ port of the v6 core (V7): it plays v6 move-for-move but
-uses about 7M of the judge's 100M CPU points per turn instead of ~80M, leaving
-the budget free for a deeper search. Its data headers are generated from the
-Python single source with `python -m bcsim.gen_cpp`, and `python -m
-bcsim.parity` proves the two implementations pick identical actions. See
-[V7_CPP_PORT_PLAN.md](V7_CPP_PORT_PLAN.md) and
-[V7_EXPERIMENT.md](V7_EXPERIMENT.md).
+The October 12 live snapshot was rank **153 of 1,001**, rating **1604**, with rank 100 at **1813**. The inferred v12z-era five-game-battle cohort won **948/1,995** against opponents averaging **1632**. Deployment was inferred from timing and behavior, not verified against a server hash. New maps and different opponents limit local/live comparisons. See the writeup for cohort caveats.
 
 ## Layout
 
-| path | what |
+| Path | Contents |
 |---|---|
-| `mybot/` | **our bot** — edit `brain.py`. Submit with `unswbc submit mybot` |
-| `framework/` | shared source: `bc.py` (parser + `Brain` base), `tactics.py`, `features.py`. Edit here, then `python -m bcsim.sync` copies it into every bot |
-| `opponents/` | sparring bots: `wanderer`, `greedy`, `hunter`, `splitter`, `turtle`, plus the official helper-based `starter` |
-| `versions/` | frozen snapshots of mybot (`v1`, `v2`, …) to test new versions against |
-| `maps/` | bundled maps; `maps/server/` = extra maps harvested from ranked games |
-| `bcsim/` | tooling (below) |
-| `data/` | scraped replays, `index.jsonl`, new `dataset_v2/` shards; legacy `dataset/` retained (git-ignored) |
-| `results/` | arena outputs (git-ignored) |
+| `versions/` | Frozen bots, parameters, models and version notes |
+| `cppbot/`, `cppbot_inproc/` | C++ working core and evaluation bridge |
+| `framework/`, `mybot/`, `opponents/` | Python framework and project-created opponents |
+| `bcsim/` | Replay reconstruction, datasets, evaluation, optimization and guarded runners |
+| `experiments/`, `maps/` | Feature/tuning configurations and historical evaluation maps |
+| `results/` | Plans, reports, outcome rows, diagnostics and experiment snapshots |
+| `data/`, `replays/` | Corpus metadata; bulky data restored from release assets |
+| `showcase/` | Illustration scripts/tables and separately archived replays |
+| `docs/project-history/` | Audited history and preserved evidence |
+| `battlebot-*.zip` | Original retained submission packages |
 
-## Writing a bot
+## Reproduction boundaries
 
-A bot is `class Brain(bc.Brain)` with `turn(self, obs) -> "MOVE N" | "MOVE NNE" | "SPLIT 3"`.
-One instance per dragon; keep all state on `self` (dragons share no memory on the judge).
-`obs` is a `bc.Obs`: 7×7 window, cells `k = row*7 + col`, head at `bc.CENTER`;
-`obs.occ[k]`, `obs.pearl[k]`, `obs.pearl_in[k]`, `obs.edge(k, d)`, `obs.passable(k, d)`, `obs.bfs()`.
-Extra output lines (SONAR, INDICATOR, LOG, DOT) go in `self.extra`.
+The project spans incompatible rules/runtime versions. Keep old longest-dragon tests, seeded 1.1.0 tests, and queen-era 1.2.9 tests separate. Map lists called “current” in code refer to the sampled October 3 rotation; more maps appeared later.
 
-## Testing (all 11 official maps)
+Use each run's frozen plan and parameters. Do not replace tuned frozen parameters with working-template defaults. Reports and outcome files can be inspected without new matches. A fresh machine needs Python, the relevant `unswbc` dependencies, and a C++ compiler. Some scripts retain original machine paths. In-process evaluation does not measure judge CPU cost.
 
-```
-python -m bcsim.full_change_test --prepare --candidate mybot --vs versions/v3 opponents/splitter
-python -m bcsim.full_change_test results/<printed-run-directory> --screen
-python -m bcsim.arena eval mybot --maps all --vs v3,splitter --seeds 1
-python -m bcsim.arena tournament mybot v2 v1 splitter     # round robin + Elo table
-python -m bcsim.arena freeze                              # snapshot mybot -> versions/vN
+The queen launcher expects `unswbc==1.2.9` under `results/queen-runtime-packages/1.2.9/`. After configuring Python and dependencies:
+
+```text
+python -m pip install --no-deps --target results/queen-runtime-packages/1.2.9 unswbc==1.2.9
 ```
 
-Every bot-change comparison, even one targeting a single map, must include
-both sides of Default Small, Trophy, Queen Of Spades, Default, Devil,
-stronghold, Trauma, Schooltime, Big Empty, Arena, and Colosseum. The frozen
-`full_change_test` runner enforces this, saves replays, and uses eight workers
-by default on this host (the measured memory-safe full-suite setting), with guarded
-workers by default (bounded RSS and available-RAM checks). Small diagnostic
-screens are useful for debugging but cannot establish an improvement. Repeated
-bot RNG seeds do not independently reseed the map engine for deterministic
-bots; use distinct maps and opponents instead of counting duplicate replays.
+This installs only the isolated package, not its dependencies or compiler. See [official CLI documentation](https://game.battlecode.au/docs/cli) and the historical setup notes. External opponent sources without redistribution permission are referenced, not included.
 
-Framework bots run in-process. Other bots
-(C++, the helper-based starter) run one process per dragon, like `unswbc run`: faithful but slow.
-Losing games' replays are saved under `results/…/replays/` — open them in VS Code.
+Use guarded runners and one heavy job at a time. The original machine used at most 12 workers after memory failures; other machines need their own safe limit. The 132 single-seed showcase games illustrate mechanisms and are not strength evidence.
 
-In-process runs don't measure the judge's CPU budget (100M points/turn). Check with:
-`unswbc run maps/default.map mybot opponents/splitter --sandbox`
+## Rights
 
-## Data
-
-```
-python -m bcsim.scrape --pages 200 --min-elo 1650 --max-battles 600   # public ranked games (incremental)
-python -m bcsim.dataset --limit 5 --workers 2                         # small V2 conversion check
-python -m bcsim.dataset --workers 2                                  # replays -> data/dataset_v2/*.npz
-python -m bcsim.dataset --partition data/dataset_v2/battles-v1.json   # freeze battle-grouped train/validation/test sets
-python -m bcsim.reconstruct                                          # self-test: rebuilt turns == real turns
-```
-
-Downloaded ranked replays (`replays/`, .zip bundles or .replay files) have a
-compact report tool; start any match analysis here instead of reading replays:
-
-```
-python -m bcsim.analyze                         # all of replays/: per-game table, us-vs-them aggregate, flags
-python -m bcsim.analyze replays/mygames --maps  # one folder, plus a per-map breakdown
-python -m bcsim.analyze --game M120441          # one game: timeline, deaths by cause, split sizes, CPU
-python -m bcsim.analyze --json games.json       # all per-game stats as JSON
-```
-
-Our side is auto-detected (the site only records our submission name and CPU);
-otherwise games are compared winner vs loser. Results are cached by content hash.
-
-`bcsim.replay` decodes any .replay (local or server). `bcsim.reconstruct` rebuilds each
-dragon's exact round block from a replay (verified identical on ~39k turns), and
-`framework/features.py` encodes it. See [DATASET_V2.md](DATASET_V2.md) for the new
-lossless sprint labels, exact auxiliary observation fields, versioned caches,
-grouped partitions, and `iter_batches()` training examples. The full corpus is
-tens of millions of turns: stream selected columns and sample deliberately.
-`load_all()` is restricted to small fixed-column samples. Existing V1 shards are
-preserved but must be rebuilt from raw replays to recover full sprint paths.
+Public availability does not assign one license to every component. See [third-party notices](THIRD_PARTY_NOTICES.md). No new project-wide license is asserted. Original third-party notices and redistribution restrictions are retained.

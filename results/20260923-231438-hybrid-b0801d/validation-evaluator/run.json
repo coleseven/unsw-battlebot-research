@@ -1,0 +1,84 @@
+{
+  "time": "2026-09-24 09:31:20",
+  "git": "8e1000d+dirty",
+  "python": "3.14.2",
+  "unswbc": "0.3.10",
+  "engine": "5412052f33ddb160",
+  "bots": {
+    "linear": {
+      "path": "results\\20260923-231438-hybrid-b0801d\\bots\\linear",
+      "hash": "69382825b699723d"
+    },
+    "reference_v2": {
+      "path": "results\\20260923-231438-hybrid-b0801d\\bots\\reference_v2",
+      "hash": "9f29ab4138b51d26"
+    },
+    "splitter": {
+      "path": "results\\20260923-231438-hybrid-b0801d\\bots\\splitter",
+      "hash": "c50e10c521282fec"
+    },
+    "hunter": {
+      "path": "results\\20260923-231438-hybrid-b0801d\\bots\\hunter",
+      "hash": "8622139a1a3d64a8"
+    }
+  },
+  "maps": {
+    "arena_728547b8376892d9": {
+      "file": "707cbffebdb4a648",
+      "signature": "728547b8376892d9"
+    },
+    "big_empty_685baf0e797207b7": {
+      "file": "8183641362aab7e9",
+      "signature": "685baf0e797207b7"
+    },
+    "Colosseum_3042ccc262f0211a": {
+      "file": "c49518b65561b5d8",
+      "signature": "3042ccc262f0211a"
+    },
+    "default_afc3707a967881d6": {
+      "file": "8cbd2473c772cb2d",
+      "signature": "afc3707a967881d6"
+    },
+    "default_small_f98ab391cccf33b1": {
+      "file": "b1f09be73e876dce",
+      "signature": "f98ab391cccf33b1"
+    },
+    "queen_of_spades_6cdb74a7a52d715a": {
+      "file": "bf9886dc024dc300",
+      "signature": "6cdb74a7a52d715a"
+    },
+    "schooltime_8be7eda86910a849": {
+      "file": "448616c71781d224",
+      "signature": "8be7eda86910a849"
+    },
+    "trophy_fd985019831fe135": {
+      "file": "3dffb977ef762e7c",
+      "signature": "fd985019831fe135"
+    },
+    "Devil_1b2147f4a8a775d2": {
+      "file": "a7e7720c817738ac",
+      "signature": "1b2147f4a8a775d2"
+    },
+    "stronghold_fb60e37176a8d1d3": {
+      "file": "88b0f451cc44c7dc",
+      "signature": "fb60e37176a8d1d3"
+    },
+    "Trauma_d014b28abbd1abb0": {
+      "file": "c1977dce278badd5",
+      "signature": "d014b28abbd1abb0"
+    }
+  },
+  "settings": {
+    "seeds": [
+      29000,
+      29001,
+      29002,
+      29003,
+      29004,
+      29005,
+      29006,
+      29007
+    ],
+    "workers": 4
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "counts": {
+    "games": 240,
+    "verified_candidate_turns": 2201606,
+    "splits": 42321,
+    "late_splits": 0,
+    "portal_moves": 1826,
+    "portal_own_turn_deaths": 476,
+    "visible_empty_portal_moves": 0,
+    "portal_overrides": 1222,
+    "override_survived_own_turn": 889,
+    "redirect_existing_portal": 0
+  },
+  "samples": {
+    "long": {
+      "score": 25,
+      "init": "ID 43\nTEAM A\nMAP 32 32\nUNIT_LIMIT 64\n",
+      "id": 43,
+      "round": 489,
+      "block": "ROUND 489\nDIR N\nLENGTH 25\nUNIT_COUNT 17\nNUM_MSGS 0\n22 25 0 3255\n23 25 0 1638\n24 25 0 2772\n25 25 0 1\n26 25 0 109\n27 25 0 75\n28 25 0 77\n22 26 0 1419\n23 26 0 1256\n24 26 0 2903\n25 26 0 98\n26 26 0 2086\n27 26 0 227\n28 26 0 93\n22 27 0 2226\n23 27 0 2323\n24 27 0 2031\n25 27 0 97\n26 27 0 9\n27 27 0 55\n28 27 0 87\n22 28 0 1957\n23 28 0 488\n24 28 0 2980\n25 28 0 180\n26 28 0 93\n27 28 0 80\n28 28 0 1067\n22 29 0 47\n23 29 0 1407\n24 29 0 2591\n25 29 0 237\n26 29 0 167\n27 29 0 145\n28 29 0 28\n22 30 0 3392\n23 30 0 621\n24 30 0 179\n25 30 0 2260\n26 30 0 1916\n27 30 0 2343\n28 30 0 1045\n22 31 0 57\n23 31 0 3447\n24 31 0 2077\n25 31 0 489\n26 31 0 239\n27 31 0 3183\n28 31 0 2055\nDRAGON_BODIES 23\nA 43 25 25 E 0\nA 43 26 25 E 0\nA 43 27 25 E 0\nA 43 28 25 E 0\nA 43 25 26 N 0\nA 43 27 26 S 0\nA 43 28 26 W 0\nA 43 25 27 N 0\nA 43 26 27 W 0\nA 43 27 27 E 0\nA 43 28 27 E 0\nA 43 25 28 N 1\nA 43 26 28 N 0\nA 43 27 28 W 0\nB 62 22 29 E 1\nA 43 25 29 N 0\nA 43 26 29 W 0\nA 43 27 29 W 0\nA 43 28 29 W 0\nB 9 25 30 E 0\nB 9 26 30 E 0\nB 9 27 30 E 0\nB 9 28 30 E 1\n. . . w w w w\n. . . . . . .\n. . . . . . .\n. . . . . 1 .\n. . . . . . .\n. . . w w w w\n. . . . . . .\n. . . . . . .\n. . . w . . . .\n. . . w . . . .\n. . . w . . . .\n. . . w . . . .\n. . . w . . . .\n. . . . . . . .\n. . . . . . . .\n",
+      "source": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-085446-portal-9297e0\\validation\\replays\\portal_escape-vs-reference_v2-default_afc3707a967881d6-s17020.replay"
+    },
+    "dense": {
+      "score": 40,
+      "init": "ID 424\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n",
+      "id": 424,
+      "round": 481,
+      "block": "ROUND 481\nDIR S\nLENGTH 8\nUNIT_COUNT 17\nNUM_MSGS 0\n2 6 0 166\n3 6 0 17\n4 6 0 8\n5 6 0 44\n6 6 0 10\n7 6 0 3\n8 6 0 70\n2 7 0 20\n3 7 0 21\n4 7 0 19\n5 7 0 53\n6 7 0 26\n7 7 0 14\n8 7 0 29\n2 8 0 50\n3 8 0 21\n4 8 0 19\n5 8 0 76\n6 8 0 46\n7 8 0 29\n8 8 0 14\n2 9 0 103\n3 9 0 61\n4 9 0 19\n5 9 0 43\n6 9 0 20\n7 9 0 70\n8 9 0 3\n2 10 0 99\n3 10 0 13\n4 10 0 70\n5 10 0 57\n6 10 0 21\n7 10 0 80\n8 10 0 15\n2 11 0 77\n3 11 0 5\n4 11 0 61\n5 11 0 40\n6 11 0 45\n7 11 0 8\n8 11 0 35\n2 12 0 3\n3 12 0 10\n4 12 0 42\n5 12 0 2\n6 12 0 3\n7 12 0 46\n8 12 0 4\nDRAGON_BODIES 40\nA 419 4 6 S 0\nA 424 5 6 E 0\nA 424 6 6 S 0\nA 417 7 6 N 1\nA 414 8 6 N 0\nB 338 2 7 S 0\nA 419 3 7 S 0\nA 419 4 7 W 0\nA 424 5 7 S 0\nA 424 6 7 W 0\nA 417 7 7 N 0\nA 417 8 7 W 0\nB 338 2 8 W 0\nA 419 3 8 S 0\nA 424 5 8 S 0\nA 301 6 8 S 0\nA 301 7 8 W 0\nA 390 2 9 N 1\nA 419 3 9 S 0\nA 424 5 9 S 1\nA 301 6 9 E 0\nA 301 7 9 S 0\nA 390 2 10 N 0\nA 419 3 10 S 1\nA 301 5 10 W 1\nA 301 6 10 W 0\nA 301 7 10 W 0\nA 393 8 10 E 0\nA 390 2 11 N 0\nA 380 3 11 S 0\nA 380 5 11 E 0\nA 380 6 11 E 0\nA 380 7 11 S 0\nA 393 8 11 N 0\nA 390 2 12 N 0\nA 380 3 12 E 0\nA 380 4 12 E 0\nA 380 5 12 N 0\nA 380 6 12 W 1\nA 380 7 12 W 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. w w w . 2 3\n. . . . . . . .\n. 0 . . . . . .\n. 1 . . . . . .\n. . . . . . . .\n. w . . . . . .\n. w . . . . . .\n. w . . . . . .\n",
+      "source": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-085446-portal-9297e0\\validation\\replays\\portal_escape-vs-reference_v2-Colosseum_3042ccc262f0211a-s17021.replay"
+    },
+    "enemy_heads": {
+      "score": 14,
+      "init": "ID 92\nTEAM A\nMAP 16 16\nUNIT_LIMIT 64\n",
+      "id": 92,
+      "round": 212,
+      "block": "ROUND 212\nDIR E\nLENGTH 3\nUNIT_COUNT 19\nNUM_MSGS 0\n5 6 0 18\n6 6 0 40\n7 6 0 86\n8 6 0 17\n9 6 0 40\n10 6 0 33\n11 6 0 7\n5 7 0 89\n6 7 0 25\n7 7 0 63\n8 7 0 38\n9 7 0 59\n10 7 0 81\n11 7 0 9\n5 8 0 81\n6 8 0 59\n7 8 0 38\n8 8 0 63\n9 8 0 25\n10 8 0 89\n11 8 0 64\n5 9 0 33\n6 9 0 40\n7 9 0 17\n8 9 0 86\n9 9 0 40\n10 9 0 18\n11 9 0 33\n5 10 0 7\n6 10 0 11\n7 10 0 24\n8 10 0 23\n9 10 0 10\n10 10 0 1\n11 10 0 32\n5 11 0 26\n6 11 0 24\n7 11 0 2\n8 11 0 9\n9 11 0 5\n10 11 0 33\n11 11 0 12\n5 12 0 27\n6 12 0 3\n7 12 0 74\n8 12 0 33\n9 12 0 22\n10 12 0 6\n11 12 0 49\nDRAGON_BODIES 29\nB 141 5 6 W 1\nB 141 6 6 W 0\nB 127 7 6 S 1\nB 15 8 6 S 1\nB 108 9 6 N 1\nB 119 10 6 S 1\nB 130 11 6 E 0\nB 120 5 7 N 1\nB 108 9 7 N 0\nB 142 10 7 S 0\nB 50 11 7 S 0\nB 120 5 8 N 0\nB 137 6 8 S 0\nB 142 10 8 S 1\nB 50 11 8 S 1\nB 137 6 9 S 1\nA 92 7 9 E 0\nA 92 8 9 E 1\nB 136 5 10 E 0\nB 136 6 10 E 1\nA 92 7 10 N 0\nB 117 9 10 W 1\nB 117 10 10 W 0\nB 134 5 11 W 0\nB 138 7 11 S 0\nB 110 8 11 W 1\nB 110 9 11 W 0\nB 74 5 12 E 1\nB 138 7 12 S 1\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\nw . 2 3 . w w\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n",
+      "source": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-085446-portal-9297e0\\validation\\replays\\portal_escape-vs-reference_v2-Colosseum_3042ccc262f0211a-s17006.replay"
+    },
+    "population": {
+      "score": 64,
+      "init": "ID 741\nTEAM A\nMAP 60 40\nUNIT_LIMIT 64\n",
+      "id": 741,
+      "round": 375,
+      "block": "ROUND 375\nDIR W\nLENGTH 2\nUNIT_COUNT 64\nNUM_MSGS 0\n41 6 0 -1\n42 6 0 -1\n43 6 0 -1\n44 6 0 -1\n45 6 0 -1\n46 6 0 -1\n47 6 0 -1\n41 7 0 -1\n42 7 0 -1\n43 7 0 -1\n44 7 0 -1\n45 7 0 -1\n46 7 0 -1\n47 7 0 -1\n41 8 0 20\n42 8 0 24\n43 8 0 18\n44 8 0 2\n45 8 0 -1\n46 8 0 -1\n47 8 0 -1\n41 9 0 23\n42 9 0 -1\n43 9 0 10\n44 9 0 24\n45 9 0 13\n46 9 0 -1\n47 9 0 -1\n41 10 0 29\n42 10 0 2\n43 10 0 9\n44 10 0 4\n45 10 0 9\n46 10 0 2\n47 10 1 -1\n41 11 0 7\n42 11 0 3\n43 11 0 29\n44 11 0 56\n45 11 0 17\n46 11 0 50\n47 11 0 37\n41 12 0 -1\n42 12 0 -1\n43 12 0 -1\n44 12 0 -1\n45 12 0 -1\n46 12 0 -1\n47 12 0 -1\nDRAGON_BODIES 14\nB 491 46 6 W 1\nB 491 47 6 W 0\nA 691 41 8 S 0\nA 691 42 8 W 0\nB 653 46 8 N 1\nA 691 41 9 W 0\nA 741 44 9 W 1\nA 741 45 9 W 0\nB 653 46 9 N 0\nA 751 43 10 W 1\nA 751 44 10 W 0\nA 677 42 12 W 1\nA 677 43 12 W 0\nA 677 44 12 W 0\n. . . . . . .\n. . . . . . .\nw w w w . . .\n. w . . w . .\n. w . . . w .\n. . . . . . w\nw w w w w w w\nw . . . . . .\n. . . . . . . .\n. . . . . . . .\nw . . . w . . .\n. w w . . w . .\n. . . . . . w w\nw . . . . . . .\n. 8 . . . . . w\n",
+      "source": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-085446-portal-9297e0\\validation\\replays\\portal_escape-vs-reference_v2-schooltime_8be7eda86910a849-s17001.replay"
+    },
+    "portal_override": {
+      "score": 14,
+      "id": 417,
+      "round": 491,
+      "block": "ROUND 491\nDIR W\nLENGTH 14\nUNIT_COUNT 6\nNUM_MSGS 0\n4 10 0 60\n5 10 0 47\n6 10 0 11\n7 10 0 70\n8 10 0 5\n9 10 0 88\n10 10 0 8\n4 11 0 51\n5 11 0 30\n6 11 0 35\n7 11 1 88\n8 11 1 25\n9 11 0 97\n10 11 0 5\n4 12 0 32\n5 12 0 24\n6 12 0 41\n7 12 0 36\n8 12 1 54\n9 12 0 14\n10 12 0 88\n4 13 0 79\n5 13 0 152\n6 13 0 13\n7 13 0 106\n8 13 0 113\n9 13 0 125\n10 13 0 64\n4 14 0 143\n5 14 0 129\n6 14 0 75\n7 14 0 11\n8 14 0 217\n9 14 0 25\n10 14 0 117\n4 15 0 177\n5 15 0 53\n6 15 0 47\n7 15 0 80\n8 15 0 71\n9 15 0 50\n10 15 0 23\n4 0 0 60\n5 0 0 23\n6 0 0 50\n7 0 0 71\n8 0 0 80\n9 0 0 47\n10 0 0 53\nDRAGON_BODIES 28\nB 412 4 10 W 0\nA 403 6 10 E 0\nA 403 7 10 E 0\nA 403 8 10 N 0\nB 417 9 10 S 0\nB 411 4 11 W 0\nB 411 5 11 W 0\nB 417 9 11 E 0\nB 417 10 11 E 0\nB 411 4 12 E 1\nB 411 5 12 N 0\nB 411 6 12 W 0\nB 417 9 12 S 0\nB 417 10 12 W 0\nB 411 6 13 N 0\nB 417 7 13 W 1\nB 417 8 13 W 0\nB 417 9 13 W 0\nA 332 5 14 W 1\nA 332 6 14 W 0\nA 332 7 14 W 0\nA 356 8 14 W 1\nA 356 9 14 W 0\nA 332 7 15 N 0\nA 356 9 15 N 0\nA 414 4 0 S 0\nA 332 7 0 N 0\nA 356 9 0 N 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\nw w . 2 3 . w\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n",
+      "init": "ID 417\nTEAM B\nMAP 16 16\nUNIT_LIMIT 64\n",
+      "source": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-085446-portal-9297e0\\validation\\replays\\reference_v2-vs-portal_escape-Colosseum_3042ccc262f0211a-s17001.replay"
+    }
+  },
+  "hash": "f972d364f8744605"
+}

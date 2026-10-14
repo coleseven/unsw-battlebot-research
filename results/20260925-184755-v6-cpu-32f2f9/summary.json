@@ -1,0 +1,20 @@
+{
+  "games_done": 1,
+  "games_expected": 22,
+  "pass": false,
+  "rows": [
+    {
+      "map": "default_small",
+      "side": "A",
+      "max_points": 81036511,
+      "p99_points": 57392102,
+      "first_turn_max_points": 73493992,
+      "soft_guard_logs": 0,
+      "hard_fallback_logs": 0,
+      "cpu_or_bot_errors": 0,
+      "invalid_action_deaths": 0,
+      "intentional_feed_deaths": 45,
+      "exception": null
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+full: 24/264 games, 99s
+full: 48/264 games, 231s
+full: 72/264 games, 297s
+full: 96/264 games, 350s
+full: 120/264 games, 439s
+full: 144/264 games, 506s
+full: 168/264 games, 581s
+full: 192/264 games, 684s
+full: 216/264 games, 734s
+full: 240/264 games, 791s
+full: 264/264 games, 864s
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\full_change_test.py", line 119, in <module>
+    screen(args.experiment)
+    ~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\full_change_test.py", line 100, in screen
+    f.write(map_matrix.render(games, "candidate", list(plan["opponent_sources"]),
+            ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                              result["maps"]))
+                              ^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\map_matrix.py", line 21, in render
+    raise ValueError(f"missing map/side pair: {name} vs {opponent}")
+ValueError: missing map/side pair: default_small vs nicked_v44

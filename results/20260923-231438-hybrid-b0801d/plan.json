@@ -1,0 +1,496 @@
+{
+  "question": "Do adaptive roles or a small learned movement ranker improve frozen v2?",
+  "baseline_hash": "9f29ab4138b51d26",
+  "live_hash": "ffe736af6c14ea33",
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-231438-hybrid-b0801d\\maps\\arena_728547b8376892d9.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-231438-hybrid-b0801d\\maps\\big_empty_685baf0e797207b7.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-231438-hybrid-b0801d\\maps\\Colosseum_3042ccc262f0211a.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-231438-hybrid-b0801d\\maps\\default_afc3707a967881d6.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-231438-hybrid-b0801d\\maps\\default_small_f98ab391cccf33b1.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-231438-hybrid-b0801d\\maps\\queen_of_spades_6cdb74a7a52d715a.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-231438-hybrid-b0801d\\maps\\schooltime_8be7eda86910a849.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-231438-hybrid-b0801d\\maps\\trophy_fd985019831fe135.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-231438-hybrid-b0801d\\maps\\Devil_1b2147f4a8a775d2.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-231438-hybrid-b0801d\\maps\\stronghold_fb60e37176a8d1d3.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-231438-hybrid-b0801d\\maps\\Trauma_d014b28abbd1abb0.map"
+  ],
+  "roles": [
+    "mature",
+    "opportunity"
+  ],
+  "corpus": [
+    {
+      "game": 41504,
+      "battle": 41504,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\41504.replay",
+      "hash": "2099a80db7602d44"
+    },
+    {
+      "game": 41505,
+      "battle": 41504,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\41505.replay",
+      "hash": "1287a1822b614e5a"
+    },
+    {
+      "game": 41506,
+      "battle": 41504,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\41506.replay",
+      "hash": "d5c9983c8b556268"
+    },
+    {
+      "game": 41507,
+      "battle": 41504,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\41507.replay",
+      "hash": "7f2b0ddfa6cd3f7e"
+    },
+    {
+      "game": 41508,
+      "battle": 41504,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\41508.replay",
+      "hash": "85bc842c12a923c2"
+    },
+    {
+      "game": 38923,
+      "battle": 38923,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\38923.replay",
+      "hash": "f45ab6b7eda4ad2d"
+    },
+    {
+      "game": 38924,
+      "battle": 38923,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\38924.replay",
+      "hash": "75e1181f6f107b00"
+    },
+    {
+      "game": 38925,
+      "battle": 38923,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\38925.replay",
+      "hash": "a323ca15b0927405"
+    },
+    {
+      "game": 38926,
+      "battle": 38923,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\38926.replay",
+      "hash": "efdff1b6e26362e7"
+    },
+    {
+      "game": 38927,
+      "battle": 38923,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\38927.replay",
+      "hash": "d9be55297ac03675"
+    },
+    {
+      "game": 40304,
+      "battle": 40304,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\40304.replay",
+      "hash": "d647c66a5f72a4f0"
+    },
+    {
+      "game": 40305,
+      "battle": 40304,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\40305.replay",
+      "hash": "92babb9b59bfb6d9"
+    },
+    {
+      "game": 40306,
+      "battle": 40304,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\40306.replay",
+      "hash": "974a7bea69bef2fb"
+    },
+    {
+      "game": 40307,
+      "battle": 40304,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\40307.replay",
+      "hash": "22071f64544499c5"
+    },
+    {
+      "game": 40308,
+      "battle": 40304,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\40308.replay",
+      "hash": "a629b25023b51d76"
+    },
+    {
+      "game": 38441,
+      "battle": 38441,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\38441.replay",
+      "hash": "ce9406ff91d84925"
+    },
+    {
+      "game": 38442,
+      "battle": 38441,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\38442.replay",
+      "hash": "f188e4b95e362816"
+    },
+    {
+      "game": 38443,
+      "battle": 38441,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\38443.replay",
+      "hash": "d5cb87c4fba7e8a1"
+    },
+    {
+      "game": 38444,
+      "battle": 38441,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\38444.replay",
+      "hash": "7fa4f7fbfed62dfb"
+    },
+    {
+      "game": 38445,
+      "battle": 38441,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\38445.replay",
+      "hash": "ed97e3ac4a7c3040"
+    },
+    {
+      "game": 40314,
+      "battle": 40314,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\40314.replay",
+      "hash": "511d0592b4207773"
+    },
+    {
+      "game": 40315,
+      "battle": 40314,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\40315.replay",
+      "hash": "e5cc0fe11d04fd60"
+    },
+    {
+      "game": 40316,
+      "battle": 40314,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\40316.replay",
+      "hash": "b8f40fc242478433"
+    },
+    {
+      "game": 40317,
+      "battle": 40314,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\40317.replay",
+      "hash": "94f79ca8e0baa492"
+    },
+    {
+      "game": 40318,
+      "battle": 40314,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\40318.replay",
+      "hash": "903f7e3964ccc5f7"
+    },
+    {
+      "game": 39408,
+      "battle": 39408,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\39408.replay",
+      "hash": "bbce67f27a02f81c"
+    },
+    {
+      "game": 39409,
+      "battle": 39408,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\39409.replay",
+      "hash": "e5192bc71e08429f"
+    },
+    {
+      "game": 39410,
+      "battle": 39408,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\39410.replay",
+      "hash": "ea246f4eae43395d"
+    },
+    {
+      "game": 39411,
+      "battle": 39408,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\39411.replay",
+      "hash": "b6623e279e680d0e"
+    },
+    {
+      "game": 39412,
+      "battle": 39408,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\39412.replay",
+      "hash": "5e99abe41bf332da"
+    },
+    {
+      "game": 43448,
+      "battle": 43448,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\43448.replay",
+      "hash": "f61cb7ad992621e4"
+    },
+    {
+      "game": 43449,
+      "battle": 43448,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\43449.replay",
+      "hash": "13a2bce45bf3db25"
+    },
+    {
+      "game": 43450,
+      "battle": 43448,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\43450.replay",
+      "hash": "abfdaa52420cb227"
+    },
+    {
+      "game": 43451,
+      "battle": 43448,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\43451.replay",
+      "hash": "ee517200eaf1f71a"
+    },
+    {
+      "game": 43452,
+      "battle": 43448,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\43452.replay",
+      "hash": "f5935319054c3b1f"
+    },
+    {
+      "game": 43891,
+      "battle": 43891,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\43891.replay",
+      "hash": "8eeb11830e8f92dc"
+    },
+    {
+      "game": 43892,
+      "battle": 43891,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\43892.replay",
+      "hash": "fea350cd78518415"
+    },
+    {
+      "game": 43893,
+      "battle": 43891,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\43893.replay",
+      "hash": "a6f30d35b5d3dc12"
+    },
+    {
+      "game": 43894,
+      "battle": 43891,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\43894.replay",
+      "hash": "706d78f6cc068931"
+    },
+    {
+      "game": 43895,
+      "battle": 43891,
+      "partition": "train",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\43895.replay",
+      "hash": "f4f595caca3b88da"
+    },
+    {
+      "game": 44401,
+      "battle": 44401,
+      "partition": "dev",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\44401.replay",
+      "hash": "21d73ced6e6a6d4a"
+    },
+    {
+      "game": 44402,
+      "battle": 44401,
+      "partition": "dev",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\44402.replay",
+      "hash": "fa0b0edf9aac3523"
+    },
+    {
+      "game": 44403,
+      "battle": 44401,
+      "partition": "dev",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\44403.replay",
+      "hash": "fb5bb3ed4888dac9"
+    },
+    {
+      "game": 44404,
+      "battle": 44401,
+      "partition": "dev",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\44404.replay",
+      "hash": "3e43fee9f359c58c"
+    },
+    {
+      "game": 44405,
+      "battle": 44401,
+      "partition": "dev",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\44405.replay",
+      "hash": "dfa7b96aaf823b7b"
+    },
+    {
+      "game": 40799,
+      "battle": 40799,
+      "partition": "dev",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\40799.replay",
+      "hash": "8248dea6463426ff"
+    },
+    {
+      "game": 40800,
+      "battle": 40799,
+      "partition": "dev",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\40800.replay",
+      "hash": "b16adb09ac2488b2"
+    },
+    {
+      "game": 40801,
+      "battle": 40799,
+      "partition": "dev",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\40801.replay",
+      "hash": "f87e70075637a97c"
+    },
+    {
+      "game": 40802,
+      "battle": 40799,
+      "partition": "dev",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\40802.replay",
+      "hash": "48faf1ecd15e1a22"
+    },
+    {
+      "game": 40803,
+      "battle": 40799,
+      "partition": "dev",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\40803.replay",
+      "hash": "c98c42f1c2fe25e6"
+    },
+    {
+      "game": 41116,
+      "battle": 41116,
+      "partition": "test",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\41116.replay",
+      "hash": "f87e70075637a97c"
+    },
+    {
+      "game": 41117,
+      "battle": 41116,
+      "partition": "test",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\41117.replay",
+      "hash": "db60ea9c2135705a"
+    },
+    {
+      "game": 41118,
+      "battle": 41116,
+      "partition": "test",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\41118.replay",
+      "hash": "1441b6b2837eb5ca"
+    },
+    {
+      "game": 41119,
+      "battle": 41116,
+      "partition": "test",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\41119.replay",
+      "hash": "c98c42f1c2fe25e6"
+    },
+    {
+      "game": 41120,
+      "battle": 41116,
+      "partition": "test",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\41120.replay",
+      "hash": "b16adb09ac2488b2"
+    },
+    {
+      "game": 42818,
+      "battle": 42818,
+      "partition": "test",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\42818.replay",
+      "hash": "d012502d86fcc060"
+    },
+    {
+      "game": 42819,
+      "battle": 42818,
+      "partition": "test",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\42819.replay",
+      "hash": "a2cb09a638f63d4a"
+    },
+    {
+      "game": 42820,
+      "battle": 42818,
+      "partition": "test",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\42820.replay",
+      "hash": "44e142398c29f0eb"
+    },
+    {
+      "game": 42821,
+      "battle": 42818,
+      "partition": "test",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\42821.replay",
+      "hash": "66ca8fd141b7da0b"
+    },
+    {
+      "game": 42822,
+      "battle": 42818,
+      "partition": "test",
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\data\\replays\\42822.replay",
+      "hash": "395da755301554fc"
+    }
+  ],
+  "implementation": {
+    "bcsim\\hybrid.py": "0d3ea49f952cc9e9",
+    "bcsim\\reconstruct.py": "59ca4525d4e0579c",
+    "bcsim\\replay.py": "a5e604e75a0e4c3a",
+    "bcsim\\match.py": "ff64dff9c1b7f6c1",
+    "bcsim\\arena.py": "681b58bfc0f2618b",
+    "bcsim\\bounded.py": "c60b1fa2106c485f",
+    "bcsim\\population.py": "30c8a353da2920e7",
+    "bcsim\\guarded.py": "87ac3dd271b72d9a",
+    "bcsim\\paths.py": "01de427666f7dc60",
+    "framework\\action_value.py": "4253a0c36a577f9c",
+    "framework\\adaptive_roles.py": "b21bc4d8563d895d",
+    "experiments\\hybrid\\brain.py": "62b5b48bc4562318"
+  },
+  "sampling": {
+    "stride_probability": 0.125,
+    "max_rows_per_game": 4000,
+    "seed": 28000
+  },
+  "training": {
+    "hidden": 16,
+    "epochs": 20,
+    "batch": 512,
+    "lr": 0.003,
+    "linear_seeds": [
+      0
+    ],
+    "mlp_seeds": [
+      0,
+      1,
+      2
+    ]
+  },
+  "screen_seeds": [
+    28000,
+    28001,
+    28002,
+    28003
+  ],
+  "validation_seeds": [
+    29000,
+    29001,
+    29002,
+    29003,
+    29004,
+    29005,
+    29006,
+    29007
+  ],
+  "selection": "Best role and best evaluator separately, direct screen score must exceed .5. MLP initialization chosen by dev imitation loss before matches. No retuning on test or matches.",
+  "gate": "Each finalist direct v2 map-cluster 95% lower bound > .5 and paired pool improvement map-cluster 95% lower bound > 0. Then exact replay and judge budget checks. No automatic promotion; multiple finalists and familiar opponents limit generality.",
+  "limits": "No hidden state or winner labels used for learning. Battles disjoint across training/dev/test, NOT necessarily teams, submissions, maps. Current top-team archives are not training data. Only ordinary visible-empty moves modeled; splitting remains v2. Role experiments do not use learned movement. RNG changes bots, not engine map randomness."
+}

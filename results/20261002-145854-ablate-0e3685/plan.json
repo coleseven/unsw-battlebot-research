@@ -1,0 +1,55 @@
+{
+  "base": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v11h-bot",
+  "base_hash": "84742e690f66dcf0",
+  "params": "params.hpp",
+  "variants": {
+    "base": {},
+    "hunt": {
+      "CPP_QUEEN_HUNT": 1
+    },
+    "hunt_strong": {
+      "CPP_QUEEN_HUNT": 1,
+      "CPP_QUEEN_HUNT_BONUS": 600.0,
+      "CPP_QUEEN_HUNT_PULL": 400.0
+    },
+    "hunt_nopull": {
+      "CPP_QUEEN_HUNT": 1,
+      "CPP_QUEEN_HUNT_PULL": 0.0
+    }
+  },
+  "opponents": [
+    "cpp_nicked_v92",
+    "cpp_nicked_v75",
+    "cpp_leviathan3",
+    "v7-base-bot",
+    "nicked_v44",
+    "nicked_lab",
+    "v11q"
+  ],
+  "official_maps": [
+    "default_small",
+    "trophy",
+    "queen_of_spades",
+    "default",
+    "Devil",
+    "stronghold",
+    "Trauma",
+    "schooltime",
+    "big_empty",
+    "arena",
+    "Colosseum"
+  ],
+  "extra_maps": [
+    "Autarky",
+    "Prisoners_Dilemma",
+    "Slithery_Fight",
+    "Portals"
+  ],
+  "seeds": [
+    581001,
+    581002
+  ],
+  "objective": "wins",
+  "unswbc": "1.2.3",
+  "deterministic_v6_clock": true
+}

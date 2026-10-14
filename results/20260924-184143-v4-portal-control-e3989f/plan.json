@@ -1,0 +1,25 @@
+{
+  "question": "Did visible-only portals change the 7-3 v2 result?",
+  "provenance": "Post-screen diagnostic control, not a predeclared promotion test.",
+  "compared_run": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-183910-v4-visible-portal-v2-fb319a",
+  "candidate_hash": "bf33497158a49a7b",
+  "v2_hash": "9f29ab4138b51d26",
+  "live_hash": "ffe736af6c14ea33",
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-184143-v4-portal-control-e3989f\\maps\\Colosseum.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-184143-v4-portal-control-e3989f\\maps\\default.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-184143-v4-portal-control-e3989f\\maps\\queen_of_spades.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-184143-v4-portal-control-e3989f\\maps\\schooltime.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-184143-v4-portal-control-e3989f\\maps\\trophy.map"
+  ],
+  "map_hashes": {
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-184143-v4-portal-control-e3989f\\maps\\Colosseum.map": "c7549a41ea26600f",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-184143-v4-portal-control-e3989f\\maps\\default.map": "6bd7abf2ed51a7f6",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-184143-v4-portal-control-e3989f\\maps\\queen_of_spades.map": "126d71b464432685",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-184143-v4-portal-control-e3989f\\maps\\schooltime.map": "726c404f3b34b4ed",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-184143-v4-portal-control-e3989f\\maps\\trophy.map": "5f1f6b23d6edb944"
+  },
+  "seed": 44007,
+  "workers": 1,
+  "games": 10
+}

@@ -1,0 +1,882 @@
+[
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\default_small.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "sparring/cpp_nicked_v92",
+  "seed": 381001,
+  "side": "A",
+  "replay": "results\\mover-m2\\sources\\default_small-A-cpp_nicked_v92.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\default_small.map",
+  "a": "sparring/cpp_nicked_v75",
+  "b": "results\\mover-variants\\log8",
+  "seed": 381001,
+  "side": "B",
+  "replay": "results\\mover-m2\\sources\\default_small-B-cpp_nicked_v75.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\trophy.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "sparring/nicked_lab",
+  "seed": 381002,
+  "side": "A",
+  "replay": "results\\mover-m2\\sources\\trophy-A-nicked_lab.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\trophy.map",
+  "a": "sparring/cpp_leviathan3",
+  "b": "results\\mover-variants\\log8",
+  "seed": 381002,
+  "side": "B",
+  "replay": "results\\mover-m2\\sources\\trophy-B-cpp_leviathan3.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\queen_of_spades.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "results/v7-base-bot",
+  "seed": 381003,
+  "side": "A",
+  "replay": "results\\mover-m2\\sources\\queen_of_spades-A-v7-base-bot.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\queen_of_spades.map",
+  "a": "sparring/nicked_v44",
+  "b": "results\\mover-variants\\log8",
+  "seed": 381003,
+  "side": "B",
+  "replay": "results\\mover-m2\\sources\\queen_of_spades-B-nicked_v44.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\default.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "sparring/cpp_nicked_v92",
+  "seed": 381004,
+  "side": "A",
+  "replay": "results\\mover-m2\\sources\\default-A-cpp_nicked_v92.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\default.map",
+  "a": "sparring/cpp_nicked_v75",
+  "b": "results\\mover-variants\\log8",
+  "seed": 381004,
+  "side": "B",
+  "replay": "results\\mover-m2\\sources\\default-B-cpp_nicked_v75.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Devil.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "sparring/nicked_lab",
+  "seed": 381005,
+  "side": "A",
+  "replay": "results\\mover-m2\\sources\\Devil-A-nicked_lab.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Devil.map",
+  "a": "sparring/cpp_leviathan3",
+  "b": "results\\mover-variants\\log8",
+  "seed": 381005,
+  "side": "B",
+  "replay": "results\\mover-m2\\sources\\Devil-B-cpp_leviathan3.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\stronghold.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "results/v7-base-bot",
+  "seed": 381006,
+  "side": "A",
+  "replay": "results\\mover-m2\\sources\\stronghold-A-v7-base-bot.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\stronghold.map",
+  "a": "sparring/nicked_v44",
+  "b": "results\\mover-variants\\log8",
+  "seed": 381006,
+  "side": "B",
+  "replay": "results\\mover-m2\\sources\\stronghold-B-nicked_v44.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Trauma.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "sparring/cpp_nicked_v92",
+  "seed": 381007,
+  "side": "A",
+  "replay": "results\\mover-m2\\sources\\Trauma-A-cpp_nicked_v92.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Trauma.map",
+  "a": "sparring/cpp_nicked_v75",
+  "b": "results\\mover-variants\\log8",
+  "seed": 381007,
+  "side": "B",
+  "replay": "results\\mover-m2\\sources\\Trauma-B-cpp_nicked_v75.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\schooltime.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "sparring/nicked_lab",
+  "seed": 381008,
+  "side": "A",
+  "replay": "results\\mover-m2\\sources\\schooltime-A-nicked_lab.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\schooltime.map",
+  "a": "sparring/cpp_leviathan3",
+  "b": "results\\mover-variants\\log8",
+  "seed": 381008,
+  "side": "B",
+  "replay": "results\\mover-m2\\sources\\schooltime-B-cpp_leviathan3.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\big_empty.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "results/v7-base-bot",
+  "seed": 381009,
+  "side": "A",
+  "replay": "results\\mover-m2\\sources\\big_empty-A-v7-base-bot.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\big_empty.map",
+  "a": "sparring/nicked_v44",
+  "b": "results\\mover-variants\\log8",
+  "seed": 381009,
+  "side": "B",
+  "replay": "results\\mover-m2\\sources\\big_empty-B-nicked_v44.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\arena.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "sparring/cpp_nicked_v92",
+  "seed": 381010,
+  "side": "A",
+  "replay": "results\\mover-m2\\sources\\arena-A-cpp_nicked_v92.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\arena.map",
+  "a": "sparring/cpp_nicked_v75",
+  "b": "results\\mover-variants\\log8",
+  "seed": 381010,
+  "side": "B",
+  "replay": "results\\mover-m2\\sources\\arena-B-cpp_nicked_v75.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\Colosseum.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "sparring/nicked_lab",
+  "seed": 381011,
+  "side": "A",
+  "replay": "results\\mover-m2\\sources\\Colosseum-A-nicked_lab.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\Colosseum.map",
+  "a": "sparring/cpp_leviathan3",
+  "b": "results\\mover-variants\\log8",
+  "seed": 381011,
+  "side": "B",
+  "replay": "results\\mover-m2\\sources\\Colosseum-B-cpp_leviathan3.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Autarky.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "results/v7-base-bot",
+  "seed": 381012,
+  "side": "A",
+  "replay": "results\\mover-m2\\sources\\Autarky-A-v7-base-bot.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Autarky.map",
+  "a": "sparring/nicked_v44",
+  "b": "results\\mover-variants\\log8",
+  "seed": 381012,
+  "side": "B",
+  "replay": "results\\mover-m2\\sources\\Autarky-B-nicked_v44.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Prisoners_Dilemma.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "sparring/cpp_nicked_v92",
+  "seed": 381013,
+  "side": "A",
+  "replay": "results\\mover-m2\\sources\\Prisoners_Dilemma-A-cpp_nicked_v92.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Prisoners_Dilemma.map",
+  "a": "sparring/cpp_nicked_v75",
+  "b": "results\\mover-variants\\log8",
+  "seed": 381013,
+  "side": "B",
+  "replay": "results\\mover-m2\\sources\\Prisoners_Dilemma-B-cpp_nicked_v75.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Slithery_Fight.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "sparring/nicked_lab",
+  "seed": 381014,
+  "side": "A",
+  "replay": "results\\mover-m2\\sources\\Slithery_Fight-A-nicked_lab.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Slithery_Fight.map",
+  "a": "sparring/cpp_leviathan3",
+  "b": "results\\mover-variants\\log8",
+  "seed": 381014,
+  "side": "B",
+  "replay": "results\\mover-m2\\sources\\Slithery_Fight-B-cpp_leviathan3.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Portals.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "results/v7-base-bot",
+  "seed": 381015,
+  "side": "A",
+  "replay": "results\\mover-m2\\sources\\Portals-A-v7-base-bot.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Portals.map",
+  "a": "sparring/nicked_v44",
+  "b": "results\\mover-variants\\log8",
+  "seed": 381015,
+  "side": "B",
+  "replay": "results\\mover-m2\\sources\\Portals-B-nicked_v44.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Australia.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "sparring/cpp_nicked_v92",
+  "seed": 381016,
+  "side": "A",
+  "replay": "results\\mover-m2\\sources\\Australia-A-cpp_nicked_v92.replay",
+  "winner": null,
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Australia.map",
+  "a": "sparring/cpp_nicked_v75",
+  "b": "results\\mover-variants\\log8",
+  "seed": 381016,
+  "side": "B",
+  "replay": "results\\mover-m2\\sources\\Australia-B-cpp_nicked_v75.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Islands.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "sparring/nicked_lab",
+  "seed": 381017,
+  "side": "A",
+  "replay": "results\\mover-m2\\sources\\Islands-A-nicked_lab.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Islands.map",
+  "a": "sparring/cpp_leviathan3",
+  "b": "results\\mover-variants\\log8",
+  "seed": 381017,
+  "side": "B",
+  "replay": "results\\mover-m2\\sources\\Islands-B-cpp_leviathan3.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Maze.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "results/v7-base-bot",
+  "seed": 381018,
+  "side": "A",
+  "replay": "results\\mover-m2\\sources\\Maze-A-v7-base-bot.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Maze.map",
+  "a": "sparring/nicked_v44",
+  "b": "results\\mover-variants\\log8",
+  "seed": 381018,
+  "side": "B",
+  "replay": "results\\mover-m2\\sources\\Maze-B-nicked_v44.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Stripes.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "sparring/cpp_nicked_v92",
+  "seed": 381019,
+  "side": "A",
+  "replay": "results\\mover-m2\\sources\\Stripes-A-cpp_nicked_v92.replay",
+  "winner": null,
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Stripes.map",
+  "a": "sparring/cpp_nicked_v75",
+  "b": "results\\mover-variants\\log8",
+  "seed": 381019,
+  "side": "B",
+  "replay": "results\\mover-m2\\sources\\Stripes-B-cpp_nicked_v75.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Tower_Defense.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "sparring/nicked_lab",
+  "seed": 381020,
+  "side": "A",
+  "replay": "results\\mover-m2\\sources\\Tower_Defense-A-nicked_lab.replay",
+  "winner": null,
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Tower_Defense.map",
+  "a": "sparring/cpp_leviathan3",
+  "b": "results\\mover-variants\\log8",
+  "seed": 381020,
+  "side": "B",
+  "replay": "results\\mover-m2\\sources\\Tower_Defense-B-cpp_leviathan3.replay",
+  "winner": null,
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Around_UNSW.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "results/v7-base-bot",
+  "seed": 381021,
+  "side": "A",
+  "replay": "results\\mover-m2\\sources\\Around_UNSW-A-v7-base-bot.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Around_UNSW.map",
+  "a": "sparring/nicked_v44",
+  "b": "results\\mover-variants\\log8",
+  "seed": 381021,
+  "side": "B",
+  "replay": "results\\mover-m2\\sources\\Around_UNSW-B-nicked_v44.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\weakhold.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "sparring/cpp_nicked_v92",
+  "seed": 381022,
+  "side": "A",
+  "replay": "results\\mover-m2\\sources\\weakhold-A-cpp_nicked_v92.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\weakhold.map",
+  "a": "sparring/cpp_nicked_v75",
+  "b": "results\\mover-variants\\log8",
+  "seed": 381022,
+  "side": "B",
+  "replay": "results\\mover-m2\\sources\\weakhold-B-cpp_nicked_v75.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\default_small.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "sparring/cpp_nicked_v92",
+  "seed": 391001,
+  "side": "A",
+  "replay": "results\\mover-m2b\\sources\\default_small-A-cpp_nicked_v92.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\default_small.map",
+  "a": "sparring/cpp_nicked_v75",
+  "b": "results\\mover-variants\\log8",
+  "seed": 391001,
+  "side": "B",
+  "replay": "results\\mover-m2b\\sources\\default_small-B-cpp_nicked_v75.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\trophy.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "sparring/nicked_lab",
+  "seed": 391002,
+  "side": "A",
+  "replay": "results\\mover-m2b\\sources\\trophy-A-nicked_lab.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\trophy.map",
+  "a": "sparring/cpp_leviathan3",
+  "b": "results\\mover-variants\\log8",
+  "seed": 391002,
+  "side": "B",
+  "replay": "results\\mover-m2b\\sources\\trophy-B-cpp_leviathan3.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\queen_of_spades.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "results/v7-base-bot",
+  "seed": 391003,
+  "side": "A",
+  "replay": "results\\mover-m2b\\sources\\queen_of_spades-A-v7-base-bot.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\queen_of_spades.map",
+  "a": "sparring/nicked_v44",
+  "b": "results\\mover-variants\\log8",
+  "seed": 391003,
+  "side": "B",
+  "replay": "results\\mover-m2b\\sources\\queen_of_spades-B-nicked_v44.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\default.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "sparring/cpp_nicked_v92",
+  "seed": 391004,
+  "side": "A",
+  "replay": "results\\mover-m2b\\sources\\default-A-cpp_nicked_v92.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\default.map",
+  "a": "sparring/cpp_nicked_v75",
+  "b": "results\\mover-variants\\log8",
+  "seed": 391004,
+  "side": "B",
+  "replay": "results\\mover-m2b\\sources\\default-B-cpp_nicked_v75.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Devil.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "sparring/nicked_lab",
+  "seed": 391005,
+  "side": "A",
+  "replay": "results\\mover-m2b\\sources\\Devil-A-nicked_lab.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Devil.map",
+  "a": "sparring/cpp_leviathan3",
+  "b": "results\\mover-variants\\log8",
+  "seed": 391005,
+  "side": "B",
+  "replay": "results\\mover-m2b\\sources\\Devil-B-cpp_leviathan3.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\stronghold.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "results/v7-base-bot",
+  "seed": 391006,
+  "side": "A",
+  "replay": "results\\mover-m2b\\sources\\stronghold-A-v7-base-bot.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\stronghold.map",
+  "a": "sparring/nicked_v44",
+  "b": "results\\mover-variants\\log8",
+  "seed": 391006,
+  "side": "B",
+  "replay": "results\\mover-m2b\\sources\\stronghold-B-nicked_v44.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Trauma.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "sparring/cpp_nicked_v92",
+  "seed": 391007,
+  "side": "A",
+  "replay": "results\\mover-m2b\\sources\\Trauma-A-cpp_nicked_v92.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Trauma.map",
+  "a": "sparring/cpp_nicked_v75",
+  "b": "results\\mover-variants\\log8",
+  "seed": 391007,
+  "side": "B",
+  "replay": "results\\mover-m2b\\sources\\Trauma-B-cpp_nicked_v75.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\schooltime.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "sparring/nicked_lab",
+  "seed": 391008,
+  "side": "A",
+  "replay": "results\\mover-m2b\\sources\\schooltime-A-nicked_lab.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\schooltime.map",
+  "a": "sparring/cpp_leviathan3",
+  "b": "results\\mover-variants\\log8",
+  "seed": 391008,
+  "side": "B",
+  "replay": "results\\mover-m2b\\sources\\schooltime-B-cpp_leviathan3.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\big_empty.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "results/v7-base-bot",
+  "seed": 391009,
+  "side": "A",
+  "replay": "results\\mover-m2b\\sources\\big_empty-A-v7-base-bot.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\big_empty.map",
+  "a": "sparring/nicked_v44",
+  "b": "results\\mover-variants\\log8",
+  "seed": 391009,
+  "side": "B",
+  "replay": "results\\mover-m2b\\sources\\big_empty-B-nicked_v44.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\arena.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "sparring/cpp_nicked_v92",
+  "seed": 391010,
+  "side": "A",
+  "replay": "results\\mover-m2b\\sources\\arena-A-cpp_nicked_v92.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\arena.map",
+  "a": "sparring/cpp_nicked_v75",
+  "b": "results\\mover-variants\\log8",
+  "seed": 391010,
+  "side": "B",
+  "replay": "results\\mover-m2b\\sources\\arena-B-cpp_nicked_v75.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\Colosseum.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "sparring/nicked_lab",
+  "seed": 391011,
+  "side": "A",
+  "replay": "results\\mover-m2b\\sources\\Colosseum-A-nicked_lab.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\Colosseum.map",
+  "a": "sparring/cpp_leviathan3",
+  "b": "results\\mover-variants\\log8",
+  "seed": 391011,
+  "side": "B",
+  "replay": "results\\mover-m2b\\sources\\Colosseum-B-cpp_leviathan3.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Autarky.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "results/v7-base-bot",
+  "seed": 391012,
+  "side": "A",
+  "replay": "results\\mover-m2b\\sources\\Autarky-A-v7-base-bot.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Autarky.map",
+  "a": "sparring/nicked_v44",
+  "b": "results\\mover-variants\\log8",
+  "seed": 391012,
+  "side": "B",
+  "replay": "results\\mover-m2b\\sources\\Autarky-B-nicked_v44.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Prisoners_Dilemma.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "sparring/cpp_nicked_v92",
+  "seed": 391013,
+  "side": "A",
+  "replay": "results\\mover-m2b\\sources\\Prisoners_Dilemma-A-cpp_nicked_v92.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Prisoners_Dilemma.map",
+  "a": "sparring/cpp_nicked_v75",
+  "b": "results\\mover-variants\\log8",
+  "seed": 391013,
+  "side": "B",
+  "replay": "results\\mover-m2b\\sources\\Prisoners_Dilemma-B-cpp_nicked_v75.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Slithery_Fight.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "sparring/nicked_lab",
+  "seed": 391014,
+  "side": "A",
+  "replay": "results\\mover-m2b\\sources\\Slithery_Fight-A-nicked_lab.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Slithery_Fight.map",
+  "a": "sparring/cpp_leviathan3",
+  "b": "results\\mover-variants\\log8",
+  "seed": 391014,
+  "side": "B",
+  "replay": "results\\mover-m2b\\sources\\Slithery_Fight-B-cpp_leviathan3.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Portals.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "results/v7-base-bot",
+  "seed": 391015,
+  "side": "A",
+  "replay": "results\\mover-m2b\\sources\\Portals-A-v7-base-bot.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Portals.map",
+  "a": "sparring/nicked_v44",
+  "b": "results\\mover-variants\\log8",
+  "seed": 391015,
+  "side": "B",
+  "replay": "results\\mover-m2b\\sources\\Portals-B-nicked_v44.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Australia.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "sparring/cpp_nicked_v92",
+  "seed": 391016,
+  "side": "A",
+  "replay": "results\\mover-m2b\\sources\\Australia-A-cpp_nicked_v92.replay",
+  "winner": null,
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Australia.map",
+  "a": "sparring/cpp_nicked_v75",
+  "b": "results\\mover-variants\\log8",
+  "seed": 391016,
+  "side": "B",
+  "replay": "results\\mover-m2b\\sources\\Australia-B-cpp_nicked_v75.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Islands.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "sparring/nicked_lab",
+  "seed": 391017,
+  "side": "A",
+  "replay": "results\\mover-m2b\\sources\\Islands-A-nicked_lab.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Islands.map",
+  "a": "sparring/cpp_leviathan3",
+  "b": "results\\mover-variants\\log8",
+  "seed": 391017,
+  "side": "B",
+  "replay": "results\\mover-m2b\\sources\\Islands-B-cpp_leviathan3.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Maze.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "results/v7-base-bot",
+  "seed": 391018,
+  "side": "A",
+  "replay": "results\\mover-m2b\\sources\\Maze-A-v7-base-bot.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Maze.map",
+  "a": "sparring/nicked_v44",
+  "b": "results\\mover-variants\\log8",
+  "seed": 391018,
+  "side": "B",
+  "replay": "results\\mover-m2b\\sources\\Maze-B-nicked_v44.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Stripes.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "sparring/cpp_nicked_v92",
+  "seed": 391019,
+  "side": "A",
+  "replay": "results\\mover-m2b\\sources\\Stripes-A-cpp_nicked_v92.replay",
+  "winner": null,
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Stripes.map",
+  "a": "sparring/cpp_nicked_v75",
+  "b": "results\\mover-variants\\log8",
+  "seed": 391019,
+  "side": "B",
+  "replay": "results\\mover-m2b\\sources\\Stripes-B-cpp_nicked_v75.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Tower_Defense.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "sparring/nicked_lab",
+  "seed": 391020,
+  "side": "A",
+  "replay": "results\\mover-m2b\\sources\\Tower_Defense-A-nicked_lab.replay",
+  "winner": null,
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Tower_Defense.map",
+  "a": "sparring/cpp_leviathan3",
+  "b": "results\\mover-variants\\log8",
+  "seed": 391020,
+  "side": "B",
+  "replay": "results\\mover-m2b\\sources\\Tower_Defense-B-cpp_leviathan3.replay",
+  "winner": null,
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Around_UNSW.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "results/v7-base-bot",
+  "seed": 391021,
+  "side": "A",
+  "replay": "results\\mover-m2b\\sources\\Around_UNSW-A-v7-base-bot.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\Around_UNSW.map",
+  "a": "sparring/nicked_v44",
+  "b": "results\\mover-variants\\log8",
+  "seed": 391021,
+  "side": "B",
+  "replay": "results\\mover-m2b\\sources\\Around_UNSW-B-nicked_v44.replay",
+  "winner": "B",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\weakhold.map",
+  "a": "results\\mover-variants\\log8",
+  "b": "sparring/cpp_nicked_v92",
+  "seed": 391022,
+  "side": "A",
+  "replay": "results\\mover-m2b\\sources\\weakhold-A-cpp_nicked_v92.replay",
+  "winner": "A",
+  "error": null
+ },
+ {
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\maps\\server\\weakhold.map",
+  "a": "sparring/cpp_nicked_v75",
+  "b": "results\\mover-variants\\log8",
+  "seed": 391022,
+  "side": "B",
+  "replay": "results\\mover-m2b\\sources\\weakhold-B-cpp_nicked_v75.replay",
+  "winner": "B",
+  "error": null
+ }
+]

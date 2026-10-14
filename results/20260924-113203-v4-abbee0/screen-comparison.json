@@ -1,0 +1,50 @@
+{
+  "comparison": {
+    "guard_all": {
+      "paired_pool": {
+        "difference": -0.011363636363636364,
+        "map_cluster_ci95": [
+          -0.03409090909090909,
+          0.0
+        ],
+        "paired_block_ci95": [
+          -0.03409090909090909,
+          0.0
+        ],
+        "maps": 11,
+        "blocks": 44,
+        "matched_games": 88
+      },
+      "direct": {
+        "wins": 9,
+        "draws": 0,
+        "losses": 13,
+        "score": 0.4090909090909091
+      }
+    },
+    "guard_later": {
+      "paired_pool": {
+        "difference": -0.011363636363636364,
+        "map_cluster_ci95": [
+          -0.10227272727272728,
+          0.06818181818181818
+        ],
+        "paired_block_ci95": [
+          -0.06818181818181818,
+          0.03409090909090909
+        ],
+        "maps": 11,
+        "blocks": 44,
+        "matched_games": 88
+      },
+      "direct": {
+        "wins": 13,
+        "draws": 0,
+        "losses": 9,
+        "score": 0.5909090909090909
+      }
+    }
+  },
+  "selected_for_fresh_followup": null,
+  "selection_is_promotion": false
+}

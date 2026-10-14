@@ -1,0 +1,35 @@
+{
+  "question": "Can a public sonar king-beacon reach teammates, and does routing alter outcomes?",
+  "baseline_hash": "69382825b699723d",
+  "feed_baseline_hash": "8476ceb932932603",
+  "live_hash": "ffe736af6c14ea33",
+  "bot_hashes": {
+    "feed_base": "8476ceb932932603",
+    "reference_v3": "69382825b699723d",
+    "beacon": "314e07006b093ed8",
+    "route": "a3bd27841857e668"
+  },
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-133212-v4-sonar-e451f4\\maps\\schooltime_8be7eda86910a849.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-133212-v4-sonar-e451f4\\maps\\stronghold_fb60e37176a8d1d3.map"
+  ],
+  "map_hashes": {
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-133212-v4-sonar-e451f4\\maps\\schooltime_8be7eda86910a849.map": "448616c71781d224",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-133212-v4-sonar-e451f4\\maps\\stronghold_fb60e37176a8d1d3.map": "88b0f451cc44c7dc"
+  },
+  "seed": 44000,
+  "workers": 1,
+  "screen_games": 12,
+  "direct_games": 4,
+  "selection": "Feasibility only. Beacon must preserve base action outcomes and yield a friendly sonar hit. Route is exploratory, with no promotion gate here.",
+  "limits": "Two familiar maps, deterministic in-process opponents, one seed and one worker. Sonar rays can hit enemies; packets reveal only public position and approximate length. No claim about ladder strength.",
+  "source_hashes": {
+    "experiments\\v4\\sonar_brain.py": "ae76c4daaf5ca346",
+    "framework\\v4_sonar.py": "b71efb98470400e5",
+    "framework\\v4_feeding.py": "8820106b26a9f916",
+    "bcsim\\v4_sonar.py": "dc5b5c7524c5903c",
+    "bcsim\\match.py": "d546d7f5532b71f6",
+    "bcsim\\guarded.py": "87ac3dd271b72d9a",
+    "bcsim\\bounded.py": "c60b1fa2106c485f"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "question": "Does this unchanged candidate improve across every official map?",
+  "coverage": "all 15 distinct ranked maps (11 official + 4 ladder), both sides, every opponent",
+  "seeds": [
+    53001,
+    53002,
+    53003
+  ],
+  "workers": 12,
+  "limits": "unswbc >= 1.1 seeds the engine (pearl spawns) per match, so each seed is a distinct game; the same seed replays identically.",
+  "unswbc": "1.1.0",
+  "candidate_source": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v11-cand-bot",
+  "opponent_sources": {
+    "nicked_lab": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\sparring\\nicked_lab",
+    "v6": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\versions\\v6",
+    "ctmes": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\sparring\\ctmes"
+  },
+  "source_hashes": {
+    "candidate": "652fbc494f8ebff1",
+    "nicked_lab": "902a04976020ece2",
+    "v6": "4959b003957277f5",
+    "ctmes": "8b08ab70a6837573"
+  },
+  "bot_hashes": {
+    "candidate": "652fbc494f8ebff1",
+    "nicked_lab": "902a04976020ece2",
+    "v6": "4959b003957277f5",
+    "ctmes": "8b08ab70a6837573"
+  },
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-071650-full-change-8cfa1b\\maps\\default_small.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-071650-full-change-8cfa1b\\maps\\trophy.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-071650-full-change-8cfa1b\\maps\\queen_of_spades.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-071650-full-change-8cfa1b\\maps\\default.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-071650-full-change-8cfa1b\\maps\\Devil.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-071650-full-change-8cfa1b\\maps\\stronghold.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-071650-full-change-8cfa1b\\maps\\Trauma.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-071650-full-change-8cfa1b\\maps\\schooltime.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-071650-full-change-8cfa1b\\maps\\big_empty.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-071650-full-change-8cfa1b\\maps\\arena.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-071650-full-change-8cfa1b\\maps\\Colosseum.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-071650-full-change-8cfa1b\\maps\\Autarky.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-071650-full-change-8cfa1b\\maps\\Prisoners_Dilemma.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-071650-full-change-8cfa1b\\maps\\Slithery_Fight.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-071650-full-change-8cfa1b\\maps\\Portals.map"
+  ],
+  "map_hashes": {
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-071650-full-change-8cfa1b\\maps\\default_small.map": "8ac4b2eedcf19f85",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-071650-full-change-8cfa1b\\maps\\trophy.map": "5f1f6b23d6edb944",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-071650-full-change-8cfa1b\\maps\\queen_of_spades.map": "126d71b464432685",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-071650-full-change-8cfa1b\\maps\\default.map": "6bd7abf2ed51a7f6",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-071650-full-change-8cfa1b\\maps\\Devil.map": "a09e8f2d3bdd1e40",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-071650-full-change-8cfa1b\\maps\\stronghold.map": "02455e481fe56e1e",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-071650-full-change-8cfa1b\\maps\\Trauma.map": "dcf39d713c060e5d",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-071650-full-change-8cfa1b\\maps\\schooltime.map": "726c404f3b34b4ed",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-071650-full-change-8cfa1b\\maps\\big_empty.map": "6cb3b7be72a4e27e",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-071650-full-change-8cfa1b\\maps\\arena.map": "b4bab09603289c2d",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-071650-full-change-8cfa1b\\maps\\Colosseum.map": "c7549a41ea26600f",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-071650-full-change-8cfa1b\\maps\\Autarky.map": "35737755c5a3123f",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-071650-full-change-8cfa1b\\maps\\Prisoners_Dilemma.map": "d76d7ad9ada3a8d0",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-071650-full-change-8cfa1b\\maps\\Slithery_Fight.map": "954ea0147fbc5653",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-071650-full-change-8cfa1b\\maps\\Portals.map": "56341e6577da7429"
+  },
+  "live_hash": "ffe736af6c14ea33",
+  "runner_hash": "e5a77f0ad95971f8",
+  "suite_hash": "c6cc807c1351018c",
+  "match_hash": "9b2222e3ec6d0839",
+  "local_clock_hash": "7a10c8c778d132f2",
+  "deterministic_v6_clock": true
+}

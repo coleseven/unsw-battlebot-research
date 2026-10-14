@@ -1,0 +1,31 @@
+{
+  "question": "Can one portal scout split inside the hotspot and export length without swarm collapse?",
+  "hypothesis": "Compared with the failed no-split collector, allow v3 fission in the dead end.",
+  "limits": "Known 48x24 maps, two seeds, both sides, one worker; exploratory only.",
+  "seeds": [
+    45001,
+    45002
+  ],
+  "workers": 1,
+  "baseline_hash": "bf33497158a49a7b",
+  "live_hash": "ffe736af6c14ea33",
+  "bot_hashes": {
+    "additive": "bf33497158a49a7b",
+    "export_scout": "c4f5dc61c2b2487a"
+  },
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-194334-v5-export-ad159f\\maps\\stronghold.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-194334-v5-export-ad159f\\maps\\Trauma.map"
+  ],
+  "map_hashes": {
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-194334-v5-export-ad159f\\maps\\stronghold.map": "02455e481fe56e1e",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-194334-v5-export-ad159f\\maps\\Trauma.map": "dcf39d713c060e5d"
+  },
+  "source_hashes": {
+    "experiments\\v5\\brain.py": "e6a38be817f75c98",
+    "framework\\v5_hotspot.py": "ed96b5b32d91682e",
+    "framework\\v5_king.py": "4c017b977d0cc220",
+    "bcsim\\v5_initial.py": "4aac8153c39da7ed",
+    "bcsim\\v5_export.py": "19162fb21c359343"
+  }
+}

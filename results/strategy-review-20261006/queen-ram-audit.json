@@ -1,0 +1,9239 @@
+{
+  "method": "Read saved replay event stream only. Length/free budget from TURN_START. Executed steps = successful head-position updates by actor plus fatal step. Visibility and distance use queen head and rammer head at last queen TURN_START. No games run. Server version inferred by existing new label, not independently verified.",
+  "summary": {
+    "live_loss_games": 244,
+    "enemy_ram_cases": 117,
+    "queen_death_causes": {
+      "('H', 'enemy')": 117,
+      "('W', 'self')": 63,
+      "('H', 'friend')": 13,
+      "('H', 'self')": 8,
+      "('O', 'self')": 6
+    },
+    "executed_vs_free": {
+      "(1, 1)": 32,
+      "(3, 2)": 7,
+      "(2, 1)": 45,
+      "(5, 2)": 3,
+      "(5, 5)": 1,
+      "(4, 2)": 8,
+      "(3, 1)": 9,
+      "(2, 2)": 4,
+      "(4, 4)": 1,
+      "(3, 3)": 2,
+      "(2, 4)": 1,
+      "(6, 3)": 1,
+      "(6, 2)": 1,
+      "(5, 3)": 1,
+      "(3, 8)": 1
+    },
+    "requested_vs_free": {
+      "(1, 1)": 32,
+      "(3, 2)": 7,
+      "(2, 1)": 45,
+      "(5, 2)": 3,
+      "(5, 5)": 1,
+      "(4, 2)": 8,
+      "(3, 1)": 9,
+      "(2, 2)": 4,
+      "(4, 4)": 1,
+      "(3, 3)": 2,
+      "(2, 4)": 1,
+      "(6, 3)": 1,
+      "(6, 2)": 1,
+      "(5, 3)": 1,
+      "(3, 8)": 1
+    },
+    "paid_executed": 75,
+    "paid_requested": 75,
+    "visible_at_queen_turn": 104,
+    "old_visible": 114,
+    "within_distance_2_at_queen_turn": 39,
+    "within_distance_2_old": 80,
+    "start_lengths": {
+      "2": 29,
+      "8": 1,
+      "3": 47,
+      "5": 14,
+      "4": 10,
+      "7": 4,
+      "17": 1,
+      "6": 4,
+      "14": 1,
+      "9": 2,
+      "13": 1,
+      "12": 2,
+      "30": 1
+    },
+    "by_map": {
+      "Autarky": 15,
+      "Prisoners Dilemma": 17,
+      "Default": 7,
+      "Trophy": 13,
+      "Around UNSW": 5,
+      "Devil": 11,
+      "Islands": 9,
+      "Stripes": 9,
+      "Slithery Fight": 6,
+      "Queen Of Spades": 5,
+      "Australia": 13,
+      "weakhold": 2,
+      "Tower Defense": 3,
+      "Maze": 1,
+      "Trauma": 1
+    },
+    "same_round_as_queen_last_turn": 117,
+    "path_collision_alignment": 117
+  },
+  "cases": [
+    {
+      "game": 1160533,
+      "battle": 1160533,
+      "map": "Autarky",
+      "opp": "Nexus Lab",
+      "our_team": "A",
+      "round": 239,
+      "queen_last_turn_round": 239,
+      "queen_head_at_last_turn": [
+        16,
+        5
+      ],
+      "queen_head_at_death": [
+        16,
+        4
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 41,
+      "rammer_head_at_turn_start": [
+        15,
+        4
+      ],
+      "rammer_length_turn_start": 2,
+      "rammer_length_at_queen_death": 2,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 1,
+      "rammer_head_at_queen_turn": [
+        15,
+        4
+      ],
+      "rammer_length_at_queen_turn": 2,
+      "action": [
+        "move",
+        "E"
+      ],
+      "path": [
+        [
+          16,
+          4
+        ]
+      ],
+      "updates": [],
+      "event_index": 40212
+    },
+    {
+      "game": 1158437,
+      "battle": 1158434,
+      "map": "Prisoners Dilemma",
+      "opp": "Imagine Winning",
+      "our_team": "A",
+      "round": 348,
+      "queen_last_turn_round": 348,
+      "queen_head_at_last_turn": [
+        22,
+        14
+      ],
+      "queen_head_at_death": [
+        21,
+        14
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 241,
+      "rammer_head_at_turn_start": [
+        21,
+        13
+      ],
+      "rammer_length_turn_start": 2,
+      "rammer_length_at_queen_death": 2,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 1,
+      "rammer_head_at_queen_turn": [
+        21,
+        13
+      ],
+      "rammer_length_at_queen_turn": 2,
+      "action": [
+        "move",
+        "S"
+      ],
+      "path": [
+        [
+          21,
+          14
+        ]
+      ],
+      "updates": [],
+      "event_index": 51859
+    },
+    {
+      "game": 1157722,
+      "battle": 1157718,
+      "map": "Default",
+      "opp": "aisakastrats",
+      "our_team": "B",
+      "round": 477,
+      "queen_last_turn_round": 477,
+      "queen_head_at_last_turn": [
+        1,
+        20
+      ],
+      "queen_head_at_death": [
+        0,
+        20
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 225,
+      "rammer_head_at_turn_start": [
+        29,
+        20
+      ],
+      "rammer_length_turn_start": 8,
+      "rammer_length_at_queen_death": 9,
+      "free_steps_turn_start": 2,
+      "free_steps_old_at_death": 3,
+      "requested_steps": 3,
+      "successful_head_updates": 2,
+      "executed_through_collision": 3,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": false,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 4,
+      "old_distance_to_final_head": 3,
+      "rammer_head_at_queen_turn": [
+        29,
+        20
+      ],
+      "rammer_length_at_queen_turn": 8,
+      "action": [
+        "move",
+        "EEE"
+      ],
+      "path": [
+        [
+          30,
+          20
+        ],
+        [
+          31,
+          20
+        ],
+        [
+          0,
+          20
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            30,
+            20
+          ],
+          "t": [
+            24,
+            21
+          ],
+          "old_h": [
+            29,
+            20
+          ],
+          "old_len": 8
+        },
+        {
+          "h": [
+            31,
+            20
+          ],
+          "t": [
+            24,
+            21
+          ],
+          "old_h": [
+            30,
+            20
+          ],
+          "old_len": 8
+        }
+      ],
+      "event_index": 88293
+    },
+    {
+      "game": 1157676,
+      "battle": 1157673,
+      "map": "Prisoners Dilemma",
+      "opp": "miga bot",
+      "our_team": "A",
+      "round": 370,
+      "queen_last_turn_round": 370,
+      "queen_head_at_last_turn": [
+        26,
+        9
+      ],
+      "queen_head_at_death": [
+        26,
+        10
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 11,
+      "rammer_head_at_turn_start": [
+        24,
+        10
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        24,
+        10
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "EE"
+      ],
+      "path": [
+        [
+          25,
+          10
+        ],
+        [
+          26,
+          10
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            25,
+            10
+          ],
+          "t": [
+            24,
+            11
+          ],
+          "old_h": [
+            24,
+            10
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 20430
+    },
+    {
+      "game": 1157677,
+      "battle": 1157673,
+      "map": "Autarky",
+      "opp": "miga bot",
+      "our_team": "A",
+      "round": 166,
+      "queen_last_turn_round": 166,
+      "queen_head_at_last_turn": [
+        29,
+        12
+      ],
+      "queen_head_at_death": [
+        29,
+        13
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 47,
+      "rammer_head_at_turn_start": [
+        29,
+        15
+      ],
+      "rammer_length_turn_start": 2,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        29,
+        15
+      ],
+      "rammer_length_at_queen_turn": 2,
+      "action": [
+        "move",
+        "NN"
+      ],
+      "path": [
+        [
+          29,
+          14
+        ],
+        [
+          29,
+          13
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            29,
+            14
+          ],
+          "t": [
+            29,
+            16
+          ],
+          "old_h": [
+            29,
+            15
+          ],
+          "old_len": 2
+        }
+      ],
+      "event_index": 18423
+    },
+    {
+      "game": 1156099,
+      "battle": 1156097,
+      "map": "Prisoners Dilemma",
+      "opp": "Spearhead Capital",
+      "our_team": "B",
+      "round": 89,
+      "queen_last_turn_round": 89,
+      "queen_head_at_last_turn": [
+        0,
+        0
+      ],
+      "queen_head_at_death": [
+        1,
+        0
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 9,
+      "rammer_head_at_turn_start": [
+        1,
+        1
+      ],
+      "rammer_length_turn_start": 2,
+      "rammer_length_at_queen_death": 2,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 1,
+      "rammer_head_at_queen_turn": [
+        1,
+        1
+      ],
+      "rammer_length_at_queen_turn": 2,
+      "action": [
+        "move",
+        "N"
+      ],
+      "path": [
+        [
+          1,
+          0
+        ]
+      ],
+      "updates": [],
+      "event_index": 6188
+    },
+    {
+      "game": 1154061,
+      "battle": 1154061,
+      "map": "Trophy",
+      "opp": "pig",
+      "our_team": "A",
+      "round": 141,
+      "queen_last_turn_round": 141,
+      "queen_head_at_last_turn": [
+        18,
+        23
+      ],
+      "queen_head_at_death": [
+        17,
+        23
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 52,
+      "rammer_head_at_turn_start": [
+        15,
+        24
+      ],
+      "rammer_length_turn_start": 5,
+      "rammer_length_at_queen_death": 5,
+      "free_steps_turn_start": 2,
+      "free_steps_old_at_death": 2,
+      "requested_steps": 3,
+      "successful_head_updates": 2,
+      "executed_through_collision": 3,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 4,
+      "old_distance_to_final_head": 3,
+      "rammer_head_at_queen_turn": [
+        15,
+        24
+      ],
+      "rammer_length_at_queen_turn": 5,
+      "action": [
+        "move",
+        "NEE"
+      ],
+      "path": [
+        [
+          15,
+          23
+        ],
+        [
+          16,
+          23
+        ],
+        [
+          17,
+          23
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            15,
+            23
+          ],
+          "t": [
+            12,
+            24
+          ],
+          "old_h": [
+            15,
+            24
+          ],
+          "old_len": 5
+        },
+        {
+          "h": [
+            16,
+            23
+          ],
+          "t": [
+            13,
+            24
+          ],
+          "old_h": [
+            15,
+            23
+          ],
+          "old_len": 5
+        }
+      ],
+      "event_index": 17067
+    },
+    {
+      "game": 1153364,
+      "battle": 1153360,
+      "map": "Trophy",
+      "opp": "R\u221e",
+      "our_team": "B",
+      "round": 45,
+      "queen_last_turn_round": 45,
+      "queen_head_at_last_turn": [
+        14,
+        18
+      ],
+      "queen_head_at_death": [
+        14,
+        17
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 15,
+      "rammer_head_at_turn_start": [
+        14,
+        16
+      ],
+      "rammer_length_turn_start": 2,
+      "rammer_length_at_queen_death": 2,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 1,
+      "rammer_head_at_queen_turn": [
+        14,
+        16
+      ],
+      "rammer_length_at_queen_turn": 2,
+      "action": [
+        "move",
+        "S"
+      ],
+      "path": [
+        [
+          14,
+          17
+        ]
+      ],
+      "updates": [],
+      "event_index": 1529
+    },
+    {
+      "game": 1152685,
+      "battle": 1152685,
+      "map": "Around UNSW",
+      "opp": "Oswald",
+      "our_team": "B",
+      "round": 313,
+      "queen_last_turn_round": 313,
+      "queen_head_at_last_turn": [
+        19,
+        27
+      ],
+      "queen_head_at_death": [
+        19,
+        28
+      ],
+      "queen_length_at_last_turn": 4,
+      "queen_length_at_death": 5,
+      "rammer": 605,
+      "rammer_head_at_turn_start": [
+        22,
+        28
+      ],
+      "rammer_length_turn_start": 5,
+      "rammer_length_at_queen_death": 5,
+      "free_steps_turn_start": 2,
+      "free_steps_old_at_death": 2,
+      "requested_steps": 3,
+      "successful_head_updates": 2,
+      "executed_through_collision": 3,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 4,
+      "old_distance_to_final_head": 3,
+      "rammer_head_at_queen_turn": [
+        22,
+        28
+      ],
+      "rammer_length_at_queen_turn": 5,
+      "action": [
+        "move",
+        "WWW"
+      ],
+      "path": [
+        [
+          21,
+          28
+        ],
+        [
+          20,
+          28
+        ],
+        [
+          19,
+          28
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            21,
+            28
+          ],
+          "t": [
+            24,
+            29
+          ],
+          "old_h": [
+            22,
+            28
+          ],
+          "old_len": 5
+        },
+        {
+          "h": [
+            20,
+            28
+          ],
+          "t": [
+            23,
+            29
+          ],
+          "old_h": [
+            21,
+            28
+          ],
+          "old_len": 5
+        }
+      ],
+      "event_index": 118412
+    },
+    {
+      "game": 1152687,
+      "battle": 1152685,
+      "map": "Devil",
+      "opp": "Oswald",
+      "our_team": "B",
+      "round": 228,
+      "queen_last_turn_round": 228,
+      "queen_head_at_last_turn": [
+        6,
+        7
+      ],
+      "queen_head_at_death": [
+        7,
+        7
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 139,
+      "rammer_head_at_turn_start": [
+        9,
+        6
+      ],
+      "rammer_length_turn_start": 5,
+      "rammer_length_at_queen_death": 5,
+      "free_steps_turn_start": 2,
+      "free_steps_old_at_death": 2,
+      "requested_steps": 3,
+      "successful_head_updates": 2,
+      "executed_through_collision": 3,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 4,
+      "old_distance_to_final_head": 3,
+      "rammer_head_at_queen_turn": [
+        9,
+        6
+      ],
+      "rammer_length_at_queen_turn": 5,
+      "action": [
+        "move",
+        "SWW"
+      ],
+      "path": [
+        [
+          9,
+          7
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          7,
+          7
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            9,
+            7
+          ],
+          "t": [
+            10,
+            4
+          ],
+          "old_h": [
+            9,
+            6
+          ],
+          "old_len": 5
+        },
+        {
+          "h": [
+            8,
+            7
+          ],
+          "t": [
+            10,
+            5
+          ],
+          "old_h": [
+            9,
+            7
+          ],
+          "old_len": 5
+        }
+      ],
+      "event_index": 19575
+    },
+    {
+      "game": 1152688,
+      "battle": 1152685,
+      "map": "Prisoners Dilemma",
+      "opp": "Oswald",
+      "our_team": "B",
+      "round": 264,
+      "queen_last_turn_round": 264,
+      "queen_head_at_last_turn": [
+        30,
+        11
+      ],
+      "queen_head_at_death": [
+        29,
+        11
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 51,
+      "rammer_head_at_turn_start": [
+        29,
+        9
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        29,
+        9
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "SS"
+      ],
+      "path": [
+        [
+          29,
+          10
+        ],
+        [
+          29,
+          11
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            29,
+            10
+          ],
+          "t": [
+            28,
+            9
+          ],
+          "old_h": [
+            29,
+            9
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 16448
+    },
+    {
+      "game": 1152689,
+      "battle": 1152685,
+      "map": "Default",
+      "opp": "Oswald",
+      "our_team": "B",
+      "round": 205,
+      "queen_last_turn_round": 205,
+      "queen_head_at_last_turn": [
+        2,
+        30
+      ],
+      "queen_head_at_death": [
+        1,
+        30
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 99,
+      "rammer_head_at_turn_start": [
+        1,
+        0
+      ],
+      "rammer_length_turn_start": 4,
+      "rammer_length_at_queen_death": 4,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        1,
+        0
+      ],
+      "rammer_length_at_queen_turn": 4,
+      "action": [
+        "move",
+        "NN"
+      ],
+      "path": [
+        [
+          1,
+          31
+        ],
+        [
+          1,
+          30
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            1,
+            31
+          ],
+          "t": [
+            1,
+            2
+          ],
+          "old_h": [
+            1,
+            0
+          ],
+          "old_len": 4
+        }
+      ],
+      "event_index": 23132
+    },
+    {
+      "game": 1152241,
+      "battle": 1152239,
+      "map": "Autarky",
+      "opp": "Oswald",
+      "our_team": "B",
+      "round": 250,
+      "queen_last_turn_round": 250,
+      "queen_head_at_last_turn": [
+        30,
+        9
+      ],
+      "queen_head_at_death": [
+        30,
+        8
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 20,
+      "rammer_head_at_turn_start": [
+        32,
+        9
+      ],
+      "rammer_length_turn_start": 5,
+      "rammer_length_at_queen_death": 5,
+      "free_steps_turn_start": 2,
+      "free_steps_old_at_death": 2,
+      "requested_steps": 3,
+      "successful_head_updates": 2,
+      "executed_through_collision": 3,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 3,
+      "rammer_head_at_queen_turn": [
+        32,
+        9
+      ],
+      "rammer_length_at_queen_turn": 5,
+      "action": [
+        "move",
+        "NWW"
+      ],
+      "path": [
+        [
+          32,
+          8
+        ],
+        [
+          31,
+          8
+        ],
+        [
+          30,
+          8
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            32,
+            8
+          ],
+          "t": [
+            34,
+            10
+          ],
+          "old_h": [
+            32,
+            9
+          ],
+          "old_len": 5
+        },
+        {
+          "h": [
+            31,
+            8
+          ],
+          "t": [
+            33,
+            10
+          ],
+          "old_h": [
+            32,
+            8
+          ],
+          "old_len": 5
+        }
+      ],
+      "event_index": 34398
+    },
+    {
+      "game": 1152242,
+      "battle": 1152239,
+      "map": "Prisoners Dilemma",
+      "opp": "Oswald",
+      "our_team": "B",
+      "round": 282,
+      "queen_last_turn_round": 282,
+      "queen_head_at_last_turn": [
+        20,
+        3
+      ],
+      "queen_head_at_death": [
+        20,
+        2
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 59,
+      "rammer_head_at_turn_start": [
+        21,
+        1
+      ],
+      "rammer_length_turn_start": 4,
+      "rammer_length_at_queen_death": 4,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        21,
+        1
+      ],
+      "rammer_length_at_queen_turn": 4,
+      "action": [
+        "move",
+        "WS"
+      ],
+      "path": [
+        [
+          20,
+          1
+        ],
+        [
+          20,
+          2
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            20,
+            1
+          ],
+          "t": [
+            23,
+            1
+          ],
+          "old_h": [
+            21,
+            1
+          ],
+          "old_len": 4
+        }
+      ],
+      "event_index": 17298
+    },
+    {
+      "game": 1151141,
+      "battle": 1151138,
+      "map": "Islands",
+      "opp": "Oswald",
+      "our_team": "B",
+      "round": 136,
+      "queen_last_turn_round": 136,
+      "queen_head_at_last_turn": [
+        6,
+        36
+      ],
+      "queen_head_at_death": [
+        7,
+        36
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 57,
+      "rammer_head_at_turn_start": [
+        7,
+        34
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        7,
+        34
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "SS"
+      ],
+      "path": [
+        [
+          7,
+          35
+        ],
+        [
+          7,
+          36
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            7,
+            35
+          ],
+          "t": [
+            7,
+            33
+          ],
+          "old_h": [
+            7,
+            34
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 31929
+    },
+    {
+      "game": 1151142,
+      "battle": 1151138,
+      "map": "Autarky",
+      "opp": "Oswald",
+      "our_team": "B",
+      "round": 85,
+      "queen_last_turn_round": 85,
+      "queen_head_at_last_turn": [
+        42,
+        11
+      ],
+      "queen_head_at_death": [
+        42,
+        10
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 6,
+      "rammer_head_at_turn_start": [
+        44,
+        10
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        44,
+        10
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "WW"
+      ],
+      "path": [
+        [
+          43,
+          10
+        ],
+        [
+          42,
+          10
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            43,
+            10
+          ],
+          "t": [
+            45,
+            10
+          ],
+          "old_h": [
+            44,
+            10
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 7470
+    },
+    {
+      "game": 1166690,
+      "battle": 1166690,
+      "map": "Stripes",
+      "opp": "Oswald",
+      "our_team": "B",
+      "round": 387,
+      "queen_last_turn_round": 387,
+      "queen_head_at_last_turn": [
+        5,
+        10
+      ],
+      "queen_head_at_death": [
+        5,
+        9
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 49,
+      "rammer_head_at_turn_start": [
+        8,
+        9
+      ],
+      "rammer_length_turn_start": 7,
+      "rammer_length_at_queen_death": 7,
+      "free_steps_turn_start": 2,
+      "free_steps_old_at_death": 2,
+      "requested_steps": 3,
+      "successful_head_updates": 2,
+      "executed_through_collision": 3,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 4,
+      "old_distance_to_final_head": 3,
+      "rammer_head_at_queen_turn": [
+        8,
+        9
+      ],
+      "rammer_length_at_queen_turn": 7,
+      "action": [
+        "move",
+        "WWW"
+      ],
+      "path": [
+        [
+          7,
+          9
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          5,
+          9
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            7,
+            9
+          ],
+          "t": [
+            11,
+            9
+          ],
+          "old_h": [
+            8,
+            9
+          ],
+          "old_len": 7
+        },
+        {
+          "h": [
+            6,
+            9
+          ],
+          "t": [
+            10,
+            9
+          ],
+          "old_h": [
+            7,
+            9
+          ],
+          "old_len": 7
+        }
+      ],
+      "event_index": 12305
+    },
+    {
+      "game": 1166694,
+      "battle": 1166690,
+      "map": "Islands",
+      "opp": "Oswald",
+      "our_team": "B",
+      "round": 170,
+      "queen_last_turn_round": 170,
+      "queen_head_at_last_turn": [
+        30,
+        37
+      ],
+      "queen_head_at_death": [
+        30,
+        36
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 333,
+      "rammer_head_at_turn_start": [
+        29,
+        36
+      ],
+      "rammer_length_turn_start": 2,
+      "rammer_length_at_queen_death": 2,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": false,
+      "old_visible_using_final_head": false,
+      "distance_at_queen_turn": null,
+      "old_distance_to_final_head": null,
+      "rammer_head_at_queen_turn": null,
+      "rammer_length_at_queen_turn": null,
+      "action": [
+        "move",
+        "E"
+      ],
+      "path": [
+        [
+          30,
+          36
+        ]
+      ],
+      "updates": [],
+      "event_index": 39262
+    },
+    {
+      "game": 1165916,
+      "battle": 1165916,
+      "map": "Devil",
+      "opp": "WaterCandle",
+      "our_team": "A",
+      "round": 214,
+      "queen_last_turn_round": 214,
+      "queen_head_at_last_turn": [
+        7,
+        10
+      ],
+      "queen_head_at_death": [
+        6,
+        10
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 125,
+      "rammer_head_at_turn_start": [
+        8,
+        7
+      ],
+      "rammer_length_turn_start": 5,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 2,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 5,
+      "successful_head_updates": 4,
+      "executed_through_collision": 5,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 4,
+      "old_distance_to_final_head": 5,
+      "rammer_head_at_queen_turn": [
+        8,
+        7
+      ],
+      "rammer_length_at_queen_turn": 5,
+      "action": [
+        "move",
+        "SSWWS"
+      ],
+      "path": [
+        [
+          8,
+          8
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          6,
+          10
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            8,
+            8
+          ],
+          "t": [
+            8,
+            4
+          ],
+          "old_h": [
+            8,
+            7
+          ],
+          "old_len": 5
+        },
+        {
+          "h": [
+            8,
+            9
+          ],
+          "t": [
+            8,
+            5
+          ],
+          "old_h": [
+            8,
+            8
+          ],
+          "old_len": 5
+        },
+        {
+          "h": [
+            7,
+            9
+          ],
+          "t": [
+            8,
+            7
+          ],
+          "old_h": [
+            8,
+            9
+          ],
+          "old_len": 5
+        },
+        {
+          "h": [
+            6,
+            9
+          ],
+          "t": [
+            8,
+            9
+          ],
+          "old_h": [
+            7,
+            9
+          ],
+          "old_len": 4
+        }
+      ],
+      "event_index": 30351
+    },
+    {
+      "game": 1165917,
+      "battle": 1165916,
+      "map": "Prisoners Dilemma",
+      "opp": "WaterCandle",
+      "our_team": "A",
+      "round": 242,
+      "queen_last_turn_round": 242,
+      "queen_head_at_last_turn": [
+        31,
+        14
+      ],
+      "queen_head_at_death": [
+        30,
+        14
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 49,
+      "rammer_head_at_turn_start": [
+        30,
+        13
+      ],
+      "rammer_length_turn_start": 2,
+      "rammer_length_at_queen_death": 2,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 1,
+      "rammer_head_at_queen_turn": [
+        30,
+        13
+      ],
+      "rammer_length_at_queen_turn": 2,
+      "action": [
+        "move",
+        "S"
+      ],
+      "path": [
+        [
+          30,
+          14
+        ]
+      ],
+      "updates": [],
+      "event_index": 29770
+    },
+    {
+      "game": 1165919,
+      "battle": 1165916,
+      "map": "Stripes",
+      "opp": "WaterCandle",
+      "our_team": "A",
+      "round": 165,
+      "queen_last_turn_round": 165,
+      "queen_head_at_last_turn": [
+        2,
+        2
+      ],
+      "queen_head_at_death": [
+        3,
+        2
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 46,
+      "rammer_head_at_turn_start": [
+        4,
+        2
+      ],
+      "rammer_length_turn_start": 2,
+      "rammer_length_at_queen_death": 2,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 1,
+      "rammer_head_at_queen_turn": [
+        4,
+        2
+      ],
+      "rammer_length_at_queen_turn": 2,
+      "action": [
+        "move",
+        "W"
+      ],
+      "path": [
+        [
+          3,
+          2
+        ]
+      ],
+      "updates": [],
+      "event_index": 9707
+    },
+    {
+      "game": 1164574,
+      "battle": 1164574,
+      "map": "Slithery Fight",
+      "opp": "aisakastrats",
+      "our_team": "B",
+      "round": 491,
+      "queen_last_turn_round": 491,
+      "queen_head_at_last_turn": [
+        58,
+        17
+      ],
+      "queen_head_at_death": [
+        58,
+        16
+      ],
+      "queen_length_at_last_turn": 7,
+      "queen_length_at_death": 7,
+      "rammer": 1839,
+      "rammer_head_at_turn_start": [
+        61,
+        14
+      ],
+      "rammer_length_turn_start": 17,
+      "rammer_length_at_queen_death": 17,
+      "free_steps_turn_start": 5,
+      "free_steps_old_at_death": 5,
+      "requested_steps": 5,
+      "successful_head_updates": 4,
+      "executed_through_collision": 5,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 6,
+      "old_distance_to_final_head": 5,
+      "rammer_head_at_queen_turn": [
+        61,
+        14
+      ],
+      "rammer_length_at_queen_turn": 17,
+      "action": [
+        "move",
+        "SSWWW"
+      ],
+      "path": [
+        [
+          61,
+          15
+        ],
+        [
+          61,
+          16
+        ],
+        [
+          60,
+          16
+        ],
+        [
+          59,
+          16
+        ],
+        [
+          58,
+          16
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            61,
+            15
+          ],
+          "t": [
+            56,
+            8
+          ],
+          "old_h": [
+            61,
+            14
+          ],
+          "old_len": 17
+        },
+        {
+          "h": [
+            61,
+            16
+          ],
+          "t": [
+            56,
+            9
+          ],
+          "old_h": [
+            61,
+            15
+          ],
+          "old_len": 17
+        },
+        {
+          "h": [
+            60,
+            16
+          ],
+          "t": [
+            56,
+            10
+          ],
+          "old_h": [
+            61,
+            16
+          ],
+          "old_len": 17
+        },
+        {
+          "h": [
+            59,
+            16
+          ],
+          "t": [
+            57,
+            10
+          ],
+          "old_h": [
+            60,
+            16
+          ],
+          "old_len": 17
+        }
+      ],
+      "event_index": 299660
+    },
+    {
+      "game": 1164578,
+      "battle": 1164574,
+      "map": "Devil",
+      "opp": "aisakastrats",
+      "our_team": "B",
+      "round": 350,
+      "queen_last_turn_round": 350,
+      "queen_head_at_last_turn": [
+        25,
+        9
+      ],
+      "queen_head_at_death": [
+        24,
+        9
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 239,
+      "rammer_head_at_turn_start": [
+        24,
+        7
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        24,
+        7
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "SS"
+      ],
+      "path": [
+        [
+          24,
+          8
+        ],
+        [
+          24,
+          9
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            24,
+            8
+          ],
+          "t": [
+            24,
+            6
+          ],
+          "old_h": [
+            24,
+            7
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 85075
+    },
+    {
+      "game": 1162937,
+      "battle": 1162937,
+      "map": "Trophy",
+      "opp": "Tony S",
+      "our_team": "A",
+      "round": 129,
+      "queen_last_turn_round": 129,
+      "queen_head_at_last_turn": [
+        1,
+        16
+      ],
+      "queen_head_at_death": [
+        1,
+        15
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 8,
+      "rammer_head_at_turn_start": [
+        3,
+        15
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        3,
+        15
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "WW"
+      ],
+      "path": [
+        [
+          2,
+          15
+        ],
+        [
+          1,
+          15
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            2,
+            15
+          ],
+          "t": [
+            4,
+            15
+          ],
+          "old_h": [
+            3,
+            15
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 25461
+    },
+    {
+      "game": 1162938,
+      "battle": 1162937,
+      "map": "Devil",
+      "opp": "Tony S",
+      "our_team": "A",
+      "round": 124,
+      "queen_last_turn_round": 124,
+      "queen_head_at_last_turn": [
+        4,
+        9
+      ],
+      "queen_head_at_death": [
+        5,
+        9
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 16,
+      "rammer_head_at_turn_start": [
+        8,
+        10
+      ],
+      "rammer_length_turn_start": 6,
+      "rammer_length_at_queen_death": 5,
+      "free_steps_turn_start": 2,
+      "free_steps_old_at_death": 2,
+      "requested_steps": 4,
+      "successful_head_updates": 3,
+      "executed_through_collision": 4,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": false,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 5,
+      "old_distance_to_final_head": 4,
+      "rammer_head_at_queen_turn": [
+        8,
+        10
+      ],
+      "rammer_length_at_queen_turn": 6,
+      "action": [
+        "move",
+        "NWWW"
+      ],
+      "path": [
+        [
+          8,
+          9
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          5,
+          9
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            8,
+            9
+          ],
+          "t": [
+            8,
+            14
+          ],
+          "old_h": [
+            8,
+            10
+          ],
+          "old_len": 6
+        },
+        {
+          "h": [
+            7,
+            9
+          ],
+          "t": [
+            8,
+            13
+          ],
+          "old_h": [
+            8,
+            9
+          ],
+          "old_len": 6
+        },
+        {
+          "h": [
+            6,
+            9
+          ],
+          "t": [
+            8,
+            11
+          ],
+          "old_h": [
+            7,
+            9
+          ],
+          "old_len": 6
+        }
+      ],
+      "event_index": 21981
+    },
+    {
+      "game": 1162939,
+      "battle": 1162937,
+      "map": "Autarky",
+      "opp": "Tony S",
+      "our_team": "A",
+      "round": 50,
+      "queen_last_turn_round": 50,
+      "queen_head_at_last_turn": [
+        38,
+        16
+      ],
+      "queen_head_at_death": [
+        38,
+        15
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 27,
+      "rammer_head_at_turn_start": [
+        36,
+        14
+      ],
+      "rammer_length_turn_start": 4,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 3,
+      "successful_head_updates": 2,
+      "executed_through_collision": 3,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 4,
+      "old_distance_to_final_head": 3,
+      "rammer_head_at_queen_turn": [
+        36,
+        14
+      ],
+      "rammer_length_at_queen_turn": 4,
+      "action": [
+        "move",
+        "EES"
+      ],
+      "path": [
+        [
+          37,
+          14
+        ],
+        [
+          38,
+          14
+        ],
+        [
+          38,
+          15
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            37,
+            14
+          ],
+          "t": [
+            34,
+            14
+          ],
+          "old_h": [
+            36,
+            14
+          ],
+          "old_len": 4
+        },
+        {
+          "h": [
+            38,
+            14
+          ],
+          "t": [
+            36,
+            14
+          ],
+          "old_h": [
+            37,
+            14
+          ],
+          "old_len": 4
+        }
+      ],
+      "event_index": 7062
+    },
+    {
+      "game": 1162941,
+      "battle": 1162937,
+      "map": "Queen Of Spades",
+      "opp": "Tony S",
+      "our_team": "A",
+      "round": 204,
+      "queen_last_turn_round": 204,
+      "queen_head_at_last_turn": [
+        13,
+        0
+      ],
+      "queen_head_at_death": [
+        13,
+        34
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 59,
+      "rammer_head_at_turn_start": [
+        14,
+        33
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        14,
+        33
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "WS"
+      ],
+      "path": [
+        [
+          13,
+          33
+        ],
+        [
+          13,
+          34
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            13,
+            33
+          ],
+          "t": [
+            14,
+            32
+          ],
+          "old_h": [
+            14,
+            33
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 21458
+    },
+    {
+      "game": 1162052,
+      "battle": 1162052,
+      "map": "Prisoners Dilemma",
+      "opp": "Bhole Chature",
+      "our_team": "A",
+      "round": 209,
+      "queen_last_turn_round": 209,
+      "queen_head_at_last_turn": [
+        5,
+        9
+      ],
+      "queen_head_at_death": [
+        5,
+        10
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 85,
+      "rammer_head_at_turn_start": [
+        7,
+        10
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        7,
+        10
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "WW"
+      ],
+      "path": [
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          10
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            6,
+            10
+          ],
+          "t": [
+            8,
+            10
+          ],
+          "old_h": [
+            7,
+            10
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 16993
+    },
+    {
+      "game": 1162055,
+      "battle": 1162052,
+      "map": "Around UNSW",
+      "opp": "Bhole Chature",
+      "our_team": "A",
+      "round": 131,
+      "queen_last_turn_round": 131,
+      "queen_head_at_last_turn": [
+        33,
+        4
+      ],
+      "queen_head_at_death": [
+        33,
+        5
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 64,
+      "rammer_head_at_turn_start": [
+        34,
+        5
+      ],
+      "rammer_length_turn_start": 2,
+      "rammer_length_at_queen_death": 2,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 1,
+      "rammer_head_at_queen_turn": [
+        34,
+        5
+      ],
+      "rammer_length_at_queen_turn": 2,
+      "action": [
+        "move",
+        "W"
+      ],
+      "path": [
+        [
+          33,
+          5
+        ]
+      ],
+      "updates": [],
+      "event_index": 40379
+    },
+    {
+      "game": 1162056,
+      "battle": 1162052,
+      "map": "Trophy",
+      "opp": "Bhole Chature",
+      "our_team": "A",
+      "round": 37,
+      "queen_last_turn_round": 37,
+      "queen_head_at_last_turn": [
+        13,
+        12
+      ],
+      "queen_head_at_death": [
+        14,
+        12
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 3,
+      "rammer_head_at_turn_start": [
+        13,
+        10
+      ],
+      "rammer_length_turn_start": 4,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 3,
+      "successful_head_updates": 2,
+      "executed_through_collision": 3,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 3,
+      "rammer_head_at_queen_turn": [
+        13,
+        10
+      ],
+      "rammer_length_at_queen_turn": 4,
+      "action": [
+        "move",
+        "SES"
+      ],
+      "path": [
+        [
+          13,
+          11
+        ],
+        [
+          14,
+          11
+        ],
+        [
+          14,
+          12
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            13,
+            11
+          ],
+          "t": [
+            12,
+            9
+          ],
+          "old_h": [
+            13,
+            10
+          ],
+          "old_len": 4
+        },
+        {
+          "h": [
+            14,
+            11
+          ],
+          "t": [
+            13,
+            10
+          ],
+          "old_h": [
+            13,
+            11
+          ],
+          "old_len": 4
+        }
+      ],
+      "event_index": 1110
+    },
+    {
+      "game": 1275375,
+      "battle": 1275373,
+      "map": "Default",
+      "opp": "PoGang",
+      "our_team": "B",
+      "round": 37,
+      "queen_last_turn_round": 37,
+      "queen_head_at_last_turn": [
+        29,
+        17
+      ],
+      "queen_head_at_death": [
+        29,
+        16
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 5,
+      "rammer_head_at_turn_start": [
+        30,
+        16
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 1,
+      "rammer_head_at_queen_turn": [
+        30,
+        16
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "W"
+      ],
+      "path": [
+        [
+          29,
+          16
+        ]
+      ],
+      "updates": [],
+      "event_index": 3692
+    },
+    {
+      "game": 1275377,
+      "battle": 1275373,
+      "map": "Autarky",
+      "opp": "PoGang",
+      "our_team": "B",
+      "round": 182,
+      "queen_last_turn_round": 182,
+      "queen_head_at_last_turn": [
+        32,
+        13
+      ],
+      "queen_head_at_death": [
+        33,
+        13
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 138,
+      "rammer_head_at_turn_start": [
+        34,
+        13
+      ],
+      "rammer_length_turn_start": 2,
+      "rammer_length_at_queen_death": 2,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 1,
+      "rammer_head_at_queen_turn": [
+        34,
+        13
+      ],
+      "rammer_length_at_queen_turn": 2,
+      "action": [
+        "move",
+        "W"
+      ],
+      "path": [
+        [
+          33,
+          13
+        ]
+      ],
+      "updates": [],
+      "event_index": 31076
+    },
+    {
+      "game": 1271598,
+      "battle": 1271597,
+      "map": "Australia",
+      "opp": "Deep Sea Dragons",
+      "our_team": "B",
+      "round": 280,
+      "queen_last_turn_round": 280,
+      "queen_head_at_last_turn": [
+        9,
+        41
+      ],
+      "queen_head_at_death": [
+        9,
+        42
+      ],
+      "queen_length_at_last_turn": 6,
+      "queen_length_at_death": 6,
+      "rammer": 227,
+      "rammer_head_at_turn_start": [
+        10,
+        42
+      ],
+      "rammer_length_turn_start": 2,
+      "rammer_length_at_queen_death": 2,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 1,
+      "rammer_head_at_queen_turn": [
+        10,
+        42
+      ],
+      "rammer_length_at_queen_turn": 2,
+      "action": [
+        "move",
+        "W"
+      ],
+      "path": [
+        [
+          9,
+          42
+        ]
+      ],
+      "updates": [],
+      "event_index": 73859
+    },
+    {
+      "game": 1271014,
+      "battle": 1271012,
+      "map": "Australia",
+      "opp": "sonarstar0",
+      "our_team": "B",
+      "round": 163,
+      "queen_last_turn_round": 163,
+      "queen_head_at_last_turn": [
+        26,
+        45
+      ],
+      "queen_head_at_death": [
+        27,
+        45
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 114,
+      "rammer_head_at_turn_start": [
+        27,
+        44
+      ],
+      "rammer_length_turn_start": 2,
+      "rammer_length_at_queen_death": 2,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 1,
+      "rammer_head_at_queen_turn": [
+        27,
+        44
+      ],
+      "rammer_length_at_queen_turn": 2,
+      "action": [
+        "move",
+        "S"
+      ],
+      "path": [
+        [
+          27,
+          45
+        ]
+      ],
+      "updates": [],
+      "event_index": 41913
+    },
+    {
+      "game": 1271015,
+      "battle": 1271012,
+      "map": "Autarky",
+      "opp": "sonarstar0",
+      "our_team": "B",
+      "round": 85,
+      "queen_last_turn_round": 85,
+      "queen_head_at_last_turn": [
+        17,
+        7
+      ],
+      "queen_head_at_death": [
+        17,
+        8
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 9,
+      "rammer_head_at_turn_start": [
+        16,
+        8
+      ],
+      "rammer_length_turn_start": 2,
+      "rammer_length_at_queen_death": 2,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 1,
+      "rammer_head_at_queen_turn": [
+        16,
+        8
+      ],
+      "rammer_length_at_queen_turn": 2,
+      "action": [
+        "move",
+        "E"
+      ],
+      "path": [
+        [
+          17,
+          8
+        ]
+      ],
+      "updates": [],
+      "event_index": 10441
+    },
+    {
+      "game": 1267706,
+      "battle": 1267703,
+      "map": "Trophy",
+      "opp": "tozoman",
+      "our_team": "A",
+      "round": 105,
+      "queen_last_turn_round": 105,
+      "queen_head_at_last_turn": [
+        4,
+        21
+      ],
+      "queen_head_at_death": [
+        4,
+        22
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 22,
+      "rammer_head_at_turn_start": [
+        6,
+        22
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        6,
+        22
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "WW"
+      ],
+      "path": [
+        [
+          5,
+          22
+        ],
+        [
+          4,
+          22
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            5,
+            22
+          ],
+          "t": [
+            7,
+            22
+          ],
+          "old_h": [
+            6,
+            22
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 15136
+    },
+    {
+      "game": 1267707,
+      "battle": 1267703,
+      "map": "Prisoners Dilemma",
+      "opp": "tozoman",
+      "our_team": "A",
+      "round": 442,
+      "queen_last_turn_round": 442,
+      "queen_head_at_last_turn": [
+        18,
+        1
+      ],
+      "queen_head_at_death": [
+        19,
+        1
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 76,
+      "rammer_head_at_turn_start": [
+        20,
+        2
+      ],
+      "rammer_length_turn_start": 5,
+      "rammer_length_at_queen_death": 5,
+      "free_steps_turn_start": 2,
+      "free_steps_old_at_death": 2,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        20,
+        2
+      ],
+      "rammer_length_at_queen_turn": 5,
+      "action": [
+        "move",
+        "WN"
+      ],
+      "path": [
+        [
+          19,
+          2
+        ],
+        [
+          19,
+          1
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            19,
+            2
+          ],
+          "t": [
+            20,
+            5
+          ],
+          "old_h": [
+            20,
+            2
+          ],
+          "old_len": 5
+        }
+      ],
+      "event_index": 31975
+    },
+    {
+      "game": 1267086,
+      "battle": 1267085,
+      "map": "Trophy",
+      "opp": "\ud83d\ude39",
+      "our_team": "A",
+      "round": 89,
+      "queen_last_turn_round": 89,
+      "queen_head_at_last_turn": [
+        3,
+        14
+      ],
+      "queen_head_at_death": [
+        2,
+        14
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 54,
+      "rammer_head_at_turn_start": [
+        1,
+        14
+      ],
+      "rammer_length_turn_start": 2,
+      "rammer_length_at_queen_death": 2,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 1,
+      "rammer_head_at_queen_turn": [
+        1,
+        14
+      ],
+      "rammer_length_at_queen_turn": 2,
+      "action": [
+        "move",
+        "E"
+      ],
+      "path": [
+        [
+          2,
+          14
+        ]
+      ],
+      "updates": [],
+      "event_index": 9096
+    },
+    {
+      "game": 1267087,
+      "battle": 1267085,
+      "map": "Prisoners Dilemma",
+      "opp": "\ud83d\ude39",
+      "our_team": "A",
+      "round": 101,
+      "queen_last_turn_round": 101,
+      "queen_head_at_last_turn": [
+        28,
+        12
+      ],
+      "queen_head_at_death": [
+        27,
+        12
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 55,
+      "rammer_head_at_turn_start": [
+        26,
+        12
+      ],
+      "rammer_length_turn_start": 2,
+      "rammer_length_at_queen_death": 2,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 1,
+      "rammer_head_at_queen_turn": [
+        26,
+        12
+      ],
+      "rammer_length_at_queen_turn": 2,
+      "action": [
+        "move",
+        "E"
+      ],
+      "path": [
+        [
+          27,
+          12
+        ]
+      ],
+      "updates": [],
+      "event_index": 5616
+    },
+    {
+      "game": 1267089,
+      "battle": 1267085,
+      "map": "Autarky",
+      "opp": "\ud83d\ude39",
+      "our_team": "A",
+      "round": 55,
+      "queen_last_turn_round": 55,
+      "queen_head_at_last_turn": [
+        41,
+        17
+      ],
+      "queen_head_at_death": [
+        40,
+        17
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 35,
+      "rammer_head_at_turn_start": [
+        40,
+        15
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        40,
+        15
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "SS"
+      ],
+      "path": [
+        [
+          40,
+          16
+        ],
+        [
+          40,
+          17
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            40,
+            16
+          ],
+          "t": [
+            39,
+            15
+          ],
+          "old_h": [
+            40,
+            15
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 6160
+    },
+    {
+      "game": 1263440,
+      "battle": 1263438,
+      "map": "Trophy",
+      "opp": "tozoman",
+      "our_team": "B",
+      "round": 160,
+      "queen_last_turn_round": 160,
+      "queen_head_at_last_turn": [
+        22,
+        7
+      ],
+      "queen_head_at_death": [
+        22,
+        8
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 30,
+      "rammer_head_at_turn_start": [
+        20,
+        8
+      ],
+      "rammer_length_turn_start": 7,
+      "rammer_length_at_queen_death": 7,
+      "free_steps_turn_start": 2,
+      "free_steps_old_at_death": 2,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        20,
+        8
+      ],
+      "rammer_length_at_queen_turn": 7,
+      "action": [
+        "move",
+        "EE"
+      ],
+      "path": [
+        [
+          21,
+          8
+        ],
+        [
+          22,
+          8
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            21,
+            8
+          ],
+          "t": [
+            18,
+            11
+          ],
+          "old_h": [
+            20,
+            8
+          ],
+          "old_len": 7
+        }
+      ],
+      "event_index": 8210
+    },
+    {
+      "game": 1263441,
+      "battle": 1263438,
+      "map": "Autarky",
+      "opp": "tozoman",
+      "our_team": "B",
+      "round": 234,
+      "queen_last_turn_round": 234,
+      "queen_head_at_last_turn": [
+        17,
+        2
+      ],
+      "queen_head_at_death": [
+        16,
+        2
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 86,
+      "rammer_head_at_turn_start": [
+        16,
+        0
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        16,
+        0
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "SS"
+      ],
+      "path": [
+        [
+          16,
+          1
+        ],
+        [
+          16,
+          2
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            16,
+            1
+          ],
+          "t": [
+            15,
+            0
+          ],
+          "old_h": [
+            16,
+            0
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 32971
+    },
+    {
+      "game": 1262764,
+      "battle": 1262764,
+      "map": "Slithery Fight",
+      "opp": "Shannon",
+      "our_team": "A",
+      "round": 112,
+      "queen_last_turn_round": 112,
+      "queen_head_at_last_turn": [
+        5,
+        17
+      ],
+      "queen_head_at_death": [
+        5,
+        18
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 65,
+      "rammer_head_at_turn_start": [
+        7,
+        18
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        7,
+        18
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "WW"
+      ],
+      "path": [
+        [
+          6,
+          18
+        ],
+        [
+          5,
+          18
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            6,
+            18
+          ],
+          "t": [
+            7,
+            19
+          ],
+          "old_h": [
+            7,
+            18
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 49733
+    },
+    {
+      "game": 1262767,
+      "battle": 1262764,
+      "map": "Stripes",
+      "opp": "Shannon",
+      "our_team": "A",
+      "round": 129,
+      "queen_last_turn_round": 129,
+      "queen_head_at_last_turn": [
+        9,
+        10
+      ],
+      "queen_head_at_death": [
+        9,
+        11
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 8,
+      "rammer_head_at_turn_start": [
+        12,
+        10
+      ],
+      "rammer_length_turn_start": 4,
+      "rammer_length_at_queen_death": 4,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 3,
+      "successful_head_updates": 2,
+      "executed_through_collision": 3,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 4,
+      "rammer_head_at_queen_turn": [
+        12,
+        10
+      ],
+      "rammer_length_at_queen_turn": 4,
+      "action": [
+        "move",
+        "WSW"
+      ],
+      "path": [
+        [
+          11,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          9,
+          11
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            11,
+            10
+          ],
+          "t": [
+            10,
+            10
+          ],
+          "old_h": [
+            12,
+            10
+          ],
+          "old_len": 4
+        },
+        {
+          "h": [
+            10,
+            11
+          ],
+          "t": [
+            12,
+            11
+          ],
+          "old_h": [
+            11,
+            10
+          ],
+          "old_len": 5
+        }
+      ],
+      "event_index": 6636
+    },
+    {
+      "game": 1260623,
+      "battle": 1260623,
+      "map": "Australia",
+      "opp": "Sieberrsec Industrie",
+      "our_team": "B",
+      "round": 292,
+      "queen_last_turn_round": 292,
+      "queen_head_at_last_turn": [
+        53,
+        9
+      ],
+      "queen_head_at_death": [
+        53,
+        10
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 103,
+      "rammer_head_at_turn_start": [
+        55,
+        13
+      ],
+      "rammer_length_turn_start": 6,
+      "rammer_length_at_queen_death": 4,
+      "free_steps_turn_start": 2,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 5,
+      "successful_head_updates": 4,
+      "executed_through_collision": 5,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": false,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 6,
+      "old_distance_to_final_head": 5,
+      "rammer_head_at_queen_turn": [
+        55,
+        13
+      ],
+      "rammer_length_at_queen_turn": 6,
+      "action": [
+        "move",
+        "NNNWW"
+      ],
+      "path": [
+        [
+          55,
+          12
+        ],
+        [
+          55,
+          11
+        ],
+        [
+          55,
+          10
+        ],
+        [
+          54,
+          10
+        ],
+        [
+          53,
+          10
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            55,
+            12
+          ],
+          "t": [
+            54,
+            16
+          ],
+          "old_h": [
+            55,
+            13
+          ],
+          "old_len": 6
+        },
+        {
+          "h": [
+            55,
+            11
+          ],
+          "t": [
+            54,
+            15
+          ],
+          "old_h": [
+            55,
+            12
+          ],
+          "old_len": 6
+        },
+        {
+          "h": [
+            55,
+            10
+          ],
+          "t": [
+            55,
+            14
+          ],
+          "old_h": [
+            55,
+            11
+          ],
+          "old_len": 6
+        },
+        {
+          "h": [
+            54,
+            10
+          ],
+          "t": [
+            55,
+            12
+          ],
+          "old_h": [
+            55,
+            10
+          ],
+          "old_len": 5
+        }
+      ],
+      "event_index": 96110
+    },
+    {
+      "game": 1258898,
+      "battle": 1258897,
+      "map": "weakhold",
+      "opp": "life is NP hard",
+      "our_team": "B",
+      "round": 491,
+      "queen_last_turn_round": 491,
+      "queen_head_at_last_turn": [
+        30,
+        14
+      ],
+      "queen_head_at_death": [
+        29,
+        14
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 224,
+      "rammer_head_at_turn_start": [
+        32,
+        13
+      ],
+      "rammer_length_turn_start": 14,
+      "rammer_length_at_queen_death": 14,
+      "free_steps_turn_start": 4,
+      "free_steps_old_at_death": 4,
+      "requested_steps": 4,
+      "successful_head_updates": 3,
+      "executed_through_collision": 4,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 4,
+      "rammer_head_at_queen_turn": [
+        32,
+        13
+      ],
+      "rammer_length_at_queen_turn": 14,
+      "action": [
+        "move",
+        "WWWS"
+      ],
+      "path": [
+        [
+          31,
+          13
+        ],
+        [
+          30,
+          13
+        ],
+        [
+          29,
+          13
+        ],
+        [
+          29,
+          14
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            31,
+            13
+          ],
+          "t": [
+            39,
+            14
+          ],
+          "old_h": [
+            32,
+            13
+          ],
+          "old_len": 14
+        },
+        {
+          "h": [
+            30,
+            13
+          ],
+          "t": [
+            39,
+            13
+          ],
+          "old_h": [
+            31,
+            13
+          ],
+          "old_len": 14
+        },
+        {
+          "h": [
+            29,
+            13
+          ],
+          "t": [
+            38,
+            13
+          ],
+          "old_h": [
+            30,
+            13
+          ],
+          "old_len": 14
+        }
+      ],
+      "event_index": 62848
+    },
+    {
+      "game": 1258901,
+      "battle": 1258897,
+      "map": "Australia",
+      "opp": "life is NP hard",
+      "our_team": "B",
+      "round": 146,
+      "queen_last_turn_round": 146,
+      "queen_head_at_last_turn": [
+        36,
+        21
+      ],
+      "queen_head_at_death": [
+        36,
+        22
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 4,
+      "rammer": 106,
+      "rammer_head_at_turn_start": [
+        36,
+        25
+      ],
+      "rammer_length_turn_start": 9,
+      "rammer_length_at_queen_death": 10,
+      "free_steps_turn_start": 3,
+      "free_steps_old_at_death": 3,
+      "requested_steps": 3,
+      "successful_head_updates": 2,
+      "executed_through_collision": 3,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": false,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 4,
+      "old_distance_to_final_head": 3,
+      "rammer_head_at_queen_turn": [
+        36,
+        25
+      ],
+      "rammer_length_at_queen_turn": 9,
+      "action": [
+        "move",
+        "NNN"
+      ],
+      "path": [
+        [
+          36,
+          24
+        ],
+        [
+          36,
+          23
+        ],
+        [
+          36,
+          22
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            36,
+            24
+          ],
+          "t": [
+            35,
+            20
+          ],
+          "old_h": [
+            36,
+            25
+          ],
+          "old_len": 9
+        },
+        {
+          "h": [
+            36,
+            23
+          ],
+          "t": [
+            34,
+            20
+          ],
+          "old_h": [
+            36,
+            24
+          ],
+          "old_len": 10
+        }
+      ],
+      "event_index": 44846
+    },
+    {
+      "game": 1256069,
+      "battle": 1256069,
+      "map": "Stripes",
+      "opp": "Cognoscenti",
+      "our_team": "B",
+      "round": 92,
+      "queen_last_turn_round": 92,
+      "queen_head_at_last_turn": [
+        0,
+        4
+      ],
+      "queen_head_at_death": [
+        23,
+        4
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 3,
+      "rammer_head_at_turn_start": [
+        22,
+        3
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        22,
+        3
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "ES"
+      ],
+      "path": [
+        [
+          23,
+          3
+        ],
+        [
+          23,
+          4
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            23,
+            3
+          ],
+          "t": [
+            21,
+            3
+          ],
+          "old_h": [
+            22,
+            3
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 2958
+    },
+    {
+      "game": 1256070,
+      "battle": 1256069,
+      "map": "weakhold",
+      "opp": "Cognoscenti",
+      "our_team": "B",
+      "round": 246,
+      "queen_last_turn_round": 246,
+      "queen_head_at_last_turn": [
+        24,
+        11
+      ],
+      "queen_head_at_death": [
+        23,
+        11
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 87,
+      "rammer_head_at_turn_start": [
+        22,
+        11
+      ],
+      "rammer_length_turn_start": 2,
+      "rammer_length_at_queen_death": 2,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 1,
+      "rammer_head_at_queen_turn": [
+        22,
+        11
+      ],
+      "rammer_length_at_queen_turn": 2,
+      "action": [
+        "move",
+        "E"
+      ],
+      "path": [
+        [
+          23,
+          11
+        ]
+      ],
+      "updates": [],
+      "event_index": 18421
+    },
+    {
+      "game": 1255717,
+      "battle": 1255713,
+      "map": "Default",
+      "opp": "mlp",
+      "our_team": "B",
+      "round": 305,
+      "queen_last_turn_round": 305,
+      "queen_head_at_last_turn": [
+        10,
+        5
+      ],
+      "queen_head_at_death": [
+        9,
+        5
+      ],
+      "queen_length_at_last_turn": 4,
+      "queen_length_at_death": 4,
+      "rammer": 118,
+      "rammer_head_at_turn_start": [
+        7,
+        5
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        7,
+        5
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "EE"
+      ],
+      "path": [
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            8,
+            5
+          ],
+          "t": [
+            7,
+            6
+          ],
+          "old_h": [
+            7,
+            5
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 42413
+    },
+    {
+      "game": 1254237,
+      "battle": 1254237,
+      "map": "Islands",
+      "opp": "life is NP hard",
+      "our_team": "B",
+      "round": 168,
+      "queen_last_turn_round": 168,
+      "queen_head_at_last_turn": [
+        4,
+        39
+      ],
+      "queen_head_at_death": [
+        4,
+        0
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 56,
+      "rammer_head_at_turn_start": [
+        4,
+        2
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        4,
+        2
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "NN"
+      ],
+      "path": [
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            4,
+            1
+          ],
+          "t": [
+            4,
+            3
+          ],
+          "old_h": [
+            4,
+            2
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 59760
+    },
+    {
+      "game": 1254239,
+      "battle": 1254237,
+      "map": "Australia",
+      "opp": "life is NP hard",
+      "our_team": "B",
+      "round": 123,
+      "queen_last_turn_round": 123,
+      "queen_head_at_last_turn": [
+        52,
+        10
+      ],
+      "queen_head_at_death": [
+        53,
+        10
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 9,
+      "rammer_head_at_turn_start": [
+        53,
+        12
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        53,
+        12
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "NN"
+      ],
+      "path": [
+        [
+          53,
+          11
+        ],
+        [
+          53,
+          10
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            53,
+            11
+          ],
+          "t": [
+            54,
+            12
+          ],
+          "old_h": [
+            53,
+            12
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 36223
+    },
+    {
+      "game": 1254240,
+      "battle": 1254237,
+      "map": "Autarky",
+      "opp": "life is NP hard",
+      "our_team": "B",
+      "round": 180,
+      "queen_last_turn_round": 180,
+      "queen_head_at_last_turn": [
+        36,
+        2
+      ],
+      "queen_head_at_death": [
+        36,
+        3
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 140,
+      "rammer_head_at_turn_start": [
+        34,
+        3
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        34,
+        3
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "EE"
+      ],
+      "path": [
+        [
+          35,
+          3
+        ],
+        [
+          36,
+          3
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            35,
+            3
+          ],
+          "t": [
+            33,
+            3
+          ],
+          "old_h": [
+            34,
+            3
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 33530
+    },
+    {
+      "game": 1254241,
+      "battle": 1254237,
+      "map": "Trophy",
+      "opp": "life is NP hard",
+      "our_team": "B",
+      "round": 18,
+      "queen_last_turn_round": 18,
+      "queen_head_at_last_turn": [
+        12,
+        15
+      ],
+      "queen_head_at_death": [
+        12,
+        14
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 6,
+      "rammer_head_at_turn_start": [
+        14,
+        15
+      ],
+      "rammer_length_turn_start": 4,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 3,
+      "successful_head_updates": 2,
+      "executed_through_collision": 3,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 3,
+      "rammer_head_at_queen_turn": [
+        14,
+        15
+      ],
+      "rammer_length_at_queen_turn": 4,
+      "action": [
+        "move",
+        "NWW"
+      ],
+      "path": [
+        [
+          14,
+          14
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          12,
+          14
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            14,
+            14
+          ],
+          "t": [
+            16,
+            15
+          ],
+          "old_h": [
+            14,
+            15
+          ],
+          "old_len": 4
+        },
+        {
+          "h": [
+            13,
+            14
+          ],
+          "t": [
+            14,
+            15
+          ],
+          "old_h": [
+            14,
+            14
+          ],
+          "old_len": 4
+        }
+      ],
+      "event_index": 644
+    },
+    {
+      "game": 1249428,
+      "battle": 1249428,
+      "map": "Prisoners Dilemma",
+      "opp": "No Idea",
+      "our_team": "A",
+      "round": 283,
+      "queen_last_turn_round": 283,
+      "queen_head_at_last_turn": [
+        7,
+        9
+      ],
+      "queen_head_at_death": [
+        7,
+        8
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 157,
+      "rammer_head_at_turn_start": [
+        7,
+        6
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        7,
+        6
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "SS"
+      ],
+      "path": [
+        [
+          7,
+          7
+        ],
+        [
+          7,
+          8
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            7,
+            7
+          ],
+          "t": [
+            8,
+            6
+          ],
+          "old_h": [
+            7,
+            6
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 44758
+    },
+    {
+      "game": 1249430,
+      "battle": 1249428,
+      "map": "Australia",
+      "opp": "No Idea",
+      "our_team": "A",
+      "round": 334,
+      "queen_last_turn_round": 334,
+      "queen_head_at_last_turn": [
+        35,
+        20
+      ],
+      "queen_head_at_death": [
+        35,
+        21
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 420,
+      "rammer_head_at_turn_start": [
+        36,
+        22
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        36,
+        22
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "NW"
+      ],
+      "path": [
+        [
+          36,
+          21
+        ],
+        [
+          35,
+          21
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            36,
+            21
+          ],
+          "t": [
+            37,
+            22
+          ],
+          "old_h": [
+            36,
+            22
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 162792
+    },
+    {
+      "game": 1247620,
+      "battle": 1247619,
+      "map": "Default",
+      "opp": "\u9f99\u864e\u8c79",
+      "our_team": "A",
+      "round": 71,
+      "queen_last_turn_round": 71,
+      "queen_head_at_last_turn": [
+        4,
+        31
+      ],
+      "queen_head_at_death": [
+        5,
+        31
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 7,
+      "rammer_head_at_turn_start": [
+        7,
+        31
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        7,
+        31
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "WW"
+      ],
+      "path": [
+        [
+          6,
+          31
+        ],
+        [
+          5,
+          31
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            6,
+            31
+          ],
+          "t": [
+            7,
+            0
+          ],
+          "old_h": [
+            7,
+            31
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 6664
+    },
+    {
+      "game": 1246159,
+      "battle": 1246159,
+      "map": "Prisoners Dilemma",
+      "opp": "hm",
+      "our_team": "B",
+      "round": 274,
+      "queen_last_turn_round": 274,
+      "queen_head_at_last_turn": [
+        18,
+        3
+      ],
+      "queen_head_at_death": [
+        19,
+        3
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 107,
+      "rammer_head_at_turn_start": [
+        19,
+        5
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        19,
+        5
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "NN"
+      ],
+      "path": [
+        [
+          19,
+          4
+        ],
+        [
+          19,
+          3
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            19,
+            4
+          ],
+          "t": [
+            19,
+            6
+          ],
+          "old_h": [
+            19,
+            5
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 20267
+    },
+    {
+      "game": 1246160,
+      "battle": 1246159,
+      "map": "Slithery Fight",
+      "opp": "hm",
+      "our_team": "B",
+      "round": 349,
+      "queen_last_turn_round": 349,
+      "queen_head_at_last_turn": [
+        50,
+        3
+      ],
+      "queen_head_at_death": [
+        50,
+        2
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 1525,
+      "rammer_head_at_turn_start": [
+        48,
+        1
+      ],
+      "rammer_length_turn_start": 4,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 3,
+      "successful_head_updates": 2,
+      "executed_through_collision": 3,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 4,
+      "old_distance_to_final_head": 3,
+      "rammer_head_at_queen_turn": [
+        48,
+        1
+      ],
+      "rammer_length_at_queen_turn": 4,
+      "action": [
+        "move",
+        "SEE"
+      ],
+      "path": [
+        [
+          48,
+          2
+        ],
+        [
+          49,
+          2
+        ],
+        [
+          50,
+          2
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            48,
+            2
+          ],
+          "t": [
+            47,
+            0
+          ],
+          "old_h": [
+            48,
+            1
+          ],
+          "old_len": 4
+        },
+        {
+          "h": [
+            49,
+            2
+          ],
+          "t": [
+            48,
+            1
+          ],
+          "old_h": [
+            48,
+            2
+          ],
+          "old_len": 4
+        }
+      ],
+      "event_index": 219999
+    },
+    {
+      "game": 1246161,
+      "battle": 1246159,
+      "map": "Default",
+      "opp": "hm",
+      "our_team": "B",
+      "round": 145,
+      "queen_last_turn_round": 145,
+      "queen_head_at_last_turn": [
+        18,
+        22
+      ],
+      "queen_head_at_death": [
+        17,
+        22
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 22,
+      "rammer_head_at_turn_start": [
+        17,
+        24
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        17,
+        24
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "NN"
+      ],
+      "path": [
+        [
+          17,
+          23
+        ],
+        [
+          17,
+          22
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            17,
+            23
+          ],
+          "t": [
+            16,
+            24
+          ],
+          "old_h": [
+            17,
+            24
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 23683
+    },
+    {
+      "game": 1243717,
+      "battle": 1243714,
+      "map": "Australia",
+      "opp": "shark++",
+      "our_team": "B",
+      "round": 32,
+      "queen_last_turn_round": 32,
+      "queen_head_at_last_turn": [
+        17,
+        13
+      ],
+      "queen_head_at_death": [
+        17,
+        14
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 3,
+      "rammer_head_at_turn_start": [
+        18,
+        14
+      ],
+      "rammer_length_turn_start": 2,
+      "rammer_length_at_queen_death": 2,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 1,
+      "rammer_head_at_queen_turn": [
+        18,
+        14
+      ],
+      "rammer_length_at_queen_turn": 2,
+      "action": [
+        "move",
+        "W"
+      ],
+      "path": [
+        [
+          17,
+          14
+        ]
+      ],
+      "updates": [],
+      "event_index": 4011
+    },
+    {
+      "game": 1242570,
+      "battle": 1242566,
+      "map": "Prisoners Dilemma",
+      "opp": "First Place",
+      "our_team": "B",
+      "round": 277,
+      "queen_last_turn_round": 277,
+      "queen_head_at_last_turn": [
+        30,
+        3
+      ],
+      "queen_head_at_death": [
+        30,
+        4
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 46,
+      "rammer_head_at_turn_start": [
+        27,
+        5
+      ],
+      "rammer_length_turn_start": 5,
+      "rammer_length_at_queen_death": 4,
+      "free_steps_turn_start": 2,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 4,
+      "successful_head_updates": 3,
+      "executed_through_collision": 4,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 5,
+      "old_distance_to_final_head": 4,
+      "rammer_head_at_queen_turn": [
+        27,
+        5
+      ],
+      "rammer_length_at_queen_turn": 5,
+      "action": [
+        "move",
+        "NEEE"
+      ],
+      "path": [
+        [
+          27,
+          4
+        ],
+        [
+          28,
+          4
+        ],
+        [
+          29,
+          4
+        ],
+        [
+          30,
+          4
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            27,
+            4
+          ],
+          "t": [
+            27,
+            8
+          ],
+          "old_h": [
+            27,
+            5
+          ],
+          "old_len": 5
+        },
+        {
+          "h": [
+            28,
+            4
+          ],
+          "t": [
+            27,
+            7
+          ],
+          "old_h": [
+            27,
+            4
+          ],
+          "old_len": 5
+        },
+        {
+          "h": [
+            29,
+            4
+          ],
+          "t": [
+            27,
+            5
+          ],
+          "old_h": [
+            28,
+            4
+          ],
+          "old_len": 5
+        }
+      ],
+      "event_index": 13363
+    },
+    {
+      "game": 1240544,
+      "battle": 1240540,
+      "map": "Australia",
+      "opp": "sonarstar0",
+      "our_team": "A",
+      "round": 112,
+      "queen_last_turn_round": 112,
+      "queen_head_at_last_turn": [
+        36,
+        4
+      ],
+      "queen_head_at_death": [
+        36,
+        5
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 54,
+      "rammer_head_at_turn_start": [
+        36,
+        8
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 3,
+      "successful_head_updates": 2,
+      "executed_through_collision": 3,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": false,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 4,
+      "old_distance_to_final_head": 3,
+      "rammer_head_at_queen_turn": [
+        36,
+        8
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "NNN"
+      ],
+      "path": [
+        [
+          36,
+          7
+        ],
+        [
+          36,
+          6
+        ],
+        [
+          36,
+          5
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            36,
+            7
+          ],
+          "t": [
+            36,
+            9
+          ],
+          "old_h": [
+            36,
+            8
+          ],
+          "old_len": 3
+        },
+        {
+          "h": [
+            36,
+            6
+          ],
+          "t": [
+            36,
+            8
+          ],
+          "old_h": [
+            36,
+            7
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 18452
+    },
+    {
+      "game": 1235574,
+      "battle": 1235573,
+      "map": "Tower Defense",
+      "opp": "sonarstar0",
+      "our_team": "A",
+      "round": 245,
+      "queen_last_turn_round": 245,
+      "queen_head_at_last_turn": [
+        3,
+        6
+      ],
+      "queen_head_at_death": [
+        3,
+        5
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 59,
+      "rammer_head_at_turn_start": [
+        2,
+        2
+      ],
+      "rammer_length_turn_start": 5,
+      "rammer_length_at_queen_death": 5,
+      "free_steps_turn_start": 2,
+      "free_steps_old_at_death": 2,
+      "requested_steps": 4,
+      "successful_head_updates": 3,
+      "executed_through_collision": 4,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": false,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 5,
+      "old_distance_to_final_head": 4,
+      "rammer_head_at_queen_turn": [
+        2,
+        2
+      ],
+      "rammer_length_at_queen_turn": 5,
+      "action": [
+        "move",
+        "SSSE"
+      ],
+      "path": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            2,
+            3
+          ],
+          "t": [
+            1,
+            2
+          ],
+          "old_h": [
+            2,
+            2
+          ],
+          "old_len": 5
+        },
+        {
+          "h": [
+            2,
+            4
+          ],
+          "t": [
+            1,
+            1
+          ],
+          "old_h": [
+            2,
+            3
+          ],
+          "old_len": 5
+        },
+        {
+          "h": [
+            2,
+            5
+          ],
+          "t": [
+            2,
+            1
+          ],
+          "old_h": [
+            2,
+            4
+          ],
+          "old_len": 5
+        }
+      ],
+      "event_index": 19679
+    },
+    {
+      "game": 1235577,
+      "battle": 1235573,
+      "map": "Around UNSW",
+      "opp": "sonarstar0",
+      "our_team": "A",
+      "round": 138,
+      "queen_last_turn_round": 138,
+      "queen_head_at_last_turn": [
+        35,
+        24
+      ],
+      "queen_head_at_death": [
+        36,
+        24
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 88,
+      "rammer_head_at_turn_start": [
+        34,
+        26
+      ],
+      "rammer_length_turn_start": 5,
+      "rammer_length_at_queen_death": 6,
+      "free_steps_turn_start": 2,
+      "free_steps_old_at_death": 2,
+      "requested_steps": 4,
+      "successful_head_updates": 3,
+      "executed_through_collision": 4,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 4,
+      "rammer_head_at_queen_turn": [
+        34,
+        26
+      ],
+      "rammer_length_at_queen_turn": 5,
+      "action": [
+        "move",
+        "EENN"
+      ],
+      "path": [
+        [
+          35,
+          26
+        ],
+        [
+          36,
+          26
+        ],
+        [
+          36,
+          25
+        ],
+        [
+          36,
+          24
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            35,
+            26
+          ],
+          "t": [
+            34,
+            30
+          ],
+          "old_h": [
+            34,
+            26
+          ],
+          "old_len": 5
+        },
+        {
+          "h": [
+            36,
+            26
+          ],
+          "t": [
+            34,
+            30
+          ],
+          "old_h": [
+            35,
+            26
+          ],
+          "old_len": 6
+        },
+        {
+          "h": [
+            36,
+            25
+          ],
+          "t": [
+            34,
+            28
+          ],
+          "old_h": [
+            36,
+            26
+          ],
+          "old_len": 7
+        }
+      ],
+      "event_index": 43859
+    },
+    {
+      "game": 1231032,
+      "battle": 1231032,
+      "map": "Australia",
+      "opp": "DIET CODE",
+      "our_team": "B",
+      "round": 55,
+      "queen_last_turn_round": 55,
+      "queen_head_at_last_turn": [
+        31,
+        58
+      ],
+      "queen_head_at_death": [
+        31,
+        57
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 2,
+      "rammer_head_at_turn_start": [
+        31,
+        56
+      ],
+      "rammer_length_turn_start": 2,
+      "rammer_length_at_queen_death": 2,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 1,
+      "rammer_head_at_queen_turn": [
+        31,
+        56
+      ],
+      "rammer_length_at_queen_turn": 2,
+      "action": [
+        "move",
+        "S"
+      ],
+      "path": [
+        [
+          31,
+          57
+        ]
+      ],
+      "updates": [],
+      "event_index": 8222
+    },
+    {
+      "game": 1231033,
+      "battle": 1231032,
+      "map": "Devil",
+      "opp": "DIET CODE",
+      "our_team": "B",
+      "round": 90,
+      "queen_last_turn_round": 90,
+      "queen_head_at_last_turn": [
+        4,
+        5
+      ],
+      "queen_head_at_death": [
+        4,
+        4
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 18,
+      "rammer_head_at_turn_start": [
+        4,
+        3
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 1,
+      "rammer_head_at_queen_turn": [
+        4,
+        3
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "S"
+      ],
+      "path": [
+        [
+          4,
+          4
+        ]
+      ],
+      "updates": [],
+      "event_index": 9546
+    },
+    {
+      "game": 1231036,
+      "battle": 1231032,
+      "map": "Islands",
+      "opp": "DIET CODE",
+      "our_team": "B",
+      "round": 115,
+      "queen_last_turn_round": 115,
+      "queen_head_at_last_turn": [
+        55,
+        13
+      ],
+      "queen_head_at_death": [
+        0,
+        13
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 139,
+      "rammer_head_at_turn_start": [
+        1,
+        13
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 1,
+      "rammer_head_at_queen_turn": [
+        1,
+        13
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "W"
+      ],
+      "path": [
+        [
+          0,
+          13
+        ]
+      ],
+      "updates": [],
+      "event_index": 36815
+    },
+    {
+      "game": 1226341,
+      "battle": 1226339,
+      "map": "Devil",
+      "opp": "Akatsuki",
+      "our_team": "A",
+      "round": 157,
+      "queen_last_turn_round": 157,
+      "queen_head_at_last_turn": [
+        25,
+        0
+      ],
+      "queen_head_at_death": [
+        25,
+        1
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 96,
+      "rammer_head_at_turn_start": [
+        25,
+        2
+      ],
+      "rammer_length_turn_start": 2,
+      "rammer_length_at_queen_death": 2,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 1,
+      "rammer_head_at_queen_turn": [
+        25,
+        2
+      ],
+      "rammer_length_at_queen_turn": 2,
+      "action": [
+        "move",
+        "N"
+      ],
+      "path": [
+        [
+          25,
+          1
+        ]
+      ],
+      "updates": [],
+      "event_index": 26518
+    },
+    {
+      "game": 1226343,
+      "battle": 1226339,
+      "map": "Default",
+      "opp": "Akatsuki",
+      "our_team": "A",
+      "round": 146,
+      "queen_last_turn_round": 146,
+      "queen_head_at_last_turn": [
+        23,
+        26
+      ],
+      "queen_head_at_death": [
+        23,
+        25
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 17,
+      "rammer_head_at_turn_start": [
+        21,
+        25
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        21,
+        25
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "EE"
+      ],
+      "path": [
+        [
+          22,
+          25
+        ],
+        [
+          23,
+          25
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            22,
+            25
+          ],
+          "t": [
+            21,
+            26
+          ],
+          "old_h": [
+            21,
+            25
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 22869
+    },
+    {
+      "game": 1225928,
+      "battle": 1225924,
+      "map": "Trophy",
+      "opp": "wawow830",
+      "our_team": "B",
+      "round": 147,
+      "queen_last_turn_round": 147,
+      "queen_head_at_last_turn": [
+        13,
+        20
+      ],
+      "queen_head_at_death": [
+        13,
+        21
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 67,
+      "rammer_head_at_turn_start": [
+        13,
+        22
+      ],
+      "rammer_length_turn_start": 2,
+      "rammer_length_at_queen_death": 2,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 1,
+      "rammer_head_at_queen_turn": [
+        13,
+        22
+      ],
+      "rammer_length_at_queen_turn": 2,
+      "action": [
+        "move",
+        "N"
+      ],
+      "path": [
+        [
+          13,
+          21
+        ]
+      ],
+      "updates": [],
+      "event_index": 15865
+    },
+    {
+      "game": 1224446,
+      "battle": 1224443,
+      "map": "Devil",
+      "opp": "Akatsuki",
+      "our_team": "B",
+      "round": 125,
+      "queen_last_turn_round": 125,
+      "queen_head_at_last_turn": [
+        28,
+        15
+      ],
+      "queen_head_at_death": [
+        29,
+        15
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 58,
+      "rammer_head_at_turn_start": [
+        29,
+        14
+      ],
+      "rammer_length_turn_start": 2,
+      "rammer_length_at_queen_death": 2,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 1,
+      "rammer_head_at_queen_turn": [
+        29,
+        14
+      ],
+      "rammer_length_at_queen_turn": 2,
+      "action": [
+        "move",
+        "S"
+      ],
+      "path": [
+        [
+          29,
+          15
+        ]
+      ],
+      "updates": [],
+      "event_index": 19780
+    },
+    {
+      "game": 1223006,
+      "battle": 1223004,
+      "map": "Autarky",
+      "opp": "wawow830",
+      "our_team": "B",
+      "round": 379,
+      "queen_last_turn_round": 379,
+      "queen_head_at_last_turn": [
+        26,
+        15
+      ],
+      "queen_head_at_death": [
+        25,
+        15
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 4,
+      "rammer": 180,
+      "rammer_head_at_turn_start": [
+        25,
+        14
+      ],
+      "rammer_length_turn_start": 2,
+      "rammer_length_at_queen_death": 2,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 1,
+      "rammer_head_at_queen_turn": [
+        25,
+        14
+      ],
+      "rammer_length_at_queen_turn": 2,
+      "action": [
+        "move",
+        "S"
+      ],
+      "path": [
+        [
+          25,
+          15
+        ]
+      ],
+      "updates": [],
+      "event_index": 55515
+    },
+    {
+      "game": 1219132,
+      "battle": 1219132,
+      "map": "Islands",
+      "opp": "bnb",
+      "our_team": "B",
+      "round": 282,
+      "queen_last_turn_round": 282,
+      "queen_head_at_last_turn": [
+        39,
+        31
+      ],
+      "queen_head_at_death": [
+        38,
+        31
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 487,
+      "rammer_head_at_turn_start": [
+        40,
+        32
+      ],
+      "rammer_length_turn_start": 9,
+      "rammer_length_at_queen_death": 9,
+      "free_steps_turn_start": 3,
+      "free_steps_old_at_death": 3,
+      "requested_steps": 3,
+      "successful_head_updates": 2,
+      "executed_through_collision": 3,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 3,
+      "rammer_head_at_queen_turn": [
+        40,
+        32
+      ],
+      "rammer_length_at_queen_turn": 9,
+      "action": [
+        "move",
+        "WWN"
+      ],
+      "path": [
+        [
+          39,
+          32
+        ],
+        [
+          38,
+          32
+        ],
+        [
+          38,
+          31
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            39,
+            32
+          ],
+          "t": [
+            42,
+            37
+          ],
+          "old_h": [
+            40,
+            32
+          ],
+          "old_len": 9
+        },
+        {
+          "h": [
+            38,
+            32
+          ],
+          "t": [
+            42,
+            36
+          ],
+          "old_h": [
+            39,
+            32
+          ],
+          "old_len": 9
+        }
+      ],
+      "event_index": 122370
+    },
+    {
+      "game": 1216560,
+      "battle": 1216558,
+      "map": "Autarky",
+      "opp": "Cognoscenti",
+      "our_team": "B",
+      "round": 379,
+      "queen_last_turn_round": 379,
+      "queen_head_at_last_turn": [
+        52,
+        9
+      ],
+      "queen_head_at_death": [
+        52,
+        8
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 127,
+      "rammer_head_at_turn_start": [
+        50,
+        8
+      ],
+      "rammer_length_turn_start": 13,
+      "rammer_length_at_queen_death": 13,
+      "free_steps_turn_start": 4,
+      "free_steps_old_at_death": 4,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        50,
+        8
+      ],
+      "rammer_length_at_queen_turn": 13,
+      "action": [
+        "move",
+        "EE"
+      ],
+      "path": [
+        [
+          51,
+          8
+        ],
+        [
+          52,
+          8
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            51,
+            8
+          ],
+          "t": [
+            46,
+            1
+          ],
+          "old_h": [
+            50,
+            8
+          ],
+          "old_len": 13
+        }
+      ],
+      "event_index": 42060
+    },
+    {
+      "game": 1216561,
+      "battle": 1216558,
+      "map": "Trophy",
+      "opp": "Cognoscenti",
+      "our_team": "B",
+      "round": 50,
+      "queen_last_turn_round": 50,
+      "queen_head_at_last_turn": [
+        17,
+        0
+      ],
+      "queen_head_at_death": [
+        17,
+        1
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 6,
+      "rammer_head_at_turn_start": [
+        15,
+        24
+      ],
+      "rammer_length_turn_start": 5,
+      "rammer_length_at_queen_death": 5,
+      "free_steps_turn_start": 2,
+      "free_steps_old_at_death": 2,
+      "requested_steps": 4,
+      "successful_head_updates": 3,
+      "executed_through_collision": 4,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 4,
+      "rammer_head_at_queen_turn": [
+        15,
+        24
+      ],
+      "rammer_length_at_queen_turn": 5,
+      "action": [
+        "move",
+        "ESSE"
+      ],
+      "path": [
+        [
+          16,
+          24
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          17,
+          1
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            16,
+            24
+          ],
+          "t": [
+            17,
+            22
+          ],
+          "old_h": [
+            15,
+            24
+          ],
+          "old_len": 5
+        },
+        {
+          "h": [
+            16,
+            0
+          ],
+          "t": [
+            16,
+            22
+          ],
+          "old_h": [
+            16,
+            24
+          ],
+          "old_len": 6
+        },
+        {
+          "h": [
+            16,
+            1
+          ],
+          "t": [
+            15,
+            23
+          ],
+          "old_h": [
+            16,
+            0
+          ],
+          "old_len": 6
+        }
+      ],
+      "event_index": 2305
+    },
+    {
+      "game": 1215077,
+      "battle": 1215074,
+      "map": "Trophy",
+      "opp": "CookAgent",
+      "our_team": "A",
+      "round": 119,
+      "queen_last_turn_round": 119,
+      "queen_head_at_last_turn": [
+        7,
+        17
+      ],
+      "queen_head_at_death": [
+        7,
+        16
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 107,
+      "rammer_head_at_turn_start": [
+        6,
+        16
+      ],
+      "rammer_length_turn_start": 2,
+      "rammer_length_at_queen_death": 2,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 1,
+      "rammer_head_at_queen_turn": [
+        6,
+        16
+      ],
+      "rammer_length_at_queen_turn": 2,
+      "action": [
+        "move",
+        "E"
+      ],
+      "path": [
+        [
+          7,
+          16
+        ]
+      ],
+      "updates": [],
+      "event_index": 12489
+    },
+    {
+      "game": 1215078,
+      "battle": 1215074,
+      "map": "Autarky",
+      "opp": "CookAgent",
+      "our_team": "A",
+      "round": 199,
+      "queen_last_turn_round": 199,
+      "queen_head_at_last_turn": [
+        52,
+        16
+      ],
+      "queen_head_at_death": [
+        51,
+        16
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 25,
+      "rammer_head_at_turn_start": [
+        51,
+        14
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        51,
+        14
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "SS"
+      ],
+      "path": [
+        [
+          51,
+          15
+        ],
+        [
+          51,
+          16
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            51,
+            15
+          ],
+          "t": [
+            51,
+            13
+          ],
+          "old_h": [
+            51,
+            14
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 23449
+    },
+    {
+      "game": 1212178,
+      "battle": 1212175,
+      "map": "Stripes",
+      "opp": "so-lonely",
+      "our_team": "A",
+      "round": 161,
+      "queen_last_turn_round": 161,
+      "queen_head_at_last_turn": [
+        17,
+        5
+      ],
+      "queen_head_at_death": [
+        18,
+        5
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 33,
+      "rammer_head_at_turn_start": [
+        19,
+        5
+      ],
+      "rammer_length_turn_start": 2,
+      "rammer_length_at_queen_death": 2,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 1,
+      "rammer_head_at_queen_turn": [
+        19,
+        5
+      ],
+      "rammer_length_at_queen_turn": 2,
+      "action": [
+        "move",
+        "W"
+      ],
+      "path": [
+        [
+          18,
+          5
+        ]
+      ],
+      "updates": [],
+      "event_index": 6329
+    },
+    {
+      "game": 1211120,
+      "battle": 1211120,
+      "map": "Islands",
+      "opp": "Oswald",
+      "our_team": "B",
+      "round": 57,
+      "queen_last_turn_round": 57,
+      "queen_head_at_last_turn": [
+        52,
+        32
+      ],
+      "queen_head_at_death": [
+        53,
+        32
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 29,
+      "rammer_head_at_turn_start": [
+        53,
+        34
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        53,
+        34
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "NN"
+      ],
+      "path": [
+        [
+          53,
+          33
+        ],
+        [
+          53,
+          32
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            53,
+            33
+          ],
+          "t": [
+            54,
+            34
+          ],
+          "old_h": [
+            53,
+            34
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 6193
+    },
+    {
+      "game": 1210673,
+      "battle": 1210672,
+      "map": "Prisoners Dilemma",
+      "opp": "gg frikin ez",
+      "our_team": "A",
+      "round": 108,
+      "queen_last_turn_round": 108,
+      "queen_head_at_last_turn": [
+        21,
+        14
+      ],
+      "queen_head_at_death": [
+        20,
+        14
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 50,
+      "rammer_head_at_turn_start": [
+        20,
+        13
+      ],
+      "rammer_length_turn_start": 2,
+      "rammer_length_at_queen_death": 2,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 1,
+      "rammer_head_at_queen_turn": [
+        20,
+        13
+      ],
+      "rammer_length_at_queen_turn": 2,
+      "action": [
+        "move",
+        "S"
+      ],
+      "path": [
+        [
+          20,
+          14
+        ]
+      ],
+      "updates": [],
+      "event_index": 8085
+    },
+    {
+      "game": 1209844,
+      "battle": 1209842,
+      "map": "Slithery Fight",
+      "opp": "buy high sell low",
+      "our_team": "A",
+      "round": 442,
+      "queen_last_turn_round": 442,
+      "queen_head_at_last_turn": [
+        8,
+        11
+      ],
+      "queen_head_at_death": [
+        8,
+        12
+      ],
+      "queen_length_at_last_turn": 11,
+      "queen_length_at_death": 11,
+      "rammer": 1527,
+      "rammer_head_at_turn_start": [
+        7,
+        15
+      ],
+      "rammer_length_turn_start": 7,
+      "rammer_length_at_queen_death": 6,
+      "free_steps_turn_start": 2,
+      "free_steps_old_at_death": 2,
+      "requested_steps": 4,
+      "successful_head_updates": 3,
+      "executed_through_collision": 4,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": false,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 5,
+      "old_distance_to_final_head": 4,
+      "rammer_head_at_queen_turn": [
+        7,
+        15
+      ],
+      "rammer_length_at_queen_turn": 7,
+      "action": [
+        "move",
+        "NNNE"
+      ],
+      "path": [
+        [
+          7,
+          14
+        ],
+        [
+          7,
+          13
+        ],
+        [
+          7,
+          12
+        ],
+        [
+          8,
+          12
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            7,
+            14
+          ],
+          "t": [
+            8,
+            19
+          ],
+          "old_h": [
+            7,
+            15
+          ],
+          "old_len": 7
+        },
+        {
+          "h": [
+            7,
+            13
+          ],
+          "t": [
+            7,
+            19
+          ],
+          "old_h": [
+            7,
+            14
+          ],
+          "old_len": 7
+        },
+        {
+          "h": [
+            7,
+            12
+          ],
+          "t": [
+            7,
+            17
+          ],
+          "old_h": [
+            7,
+            13
+          ],
+          "old_len": 7
+        }
+      ],
+      "event_index": 277461
+    },
+    {
+      "game": 1209845,
+      "battle": 1209842,
+      "map": "Australia",
+      "opp": "buy high sell low",
+      "our_team": "A",
+      "round": 138,
+      "queen_last_turn_round": 138,
+      "queen_head_at_last_turn": [
+        7,
+        43
+      ],
+      "queen_head_at_death": [
+        7,
+        42
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 48,
+      "rammer_head_at_turn_start": [
+        9,
+        42
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        9,
+        42
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "WW"
+      ],
+      "path": [
+        [
+          8,
+          42
+        ],
+        [
+          7,
+          42
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            8,
+            42
+          ],
+          "t": [
+            9,
+            41
+          ],
+          "old_h": [
+            9,
+            42
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 35516
+    },
+    {
+      "game": 1207736,
+      "battle": 1207732,
+      "map": "Devil",
+      "opp": "combilove",
+      "our_team": "B",
+      "round": 394,
+      "queen_last_turn_round": 394,
+      "queen_head_at_last_turn": [
+        27,
+        5
+      ],
+      "queen_head_at_death": [
+        27,
+        4
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 430,
+      "rammer_head_at_turn_start": [
+        27,
+        2
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        27,
+        2
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "SS"
+      ],
+      "path": [
+        [
+          27,
+          3
+        ],
+        [
+          27,
+          4
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            27,
+            3
+          ],
+          "t": [
+            27,
+            1
+          ],
+          "old_h": [
+            27,
+            2
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 114190
+    },
+    {
+      "game": 1207563,
+      "battle": 1207562,
+      "map": "Around UNSW",
+      "opp": "Oswald",
+      "our_team": "B",
+      "round": 146,
+      "queen_last_turn_round": 146,
+      "queen_head_at_last_turn": [
+        24,
+        33
+      ],
+      "queen_head_at_death": [
+        25,
+        33
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 302,
+      "rammer_head_at_turn_start": [
+        25,
+        32
+      ],
+      "rammer_length_turn_start": 2,
+      "rammer_length_at_queen_death": 2,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": false,
+      "old_visible_using_final_head": false,
+      "distance_at_queen_turn": null,
+      "old_distance_to_final_head": null,
+      "rammer_head_at_queen_turn": null,
+      "rammer_length_at_queen_turn": null,
+      "action": [
+        "move",
+        "S"
+      ],
+      "path": [
+        [
+          25,
+          33
+        ]
+      ],
+      "updates": [],
+      "event_index": 38474
+    },
+    {
+      "game": 1206929,
+      "battle": 1206927,
+      "map": "Trophy",
+      "opp": "Oswald",
+      "our_team": "B",
+      "round": 100,
+      "queen_last_turn_round": 100,
+      "queen_head_at_last_turn": [
+        3,
+        22
+      ],
+      "queen_head_at_death": [
+        3,
+        21
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 4,
+      "rammer_head_at_turn_start": [
+        5,
+        21
+      ],
+      "rammer_length_turn_start": 5,
+      "rammer_length_at_queen_death": 5,
+      "free_steps_turn_start": 2,
+      "free_steps_old_at_death": 2,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        5,
+        21
+      ],
+      "rammer_length_at_queen_turn": 5,
+      "action": [
+        "move",
+        "WW"
+      ],
+      "path": [
+        [
+          4,
+          21
+        ],
+        [
+          3,
+          21
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            4,
+            21
+          ],
+          "t": [
+            5,
+            18
+          ],
+          "old_h": [
+            5,
+            21
+          ],
+          "old_len": 5
+        }
+      ],
+      "event_index": 7397
+    },
+    {
+      "game": 1206931,
+      "battle": 1206927,
+      "map": "Maze",
+      "opp": "Oswald",
+      "our_team": "B",
+      "round": 210,
+      "queen_last_turn_round": 210,
+      "queen_head_at_last_turn": [
+        22,
+        4
+      ],
+      "queen_head_at_death": [
+        22,
+        3
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 143,
+      "rammer_head_at_turn_start": [
+        23,
+        2
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        23,
+        2
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "SW"
+      ],
+      "path": [
+        [
+          23,
+          3
+        ],
+        [
+          22,
+          3
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            23,
+            3
+          ],
+          "t": [
+            24,
+            2
+          ],
+          "old_h": [
+            23,
+            2
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 32843
+    },
+    {
+      "game": 1206165,
+      "battle": 1206163,
+      "map": "Queen Of Spades",
+      "opp": "mlp",
+      "our_team": "A",
+      "round": 56,
+      "queen_last_turn_round": 56,
+      "queen_head_at_last_turn": [
+        4,
+        5
+      ],
+      "queen_head_at_death": [
+        5,
+        5
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 13,
+      "rammer_head_at_turn_start": [
+        4,
+        3
+      ],
+      "rammer_length_turn_start": 4,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 3,
+      "successful_head_updates": 2,
+      "executed_through_collision": 3,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 3,
+      "rammer_head_at_queen_turn": [
+        4,
+        3
+      ],
+      "rammer_length_at_queen_turn": 4,
+      "action": [
+        "move",
+        "ESS"
+      ],
+      "path": [
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            5,
+            3
+          ],
+          "t": [
+            3,
+            2
+          ],
+          "old_h": [
+            4,
+            3
+          ],
+          "old_len": 4
+        },
+        {
+          "h": [
+            5,
+            4
+          ],
+          "t": [
+            4,
+            3
+          ],
+          "old_h": [
+            5,
+            3
+          ],
+          "old_len": 4
+        }
+      ],
+      "event_index": 1418
+    },
+    {
+      "game": 1203121,
+      "battle": 1203121,
+      "map": "Prisoners Dilemma",
+      "opp": "pizza",
+      "our_team": "A",
+      "round": 386,
+      "queen_last_turn_round": 386,
+      "queen_head_at_last_turn": [
+        18,
+        13
+      ],
+      "queen_head_at_death": [
+        18,
+        12
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 54,
+      "rammer_head_at_turn_start": [
+        19,
+        12
+      ],
+      "rammer_length_turn_start": 2,
+      "rammer_length_at_queen_death": 2,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 1,
+      "rammer_head_at_queen_turn": [
+        19,
+        12
+      ],
+      "rammer_length_at_queen_turn": 2,
+      "action": [
+        "move",
+        "W"
+      ],
+      "path": [
+        [
+          18,
+          12
+        ]
+      ],
+      "updates": [],
+      "event_index": 49641
+    },
+    {
+      "game": 1201724,
+      "battle": 1201722,
+      "map": "Tower Defense",
+      "opp": "Average Individuals (AI)",
+      "our_team": "B",
+      "round": 301,
+      "queen_last_turn_round": 301,
+      "queen_head_at_last_turn": [
+        26,
+        12
+      ],
+      "queen_head_at_death": [
+        26,
+        11
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 93,
+      "rammer_head_at_turn_start": [
+        28,
+        11
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        28,
+        11
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "WW"
+      ],
+      "path": [
+        [
+          27,
+          11
+        ],
+        [
+          26,
+          11
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            27,
+            11
+          ],
+          "t": [
+            29,
+            11
+          ],
+          "old_h": [
+            28,
+            11
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 44727
+    },
+    {
+      "game": 1201725,
+      "battle": 1201722,
+      "map": "Stripes",
+      "opp": "Average Individuals (AI)",
+      "our_team": "B",
+      "round": 156,
+      "queen_last_turn_round": 156,
+      "queen_head_at_last_turn": [
+        20,
+        8
+      ],
+      "queen_head_at_death": [
+        19,
+        8
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 4,
+      "rammer": 63,
+      "rammer_head_at_turn_start": [
+        19,
+        7
+      ],
+      "rammer_length_turn_start": 2,
+      "rammer_length_at_queen_death": 2,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 1,
+      "rammer_head_at_queen_turn": [
+        19,
+        7
+      ],
+      "rammer_length_at_queen_turn": 2,
+      "action": [
+        "move",
+        "S"
+      ],
+      "path": [
+        [
+          19,
+          8
+        ]
+      ],
+      "updates": [],
+      "event_index": 14458
+    },
+    {
+      "game": 1201006,
+      "battle": 1201003,
+      "map": "Stripes",
+      "opp": "Jet2Holiday",
+      "our_team": "B",
+      "round": 148,
+      "queen_last_turn_round": 148,
+      "queen_head_at_last_turn": [
+        2,
+        8
+      ],
+      "queen_head_at_death": [
+        1,
+        8
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 30,
+      "rammer_head_at_turn_start": [
+        23,
+        9
+      ],
+      "rammer_length_turn_start": 5,
+      "rammer_length_at_queen_death": 5,
+      "free_steps_turn_start": 2,
+      "free_steps_old_at_death": 2,
+      "requested_steps": 3,
+      "successful_head_updates": 2,
+      "executed_through_collision": 3,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 4,
+      "old_distance_to_final_head": 3,
+      "rammer_head_at_queen_turn": [
+        23,
+        9
+      ],
+      "rammer_length_at_queen_turn": 5,
+      "action": [
+        "move",
+        "EEN"
+      ],
+      "path": [
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            0,
+            9
+          ],
+          "t": [
+            20,
+            9
+          ],
+          "old_h": [
+            23,
+            9
+          ],
+          "old_len": 5
+        },
+        {
+          "h": [
+            1,
+            9
+          ],
+          "t": [
+            21,
+            9
+          ],
+          "old_h": [
+            0,
+            9
+          ],
+          "old_len": 5
+        }
+      ],
+      "event_index": 5089
+    },
+    {
+      "game": 1198899,
+      "battle": 1198899,
+      "map": "Australia",
+      "opp": "\ud83d\udd34\ud83d\udd35\u26aa\ufe0f",
+      "our_team": "A",
+      "round": 76,
+      "queen_last_turn_round": 76,
+      "queen_head_at_last_turn": [
+        28,
+        58
+      ],
+      "queen_head_at_death": [
+        28,
+        59
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 27,
+      "rammer_head_at_turn_start": [
+        26,
+        59
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        26,
+        59
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "EE"
+      ],
+      "path": [
+        [
+          27,
+          59
+        ],
+        [
+          28,
+          59
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            27,
+            59
+          ],
+          "t": [
+            26,
+            60
+          ],
+          "old_h": [
+            26,
+            59
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 12930
+    },
+    {
+      "game": 1198902,
+      "battle": 1198899,
+      "map": "Prisoners Dilemma",
+      "opp": "\ud83d\udd34\ud83d\udd35\u26aa\ufe0f",
+      "our_team": "A",
+      "round": 125,
+      "queen_last_turn_round": 125,
+      "queen_head_at_last_turn": [
+        11,
+        1
+      ],
+      "queen_head_at_death": [
+        11,
+        2
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 39,
+      "rammer_head_at_turn_start": [
+        13,
+        2
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        13,
+        2
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "WW"
+      ],
+      "path": [
+        [
+          12,
+          2
+        ],
+        [
+          11,
+          2
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            12,
+            2
+          ],
+          "t": [
+            13,
+            3
+          ],
+          "old_h": [
+            13,
+            2
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 14040
+    },
+    {
+      "game": 1198903,
+      "battle": 1198899,
+      "map": "Autarky",
+      "opp": "\ud83d\udd34\ud83d\udd35\u26aa\ufe0f",
+      "our_team": "A",
+      "round": 51,
+      "queen_last_turn_round": 51,
+      "queen_head_at_last_turn": [
+        37,
+        13
+      ],
+      "queen_head_at_death": [
+        37,
+        14
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 61,
+      "rammer_head_at_turn_start": [
+        35,
+        13
+      ],
+      "rammer_length_turn_start": 4,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 3,
+      "successful_head_updates": 2,
+      "executed_through_collision": 3,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": false,
+      "old_visible_using_final_head": false,
+      "distance_at_queen_turn": null,
+      "old_distance_to_final_head": null,
+      "rammer_head_at_queen_turn": null,
+      "rammer_length_at_queen_turn": null,
+      "action": [
+        "move",
+        "ESE"
+      ],
+      "path": [
+        [
+          36,
+          13
+        ],
+        [
+          36,
+          14
+        ],
+        [
+          37,
+          14
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            36,
+            13
+          ],
+          "t": [
+            35,
+            15
+          ],
+          "old_h": [
+            35,
+            13
+          ],
+          "old_len": 4
+        },
+        {
+          "h": [
+            36,
+            14
+          ],
+          "t": [
+            35,
+            13
+          ],
+          "old_h": [
+            36,
+            13
+          ],
+          "old_len": 4
+        }
+      ],
+      "event_index": 7331
+    },
+    {
+      "game": 1196704,
+      "battle": 1196704,
+      "map": "Autarky",
+      "opp": "err404",
+      "our_team": "B",
+      "round": 96,
+      "queen_last_turn_round": 96,
+      "queen_head_at_last_turn": [
+        46,
+        10
+      ],
+      "queen_head_at_death": [
+        46,
+        10
+      ],
+      "queen_length_at_last_turn": 4,
+      "queen_length_at_death": 2,
+      "rammer": 58,
+      "rammer_head_at_turn_start": [
+        44,
+        10
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        44,
+        10
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "EE"
+      ],
+      "path": [
+        [
+          45,
+          10
+        ],
+        [
+          46,
+          10
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            45,
+            10
+          ],
+          "t": [
+            43,
+            10
+          ],
+          "old_h": [
+            44,
+            10
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 13747
+    },
+    {
+      "game": 1196706,
+      "battle": 1196704,
+      "map": "Prisoners Dilemma",
+      "opp": "err404",
+      "our_team": "B",
+      "round": 84,
+      "queen_last_turn_round": 84,
+      "queen_head_at_last_turn": [
+        18,
+        15
+      ],
+      "queen_head_at_death": [
+        19,
+        15
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 8,
+      "rammer_head_at_turn_start": [
+        21,
+        15
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        21,
+        15
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "WW"
+      ],
+      "path": [
+        [
+          20,
+          15
+        ],
+        [
+          19,
+          15
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            20,
+            15
+          ],
+          "t": [
+            22,
+            15
+          ],
+          "old_h": [
+            21,
+            15
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 4185
+    },
+    {
+      "game": 1196707,
+      "battle": 1196704,
+      "map": "Queen Of Spades",
+      "opp": "err404",
+      "our_team": "B",
+      "round": 150,
+      "queen_last_turn_round": 150,
+      "queen_head_at_last_turn": [
+        8,
+        27
+      ],
+      "queen_head_at_death": [
+        8,
+        28
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 33,
+      "rammer_head_at_turn_start": [
+        7,
+        27
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 1,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        7,
+        27
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "SE"
+      ],
+      "path": [
+        [
+          7,
+          28
+        ],
+        [
+          8,
+          28
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            7,
+            28
+          ],
+          "t": [
+            7,
+            26
+          ],
+          "old_h": [
+            7,
+            27
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 10980
+    },
+    {
+      "game": 1192870,
+      "battle": 1192869,
+      "map": "Islands",
+      "opp": "StarStruck",
+      "our_team": "A",
+      "round": 202,
+      "queen_last_turn_round": 202,
+      "queen_head_at_last_turn": [
+        19,
+        37
+      ],
+      "queen_head_at_death": [
+        19,
+        38
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 22,
+      "rammer_head_at_turn_start": [
+        17,
+        35
+      ],
+      "rammer_length_turn_start": 5,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 2,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 5,
+      "successful_head_updates": 4,
+      "executed_through_collision": 5,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 4,
+      "old_distance_to_final_head": 5,
+      "rammer_head_at_queen_turn": [
+        17,
+        35
+      ],
+      "rammer_length_at_queen_turn": 5,
+      "action": [
+        "move",
+        "SESSE"
+      ],
+      "path": [
+        [
+          17,
+          36
+        ],
+        [
+          18,
+          36
+        ],
+        [
+          18,
+          37
+        ],
+        [
+          18,
+          38
+        ],
+        [
+          19,
+          38
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            17,
+            36
+          ],
+          "t": [
+            17,
+            32
+          ],
+          "old_h": [
+            17,
+            35
+          ],
+          "old_len": 5
+        },
+        {
+          "h": [
+            18,
+            36
+          ],
+          "t": [
+            17,
+            33
+          ],
+          "old_h": [
+            17,
+            36
+          ],
+          "old_len": 5
+        },
+        {
+          "h": [
+            18,
+            37
+          ],
+          "t": [
+            17,
+            35
+          ],
+          "old_h": [
+            18,
+            36
+          ],
+          "old_len": 5
+        },
+        {
+          "h": [
+            18,
+            38
+          ],
+          "t": [
+            18,
+            36
+          ],
+          "old_h": [
+            18,
+            37
+          ],
+          "old_len": 4
+        }
+      ],
+      "event_index": 92745
+    },
+    {
+      "game": 1192872,
+      "battle": 1192869,
+      "map": "Devil",
+      "opp": "StarStruck",
+      "our_team": "A",
+      "round": 30,
+      "queen_last_turn_round": 30,
+      "queen_head_at_last_turn": [
+        10,
+        7
+      ],
+      "queen_head_at_death": [
+        11,
+        7
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 11,
+      "rammer_head_at_turn_start": [
+        14,
+        4
+      ],
+      "rammer_length_turn_start": 12,
+      "rammer_length_at_queen_death": 10,
+      "free_steps_turn_start": 3,
+      "free_steps_old_at_death": 3,
+      "requested_steps": 6,
+      "successful_head_updates": 5,
+      "executed_through_collision": 6,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": false,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 7,
+      "old_distance_to_final_head": 6,
+      "rammer_head_at_queen_turn": [
+        14,
+        4
+      ],
+      "rammer_length_at_queen_turn": 12,
+      "action": [
+        "move",
+        "WSSSWW"
+      ],
+      "path": [
+        [
+          13,
+          4
+        ],
+        [
+          13,
+          5
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          13,
+          7
+        ],
+        [
+          12,
+          7
+        ],
+        [
+          11,
+          7
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            13,
+            4
+          ],
+          "t": [
+            16,
+            10
+          ],
+          "old_h": [
+            14,
+            4
+          ],
+          "old_len": 12
+        },
+        {
+          "h": [
+            13,
+            5
+          ],
+          "t": [
+            16,
+            11
+          ],
+          "old_h": [
+            13,
+            4
+          ],
+          "old_len": 12
+        },
+        {
+          "h": [
+            13,
+            6
+          ],
+          "t": [
+            15,
+            11
+          ],
+          "old_h": [
+            13,
+            5
+          ],
+          "old_len": 12
+        },
+        {
+          "h": [
+            13,
+            7
+          ],
+          "t": [
+            14,
+            10
+          ],
+          "old_h": [
+            13,
+            6
+          ],
+          "old_len": 12
+        },
+        {
+          "h": [
+            12,
+            7
+          ],
+          "t": [
+            14,
+            8
+          ],
+          "old_h": [
+            13,
+            7
+          ],
+          "old_len": 11
+        }
+      ],
+      "event_index": 2146
+    },
+    {
+      "game": 1192121,
+      "battle": 1192118,
+      "map": "Queen Of Spades",
+      "opp": "winner",
+      "our_team": "B",
+      "round": 78,
+      "queen_last_turn_round": 78,
+      "queen_head_at_last_turn": [
+        22,
+        24
+      ],
+      "queen_head_at_death": [
+        22,
+        25
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 11,
+      "rammer_head_at_turn_start": [
+        20,
+        25
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        20,
+        25
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "EE"
+      ],
+      "path": [
+        [
+          21,
+          25
+        ],
+        [
+          22,
+          25
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            21,
+            25
+          ],
+          "t": [
+            20,
+            26
+          ],
+          "old_h": [
+            20,
+            25
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 4390
+    },
+    {
+      "game": 1188333,
+      "battle": 1188331,
+      "map": "Prisoners Dilemma",
+      "opp": "CookAgent",
+      "our_team": "B",
+      "round": 220,
+      "queen_last_turn_round": 220,
+      "queen_head_at_last_turn": [
+        6,
+        9
+      ],
+      "queen_head_at_death": [
+        6,
+        8
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 52,
+      "rammer_head_at_turn_start": [
+        4,
+        8
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        4,
+        8
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "EE"
+      ],
+      "path": [
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          8
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            5,
+            8
+          ],
+          "t": [
+            4,
+            7
+          ],
+          "old_h": [
+            4,
+            8
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 11060
+    },
+    {
+      "game": 1187531,
+      "battle": 1187529,
+      "map": "Slithery Fight",
+      "opp": "ihateapple",
+      "our_team": "A",
+      "round": 255,
+      "queen_last_turn_round": 255,
+      "queen_head_at_last_turn": [
+        49,
+        2
+      ],
+      "queen_head_at_death": [
+        48,
+        2
+      ],
+      "queen_length_at_last_turn": 4,
+      "queen_length_at_death": 4,
+      "rammer": 1102,
+      "rammer_head_at_turn_start": [
+        45,
+        5
+      ],
+      "rammer_length_turn_start": 7,
+      "rammer_length_at_queen_death": 4,
+      "free_steps_turn_start": 2,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 6,
+      "successful_head_updates": 5,
+      "executed_through_collision": 6,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": false,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 7,
+      "old_distance_to_final_head": 6,
+      "rammer_head_at_queen_turn": [
+        45,
+        5
+      ],
+      "rammer_length_at_queen_turn": 7,
+      "action": [
+        "move",
+        "ENENEN"
+      ],
+      "path": [
+        [
+          46,
+          5
+        ],
+        [
+          46,
+          4
+        ],
+        [
+          47,
+          4
+        ],
+        [
+          47,
+          3
+        ],
+        [
+          48,
+          3
+        ],
+        [
+          48,
+          2
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            46,
+            5
+          ],
+          "t": [
+            42,
+            7
+          ],
+          "old_h": [
+            45,
+            5
+          ],
+          "old_len": 7
+        },
+        {
+          "h": [
+            46,
+            4
+          ],
+          "t": [
+            43,
+            7
+          ],
+          "old_h": [
+            46,
+            5
+          ],
+          "old_len": 7
+        },
+        {
+          "h": [
+            47,
+            4
+          ],
+          "t": [
+            44,
+            6
+          ],
+          "old_h": [
+            46,
+            4
+          ],
+          "old_len": 7
+        },
+        {
+          "h": [
+            47,
+            3
+          ],
+          "t": [
+            45,
+            5
+          ],
+          "old_h": [
+            47,
+            4
+          ],
+          "old_len": 6
+        },
+        {
+          "h": [
+            48,
+            3
+          ],
+          "t": [
+            46,
+            4
+          ],
+          "old_h": [
+            47,
+            3
+          ],
+          "old_len": 5
+        }
+      ],
+      "event_index": 104753
+    },
+    {
+      "game": 1183369,
+      "battle": 1183368,
+      "map": "Around UNSW",
+      "opp": "Atlas",
+      "our_team": "A",
+      "round": 309,
+      "queen_last_turn_round": 309,
+      "queen_head_at_last_turn": [
+        47,
+        33
+      ],
+      "queen_head_at_death": [
+        46,
+        33
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 619,
+      "rammer_head_at_turn_start": [
+        44,
+        33
+      ],
+      "rammer_length_turn_start": 6,
+      "rammer_length_at_queen_death": 6,
+      "free_steps_turn_start": 2,
+      "free_steps_old_at_death": 2,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        44,
+        33
+      ],
+      "rammer_length_at_queen_turn": 6,
+      "action": [
+        "move",
+        "EE"
+      ],
+      "path": [
+        [
+          45,
+          33
+        ],
+        [
+          46,
+          33
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            45,
+            33
+          ],
+          "t": [
+            43,
+            36
+          ],
+          "old_h": [
+            44,
+            33
+          ],
+          "old_len": 6
+        }
+      ],
+      "event_index": 110482
+    },
+    {
+      "game": 1181668,
+      "battle": 1181666,
+      "map": "Devil",
+      "opp": "I wanna go to CHINA",
+      "our_team": "B",
+      "round": 50,
+      "queen_last_turn_round": 50,
+      "queen_head_at_last_turn": [
+        18,
+        4
+      ],
+      "queen_head_at_death": [
+        18,
+        3
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 27,
+      "rammer_head_at_turn_start": [
+        16,
+        1
+      ],
+      "rammer_length_turn_start": 5,
+      "rammer_length_at_queen_death": 4,
+      "free_steps_turn_start": 2,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 4,
+      "successful_head_updates": 3,
+      "executed_through_collision": 4,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 5,
+      "old_distance_to_final_head": 4,
+      "rammer_head_at_queen_turn": [
+        16,
+        1
+      ],
+      "rammer_length_at_queen_turn": 5,
+      "action": [
+        "move",
+        "SSEE"
+      ],
+      "path": [
+        [
+          16,
+          2
+        ],
+        [
+          16,
+          3
+        ],
+        [
+          17,
+          3
+        ],
+        [
+          18,
+          3
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            16,
+            2
+          ],
+          "t": [
+            15,
+            1
+          ],
+          "old_h": [
+            16,
+            1
+          ],
+          "old_len": 5
+        },
+        {
+          "h": [
+            16,
+            3
+          ],
+          "t": [
+            15,
+            0
+          ],
+          "old_h": [
+            16,
+            2
+          ],
+          "old_len": 5
+        },
+        {
+          "h": [
+            17,
+            3
+          ],
+          "t": [
+            16,
+            1
+          ],
+          "old_h": [
+            16,
+            3
+          ],
+          "old_len": 5
+        }
+      ],
+      "event_index": 2815
+    },
+    {
+      "game": 1181669,
+      "battle": 1181666,
+      "map": "Tower Defense",
+      "opp": "I wanna go to CHINA",
+      "our_team": "B",
+      "round": 204,
+      "queen_last_turn_round": 204,
+      "queen_head_at_last_turn": [
+        1,
+        8
+      ],
+      "queen_head_at_death": [
+        1,
+        9
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 22,
+      "rammer_head_at_turn_start": [
+        0,
+        10
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        0,
+        10
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "NE"
+      ],
+      "path": [
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            0,
+            9
+          ],
+          "t": [
+            0,
+            11
+          ],
+          "old_h": [
+            0,
+            10
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 14768
+    },
+    {
+      "game": 1179828,
+      "battle": 1179828,
+      "map": "Trophy",
+      "opp": "winner",
+      "our_team": "B",
+      "round": 213,
+      "queen_last_turn_round": 213,
+      "queen_head_at_last_turn": [
+        5,
+        23
+      ],
+      "queen_head_at_death": [
+        5,
+        22
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 147,
+      "rammer_head_at_turn_start": [
+        7,
+        22
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        7,
+        22
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "WW"
+      ],
+      "path": [
+        [
+          6,
+          22
+        ],
+        [
+          5,
+          22
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            6,
+            22
+          ],
+          "t": [
+            8,
+            22
+          ],
+          "old_h": [
+            7,
+            22
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 50259
+    },
+    {
+      "game": 1179832,
+      "battle": 1179828,
+      "map": "Slithery Fight",
+      "opp": "winner",
+      "our_team": "B",
+      "round": 371,
+      "queen_last_turn_round": 371,
+      "queen_head_at_last_turn": [
+        42,
+        9
+      ],
+      "queen_head_at_death": [
+        41,
+        9
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 1660,
+      "rammer_head_at_turn_start": [
+        38,
+        11
+      ],
+      "rammer_length_turn_start": 12,
+      "rammer_length_at_queen_death": 11,
+      "free_steps_turn_start": 3,
+      "free_steps_old_at_death": 3,
+      "requested_steps": 5,
+      "successful_head_updates": 4,
+      "executed_through_collision": 5,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": false,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 6,
+      "old_distance_to_final_head": 5,
+      "rammer_head_at_queen_turn": [
+        38,
+        11
+      ],
+      "rammer_length_at_queen_turn": 12,
+      "action": [
+        "move",
+        "NNEEE"
+      ],
+      "path": [
+        [
+          38,
+          10
+        ],
+        [
+          38,
+          9
+        ],
+        [
+          39,
+          9
+        ],
+        [
+          40,
+          9
+        ],
+        [
+          41,
+          9
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            38,
+            10
+          ],
+          "t": [
+            34,
+            15
+          ],
+          "old_h": [
+            38,
+            11
+          ],
+          "old_len": 12
+        },
+        {
+          "h": [
+            38,
+            9
+          ],
+          "t": [
+            35,
+            15
+          ],
+          "old_h": [
+            38,
+            10
+          ],
+          "old_len": 12
+        },
+        {
+          "h": [
+            39,
+            9
+          ],
+          "t": [
+            35,
+            14
+          ],
+          "old_h": [
+            38,
+            9
+          ],
+          "old_len": 12
+        },
+        {
+          "h": [
+            40,
+            9
+          ],
+          "t": [
+            36,
+            13
+          ],
+          "old_h": [
+            39,
+            9
+          ],
+          "old_len": 12
+        }
+      ],
+      "event_index": 235550
+    },
+    {
+      "game": 1178140,
+      "battle": 1178140,
+      "map": "Islands",
+      "opp": "Shannon",
+      "our_team": "A",
+      "round": 204,
+      "queen_last_turn_round": 204,
+      "queen_head_at_last_turn": [
+        46,
+        11
+      ],
+      "queen_head_at_death": [
+        46,
+        10
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 4,
+      "rammer": 336,
+      "rammer_head_at_turn_start": [
+        45,
+        9
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        45,
+        9
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "ES"
+      ],
+      "path": [
+        [
+          46,
+          9
+        ],
+        [
+          46,
+          10
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            46,
+            9
+          ],
+          "t": [
+            44,
+            9
+          ],
+          "old_h": [
+            45,
+            9
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 67202
+    },
+    {
+      "game": 1178141,
+      "battle": 1178140,
+      "map": "Australia",
+      "opp": "Shannon",
+      "our_team": "A",
+      "round": 194,
+      "queen_last_turn_round": 194,
+      "queen_head_at_last_turn": [
+        23,
+        39
+      ],
+      "queen_head_at_death": [
+        22,
+        39
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 135,
+      "rammer_head_at_turn_start": [
+        20,
+        41
+      ],
+      "rammer_length_turn_start": 6,
+      "rammer_length_at_queen_death": 5,
+      "free_steps_turn_start": 2,
+      "free_steps_old_at_death": 2,
+      "requested_steps": 4,
+      "successful_head_updates": 3,
+      "executed_through_collision": 4,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 5,
+      "old_distance_to_final_head": 4,
+      "rammer_head_at_queen_turn": [
+        20,
+        41
+      ],
+      "rammer_length_at_queen_turn": 6,
+      "action": [
+        "move",
+        "ENNE"
+      ],
+      "path": [
+        [
+          21,
+          41
+        ],
+        [
+          21,
+          40
+        ],
+        [
+          21,
+          39
+        ],
+        [
+          22,
+          39
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            21,
+            41
+          ],
+          "t": [
+            17,
+            40
+          ],
+          "old_h": [
+            20,
+            41
+          ],
+          "old_len": 6
+        },
+        {
+          "h": [
+            21,
+            40
+          ],
+          "t": [
+            18,
+            40
+          ],
+          "old_h": [
+            21,
+            41
+          ],
+          "old_len": 6
+        },
+        {
+          "h": [
+            21,
+            39
+          ],
+          "t": [
+            20,
+            40
+          ],
+          "old_h": [
+            21,
+            40
+          ],
+          "old_len": 6
+        }
+      ],
+      "event_index": 57665
+    },
+    {
+      "game": 1177047,
+      "battle": 1177046,
+      "map": "Australia",
+      "opp": "ihateapple",
+      "our_team": "A",
+      "round": 241,
+      "queen_last_turn_round": 241,
+      "queen_head_at_last_turn": [
+        52,
+        35
+      ],
+      "queen_head_at_death": [
+        52,
+        36
+      ],
+      "queen_length_at_last_turn": 5,
+      "queen_length_at_death": 5,
+      "rammer": 116,
+      "rammer_head_at_turn_start": [
+        55,
+        36
+      ],
+      "rammer_length_turn_start": 4,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 3,
+      "successful_head_updates": 2,
+      "executed_through_collision": 3,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 4,
+      "old_distance_to_final_head": 3,
+      "rammer_head_at_queen_turn": [
+        55,
+        36
+      ],
+      "rammer_length_at_queen_turn": 4,
+      "action": [
+        "move",
+        "WWW"
+      ],
+      "path": [
+        [
+          54,
+          36
+        ],
+        [
+          53,
+          36
+        ],
+        [
+          52,
+          36
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            54,
+            36
+          ],
+          "t": [
+            57,
+            36
+          ],
+          "old_h": [
+            55,
+            36
+          ],
+          "old_len": 4
+        },
+        {
+          "h": [
+            53,
+            36
+          ],
+          "t": [
+            55,
+            36
+          ],
+          "old_h": [
+            54,
+            36
+          ],
+          "old_len": 4
+        }
+      ],
+      "event_index": 60531
+    },
+    {
+      "game": 1176222,
+      "battle": 1176221,
+      "map": "Queen Of Spades",
+      "opp": "winner",
+      "our_team": "B",
+      "round": 134,
+      "queen_last_turn_round": 134,
+      "queen_head_at_last_turn": [
+        4,
+        4
+      ],
+      "queen_head_at_death": [
+        5,
+        4
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 56,
+      "rammer_head_at_turn_start": [
+        4,
+        3
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 1,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        4,
+        3
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "ES"
+      ],
+      "path": [
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            5,
+            3
+          ],
+          "t": [
+            8,
+            33
+          ],
+          "old_h": [
+            4,
+            3
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 11619
+    },
+    {
+      "game": 1176223,
+      "battle": 1176221,
+      "map": "Trauma",
+      "opp": "winner",
+      "our_team": "B",
+      "round": 382,
+      "queen_last_turn_round": 382,
+      "queen_head_at_last_turn": [
+        4,
+        0
+      ],
+      "queen_head_at_death": [
+        5,
+        0
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 224,
+      "rammer_head_at_turn_start": [
+        7,
+        0
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        7,
+        0
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "WW"
+      ],
+      "path": [
+        [
+          6,
+          0
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            6,
+            0
+          ],
+          "t": [
+            8,
+            0
+          ],
+          "old_h": [
+            7,
+            0
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 78543
+    },
+    {
+      "game": 1176224,
+      "battle": 1176221,
+      "map": "Islands",
+      "opp": "winner",
+      "our_team": "B",
+      "round": 245,
+      "queen_last_turn_round": 245,
+      "queen_head_at_last_turn": [
+        16,
+        27
+      ],
+      "queen_head_at_death": [
+        16,
+        28
+      ],
+      "queen_length_at_last_turn": 3,
+      "queen_length_at_death": 3,
+      "rammer": 248,
+      "rammer_head_at_turn_start": [
+        17,
+        29
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 2,
+      "successful_head_updates": 1,
+      "executed_through_collision": 2,
+      "paid_executed": true,
+      "requested_paid": true,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 3,
+      "old_distance_to_final_head": 2,
+      "rammer_head_at_queen_turn": [
+        17,
+        29
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "WN"
+      ],
+      "path": [
+        [
+          16,
+          29
+        ],
+        [
+          16,
+          28
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            16,
+            29
+          ],
+          "t": [
+            18,
+            29
+          ],
+          "old_h": [
+            17,
+            29
+          ],
+          "old_len": 3
+        }
+      ],
+      "event_index": 108728
+    },
+    {
+      "game": 1172594,
+      "battle": 1172592,
+      "map": "Stripes",
+      "opp": "NeungzAI",
+      "our_team": "B",
+      "round": 201,
+      "queen_last_turn_round": 201,
+      "queen_head_at_last_turn": [
+        4,
+        7
+      ],
+      "queen_head_at_death": [
+        4,
+        8
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 47,
+      "rammer_head_at_turn_start": [
+        5,
+        6
+      ],
+      "rammer_length_turn_start": 30,
+      "rammer_length_at_queen_death": 30,
+      "free_steps_turn_start": 8,
+      "free_steps_old_at_death": 8,
+      "requested_steps": 3,
+      "successful_head_updates": 2,
+      "executed_through_collision": 3,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 3,
+      "rammer_head_at_queen_turn": [
+        5,
+        6
+      ],
+      "rammer_length_at_queen_turn": 30,
+      "action": [
+        "move",
+        "SSW"
+      ],
+      "path": [
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          4,
+          8
+        ]
+      ],
+      "updates": [
+        {
+          "h": [
+            5,
+            7
+          ],
+          "t": [
+            12,
+            0
+          ],
+          "old_h": [
+            5,
+            6
+          ],
+          "old_len": 30
+        },
+        {
+          "h": [
+            5,
+            8
+          ],
+          "t": [
+            13,
+            1
+          ],
+          "old_h": [
+            5,
+            7
+          ],
+          "old_len": 30
+        }
+      ],
+      "event_index": 8944
+    },
+    {
+      "game": 1170699,
+      "battle": 1170698,
+      "map": "Stripes",
+      "opp": "PoGang",
+      "our_team": "A",
+      "round": 85,
+      "queen_last_turn_round": 85,
+      "queen_head_at_last_turn": [
+        12,
+        9
+      ],
+      "queen_head_at_death": [
+        13,
+        9
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 14,
+      "rammer_head_at_turn_start": [
+        13,
+        10
+      ],
+      "rammer_length_turn_start": 3,
+      "rammer_length_at_queen_death": 3,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 1,
+      "rammer_head_at_queen_turn": [
+        13,
+        10
+      ],
+      "rammer_length_at_queen_turn": 3,
+      "action": [
+        "move",
+        "N"
+      ],
+      "path": [
+        [
+          13,
+          9
+        ]
+      ],
+      "updates": [],
+      "event_index": 2594
+    },
+    {
+      "game": 1169030,
+      "battle": 1169029,
+      "map": "Devil",
+      "opp": "PoGang",
+      "our_team": "A",
+      "round": 140,
+      "queen_last_turn_round": 140,
+      "queen_head_at_last_turn": [
+        3,
+        6
+      ],
+      "queen_head_at_death": [
+        3,
+        7
+      ],
+      "queen_length_at_last_turn": 2,
+      "queen_length_at_death": 2,
+      "rammer": 42,
+      "rammer_head_at_turn_start": [
+        4,
+        7
+      ],
+      "rammer_length_turn_start": 2,
+      "rammer_length_at_queen_death": 2,
+      "free_steps_turn_start": 1,
+      "free_steps_old_at_death": 1,
+      "requested_steps": 1,
+      "successful_head_updates": 0,
+      "executed_through_collision": 1,
+      "paid_executed": false,
+      "requested_paid": false,
+      "visible_at_queen_turn": true,
+      "old_visible_using_final_head": true,
+      "distance_at_queen_turn": 2,
+      "old_distance_to_final_head": 1,
+      "rammer_head_at_queen_turn": [
+        4,
+        7
+      ],
+      "rammer_length_at_queen_turn": 2,
+      "action": [
+        "move",
+        "W"
+      ],
+      "path": [
+        [
+          3,
+          7
+        ]
+      ],
+      "updates": [],
+      "event_index": 23130
+    }
+  ]
+}

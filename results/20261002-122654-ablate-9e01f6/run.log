@@ -1,0 +1,105 @@
+base: 24/420 games, 55s
+base: 48/420 games, 89s
+base: 72/420 games, 144s
+base: 96/420 games, 190s
+base: 120/420 games, 237s
+base: 144/420 games, 282s
+base: 168/420 games, 331s
+base: 192/420 games, 369s
+base: 216/420 games, 398s
+base: 240/420 games, 430s
+base: 264/420 games, 506s
+base: 288/420 games, 567s
+base: 312/420 games, 674s
+base: 336/420 games, 753s
+base: 360/420 games, 857s
+base: 384/420 games, 906s
+base: 408/420 games, 927s
+base: 420/420 games, 947s
+qs250: 24/420 games, 48s
+qs250: 48/420 games, 80s
+qs250: 72/420 games, 132s
+qs250: 96/420 games, 177s
+qs250: 120/420 games, 225s
+qs250: 144/420 games, 271s
+qs250: 168/420 games, 321s
+qs250: 192/420 games, 360s
+qs250: 216/420 games, 389s
+qs250: 240/420 games, 422s
+qs250: 264/420 games, 501s
+qs250: 288/420 games, 563s
+qs250: 312/420 games, 671s
+qs250: 336/420 games, 751s
+qs250: 360/420 games, 856s
+qs250: 384/420 games, 902s
+qs250: 408/420 games, 924s
+qs250: 420/420 games, 942s
+qs350: 24/420 games, 45s
+qs350: 48/420 games, 75s
+qs350: 72/420 games, 126s
+qs350: 96/420 games, 170s
+qs350: 120/420 games, 216s
+qs350: 144/420 games, 261s
+qs350: 168/420 games, 311s
+qs350: 192/420 games, 349s
+qs350: 216/420 games, 378s
+qs350: 240/420 games, 410s
+qs350: 264/420 games, 487s
+qs350: 288/420 games, 549s
+qs350: 312/420 games, 651s
+qs350: 336/420 games, 727s
+qs350: 360/420 games, 829s
+qs350: 384/420 games, 874s
+qs350: 408/420 games, 896s
+qs350: 420/420 games, 915s
+qfeed: 24/420 games, 46s
+qfeed: 48/420 games, 78s
+qfeed: 72/420 games, 127s
+qfeed: 96/420 games, 170s
+qfeed: 120/420 games, 216s
+qfeed: 144/420 games, 260s
+qfeed: 168/420 games, 309s
+qfeed: 192/420 games, 346s
+qfeed: 216/420 games, 376s
+qfeed: 240/420 games, 408s
+qfeed: 264/420 games, 482s
+qfeed: 288/420 games, 541s
+qfeed: 312/420 games, 647s
+qfeed: 336/420 games, 724s
+qfeed: 360/420 games, 822s
+qfeed: 384/420 games, 872s
+qfeed: 408/420 games, 893s
+qfeed: 420/420 games, 913s
+qs350feed: 24/420 games, 46s
+qs350feed: 48/420 games, 77s
+qs350feed: 72/420 games, 126s
+qs350feed: 96/420 games, 169s
+qs350feed: 120/420 games, 215s
+qs350feed: 144/420 games, 259s
+qs350feed: 168/420 games, 307s
+qs350feed: 192/420 games, 345s
+qs350feed: 216/420 games, 374s
+qs350feed: 240/420 games, 406s
+qs350feed: 264/420 games, 480s
+qs350feed: 288/420 games, 538s
+qs350feed: 312/420 games, 638s
+qs350feed: 336/420 games, 716s
+qs350feed: 360/420 games, 814s
+qs350feed: 384/420 games, 866s
+qs350feed: 408/420 games, 887s
+qs350feed: 420/420 games, 907s
+# Ablation report: 20261002-122654-ablate-9e01f6
+
+2 seeds, opponents cpp_nicked_v92, cpp_nicked_v75, cpp_leviathan3, v7-base-bot, nicked_v44, nicked_lab, v11q; 11 official + 4 extra maps, both sides. Objective: wins. Delta = variant score minus base score on the same (opponent, map, seed, side); positive means removing the group helped. 95% CI resamples (map, seed) blocks.
+
+base: mean margin +0.276, wins 268/420; by opponent: cpp_nicked_v92 -0.167, cpp_nicked_v75 -0.033, cpp_leviathan3 +0.733, v7-base-bot +0.600, nicked_v44 +0.567, nicked_lab +0.233, v11q +0.000
+
+| variant | current pool delta [95% CI] | pool verdict | other maps | delta all 15 [95% CI] | verdict | vs cpp_nicked_v92 | vs cpp_nicked_v75 | vs cpp_leviathan3 | vs v7-base-bot | vs nicked_v44 | vs nicked_lab | vs v11q | official | extra | wins |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| qs250 | +0.000 [-0.021, +0.021] | neutral | +0.000 | +0.000 [-0.014, +0.014] | neutral | -0.067 | +0.000 | +0.033 | +0.000 | +0.033 | +0.000 | +0.000 | +0.000 | +0.000 | 268/420 |
+| qs350 | +0.000 [+0.000, +0.000] | neutral | +0.000 | +0.000 [+0.000, +0.000] | neutral | +0.000 | +0.000 | +0.000 | +0.000 | +0.000 | +0.000 | +0.000 | +0.000 | +0.000 | 268/420 |
+| qfeed | +0.043 [-0.043, +0.136] | neutral | -0.071 | +0.005 [-0.062, +0.071] | neutral | -0.267 | +0.133 | +0.100 | +0.000 | +0.100 | +0.067 | -0.100 | +0.019 | -0.036 | 269/420 |
+| qs350feed | +0.050 [-0.043, +0.143] | neutral | -0.071 | +0.010 [-0.057, +0.081] | neutral | -0.267 | +0.133 | +0.133 | +0.000 | +0.100 | +0.067 | -0.100 | +0.026 | -0.036 | 270/420 |
+
+Noise: seed-to-seed SD of base's margin within a (opponent, map, side) cell 0.884 over 210 cells. Expected paired CI half-width with K seeds, 1.96 * sqrt(2 * 0.884^2 / (210 * K)): K=2: 0.120, K=3: 0.098, K=4: 0.085, K=6: 0.069, K=8: 0.060
+

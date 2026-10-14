@@ -1,0 +1,27 @@
+{
+  "candidate_source": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7t-g7c05-bot",
+  "opponent_source": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7-base-bot",
+  "candidate_hash": "b033b4202f624d25",
+  "opponent_hash": "bec48091e76579a1",
+  "maps": {
+    "default_small": "8ac4b2eedcf19f85",
+    "trophy": "5f1f6b23d6edb944",
+    "queen_of_spades": "126d71b464432685",
+    "default": "6bd7abf2ed51a7f6",
+    "Devil": "a09e8f2d3bdd1e40",
+    "stronghold": "02455e481fe56e1e",
+    "Trauma": "dcf39d713c060e5d",
+    "schooltime": "726c404f3b34b4ed",
+    "big_empty": "6cb3b7be72a4e27e",
+    "arena": "b4bab09603289c2d",
+    "Colosseum": "c7549a41ea26600f"
+  },
+  "sandbox_match_hash": "8f9a222c9ee3db7a",
+  "toolkit_version": "0.3.10",
+  "sides": [
+    "A",
+    "B"
+  ],
+  "games": 22,
+  "gate": "zero CPU/invalid-action errors; max<=90M per game; post-65M work<=25M per game"
+}

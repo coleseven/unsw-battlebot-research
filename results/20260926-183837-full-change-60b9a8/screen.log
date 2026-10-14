@@ -1,0 +1,22 @@
+full: 24/132 games, 108s
+full: 48/132 games, 159s
+full: 72/132 games, 249s
+full: 96/132 games, 304s
+full: 120/132 games, 355s
+full: 132/132 games, 381s
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\full_change_test.py", line 129, in <module>
+    screen(args.experiment)
+    ~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\full_change_test.py", line 111, in screen
+    population.write_json(out / "comparison.json", result)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\population.py", line 29, in write_json
+    with path.open("x", encoding="utf8") as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\pathlib\__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileExistsError: [Errno 17] File exists: 'results\\20260926-183837-full-change-60b9a8\\comparison.json'

@@ -1,0 +1,18 @@
+{
+  "archives": {
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\replays\\topbotgames\\battle-M117794-replays.zip": "89d7c83e76958d6a",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\replays\\topbotgames\\battle-M120103-replays.zip": "ede9c91b74f87305",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\replays\\topbotgames\\battle-M120574-replays.zip": "ab7a7e2b52fed18d",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\replays\\topbotgames\\battle-M120716-replays.zip": "a5078ea52e87df84",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\replays\\topbotgames\\battle-M120842-replays.zip": "0dbbbf951db507ac",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\replays\\topbotgames\\battle-M120857-replays.zip": "18eb9b1c1d8d3dc6"
+  },
+  "games": 26,
+  "models": {
+    "linear": "69382825b699723d",
+    "neural": "8b30b4590f0f6e5c"
+  },
+  "sample_probability": 0.0625,
+  "code_hash": "187b41d0c38f8c3b",
+  "limits": "Newer games excluded from fitting, but previously inspected and used to motivate features. This is conditional imitation, not live strength, with no fitting or reselection."
+}

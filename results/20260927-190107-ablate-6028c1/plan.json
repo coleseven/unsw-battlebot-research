@@ -1,0 +1,50 @@
+{
+  "base": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v9-ab-base-bot",
+  "base_hash": "3b68b24488472079",
+  "params": "params.hpp",
+  "variants": {
+    "base": {},
+    "age": {
+      "CPP_PORTAL_AGE": 1
+    },
+    "vor": {
+      "CPP_VOR": 1
+    },
+    "age_vor": {
+      "CPP_PORTAL_AGE": 1,
+      "CPP_VOR": 1
+    }
+  },
+  "opponents": [
+    "v7-base-bot",
+    "cpp_nicked_v75",
+    "cpp_leviathan3"
+  ],
+  "official_maps": [
+    "default_small",
+    "trophy",
+    "queen_of_spades",
+    "default",
+    "Devil",
+    "stronghold",
+    "Trauma",
+    "schooltime",
+    "big_empty",
+    "arena",
+    "Colosseum"
+  ],
+  "extra_maps": [
+    "Autarky",
+    "Prisoners_Dilemma",
+    "Slithery_Fight",
+    "Portals"
+  ],
+  "seeds": [
+    97001,
+    97002,
+    97003
+  ],
+  "objective": "aligned",
+  "unswbc": "1.1.0",
+  "deterministic_v6_clock": true
+}

@@ -1,0 +1,77 @@
+{
+  "probes": [
+    {
+      "bot": "linear",
+      "category": "linear__long",
+      "history_turns": 54,
+      "measured_turns": 54,
+      "max_points": 48380009,
+      "max_memory_bytes": 21757952,
+      "errors": []
+    },
+    {
+      "bot": "linear",
+      "category": "linear__dense",
+      "history_turns": 35,
+      "measured_turns": 35,
+      "max_points": 45887364,
+      "max_memory_bytes": 21692416,
+      "errors": []
+    },
+    {
+      "bot": "linear",
+      "category": "linear__enemy_heads",
+      "history_turns": 7,
+      "measured_turns": 7,
+      "max_points": 34617631,
+      "max_memory_bytes": 21626880,
+      "errors": []
+    },
+    {
+      "bot": "linear",
+      "category": "linear__population",
+      "history_turns": 5,
+      "measured_turns": 5,
+      "max_points": 30767634,
+      "max_memory_bytes": 21626880,
+      "errors": []
+    },
+    {
+      "bot": "neural",
+      "category": "neural__long",
+      "history_turns": 54,
+      "measured_turns": 54,
+      "max_points": 41606989,
+      "max_memory_bytes": 21757952,
+      "errors": []
+    },
+    {
+      "bot": "neural",
+      "category": "neural__dense",
+      "history_turns": 68,
+      "measured_turns": 68,
+      "max_points": 36224655,
+      "max_memory_bytes": 21757952,
+      "errors": []
+    },
+    {
+      "bot": "neural",
+      "category": "neural__enemy_heads",
+      "history_turns": 7,
+      "measured_turns": 7,
+      "max_points": 32010648,
+      "max_memory_bytes": 21626880,
+      "errors": []
+    },
+    {
+      "bot": "neural",
+      "category": "neural__population",
+      "history_turns": 5,
+      "measured_turns": 5,
+      "max_points": 39998652,
+      "max_memory_bytes": 21626880,
+      "errors": []
+    }
+  ],
+  "limits": "Recorded observation prefixes, not counterfactual match outcomes or worst-case guarantees."
+}

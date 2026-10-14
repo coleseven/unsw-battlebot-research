@@ -1,0 +1,130 @@
+{
+  "question": "Does the selected, unchanged reproduction policy transfer to new generated layouts?",
+  "source": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-232921-fission-5df835\\bots\\split4",
+  "source_hash": "9f29ab4138b51d26",
+  "live_hash": "ffe736af6c14ea33",
+  "specs": [
+    [
+      "open_small",
+      "open",
+      12,
+      12,
+      0.0,
+      1.0,
+      8,
+      20,
+      15001
+    ],
+    [
+      "open_large",
+      "open",
+      24,
+      24,
+      0.0,
+      0.7,
+      16,
+      35,
+      15002
+    ],
+    [
+      "baffles_small",
+      "baffles",
+      12,
+      16,
+      0.12,
+      1.0,
+      5,
+      15,
+      15003
+    ],
+    [
+      "baffles_large",
+      "baffles",
+      20,
+      16,
+      0.18,
+      0.6,
+      10,
+      25,
+      15004
+    ],
+    [
+      "dense_small",
+      "dense",
+      14,
+      14,
+      0.3,
+      1.0,
+      8,
+      20,
+      15005
+    ],
+    [
+      "dense_large",
+      "dense",
+      20,
+      20,
+      0.38,
+      0.65,
+      10,
+      30,
+      15006
+    ],
+    [
+      "scarce_small",
+      "scarce",
+      16,
+      12,
+      0.2,
+      0.3,
+      20,
+      40,
+      15007
+    ],
+    [
+      "scarce_large",
+      "scarce",
+      18,
+      18,
+      0.34,
+      0.3,
+      20,
+      40,
+      15008
+    ]
+  ],
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-235151-novel-maps-db3a9c\\maps\\open_small.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-235151-novel-maps-db3a9c\\maps\\open_large.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-235151-novel-maps-db3a9c\\maps\\baffles_small.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-235151-novel-maps-db3a9c\\maps\\baffles_large.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-235151-novel-maps-db3a9c\\maps\\dense_small.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-235151-novel-maps-db3a9c\\maps\\dense_large.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-235151-novel-maps-db3a9c\\maps\\scarce_small.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-235151-novel-maps-db3a9c\\maps\\scarce_large.map"
+  ],
+  "families": {
+    "open_small": "open",
+    "open_large": "open",
+    "baffles_small": "baffles",
+    "baffles_large": "baffles",
+    "dense_small": "dense",
+    "dense_large": "dense",
+    "scarce_small": "scarce",
+    "scarce_large": "scarce"
+  },
+  "seeds": [
+    14000,
+    14001,
+    14002,
+    14003,
+    14004,
+    14005,
+    14006,
+    14007
+  ],
+  "workers": 6,
+  "selection": "none; fixed fission-screen winner, no use of transfer results for tuning",
+  "gate": "Family-cluster 95% lower bound above .5, and no per-map score below .375",
+  "limits": "Four related procedural families, not the competition's map distribution. No portals. Bot/map RNG seeds differ from previous performance experiments."
+}

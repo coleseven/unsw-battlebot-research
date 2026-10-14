@@ -1,0 +1,33 @@
+full: 24/44 games, 275s
+full: 44/44 games, 557s
+{
+  "maps": [
+    "default_small",
+    "trophy",
+    "queen_of_spades",
+    "default",
+    "Devil",
+    "stronghold",
+    "Trauma",
+    "schooltime",
+    "big_empty",
+    "arena",
+    "Colosseum"
+  ],
+  "games": 44,
+  "workers": 3,
+  "opponents": {
+    "v3": {
+      "wins": 22,
+      "draws": 0,
+      "losses": 0,
+      "score": 1.0
+    },
+    "ctmes": {
+      "wins": 20,
+      "draws": 0,
+      "losses": 2,
+      "score": 0.9090909090909091
+    }
+  }
+}

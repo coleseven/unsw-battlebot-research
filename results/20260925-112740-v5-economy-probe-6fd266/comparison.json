@@ -1,0 +1,47 @@
+{
+  "games": [
+    {
+      "map": "Default",
+      "side": "A",
+      "changed_actions": true,
+      "winner": "B",
+      "error": null
+    },
+    {
+      "map": "Default",
+      "side": "B",
+      "changed_actions": true,
+      "winner": "A",
+      "error": null
+    },
+    {
+      "map": "schooltime",
+      "side": "A",
+      "changed_actions": true,
+      "winner": "B",
+      "error": null
+    },
+    {
+      "map": "schooltime",
+      "side": "B",
+      "changed_actions": true,
+      "winner": "A",
+      "error": null
+    },
+    {
+      "map": "Big_Empty",
+      "side": "A",
+      "changed_actions": true,
+      "winner": "B",
+      "error": null
+    },
+    {
+      "map": "Big_Empty",
+      "side": "B",
+      "changed_actions": true,
+      "winner": "A",
+      "error": null
+    }
+  ],
+  "changed_action_games": 6
+}

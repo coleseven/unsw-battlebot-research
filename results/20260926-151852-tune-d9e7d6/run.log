@@ -1,0 +1,32 @@
+C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\cma\s.py:17: UserWarning: Could not import matplotlib.pyplot, therefore ``cma.plot()`` etc. is not available
+  _warnings.warn('Could not import matplotlib.pyplot, therefore'
+gen0: 24/432 games, 143s
+gen0: 48/432 games, 287s
+gen0: 72/432 games, 431s
+gen0: 96/432 games, 574s
+gen0: 120/432 games, 689s
+gen0: 144/432 games, 823s
+gen0: 168/432 games, 950s
+gen0: 192/432 games, 1062s
+gen0: 216/432 games, 1205s
+gen0: 240/432 games, 1333s
+gen0: 264/432 games, 1441s
+gen0: 288/432 games, 1582s
+gen0: 312/432 games, 1712s
+gen0: 336/432 games, 1828s
+gen0: 360/432 games, 1962s
+gen0: 384/432 games, 2090s
+gen0: 408/432 games, 2200s
+gen0: 432/432 games, 2332s
+gen 0: best F +0.283 (30/36 wins) mean F +0.016
+gen1: 24/432 games, 136s
+gen1: 48/432 games, 245s
+gen1: 72/432 games, 382s
+gen1: 96/432 games, 513s
+gen1: 120/432 games, 620s
+gen1: 144/432 games, 750s
+gen1: 168/432 games, 882s
+gen1: 192/432 games, 991s
+gen1: 216/432 games, 1129s
+gen1: 240/432 games, 1252s
+gen1: 264/432 games, 1363s

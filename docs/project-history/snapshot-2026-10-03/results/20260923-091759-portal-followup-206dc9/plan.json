@@ -1,0 +1,193 @@
+{
+  "question": "Does unchanged emergency portal use replicate and transfer?",
+  "source": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-085446-portal-9297e0",
+  "candidate_hash": "f972d364f8744605",
+  "baseline_hash": "9f29ab4138b51d26",
+  "live_hash": "ffe736af6c14ea33",
+  "specs": [
+    [
+      "open_small",
+      "open",
+      12,
+      12,
+      0.0,
+      1.0,
+      8,
+      20,
+      23001,
+      4
+    ],
+    [
+      "open_large",
+      "open",
+      24,
+      24,
+      0.0,
+      0.7,
+      16,
+      35,
+      23002,
+      8
+    ],
+    [
+      "baffles_small",
+      "baffles",
+      12,
+      16,
+      0.12,
+      1.0,
+      5,
+      15,
+      23003,
+      4
+    ],
+    [
+      "baffles_large",
+      "baffles",
+      20,
+      16,
+      0.18,
+      0.6,
+      10,
+      25,
+      23004,
+      8
+    ],
+    [
+      "dense_small",
+      "dense",
+      14,
+      14,
+      0.3,
+      1.0,
+      8,
+      20,
+      23005,
+      4
+    ],
+    [
+      "dense_large",
+      "dense",
+      20,
+      20,
+      0.38,
+      0.65,
+      10,
+      30,
+      23006,
+      8
+    ],
+    [
+      "scarce_small",
+      "scarce",
+      16,
+      12,
+      0.2,
+      0.3,
+      20,
+      40,
+      23007,
+      4
+    ],
+    [
+      "scarce_large",
+      "scarce",
+      18,
+      18,
+      0.34,
+      0.3,
+      20,
+      40,
+      23008,
+      8
+    ]
+  ],
+  "families": {
+    "new_open_small": "open",
+    "new_open_large": "open",
+    "new_baffles_small": "baffles",
+    "new_baffles_large": "baffles",
+    "new_dense_small": "dense",
+    "new_dense_large": "dense",
+    "new_scarce_small": "scarce",
+    "new_scarce_large": "scarce"
+  },
+  "official_maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-091759-portal-followup-206dc9\\maps\\official_arena_728547b8376892d9.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-091759-portal-followup-206dc9\\maps\\official_big_empty_685baf0e797207b7.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-091759-portal-followup-206dc9\\maps\\official_Colosseum_3042ccc262f0211a.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-091759-portal-followup-206dc9\\maps\\official_default_afc3707a967881d6.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-091759-portal-followup-206dc9\\maps\\official_default_small_f98ab391cccf33b1.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-091759-portal-followup-206dc9\\maps\\official_queen_of_spades_6cdb74a7a52d715a.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-091759-portal-followup-206dc9\\maps\\official_schooltime_8be7eda86910a849.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-091759-portal-followup-206dc9\\maps\\official_trophy_fd985019831fe135.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-091759-portal-followup-206dc9\\maps\\official_Devil_1b2147f4a8a775d2.map"
+  ],
+  "transfer_maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-091759-portal-followup-206dc9\\maps\\new_open_small.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-091759-portal-followup-206dc9\\maps\\new_open_large.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-091759-portal-followup-206dc9\\maps\\new_baffles_small.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-091759-portal-followup-206dc9\\maps\\new_baffles_large.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-091759-portal-followup-206dc9\\maps\\new_dense_small.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-091759-portal-followup-206dc9\\maps\\new_dense_large.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-091759-portal-followup-206dc9\\maps\\new_scarce_small.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260923-091759-portal-followup-206dc9\\maps\\new_scarce_large.map"
+  ],
+  "portal_maps": [
+    "official_Colosseum_3042ccc262f0211a",
+    "official_default_afc3707a967881d6",
+    "official_queen_of_spades_6cdb74a7a52d715a",
+    "official_schooltime_8be7eda86910a849",
+    "official_trophy_fd985019831fe135"
+  ],
+  "no_portal_maps": [
+    "official_arena_728547b8376892d9",
+    "official_big_empty_685baf0e797207b7",
+    "official_default_small_f98ab391cccf33b1",
+    "official_Devil_1b2147f4a8a775d2"
+  ],
+  "official_seeds": [
+    18000,
+    18001,
+    18002,
+    18003,
+    18004,
+    18005,
+    18006,
+    18007,
+    18008,
+    18009,
+    18010,
+    18011,
+    18012,
+    18013,
+    18014,
+    18015
+  ],
+  "transfer_seeds": [
+    19000,
+    19001,
+    19002,
+    19003,
+    19004,
+    19005,
+    19006,
+    19007,
+    19008,
+    19009,
+    19010,
+    19011,
+    19012,
+    19013,
+    19014,
+    19015
+  ],
+  "expected_games": {
+    "validation": 1728,
+    "transfer": 256
+  },
+  "gate": "ALL: official portal-only direct map-cluster CI lower > .5; paired all-official opponent-pool gain map-cluster CI lower > 0; transfer family-cluster CI lower > .5 with every transfer map score >= .375; no-portal paired outcomes identical; replay and judge checks pass.",
+  "selection": "none; fixed policy and sample sizes; no pooling with prior test, retuning, or optional stopping",
+  "limits": "Familiar scripted opponents. Four related procedural families, not official distribution. Fresh layout and bot seeds. Full local verification is not ranked evidence.",
+  "workers": 8
+}

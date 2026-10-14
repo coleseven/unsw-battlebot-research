@@ -1,0 +1,41 @@
+{
+  "recommended": {
+    "gen": 11,
+    "cand": "cmean",
+    "F": -0.2797980785092633,
+    "wins": 47,
+    "games": 100,
+    "params": {
+      "G_FOOD": 2.9045,
+      "G_SPAWN": 1.2834,
+      "G_V3": 1.6434,
+      "G_ATTACK": 2.1916,
+      "G_HEADSAFE": 1.9172,
+      "G_TRAP": 0.7984,
+      "G_FEED": 2.0779,
+      "FEED_ROUND": 400,
+      "SPLIT_UNTIL_LARGE": 330,
+      "SPLIT_UNTIL_SMALL": 384,
+      "CAP": 52,
+      "FLOOR": 21,
+      "CPP_KB_ROUND": 250,
+      "CPP_KB_MINLEN": 11,
+      "CPP_BIG_FEED_ROUND": 400,
+      "CPP_BIG_FEED_MARGIN": 6,
+      "CPP_FEED_SHIFT_LARGE": 46
+    },
+    "per_map": {
+      "devil_p1": -0.34181313362043764,
+      "prisoners_dilemma": -0.09639670171219472,
+      "autarky_p1": 0.1984026682805553,
+      "portals": 0.399448681712527,
+      "queen_of_spades_p1": -0.40371415240434294,
+      "trophy_p1": -0.7598553036133748,
+      "default": 0.18482948173355,
+      "trauma": 0.22795266791527471,
+      "schooltime": 0.03617412447522621,
+      "slithery_fight_p1": -0.34337085882597906
+    }
+  },
+  "why": "last distribution mean"
+}

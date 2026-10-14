@@ -1,0 +1,88 @@
+{
+ "decisions": 308,
+ "train": 210,
+ "test": 98,
+ "score_scale": 17.041050000000006,
+ "margin": {
+  "tau0.0": {
+   "overrides": 58,
+   "better": 17.0,
+   "worse": 17.0,
+   "margin_incumbent_vs_student": [
+    497.0,
+    485.0
+   ],
+   "result_incumbent_vs_student": [
+    56.0,
+    58.5
+   ]
+  },
+  "tau0.5": {
+   "overrides": 43,
+   "better": 10.0,
+   "worse": 12.0,
+   "margin_incumbent_vs_student": [
+    497.0,
+    448.0
+   ],
+   "result_incumbent_vs_student": [
+    56.0,
+    56.5
+   ]
+  },
+  "tau1.0": {
+   "overrides": 20,
+   "better": 4.0,
+   "worse": 8.0,
+   "margin_incumbent_vs_student": [
+    497.0,
+    475.0
+   ],
+   "result_incumbent_vs_student": [
+    56.0,
+    56.0
+   ]
+  }
+ },
+ "result": {
+  "tau0.0": {
+   "overrides": 54,
+   "better": 3.0,
+   "worse": 2.0,
+   "result_incumbent_vs_student": [
+    56.0,
+    58.0
+   ],
+   "margin_incumbent_vs_student": [
+    497.0,
+    433.0
+   ]
+  },
+  "tau0.5": {
+   "overrides": 30,
+   "better": 1.0,
+   "worse": 2.0,
+   "result_incumbent_vs_student": [
+    56.0,
+    56.0
+   ],
+   "margin_incumbent_vs_student": [
+    497.0,
+    468.0
+   ]
+  },
+  "tau1.0": {
+   "overrides": 13,
+   "better": 0.0,
+   "worse": 1.0,
+   "result_incumbent_vs_student": [
+    56.0,
+    55.5
+   ],
+   "margin_incumbent_vs_student": [
+    497.0,
+    468.0
+   ]
+  }
+ }
+}

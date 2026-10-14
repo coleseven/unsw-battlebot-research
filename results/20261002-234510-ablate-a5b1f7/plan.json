@@ -1,0 +1,60 @@
+{
+  "base": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v11k-bot",
+  "base_hash": "c426b4ba843d93c9",
+  "params": "params.hpp",
+  "variants": {
+    "base": {},
+    "kx1": {
+      "CPP_QUEEN_REACH_PEN": 300.0,
+      "CPP_QUEEN_REACH_EXTRA": 1
+    },
+    "kx1_g2": {
+      "CPP_QUEEN_REACH_PEN": 300.0,
+      "CPP_QUEEN_REACH_EXTRA": 1,
+      "CPP_QUEEN_GUARD_R": 2
+    }
+  },
+  "opponents": [
+    "cpp_nicked_v92",
+    "cpp_nicked_v75",
+    "cpp_leviathan3",
+    "v7-base-bot",
+    "nicked_v44",
+    "nicked_lab",
+    "v11q"
+  ],
+  "official_maps": [
+    "default_small",
+    "trophy",
+    "queen_of_spades",
+    "default",
+    "Devil",
+    "stronghold",
+    "Trauma",
+    "schooltime",
+    "big_empty",
+    "arena",
+    "Colosseum"
+  ],
+  "extra_maps": [
+    "Autarky",
+    "Prisoners_Dilemma",
+    "Slithery_Fight",
+    "Portals",
+    "Australia",
+    "Islands",
+    "Maze",
+    "Stripes",
+    "Tower_Defense",
+    "Around_UNSW",
+    "weakhold"
+  ],
+  "seeds": [
+    641001,
+    641002,
+    641003
+  ],
+  "objective": "wins",
+  "unswbc": "1.2.3",
+  "deterministic_v6_clock": true
+}

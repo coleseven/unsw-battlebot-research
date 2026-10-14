@@ -1,0 +1,22 @@
+start default_small A
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\sandbox_match.py", line 128, in <module>
+    run(args.candidate, args.opponent, args.map, args.out, args.side)
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\sandbox_match.py", line 34, in run
+    pool = SandboxPool(["python", "main.py"], cwd=str(candidate.resolve()), team=side.lower())
+  File "C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\unswbc\sandbox.py", line 1355, in __init__
+    raise SandboxError("compiling the bot did not produce main.pyc")
+unswbc.sandbox.SandboxError: compiling the bot did not produce main.pyc
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\v6_cpu_suite.py", line 140, in <module>
+    run(args.result)
+    ~~~^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\v6_cpu_suite.py", line 120, in run
+    raise RuntimeError(f"sandbox game failed without artifact: {name} {side} "
+                       f"exit {completed.returncode}")
+RuntimeError: sandbox game failed without artifact: default_small A exit 1

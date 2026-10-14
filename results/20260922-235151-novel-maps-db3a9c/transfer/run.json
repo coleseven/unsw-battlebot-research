@@ -1,0 +1,64 @@
+{
+  "time": "2026-09-22 23:51:52",
+  "git": "8e1000d+dirty",
+  "python": "3.14.2",
+  "unswbc": "0.3.10",
+  "engine": "5412052f33ddb160",
+  "bots": {
+    "split4": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-235151-novel-maps-db3a9c\\bots\\split4",
+      "hash": "9f29ab4138b51d26"
+    },
+    "reference_450": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-235151-novel-maps-db3a9c\\bots\\reference_450",
+      "hash": "2e0e1867b6cf7cda"
+    }
+  },
+  "maps": {
+    "open_small": {
+      "file": "93c95d3f1e6f63c9",
+      "signature": "7a9036e50f0ad316"
+    },
+    "open_large": {
+      "file": "6918ae60ad3ab1b0",
+      "signature": "c9b13cffbd9e3b2f"
+    },
+    "baffles_small": {
+      "file": "96d310356c957409",
+      "signature": "d05f3b6d3abe45d1"
+    },
+    "baffles_large": {
+      "file": "dc82fbde5ec4b338",
+      "signature": "7c082901d3a92fb3"
+    },
+    "dense_small": {
+      "file": "0dba649510e38df5",
+      "signature": "650d8973c6e2ab57"
+    },
+    "dense_large": {
+      "file": "b6858b3f5db6e082",
+      "signature": "da89c3802c0b711c"
+    },
+    "scarce_small": {
+      "file": "0b71b108ddd41312",
+      "signature": "59de02ce717cb612"
+    },
+    "scarce_large": {
+      "file": "17bd762618bfa2eb",
+      "signature": "20ad09a69032e348"
+    }
+  },
+  "settings": {
+    "seeds": [
+      14000,
+      14001,
+      14002,
+      14003,
+      14004,
+      14005,
+      14006,
+      14007
+    ],
+    "workers": 6
+  }
+}

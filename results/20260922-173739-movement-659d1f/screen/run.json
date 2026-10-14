@@ -1,0 +1,59 @@
+{
+  "time": "2026-09-22 17:37:39",
+  "git": "8e1000d+dirty",
+  "python": "3.14.2",
+  "unswbc": "0.3.10",
+  "engine": "5412052f33ddb160",
+  "bots": {
+    "control_450": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-173739-movement-659d1f\\bots\\control_450",
+      "hash": "2e0e1867b6cf7cda"
+    },
+    "trap": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-173739-movement-659d1f\\bots\\trap",
+      "hash": "b76c7b9c943a1d5d"
+    },
+    "sprint": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-173739-movement-659d1f\\bots\\sprint",
+      "hash": "f503f1c32975c93b"
+    },
+    "reference_450": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-173739-movement-659d1f\\bots\\reference_450",
+      "hash": "2e0e1867b6cf7cda"
+    },
+    "splitter": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-173739-movement-659d1f\\bots\\splitter",
+      "hash": "c50e10c521282fec"
+    },
+    "hunter": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-173739-movement-659d1f\\bots\\hunter",
+      "hash": "8622139a1a3d64a8"
+    }
+  },
+  "maps": {
+    "Devil_1b2147f4a8a775d2": {
+      "file": "a09e8f2d3bdd1e40",
+      "signature": "1b2147f4a8a775d2"
+    },
+    "Colosseum_3042ccc262f0211a": {
+      "file": "c7549a41ea26600f",
+      "signature": "3042ccc262f0211a"
+    },
+    "big_empty_685baf0e797207b7": {
+      "file": "6cb3b7be72a4e27e",
+      "signature": "685baf0e797207b7"
+    },
+    "queen_of_spades_6cdb74a7a52d715a": {
+      "file": "126d71b464432685",
+      "signature": "6cdb74a7a52d715a"
+    }
+  },
+  "settings": {
+    "seeds": [
+      4000,
+      4001
+    ],
+    "workers": 4,
+    "stage": "screen"
+  }
+}

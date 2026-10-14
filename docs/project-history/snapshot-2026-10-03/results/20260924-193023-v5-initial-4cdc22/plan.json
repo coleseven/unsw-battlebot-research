@@ -1,0 +1,46 @@
+{
+  "question": "Do hotspot-directed scouts or protected growers improve frozen additive v4?",
+  "limits": "Four known maps, one seed, both sides; 48x24 territory prior is map-specific. Exploratory only; no promotion or upload from this screen.",
+  "modes": {
+    "territory": [
+      true,
+      false
+    ],
+    "king_guard": [
+      false,
+      true
+    ],
+    "combined": [
+      true,
+      true
+    ]
+  },
+  "seed": 45000,
+  "workers": 1,
+  "baseline_hash": "bf33497158a49a7b",
+  "live_hash": "ffe736af6c14ea33",
+  "bot_hashes": {
+    "additive": "bf33497158a49a7b",
+    "territory": "527fff2e27a5a77a",
+    "king_guard": "8d3c285bbd9e7242",
+    "combined": "3771913151d2119b"
+  },
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-193023-v5-initial-4cdc22\\maps\\stronghold.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-193023-v5-initial-4cdc22\\maps\\Trauma.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-193023-v5-initial-4cdc22\\maps\\default.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-193023-v5-initial-4cdc22\\maps\\trophy.map"
+  ],
+  "map_hashes": {
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-193023-v5-initial-4cdc22\\maps\\stronghold.map": "02455e481fe56e1e",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-193023-v5-initial-4cdc22\\maps\\Trauma.map": "dcf39d713c060e5d",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-193023-v5-initial-4cdc22\\maps\\default.map": "6bd7abf2ed51a7f6",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-193023-v5-initial-4cdc22\\maps\\trophy.map": "5f1f6b23d6edb944"
+  },
+  "source_hashes": {
+    "experiments\\v5\\brain.py": "429b11e6446ef1a4",
+    "framework\\v5_hotspot.py": "5e6f6ec145edf6ed",
+    "framework\\v5_king.py": "14d948ac60116eaf",
+    "bcsim\\v5_initial.py": "4aac8153c39da7ed"
+  }
+}

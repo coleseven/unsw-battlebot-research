@@ -1,0 +1,73 @@
+{
+  "base": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v11c-bot",
+  "base_hash": "c936763c1d5c7e23",
+  "params": "params.hpp",
+  "variants": {
+    "base": {},
+    "q_kb": {
+      "CPP_QUEEN": 1,
+      "CPP_QUEEN_KB": 1
+    },
+    "qs_reach": {
+      "CPP_QUEEN": 1,
+      "CPP_QUEEN_KB": 1,
+      "CPP_QUEEN_REACH_PEN": 300.0
+    },
+    "qs_dead": {
+      "CPP_QUEEN": 1,
+      "CPP_QUEEN_KB": 1,
+      "CPP_QUEEN_DEADEND": 12
+    },
+    "qs_full": {
+      "CPP_QUEEN": 1,
+      "CPP_QUEEN_KB": 1,
+      "CPP_QUEEN_SAFE_MULT": 4.0,
+      "CPP_QUEEN_REACH_PEN": 300.0,
+      "CPP_QUEEN_DEADEND": 12,
+      "CPP_QUEEN_GUARD_PEN": 200.0
+    },
+    "qs_full_nosplit": {
+      "CPP_QUEEN": 1,
+      "CPP_QUEEN_KB": 1,
+      "CPP_QUEEN_SAFE_MULT": 4.0,
+      "CPP_QUEEN_REACH_PEN": 300.0,
+      "CPP_QUEEN_DEADEND": 12,
+      "CPP_QUEEN_GUARD_PEN": 200.0,
+      "CPP_QUEEN_SPLIT_UNTIL": 0
+    }
+  },
+  "opponents": [
+    "cpp_nicked_v92",
+    "cpp_nicked_v75",
+    "cpp_leviathan3",
+    "v7-base-bot",
+    "nicked_v44",
+    "nicked_lab"
+  ],
+  "official_maps": [
+    "default_small",
+    "trophy",
+    "queen_of_spades",
+    "default",
+    "Devil",
+    "stronghold",
+    "Trauma",
+    "schooltime",
+    "big_empty",
+    "arena",
+    "Colosseum"
+  ],
+  "extra_maps": [
+    "Autarky",
+    "Prisoners_Dilemma",
+    "Slithery_Fight",
+    "Portals"
+  ],
+  "seeds": [
+    461001,
+    461002
+  ],
+  "objective": "wins",
+  "unswbc": "1.2.3",
+  "deterministic_v6_clock": true
+}

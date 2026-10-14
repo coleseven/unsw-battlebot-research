@@ -1,0 +1,18 @@
+{
+ "fpr80": {
+  "FOUNDER_PROTECT_ROUND": 80
+ },
+ "anchor80": {
+  "CPP_ANCHOR": 1,
+  "FOUNDER_PROTECT_ROUND": 80
+ },
+ "anchor150": {
+  "CPP_ANCHOR": 1,
+  "FOUNDER_PROTECT_ROUND": 150
+ },
+ "anchor80_r20": {
+  "CPP_ANCHOR": 1,
+  "FOUNDER_PROTECT_ROUND": 80,
+  "CPP_ANCHOR_RESCUE": 20
+ }
+}

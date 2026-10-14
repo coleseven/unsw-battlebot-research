@@ -1,0 +1,28 @@
+{
+  "question": "Does head avoidance change actions against nicked?",
+  "scope": "Diagnostic only: Default Small and Trauma, both sides.",
+  "seed": 58001,
+  "workers": 1,
+  "control_hash": "23a140e48e5f7d89",
+  "nicked_hash": "d6dd50765f54f638",
+  "live_hash": "ffe736af6c14ea33",
+  "bot_hashes": {
+    "head_guard": "45c69d8973d9d489",
+    "nicked": "d6dd50765f54f638"
+  },
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-115752-v5-head-probe-5daac8\\maps\\default_small.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-115752-v5-head-probe-5daac8\\maps\\Trauma.map"
+  ],
+  "map_hashes": {
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-115752-v5-head-probe-5daac8\\maps\\default_small.map": "8ac4b2eedcf19f85",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-115752-v5-head-probe-5daac8\\maps\\Trauma.map": "dcf39d713c060e5d"
+  },
+  "source_hashes": {
+    "experiments\\v5\\brain.py": "8fad7c634d20f462",
+    "framework\\v5_head_guard.py": "61a016ebaa852da9",
+    "framework\\v4_safety.py": "11fbad87ff94ceda",
+    "bcsim\\v5_initial.py": "9770af7f5b457a89",
+    "bcsim\\v5_head_probe.py": "baf6afd66d9ac8c0"
+  }
+}

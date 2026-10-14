@@ -1,0 +1,37 @@
+{
+  "time": "2026-09-24 23:54:50",
+  "git": "8e1000d+dirty",
+  "python": "3.14.2",
+  "unswbc": "0.3.10",
+  "engine": "5412052f33ddb160",
+  "bots": {
+    "portal_push": {
+      "path": "results\\20260924-235440-v5-portal-probe-b63cb1\\bots\\portal_push",
+      "hash": "9353419a93287cdc"
+    },
+    "nicked": {
+      "path": "results\\20260924-235440-v5-portal-probe-b63cb1\\bots\\nicked",
+      "hash": "d6dd50765f54f638"
+    }
+  },
+  "maps": {
+    "Trauma": {
+      "file": "dcf39d713c060e5d",
+      "signature": "d014b28abbd1abb0"
+    },
+    "default": {
+      "file": "6bd7abf2ed51a7f6",
+      "signature": "afc3707a967881d6"
+    },
+    "queen_of_spades": {
+      "file": "126d71b464432685",
+      "signature": "6cdb74a7a52d715a"
+    }
+  },
+  "settings": {
+    "seeds": [
+      54001
+    ],
+    "workers": 1
+  }
+}

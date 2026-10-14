@@ -1,0 +1,3602 @@
+[
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "default_small",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.8443990367573453,
+    "aligned": 0.9610997591893363,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "default_small",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.7693921244887748,
+    "aligned": -0.9423480311221937,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "trophy",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.8511046020026708,
+    "aligned": 0.9627761505006677,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "default_small",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.8201432759234755,
+    "aligned": -0.9550358189808689,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "default_small",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.8532032831281086,
+    "aligned": 0.9633008207820272,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "trophy",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.8821356554022666,
+    "aligned": -0.9705339138505666,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "trophy",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.8205356781036648,
+    "aligned": -0.9551339195259162,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "queen_of_spades",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.035818784081031535,
+    "aligned": -0.52892409185853,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "queen_of_spades",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.8264258918690599,
+    "aligned": -0.9302906834935808,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "queen_of_spades",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.4362682177172825,
+    "aligned": -0.8136125089747752,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "queen_of_spades",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.12991578363288853,
+    "aligned": -0.6772157880134853,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "Devil",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.7124183560914433,
+    "aligned": 0.8328664937847656,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "Devil",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.7905574145815157,
+    "aligned": -0.9476393536453789,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "trophy",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.09819682212680964,
+    "aligned": 0.546879365896869,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "default",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.4572246585149839,
+    "aligned": -0.7724694299348684,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "default",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.4485993332920338,
+    "aligned": -0.7449623333230084,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "default",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.13593932065862394,
+    "aligned": 0.5621690159891901,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "Devil",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.8821898161226096,
+    "aligned": -0.9705474540306525,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "default",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.2668878356502974,
+    "aligned": 0.504706612515997,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "Devil",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.2947892592094469,
+    "aligned": 0.4689856120269066,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "stronghold",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.08950487652329114,
+    "aligned": -0.5397029518040901,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "stronghold",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.10548937703023091,
+    "aligned": -0.575391952100695,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "Trauma",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.5508380637168281,
+    "aligned": -0.887709515929207,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "stronghold",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.1022872441517133,
+    "aligned": 0.5546168682073548,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "Trauma",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.5140901117110318,
+    "aligned": -0.6862148356200657,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "Trauma",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.2691953471200419,
+    "aligned": -0.5881321701133438,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "stronghold",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.06020125153596372,
+    "aligned": 0.7152128450107459,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "Trauma",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.602996587755819,
+    "aligned": -0.8436062897960976,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "arena",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.9649358490566038,
+    "aligned": -0.991233962264151,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "arena",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.9459778488509832,
+    "aligned": 0.9864944622127458,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "arena",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.9531572327044026,
+    "aligned": 0.9882893081761006,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "arena",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.8709822808297322,
+    "aligned": -0.967745570207433,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "Colosseum",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.907351516700354,
+    "aligned": -0.9768378791750885,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "Colosseum",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.8853736289781634,
+    "aligned": -0.9713434072445408,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "Colosseum",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.8231944731427627,
+    "aligned": 0.9557986182856907,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "Colosseum",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.7059967847061936,
+    "aligned": 0.9264991961765484,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "schooltime",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.46034309930372186,
+    "aligned": -0.6220951206203229,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "schooltime",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.19448605475000072,
+    "aligned": 0.5079822598974054,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "Autarky",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.7861185558968282,
+    "aligned": -0.946529638974207,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "Prisoners_Dilemma",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.7138893559478982,
+    "aligned": -0.9284723389869746,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "Prisoners_Dilemma",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.7911963560839272,
+    "aligned": -0.9477990890209818,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "Prisoners_Dilemma",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.6920682609447675,
+    "aligned": -0.9230170652361919,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "schooltime",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.301362192613332,
+    "aligned": -0.6861652904213743,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "schooltime",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.21633105423031637,
+    "aligned": -0.585900945375761,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "Autarky",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.3503688850990253,
+    "aligned": -0.6866488250483412,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "Autarky",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.32010795708289236,
+    "aligned": -0.6633603226040564,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "Prisoners_Dilemma",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.7141308924774405,
+    "aligned": -0.9285327231193601,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "Autarky",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.2416794716644263,
+    "aligned": -0.6799850853074109,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "big_empty",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.07617858167226738,
+    "aligned": 0.5254549018283232,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "default_small",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.8944537231978089,
+    "aligned": 0.9736134307994522,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "big_empty",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.0011962312239113587,
+    "aligned": -0.5419657244726445,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "default_small",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.9035608986949396,
+    "aligned": 0.9758902246737349,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "default_small",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.7811964874437219,
+    "aligned": 0.9452991218609305,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "Portals",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.21148842574238824,
+    "aligned": -0.5917609953244859,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "Portals",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.18471465216218486,
+    "aligned": -0.5628453297072129,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "big_empty",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.058598478484381544,
+    "aligned": -0.5729202963128247,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "default_small",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.8790106657506217,
+    "aligned": 0.9697526664376555,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "big_empty",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.027173419936547528,
+    "aligned": -0.5370963852871672,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "Portals",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.25940155603448534,
+    "aligned": -0.6148503890086214,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "trophy",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.892064170864215,
+    "aligned": -0.9730160427160537,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "Portals",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.1386013820221887,
+    "aligned": -0.5721503455055471,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "trophy",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.7971036430024809,
+    "aligned": -0.9492759107506202,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "trophy",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.704991814113258,
+    "aligned": -0.9262479535283145,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "queen_of_spades",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.7421695380089198,
+    "aligned": -0.9355423845022299,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "queen_of_spades",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.7738633333216298,
+    "aligned": -0.9434658333304075,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "queen_of_spades",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.19758879045787198,
+    "aligned": 0.48321149803770597,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "queen_of_spades",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.4729899915460195,
+    "aligned": 0.7682474978865049,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "trophy",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.5007028207152981,
+    "aligned": 0.5479012178980986,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "Devil",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.9339197650516504,
+    "aligned": -0.9834799412629126,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "Devil",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.8990709978209297,
+    "aligned": -0.9747677494552325,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "Devil",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.8831395364882113,
+    "aligned": -0.9707848841220528,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "default",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.6768665606265571,
+    "aligned": -0.9192166401566393,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "default",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.11094052396415158,
+    "aligned": 0.5794077261518192,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "Devil",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.6536727597160717,
+    "aligned": 0.9134181899290179,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "default",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.22379078676245226,
+    "aligned": 0.731873622616539,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "default",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.13766865177624343,
+    "aligned": 0.6322495037226058,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "Slithery_Fight",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.03679412088315313,
+    "aligned": -0.5844412486673902,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "Slithery_Fight",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.04328615040811943,
+    "aligned": 0.48917846239797014,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "Slithery_Fight",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.13664516845480967,
+    "aligned": -0.5691075286728422,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v92",
+    "map": "Slithery_Fight",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.06556083901247632,
+    "aligned": -0.6112177959600157,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "stronghold",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.20675652559692384,
+    "aligned": -0.5516891313992309,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "Trauma",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.5302577939741248,
+    "aligned": 0.20076888483980218,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "Trauma",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.2664859910953258,
+    "aligned": 0.6379239567716232,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "Trauma",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.2031562739284315,
+    "aligned": -0.5841224018154412,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "Trauma",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.44844547096863185,
+    "aligned": -0.8108293164601066,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "stronghold",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.2241276808435633,
+    "aligned": 0.49096056099211666,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "stronghold",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.2038650822705942,
+    "aligned": 0.47222960572101125,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "arena",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.9462695867065283,
+    "aligned": 0.9865673966766321,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "arena",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.9430222222222223,
+    "aligned": 0.9857555555555556,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "arena",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.9459413874622972,
+    "aligned": 0.9864853468655743,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "arena",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.9334639796055173,
+    "aligned": 0.9833659949013793,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "Colosseum",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.9059806372117585,
+    "aligned": -0.9764951593029396,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "Colosseum",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.9053391710010047,
+    "aligned": 0.9763347927502511,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "stronghold",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.15300189687738275,
+    "aligned": 0.6789626405347526,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "Colosseum",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.8569793272268149,
+    "aligned": -0.9642448318067037,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "Colosseum",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.9252337037470585,
+    "aligned": -0.9813084259367646,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "Autarky",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.4091102034724203,
+    "aligned": -0.7094204080109622,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "schooltime",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.30708169296291177,
+    "aligned": 0.4622204024473455,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "schooltime",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.2608377453606636,
+    "aligned": -0.5841169993653761,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "Autarky",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.1039803740956054,
+    "aligned": -0.5017826842538764,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "schooltime",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.24426668868886037,
+    "aligned": -0.582343267916896,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "Autarky",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.3151744472236966,
+    "aligned": 0.5787936118059241,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "Prisoners_Dilemma",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.7057188660970715,
+    "aligned": -0.9264297165242679,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "Autarky",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.13893814002467433,
+    "aligned": -0.6225723728440065,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "schooltime",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.08423218962110521,
+    "aligned": -0.6198952567076018,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "Prisoners_Dilemma",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.6579194741057113,
+    "aligned": -0.9144798685264278,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "Prisoners_Dilemma",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.727334922153557,
+    "aligned": -0.9318337305383892,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "Prisoners_Dilemma",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.5253384536348172,
+    "aligned": -0.8813346134087043,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "Portals",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.1569779395540539,
+    "aligned": -0.5619717576157862,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "big_empty",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.053415685449237686,
+    "aligned": -0.5473539213623094,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "Portals",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.14150303836469275,
+    "aligned": -0.5897235856781298,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "Portals",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.1755088640412056,
+    "aligned": -0.6029681251012105,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "big_empty",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.008917079548332983,
+    "aligned": -0.5260387936966071,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "default_small",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.8737710480283526,
+    "aligned": 0.9684427620070881,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "big_empty",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.028296675199111224,
+    "aligned": -0.5361439362416384,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "Portals",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.09241039663900256,
+    "aligned": -0.5856025991597507,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "big_empty",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.04945692685871845,
+    "aligned": -0.5145381447581578,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "default_small",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.8033863527250469,
+    "aligned": 0.9508465881812618,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "default_small",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.7006563955488105,
+    "aligned": 0.9251640988872026,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "default_small",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.4109503870190052,
+    "aligned": 0.8527375967547512,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "trophy",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.8873795176138911,
+    "aligned": 0.9718448794034728,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "queen_of_spades",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.7600341222560195,
+    "aligned": 0.9400085305640049,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "trophy",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.8636296533736129,
+    "aligned": 0.9659074133434032,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "queen_of_spades",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.47671637654883303,
+    "aligned": 0.6191790941372083,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "queen_of_spades",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.7559246076271563,
+    "aligned": 0.842827305752943,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "queen_of_spades",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.5022680959601008,
+    "aligned": 0.8167434945782605,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "trophy",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.8027492214475845,
+    "aligned": 0.9506873053618962,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "Slithery_Fight",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.06238059997400984,
+    "aligned": 0.5184957590974066,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "trophy",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.6937931083485005,
+    "aligned": 0.7374017654592182,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "Slithery_Fight",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.039247697459463014,
+    "aligned": 0.5099249177403974,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "Slithery_Fight",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.020475012554233913,
+    "aligned": -0.565724813744619,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_nicked_v75",
+    "map": "Slithery_Fight",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.13851608182174546,
+    "aligned": -0.5820973748858161,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "Devil",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.7392690566726386,
+    "aligned": 0.8848172641681596,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "Devil",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.6273616092943758,
+    "aligned": 0.8354118308950226,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "Devil",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.5548264279308238,
+    "aligned": 0.788706606982706,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "default",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.09367685496206461,
+    "aligned": 0.6155244768984108,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "Devil",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.14992446868848533,
+    "aligned": -0.5003976707066665,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "default",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.07331607999178351,
+    "aligned": 0.637376639045565,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "default",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.024966311181178917,
+    "aligned": -0.6361634854958444,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "default",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.2715327595818403,
+    "aligned": -0.5765038795506324,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "stronghold",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.084534225122738,
+    "aligned": 0.6819914437193155,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "stronghold",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.028565570294839415,
+    "aligned": 0.6946413925737098,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "stronghold",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.012304217262874723,
+    "aligned": 0.6816474828871473,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "stronghold",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.057168352775766935,
+    "aligned": 0.6865275839372057,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "Trauma",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.3088839011411472,
+    "aligned": 0.6843638324281439,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "Trauma",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.3033562832234196,
+    "aligned": 0.7523096590411491,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "Trauma",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.1899815009036872,
+    "aligned": -0.27194906921852263,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "Trauma",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.39942841560924996,
+    "aligned": -0.215932369781898,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "arena",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.9191771708683473,
+    "aligned": 0.9797942927170868,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "arena",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.9606521239954076,
+    "aligned": 0.9901630309988518,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "arena",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.9372093098963914,
+    "aligned": 0.9843023274740978,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "Colosseum",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.9027879372017812,
+    "aligned": 0.9756969843004453,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "arena",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.9486927564142821,
+    "aligned": -0.9871731891035705,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "Colosseum",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.8840220948215365,
+    "aligned": 0.9710055237053841,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "Colosseum",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.8700706370373187,
+    "aligned": -0.9675176592593296,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "schooltime",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.7163958676060231,
+    "aligned": 0.7755901949716812,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "schooltime",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.7298351208632842,
+    "aligned": 0.8060219986066257,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "Colosseum",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.5772156924901585,
+    "aligned": 0.8943039231225396,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "big_empty",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.7320033875714735,
+    "aligned": 0.7289778583871211,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "big_empty",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.7525022934993609,
+    "aligned": -0.32675537900611207,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "big_empty",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.7822917800524416,
+    "aligned": 0.7448153692555346,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "Autarky",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.4904216728231598,
+    "aligned": 0.7341438797442515,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "big_empty",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.7320729063077688,
+    "aligned": 0.7045699507148733,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "Prisoners_Dilemma",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.06300323654418866,
+    "aligned": -0.5365841424693806,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "Prisoners_Dilemma",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.025069936854753415,
+    "aligned": -0.5812674842136883,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "Autarky",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.4001623489646628,
+    "aligned": 0.7029817637117539,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "Prisoners_Dilemma",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.027143459262833368,
+    "aligned": -0.5276191981490417,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "Prisoners_Dilemma",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.06610403543799304,
+    "aligned": -0.5491347045116722,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "schooltime",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.1260487477286374,
+    "aligned": 0.6440121869321593,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "default_small",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.880440769922057,
+    "aligned": 0.9701101924805142,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "Autarky",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.24376662691772513,
+    "aligned": 0.6063962021839767,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "default_small",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.9544444444444444,
+    "aligned": 0.9886111111111111,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "schooltime",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.15401305511508473,
+    "aligned": 0.5801699304454379,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "Autarky",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.18463086899027079,
+    "aligned": 0.6161577172475677,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "default_small",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.6872350983812686,
+    "aligned": -0.9218087745953172,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "default_small",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.9072575506379686,
+    "aligned": 0.9768143876594921,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "Portals",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.11234373995033305,
+    "aligned": 0.561199779298131,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "Portals",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.07151153538474034,
+    "aligned": 0.5821221161538149,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "Portals",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.1248755750862433,
+    "aligned": 0.5759239633712963,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "queen_of_spades",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.734882329523552,
+    "aligned": 0.9337205823808881,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "trophy",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.5945631336028407,
+    "aligned": -0.693512578272505,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "queen_of_spades",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.8829759039283434,
+    "aligned": 0.9707439759820858,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "trophy",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.6519211194962703,
+    "aligned": -0.9129802798740676,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "Portals",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.15240098574764904,
+    "aligned": 0.5087747535630878,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "queen_of_spades",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.872211275518084,
+    "aligned": 0.968052818879521,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "trophy",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.2253199992764448,
+    "aligned": 0.46786354856798557,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "queen_of_spades",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.672927371880371,
+    "aligned": 0.9182318429700927,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "trophy",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.07070461152657835,
+    "aligned": 0.5801761528816446,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "Devil",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.8593468036524022,
+    "aligned": 0.9648367009131006,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "Devil",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.6775757112081451,
+    "aligned": 0.7830302914384,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "default",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.05607849938820566,
+    "aligned": -0.5140196248470514,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "default",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.5174536752689383,
+    "aligned": 0.7682523077061234,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "default",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.4055368935130447,
+    "aligned": -0.26818099401304313,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "default",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.34110100751355465,
+    "aligned": 0.6618058641232867,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "Devil",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.6093169694793864,
+    "aligned": -0.9023292423698466,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "Devil",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.3548066099185707,
+    "aligned": 0.43716041648587456,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "Trauma",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.4706422483094528,
+    "aligned": 0.6819462763630775,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "Trauma",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.4255203034169935,
+    "aligned": -0.28111992414575165,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "Trauma",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.49320976783903525,
+    "aligned": -0.22669755804024116,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "Trauma",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.4895423508557474,
+    "aligned": 0.6827304153001437,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "stronghold",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.002568452192617506,
+    "aligned": 0.5883044507104921,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "stronghold",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.006974594384787188,
+    "aligned": 0.5957139785224472,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "stronghold",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.008047738192340323,
+    "aligned": 0.6627607927246422,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "stronghold",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.07030914672097677,
+    "aligned": 0.6688930761539283,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "Slithery_Fight",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.047711644370980535,
+    "aligned": 0.5525882179395128,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "arena",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.899703218510309,
+    "aligned": -0.9749258046275773,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "arena",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.881160777079176,
+    "aligned": 0.970290194269794,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "arena",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.9572778394376619,
+    "aligned": 0.9893194598594155,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "arena",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.8994282317952335,
+    "aligned": -0.9748570579488084,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "Slithery_Fight",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.07969148103641462,
+    "aligned": 0.5005689330195848,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "schooltime",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.42832703542687134,
+    "aligned": 0.6947440965190554,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "Colosseum",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.8940566148940197,
+    "aligned": -0.9735141537235049,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "Colosseum",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.8913773999208563,
+    "aligned": -0.9728443499802141,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "Slithery_Fight",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.055019895233486965,
+    "aligned": -0.5819367919901899,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "Colosseum",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.9101985771366575,
+    "aligned": -0.9775496442841644,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "schooltime",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.3233080114472516,
+    "aligned": 0.6586958553208293,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "Colosseum",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.8002210869566201,
+    "aligned": 0.950055271739155,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "cpp_leviathan3",
+    "map": "Slithery_Fight",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.10219435936816607,
+    "aligned": 0.553022838729387,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "schooltime",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.06605282477782093,
+    "aligned": 0.5572108806130598,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "schooltime",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.005701597223710189,
+    "aligned": -0.506527440122254,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "Prisoners_Dilemma",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.6475110414810739,
+    "aligned": 0.9118777603702685,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "Prisoners_Dilemma",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.46621257427434915,
+    "aligned": 0.8665531435685873,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "Prisoners_Dilemma",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.10382685381683016,
+    "aligned": 0.6301233801208742,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "Prisoners_Dilemma",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.41687236554592483,
+    "aligned": 0.8542180913864812,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "Autarky",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.5704009956300335,
+    "aligned": 0.7950392732977523,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "Autarky",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.08470763594953462,
+    "aligned": -0.5378435756540504,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "Autarky",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.2796766854845736,
+    "aligned": 0.635708645055354,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "Autarky",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.40416134577832863,
+    "aligned": 0.7159052013094471,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "Portals",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.23011863861219775,
+    "aligned": 0.5575296596530495,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "big_empty",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.036287695181419964,
+    "aligned": 0.5475334622568935,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "big_empty",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.04894043154317817,
+    "aligned": 0.5574158307773608,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "Portals",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.49640520354571166,
+    "aligned": -0.4022144885872563,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "Portals",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.08061572339560513,
+    "aligned": 0.6220057827007531,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "Portals",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.08292360173984503,
+    "aligned": 0.6343672640713249,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "big_empty",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.020056724668597106,
+    "aligned": 0.5189030700560381,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "default_small",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.7828870575214943,
+    "aligned": 0.9457217643803736,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "default_small",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.7820427196907247,
+    "aligned": 0.9455106799226811,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "default_small",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.8810796542047861,
+    "aligned": 0.9702699135511965,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "default_small",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.7800663317786412,
+    "aligned": 0.9450165829446603,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "big_empty",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.017955348136485135,
+    "aligned": 0.5392611629658787,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "queen_of_spades",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.8645022559447112,
+    "aligned": 0.9661255639861778,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "Slithery_Fight",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.10812901974101528,
+    "aligned": 0.5324915545885557,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "Slithery_Fight",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.08261185441077033,
+    "aligned": 0.5929834000336711,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "Slithery_Fight",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.11095243455629397,
+    "aligned": 0.5380513650451371,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "v7-base-bot",
+    "map": "Slithery_Fight",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.13163798794341222,
+    "aligned": 0.5087571696808135,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "trophy",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.6755489075929525,
+    "aligned": 0.8522205602315714,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "trophy",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.6071362710742872,
+    "aligned": 0.9017840677685718,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "default",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.5563345264266291,
+    "aligned": 0.8335280760511017,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "trophy",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.5591648571310014,
+    "aligned": 0.8022912142827503,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "queen_of_spades",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.002157657167686832,
+    "aligned": 0.5932105857080783,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "queen_of_spades",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.13937283446025517,
+    "aligned": 0.646974973203118,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "queen_of_spades",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.5766504006006291,
+    "aligned": -0.7176920119148631,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "Devil",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.5398186544353775,
+    "aligned": 0.8060072951877917,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "default",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.04023678051021916,
+    "aligned": 0.513750328681969,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "default",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.018895629291252002,
+    "aligned": -0.5359737670957916,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "default",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.13938509706384036,
+    "aligned": -0.6109332307876992,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "Devil",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.7876043882752026,
+    "aligned": 0.905234430402134,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "trophy",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.4178363852533581,
+    "aligned": -0.6655702074244506,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "Devil",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.7196759963974059,
+    "aligned": 0.8904453148888252,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "Devil",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.643332753295217,
+    "aligned": 0.9108331883238042,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "Trauma",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.1548093197933864,
+    "aligned": 0.4016055557547982,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "Trauma",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.00656024066757175,
+    "aligned": 0.4940643025911354,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "stronghold",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.10428594950684446,
+    "aligned": 0.6167856554804316,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "stronghold",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.027344561420214224,
+    "aligned": 0.6533878644929846,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "Trauma",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.10225057232692786,
+    "aligned": 0.5402268306024786,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "schooltime",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.6463909225278626,
+    "aligned": 0.7382643972986322,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "schooltime",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.556059389512902,
+    "aligned": 0.6646053985593279,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "stronghold",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.08907539769137011,
+    "aligned": 0.6072492228663141,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "arena",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.9201664186093577,
+    "aligned": 0.9800416046523395,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "arena",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.8996070705278346,
+    "aligned": 0.9749017676319587,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "Trauma",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.18427533695759502,
+    "aligned": -0.571930903204916,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "arena",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.9101075086429986,
+    "aligned": 0.9775268771607497,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "arena",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.9627510806000508,
+    "aligned": -0.9906877701500127,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "stronghold",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.14605715588702858,
+    "aligned": 0.5741414487331609,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "Colosseum",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.9073247477052555,
+    "aligned": 0.9768311869263139,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "Colosseum",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.8668893495789257,
+    "aligned": 0.9667223373947315,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "Colosseum",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.8582264435460203,
+    "aligned": -0.9645566108865051,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "schooltime",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.25590074737207075,
+    "aligned": 0.593545079316136,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "Colosseum",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.8528164723130004,
+    "aligned": -0.9632041180782501,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "schooltime",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.19589523958165653,
+    "aligned": 0.6059913537550632,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "Autarky",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.6782574815395961,
+    "aligned": 0.8846806494546664,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "Autarky",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.546116121083429,
+    "aligned": 0.8480674918093188,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "Autarky",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.6237611419751335,
+    "aligned": 0.8464164759699738,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "Autarky",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.36219764941839216,
+    "aligned": 0.610549412354598,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "big_empty",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.12885751428897724,
+    "aligned": 0.5356390361064909,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "big_empty",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.12057588038965489,
+    "aligned": 0.5477496039002306,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "big_empty",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.11715787073101568,
+    "aligned": 0.5792894676827539,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "big_empty",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.14733030205007863,
+    "aligned": 0.5608051782522456,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "Prisoners_Dilemma",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.5710010563187053,
+    "aligned": 0.8927502640796763,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "Prisoners_Dilemma",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.4193199129482196,
+    "aligned": 0.7665946841194078,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "Prisoners_Dilemma",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.46387179556681635,
+    "aligned": 0.7483208900681746,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "Prisoners_Dilemma",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.302022396904006,
+    "aligned": 0.7485825223029247,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "default_small",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.9402469440467152,
+    "aligned": 0.9850617360116788,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "default_small",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.9111628247279592,
+    "aligned": 0.9777907061819898,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "default_small",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.6208346413741621,
+    "aligned": -0.9052086603435405,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "Portals",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.23744465547858806,
+    "aligned": -0.6386294565525739,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "trophy",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.7291957699068304,
+    "aligned": 0.9322989424767076,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "Portals",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.23229875438182085,
+    "aligned": -0.5736996885954552,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "default_small",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.5759925580279928,
+    "aligned": -0.8939981395069982,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "trophy",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.8945087132205087,
+    "aligned": -0.9736271783051271,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "trophy",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.8254943569091986,
+    "aligned": -0.9563735892272996,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "queen_of_spades",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.7612617310563142,
+    "aligned": -0.9403154327640786,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "Portals",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.11425842714174139,
+    "aligned": -0.5285646067854354,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "queen_of_spades",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.833061510373159,
+    "aligned": -0.9582653775932898,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "trophy",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.4349340641847183,
+    "aligned": 0.5530311898361734,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "Portals",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.17795806394864463,
+    "aligned": -0.6159180874157325,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "queen_of_spades",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.36442085149972725,
+    "aligned": 0.7758878215705839,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "Slithery_Fight",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.15270818899177252,
+    "aligned": -0.5548437139146098,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "Slithery_Fight",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.004902986134274763,
+    "aligned": 0.5159316288865098,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "queen_of_spades",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.46176407111315076,
+    "aligned": -0.6859538382911081,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "default",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.5318465802816106,
+    "aligned": -0.7496283117370693,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "Devil",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.8699280404201829,
+    "aligned": -0.9674820101050458,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "default",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.27235370657144586,
+    "aligned": -0.5985762315209102,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "Devil",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.9165173418981821,
+    "aligned": -0.9791293354745455,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "Devil",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.8857804601197785,
+    "aligned": -0.9714451150299446,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "default",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.17523470434074986,
+    "aligned": 0.6826975649740763,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "default",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.04653155786898575,
+    "aligned": 0.5766024046504007,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "Devil",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.3493842769275021,
+    "aligned": 0.7464369783227846,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "Slithery_Fight",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.11698574460728613,
+    "aligned": 0.5046518689329242,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "stronghold",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.10603229489917197,
+    "aligned": -0.5294492501953812,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "stronghold",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.02882659330472416,
+    "aligned": 0.5159414998219671,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_v44",
+    "map": "Slithery_Fight",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.15105715597148833,
+    "aligned": -0.5964062643015141,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "Trauma",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.28671620445732526,
+    "aligned": 0.43364009782183893,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "Trauma",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.3884715693420132,
+    "aligned": -0.61378455900217,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "stronghold",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.05114408410391394,
+    "aligned": 0.7305279565098495,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "arena",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.9726127635805055,
+    "aligned": 0.9931531908951263,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "arena",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.9024374178689968,
+    "aligned": -0.9756093544672492,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "stronghold",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.11992121770786036,
+    "aligned": 0.5181848331877138,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "arena",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.9312689764863679,
+    "aligned": -0.982817244121592,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "Colosseum",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.8965073646247942,
+    "aligned": 0.9741268411561985,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "Trauma",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.05566472737271464,
+    "aligned": 0.5694171514901547,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "Trauma",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.11818971726741063,
+    "aligned": 0.5582904085209852,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "arena",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.8550785563642707,
+    "aligned": -0.9637696390910677,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "Colosseum",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.8190180621045762,
+    "aligned": -0.9547545155261441,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "Colosseum",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.9216813203310324,
+    "aligned": 0.9804203300827581,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "Colosseum",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.9111042754734469,
+    "aligned": -0.9777760688683617,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "Autarky",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.21963018634925796,
+    "aligned": 0.6549075465873144,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "Prisoners_Dilemma",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.6885220066492973,
+    "aligned": 0.9221305016623244,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "Autarky",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.3934221601718873,
+    "aligned": 0.7483555400429719,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "Prisoners_Dilemma",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.6896657258148948,
+    "aligned": -0.9224164314537238,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "Autarky",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.48311166922688054,
+    "aligned": 0.8181463383593518,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "Autarky",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.16800592987790064,
+    "aligned": -0.546233811648172,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "schooltime",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.23322965664954418,
+    "aligned": 0.453987667804827,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "Prisoners_Dilemma",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.6405393243258944,
+    "aligned": -0.9101348310814736,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "Prisoners_Dilemma",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.5018712573644715,
+    "aligned": -0.8754678143411179,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "big_empty",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.021300515775422482,
+    "aligned": 0.5069699530233575,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "big_empty",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.012141252962921359,
+    "aligned": -0.5133658917531271,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "big_empty",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.03311724533924204,
+    "aligned": 0.4999174099766649,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "schooltime",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.13991150383956863,
+    "aligned": 0.4681085437931943,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "schooltime",
+    "seed": 461001,
+    "side": "B",
+    "margin": -0.24870476695722432,
+    "aligned": -0.5621761917393061,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "schooltime",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.2192851675836537,
+    "aligned": 0.47045960698049105,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "big_empty",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.02448893323132933,
+    "aligned": -0.5072706238350247,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "Portals",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.022391129058787304,
+    "aligned": 0.6603596870266016,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "Slithery_Fight",
+    "seed": 461002,
+    "side": "A",
+    "margin": 0.05444052774691452,
+    "aligned": 0.533880402206999,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "Slithery_Fight",
+    "seed": 461002,
+    "side": "B",
+    "margin": 0.05397908257963595,
+    "aligned": -0.5840662049648471,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "Portals",
+    "seed": 461002,
+    "side": "B",
+    "margin": -0.04873291426079992,
+    "aligned": 0.649581477317153,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "Portals",
+    "seed": 461002,
+    "side": "A",
+    "margin": -0.0827406596418935,
+    "aligned": 0.6116677762659972,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "Slithery_Fight",
+    "seed": 461001,
+    "side": "B",
+    "margin": 0.09633192997135774,
+    "aligned": -0.48474054691892526,
+    "wins": -1.0,
+    "win": false
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "Portals",
+    "seed": 461001,
+    "side": "A",
+    "margin": -0.008776234042295878,
+    "aligned": 0.6568968505803351,
+    "wins": 1.0,
+    "win": true
+  },
+  {
+    "opponent": "nicked_lab",
+    "map": "Slithery_Fight",
+    "seed": 461001,
+    "side": "A",
+    "margin": 0.04471413938017948,
+    "aligned": -0.4923425919155185,
+    "wins": -1.0,
+    "win": false
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "counts": {
+    "games": 1056,
+    "verified_candidate_turns": 4321408,
+    "splits": 84175,
+    "late_splits": 0,
+    "mature_turns": 4321408,
+    "mature_preserve_turns": 325063,
+    "mature_preserved_split_opportunities": 15523
+  },
+  "samples": {
+    "mature__long": {
+      "bot": "mature",
+      "score": 70,
+      "init": "ID 17\nTEAM A\nMAP 64 64\nUNIT_LIMIT 64\n",
+      "id": 17,
+      "round": 483,
+      "block": "ROUND 483\nDIR S\nLENGTH 70\nUNIT_COUNT 44\nNUM_MSGS 0\n24 31 0 223\n25 31 0 263\n26 31 0 174\n27 31 0 338\n28 31 0 251\n29 31 0 231\n30 31 0 179\n24 32 0 367\n25 32 0 119\n26 32 0 262\n27 32 0 92\n28 32 0 328\n29 32 0 535\n30 32 0 385\n24 33 0 247\n25 33 0 231\n26 33 0 5\n27 33 0 160\n28 33 0 313\n29 33 0 123\n30 33 0 129\n24 34 0 156\n25 34 0 61\n26 34 0 500\n27 34 0 21\n28 34 0 107\n29 34 0 424\n30 34 0 131\n24 35 0 377\n25 35 0 370\n26 35 0 47\n27 35 0 85\n28 35 0 67\n29 35 0 6\n30 35 0 105\n24 36 0 177\n25 36 0 179\n26 36 0 398\n27 36 0 125\n28 36 0 611\n29 36 0 110\n30 36 0 513\n24 37 0 95\n25 37 0 191\n26 37 0 218\n27 37 0 495\n28 37 0 175\n29 37 0 412\n30 37 0 223\nDRAGON_BODIES 13\nB 3 24 31 S 0\nA 17 25 31 E 0\nA 17 26 31 E 0\nA 17 27 31 S 0\nB 3 24 32 S 0\nA 17 27 32 S 0\nB 3 24 33 S 0\nA 17 27 33 S 0\nB 3 24 34 W 0\nA 17 27 34 S 1\nA 17 29 36 E 0\nA 17 30 36 E 0\nA 17 29 37 N 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n",
+      "source": "results\\20260923-231438-hybrid-b0801d\\validation-core\\replays\\mature-vs-hunter-big_empty_685baf0e797207b7-s29006.replay"
+    },
+    "mature__dense": {
+      "bot": "mature",
+      "score": 47,
+      "init": "ID 83\nTEAM B\nMAP 64 64\nUNIT_LIMIT 64\n",
+      "id": 83,
+      "round": 451,
+      "block": "ROUND 451\nDIR E\nLENGTH 57\nUNIT_COUNT 64\nNUM_MSGS 0\n56 3 0 256\n57 3 0 294\n58 3 0 453\n59 3 0 515\n60 3 0 540\n61 3 0 136\n62 3 0 44\n56 4 0 639\n57 4 0 464\n58 4 0 55\n59 4 0 33\n60 4 0 150\n61 4 0 37\n62 4 0 205\n56 5 0 30\n57 5 0 164\n58 5 0 341\n59 5 0 376\n60 5 0 165\n61 5 0 311\n62 5 0 194\n56 6 0 102\n57 6 0 292\n58 6 0 130\n59 6 0 464\n60 6 0 247\n61 6 0 86\n62 6 0 649\n56 7 0 577\n57 7 0 274\n58 7 0 312\n59 7 0 123\n60 7 0 21\n61 7 0 129\n62 7 0 71\n56 8 0 180\n57 8 0 24\n58 8 0 196\n59 8 0 266\n60 8 0 259\n61 8 0 220\n62 8 0 27\n56 9 0 259\n57 9 0 225\n58 9 0 159\n59 9 0 359\n60 9 0 198\n61 9 0 208\n62 9 0 205\nDRAGON_BODIES 47\nB 40 56 3 N 0\nB 40 57 3 W 0\nB 40 58 3 W 0\nB 40 59 3 W 0\nB 40 60 3 W 0\nB 40 61 3 W 0\nB 40 62 3 W 0\nB 83 56 4 W 0\nB 83 57 4 W 0\nB 83 58 4 W 0\nB 83 59 4 W 0\nB 83 60 4 W 0\nB 83 61 4 W 0\nB 40 62 4 N 0\nB 83 56 5 S 0\nB 83 57 5 E 0\nB 83 58 5 E 0\nB 83 59 5 E 0\nB 83 60 5 S 0\nB 83 61 5 N 0\nB 40 62 5 N 0\nB 83 56 6 W 0\nB 83 57 6 N 0\nB 83 58 6 E 0\nB 83 59 6 E 1\nB 83 60 6 S 0\nB 83 61 6 N 0\nB 40 62 6 N 0\nB 83 56 7 S 0\nB 83 57 7 N 0\nB 83 58 7 N 0\nB 83 60 7 S 0\nB 83 61 7 N 0\nB 83 62 7 W 0\nB 83 56 8 W 0\nB 83 57 8 N 0\nB 83 58 8 N 0\nB 83 59 8 W 0\nB 83 60 8 W 0\nB 83 62 8 N 0\nB 83 56 9 E 0\nB 83 57 9 N 0\nB 83 58 9 E 0\nB 83 59 9 S 0\nB 83 60 9 E 0\nB 83 61 9 E 0\nB 83 62 9 N 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n",
+      "source": "results\\20260923-231438-hybrid-b0801d\\validation-core\\replays\\hunter-vs-mature-big_empty_685baf0e797207b7-s29001.replay"
+    },
+    "mature__enemy_heads": {
+      "bot": "mature",
+      "score": 14,
+      "init": "ID 349\nTEAM B\nMAP 11 11\nUNIT_LIMIT 64\n",
+      "id": 349,
+      "round": 183,
+      "block": "ROUND 183\nDIR S\nLENGTH 3\nUNIT_COUNT 1\nNUM_MSGS 0\n1 1 0 2\n2 1 0 18\n3 1 0 1\n4 1 0 16\n5 1 0 8\n6 1 1 5\n7 1 0 7\n1 2 0 14\n2 2 1 7\n3 2 0 11\n4 2 0 3\n5 2 0 11\n6 2 0 5\n7 2 1 6\n1 3 0 4\n2 3 1 5\n3 3 0 16\n4 3 0 1\n5 3 0 10\n6 3 0 3\n7 3 0 2\n1 4 0 17\n2 4 0 2\n3 4 0 12\n4 4 0 2\n5 4 0 1\n6 4 0 2\n7 4 0 8\n1 5 0 2\n2 5 0 6\n3 5 0 1\n4 5 0 6\n5 5 0 7\n6 5 0 6\n7 5 0 1\n1 6 0 11\n2 6 0 3\n3 6 0 8\n4 6 0 2\n5 6 0 1\n6 6 0 2\n7 6 0 12\n1 7 0 2\n2 7 0 7\n3 7 0 2\n4 7 0 3\n5 7 0 10\n6 7 0 1\n7 7 0 16\nDRAGON_BODIES 34\nA 365 1 1 N 1\nA 356 2 1 W 1\nA 356 3 1 W 0\nA 364 4 1 E 0\nA 364 5 1 E 1\nA 348 7 1 W 1\nA 365 1 2 N 0\nA 301 3 2 W 1\nA 301 4 2 W 0\nA 357 5 2 W 1\nA 357 6 2 W 0\nA 318 1 3 W 0\nB 349 3 3 E 0\nB 349 4 3 S 0\nA 322 5 3 N 1\nA 357 6 3 N 0\nA 351 7 3 W 1\nA 359 1 4 E 0\nA 359 2 4 E 1\nB 349 4 4 S 1\nA 322 5 4 N 0\nA 360 6 4 W 1\nA 360 7 4 W 0\nA 359 1 5 N 0\nA 346 2 5 N 1\nA 322 5 5 N 0\nA 343 7 5 E 0\nA 346 2 6 N 0\nA 350 1 7 W 1\nA 350 2 7 W 0\nA 366 3 7 E 0\nA 366 4 7 E 1\nA 362 5 7 W 1\nA 362 6 7 W 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n",
+      "source": "results\\20260923-231438-hybrid-b0801d\\validation-core\\replays\\reference_v2-vs-mature-arena_728547b8376892d9-s29000.replay"
+    },
+    "mature__population": {
+      "bot": "mature",
+      "score": 64,
+      "init": "ID 104\nTEAM A\nMAP 64 64\nUNIT_LIMIT 64\n",
+      "id": 104,
+      "round": 66,
+      "block": "ROUND 66\nDIR W\nLENGTH 2\nUNIT_COUNT 64\nNUM_MSGS 0\n4 28 0 14\n5 28 0 336\n6 28 0 363\n7 28 0 548\n8 28 0 279\n9 28 0 616\n10 28 0 556\n4 29 0 222\n5 29 0 257\n6 29 0 459\n7 29 0 531\n8 29 0 111\n9 29 0 461\n10 29 0 327\n4 30 0 167\n5 30 0 378\n6 30 0 87\n7 30 0 682\n8 30 0 209\n9 30 0 275\n10 30 0 175\n4 31 0 463\n5 31 0 23\n6 31 0 85\n7 31 0 147\n8 31 0 709\n9 31 0 60\n10 31 0 402\n4 32 0 669\n5 32 0 565\n6 32 0 93\n7 32 0 610\n8 32 0 218\n9 32 0 60\n10 32 0 621\n4 33 0 4\n5 33 0 371\n6 33 0 466\n7 33 0 18\n8 33 0 43\n9 33 0 413\n10 33 0 203\n4 34 0 173\n5 34 0 572\n6 34 0 456\n7 34 0 47\n8 34 0 486\n9 34 0 58\n10 34 0 324\nDRAGON_BODIES 5\nA 77 5 28 W 1\nA 77 6 28 W 0\nA 104 7 31 W 1\nA 104 8 31 W 0\nB 114 7 34 N 1\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n",
+      "source": "results\\20260923-231438-hybrid-b0801d\\validation-core\\replays\\mature-vs-reference_v2-big_empty_685baf0e797207b7-s29000.replay"
+    }
+  },
+  "worker_source_hash": "cfb3250dc0ea0cc0",
+  "fission_source_hash": "baaeda1a3c8d54bc"
+}

@@ -1,0 +1,55 @@
+{
+  "question": "Change split threshold or offspring size while movement and round-450 cutoff stay fixed",
+  "modes": {
+    "split4": [
+      4,
+      false
+    ],
+    "split6": [
+      6,
+      false
+    ],
+    "split10": [
+      10,
+      false
+    ],
+    "split12": [
+      12,
+      false
+    ],
+    "child2": [
+      8,
+      true
+    ]
+  },
+  "live_hash": "ffe736af6c14ea33",
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-232921-fission-5df835\\maps\\arena_728547b8376892d9.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-232921-fission-5df835\\maps\\big_empty_685baf0e797207b7.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-232921-fission-5df835\\maps\\Colosseum_3042ccc262f0211a.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-232921-fission-5df835\\maps\\default_afc3707a967881d6.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-232921-fission-5df835\\maps\\default_small_f98ab391cccf33b1.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-232921-fission-5df835\\maps\\queen_of_spades_6cdb74a7a52d715a.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-232921-fission-5df835\\maps\\schooltime_8be7eda86910a849.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-232921-fission-5df835\\maps\\trophy_fd985019831fe135.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-232921-fission-5df835\\maps\\Devil_1b2147f4a8a775d2.map"
+  ],
+  "screen_seeds": [
+    9000,
+    9001
+  ],
+  "validation_seeds": [
+    10000,
+    10001,
+    10002,
+    10003,
+    10004,
+    10005,
+    10006,
+    10007
+  ],
+  "selection": "Highest official-map screen score among new candidates, ties in mode order; must exceed .5. Exactly one validates unchanged, no movement combination yet.",
+  "gate": "Direct baseline score 95% map-cluster lower bound > .5 AND paired pool gain 95% map-cluster lower bound > 0. Replay and judge-runtime verification also required.",
+  "limits": "Fresh bot RNG seeds, familiar maps/opponents; not unseen-map or ladder evidence.",
+  "workers": 2
+}

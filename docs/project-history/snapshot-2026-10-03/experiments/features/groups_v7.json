@@ -1,0 +1,20 @@
+{
+  "no_food": {"W_PEARL": 0.0, "W_MEM_PEARL": 0.0},
+  "no_spawn": {"W_SPAWN": 0.0},
+  "no_explore": {"W_UNSEEN": 0.0, "W_STALE": 0.0},
+  "no_trap": {"W_TRAP": 0.0, "W_LETHAL": 0.0},
+  "no_deadend": {"W_DEADEND": 0.0, "W_CORRIDOR": 0.0},
+  "no_headsafe": {"W_HEAD_ENEMY": 0.0, "W_HEAD_TEAM": 0.0, "W_AHEAD": 0.0},
+  "no_revisit": {"W_REVISIT": 0.0},
+  "no_fan": {"W_FAN_EARLY": 0.0, "W_FAN_LATE": 0.0},
+  "no_straight": {"W_STRAIGHT": 0.0},
+  "no_portal": {"W_PORTAL": 0.0, "W_PORTAL_UNSEEN": 0.0, "W_PORTAL_SCOUT": 0.0, "PORTAL_BOOK": false},
+  "no_v3model": {"W_V3": 0.0},
+  "no_attack": {"W_ATTACK": 0.0, "W_TRADE": 0.0},
+  "no_hunt": {"W_HUNT": 0.0},
+  "no_defend": {"W_DEFEND": 0.0},
+  "no_hub": {"W_HUB": 0.0, "HUB_BOOK": false, "LEARN_HUBS": false},
+  "no_goal": {"W_GOAL": 0.0, "GOAL": false},
+  "no_feed": {"W_CASH": 0.0, "FEED_ROUND": 999},
+  "no_protect": {"PROTECT_MULT": 1.0, "PROTECT_FOOD_MULT": 1.0}
+}

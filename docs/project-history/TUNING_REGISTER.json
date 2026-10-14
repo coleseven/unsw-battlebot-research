@@ -1,0 +1,3714 @@
+[
+  {
+    "run": "20260925-215416-tune-6926fc",
+    "plan": {
+      "base": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v61b-goal-bot",
+      "base_hash": "a208ae7f66bbd144",
+      "params": "core_params.py",
+      "space": {
+        "W_HUB": [
+          0,
+          120
+        ],
+        "W_ATTACK": [
+          50,
+          300
+        ],
+        "SPLIT_UNTIL_LARGE": [
+          200,
+          480,
+          "int"
+        ]
+      },
+      "start": {
+        "W_HUB": 60.0,
+        "W_ATTACK": 150.0,
+        "SPLIT_UNTIL_LARGE": 300.0
+      },
+      "opponents": [
+        "v3"
+      ],
+      "maps": [
+        "arena"
+      ],
+      "seed": 53001,
+      "popsize": 2,
+      "generations": 2,
+      "sigma": 0.25,
+      "deterministic_v6_clock": true
+    },
+    "evaluation_rows": 2,
+    "malformed_rows": 0,
+    "generations": [
+      0
+    ],
+    "best_training": {
+      "gen": 0,
+      "cand": "c00",
+      "F": 1.1228045958698505,
+      "wins": 2,
+      "games": 2,
+      "params": {
+        "W_HUB": 108.7304,
+        "W_ATTACK": 111.7646,
+        "SPLIT_UNTIL_LARGE": 263
+      },
+      "per_map": {
+        "arena": 0.8982436766958803
+      }
+    },
+    "means": []
+  },
+  {
+    "run": "20260925-234031-tune-0d2021",
+    "plan": {
+      "base": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\cppbot",
+      "base_hash": "c37c09ffe8393f68",
+      "params": "params.hpp",
+      "space": {
+        "W_PEARL": [
+          30,
+          160
+        ],
+        "W_SPAWN": [
+          0,
+          80
+        ],
+        "W_UNSEEN": [
+          0,
+          30
+        ],
+        "W_TRAP": [
+          2,
+          30
+        ],
+        "W_HEAD_ENEMY": [
+          15,
+          150
+        ],
+        "W_HEAD_TEAM": [
+          15,
+          150
+        ],
+        "W_ATTACK": [
+          40,
+          300
+        ],
+        "W_HUNT": [
+          0,
+          100
+        ],
+        "W_DEFEND": [
+          0,
+          40
+        ],
+        "W_HUB": [
+          0,
+          150
+        ],
+        "W_GOAL": [
+          0,
+          8
+        ],
+        "POOR_MULT": [
+          1,
+          5
+        ],
+        "W_CASH": [
+          0,
+          160
+        ],
+        "FEED_ROUND": [
+          360,
+          470,
+          "int"
+        ],
+        "SPLIT_UNTIL_LARGE": [
+          200,
+          460,
+          "int"
+        ],
+        "SPLIT_UNTIL_SMALL": [
+          300,
+          480,
+          "int"
+        ],
+        "CAP": [
+          32,
+          64,
+          "int"
+        ],
+        "FLOOR": [
+          8,
+          36,
+          "int"
+        ]
+      },
+      "start": {
+        "W_PEARL": 80.0,
+        "W_SPAWN": 30.0,
+        "W_UNSEEN": 8.0,
+        "W_TRAP": 10.0,
+        "W_HEAD_ENEMY": 60.0,
+        "W_HEAD_TEAM": 60.0,
+        "W_ATTACK": 150.0,
+        "W_HUNT": 40.0,
+        "W_DEFEND": 15.0,
+        "W_HUB": 60.0,
+        "W_GOAL": 3.0,
+        "POOR_MULT": 2.5,
+        "W_CASH": 80.0,
+        "FEED_ROUND": 410.0,
+        "SPLIT_UNTIL_LARGE": 300.0,
+        "SPLIT_UNTIL_SMALL": 450.0,
+        "CAP": 56.0,
+        "FLOOR": 24.0
+      },
+      "opponents": [
+        "nicked",
+        "v61b-goal-bot"
+      ],
+      "maps": [
+        "default_small",
+        "trophy",
+        "queen_of_spades",
+        "Devil",
+        "big_empty"
+      ],
+      "seed": 53001,
+      "popsize": 12,
+      "generations": 20,
+      "sigma": 0.2,
+      "deterministic_v6_clock": true
+    },
+    "evaluation_rows": 0,
+    "malformed_rows": 0,
+    "generations": [],
+    "best_training": null,
+    "means": []
+  },
+  {
+    "run": "20260926-001535-tune-79f3f9",
+    "plan": {
+      "base": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7-base-bot",
+      "base_hash": "bec48091e76579a1",
+      "params": "params.hpp",
+      "space": {
+        "W_PEARL": [
+          30,
+          160
+        ],
+        "W_SPAWN": [
+          0,
+          80
+        ],
+        "W_UNSEEN": [
+          0,
+          30
+        ],
+        "W_TRAP": [
+          2,
+          30
+        ],
+        "W_HEAD_ENEMY": [
+          15,
+          150
+        ],
+        "W_HEAD_TEAM": [
+          15,
+          150
+        ],
+        "W_ATTACK": [
+          40,
+          300
+        ],
+        "W_HUNT": [
+          0,
+          100
+        ],
+        "W_DEFEND": [
+          0,
+          40
+        ],
+        "W_HUB": [
+          0,
+          150
+        ],
+        "W_GOAL": [
+          0,
+          8
+        ],
+        "POOR_MULT": [
+          1,
+          5
+        ],
+        "W_CASH": [
+          0,
+          160
+        ],
+        "FEED_ROUND": [
+          360,
+          470,
+          "int"
+        ],
+        "SPLIT_UNTIL_LARGE": [
+          200,
+          460,
+          "int"
+        ],
+        "SPLIT_UNTIL_SMALL": [
+          300,
+          480,
+          "int"
+        ],
+        "CAP": [
+          32,
+          64,
+          "int"
+        ],
+        "FLOOR": [
+          8,
+          36,
+          "int"
+        ],
+        "N_SEARCH": [
+          200,
+          3000,
+          "int"
+        ],
+        "DEPTH_MAX": [
+          12,
+          40,
+          "int"
+        ],
+        "CPP_PATH_DIST": [
+          0,
+          1,
+          "int"
+        ]
+      },
+      "start": {
+        "W_PEARL": 80.0,
+        "W_SPAWN": 30.0,
+        "W_UNSEEN": 8.0,
+        "W_TRAP": 10.0,
+        "W_HEAD_ENEMY": 60.0,
+        "W_HEAD_TEAM": 60.0,
+        "W_ATTACK": 150.0,
+        "W_HUNT": 40.0,
+        "W_DEFEND": 15.0,
+        "W_HUB": 60.0,
+        "W_GOAL": 3.0,
+        "POOR_MULT": 2.5,
+        "W_CASH": 80.0,
+        "FEED_ROUND": 410.0,
+        "SPLIT_UNTIL_LARGE": 300.0,
+        "SPLIT_UNTIL_SMALL": 450.0,
+        "CAP": 56.0,
+        "FLOOR": 24.0,
+        "N_SEARCH": 200.0,
+        "DEPTH_MAX": 16.0,
+        "CPP_PATH_DIST": 0.0
+      },
+      "opponents": [
+        "nicked",
+        "v61b-goal-bot"
+      ],
+      "maps": [
+        "default_small",
+        "trophy",
+        "queen_of_spades",
+        "Devil",
+        "big_empty"
+      ],
+      "seed": 53001,
+      "popsize": 12,
+      "generations": 20,
+      "sigma": 0.2,
+      "deterministic_v6_clock": true
+    },
+    "evaluation_rows": 168,
+    "malformed_rows": 0,
+    "generations": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "best_training": {
+      "gen": 1,
+      "cand": "c01",
+      "F": 0.31989357683005776,
+      "wins": 14,
+      "games": 20,
+      "params": {
+        "W_PEARL": 97.3397,
+        "W_SPAWN": 13.4259,
+        "W_UNSEEN": 10.2765,
+        "W_TRAP": 15.2226,
+        "W_HEAD_ENEMY": 39.6111,
+        "W_HEAD_TEAM": 41.1247,
+        "W_ATTACK": 207.8756,
+        "W_HUNT": 37.6633,
+        "W_DEFEND": 18.0155,
+        "W_HUB": 29.2925,
+        "W_GOAL": 2.4633,
+        "POOR_MULT": 1.971,
+        "W_CASH": 15.3983,
+        "FEED_ROUND": 411,
+        "SPLIT_UNTIL_LARGE": 256,
+        "SPLIT_UNTIL_SMALL": 410,
+        "CAP": 62,
+        "FLOOR": 23,
+        "N_SEARCH": 1080,
+        "DEPTH_MAX": 16,
+        "CPP_PATH_DIST": 0
+      },
+      "per_map": {
+        "default_small": 0.4979035208012998,
+        "trophy": 0.45341382740708724,
+        "queen_of_spades": -0.06885487155485823,
+        "devil": 0.6593470797258084,
+        "big_empty": 0.1437269172145243
+      }
+    },
+    "means": []
+  },
+  {
+    "run": "20260926-151852-tune-d9e7d6",
+    "plan": {
+      "base": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7t-g7c05-bot",
+      "base_hash": "b033b4202f624d25",
+      "params": "params.hpp",
+      "space": {
+        "W_PEARL": [
+          30,
+          160
+        ],
+        "W_SPAWN": [
+          0,
+          80
+        ],
+        "W_UNSEEN": [
+          0,
+          30
+        ],
+        "W_TRAP": [
+          2,
+          30
+        ],
+        "W_HEAD_ENEMY": [
+          15,
+          150
+        ],
+        "W_HEAD_TEAM": [
+          15,
+          150
+        ],
+        "W_ATTACK": [
+          40,
+          300
+        ],
+        "W_HUNT": [
+          0,
+          100
+        ],
+        "W_DEFEND": [
+          0,
+          40
+        ],
+        "W_HUB": [
+          0,
+          150
+        ],
+        "W_GOAL": [
+          0,
+          8
+        ],
+        "POOR_MULT": [
+          1,
+          5
+        ],
+        "W_CASH": [
+          0,
+          160
+        ],
+        "FEED_ROUND": [
+          360,
+          470,
+          "int"
+        ],
+        "SPLIT_UNTIL_LARGE": [
+          200,
+          460,
+          "int"
+        ],
+        "SPLIT_UNTIL_SMALL": [
+          300,
+          480,
+          "int"
+        ],
+        "CAP": [
+          32,
+          64,
+          "int"
+        ],
+        "FLOOR": [
+          8,
+          36,
+          "int"
+        ],
+        "N_SEARCH": [
+          200,
+          3000,
+          "int"
+        ],
+        "DEPTH_MAX": [
+          12,
+          40,
+          "int"
+        ],
+        "CPP_PATH_DIST": [
+          0,
+          1,
+          "int"
+        ]
+      },
+      "start": {
+        "W_PEARL": 116.3649,
+        "W_SPAWN": 14.4555,
+        "W_UNSEEN": 3.8065,
+        "W_TRAP": 7.3395,
+        "W_HEAD_ENEMY": 60.7758,
+        "W_HEAD_TEAM": 48.4148,
+        "W_ATTACK": 49.676,
+        "W_HUNT": 7.3632,
+        "W_DEFEND": 18.1555,
+        "W_HUB": 33.0379,
+        "W_GOAL": 2.9778,
+        "POOR_MULT": 4.1226,
+        "W_CASH": 17.6772,
+        "FEED_ROUND": 443.0,
+        "SPLIT_UNTIL_LARGE": 228.0,
+        "SPLIT_UNTIL_SMALL": 403.0,
+        "CAP": 61.0,
+        "FLOOR": 24.0,
+        "N_SEARCH": 357.0,
+        "DEPTH_MAX": 12.0,
+        "CPP_PATH_DIST": 0.0
+      },
+      "opponents": [
+        "nicked",
+        "v61b-goal-bot"
+      ],
+      "maps": [
+        "default_small",
+        "trophy",
+        "queen_of_spades",
+        "Devil",
+        "big_empty",
+        "Autarky",
+        "Prisoners_Dilemma",
+        "Slithery_Fight",
+        "Portals"
+      ],
+      "seed": 53001,
+      "popsize": 12,
+      "generations": 20,
+      "sigma": 0.15,
+      "deterministic_v6_clock": true
+    },
+    "evaluation_rows": 12,
+    "malformed_rows": 0,
+    "generations": [
+      0
+    ],
+    "best_training": {
+      "gen": 0,
+      "cand": "c07",
+      "F": 0.28337063394880463,
+      "wins": 30,
+      "games": 36,
+      "params": {
+        "W_PEARL": 128.4233,
+        "W_SPAWN": 17.2454,
+        "W_UNSEEN": 6.878,
+        "W_TRAP": 6.037,
+        "W_HEAD_ENEMY": 15.384,
+        "W_HEAD_TEAM": 69.4512,
+        "W_ATTACK": 134.7245,
+        "W_HUNT": 13.9838,
+        "W_DEFEND": 17.5546,
+        "W_HUB": 29.9678,
+        "W_GOAL": 2.8349,
+        "POOR_MULT": 4.133,
+        "W_CASH": 0.049,
+        "FEED_ROUND": 434,
+        "SPLIT_UNTIL_LARGE": 200,
+        "SPLIT_UNTIL_SMALL": 410,
+        "CAP": 60,
+        "FLOOR": 26,
+        "N_SEARCH": 289,
+        "DEPTH_MAX": 15,
+        "CPP_PATH_DIST": 0
+      },
+      "per_map": {
+        "default_small": 0.6206529963228797,
+        "trophy": 0.43075208441211016,
+        "queen_of_spades": -0.059475111801790576,
+        "devil": 0.7381720334532066,
+        "autarky": 0.37741400338928444,
+        "prisoners_dilemma": 0.47903388721082935,
+        "big_empty": 0.12261836525363985,
+        "portals": -0.04277881953904801,
+        "slithery_fight": 0.017765268392158962
+      }
+    },
+    "means": []
+  },
+  {
+    "run": "20260926-170140-tune-268a93",
+    "plan": {
+      "base": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7-base-bot",
+      "base_hash": "bec48091e76579a1",
+      "params": "params.hpp",
+      "space": {
+        "W_PEARL": [
+          30,
+          160
+        ],
+        "W_SPAWN": [
+          0,
+          80
+        ],
+        "W_UNSEEN": [
+          0,
+          30
+        ],
+        "W_TRAP": [
+          2,
+          30
+        ],
+        "W_HEAD_ENEMY": [
+          15,
+          150
+        ],
+        "W_HEAD_TEAM": [
+          15,
+          150
+        ],
+        "W_ATTACK": [
+          40,
+          300
+        ],
+        "W_HUNT": [
+          0,
+          100
+        ],
+        "W_DEFEND": [
+          0,
+          40
+        ],
+        "W_HUB": [
+          0,
+          150
+        ],
+        "W_GOAL": [
+          0,
+          8
+        ],
+        "POOR_MULT": [
+          1,
+          5
+        ],
+        "W_CASH": [
+          0,
+          160
+        ],
+        "FEED_ROUND": [
+          360,
+          470,
+          "int"
+        ],
+        "SPLIT_UNTIL_LARGE": [
+          200,
+          460,
+          "int"
+        ],
+        "SPLIT_UNTIL_SMALL": [
+          300,
+          480,
+          "int"
+        ],
+        "CAP": [
+          32,
+          64,
+          "int"
+        ],
+        "FLOOR": [
+          8,
+          36,
+          "int"
+        ],
+        "N_SEARCH": [
+          200,
+          3000,
+          "int"
+        ],
+        "DEPTH_MAX": [
+          12,
+          40,
+          "int"
+        ],
+        "CPP_PATH_DIST": [
+          0,
+          1,
+          "int"
+        ]
+      },
+      "start": {
+        "W_PEARL": 80.0,
+        "W_SPAWN": 30.0,
+        "W_UNSEEN": 8.0,
+        "W_TRAP": 10.0,
+        "W_HEAD_ENEMY": 60.0,
+        "W_HEAD_TEAM": 60.0,
+        "W_ATTACK": 150.0,
+        "W_HUNT": 40.0,
+        "W_DEFEND": 15.0,
+        "W_HUB": 60.0,
+        "W_GOAL": 3.0,
+        "POOR_MULT": 2.5,
+        "W_CASH": 80.0,
+        "FEED_ROUND": 410.0,
+        "SPLIT_UNTIL_LARGE": 300.0,
+        "SPLIT_UNTIL_SMALL": 450.0,
+        "CAP": 56.0,
+        "FLOOR": 24.0,
+        "N_SEARCH": 200.0,
+        "DEPTH_MAX": 16.0,
+        "CPP_PATH_DIST": 0.0
+      },
+      "opponents": [
+        "nicked",
+        "v61b-goal-bot"
+      ],
+      "maps": [
+        "default_small",
+        "trophy",
+        "queen_of_spades",
+        "Devil",
+        "big_empty",
+        "Autarky",
+        "Prisoners_Dilemma",
+        "Slithery_Fight",
+        "Portals"
+      ],
+      "seed": 53001,
+      "seeds_per_gen": 2,
+      "unswbc": "1.1.0",
+      "popsize": 12,
+      "generations": 20,
+      "sigma": 0.2,
+      "deterministic_v6_clock": true
+    },
+    "evaluation_rows": 12,
+    "malformed_rows": 0,
+    "generations": [
+      0
+    ],
+    "best_training": {
+      "gen": 0,
+      "cand": "c11",
+      "F": 0.10260876778971299,
+      "wins": 45,
+      "games": 72,
+      "params": {
+        "W_PEARL": 85.2476,
+        "W_SPAWN": 40.5763,
+        "W_UNSEEN": 18.753,
+        "W_TRAP": 9.3254,
+        "W_HEAD_ENEMY": 26.7054,
+        "W_HEAD_TEAM": 28.077,
+        "W_ATTACK": 115.3803,
+        "W_HUNT": 6.5155,
+        "W_DEFEND": 21.6004,
+        "W_HUB": 45.0533,
+        "W_GOAL": 2.5024,
+        "POOR_MULT": 2.4985,
+        "W_CASH": 35.3069,
+        "FEED_ROUND": 391,
+        "SPLIT_UNTIL_LARGE": 335,
+        "SPLIT_UNTIL_SMALL": 472,
+        "CAP": 53,
+        "FLOOR": 34,
+        "N_SEARCH": 791,
+        "DEPTH_MAX": 14,
+        "CPP_PATH_DIST": 0
+      },
+      "per_map": {
+        "default_small": 0.7508820202733095,
+        "trophy": 0.11327870734540713,
+        "queen_of_spades": -0.2821373202741115,
+        "devil": 0.2771327925568074,
+        "autarky": 0.40620680552587096,
+        "prisoners_dilemma": 0.3690418754388394,
+        "big_empty": 0.02665008845157687,
+        "portals": -0.0948034218428542,
+        "slithery_fight": -0.007963666750677771
+      }
+    },
+    "means": []
+  },
+  {
+    "run": "20260926-182526-tune-4fcea2",
+    "plan": {
+      "base": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7-base-bot",
+      "base_hash": "bec48091e76579a1",
+      "params": "params.hpp",
+      "space": {
+        "W_PEARL": [
+          30,
+          160
+        ],
+        "W_SPAWN": [
+          0,
+          80
+        ],
+        "W_UNSEEN": [
+          0,
+          30
+        ],
+        "W_TRAP": [
+          2,
+          30
+        ],
+        "W_HEAD_ENEMY": [
+          15,
+          150
+        ],
+        "W_HEAD_TEAM": [
+          15,
+          150
+        ],
+        "W_ATTACK": [
+          40,
+          300
+        ],
+        "W_HUNT": [
+          0,
+          100
+        ],
+        "W_DEFEND": [
+          0,
+          40
+        ],
+        "W_HUB": [
+          0,
+          150
+        ],
+        "W_GOAL": [
+          0,
+          8
+        ],
+        "POOR_MULT": [
+          1,
+          5
+        ],
+        "W_CASH": [
+          0,
+          160
+        ],
+        "FEED_ROUND": [
+          360,
+          470,
+          "int"
+        ],
+        "SPLIT_UNTIL_LARGE": [
+          200,
+          460,
+          "int"
+        ],
+        "SPLIT_UNTIL_SMALL": [
+          300,
+          480,
+          "int"
+        ],
+        "CAP": [
+          32,
+          64,
+          "int"
+        ],
+        "FLOOR": [
+          8,
+          36,
+          "int"
+        ],
+        "N_SEARCH": [
+          200,
+          3000,
+          "int"
+        ],
+        "DEPTH_MAX": [
+          12,
+          40,
+          "int"
+        ],
+        "CPP_PATH_DIST": [
+          0,
+          1,
+          "int"
+        ],
+        "W_FAN_EARLY": [
+          0,
+          30
+        ],
+        "FAN_ROUNDS": [
+          0,
+          100,
+          "int"
+        ],
+        "W_PORTAL_SCOUT": [
+          0,
+          120
+        ],
+        "SCOUT_ROUNDS": [
+          0,
+          250,
+          "int"
+        ]
+      },
+      "start": {
+        "W_PEARL": 80.0,
+        "W_SPAWN": 30.0,
+        "W_UNSEEN": 8.0,
+        "W_TRAP": 10.0,
+        "W_HEAD_ENEMY": 60.0,
+        "W_HEAD_TEAM": 60.0,
+        "W_ATTACK": 150.0,
+        "W_HUNT": 40.0,
+        "W_DEFEND": 15.0,
+        "W_HUB": 60.0,
+        "W_GOAL": 3.0,
+        "POOR_MULT": 2.5,
+        "W_CASH": 80.0,
+        "FEED_ROUND": 410.0,
+        "SPLIT_UNTIL_LARGE": 300.0,
+        "SPLIT_UNTIL_SMALL": 450.0,
+        "CAP": 56.0,
+        "FLOOR": 24.0,
+        "N_SEARCH": 200.0,
+        "DEPTH_MAX": 16.0,
+        "CPP_PATH_DIST": 0.0,
+        "W_FAN_EARLY": 8.0,
+        "FAN_ROUNDS": 30.0,
+        "W_PORTAL_SCOUT": 40.0,
+        "SCOUT_ROUNDS": 100.0
+      },
+      "opponents": [
+        "nicked",
+        "v61b-goal-bot"
+      ],
+      "maps": [
+        "default_small",
+        "trophy",
+        "queen_of_spades",
+        "Devil",
+        "big_empty",
+        "Autarky",
+        "Prisoners_Dilemma",
+        "Slithery_Fight",
+        "Portals"
+      ],
+      "seed": 53001,
+      "seeds_per_gen": 2,
+      "unswbc": "1.1.0",
+      "popsize": 14,
+      "generations": 20,
+      "sigma": 0.2,
+      "deterministic_v6_clock": true
+    },
+    "evaluation_rows": 0,
+    "malformed_rows": 0,
+    "generations": [],
+    "best_training": null,
+    "means": []
+  },
+  {
+    "run": "20260927-030709-tune-4efc96",
+    "plan": {
+      "base": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7-b1-bot",
+      "base_hash": "b98a09bab93b8c7c",
+      "params": "params.hpp",
+      "space": {
+        "G_FOOD": {
+          "low": 0.25,
+          "high": 3.0,
+          "scale": [
+            "W_PEARL",
+            "W_MEM_PEARL"
+          ]
+        },
+        "G_SPAWN": {
+          "low": 0.25,
+          "high": 3.0,
+          "scale": [
+            "W_SPAWN"
+          ]
+        },
+        "G_V3": {
+          "low": 0.25,
+          "high": 3.0,
+          "scale": [
+            "W_V3"
+          ]
+        },
+        "G_HUB": {
+          "low": 0.25,
+          "high": 3.0,
+          "scale": [
+            "W_HUB"
+          ]
+        },
+        "G_ATTACK": {
+          "low": 0.25,
+          "high": 3.0,
+          "scale": [
+            "W_ATTACK",
+            "W_TRADE"
+          ]
+        },
+        "G_FEED": {
+          "low": 0.25,
+          "high": 3.0,
+          "scale": [
+            "W_CASH"
+          ]
+        },
+        "G_HEADSAFE": {
+          "low": 0.25,
+          "high": 3.0,
+          "scale": [
+            "W_HEAD_ENEMY",
+            "W_HEAD_TEAM",
+            "W_AHEAD"
+          ]
+        },
+        "G_EXPLORE": {
+          "low": 0.25,
+          "high": 3.0,
+          "scale": [
+            "W_UNSEEN",
+            "W_STALE"
+          ]
+        },
+        "G_DEADEND": {
+          "low": 0.25,
+          "high": 3.0,
+          "scale": [
+            "W_DEADEND",
+            "W_CORRIDOR"
+          ]
+        },
+        "FEED_ROUND": [
+          360,
+          470,
+          "int"
+        ],
+        "SPLIT_UNTIL_LARGE": [
+          200,
+          460,
+          "int"
+        ],
+        "SPLIT_UNTIL_SMALL": [
+          300,
+          480,
+          "int"
+        ]
+      },
+      "start": {
+        "G_FOOD": 1.0,
+        "G_SPAWN": 1.0,
+        "G_V3": 1.0,
+        "G_HUB": 1.0,
+        "G_ATTACK": 1.0,
+        "G_FEED": 1.0,
+        "G_HEADSAFE": 1.0,
+        "G_EXPLORE": 1.0,
+        "G_DEADEND": 1.0,
+        "FEED_ROUND": 410.0,
+        "SPLIT_UNTIL_LARGE": 300.0,
+        "SPLIT_UNTIL_SMALL": 450.0
+      },
+      "base_values": {
+        "W_PEARL": 80.0,
+        "W_MEM_PEARL": 20.0,
+        "W_SPAWN": 30.0,
+        "W_V3": 10.0,
+        "W_HUB": 60.0,
+        "W_ATTACK": 150.0,
+        "W_TRADE": 10.0,
+        "W_CASH": 80.0,
+        "W_HEAD_ENEMY": 60.0,
+        "W_HEAD_TEAM": 60.0,
+        "W_AHEAD": 20.0,
+        "W_UNSEEN": 8.0,
+        "W_STALE": 3.0,
+        "W_DEADEND": 60.0,
+        "W_CORRIDOR": 8.0
+      },
+      "opponents": [
+        "v7-base-bot",
+        "nicked"
+      ],
+      "maps": [
+        "trophy",
+        "queen_of_spades",
+        "default",
+        "Devil",
+        "Trauma",
+        "schooltime",
+        "Autarky",
+        "Prisoners_Dilemma",
+        "Slithery_Fight",
+        "Portals"
+      ],
+      "seed": 81001,
+      "seeds_per_gen": 2,
+      "objective": "aligned",
+      "worst_weight": 0.0,
+      "unswbc": "1.1.0",
+      "popsize": 12,
+      "generations": 20,
+      "sigma": 0.25,
+      "deterministic_v6_clock": true
+    },
+    "evaluation_rows": 60,
+    "malformed_rows": 0,
+    "generations": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "best_training": {
+      "gen": 4,
+      "cand": "c06",
+      "F": 0.3287904570332766,
+      "wins": 60,
+      "games": 80,
+      "params": {
+        "G_FOOD": 1.9229,
+        "G_SPAWN": 0.4413,
+        "G_V3": 2.8659,
+        "G_HUB": 0.8753,
+        "G_ATTACK": 2.2144,
+        "G_FEED": 0.4971,
+        "G_HEADSAFE": 0.3054,
+        "G_EXPLORE": 0.7373,
+        "G_DEADEND": 0.4188,
+        "FEED_ROUND": 365,
+        "SPLIT_UNTIL_LARGE": 321,
+        "SPLIT_UNTIL_SMALL": 374
+      },
+      "per_map": {
+        "trophy": 0.4027195824926486,
+        "queen_of_spades": -0.0720887400753398,
+        "devil": 0.03022205203770708,
+        "default": 0.17329980074252188,
+        "trauma": 0.24006934124166693,
+        "autarky": 0.6943451438359428,
+        "schooltime": 0.29719984428086865,
+        "prisoners_dilemma": 0.48722252713377284,
+        "portals": 0.4606056666106971,
+        "slithery_fight": 0.57430935203228
+      }
+    },
+    "means": []
+  },
+  {
+    "run": "20260927-112601-tune-40f110",
+    "plan": {
+      "base": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v8-dev-bot",
+      "base_hash": "f6694b8f54a86371",
+      "params": "params.hpp",
+      "space": {
+        "G_FOOD": {
+          "low": 0.25,
+          "high": 3.0,
+          "scale": [
+            "W_PEARL",
+            "W_MEM_PEARL"
+          ]
+        },
+        "G_SPAWN": {
+          "low": 0.25,
+          "high": 3.0,
+          "scale": [
+            "W_SPAWN"
+          ]
+        },
+        "G_V3": {
+          "low": 0.25,
+          "high": 3.0,
+          "scale": [
+            "W_V3"
+          ]
+        },
+        "G_HUB": {
+          "low": 0.25,
+          "high": 3.0,
+          "scale": [
+            "W_HUB"
+          ]
+        },
+        "G_ATTACK": {
+          "low": 0.25,
+          "high": 3.0,
+          "scale": [
+            "W_ATTACK",
+            "W_TRADE"
+          ]
+        },
+        "G_HEADSAFE": {
+          "low": 0.25,
+          "high": 3.0,
+          "scale": [
+            "W_HEAD_ENEMY",
+            "W_HEAD_TEAM",
+            "W_AHEAD"
+          ]
+        },
+        "G_EXPLORE": {
+          "low": 0.1,
+          "high": 3.0,
+          "scale": [
+            "W_UNSEEN",
+            "W_STALE"
+          ]
+        },
+        "G_GOAL": {
+          "low": 0.1,
+          "high": 3.0,
+          "scale": [
+            "W_GOAL"
+          ]
+        },
+        "G_TRAP": {
+          "low": 0.1,
+          "high": 1.5,
+          "scale": [
+            "W_TRAP",
+            "W_LETHAL"
+          ]
+        },
+        "G_FAN": {
+          "low": 0.1,
+          "high": 2.0,
+          "scale": [
+            "W_FAN_EARLY",
+            "W_FAN_LATE"
+          ]
+        },
+        "G_FEED": {
+          "low": 0.25,
+          "high": 3.0,
+          "scale": [
+            "W_CASH"
+          ]
+        },
+        "LEARN_EVERY": [
+          1,
+          10,
+          "int"
+        ],
+        "POOR_MULT": [
+          1,
+          5
+        ],
+        "FEED_ROUND": [
+          360,
+          470,
+          "int"
+        ],
+        "SPLIT_UNTIL_LARGE": [
+          200,
+          460,
+          "int"
+        ],
+        "CPP_PORTAL_AGE": [
+          0,
+          1,
+          "int"
+        ],
+        "CPP_TRAP_OPEN": [
+          0.0,
+          1.0
+        ],
+        "CPP_VOR": [
+          0,
+          1,
+          "int"
+        ]
+      },
+      "start": {
+        "G_FOOD": 1.0,
+        "G_SPAWN": 1.0,
+        "G_V3": 1.0,
+        "G_HUB": 1.0,
+        "G_ATTACK": 1.0,
+        "G_HEADSAFE": 1.0,
+        "G_EXPLORE": 1.0,
+        "G_GOAL": 1.0,
+        "G_TRAP": 1.0,
+        "G_FAN": 1.0,
+        "G_FEED": 1.0,
+        "LEARN_EVERY": 5.5,
+        "POOR_MULT": 2.5,
+        "FEED_ROUND": 410.0,
+        "SPLIT_UNTIL_LARGE": 300.0,
+        "CPP_PORTAL_AGE": 0.5,
+        "CPP_TRAP_OPEN": 0.6,
+        "CPP_VOR": 0.5
+      },
+      "base_values": {
+        "W_PEARL": 80.0,
+        "W_MEM_PEARL": 20.0,
+        "W_SPAWN": 30.0,
+        "W_V3": 10.0,
+        "W_HUB": 60.0,
+        "W_ATTACK": 150.0,
+        "W_TRADE": 10.0,
+        "W_HEAD_ENEMY": 60.0,
+        "W_HEAD_TEAM": 60.0,
+        "W_AHEAD": 20.0,
+        "W_UNSEEN": 8.0,
+        "W_STALE": 3.0,
+        "W_GOAL": 3.0,
+        "W_TRAP": 10.0,
+        "W_LETHAL": 100.0,
+        "W_FAN_EARLY": 8.0,
+        "W_FAN_LATE": 1.5,
+        "W_CASH": 80.0
+      },
+      "opponents": [
+        "cpp_nicked_v75",
+        "cpp_abyss",
+        "v7-base-bot"
+      ],
+      "maps": [
+        "trophy",
+        "queen_of_spades",
+        "default",
+        "Devil",
+        "Trauma",
+        "schooltime",
+        "Autarky",
+        "Prisoners_Dilemma",
+        "Slithery_Fight",
+        "Portals",
+        "Autarky_p1",
+        "Devil_p1",
+        "Portals_p1",
+        "Prisoners_Dilemma_p1",
+        "Slithery_Fight_p1",
+        "Trauma_p1",
+        "default_p1",
+        "queen_of_spades_p1",
+        "schooltime_p1",
+        "trophy_p1"
+      ],
+      "seed": 95001,
+      "seeds_per_gen": 1,
+      "objective": "aligned",
+      "worst_weight": 0.0,
+      "unswbc": "1.1.0",
+      "popsize": 12,
+      "generations": 30,
+      "sigma": 0.25,
+      "deterministic_v6_clock": true,
+      "start_note": "switches and LEARN_EVERY started mid-range so CMA samples both settings (a start on a bound almost never samples the other side)"
+    },
+    "evaluation_rows": 0,
+    "malformed_rows": 0,
+    "generations": [],
+    "best_training": null,
+    "means": []
+  },
+  {
+    "run": "20260927-132201-tune-a63e89",
+    "plan": {
+      "base": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v8-dev-bot",
+      "base_hash": "f6694b8f54a86371",
+      "params": "params.hpp",
+      "space": {
+        "G_FOOD": {
+          "low": 0.25,
+          "high": 3.0,
+          "scale": [
+            "W_PEARL",
+            "W_MEM_PEARL"
+          ]
+        },
+        "G_SPAWN": {
+          "low": 0.25,
+          "high": 3.0,
+          "scale": [
+            "W_SPAWN"
+          ]
+        },
+        "G_V3": {
+          "low": 0.25,
+          "high": 3.0,
+          "scale": [
+            "W_V3"
+          ]
+        },
+        "G_HUB": {
+          "low": 0.25,
+          "high": 3.0,
+          "scale": [
+            "W_HUB"
+          ]
+        },
+        "G_ATTACK": {
+          "low": 0.25,
+          "high": 3.0,
+          "scale": [
+            "W_ATTACK",
+            "W_TRADE"
+          ]
+        },
+        "G_HEADSAFE": {
+          "low": 0.25,
+          "high": 3.0,
+          "scale": [
+            "W_HEAD_ENEMY",
+            "W_HEAD_TEAM",
+            "W_AHEAD"
+          ]
+        },
+        "G_EXPLORE": {
+          "low": 0.1,
+          "high": 3.0,
+          "scale": [
+            "W_UNSEEN",
+            "W_STALE"
+          ]
+        },
+        "G_GOAL": {
+          "low": 0.1,
+          "high": 3.0,
+          "scale": [
+            "W_GOAL"
+          ]
+        },
+        "G_TRAP": {
+          "low": 0.1,
+          "high": 1.5,
+          "scale": [
+            "W_TRAP",
+            "W_LETHAL"
+          ]
+        },
+        "G_FAN": {
+          "low": 0.1,
+          "high": 2.0,
+          "scale": [
+            "W_FAN_EARLY",
+            "W_FAN_LATE"
+          ]
+        },
+        "G_FEED": {
+          "low": 0.25,
+          "high": 3.0,
+          "scale": [
+            "W_CASH"
+          ]
+        },
+        "LEARN_EVERY": [
+          1,
+          10,
+          "int"
+        ],
+        "POOR_MULT": [
+          1,
+          5
+        ],
+        "FEED_ROUND": [
+          360,
+          470,
+          "int"
+        ],
+        "SPLIT_UNTIL_LARGE": [
+          200,
+          460,
+          "int"
+        ],
+        "CPP_PORTAL_AGE": [
+          0,
+          1,
+          "int"
+        ],
+        "CPP_TRAP_OPEN": [
+          0.0,
+          1.0
+        ],
+        "CPP_VOR": [
+          0,
+          1,
+          "int"
+        ]
+      },
+      "start": {
+        "G_FOOD": 1.0,
+        "G_SPAWN": 1.0,
+        "G_V3": 1.0,
+        "G_HUB": 1.0,
+        "G_ATTACK": 1.0,
+        "G_HEADSAFE": 1.0,
+        "G_EXPLORE": 1.0,
+        "G_GOAL": 1.0,
+        "G_TRAP": 1.0,
+        "G_FAN": 1.0,
+        "G_FEED": 1.0,
+        "LEARN_EVERY": 5.5,
+        "POOR_MULT": 2.5,
+        "FEED_ROUND": 410.0,
+        "SPLIT_UNTIL_LARGE": 300.0,
+        "CPP_PORTAL_AGE": 0.5,
+        "CPP_TRAP_OPEN": 0.6,
+        "CPP_VOR": 0.5
+      },
+      "base_values": {
+        "W_PEARL": 80.0,
+        "W_MEM_PEARL": 20.0,
+        "W_SPAWN": 30.0,
+        "W_V3": 10.0,
+        "W_HUB": 60.0,
+        "W_ATTACK": 150.0,
+        "W_TRADE": 10.0,
+        "W_HEAD_ENEMY": 60.0,
+        "W_HEAD_TEAM": 60.0,
+        "W_AHEAD": 20.0,
+        "W_UNSEEN": 8.0,
+        "W_STALE": 3.0,
+        "W_GOAL": 3.0,
+        "W_TRAP": 10.0,
+        "W_LETHAL": 100.0,
+        "W_FAN_EARLY": 8.0,
+        "W_FAN_LATE": 1.5,
+        "W_CASH": 80.0
+      },
+      "opponents": [
+        "cpp_nicked_v75",
+        "cpp_leviathan3",
+        "v7-base-bot"
+      ],
+      "maps": [
+        "trophy",
+        "queen_of_spades",
+        "default",
+        "Devil",
+        "Trauma",
+        "schooltime",
+        "Autarky",
+        "Prisoners_Dilemma",
+        "Slithery_Fight",
+        "Portals",
+        "Autarky_p1",
+        "Devil_p1",
+        "Portals_p1",
+        "Prisoners_Dilemma_p1",
+        "Slithery_Fight_p1",
+        "Trauma_p1",
+        "default_p1",
+        "queen_of_spades_p1",
+        "schooltime_p1",
+        "trophy_p1"
+      ],
+      "seed": 95001,
+      "seeds_per_gen": 1,
+      "objective": "aligned",
+      "worst_weight": 0.0,
+      "unswbc": "1.1.0",
+      "popsize": 12,
+      "generations": 30,
+      "sigma": 0.25,
+      "deterministic_v6_clock": true,
+      "start_note": "switches and LEARN_EVERY started mid-range so CMA samples both settings; abyss dropped from training (wall-clock bot, ~400 s/game)"
+    },
+    "evaluation_rows": 60,
+    "malformed_rows": 0,
+    "generations": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "best_training": {
+      "gen": 4,
+      "cand": "c09",
+      "F": 0.14897977020714773,
+      "wins": 71,
+      "games": 120,
+      "params": {
+        "G_FOOD": 2.4112,
+        "G_SPAWN": 1.0905,
+        "G_V3": 2.3392,
+        "G_HUB": 0.8447,
+        "G_ATTACK": 2.9216,
+        "G_HEADSAFE": 1.6091,
+        "G_EXPLORE": 0.2797,
+        "G_GOAL": 0.358,
+        "G_TRAP": 0.4121,
+        "G_FAN": 1.3807,
+        "G_FEED": 1.471,
+        "LEARN_EVERY": 4,
+        "POOR_MULT": 3.4328,
+        "FEED_ROUND": 388,
+        "SPLIT_UNTIL_LARGE": 309,
+        "CPP_PORTAL_AGE": 1,
+        "CPP_TRAP_OPEN": 0.2801,
+        "CPP_VOR": 1
+      },
+      "per_map": {
+        "trophy": 0.03906346420212962,
+        "queen_of_spades": 0.30453156537693854,
+        "devil": 0.544560325399441,
+        "default": 0.12422083552415182,
+        "trauma": -0.20608381025838432,
+        "prisoners_dilemma": 0.20629800351247937,
+        "autarky": 0.7232745854013829,
+        "devil_p1": 0.22503996147068264,
+        "schooltime": 0.1886893573028716,
+        "autarky_p1": 0.5240597495431167,
+        "portals": 0.26535000724245195,
+        "prisoners_dilemma_p1": -0.19112695703374727,
+        "portals_p1": 0.04943904552686376,
+        "trauma_p1": 0.16274033034123628,
+        "slithery_fight": -0.3690704708941976,
+        "queen_of_spades_p1": -0.03701772989407354,
+        "default_p1": 0.297862171909506,
+        "trophy_p1": 0.5335906186690628,
+        "schooltime_p1": -0.4081461547202201,
+        "slithery_fight_p1": 0.0023205055212624504
+      }
+    },
+    "means": []
+  },
+  {
+    "run": "20260927-194503-tune-ccc4cd",
+    "plan": {
+      "base": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v8-dev2-bot",
+      "base_hash": "90818206ac88c207",
+      "params": "params.hpp",
+      "space": {
+        "G_FOOD": {
+          "low": 0.5,
+          "high": 6.0,
+          "scale": [
+            "W_PEARL",
+            "W_MEM_PEARL"
+          ]
+        },
+        "G_SPAWN": {
+          "low": 0.25,
+          "high": 3.0,
+          "scale": [
+            "W_SPAWN"
+          ]
+        },
+        "G_V3": {
+          "low": 0.5,
+          "high": 5.0,
+          "scale": [
+            "W_V3"
+          ]
+        },
+        "G_HUB": {
+          "low": 0.1,
+          "high": 3.0,
+          "scale": [
+            "W_HUB"
+          ]
+        },
+        "G_ATTACK": {
+          "low": 0.5,
+          "high": 5.0,
+          "scale": [
+            "W_ATTACK",
+            "W_TRADE"
+          ]
+        },
+        "G_HEADSAFE": {
+          "low": 0.25,
+          "high": 3.0,
+          "scale": [
+            "W_HEAD_ENEMY",
+            "W_HEAD_TEAM",
+            "W_AHEAD"
+          ]
+        },
+        "G_EXPLORE": {
+          "low": 0.1,
+          "high": 3.0,
+          "scale": [
+            "W_UNSEEN",
+            "W_STALE"
+          ]
+        },
+        "G_GOAL": {
+          "low": 0.0,
+          "high": 1.5,
+          "scale": [
+            "W_GOAL"
+          ]
+        },
+        "G_TRAP": {
+          "low": 0.0,
+          "high": 1.5,
+          "scale": [
+            "W_TRAP",
+            "W_LETHAL"
+          ]
+        },
+        "G_FAN": {
+          "low": 0.1,
+          "high": 2.0,
+          "scale": [
+            "W_FAN_EARLY",
+            "W_FAN_LATE"
+          ]
+        },
+        "G_FEED": {
+          "low": 0.25,
+          "high": 4.0,
+          "scale": [
+            "W_CASH"
+          ]
+        },
+        "LEARN_EVERY": [
+          1,
+          10,
+          "int"
+        ],
+        "POOR_MULT": [
+          1,
+          5
+        ],
+        "FEED_ROUND": [
+          360,
+          470,
+          "int"
+        ],
+        "SPLIT_UNTIL_LARGE": [
+          200,
+          460,
+          "int"
+        ],
+        "CPP_TRAP_OPEN": [
+          0.0,
+          1.0
+        ]
+      },
+      "start": {
+        "G_FOOD": 1.0,
+        "G_SPAWN": 1.0,
+        "G_V3": 1.0,
+        "G_HUB": 1.0,
+        "G_ATTACK": 1.0,
+        "G_HEADSAFE": 1.0,
+        "G_EXPLORE": 1.0,
+        "G_GOAL": 1.0,
+        "G_TRAP": 1.0,
+        "G_FAN": 1.0,
+        "G_FEED": 1.0,
+        "LEARN_EVERY": 10.0,
+        "POOR_MULT": 2.5,
+        "FEED_ROUND": 410.0,
+        "SPLIT_UNTIL_LARGE": 300.0,
+        "CPP_TRAP_OPEN": 1.0
+      },
+      "base_values": {
+        "W_PEARL": 80.0,
+        "W_MEM_PEARL": 20.0,
+        "W_SPAWN": 30.0,
+        "W_V3": 10.0,
+        "W_HUB": 60.0,
+        "W_ATTACK": 150.0,
+        "W_TRADE": 10.0,
+        "W_HEAD_ENEMY": 60.0,
+        "W_HEAD_TEAM": 60.0,
+        "W_AHEAD": 20.0,
+        "W_UNSEEN": 8.0,
+        "W_STALE": 3.0,
+        "W_GOAL": 3.0,
+        "W_TRAP": 10.0,
+        "W_LETHAL": 100.0,
+        "W_FAN_EARLY": 8.0,
+        "W_FAN_LATE": 1.5,
+        "W_CASH": 80.0
+      },
+      "opponents": [
+        "cpp_nicked_v75",
+        "cpp_leviathan3",
+        "v7-base-bot"
+      ],
+      "maps": [
+        "trophy",
+        "queen_of_spades",
+        "default",
+        "Devil",
+        "Trauma",
+        "schooltime",
+        "Autarky",
+        "Prisoners_Dilemma",
+        "Slithery_Fight",
+        "Portals",
+        "Autarky_p1",
+        "Devil_p1",
+        "Portals_p1",
+        "Prisoners_Dilemma_p1",
+        "Slithery_Fight_p1",
+        "Trauma_p1",
+        "default_p1",
+        "queen_of_spades_p1",
+        "schooltime_p1",
+        "trophy_p1"
+      ],
+      "seed": 99001,
+      "seeds_per_gen": 1,
+      "objective": "aligned",
+      "worst_weight": 0.0,
+      "backend": "cmaes-lra",
+      "eval_mean": true,
+      "map_sample": "pair",
+      "warm_from": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260927-132201-tune-a63e89",
+      "fixed": {
+        "CPP_PORTAL_AGE": 1,
+        "CPP_VOR": 0
+      },
+      "unswbc": "1.1.0",
+      "popsize": 12,
+      "generations": 40,
+      "sigma": 0.25,
+      "deterministic_v6_clock": true
+    },
+    "evaluation_rows": 195,
+    "malformed_rows": 0,
+    "generations": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "best_training": {
+      "gen": 9,
+      "cand": "c09",
+      "F": 0.287587513197383,
+      "wins": 42,
+      "games": 60,
+      "params": {
+        "G_FOOD": 3.5427,
+        "G_SPAWN": 0.7429,
+        "G_V3": 2.623,
+        "G_HUB": 1.49,
+        "G_ATTACK": 3.3286,
+        "G_HEADSAFE": 2.2192,
+        "G_EXPLORE": 0.9312,
+        "G_GOAL": 0.8727,
+        "G_TRAP": 0.7632,
+        "G_FAN": 0.9878,
+        "G_FEED": 0.6391,
+        "LEARN_EVERY": 3,
+        "POOR_MULT": 2.969,
+        "FEED_ROUND": 419,
+        "SPLIT_UNTIL_LARGE": 410,
+        "CPP_TRAP_OPEN": 0.4786
+      },
+      "per_map": {
+        "autarky_p1": 0.25306432447778304,
+        "devil_p1": 0.7414661492910531,
+        "prisoners_dilemma_p1": -0.023026443169076483,
+        "portals": 0.2354977520825373,
+        "trauma_p1": -0.007661055111246318,
+        "queen_of_spades": -0.03860708625374254,
+        "default_p1": 0.6650487908969266,
+        "slithery_fight_p1": 0.0087804522168921,
+        "trophy": 0.8197577305134328,
+        "schooltime": 0.22155451702927045
+      }
+    },
+    "means": [
+      {
+        "gen": 0,
+        "cand": "cmean",
+        "F": 0.18480380357311707,
+        "wins": 37,
+        "games": 60,
+        "params": {
+          "G_FOOD": 2.8325,
+          "G_SPAWN": 1.2902,
+          "G_V3": 2.0852,
+          "G_HUB": 0.5244,
+          "G_ATTACK": 2.6209,
+          "G_HEADSAFE": 1.3046,
+          "G_EXPLORE": 1.1771,
+          "G_GOAL": 0.1,
+          "G_TRAP": 0.4045,
+          "G_FAN": 1.0372,
+          "G_FEED": 1.7302,
+          "LEARN_EVERY": 3,
+          "POOR_MULT": 2.1892,
+          "FEED_ROUND": 410,
+          "SPLIT_UNTIL_LARGE": 312,
+          "CPP_TRAP_OPEN": 0.3374
+        },
+        "per_map": {
+          "prisoners_dilemma_p1": 0.40689503298645985,
+          "devil": 0.509007192327268,
+          "trauma": -0.43085475484127195,
+          "autarky": 0.458508778840478,
+          "portals_p1": 0.2317899286351901,
+          "queen_of_spades_p1": -0.03347585403988853,
+          "default_p1": 0.24234485471321618,
+          "trophy_p1": 0.28063234869524883,
+          "slithery_fight": 0.17657993353889578,
+          "schooltime": 0.006610574875574482
+        }
+      },
+      {
+        "gen": 1,
+        "cand": "cmean",
+        "F": 0.27827265897273684,
+        "wins": 43,
+        "games": 60,
+        "params": {
+          "G_FOOD": 2.7617,
+          "G_SPAWN": 1.0813,
+          "G_V3": 2.5546,
+          "G_HUB": 0.7701,
+          "G_ATTACK": 2.7685,
+          "G_HEADSAFE": 1.4467,
+          "G_EXPLORE": 1.0503,
+          "G_GOAL": 0.3491,
+          "G_TRAP": 0.4731,
+          "G_FAN": 1.1362,
+          "G_FEED": 1.2826,
+          "LEARN_EVERY": 5,
+          "POOR_MULT": 1.9019,
+          "FEED_ROUND": 424,
+          "SPLIT_UNTIL_LARGE": 322,
+          "CPP_TRAP_OPEN": 0.3303
+        },
+        "per_map": {
+          "prisoners_dilemma": 0.0767205258260243,
+          "devil_p1": 0.5367803276040988,
+          "autarky_p1": 0.6853036831395283,
+          "trauma_p1": 0.3318413965149667,
+          "portals": 0.180249243891335,
+          "default_p1": 0.588384494773215,
+          "queen_of_spades_p1": -0.2940713524431355,
+          "trophy_p1": 0.28661512566241504,
+          "slithery_fight": 0.18722239122669948,
+          "schooltime": 0.20368075353222168
+        }
+      },
+      {
+        "gen": 2,
+        "cand": "cmean",
+        "F": 0.14019794379449552,
+        "wins": 36,
+        "games": 60,
+        "params": {
+          "G_FOOD": 2.3471,
+          "G_SPAWN": 1.4375,
+          "G_V3": 2.4562,
+          "G_HUB": 0.6975,
+          "G_ATTACK": 2.6704,
+          "G_HEADSAFE": 1.7429,
+          "G_EXPLORE": 0.8161,
+          "G_GOAL": 0.4674,
+          "G_TRAP": 0.4593,
+          "G_FAN": 0.6176,
+          "G_FEED": 0.9148,
+          "LEARN_EVERY": 4,
+          "POOR_MULT": 2.2303,
+          "FEED_ROUND": 418,
+          "SPLIT_UNTIL_LARGE": 298,
+          "CPP_TRAP_OPEN": 0.217
+        },
+        "per_map": {
+          "prisoners_dilemma_p1": 0.09440878567928,
+          "devil": 0.19245937394848242,
+          "trauma_p1": 0.16552725305459012,
+          "autarky_p1": 0.7048069592157238,
+          "portals": -0.009117643922550295,
+          "queen_of_spades_p1": -0.061307461838166155,
+          "trophy": -0.018149631894872342,
+          "default_p1": 0.4657015274565719,
+          "slithery_fight": -0.3588187554488625,
+          "schooltime_p1": 0.22646903169475804
+        }
+      },
+      {
+        "gen": 3,
+        "cand": "cmean",
+        "F": 0.11940308611955049,
+        "wins": 35,
+        "games": 60,
+        "params": {
+          "G_FOOD": 2.6124,
+          "G_SPAWN": 1.7804,
+          "G_V3": 1.9946,
+          "G_HUB": 0.5251,
+          "G_ATTACK": 2.9088,
+          "G_HEADSAFE": 1.6859,
+          "G_EXPLORE": 0.9003,
+          "G_GOAL": 0.782,
+          "G_TRAP": 0.3829,
+          "G_FAN": 0.4907,
+          "G_FEED": 0.8129,
+          "LEARN_EVERY": 5,
+          "POOR_MULT": 2.2898,
+          "FEED_ROUND": 414,
+          "SPLIT_UNTIL_LARGE": 285,
+          "CPP_TRAP_OPEN": 0.4186
+        },
+        "per_map": {
+          "prisoners_dilemma": -0.2654481268197961,
+          "devil": 0.6035496880273576,
+          "autarky_p1": 0.4352735779031021,
+          "queen_of_spades": 0.08345970666312731,
+          "portals_p1": 0.4016870997465283,
+          "trauma": 0.36071206107708326,
+          "trophy_p1": -0.21256183939441176,
+          "default": -0.0015520440440243422,
+          "slithery_fight": -0.18492160419846929,
+          "schooltime": -0.02616765776499223
+        }
+      },
+      {
+        "gen": 4,
+        "cand": "cmean",
+        "F": 0.20754625462440773,
+        "wins": 39,
+        "games": 60,
+        "params": {
+          "G_FOOD": 2.2244,
+          "G_SPAWN": 1.3556,
+          "G_V3": 2.0983,
+          "G_HUB": 0.8085,
+          "G_ATTACK": 2.9197,
+          "G_HEADSAFE": 1.5874,
+          "G_EXPLORE": 1.4656,
+          "G_GOAL": 0.9388,
+          "G_TRAP": 0.5153,
+          "G_FAN": 0.4008,
+          "G_FEED": 1.0855,
+          "LEARN_EVERY": 5,
+          "POOR_MULT": 1.9649,
+          "FEED_ROUND": 413,
+          "SPLIT_UNTIL_LARGE": 314,
+          "CPP_TRAP_OPEN": 0.6201
+        },
+        "per_map": {
+          "prisoners_dilemma": -0.015305213205106518,
+          "devil_p1": 0.259360073076498,
+          "portals_p1": 0.21436529705677101,
+          "autarky": 0.48939841913957455,
+          "trauma": 0.3373099910864655,
+          "default_p1": -0.1896526312594131,
+          "queen_of_spades_p1": 0.21956850932389607,
+          "trophy": 0.36558258070614635,
+          "slithery_fight_p1": 0.16480312408441272,
+          "schooltime_p1": 0.23003239623483307
+        }
+      },
+      {
+        "gen": 5,
+        "cand": "cmean",
+        "F": 0.09234101170238587,
+        "wins": 34,
+        "games": 60,
+        "params": {
+          "G_FOOD": 2.2425,
+          "G_SPAWN": 1.2402,
+          "G_V3": 2.4705,
+          "G_HUB": 1.1938,
+          "G_ATTACK": 2.7953,
+          "G_HEADSAFE": 1.7614,
+          "G_EXPLORE": 1.3151,
+          "G_GOAL": 0.6159,
+          "G_TRAP": 0.5223,
+          "G_FAN": 0.4687,
+          "G_FEED": 0.9467,
+          "LEARN_EVERY": 5,
+          "POOR_MULT": 2.4735,
+          "FEED_ROUND": 403,
+          "SPLIT_UNTIL_LARGE": 321,
+          "CPP_TRAP_OPEN": 0.5154
+        },
+        "per_map": {
+          "prisoners_dilemma_p1": -0.2642262016677492,
+          "trauma_p1": -0.20885421995638884,
+          "devil_p1": 0.5056572273683538,
+          "autarky": 0.5462942671394697,
+          "portals_p1": -0.027780720266886477,
+          "default": -0.11270563571783941,
+          "queen_of_spades": 0.2171146443347807,
+          "trophy": 0.26207646865706136,
+          "slithery_fight": -0.2110051449656735,
+          "schooltime_p1": 0.21683943209873044
+        }
+      },
+      {
+        "gen": 6,
+        "cand": "cmean",
+        "F": 0.17710809003793318,
+        "wins": 38,
+        "games": 60,
+        "params": {
+          "G_FOOD": 2.7244,
+          "G_SPAWN": 1.2296,
+          "G_V3": 2.2021,
+          "G_HUB": 0.9769,
+          "G_ATTACK": 2.9648,
+          "G_HEADSAFE": 2.0064,
+          "G_EXPLORE": 1.0769,
+          "G_GOAL": 0.6428,
+          "G_TRAP": 0.5456,
+          "G_FAN": 0.5562,
+          "G_FEED": 1.6963,
+          "LEARN_EVERY": 4,
+          "POOR_MULT": 2.2029,
+          "FEED_ROUND": 415,
+          "SPLIT_UNTIL_LARGE": 313,
+          "CPP_TRAP_OPEN": 0.4223
+        },
+        "per_map": {
+          "prisoners_dilemma": -0.2975797494503842,
+          "devil_p1": 0.5459182516265716,
+          "autarky_p1": 0.48935362794815157,
+          "portals_p1": 0.19210030516266793,
+          "queen_of_spades_p1": 0.23342864471922398,
+          "trauma": 0.152331895798225,
+          "default": -0.0012629002081326706,
+          "trophy_p1": 0.20975348087192494,
+          "schooltime": 0.2595548517157035,
+          "slithery_fight_p1": -0.01251750780462004
+        }
+      },
+      {
+        "gen": 7,
+        "cand": "cmean",
+        "F": 0.15544002959696046,
+        "wins": 37,
+        "games": 60,
+        "params": {
+          "G_FOOD": 2.9378,
+          "G_SPAWN": 1.1979,
+          "G_V3": 2.3634,
+          "G_HUB": 1.2328,
+          "G_ATTACK": 3.0234,
+          "G_HEADSAFE": 2.2369,
+          "G_EXPLORE": 0.9741,
+          "G_GOAL": 0.6274,
+          "G_TRAP": 0.5939,
+          "G_FAN": 0.5106,
+          "G_FEED": 1.4246,
+          "LEARN_EVERY": 4,
+          "POOR_MULT": 2.1503,
+          "FEED_ROUND": 423,
+          "SPLIT_UNTIL_LARGE": 315,
+          "CPP_TRAP_OPEN": 0.5187
+        },
+        "per_map": {
+          "prisoners_dilemma_p1": -0.2444645651665929,
+          "devil_p1": 0.27796670545890145,
+          "autarky_p1": 0.29768180256827037,
+          "portals_p1": 0.025939317195043037,
+          "trauma": 0.1332715017191624,
+          "queen_of_spades_p1": 0.2675879667390823,
+          "default_p1": 0.4431104785435946,
+          "trophy_p1": -0.05692204444789606,
+          "slithery_fight_p1": 0.20199031169466428,
+          "schooltime_p1": 0.20823882166537513
+        }
+      },
+      {
+        "gen": 8,
+        "cand": "cmean",
+        "F": 0.10377597371330269,
+        "wins": 34,
+        "games": 60,
+        "params": {
+          "G_FOOD": 3.3253,
+          "G_SPAWN": 1.5111,
+          "G_V3": 2.476,
+          "G_HUB": 1.1389,
+          "G_ATTACK": 3.2087,
+          "G_HEADSAFE": 1.8959,
+          "G_EXPLORE": 1.0869,
+          "G_GOAL": 0.7214,
+          "G_TRAP": 0.6117,
+          "G_FAN": 0.6237,
+          "G_FEED": 1.6982,
+          "LEARN_EVERY": 4,
+          "POOR_MULT": 2.2978,
+          "FEED_ROUND": 413,
+          "SPLIT_UNTIL_LARGE": 353,
+          "CPP_TRAP_OPEN": 0.3561
+        },
+        "per_map": {
+          "prisoners_dilemma_p1": -0.24307295162634757,
+          "devil": 0.5593346616237421,
+          "queen_of_spades": -0.047159977288240916,
+          "autarky_p1": 0.4549127895582166,
+          "portals_p1": 0.0029802783591045823,
+          "trauma": -0.41480467433987855,
+          "default": 0.21829856591034727,
+          "trophy": 0.2800043506287069,
+          "schooltime_p1": 0.22133030669121614,
+          "slithery_fight_p1": 0.005936387616160332
+        }
+      },
+      {
+        "gen": 9,
+        "cand": "cmean",
+        "F": 0.20560920803590413,
+        "wins": 37,
+        "games": 60,
+        "params": {
+          "G_FOOD": 3.5938,
+          "G_SPAWN": 1.5621,
+          "G_V3": 2.6066,
+          "G_HUB": 1.2591,
+          "G_ATTACK": 3.4274,
+          "G_HEADSAFE": 1.8107,
+          "G_EXPLORE": 1.2426,
+          "G_GOAL": 0.6927,
+          "G_TRAP": 0.7557,
+          "G_FAN": 0.663,
+          "G_FEED": 1.6179,
+          "LEARN_EVERY": 5,
+          "POOR_MULT": 2.6403,
+          "FEED_ROUND": 400,
+          "SPLIT_UNTIL_LARGE": 331,
+          "CPP_TRAP_OPEN": 0.4627
+        },
+        "per_map": {
+          "prisoners_dilemma_p1": -0.004009376317103112,
+          "devil_p1": 0.8500997202336205,
+          "trauma_p1": 0.01780978223746273,
+          "autarky_p1": 0.4680573463603101,
+          "portals": 0.18677676897823084,
+          "queen_of_spades": 0.3267217862278789,
+          "default_p1": 0.015835417315593153,
+          "slithery_fight_p1": -0.18298525315261047,
+          "trophy": 0.5528945787960806,
+          "schooltime": -0.17510869032042206
+        }
+      },
+      {
+        "gen": 10,
+        "cand": "cmean",
+        "F": 0.06864918239758679,
+        "wins": 34,
+        "games": 60,
+        "params": {
+          "G_FOOD": 3.4139,
+          "G_SPAWN": 1.2122,
+          "G_V3": 2.6386,
+          "G_HUB": 1.2103,
+          "G_ATTACK": 3.4176,
+          "G_HEADSAFE": 1.8614,
+          "G_EXPLORE": 1.2038,
+          "G_GOAL": 0.6287,
+          "G_TRAP": 0.705,
+          "G_FAN": 0.8232,
+          "G_FEED": 1.4709,
+          "LEARN_EVERY": 5,
+          "POOR_MULT": 2.8044,
+          "FEED_ROUND": 399,
+          "SPLIT_UNTIL_LARGE": 362,
+          "CPP_TRAP_OPEN": 0.4711
+        },
+        "per_map": {
+          "prisoners_dilemma": -0.21910296443837862,
+          "devil": 0.16687466476270077,
+          "trauma_p1": -0.016190315021850272,
+          "autarky": 0.6838151040780628,
+          "portals_p1": 0.17259525716548993,
+          "trophy": 0.18053304449389304,
+          "queen_of_spades_p1": -0.5539307349080649,
+          "default": 0.24258335310472953,
+          "slithery_fight_p1": -0.17780953923462903,
+          "schooltime_p1": 0.20712395397391462
+        }
+      },
+      {
+        "gen": 11,
+        "cand": "cmean",
+        "F": 0.08632538000709525,
+        "wins": 33,
+        "games": 60,
+        "params": {
+          "G_FOOD": 3.3858,
+          "G_SPAWN": 1.1519,
+          "G_V3": 3.021,
+          "G_HUB": 1.3266,
+          "G_ATTACK": 3.1525,
+          "G_HEADSAFE": 1.7055,
+          "G_EXPLORE": 1.3566,
+          "G_GOAL": 0.7282,
+          "G_TRAP": 0.6506,
+          "G_FAN": 0.9225,
+          "G_FEED": 1.4522,
+          "LEARN_EVERY": 5,
+          "POOR_MULT": 2.7776,
+          "FEED_ROUND": 411,
+          "SPLIT_UNTIL_LARGE": 332,
+          "CPP_TRAP_OPEN": 0.4437
+        },
+        "per_map": {
+          "prisoners_dilemma_p1": -0.1729325647088987,
+          "devil": 0.5050237764465836,
+          "autarky": 0.6681875595465384,
+          "portals_p1": 0.1774331898810545,
+          "trauma": -0.04809834539794983,
+          "queen_of_spades_p1": -0.22434038832288014,
+          "default_p1": -0.044086655735978066,
+          "slithery_fight": -0.36590481656862633,
+          "trophy_p1": 0.31814394405692364,
+          "schooltime": 0.04982810087418551
+        }
+      },
+      {
+        "gen": 12,
+        "cand": "cmean",
+        "F": 0.20308392833750838,
+        "wins": 38,
+        "games": 60,
+        "params": {
+          "G_FOOD": 3.3162,
+          "G_SPAWN": 1.2441,
+          "G_V3": 2.9931,
+          "G_HUB": 1.2611,
+          "G_ATTACK": 3.1025,
+          "G_HEADSAFE": 1.6518,
+          "G_EXPLORE": 1.1341,
+          "G_GOAL": 0.8529,
+          "G_TRAP": 0.6722,
+          "G_FAN": 0.7726,
+          "G_FEED": 1.2788,
+          "LEARN_EVERY": 4,
+          "POOR_MULT": 2.9426,
+          "FEED_ROUND": 412,
+          "SPLIT_UNTIL_LARGE": 324,
+          "CPP_TRAP_OPEN": 0.4561
+        },
+        "per_map": {
+          "prisoners_dilemma": -0.028249819380941416,
+          "trauma_p1": -0.06511776455266444,
+          "devil": 0.8457272324092692,
+          "portals": -0.0039429639169132336,
+          "autarky": 0.5166228642635264,
+          "trophy_p1": 0.29399293510645486,
+          "queen_of_spades": 0.2949695442042259,
+          "default_p1": -0.011720259290150081,
+          "slithery_fight_p1": -0.0001028454804193335,
+          "schooltime": 0.18866036001269604
+        }
+      },
+      {
+        "gen": 13,
+        "cand": "cmean",
+        "F": 0.2474804588239265,
+        "wins": 40,
+        "games": 60,
+        "params": {
+          "G_FOOD": 3.448,
+          "G_SPAWN": 1.3641,
+          "G_V3": 2.9537,
+          "G_HUB": 1.3175,
+          "G_ATTACK": 3.1842,
+          "G_HEADSAFE": 1.4269,
+          "G_EXPLORE": 1.0708,
+          "G_GOAL": 0.7371,
+          "G_TRAP": 0.6062,
+          "G_FAN": 0.6635,
+          "G_FEED": 1.3,
+          "LEARN_EVERY": 4,
+          "POOR_MULT": 3.1971,
+          "FEED_ROUND": 415,
+          "SPLIT_UNTIL_LARGE": 350,
+          "CPP_TRAP_OPEN": 0.4511
+        },
+        "per_map": {
+          "devil": 0.5235804920439655,
+          "prisoners_dilemma_p1": 0.26865668531601095,
+          "autarky": 0.7097021984546877,
+          "portals_p1": 0.3875253484326619,
+          "trauma": -0.24297787230628862,
+          "queen_of_spades_p1": 0.06920471275420183,
+          "default": 0.4308961815668881,
+          "trophy_p1": 0.27654704038320516,
+          "slithery_fight": -0.1758581741024572,
+          "schooltime": 0.2275279756963899
+        }
+      },
+      {
+        "gen": 14,
+        "cand": "cmean",
+        "F": 0.022600600218295405,
+        "wins": 29,
+        "games": 60,
+        "params": {
+          "G_FOOD": 3.4279,
+          "G_SPAWN": 1.4522,
+          "G_V3": 2.8905,
+          "G_HUB": 1.1399,
+          "G_ATTACK": 3.2415,
+          "G_HEADSAFE": 1.6194,
+          "G_EXPLORE": 1.2749,
+          "G_GOAL": 0.6524,
+          "G_TRAP": 0.6405,
+          "G_FAN": 0.7351,
+          "G_FEED": 1.5307,
+          "LEARN_EVERY": 4,
+          "POOR_MULT": 3.0692,
+          "FEED_ROUND": 417,
+          "SPLIT_UNTIL_LARGE": 356,
+          "CPP_TRAP_OPEN": 0.4815
+        },
+        "per_map": {
+          "prisoners_dilemma": -0.4669236335781966,
+          "devil_p1": 0.8121645618531242,
+          "autarky_p1": 0.44750321357661055,
+          "portals": 0.012787977275257637,
+          "queen_of_spades": 0.08912988041881069,
+          "trauma": -0.20191191446857934,
+          "trophy": 0.023246984855298986,
+          "default": 0.08350016320532627,
+          "slithery_fight": -0.16723637903279961,
+          "schooltime_p1": -0.40625485192189875
+        }
+      }
+    ]
+  },
+  {
+    "run": "20260929-013847-tune-c7cd3d",
+    "plan": {
+      "base": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10b-bot",
+      "base_hash": "196ab7f8cc123d39",
+      "params": "params.hpp",
+      "space": {
+        "G_FOOD": {
+          "low": 0.5,
+          "high": 6.0,
+          "scale": [
+            "W_PEARL",
+            "W_MEM_PEARL"
+          ]
+        },
+        "G_SPAWN": {
+          "low": 0.25,
+          "high": 3.0,
+          "scale": [
+            "W_SPAWN"
+          ]
+        },
+        "G_V3": {
+          "low": 0.5,
+          "high": 5.0,
+          "scale": [
+            "W_V3"
+          ]
+        },
+        "G_ATTACK": {
+          "low": 0.5,
+          "high": 5.0,
+          "scale": [
+            "W_ATTACK",
+            "W_TRADE"
+          ]
+        },
+        "G_HEADSAFE": {
+          "low": 0.25,
+          "high": 3.0,
+          "scale": [
+            "W_HEAD_ENEMY",
+            "W_HEAD_TEAM",
+            "W_AHEAD"
+          ]
+        },
+        "G_TRAP": {
+          "low": 0.0,
+          "high": 1.5,
+          "scale": [
+            "W_TRAP",
+            "W_LETHAL"
+          ]
+        },
+        "G_FEED": {
+          "low": 0.25,
+          "high": 4.0,
+          "scale": [
+            "W_CASH"
+          ]
+        },
+        "FEED_ROUND": [
+          340,
+          470,
+          "int"
+        ],
+        "SPLIT_UNTIL_LARGE": [
+          200,
+          460,
+          "int"
+        ],
+        "SPLIT_UNTIL_SMALL": [
+          300,
+          480,
+          "int"
+        ],
+        "CAP": [
+          32,
+          64,
+          "int"
+        ],
+        "FLOOR": [
+          8,
+          36,
+          "int"
+        ],
+        "CPP_KB_ROUND": [
+          200,
+          420,
+          "int"
+        ],
+        "CPP_KB_MINLEN": [
+          4,
+          16,
+          "int"
+        ],
+        "CPP_BIG_FEED_ROUND": [
+          340,
+          480,
+          "int"
+        ],
+        "CPP_BIG_FEED_MARGIN": [
+          1,
+          12,
+          "int"
+        ],
+        "CPP_DEADEND_PEN": [
+          0.0,
+          150.0
+        ]
+      },
+      "start": {
+        "G_FOOD": 1.0,
+        "G_SPAWN": 1.0,
+        "G_V3": 1.0,
+        "G_ATTACK": 1.0,
+        "G_HEADSAFE": 1.0,
+        "G_TRAP": 1.0,
+        "G_FEED": 1.0,
+        "FEED_ROUND": 403.0,
+        "SPLIT_UNTIL_LARGE": 321.0,
+        "SPLIT_UNTIL_SMALL": 450.0,
+        "CAP": 56.0,
+        "FLOOR": 24.0,
+        "CPP_KB_ROUND": 300.0,
+        "CPP_KB_MINLEN": 8.0,
+        "CPP_BIG_FEED_ROUND": 430.0,
+        "CPP_BIG_FEED_MARGIN": 4.0,
+        "CPP_DEADEND_PEN": 20.0
+      },
+      "base_values": {
+        "W_PEARL": 179.4,
+        "W_MEM_PEARL": 44.85,
+        "W_SPAWN": 37.206,
+        "W_V3": 24.705,
+        "W_ATTACK": 419.295,
+        "W_TRADE": 27.953,
+        "W_HEAD_ENEMY": 105.684,
+        "W_HEAD_TEAM": 105.684,
+        "W_AHEAD": 35.228,
+        "W_TRAP": 5.223,
+        "W_LETHAL": 52.23,
+        "W_CASH": 75.736
+      },
+      "opponents": [
+        "cpp_nicked_v75",
+        "cpp_leviathan3",
+        "v7-base-bot",
+        "nicked_v44"
+      ],
+      "maps": [
+        "trophy",
+        "queen_of_spades",
+        "default",
+        "Devil",
+        "Trauma",
+        "schooltime",
+        "Autarky",
+        "Prisoners_Dilemma",
+        "Slithery_Fight",
+        "Portals",
+        "Autarky_p1",
+        "Devil_p1",
+        "Portals_p1",
+        "Prisoners_Dilemma_p1",
+        "Slithery_Fight_p1",
+        "Trauma_p1",
+        "default_p1",
+        "queen_of_spades_p1",
+        "schooltime_p1",
+        "trophy_p1"
+      ],
+      "seed": 111001,
+      "seeds_per_gen": 1,
+      "objective": "aligned",
+      "worst_weight": 0.0,
+      "backend": "cmaes-lra",
+      "eval_mean": true,
+      "map_sample": "pair",
+      "warm_from": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260927-194503-tune-ccc4cd",
+      "warm_mean": "base",
+      "fixed": {
+        "CPP_DEADEND_LOOK": 12,
+        "CPP_DEADEND_PEN": 20.0
+      },
+      "unswbc": "1.1.0",
+      "popsize": 12,
+      "generations": 40,
+      "sigma": 0.25,
+      "deterministic_v6_clock": true
+    },
+    "evaluation_rows": 117,
+    "malformed_rows": 0,
+    "generations": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "best_training": {
+      "gen": 3,
+      "cand": "c05",
+      "F": 0.3483207062429091,
+      "wins": 58,
+      "games": 80,
+      "params": {
+        "G_FOOD": 2.0301,
+        "G_SPAWN": 0.9,
+        "G_V3": 1.3115,
+        "G_ATTACK": 3.7364,
+        "G_HEADSAFE": 2.0901,
+        "G_TRAP": 0.9665,
+        "G_FEED": 1.6959,
+        "FEED_ROUND": 401,
+        "SPLIT_UNTIL_LARGE": 345,
+        "SPLIT_UNTIL_SMALL": 421,
+        "CAP": 59,
+        "FLOOR": 20,
+        "CPP_KB_ROUND": 242,
+        "CPP_KB_MINLEN": 10,
+        "CPP_BIG_FEED_ROUND": 434,
+        "CPP_BIG_FEED_MARGIN": 4,
+        "CPP_DEADEND_PEN": 89.5716
+      },
+      "per_map": {
+        "autarky_p1": 0.5571525287334927,
+        "devil_p1": 0.8101785040787595,
+        "prisoners_dilemma_p1": 0.06787090191111222,
+        "portals": 0.47333484304245904,
+        "queen_of_spades": 0.24804625308281958,
+        "trauma": -0.015241351483600729,
+        "default": 0.6387995729393776,
+        "trophy_p1": 0.6176423226567815,
+        "schooltime": 0.07862458804288289,
+        "slithery_fight": 0.006798899425006381
+      }
+    },
+    "means": [
+      {
+        "gen": 0,
+        "cand": "cmean",
+        "F": 0.16359639234064566,
+        "wins": 49,
+        "games": 80,
+        "params": {
+          "G_FOOD": 1.0,
+          "G_SPAWN": 1.0,
+          "G_V3": 1.0,
+          "G_ATTACK": 1.0,
+          "G_HEADSAFE": 1.0,
+          "G_TRAP": 1.0,
+          "G_FEED": 1.0,
+          "FEED_ROUND": 403,
+          "SPLIT_UNTIL_LARGE": 321,
+          "SPLIT_UNTIL_SMALL": 450,
+          "CAP": 56,
+          "FLOOR": 24,
+          "CPP_KB_ROUND": 300,
+          "CPP_KB_MINLEN": 8,
+          "CPP_BIG_FEED_ROUND": 430,
+          "CPP_BIG_FEED_MARGIN": 4,
+          "CPP_DEADEND_PEN": 20.0
+        },
+        "per_map": {
+          "devil_p1": 0.3643416450967101,
+          "autarky": 0.5047842936557267,
+          "prisoners_dilemma": -0.3161525199125816,
+          "portals_p1": 0.24513865910892363,
+          "queen_of_spades_p1": 0.37984201113474375,
+          "trauma": -0.05938492244816567,
+          "default_p1": 0.20301822599455646,
+          "trophy_p1": -0.01769525521588723,
+          "slithery_fight_p1": 0.14258142692275022,
+          "schooltime": 0.18949035906968034
+        }
+      },
+      {
+        "gen": 1,
+        "cand": "cmean",
+        "F": 0.1399179770918641,
+        "wins": 49,
+        "games": 80,
+        "params": {
+          "G_FOOD": 1.3598,
+          "G_SPAWN": 0.719,
+          "G_V3": 1.2839,
+          "G_ATTACK": 1.16,
+          "G_HEADSAFE": 1.0823,
+          "G_TRAP": 0.9747,
+          "G_FEED": 1.6468,
+          "FEED_ROUND": 416,
+          "SPLIT_UNTIL_LARGE": 299,
+          "SPLIT_UNTIL_SMALL": 403,
+          "CAP": 55,
+          "FLOOR": 26,
+          "CPP_KB_ROUND": 273,
+          "CPP_KB_MINLEN": 9,
+          "CPP_BIG_FEED_ROUND": 423,
+          "CPP_BIG_FEED_MARGIN": 5,
+          "CPP_DEADEND_PEN": 28.0444
+        },
+        "per_map": {
+          "autarky": 0.5429301002059462,
+          "devil_p1": -0.214878645851036,
+          "prisoners_dilemma": 0.10044728162780489,
+          "portals": 0.44125056623313597,
+          "trauma_p1": 0.16362238435450477,
+          "queen_of_spades_p1": 0.43392694494530815,
+          "trophy": -0.03994503448379855,
+          "default_p1": -0.04174152298845947,
+          "slithery_fight_p1": -0.12419064076968139,
+          "schooltime": 0.13775833764491635
+        }
+      },
+      {
+        "gen": 2,
+        "cand": "cmean",
+        "F": 0.21090865866674183,
+        "wins": 52,
+        "games": 80,
+        "params": {
+          "G_FOOD": 1.5887,
+          "G_SPAWN": 1.4843,
+          "G_V3": 1.3024,
+          "G_ATTACK": 1.0204,
+          "G_HEADSAFE": 0.988,
+          "G_TRAP": 0.7092,
+          "G_FEED": 1.8397,
+          "FEED_ROUND": 394,
+          "SPLIT_UNTIL_LARGE": 275,
+          "SPLIT_UNTIL_SMALL": 384,
+          "CAP": 55,
+          "FLOOR": 28,
+          "CPP_KB_ROUND": 274,
+          "CPP_KB_MINLEN": 8,
+          "CPP_BIG_FEED_ROUND": 439,
+          "CPP_BIG_FEED_MARGIN": 4,
+          "CPP_DEADEND_PEN": 36.9352
+        },
+        "per_map": {
+          "devil": 0.4378488318522584,
+          "autarky": 0.7154566747664909,
+          "prisoners_dilemma_p1": 0.3038325752309286,
+          "queen_of_spades": -0.18800922120633556,
+          "portals": 0.03362930288670711,
+          "trauma": 0.12330726069279199,
+          "default_p1": 0.49810016325269457,
+          "trophy_p1": 0.055723257512399677,
+          "schooltime_p1": -0.005518015860004617,
+          "slithery_fight": 0.13471575753948717
+        }
+      },
+      {
+        "gen": 3,
+        "cand": "cmean",
+        "F": 0.2463334340208049,
+        "wins": 52,
+        "games": 80,
+        "params": {
+          "G_FOOD": 1.7544,
+          "G_SPAWN": 1.5882,
+          "G_V3": 1.5993,
+          "G_ATTACK": 1.7091,
+          "G_HEADSAFE": 1.4758,
+          "G_TRAP": 0.8335,
+          "G_FEED": 2.3291,
+          "FEED_ROUND": 399,
+          "SPLIT_UNTIL_LARGE": 273,
+          "SPLIT_UNTIL_SMALL": 383,
+          "CAP": 58,
+          "FLOOR": 24,
+          "CPP_KB_ROUND": 269,
+          "CPP_KB_MINLEN": 10,
+          "CPP_BIG_FEED_ROUND": 420,
+          "CPP_BIG_FEED_MARGIN": 5,
+          "CPP_DEADEND_PEN": 35.8419
+        },
+        "per_map": {
+          "autarky_p1": 0.7601748115871279,
+          "devil_p1": 0.4664409122395918,
+          "prisoners_dilemma_p1": 0.2356456825662986,
+          "queen_of_spades": 0.123183301903746,
+          "portals": 0.3105240768209539,
+          "trauma": -0.30082249016810386,
+          "default": 0.14810027711286441,
+          "trophy_p1": 0.6792198283987062,
+          "schooltime": 0.042583206656737864,
+          "slithery_fight": -0.0017152669098738221
+        }
+      },
+      {
+        "gen": 4,
+        "cand": "cmean",
+        "F": 0.06987418250210434,
+        "wins": 44,
+        "games": 80,
+        "params": {
+          "G_FOOD": 1.8515,
+          "G_SPAWN": 1.5327,
+          "G_V3": 1.8138,
+          "G_ATTACK": 2.3492,
+          "G_HEADSAFE": 1.5612,
+          "G_TRAP": 0.8604,
+          "G_FEED": 1.9058,
+          "FEED_ROUND": 414,
+          "SPLIT_UNTIL_LARGE": 321,
+          "SPLIT_UNTIL_SMALL": 405,
+          "CAP": 56,
+          "FLOOR": 23,
+          "CPP_KB_ROUND": 280,
+          "CPP_KB_MINLEN": 8,
+          "CPP_BIG_FEED_ROUND": 431,
+          "CPP_BIG_FEED_MARGIN": 4,
+          "CPP_DEADEND_PEN": 47.0053
+        },
+        "per_map": {
+          "autarky_p1": 0.5672678862354441,
+          "prisoners_dilemma": -0.014882966744773268,
+          "devil": 0.3306367891081447,
+          "portals": 0.04115515380005709,
+          "trauma_p1": 0.19903550716293458,
+          "default_p1": 0.15216262193190574,
+          "queen_of_spades": -0.34313136752938395,
+          "trophy_p1": -0.45566000234166487,
+          "slithery_fight": -0.13824583097230358,
+          "schooltime": 0.3604040343706828
+        }
+      },
+      {
+        "gen": 5,
+        "cand": "cmean",
+        "F": 0.17679587291182192,
+        "wins": 52,
+        "games": 80,
+        "params": {
+          "G_FOOD": 2.2938,
+          "G_SPAWN": 1.4062,
+          "G_V3": 2.4786,
+          "G_ATTACK": 2.2363,
+          "G_HEADSAFE": 1.5119,
+          "G_TRAP": 0.8141,
+          "G_FEED": 1.4643,
+          "FEED_ROUND": 417,
+          "SPLIT_UNTIL_LARGE": 310,
+          "SPLIT_UNTIL_SMALL": 423,
+          "CAP": 55,
+          "FLOOR": 20,
+          "CPP_KB_ROUND": 275,
+          "CPP_KB_MINLEN": 6,
+          "CPP_BIG_FEED_ROUND": 424,
+          "CPP_BIG_FEED_MARGIN": 3,
+          "CPP_DEADEND_PEN": 85.9778
+        },
+        "per_map": {
+          "devil": 0.08957448519886856,
+          "autarky": 0.7079816210264406,
+          "prisoners_dilemma_p1": 0.3183073555094673,
+          "portals": 0.22366811956690408,
+          "trauma_p1": 0.10388344575548755,
+          "queen_of_spades_p1": -0.15807951900341172,
+          "trophy": -0.24030362894213503,
+          "default": 0.2814434694282414,
+          "schooltime": 0.26880518881518456,
+          "slithery_fight_p1": 0.17267819176317184
+        }
+      },
+      {
+        "gen": 6,
+        "cand": "cmean",
+        "F": 0.19790650398198392,
+        "wins": 51,
+        "games": 80,
+        "params": {
+          "G_FOOD": 2.7291,
+          "G_SPAWN": 1.2961,
+          "G_V3": 2.3332,
+          "G_ATTACK": 2.2402,
+          "G_HEADSAFE": 1.7229,
+          "G_TRAP": 0.7937,
+          "G_FEED": 1.3228,
+          "FEED_ROUND": 416,
+          "SPLIT_UNTIL_LARGE": 326,
+          "SPLIT_UNTIL_SMALL": 396,
+          "CAP": 54,
+          "FLOOR": 26,
+          "CPP_KB_ROUND": 267,
+          "CPP_KB_MINLEN": 7,
+          "CPP_BIG_FEED_ROUND": 411,
+          "CPP_BIG_FEED_MARGIN": 3,
+          "CPP_DEADEND_PEN": 69.2892
+        },
+        "per_map": {
+          "devil_p1": 0.17115379162534372,
+          "autarky": 0.713246270938227,
+          "prisoners_dilemma_p1": 0.11275019311412594,
+          "portals": 0.19573793374165835,
+          "queen_of_spades": 0.1817186715442784,
+          "default_p1": 0.35806415666040214,
+          "trophy_p1": 0.17607210749340219,
+          "trauma": 0.17144162156479448,
+          "slithery_fight": -0.1319955115692727,
+          "schooltime": 0.030875804706879853
+        }
+      },
+      {
+        "gen": 7,
+        "cand": "cmean",
+        "F": 0.20439015320104614,
+        "wins": 51,
+        "games": 80,
+        "params": {
+          "G_FOOD": 2.6818,
+          "G_SPAWN": 1.5866,
+          "G_V3": 2.1788,
+          "G_ATTACK": 2.4505,
+          "G_HEADSAFE": 1.9215,
+          "G_TRAP": 0.6754,
+          "G_FEED": 1.5218,
+          "FEED_ROUND": 414,
+          "SPLIT_UNTIL_LARGE": 324,
+          "SPLIT_UNTIL_SMALL": 401,
+          "CAP": 57,
+          "FLOOR": 24,
+          "CPP_KB_ROUND": 295,
+          "CPP_KB_MINLEN": 9,
+          "CPP_BIG_FEED_ROUND": 394,
+          "CPP_BIG_FEED_MARGIN": 4,
+          "CPP_DEADEND_PEN": 73.8915
+        },
+        "per_map": {
+          "autarky_p1": 0.5799359481913442,
+          "devil_p1": 0.5675821134579861,
+          "prisoners_dilemma_p1": 0.43879442876593644,
+          "portals_p1": 0.2105073650855604,
+          "trauma_p1": -0.012490236160330306,
+          "queen_of_spades_p1": -0.08251381221412821,
+          "trophy": -0.07479507204937705,
+          "default_p1": 0.3549939607453688,
+          "slithery_fight": -0.011524339608294805,
+          "schooltime_p1": 0.07341117579639592
+        }
+      },
+      {
+        "gen": 8,
+        "cand": "cmean",
+        "F": 0.19586850184481527,
+        "wins": 51,
+        "games": 80,
+        "params": {
+          "G_FOOD": 2.9604,
+          "G_SPAWN": 1.6278,
+          "G_V3": 1.962,
+          "G_ATTACK": 2.7756,
+          "G_HEADSAFE": 1.5722,
+          "G_TRAP": 0.8286,
+          "G_FEED": 1.4974,
+          "FEED_ROUND": 407,
+          "SPLIT_UNTIL_LARGE": 321,
+          "SPLIT_UNTIL_SMALL": 393,
+          "CAP": 52,
+          "FLOOR": 24,
+          "CPP_KB_ROUND": 323,
+          "CPP_KB_MINLEN": 10,
+          "CPP_BIG_FEED_ROUND": 390,
+          "CPP_BIG_FEED_MARGIN": 6,
+          "CPP_DEADEND_PEN": 66.526
+        },
+        "per_map": {
+          "autarky_p1": 0.387343908017266,
+          "prisoners_dilemma_p1": -0.01199571295483702,
+          "devil_p1": 0.6932602476219232,
+          "portals": 0.16372635067853974,
+          "trauma": -0.192341451232202,
+          "default_p1": 0.5535556320496534,
+          "queen_of_spades_p1": 0.15214461632765924,
+          "trophy_p1": -0.05777391462259053,
+          "slithery_fight": 0.2700385714202151,
+          "schooltime_p1": 0.0007267711425257006
+        }
+      }
+    ]
+  },
+  {
+    "run": "20260929-201541-tune-6e4812",
+    "plan": {
+      "base": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10h-bot",
+      "base_hash": "f9d00cd150ff2c53",
+      "params": "params.hpp",
+      "space": {
+        "G_FOOD": {
+          "low": 0.5,
+          "high": 6.0,
+          "scale": [
+            "W_PEARL",
+            "W_MEM_PEARL"
+          ]
+        },
+        "G_SPAWN": {
+          "low": 0.25,
+          "high": 3.0,
+          "scale": [
+            "W_SPAWN"
+          ]
+        },
+        "G_V3": {
+          "low": 0.5,
+          "high": 5.0,
+          "scale": [
+            "W_V3"
+          ]
+        },
+        "G_ATTACK": {
+          "low": 0.5,
+          "high": 5.0,
+          "scale": [
+            "W_ATTACK",
+            "W_TRADE"
+          ]
+        },
+        "G_HEADSAFE": {
+          "low": 0.25,
+          "high": 3.0,
+          "scale": [
+            "W_HEAD_ENEMY",
+            "W_HEAD_TEAM",
+            "W_AHEAD"
+          ]
+        },
+        "G_TRAP": {
+          "low": 0.0,
+          "high": 1.5,
+          "scale": [
+            "W_TRAP",
+            "W_LETHAL"
+          ]
+        },
+        "G_FEED": {
+          "low": 0.25,
+          "high": 4.0,
+          "scale": [
+            "W_CASH"
+          ]
+        },
+        "FEED_ROUND": [
+          340,
+          470,
+          "int"
+        ],
+        "SPLIT_UNTIL_LARGE": [
+          200,
+          460,
+          "int"
+        ],
+        "SPLIT_UNTIL_SMALL": [
+          300,
+          480,
+          "int"
+        ],
+        "CAP": [
+          32,
+          64,
+          "int"
+        ],
+        "FLOOR": [
+          8,
+          36,
+          "int"
+        ],
+        "CPP_KB_ROUND": [
+          200,
+          420,
+          "int"
+        ],
+        "CPP_KB_MINLEN": [
+          4,
+          16,
+          "int"
+        ],
+        "CPP_BIG_FEED_ROUND": [
+          340,
+          480,
+          "int"
+        ],
+        "CPP_BIG_FEED_MARGIN": [
+          1,
+          12,
+          "int"
+        ],
+        "CPP_FEED_SHIFT_LARGE": [
+          0,
+          80,
+          "int"
+        ]
+      },
+      "start": {
+        "G_FOOD": 1.0,
+        "G_SPAWN": 1.0,
+        "G_V3": 1.0,
+        "G_ATTACK": 1.0,
+        "G_HEADSAFE": 1.0,
+        "G_TRAP": 1.0,
+        "G_FEED": 1.0,
+        "FEED_ROUND": 403.0,
+        "SPLIT_UNTIL_LARGE": 321.0,
+        "SPLIT_UNTIL_SMALL": 450.0,
+        "CAP": 56.0,
+        "FLOOR": 24.0,
+        "CPP_KB_ROUND": 300.0,
+        "CPP_KB_MINLEN": 8.0,
+        "CPP_BIG_FEED_ROUND": 430.0,
+        "CPP_BIG_FEED_MARGIN": 4.0,
+        "CPP_FEED_SHIFT_LARGE": 40.0
+      },
+      "base_values": {
+        "W_PEARL": 179.4,
+        "W_MEM_PEARL": 44.85,
+        "W_SPAWN": 37.206,
+        "W_V3": 24.705,
+        "W_ATTACK": 419.295,
+        "W_TRADE": 27.953,
+        "W_HEAD_ENEMY": 105.684,
+        "W_HEAD_TEAM": 105.684,
+        "W_AHEAD": 35.228,
+        "W_TRAP": 5.223,
+        "W_LETHAL": 52.23,
+        "W_CASH": 75.736
+      },
+      "opponents": [
+        "cpp_nicked_v92",
+        "cpp_nicked_v75",
+        "nicked_v44",
+        "nicked_lab",
+        "v7-base-bot"
+      ],
+      "maps": [
+        "trophy",
+        "queen_of_spades",
+        "default",
+        "Devil",
+        "Trauma",
+        "schooltime",
+        "Autarky",
+        "Prisoners_Dilemma",
+        "Slithery_Fight",
+        "Portals",
+        "Autarky_p1",
+        "Devil_p1",
+        "Portals_p1",
+        "Prisoners_Dilemma_p1",
+        "Slithery_Fight_p1",
+        "Trauma_p1",
+        "default_p1",
+        "queen_of_spades_p1",
+        "schooltime_p1",
+        "trophy_p1"
+      ],
+      "seed": 181001,
+      "seeds_per_gen": 1,
+      "objective": "aligned",
+      "worst_weight": 0.25,
+      "backend": "cmaes-lra",
+      "eval_mean": true,
+      "map_sample": "pair",
+      "warm_from": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260929-013847-tune-c7cd3d",
+      "warm_mean": "base",
+      "fixed": {},
+      "unswbc": "1.1.0",
+      "popsize": 12,
+      "generations": 12,
+      "sigma": 0.2,
+      "deterministic_v6_clock": true
+    },
+    "evaluation_rows": 156,
+    "malformed_rows": 0,
+    "generations": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "best_training": {
+      "gen": 1,
+      "cand": "c02",
+      "F": 0.15222901216499315,
+      "wins": 63,
+      "games": 100,
+      "params": {
+        "G_FOOD": 0.965,
+        "G_SPAWN": 0.5951,
+        "G_V3": 0.706,
+        "G_ATTACK": 0.9709,
+        "G_HEADSAFE": 0.7126,
+        "G_TRAP": 0.9345,
+        "G_FEED": 1.075,
+        "FEED_ROUND": 370,
+        "SPLIT_UNTIL_LARGE": 370,
+        "SPLIT_UNTIL_SMALL": 471,
+        "CAP": 52,
+        "FLOOR": 25,
+        "CPP_KB_ROUND": 273,
+        "CPP_KB_MINLEN": 5,
+        "CPP_BIG_FEED_ROUND": 424,
+        "CPP_BIG_FEED_MARGIN": 2,
+        "CPP_FEED_SHIFT_LARGE": 47
+      },
+      "per_map": {
+        "devil_p1": 0.28534792794473673,
+        "autarky_p1": 0.37463396569894386,
+        "prisoners_dilemma_p1": -0.05546709530396008,
+        "portals_p1": -0.12371187189705098,
+        "queen_of_spades_p1": 0.5001338740788595,
+        "default": 0.2684544764807231,
+        "trophy": 0.4696947438900251,
+        "trauma": 0.0583666154878699,
+        "schooltime": 0.08263640001472564,
+        "slithery_fight": -0.02851923500231362
+      }
+    },
+    "means": [
+      {
+        "gen": 0,
+        "cand": "cmean",
+        "F": -0.06270254838909964,
+        "wins": 55,
+        "games": 100,
+        "params": {
+          "G_FOOD": 1.0,
+          "G_SPAWN": 1.0,
+          "G_V3": 1.0,
+          "G_ATTACK": 1.0,
+          "G_HEADSAFE": 1.0,
+          "G_TRAP": 1.0,
+          "G_FEED": 1.0,
+          "FEED_ROUND": 403,
+          "SPLIT_UNTIL_LARGE": 321,
+          "SPLIT_UNTIL_SMALL": 450,
+          "CAP": 56,
+          "FLOOR": 24,
+          "CPP_KB_ROUND": 300,
+          "CPP_KB_MINLEN": 8,
+          "CPP_BIG_FEED_ROUND": 430,
+          "CPP_BIG_FEED_MARGIN": 4,
+          "CPP_FEED_SHIFT_LARGE": 40
+        },
+        "per_map": {
+          "devil_p1": 0.4014165139594536,
+          "prisoners_dilemma_p1": -0.06171672239510016,
+          "autarky_p1": 0.03756059402610085,
+          "portals": -0.28797860499269856,
+          "queen_of_spades": -0.051502006070897596,
+          "default": 0.3834685894242195,
+          "trophy": -0.4302396115273474,
+          "trauma": 0.23527837379086708,
+          "slithery_fight_p1": 0.30504524861034205,
+          "schooltime_p1": -0.08275882989756712
+        }
+      },
+      {
+        "gen": 1,
+        "cand": "cmean",
+        "F": 0.08626301672573979,
+        "wins": 63,
+        "games": 100,
+        "params": {
+          "G_FOOD": 1.3592,
+          "G_SPAWN": 0.8757,
+          "G_V3": 0.9143,
+          "G_ATTACK": 0.8754,
+          "G_HEADSAFE": 1.0133,
+          "G_TRAP": 0.8726,
+          "G_FEED": 1.1842,
+          "FEED_ROUND": 389,
+          "SPLIT_UNTIL_LARGE": 307,
+          "SPLIT_UNTIL_SMALL": 437,
+          "CAP": 56,
+          "FLOOR": 26,
+          "CPP_KB_ROUND": 286,
+          "CPP_KB_MINLEN": 8,
+          "CPP_BIG_FEED_ROUND": 409,
+          "CPP_BIG_FEED_MARGIN": 4,
+          "CPP_FEED_SHIFT_LARGE": 58
+        },
+        "per_map": {
+          "devil_p1": 0.042005742533986784,
+          "autarky_p1": 0.303839086180618,
+          "prisoners_dilemma_p1": -0.021812861358439385,
+          "portals_p1": 0.23473088150126703,
+          "queen_of_spades_p1": -0.3325164001943874,
+          "default": 0.4181167754547307,
+          "trophy": 0.24165282111586733,
+          "trauma": 0.21142335161139272,
+          "schooltime": 0.27480483138034484,
+          "slithery_fight": 0.3216769395179856
+        }
+      },
+      {
+        "gen": 2,
+        "cand": "cmean",
+        "F": -0.01200689486979982,
+        "wins": 55,
+        "games": 100,
+        "params": {
+          "G_FOOD": 1.1447,
+          "G_SPAWN": 0.6668,
+          "G_V3": 0.855,
+          "G_ATTACK": 1.1246,
+          "G_HEADSAFE": 0.889,
+          "G_TRAP": 0.838,
+          "G_FEED": 1.0752,
+          "FEED_ROUND": 382,
+          "SPLIT_UNTIL_LARGE": 322,
+          "SPLIT_UNTIL_SMALL": 429,
+          "CAP": 54,
+          "FLOOR": 26,
+          "CPP_KB_ROUND": 271,
+          "CPP_KB_MINLEN": 8,
+          "CPP_BIG_FEED_ROUND": 421,
+          "CPP_BIG_FEED_MARGIN": 3,
+          "CPP_FEED_SHIFT_LARGE": 50
+        },
+        "per_map": {
+          "portals_p1": 0.12484303346597336,
+          "autarky": 0.4437323376981549,
+          "prisoners_dilemma": -0.08095844371026405,
+          "devil": 0.32255926772128957,
+          "trauma_p1": 0.14781696433140107,
+          "queen_of_spades": 0.19056079765359696,
+          "default": -0.05536888804327215,
+          "trophy": -0.3012919834502728,
+          "schooltime_p1": -0.144410737007804,
+          "slithery_fight_p1": -0.01432133873111906
+        }
+      },
+      {
+        "gen": 3,
+        "cand": "cmean",
+        "F": -0.10617238040608445,
+        "wins": 53,
+        "games": 100,
+        "params": {
+          "G_FOOD": 1.57,
+          "G_SPAWN": 0.8254,
+          "G_V3": 1.0371,
+          "G_ATTACK": 1.5722,
+          "G_HEADSAFE": 0.9231,
+          "G_TRAP": 0.9636,
+          "G_FEED": 1.4969,
+          "FEED_ROUND": 391,
+          "SPLIT_UNTIL_LARGE": 314,
+          "SPLIT_UNTIL_SMALL": 416,
+          "CAP": 55,
+          "FLOOR": 24,
+          "CPP_KB_ROUND": 279,
+          "CPP_KB_MINLEN": 10,
+          "CPP_BIG_FEED_ROUND": 410,
+          "CPP_BIG_FEED_MARGIN": 5,
+          "CPP_FEED_SHIFT_LARGE": 44
+        },
+        "per_map": {
+          "autarky_p1": 0.45734032316890316,
+          "devil": 0.06769243360554675,
+          "prisoners_dilemma": -0.37774372827389235,
+          "queen_of_spades_p1": -0.3775504454529483,
+          "portals_p1": 0.3883332044005119,
+          "trophy_p1": -0.2847429004141776,
+          "default": -0.0023667965058991602,
+          "trauma_p1": -0.05220494131333647,
+          "schooltime": 0.0797626400495611,
+          "slithery_fight_p1": -0.015884272640382717
+        }
+      },
+      {
+        "gen": 4,
+        "cand": "cmean",
+        "F": -0.04592549692790729,
+        "wins": 56,
+        "games": 100,
+        "params": {
+          "G_FOOD": 1.9018,
+          "G_SPAWN": 0.9611,
+          "G_V3": 1.0728,
+          "G_ATTACK": 1.6347,
+          "G_HEADSAFE": 1.1448,
+          "G_TRAP": 0.962,
+          "G_FEED": 1.4839,
+          "FEED_ROUND": 388,
+          "SPLIT_UNTIL_LARGE": 341,
+          "SPLIT_UNTIL_SMALL": 415,
+          "CAP": 56,
+          "FLOOR": 22,
+          "CPP_KB_ROUND": 295,
+          "CPP_KB_MINLEN": 9,
+          "CPP_BIG_FEED_ROUND": 412,
+          "CPP_BIG_FEED_MARGIN": 4,
+          "CPP_FEED_SHIFT_LARGE": 41
+        },
+        "per_map": {
+          "devil_p1": -0.3740293210533553,
+          "autarky_p1": 0.47045267353769293,
+          "prisoners_dilemma_p1": -0.20712494333814377,
+          "portals": 0.2666962666068714,
+          "queen_of_spades": 0.180764790043055,
+          "trophy": -0.39199504099136073,
+          "default": 0.6079018667375706,
+          "trauma": 0.15058563036686015,
+          "slithery_fight_p1": -0.01496640065725035,
+          "schooltime_p1": -0.167552888052611
+        }
+      },
+      {
+        "gen": 5,
+        "cand": "cmean",
+        "F": 0.08019665455844614,
+        "wins": 61,
+        "games": 100,
+        "params": {
+          "G_FOOD": 1.9019,
+          "G_SPAWN": 1.1767,
+          "G_V3": 1.3712,
+          "G_ATTACK": 1.9962,
+          "G_HEADSAFE": 1.4378,
+          "G_TRAP": 0.8434,
+          "G_FEED": 1.4714,
+          "FEED_ROUND": 400,
+          "SPLIT_UNTIL_LARGE": 363,
+          "SPLIT_UNTIL_SMALL": 407,
+          "CAP": 55,
+          "FLOOR": 23,
+          "CPP_KB_ROUND": 298,
+          "CPP_KB_MINLEN": 10,
+          "CPP_BIG_FEED_ROUND": 416,
+          "CPP_BIG_FEED_MARGIN": 4,
+          "CPP_FEED_SHIFT_LARGE": 38
+        },
+        "per_map": {
+          "prisoners_dilemma_p1": -0.23486540823725827,
+          "devil_p1": 0.641159605453625,
+          "autarky_p1": 0.3762816491931277,
+          "portals_p1": 0.2239529044537559,
+          "queen_of_spades": -0.11028823075737795,
+          "trophy": -0.17445713574815622,
+          "trauma_p1": -0.18456988909111027,
+          "default": 0.5771303422994086,
+          "schooltime": 0.18919008237306226,
+          "slithery_fight_p1": 0.08559614623853043
+        }
+      },
+      {
+        "gen": 6,
+        "cand": "cmean",
+        "F": -0.21649274085228593,
+        "wins": 50,
+        "games": 100,
+        "params": {
+          "G_FOOD": 2.344,
+          "G_SPAWN": 1.2315,
+          "G_V3": 1.509,
+          "G_ATTACK": 2.0035,
+          "G_HEADSAFE": 1.5513,
+          "G_TRAP": 0.7769,
+          "G_FEED": 1.4668,
+          "FEED_ROUND": 408,
+          "SPLIT_UNTIL_LARGE": 374,
+          "SPLIT_UNTIL_SMALL": 399,
+          "CAP": 54,
+          "FLOOR": 24,
+          "CPP_KB_ROUND": 285,
+          "CPP_KB_MINLEN": 10,
+          "CPP_BIG_FEED_ROUND": 400,
+          "CPP_BIG_FEED_MARGIN": 4,
+          "CPP_FEED_SHIFT_LARGE": 46
+        },
+        "per_map": {
+          "devil": -0.23238108632667162,
+          "autarky": 0.7075635949018435,
+          "prisoners_dilemma": -0.21781782154892398,
+          "queen_of_spades_p1": -0.7242004048116379,
+          "portals": 0.06633159780843055,
+          "trophy_p1": -0.3517431552899871,
+          "trauma_p1": 0.02451473582166417,
+          "default_p1": 0.33871557452335865,
+          "slithery_fight_p1": -0.025253673119870496,
+          "schooltime_p1": 0.0598442415480299
+        }
+      },
+      {
+        "gen": 7,
+        "cand": "cmean",
+        "F": -0.15434809572901184,
+        "wins": 53,
+        "games": 100,
+        "params": {
+          "G_FOOD": 2.7199,
+          "G_SPAWN": 1.0236,
+          "G_V3": 1.9176,
+          "G_ATTACK": 2.6952,
+          "G_HEADSAFE": 1.5178,
+          "G_TRAP": 0.8971,
+          "G_FEED": 1.6597,
+          "FEED_ROUND": 407,
+          "SPLIT_UNTIL_LARGE": 369,
+          "SPLIT_UNTIL_SMALL": 399,
+          "CAP": 54,
+          "FLOOR": 25,
+          "CPP_KB_ROUND": 283,
+          "CPP_KB_MINLEN": 10,
+          "CPP_BIG_FEED_ROUND": 412,
+          "CPP_BIG_FEED_MARGIN": 5,
+          "CPP_FEED_SHIFT_LARGE": 46
+        },
+        "per_map": {
+          "devil_p1": 0.3188755066963195,
+          "autarky": 0.4705894850071254,
+          "prisoners_dilemma_p1": 0.13979426498132508,
+          "queen_of_spades": -0.6641973435570694,
+          "portals_p1": 0.17953447972047587,
+          "trophy_p1": -0.6884424748738334,
+          "trauma": 0.017596577644306433,
+          "default": 0.24080607827228037,
+          "schooltime": 0.19979975202040653,
+          "slithery_fight_p1": -0.03673109601687151
+        }
+      },
+      {
+        "gen": 8,
+        "cand": "cmean",
+        "F": -0.16564418021576544,
+        "wins": 46,
+        "games": 100,
+        "params": {
+          "G_FOOD": 2.7007,
+          "G_SPAWN": 1.2249,
+          "G_V3": 1.6063,
+          "G_ATTACK": 2.7854,
+          "G_HEADSAFE": 1.5114,
+          "G_TRAP": 0.9227,
+          "G_FEED": 1.9797,
+          "FEED_ROUND": 407,
+          "SPLIT_UNTIL_LARGE": 342,
+          "SPLIT_UNTIL_SMALL": 404,
+          "CAP": 53,
+          "FLOOR": 25,
+          "CPP_KB_ROUND": 275,
+          "CPP_KB_MINLEN": 10,
+          "CPP_BIG_FEED_ROUND": 408,
+          "CPP_BIG_FEED_MARGIN": 6,
+          "CPP_FEED_SHIFT_LARGE": 46
+        },
+        "per_map": {
+          "autarky_p1": 0.17023868754407992,
+          "prisoners_dilemma_p1": -0.009865438243456915,
+          "devil_p1": 0.10754351908048329,
+          "portals": -0.06051625925331537,
+          "queen_of_spades_p1": -0.4082000596132966,
+          "default": 0.3402166109286417,
+          "trophy_p1": -0.3821976393050849,
+          "trauma": -0.018205380759690932,
+          "schooltime": -0.14672004963091384,
+          "slithery_fight_p1": -0.22823564387185935
+        }
+      },
+      {
+        "gen": 9,
+        "cand": "cmean",
+        "F": -0.18580151110619492,
+        "wins": 51,
+        "games": 100,
+        "params": {
+          "G_FOOD": 2.9085,
+          "G_SPAWN": 1.2144,
+          "G_V3": 1.8127,
+          "G_ATTACK": 2.703,
+          "G_HEADSAFE": 1.3065,
+          "G_TRAP": 0.8599,
+          "G_FEED": 2.0068,
+          "FEED_ROUND": 411,
+          "SPLIT_UNTIL_LARGE": 355,
+          "SPLIT_UNTIL_SMALL": 385,
+          "CAP": 53,
+          "FLOOR": 25,
+          "CPP_KB_ROUND": 271,
+          "CPP_KB_MINLEN": 10,
+          "CPP_BIG_FEED_ROUND": 409,
+          "CPP_BIG_FEED_MARGIN": 6,
+          "CPP_FEED_SHIFT_LARGE": 51
+        },
+        "per_map": {
+          "devil_p1": -0.09304625605891367,
+          "prisoners_dilemma_p1": -0.028566192746485596,
+          "autarky_p1": 0.33266938215695335,
+          "portals": -0.06171269580430514,
+          "queen_of_spades": 0.20937648605443937,
+          "default_p1": 0.3168801818544131,
+          "trophy": -0.7560953494845057,
+          "trauma": -0.11281715389177505,
+          "slithery_fight_p1": -0.015605714487073995,
+          "schooltime": 0.24114057505656872
+        }
+      },
+      {
+        "gen": 10,
+        "cand": "cmean",
+        "F": -0.27127611764545073,
+        "wins": 44,
+        "games": 100,
+        "params": {
+          "G_FOOD": 2.9498,
+          "G_SPAWN": 1.1531,
+          "G_V3": 1.7183,
+          "G_ATTACK": 2.7147,
+          "G_HEADSAFE": 1.5193,
+          "G_TRAP": 0.8463,
+          "G_FEED": 2.0561,
+          "FEED_ROUND": 399,
+          "SPLIT_UNTIL_LARGE": 352,
+          "SPLIT_UNTIL_SMALL": 374,
+          "CAP": 54,
+          "FLOOR": 22,
+          "CPP_KB_ROUND": 268,
+          "CPP_KB_MINLEN": 10,
+          "CPP_BIG_FEED_ROUND": 407,
+          "CPP_BIG_FEED_MARGIN": 6,
+          "CPP_FEED_SHIFT_LARGE": 45
+        },
+        "per_map": {
+          "autarky_p1": 0.18394074293762216,
+          "prisoners_dilemma": -0.21435359156319037,
+          "devil_p1": -0.5736071208130802,
+          "portals_p1": 0.1535583218423377,
+          "trauma_p1": 0.09411680051450202,
+          "queen_of_spades_p1": -0.2991839852110733,
+          "trophy_p1": -0.6154590413647014,
+          "default": 0.2598371869791734,
+          "slithery_fight": -0.020793246613428296,
+          "schooltime_p1": -0.1421696397509153
+        }
+      },
+      {
+        "gen": 11,
+        "cand": "cmean",
+        "F": -0.2797980785092633,
+        "wins": 47,
+        "games": 100,
+        "params": {
+          "G_FOOD": 2.9045,
+          "G_SPAWN": 1.2834,
+          "G_V3": 1.6434,
+          "G_ATTACK": 2.1916,
+          "G_HEADSAFE": 1.9172,
+          "G_TRAP": 0.7984,
+          "G_FEED": 2.0779,
+          "FEED_ROUND": 400,
+          "SPLIT_UNTIL_LARGE": 330,
+          "SPLIT_UNTIL_SMALL": 384,
+          "CAP": 52,
+          "FLOOR": 21,
+          "CPP_KB_ROUND": 250,
+          "CPP_KB_MINLEN": 11,
+          "CPP_BIG_FEED_ROUND": 400,
+          "CPP_BIG_FEED_MARGIN": 6,
+          "CPP_FEED_SHIFT_LARGE": 46
+        },
+        "per_map": {
+          "devil_p1": -0.34181313362043764,
+          "prisoners_dilemma": -0.09639670171219472,
+          "autarky_p1": 0.1984026682805553,
+          "portals": 0.399448681712527,
+          "queen_of_spades_p1": -0.40371415240434294,
+          "trophy_p1": -0.7598553036133748,
+          "default": 0.18482948173355,
+          "trauma": 0.22795266791527471,
+          "schooltime": 0.03617412447522621,
+          "slithery_fight_p1": -0.34337085882597906
+        }
+      }
+    ]
+  }
+]

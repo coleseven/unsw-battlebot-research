@@ -1,0 +1,27 @@
+{
+  "question": "Does the trap guard change actual decisions against nicked?",
+  "scope": "Diagnostic only; full eleven-map screen follows any activation.",
+  "seed": 55001,
+  "workers": 1,
+  "control_hash": "23a140e48e5f7d89",
+  "nicked_hash": "d6dd50765f54f638",
+  "live_hash": "ffe736af6c14ea33",
+  "bot_hashes": {
+    "trap_guard": "c262dabcdd3f07b8",
+    "nicked": "d6dd50765f54f638"
+  },
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-001144-v5-trap-probe-047e50\\maps\\default_small.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-001144-v5-trap-probe-047e50\\maps\\Trauma.map"
+  ],
+  "map_hashes": {
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-001144-v5-trap-probe-047e50\\maps\\default_small.map": "8ac4b2eedcf19f85",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-001144-v5-trap-probe-047e50\\maps\\Trauma.map": "dcf39d713c060e5d"
+  },
+  "source_hashes": {
+    "experiments\\v5\\brain.py": "ae2da3ce6bad4b83",
+    "framework\\local_safety.py": "b241baeb015b12e3",
+    "bcsim\\v5_initial.py": "0b106707597aaefb",
+    "bcsim\\v5_trap_probe.py": "ec5b870f9ead4364"
+  }
+}

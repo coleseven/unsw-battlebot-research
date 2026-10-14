@@ -1,0 +1,32 @@
+{
+  "territory": {
+    "wins": 3,
+    "draws": 0,
+    "losses": 5,
+    "score": 0.375,
+    "pair_ci95": [
+      0.125,
+      0.5
+    ]
+  },
+  "king_guard": {
+    "wins": 4,
+    "draws": 0,
+    "losses": 4,
+    "score": 0.5,
+    "pair_ci95": [
+      0.5,
+      0.5
+    ]
+  },
+  "combined": {
+    "wins": 3,
+    "draws": 0,
+    "losses": 5,
+    "score": 0.375,
+    "pair_ci95": [
+      0.125,
+      0.5
+    ]
+  }
+}

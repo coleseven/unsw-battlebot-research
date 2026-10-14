@@ -1,0 +1,8 @@
+{
+  "torch": "2.14.0+cu130",
+  "numpy": "2.5.3",
+  "device": "cpu",
+  "training_threads": 2,
+  "manifest_hash": "0c67e930af16b822",
+  "source_hash": "0d3ea49f952cc9e9"
+}

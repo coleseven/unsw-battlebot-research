@@ -1,0 +1,37 @@
+{
+  "maps": [
+    "default_small",
+    "trophy",
+    "queen_of_spades",
+    "default",
+    "Devil",
+    "stronghold",
+    "Trauma",
+    "schooltime",
+    "big_empty",
+    "arena",
+    "Colosseum"
+  ],
+  "games": 66,
+  "workers": 8,
+  "opponents": {
+    "scout_king": {
+      "wins": 1,
+      "draws": 0,
+      "losses": 21,
+      "score": 0.045454545454545456
+    },
+    "additive": {
+      "wins": 1,
+      "draws": 0,
+      "losses": 21,
+      "score": 0.045454545454545456
+    },
+    "nicked": {
+      "wins": 0,
+      "draws": 0,
+      "losses": 22,
+      "score": 0.0
+    }
+  }
+}

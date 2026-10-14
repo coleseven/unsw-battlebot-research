@@ -1,0 +1,106 @@
+base: 24/540 games, 30s
+base: 48/540 games, 115s
+base: 72/540 games, 137s
+base: 96/540 games, 189s
+base: 120/540 games, 236s
+base: 144/540 games, 303s
+base: 168/540 games, 326s
+base: 192/540 games, 370s
+base: 216/540 games, 410s
+base: 240/540 games, 445s
+base: 264/540 games, 497s
+base: 288/540 games, 537s
+base: 312/540 games, 560s
+base: 336/540 games, 587s
+base: 360/540 games, 610s
+base: 384/540 games, 666s
+base: 408/540 games, 759s
+base: 432/540 games, 815s
+base: 456/540 games, 928s
+base: 480/540 games, 1001s
+base: 504/540 games, 1134s
+base: 528/540 games, 1193s
+base: 540/540 games, 1271s
+r4: 24/540 games, 32s
+r4: 48/540 games, 100s
+r4: 72/540 games, 126s
+r4: 96/540 games, 176s
+r4: 120/540 games, 211s
+r4: 144/540 games, 287s
+r4: 168/540 games, 310s
+r4: 192/540 games, 355s
+r4: 216/540 games, 401s
+r4: 240/540 games, 435s
+r4: 264/540 games, 494s
+r4: 288/540 games, 533s
+r4: 312/540 games, 556s
+r4: 336/540 games, 587s
+r4: 360/540 games, 611s
+r4: 384/540 games, 660s
+r4: 408/540 games, 757s
+r4: 432/540 games, 805s
+r4: 456/540 games, 915s
+r4: 480/540 games, 1002s
+r4: 504/540 games, 1127s
+r4: 528/540 games, 1171s
+r4: 540/540 games, 1256s
+r4eq: 24/540 games, 28s
+r4eq: 48/540 games, 89s
+r4eq: 72/540 games, 120s
+r4eq: 96/540 games, 171s
+r4eq: 120/540 games, 209s
+r4eq: 144/540 games, 274s
+r4eq: 168/540 games, 294s
+r4eq: 192/540 games, 338s
+r4eq: 216/540 games, 378s
+r4eq: 240/540 games, 413s
+r4eq: 264/540 games, 466s
+r4eq: 288/540 games, 503s
+r4eq: 312/540 games, 525s
+r4eq: 336/540 games, 547s
+r4eq: 360/540 games, 572s
+r4eq: 384/540 games, 616s
+r4eq: 408/540 games, 700s
+r4eq: 432/540 games, 749s
+r4eq: 456/540 games, 858s
+r4eq: 480/540 games, 932s
+r4eq: 504/540 games, 1068s
+r4eq: 528/540 games, 1114s
+r4eq: 540/540 games, 1191s
+r4lo: 24/540 games, 26s
+r4lo: 48/540 games, 94s
+r4lo: 72/540 games, 119s
+r4lo: 96/540 games, 161s
+r4lo: 120/540 games, 204s
+r4lo: 144/540 games, 270s
+r4lo: 168/540 games, 291s
+r4lo: 192/540 games, 339s
+r4lo: 216/540 games, 380s
+r4lo: 240/540 games, 417s
+r4lo: 264/540 games, 478s
+r4lo: 288/540 games, 513s
+r4lo: 312/540 games, 534s
+r4lo: 336/540 games, 559s
+r4lo: 360/540 games, 586s
+r4lo: 384/540 games, 635s
+r4lo: 408/540 games, 726s
+r4lo: 432/540 games, 776s
+r4lo: 456/540 games, 882s
+r4lo: 480/540 games, 974s
+r4lo: 504/540 games, 1092s
+r4lo: 528/540 games, 1138s
+r4lo: 540/540 games, 1218s
+# Ablation report: 20260930-182348-ablate-81c0bb
+
+3 seeds, opponents cpp_nicked_v92, cpp_nicked_v75, cpp_leviathan3, v7-base-bot, nicked_v44, nicked_lab; 11 official + 4 extra maps, both sides. Objective: aligned. Delta = variant score minus base score on the same (opponent, map, seed, side); positive means removing the group helped. 95% CI resamples (map, seed) blocks.
+
+base: mean margin +0.198, wins 347/540; by opponent: cpp_nicked_v92 -0.314, cpp_nicked_v75 +0.045, cpp_leviathan3 +0.525, v7-base-bot +0.471, nicked_v44 +0.423, nicked_lab +0.040
+
+| variant | current pool delta [95% CI] | pool verdict | other maps | delta all 15 [95% CI] | verdict | vs cpp_nicked_v92 | vs cpp_nicked_v75 | vs cpp_leviathan3 | vs v7-base-bot | vs nicked_v44 | vs nicked_lab | official | extra | wins |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| r4 | -0.044 [-0.149, +0.060] | neutral | +0.021 | -0.022 [-0.113, +0.069] | neutral | -0.043 | -0.041 | -0.006 | -0.102 | -0.032 | +0.091 | -0.006 | -0.067 | 333/540 |
+| r4eq | -0.053 [-0.148, +0.036] | neutral | -0.068 | -0.058 [-0.156, +0.037] | neutral | -0.038 | -0.141 | -0.087 | -0.092 | -0.072 | +0.080 | -0.050 | -0.083 | 326/540 |
+| r4lo | -0.175 [-0.283, -0.078] | essential | -0.173 | -0.174 [-0.287, -0.076] | essential | -0.160 | -0.326 | -0.131 | -0.227 | -0.134 | -0.069 | -0.188 | -0.136 | 291/540 |
+
+Noise: seed-to-seed SD of base's margin within a (opponent, map, side) cell 0.606 over 180 cells. Expected paired CI half-width with K seeds, 1.96 * sqrt(2 * 0.606^2 / (180 * K)): K=2: 0.089, K=3: 0.072, K=4: 0.063, K=6: 0.051, K=8: 0.044
+

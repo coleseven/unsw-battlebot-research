@@ -1,0 +1,298 @@
+{
+  "games": [
+    {
+      "map": "default_afc3707a967881d6",
+      "bot_a": "portal_memory",
+      "bot_b": "reference_v2",
+      "seed": 21000,
+      "winner": "A",
+      "reason": "length",
+      "rounds": 500,
+      "a_dragons": 21,
+      "b_dragons": 10,
+      "a_length": 70,
+      "b_length": 27,
+      "a_longest": 10,
+      "b_longest": 5,
+      "deaths": {
+        "B:O": 7,
+        "A:H": 31,
+        "B:W": 3,
+        "A:W": 37,
+        "B:H": 11,
+        "A:O": 15
+      },
+      "seconds": 14.81049739998707,
+      "error": null,
+      "hash_a": "8ae8a538410a4be2",
+      "hash_b": "9f29ab4138b51d26",
+      "block": [
+        "reference_v2",
+        "default_afc3707a967881d6",
+        21000
+      ],
+      "replay": "results\\20260923-140427-navigation-6e47f4\\validation\\replays\\portal_memory-vs-reference_v2-default_afc3707a967881d6-s21000.replay",
+      "worker": {
+        "pid": 12472,
+        "rss_bytes": 67252224
+      }
+    },
+    {
+      "map": "default_afc3707a967881d6",
+      "bot_a": "reference_v2",
+      "bot_b": "portal_memory",
+      "seed": 21000,
+      "winner": "B",
+      "reason": "length",
+      "rounds": 500,
+      "a_dragons": 10,
+      "b_dragons": 16,
+      "a_length": 23,
+      "b_length": 69,
+      "a_longest": 3,
+      "b_longest": 10,
+      "deaths": {
+        "A:H": 15,
+        "A:W": 3,
+        "B:O": 16,
+        "B:W": 55,
+        "B:H": 43,
+        "A:O": 2
+      },
+      "seconds": 15.482420299988007,
+      "error": null,
+      "hash_a": "9f29ab4138b51d26",
+      "hash_b": "8ae8a538410a4be2",
+      "block": [
+        "reference_v2",
+        "default_afc3707a967881d6",
+        21000
+      ],
+      "replay": "results\\20260923-140427-navigation-6e47f4\\validation\\replays\\reference_v2-vs-portal_memory-default_afc3707a967881d6-s21000.replay",
+      "worker": {
+        "pid": 13956,
+        "rss_bytes": 67416064
+      }
+    },
+    {
+      "map": "queen_of_spades_6cdb74a7a52d715a",
+      "bot_a": "reference_v2",
+      "bot_b": "portal_memory",
+      "seed": 21000,
+      "winner": "A",
+      "reason": "elimination",
+      "rounds": 471,
+      "a_dragons": 9,
+      "b_dragons": 0,
+      "a_length": 35,
+      "b_length": 0,
+      "a_longest": 11,
+      "b_longest": 0,
+      "deaths": {
+        "B:O": 24,
+        "B:W": 110,
+        "B:H": 31,
+        "A:W": 8,
+        "A:H": 11,
+        "A:O": 2,
+        "A:S": 1
+      },
+      "seconds": 3.127640699996846,
+      "error": null,
+      "hash_a": "9f29ab4138b51d26",
+      "hash_b": "8ae8a538410a4be2",
+      "block": [
+        "reference_v2",
+        "queen_of_spades_6cdb74a7a52d715a",
+        21000
+      ],
+      "replay": "results\\20260923-140427-navigation-6e47f4\\validation\\replays\\reference_v2-vs-portal_memory-queen_of_spades_6cdb74a7a52d715a-s21000.replay",
+      "worker": {
+        "pid": 9392,
+        "rss_bytes": 97374208
+      }
+    },
+    {
+      "map": "queen_of_spades_6cdb74a7a52d715a",
+      "bot_a": "portal_memory",
+      "bot_b": "reference_v2",
+      "seed": 21000,
+      "winner": "B",
+      "reason": "length",
+      "rounds": 500,
+      "a_dragons": 2,
+      "b_dragons": 6,
+      "a_length": 5,
+      "b_length": 26,
+      "a_longest": 3,
+      "b_longest": 9,
+      "deaths": {
+        "A:W": 68,
+        "A:O": 14,
+        "B:O": 3,
+        "A:H": 30,
+        "B:W": 17,
+        "B:H": 4,
+        "A:S": 2
+      },
+      "seconds": 4.121742599993013,
+      "error": null,
+      "hash_a": "8ae8a538410a4be2",
+      "hash_b": "9f29ab4138b51d26",
+      "block": [
+        "reference_v2",
+        "queen_of_spades_6cdb74a7a52d715a",
+        21000
+      ],
+      "replay": "results\\20260923-140427-navigation-6e47f4\\validation\\replays\\portal_memory-vs-reference_v2-queen_of_spades_6cdb74a7a52d715a-s21000.replay",
+      "worker": {
+        "pid": 3016,
+        "rss_bytes": 102383616
+      }
+    },
+    {
+      "map": "default_afc3707a967881d6",
+      "bot_a": "portal_memory",
+      "bot_b": "hunter",
+      "seed": 21000,
+      "winner": "A",
+      "reason": "length",
+      "rounds": 500,
+      "a_dragons": 23,
+      "b_dragons": 2,
+      "a_length": 89,
+      "b_length": 8,
+      "a_longest": 10,
+      "b_longest": 5,
+      "deaths": {
+        "A:W": 59,
+        "A:O": 13,
+        "A:H": 46,
+        "B:H": 2
+      },
+      "seconds": 10.377010600001086,
+      "error": null,
+      "hash_a": "8ae8a538410a4be2",
+      "hash_b": "8622139a1a3d64a8",
+      "block": [
+        "hunter",
+        "default_afc3707a967881d6",
+        21000
+      ],
+      "replay": "results\\20260923-140427-navigation-6e47f4\\validation\\replays\\portal_memory-vs-hunter-default_afc3707a967881d6-s21000.replay",
+      "worker": {
+        "pid": 16544,
+        "rss_bytes": 64782336
+      }
+    },
+    {
+      "map": "default_afc3707a967881d6",
+      "bot_a": "hunter",
+      "bot_b": "portal_memory",
+      "seed": 21000,
+      "winner": "B",
+      "reason": "length",
+      "rounds": 500,
+      "a_dragons": 1,
+      "b_dragons": 24,
+      "a_length": 4,
+      "b_length": 78,
+      "a_longest": 4,
+      "b_longest": 7,
+      "deaths": {
+        "B:O": 21,
+        "B:W": 30,
+        "B:H": 58,
+        "A:S": 1,
+        "A:H": 2
+      },
+      "seconds": 10.724063699992257,
+      "error": null,
+      "hash_a": "8622139a1a3d64a8",
+      "hash_b": "8ae8a538410a4be2",
+      "block": [
+        "hunter",
+        "default_afc3707a967881d6",
+        21000
+      ],
+      "replay": "results\\20260923-140427-navigation-6e47f4\\validation\\replays\\hunter-vs-portal_memory-default_afc3707a967881d6-s21000.replay",
+      "worker": {
+        "pid": 23208,
+        "rss_bytes": 64290816
+      }
+    },
+    {
+      "map": "queen_of_spades_6cdb74a7a52d715a",
+      "bot_a": "portal_memory",
+      "bot_b": "hunter",
+      "seed": 21000,
+      "winner": "A",
+      "reason": "elimination",
+      "rounds": 319,
+      "a_dragons": 15,
+      "b_dragons": 0,
+      "a_length": 33,
+      "b_length": 0,
+      "a_longest": 3,
+      "b_longest": 0,
+      "deaths": {
+        "A:W": 63,
+        "A:H": 26,
+        "A:O": 9,
+        "B:W": 1,
+        "B:S": 1
+      },
+      "seconds": 1.8242109999991953,
+      "error": null,
+      "hash_a": "8ae8a538410a4be2",
+      "hash_b": "8622139a1a3d64a8",
+      "block": [
+        "hunter",
+        "queen_of_spades_6cdb74a7a52d715a",
+        21000
+      ],
+      "replay": "results\\20260923-140427-navigation-6e47f4\\validation\\replays\\portal_memory-vs-hunter-queen_of_spades_6cdb74a7a52d715a-s21000.replay",
+      "worker": {
+        "pid": 21280,
+        "rss_bytes": 88223744
+      }
+    },
+    {
+      "map": "queen_of_spades_6cdb74a7a52d715a",
+      "bot_a": "hunter",
+      "bot_b": "portal_memory",
+      "seed": 21000,
+      "winner": "A",
+      "reason": "length",
+      "rounds": 500,
+      "a_dragons": 1,
+      "b_dragons": 5,
+      "a_length": 18,
+      "b_length": 16,
+      "a_longest": 18,
+      "b_longest": 5,
+      "deaths": {
+        "B:H": 50,
+        "B:W": 121,
+        "A:W": 1,
+        "B:O": 13,
+        "B:S": 1
+      },
+      "seconds": 3.7214341000071727,
+      "error": null,
+      "hash_a": "8622139a1a3d64a8",
+      "hash_b": "8ae8a538410a4be2",
+      "block": [
+        "hunter",
+        "queen_of_spades_6cdb74a7a52d715a",
+        21000
+      ],
+      "replay": "results\\20260923-140427-navigation-6e47f4\\validation\\replays\\hunter-vs-portal_memory-queen_of_spades_6cdb74a7a52d715a-s21000.replay",
+      "worker": {
+        "pid": 16544,
+        "rss_bytes": 90808320
+      }
+    }
+  ],
+  "limits": "Post-hoc eight-game case study, chosen from best/worst maps; not representative or causal, not tuning data."
+}

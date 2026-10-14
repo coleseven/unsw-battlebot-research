@@ -1,0 +1,50 @@
+{
+  "question": "Does a fixed late-game split cutoff outperform perpetual splitting?",
+  "cutoffs": [
+    null,
+    200,
+    300,
+    400,
+    450
+  ],
+  "semantics": "split only while observed round < cutoff; None = perpetual",
+  "population_cap": 64,
+  "split_threshold": 8,
+  "movement": "unchanged mybot snapshot",
+  "baseline_hash": "ffe736af6c14ea33",
+  "screen_maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-171805-endgame-b67e3b\\maps\\Devil_1b2147f4a8a775d2.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-171805-endgame-b67e3b\\maps\\Colosseum_3042ccc262f0211a.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-171805-endgame-b67e3b\\maps\\big_empty_685baf0e797207b7.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-171805-endgame-b67e3b\\maps\\queen_of_spades_6cdb74a7a52d715a.map"
+  ],
+  "screen_seeds": [
+    2000,
+    2001
+  ],
+  "holdout_maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-171805-endgame-b67e3b\\maps\\arena_728547b8376892d9.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-171805-endgame-b67e3b\\maps\\schooltime_8be7eda86910a849.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-171805-endgame-b67e3b\\maps\\default_afc3707a967881d6.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-171805-endgame-b67e3b\\maps\\default_small_f98ab391cccf33b1.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-171805-endgame-b67e3b\\maps\\trophy_fd985019831fe135.map"
+  ],
+  "holdout_seeds": [
+    3000,
+    3001,
+    3002,
+    3003
+  ],
+  "selection": "highest screen score among finite cutoffs; exact ties prefer later cutoff",
+  "success_gate": "held-out paired map-cluster delta lower bound > 0 AND splitter score CI lower bound > 0.5",
+  "control": "perpetual",
+  "opponents": [
+    "v1",
+    "splitter",
+    "hunter"
+  ],
+  "runner_hash": "47944afc1eca2636",
+  "template_hash": "4bf248c618d94cf9",
+  "map_identity_hash": "01de427666f7dc60",
+  "limits": "five validation maps, familiar from previous experiment; only cutoff selection is held out; scripted opponents, bot-RNG seeds, in-process without judge CPU metering"
+}

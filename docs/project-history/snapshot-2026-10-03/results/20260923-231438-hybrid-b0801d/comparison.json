@@ -1,0 +1,56 @@
+{
+  "mature": {
+    "direct": {
+      "wins": 92,
+      "draws": 0,
+      "losses": 84,
+      "score": 0.5227272727272727,
+      "map_ci95": [
+        0.5,
+        0.5681818181818182
+      ]
+    },
+    "paired_pool": {
+      "difference": 0.013257575757575758,
+      "map_cluster_ci95": [
+        0.0,
+        0.03977272727272727
+      ],
+      "paired_block_ci95": [
+        0.0,
+        0.026515151515151516
+      ],
+      "maps": 11,
+      "blocks": 264,
+      "matched_games": 528
+    },
+    "performance_gate": false
+  },
+  "linear": {
+    "direct": {
+      "wins": 126,
+      "draws": 0,
+      "losses": 50,
+      "score": 0.7159090909090909,
+      "map_ci95": [
+        0.5738636363636364,
+        0.8352272727272727
+      ]
+    },
+    "paired_pool": {
+      "difference": 0.09848484848484848,
+      "map_cluster_ci95": [
+        0.043560606060606064,
+        0.14204545454545456
+      ],
+      "paired_block_ci95": [
+        0.06628787878787878,
+        0.13257575757575757
+      ],
+      "maps": 11,
+      "blocks": 264,
+      "matched_games": 528
+    },
+    "performance_gate": true
+  }
+}

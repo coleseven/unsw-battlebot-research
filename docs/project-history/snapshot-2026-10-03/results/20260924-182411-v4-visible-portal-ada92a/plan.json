@@ -1,0 +1,42 @@
+{
+  "question": "Can visible-empty portal exits avoid the unknown-exit losses while adding useful escapes?",
+  "baseline_hash": "bf33497158a49a7b",
+  "v3_hash": "69382825b699723d",
+  "live_hash": "ffe736af6c14ea33",
+  "bot_hashes": {
+    "additive": "bf33497158a49a7b",
+    "reference_v3": "69382825b699723d",
+    "visible_portal": "1908cee70f460d5e"
+  },
+  "official_maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-182411-v4-visible-portal-ada92a\\maps\\Colosseum.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-182411-v4-visible-portal-ada92a\\maps\\default.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-182411-v4-visible-portal-ada92a\\maps\\queen_of_spades.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-182411-v4-visible-portal-ada92a\\maps\\schooltime.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-182411-v4-visible-portal-ada92a\\maps\\trophy.map"
+  ],
+  "stress_map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-182411-v4-visible-portal-ada92a\\maps\\new_dense_small.map",
+  "map_hashes": {
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-182411-v4-visible-portal-ada92a\\maps\\Colosseum.map": "c7549a41ea26600f",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-182411-v4-visible-portal-ada92a\\maps\\default.map": "6bd7abf2ed51a7f6",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-182411-v4-visible-portal-ada92a\\maps\\queen_of_spades.map": "126d71b464432685",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-182411-v4-visible-portal-ada92a\\maps\\schooltime.map": "726c404f3b34b4ed",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-182411-v4-visible-portal-ada92a\\maps\\trophy.map": "5f1f6b23d6edb944",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-182411-v4-visible-portal-ada92a\\maps\\new_dense_small.map": "e762523300cb77a6"
+  },
+  "seed": 44006,
+  "workers": 1,
+  "official_games": 20,
+  "stress_games": 2,
+  "selection": "One fixed visible-only candidate. Require nonnegative paired official score, actual confirmed portal use, no errors; even passing is exploratory until judge sandbox and broader maps. No automatic upload.",
+  "limits": "Official maps familiar; one new seed and one synthetic stress map. Only redirects, not forced baseline portal fallbacks, are visible-only.",
+  "source_hashes": {
+    "experiments\\v4\\additive_visible_portal_brain.py": "c8e150e07bdbf069",
+    "framework\\portal_escape.py": "24bf10d4e766df94",
+    "framework\\portal_visible.py": "5fd72dba6dc0d3a9",
+    "bcsim\\v4_visible_portal.py": "e79e279ed59bd1a9",
+    "bcsim\\match.py": "d546d7f5532b71f6",
+    "bcsim\\guarded.py": "87ac3dd271b72d9a",
+    "bcsim\\bounded.py": "c60b1fa2106c485f"
+  }
+}

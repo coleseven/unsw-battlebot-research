@@ -1,0 +1,243 @@
+{
+  "bot": "candidate",
+  "opponent": "nicked",
+  "games": 22,
+  "mean_margin": 0.09562520424494016,
+  "worst_map_margin": -0.6493304735178785,
+  "F": -0.06670741413452948,
+  "map_margin": {
+    "arena": 0.8175428979999332,
+    "big_empty": 0.10317555328175983,
+    "Colosseum": 0.8544020815809124,
+    "default": -0.13935851705507468,
+    "default_small": -0.06927334028827117,
+    "Devil": 0.34252542896649474,
+    "queen_of_spades": -0.6493304735178785,
+    "schooltime": 0.4154389016637508,
+    "stronghold": -0.18551256759194118,
+    "Trauma": -0.4889178715260549,
+    "trophy": 0.051185153180711436
+  },
+  "games_detail": [
+    {
+      "map": "arena",
+      "side": "A",
+      "margin": 0.8214292709996543,
+      "final_share": 1.0,
+      "final_longest_gap": 4,
+      "elimination_round": 194,
+      "outcome": "win",
+      "samples": 50
+    },
+    {
+      "map": "arena",
+      "side": "B",
+      "margin": 0.813656525000212,
+      "final_share": 1.0,
+      "final_longest_gap": 4,
+      "elimination_round": 253,
+      "outcome": "win",
+      "samples": 50
+    },
+    {
+      "map": "big_empty",
+      "side": "A",
+      "margin": 0.11371709409166085,
+      "final_share": 0.052564914502849905,
+      "final_longest_gap": 1,
+      "elimination_round": null,
+      "outcome": "win",
+      "samples": 50
+    },
+    {
+      "map": "big_empty",
+      "side": "B",
+      "margin": 0.0926340124718588,
+      "final_share": 0.051735428945645055,
+      "final_longest_gap": 2,
+      "elimination_round": null,
+      "outcome": "win",
+      "samples": 50
+    },
+    {
+      "map": "Colosseum",
+      "side": "A",
+      "margin": 0.8715585654447341,
+      "final_share": 1.0,
+      "final_longest_gap": 3,
+      "elimination_round": 177,
+      "outcome": "win",
+      "samples": 50
+    },
+    {
+      "map": "Colosseum",
+      "side": "B",
+      "margin": 0.8372455977170907,
+      "final_share": 1.0,
+      "final_longest_gap": 4,
+      "elimination_round": 175,
+      "outcome": "win",
+      "samples": 50
+    },
+    {
+      "map": "default",
+      "side": "A",
+      "margin": -0.3654088678003425,
+      "final_share": -0.5364806866952789,
+      "final_longest_gap": -9,
+      "elimination_round": null,
+      "outcome": "loss",
+      "samples": 50
+    },
+    {
+      "map": "default",
+      "side": "B",
+      "margin": 0.08669183369019312,
+      "final_share": -0.18454935622317598,
+      "final_longest_gap": -2,
+      "elimination_round": null,
+      "outcome": "loss",
+      "samples": 50
+    },
+    {
+      "map": "default_small",
+      "side": "A",
+      "margin": -0.38455100465666897,
+      "final_share": -0.7272727272727273,
+      "final_longest_gap": -6,
+      "elimination_round": null,
+      "outcome": "loss",
+      "samples": 50
+    },
+    {
+      "map": "default_small",
+      "side": "B",
+      "margin": 0.24600432408012662,
+      "final_share": 0.7831325301204819,
+      "final_longest_gap": 9,
+      "elimination_round": null,
+      "outcome": "win",
+      "samples": 50
+    },
+    {
+      "map": "Devil",
+      "side": "A",
+      "margin": 0.10044076395724343,
+      "final_share": 0.20754716981132076,
+      "final_longest_gap": 2,
+      "elimination_round": null,
+      "outcome": "win",
+      "samples": 50
+    },
+    {
+      "map": "Devil",
+      "side": "B",
+      "margin": 0.584610093975746,
+      "final_share": 0.5478260869565217,
+      "final_longest_gap": 15,
+      "elimination_round": null,
+      "outcome": "win",
+      "samples": 50
+    },
+    {
+      "map": "queen_of_spades",
+      "side": "A",
+      "margin": -0.5563487440265779,
+      "final_share": -0.9178082191780822,
+      "final_longest_gap": -7,
+      "elimination_round": null,
+      "outcome": "loss",
+      "samples": 50
+    },
+    {
+      "map": "queen_of_spades",
+      "side": "B",
+      "margin": -0.7423122030091792,
+      "final_share": -0.9577464788732394,
+      "final_longest_gap": -8,
+      "elimination_round": null,
+      "outcome": "loss",
+      "samples": 50
+    },
+    {
+      "map": "schooltime",
+      "side": "A",
+      "margin": 0.5319590051565721,
+      "final_share": 0.5172413793103449,
+      "final_longest_gap": 26,
+      "elimination_round": null,
+      "outcome": "win",
+      "samples": 50
+    },
+    {
+      "map": "schooltime",
+      "side": "B",
+      "margin": 0.2989187981709295,
+      "final_share": 0.12099644128113879,
+      "final_longest_gap": 17,
+      "elimination_round": null,
+      "outcome": "win",
+      "samples": 50
+    },
+    {
+      "map": "stronghold",
+      "side": "A",
+      "margin": -0.21310766039483564,
+      "final_share": -0.38164251207729466,
+      "final_longest_gap": -5,
+      "elimination_round": null,
+      "outcome": "loss",
+      "samples": 50
+    },
+    {
+      "map": "stronghold",
+      "side": "B",
+      "margin": -0.15791747478904672,
+      "final_share": -0.4152542372881356,
+      "final_longest_gap": -10,
+      "elimination_round": null,
+      "outcome": "loss",
+      "samples": 50
+    },
+    {
+      "map": "Trauma",
+      "side": "A",
+      "margin": -0.37387750713662044,
+      "final_share": -0.5114503816793893,
+      "final_longest_gap": -5,
+      "elimination_round": null,
+      "outcome": "loss",
+      "samples": 50
+    },
+    {
+      "map": "Trauma",
+      "side": "B",
+      "margin": -0.6039582359154894,
+      "final_share": -0.6416184971098265,
+      "final_longest_gap": -10,
+      "elimination_round": null,
+      "outcome": "loss",
+      "samples": 50
+    },
+    {
+      "map": "trophy",
+      "side": "A",
+      "margin": 0.15876129898287292,
+      "final_share": -0.07446808510638298,
+      "final_longest_gap": 14,
+      "elimination_round": null,
+      "outcome": "win",
+      "samples": 50
+    },
+    {
+      "map": "trophy",
+      "side": "B",
+      "margin": -0.056390992621450045,
+      "final_share": 0.08056872037914692,
+      "final_longest_gap": 0,
+      "elimination_round": null,
+      "outcome": "win",
+      "samples": 50
+    }
+  ]
+}

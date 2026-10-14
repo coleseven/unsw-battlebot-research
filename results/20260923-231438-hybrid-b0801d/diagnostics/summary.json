@@ -1,0 +1,237 @@
+{
+  "outcomes": {
+    "control_450": {
+      "overall": {
+        "losses": 135,
+        "loss_elimination": 10,
+        "wins": 393,
+        "loss_length": 125
+      },
+      "Colosseum_3042ccc262f0211a": {
+        "losses": 8,
+        "loss_length": 8,
+        "wins": 40
+      },
+      "Devil_1b2147f4a8a775d2": {
+        "losses": 8,
+        "loss_elimination": 1,
+        "wins": 40,
+        "loss_length": 7
+      },
+      "Trauma_d014b28abbd1abb0": {
+        "wins": 9,
+        "losses": 39,
+        "loss_length": 39
+      },
+      "arena_728547b8376892d9": {
+        "losses": 8,
+        "loss_elimination": 7,
+        "wins": 40,
+        "loss_length": 1
+      },
+      "big_empty_685baf0e797207b7": {
+        "losses": 13,
+        "loss_length": 13,
+        "wins": 35
+      },
+      "default_afc3707a967881d6": {
+        "wins": 40,
+        "losses": 8,
+        "loss_length": 8
+      },
+      "default_small_f98ab391cccf33b1": {
+        "wins": 40,
+        "losses": 8,
+        "loss_length": 8
+      },
+      "queen_of_spades_6cdb74a7a52d715a": {
+        "wins": 33,
+        "losses": 15,
+        "loss_length": 13,
+        "loss_elimination": 2
+      },
+      "schooltime_8be7eda86910a849": {
+        "wins": 40,
+        "losses": 8,
+        "loss_length": 8
+      },
+      "stronghold_fb60e37176a8d1d3": {
+        "losses": 12,
+        "loss_length": 12,
+        "wins": 36
+      },
+      "trophy_fd985019831fe135": {
+        "losses": 8,
+        "loss_length": 8,
+        "wins": 40
+      }
+    },
+    "mature": {
+      "overall": {
+        "wins": 400,
+        "losses": 128,
+        "loss_elimination": 10,
+        "loss_length": 118
+      },
+      "Colosseum_3042ccc262f0211a": {
+        "losses": 8,
+        "loss_length": 8,
+        "wins": 40
+      },
+      "Devil_1b2147f4a8a775d2": {
+        "losses": 8,
+        "loss_elimination": 1,
+        "wins": 40,
+        "loss_length": 7
+      },
+      "Trauma_d014b28abbd1abb0": {
+        "wins": 9,
+        "losses": 39,
+        "loss_length": 39
+      },
+      "arena_728547b8376892d9": {
+        "wins": 40,
+        "losses": 8,
+        "loss_elimination": 7,
+        "loss_length": 1
+      },
+      "big_empty_685baf0e797207b7": {
+        "wins": 42,
+        "losses": 6,
+        "loss_length": 6
+      },
+      "default_afc3707a967881d6": {
+        "losses": 8,
+        "loss_length": 8,
+        "wins": 40
+      },
+      "default_small_f98ab391cccf33b1": {
+        "losses": 8,
+        "loss_length": 8,
+        "wins": 40
+      },
+      "queen_of_spades_6cdb74a7a52d715a": {
+        "wins": 33,
+        "losses": 15,
+        "loss_length": 13,
+        "loss_elimination": 2
+      },
+      "schooltime_8be7eda86910a849": {
+        "wins": 40,
+        "losses": 8,
+        "loss_length": 8
+      },
+      "stronghold_fb60e37176a8d1d3": {
+        "losses": 12,
+        "loss_length": 12,
+        "wins": 36
+      },
+      "trophy_fd985019831fe135": {
+        "wins": 40,
+        "losses": 8,
+        "loss_length": 8
+      }
+    },
+    "linear": {
+      "overall": {
+        "losses": 83,
+        "loss_elimination": 3,
+        "wins": 445,
+        "loss_length": 80
+      },
+      "Colosseum_3042ccc262f0211a": {
+        "wins": 45,
+        "losses": 3,
+        "loss_length": 3
+      },
+      "Devil_1b2147f4a8a775d2": {
+        "wins": 46,
+        "losses": 2,
+        "loss_length": 2
+      },
+      "Trauma_d014b28abbd1abb0": {
+        "losses": 33,
+        "loss_length": 33,
+        "wins": 15
+      },
+      "arena_728547b8376892d9": {
+        "losses": 3,
+        "loss_elimination": 3,
+        "wins": 45
+      },
+      "big_empty_685baf0e797207b7": {
+        "wins": 46,
+        "losses": 2,
+        "loss_length": 2
+      },
+      "default_afc3707a967881d6": {
+        "losses": 13,
+        "loss_length": 13,
+        "wins": 35
+      },
+      "default_small_f98ab391cccf33b1": {
+        "wins": 43,
+        "losses": 5,
+        "loss_length": 5
+      },
+      "queen_of_spades_6cdb74a7a52d715a": {
+        "losses": 6,
+        "loss_length": 6,
+        "wins": 42
+      },
+      "schooltime_8be7eda86910a849": {
+        "wins": 45,
+        "losses": 3,
+        "loss_length": 3
+      },
+      "stronghold_fb60e37176a8d1d3": {
+        "losses": 12,
+        "loss_length": 12,
+        "wins": 36
+      },
+      "trophy_fd985019831fe135": {
+        "losses": 1,
+        "loss_length": 1,
+        "wins": 47
+      }
+    }
+  },
+  "collision_sample": {
+    "control_450": {
+      "games": 22,
+      "actions": 200254,
+      "splits": 4092,
+      "deaths_O": 836,
+      "deaths_H": 1846,
+      "enemy_head_deaths": 394,
+      "deaths_W": 1178,
+      "friendly_head_deaths": 1452,
+      "deaths_S": 38,
+      "friendly_head_deaths_per_1000_actions": 7.250791494801602
+    },
+    "mature": {
+      "games": 22,
+      "actions": 200113,
+      "splits": 4072,
+      "deaths_O": 834,
+      "deaths_H": 1824,
+      "enemy_head_deaths": 388,
+      "deaths_W": 1178,
+      "friendly_head_deaths": 1436,
+      "deaths_S": 41,
+      "friendly_head_deaths_per_1000_actions": 7.1759455907412315
+    },
+    "linear": {
+      "games": 22,
+      "actions": 313083,
+      "splits": 4936,
+      "deaths_O": 1005,
+      "deaths_H": 2045,
+      "enemy_head_deaths": 401,
+      "friendly_head_deaths": 1644,
+      "deaths_W": 1325,
+      "deaths_S": 53,
+      "friendly_head_deaths_per_1000_actions": 5.251003727446077
+    }
+  }
+}

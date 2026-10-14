@@ -1,0 +1,65 @@
+{
+  "time": "2026-09-22 17:41:04",
+  "git": "8e1000d+dirty",
+  "python": "3.14.2",
+  "unswbc": "0.3.10",
+  "engine": "5412052f33ddb160",
+  "bots": {
+    "control_450": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-173739-movement-659d1f\\bots\\control_450",
+      "hash": "2e0e1867b6cf7cda"
+    },
+    "trap": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-173739-movement-659d1f\\bots\\trap",
+      "hash": "b76c7b9c943a1d5d"
+    },
+    "sprint": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-173739-movement-659d1f\\bots\\sprint",
+      "hash": "f503f1c32975c93b"
+    },
+    "reference_450": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-173739-movement-659d1f\\bots\\reference_450",
+      "hash": "2e0e1867b6cf7cda"
+    },
+    "splitter": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-173739-movement-659d1f\\bots\\splitter",
+      "hash": "c50e10c521282fec"
+    },
+    "hunter": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-173739-movement-659d1f\\bots\\hunter",
+      "hash": "8622139a1a3d64a8"
+    }
+  },
+  "maps": {
+    "arena_728547b8376892d9": {
+      "file": "b4bab09603289c2d",
+      "signature": "728547b8376892d9"
+    },
+    "schooltime_8be7eda86910a849": {
+      "file": "726c404f3b34b4ed",
+      "signature": "8be7eda86910a849"
+    },
+    "default_afc3707a967881d6": {
+      "file": "6bd7abf2ed51a7f6",
+      "signature": "afc3707a967881d6"
+    },
+    "default_small_f98ab391cccf33b1": {
+      "file": "8ac4b2eedcf19f85",
+      "signature": "f98ab391cccf33b1"
+    },
+    "trophy_fd985019831fe135": {
+      "file": "5f1f6b23d6edb944",
+      "signature": "fd985019831fe135"
+    }
+  },
+  "settings": {
+    "seeds": [
+      5000,
+      5001,
+      5002,
+      5003
+    ],
+    "workers": 4,
+    "stage": "holdout"
+  }
+}

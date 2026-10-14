@@ -1,0 +1,88 @@
+base: 24/360 games, 59s
+base: 48/360 games, 99s
+base: 72/360 games, 163s
+base: 96/360 games, 208s
+base: 120/360 games, 261s
+base: 144/360 games, 310s
+base: 168/360 games, 354s
+base: 192/360 games, 387s
+base: 216/360 games, 418s
+base: 240/360 games, 450s
+base: 264/360 games, 523s
+base: 288/360 games, 593s
+base: 312/360 games, 724s
+base: 336/360 games, 804s
+base: 360/360 games, 962s
+q_on: 24/360 games, 54s
+q_on: 48/360 games, 85s
+q_on: 72/360 games, 143s
+q_on: 96/360 games, 187s
+q_on: 120/360 games, 236s
+q_on: 144/360 games, 289s
+q_on: 168/360 games, 340s
+q_on: 192/360 games, 377s
+q_on: 216/360 games, 408s
+q_on: 240/360 games, 447s
+q_on: 264/360 games, 537s
+q_on: 288/360 games, 600s
+q_on: 312/360 games, 694s
+guard: waiting for running experiment 'base' (pid 34640)
+q_on: 24/360 games, 51s
+q_on: 48/360 games, 83s
+q_on: 72/360 games, 141s
+q_on: 96/360 games, 188s
+q_on: 120/360 games, 238s
+q_on: 144/360 games, 286s
+q_on: 168/360 games, 337s
+q_on: 192/360 games, 371s
+q_on: 216/360 games, 400s
+q_on: 240/360 games, 437s
+q_on: 264/360 games, 521s
+q_on: 288/360 games, 584s
+q_on: 312/360 games, 685s
+q_on: 336/360 games, 757s
+q_on: 360/360 games, 912s
+q_nosplit: 24/360 games, 56s
+q_nosplit: 48/360 games, 101s
+q_nosplit: 72/360 games, 154s
+q_nosplit: 96/360 games, 203s
+q_nosplit: 120/360 games, 267s
+q_nosplit: 144/360 games, 312s
+q_nosplit: 168/360 games, 367s
+q_nosplit: 192/360 games, 405s
+q_nosplit: 216/360 games, 433s
+q_nosplit: 240/360 games, 474s
+q_nosplit: 264/360 games, 548s
+q_nosplit: 288/360 games, 616s
+q_nosplit: 312/360 games, 727s
+q_nosplit: 336/360 games, 788s
+q_nosplit: 360/360 games, 948s
+q_late: 24/360 games, 44s
+q_late: 48/360 games, 91s
+q_late: 72/360 games, 133s
+q_late: 96/360 games, 173s
+q_late: 120/360 games, 226s
+q_late: 144/360 games, 269s
+q_late: 168/360 games, 318s
+q_late: 192/360 games, 354s
+q_late: 216/360 games, 381s
+q_late: 240/360 games, 415s
+q_late: 264/360 games, 499s
+q_late: 288/360 games, 564s
+q_late: 312/360 games, 667s
+q_late: 336/360 games, 736s
+q_late: 360/360 games, 883s
+# Ablation report: 20261001-203651-ablate-9c6006
+
+2 seeds, opponents cpp_nicked_v92, cpp_nicked_v75, cpp_leviathan3, v7-base-bot, nicked_v44, nicked_lab; 11 official + 4 extra maps, both sides. Objective: wins. Delta = variant score minus base score on the same (opponent, map, seed, side); positive means removing the group helped. 95% CI resamples (map, seed) blocks.
+
+base: mean margin +0.111, wins 200/360; by opponent: cpp_nicked_v92 -0.667, cpp_nicked_v75 -0.067, cpp_leviathan3 +0.700, v7-base-bot +0.233, nicked_v44 +0.367, nicked_lab +0.100
+
+| variant | current pool delta [95% CI] | pool verdict | other maps | delta all 15 [95% CI] | verdict | vs cpp_nicked_v92 | vs cpp_nicked_v75 | vs cpp_leviathan3 | vs v7-base-bot | vs nicked_v44 | vs nicked_lab | official | extra | wins |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| q_on | -0.058 [-0.233, +0.108] | neutral | -0.750 | -0.289 [-0.489, -0.094] | essential | -0.200 | -0.433 | -0.433 | -0.033 | -0.300 | -0.333 | -0.333 | -0.167 | 148/360 |
+| q_nosplit | -0.067 [-0.217, +0.083] | neutral | -0.750 | -0.294 [-0.489, -0.111] | essential | -0.100 | -0.533 | -0.367 | -0.100 | -0.400 | -0.267 | -0.356 | -0.125 | 147/360 |
+| q_late | -0.058 [-0.267, +0.150] | neutral | -0.583 | -0.233 [-0.411, -0.044] | essential | +0.067 | -0.400 | -0.367 | +0.000 | -0.267 | -0.433 | -0.197 | -0.333 | 158/360 |
+
+Noise: seed-to-seed SD of base's margin within a (opponent, map, side) cell 0.894 over 180 cells. Expected paired CI half-width with K seeds, 1.96 * sqrt(2 * 0.894^2 / (180 * K)): K=2: 0.131, K=3: 0.107, K=4: 0.092, K=6: 0.075, K=8: 0.065
+

@@ -1,0 +1,50 @@
+{
+  "question": "Does protected growth help v3, and does conditional local feeding add benefit?",
+  "baseline_hash": "69382825b699723d",
+  "live_hash": "ffe736af6c14ea33",
+  "bot_hashes": {
+    "reference_v3": "69382825b699723d",
+    "grower": "395e19c1471dae6e",
+    "feed": "8476ceb932932603"
+  },
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-131752-v4-feed-48a467\\maps\\big_empty_685baf0e797207b7.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-131752-v4-feed-48a467\\maps\\default_afc3707a967881d6.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-131752-v4-feed-48a467\\maps\\schooltime_8be7eda86910a849.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-131752-v4-feed-48a467\\maps\\stronghold_fb60e37176a8d1d3.map"
+  ],
+  "map_hashes": {
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-131752-v4-feed-48a467\\maps\\big_empty_685baf0e797207b7.map": "8183641362aab7e9",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-131752-v4-feed-48a467\\maps\\default_afc3707a967881d6.map": "8cbd2473c772cb2d",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-131752-v4-feed-48a467\\maps\\schooltime_8be7eda86910a849.map": "448616c71781d224",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-131752-v4-feed-48a467\\maps\\stronghold_fb60e37176a8d1d3.map": "88b0f451cc44c7dc"
+  },
+  "seed": 44000,
+  "workers": 1,
+  "games_per_stage": 8,
+  "pairings": [
+    [
+      "grower",
+      "reference_v3"
+    ],
+    [
+      "feed",
+      "grower"
+    ],
+    [
+      "feed",
+      "reference_v3"
+    ]
+  ],
+  "screen_rule": "Exploratory only. A worthwhile combined finalist must score >50% in all three direct pairings, with no errors; no v4 freeze from this screen.",
+  "future_gate": "Fresh maps and mixed opponents, positive map-cluster lower bound, replay action audit and judge CPU check before any v4 freeze.",
+  "limits": "Four familiar round-limit-prone maps. Deterministic local bots, one seed and both sides. All games use the in-process protocol and one worker after the host crash during four concurrent process-bot games. The feed predicate requires a visible long teammate; it may rarely activate.",
+  "source_hashes": {
+    "experiments\\v4\\feed_brain.py": "bb2e9811ebb81de2",
+    "framework\\v4_feeding.py": "8820106b26a9f916",
+    "bcsim\\v4_feed.py": "8c07642bd794471c",
+    "bcsim\\match.py": "d546d7f5532b71f6",
+    "bcsim\\guarded.py": "87ac3dd271b72d9a",
+    "bcsim\\bounded.py": "c60b1fa2106c485f"
+  }
+}

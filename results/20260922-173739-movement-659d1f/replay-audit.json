@@ -1,0 +1,44 @@
+{
+  "verified_replays": 360,
+  "maps_disjoint": true,
+  "originals_unchanged": true,
+  "counts": {
+    "control_450": {
+      "games": 120,
+      "actions": 441882,
+      "single_moves": 433910,
+      "requested_sprint_cost": 0,
+      "splits": 7972,
+      "dragon_deaths": 7101,
+      "deaths_O": 1699,
+      "deaths_H": 1686,
+      "deaths_S": 196,
+      "deaths_W": 3520
+    },
+    "trap": {
+      "games": 120,
+      "actions": 430097,
+      "single_moves": 422437,
+      "requested_sprint_cost": 0,
+      "splits": 7660,
+      "dragon_deaths": 6668,
+      "deaths_O": 1624,
+      "deaths_H": 1651,
+      "deaths_W": 3179,
+      "deaths_S": 214
+    },
+    "sprint": {
+      "games": 120,
+      "actions": 418254,
+      "single_moves": 408418,
+      "requested_sprint_cost": 1885,
+      "splits": 7951,
+      "sprints": 1885,
+      "dragon_deaths": 7112,
+      "deaths_O": 1844,
+      "deaths_W": 3247,
+      "deaths_H": 1779,
+      "deaths_S": 242
+    }
+  }
+}

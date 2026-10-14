@@ -1,0 +1,107 @@
+guard: waiting for running experiment 'ablate 20261003-214401-ablate-28bd72' (pid 4992)
+base: 24/1122 games, 36s
+base: 48/1122 games, 85s
+base: 72/1122 games, 191s
+base: 96/1122 games, 235s
+base: 120/1122 games, 275s
+base: 144/1122 games, 325s
+base: 168/1122 games, 405s
+base: 192/1122 games, 451s
+base: 216/1122 games, 493s
+base: 240/1122 games, 541s
+base: 264/1122 games, 632s
+base: 288/1122 games, 693s
+base: 312/1122 games, 726s
+base: 336/1122 games, 770s
+base: 360/1122 games, 786s
+base: 384/1122 games, 817s
+base: 408/1122 games, 844s
+base: 432/1122 games, 894s
+base: 456/1122 games, 965s
+base: 480/1122 games, 1123s
+base: 504/1122 games, 1194s
+base: 528/1122 games, 1275s
+base: 552/1122 games, 1379s
+base: 576/1122 games, 1537s
+base: 600/1122 games, 1662s
+base: 624/1122 games, 1730s
+base: 648/1122 games, 1762s
+base: 672/1122 games, 1788s
+base: 696/1122 games, 1811s
+base: 720/1122 games, 1832s
+base: 744/1122 games, 1853s
+base: 768/1122 games, 1877s
+base: 792/1122 games, 1910s
+base: 816/1122 games, 1929s
+base: 840/1122 games, 1946s
+base: 864/1122 games, 1967s
+base: 888/1122 games, 2009s
+base: 912/1122 games, 2016s
+base: 936/1122 games, 2044s
+base: 960/1122 games, 2064s
+base: 984/1122 games, 2096s
+base: 1008/1122 games, 2110s
+base: 1032/1122 games, 2137s
+base: 1056/1122 games, 2162s
+base: 1080/1122 games, 2186s
+base: 1104/1122 games, 2206s
+base: 1122/1122 games, 2225s
+dq: 24/1122 games, 36s
+dq: 48/1122 games, 87s
+dq: 72/1122 games, 188s
+dq: 96/1122 games, 226s
+dq: 120/1122 games, 263s
+dq: 144/1122 games, 308s
+dq: 168/1122 games, 395s
+dq: 192/1122 games, 432s
+dq: 216/1122 games, 467s
+dq: 240/1122 games, 515s
+dq: 264/1122 games, 590s
+dq: 288/1122 games, 653s
+dq: 312/1122 games, 683s
+dq: 336/1122 games, 726s
+dq: 360/1122 games, 743s
+dq: 384/1122 games, 775s
+dq: 408/1122 games, 801s
+dq: 432/1122 games, 843s
+dq: 456/1122 games, 915s
+dq: 480/1122 games, 1071s
+dq: 504/1122 games, 1157s
+dq: 528/1122 games, 1223s
+dq: 552/1122 games, 1330s
+dq: 576/1122 games, 1495s
+dq: 600/1122 games, 1632s
+dq: 624/1122 games, 1695s
+dq: 648/1122 games, 1717s
+dq: 672/1122 games, 1742s
+dq: 696/1122 games, 1763s
+dq: 720/1122 games, 1784s
+dq: 744/1122 games, 1806s
+dq: 768/1122 games, 1829s
+dq: 792/1122 games, 1862s
+dq: 816/1122 games, 1882s
+dq: 840/1122 games, 1899s
+dq: 864/1122 games, 1919s
+dq: 888/1122 games, 1962s
+dq: 912/1122 games, 1969s
+dq: 936/1122 games, 1997s
+dq: 960/1122 games, 2017s
+dq: 984/1122 games, 2049s
+dq: 1008/1122 games, 2063s
+dq: 1032/1122 games, 2090s
+dq: 1056/1122 games, 2114s
+dq: 1080/1122 games, 2138s
+dq: 1104/1122 games, 2159s
+dq: 1122/1122 games, 2178s
+# Ablation report: 20261003-224713-ablate-d440c5
+
+3 seeds, opponents cpp_nicked_v92, cpp_nicked_v75, cpp_leviathan3, v7-base-bot, nicked_v44, nicked_lab, opp-careful-queen, opp-raider, opp-growth-queen, opp-economy, v11q; 17 official + 0 extra maps, both sides. Objective: wins. Delta = variant score minus base score on the same (opponent, map, seed, side); positive means removing the group helped. 95% CI resamples (map, seed) blocks.
+
+base: mean margin +0.153, wins 647/1122; by opponent: cpp_nicked_v92 -0.392, cpp_nicked_v75 -0.137, cpp_leviathan3 +0.608, v7-base-bot +0.706, nicked_v44 +0.451, nicked_lab -0.157, opp-careful-queen +0.118, opp-raider -0.216, opp-growth-queen +0.275, opp-economy +0.314, v11q +0.118
+
+| variant | current pool delta [95% CI] | pool verdict | other maps | delta all 15 [95% CI] | verdict | vs cpp_nicked_v92 | vs cpp_nicked_v75 | vs cpp_leviathan3 | vs v7-base-bot | vs nicked_v44 | vs nicked_lab | vs opp-careful-queen | vs opp-raider | vs opp-growth-queen | vs opp-economy | vs v11q | official | extra | wins |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| dq | -0.121 [-0.230, -0.018] | essential | +0.045 | -0.004 [-0.064, +0.052] | neutral | +0.059 | -0.137 | +0.020 | +0.020 | -0.098 | +0.314 | -0.039 | +0.059 | -0.196 | +0.000 | -0.039 | -0.004 | - | 645/1122 |
+
+Noise: seed-to-seed SD of base's margin within a (opponent, map, side) cell 0.825 over 374 cells. Expected paired CI half-width with K seeds, 1.96 * sqrt(2 * 0.825^2 / (374 * K)): K=2: 0.084, K=3: 0.068, K=4: 0.059, K=6: 0.048, K=8: 0.042
+

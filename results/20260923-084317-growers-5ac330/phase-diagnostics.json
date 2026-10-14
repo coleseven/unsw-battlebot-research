@@ -1,0 +1,102 @@
+{
+  "screen": {
+    "diagnostics": {
+      "control_450": {
+        "games": 36,
+        "wins": 18,
+        "length_decisions": 32,
+        "length_wins": 16,
+        "losses": 18,
+        "length_losses": 16,
+        "elimination_losses": 2,
+        "mean_longest_in_length_decisions": 13.375
+      },
+      "stop425": {
+        "games": 36,
+        "losses": 22,
+        "elimination_losses": 5,
+        "draws": 1,
+        "length_decisions": 30,
+        "length_draws": 1,
+        "wins": 13,
+        "length_wins": 12,
+        "length_losses": 17,
+        "mean_longest_in_length_decisions": 13.966666666666667
+      },
+      "stop400": {
+        "games": 36,
+        "losses": 21,
+        "elimination_losses": 5,
+        "wins": 15,
+        "length_decisions": 29,
+        "length_wins": 13,
+        "length_losses": 16,
+        "mean_longest_in_length_decisions": 13.862068965517242
+      },
+      "stop350": {
+        "games": 36,
+        "losses": 22,
+        "elimination_losses": 9,
+        "wins": 14,
+        "length_decisions": 26,
+        "length_wins": 13,
+        "length_losses": 13,
+        "mean_longest_in_length_decisions": 16.384615384615383
+      },
+      "quarter350": {
+        "games": 36,
+        "losses": 15,
+        "elimination_losses": 4,
+        "wins": 21,
+        "length_decisions": 28,
+        "length_wins": 17,
+        "length_losses": 11,
+        "mean_longest_in_length_decisions": 11.678571428571429
+      },
+      "quarter400": {
+        "games": 36,
+        "wins": 17,
+        "losses": 19,
+        "elimination_losses": 2,
+        "length_decisions": 32,
+        "length_losses": 17,
+        "length_wins": 15,
+        "mean_longest_in_length_decisions": 12.5625
+      }
+    },
+    "early_equivalence": {
+      "stop425": 2,
+      "stop400": 2,
+      "stop350": 2,
+      "quarter350": 2,
+      "quarter400": 2
+    }
+  },
+  "validation": {
+    "diagnostics": {
+      "control_450": {
+        "games": 432,
+        "wins": 343,
+        "losses": 89,
+        "elimination_losses": 11,
+        "length_decisions": 222,
+        "length_losses": 78,
+        "length_wins": 144,
+        "mean_longest_in_length_decisions": 12.86036036036036
+      },
+      "quarter350": {
+        "games": 432,
+        "losses": 85,
+        "elimination_losses": 11,
+        "wins": 347,
+        "length_decisions": 227,
+        "length_wins": 153,
+        "length_losses": 74,
+        "mean_longest_in_length_decisions": 12.299559471365638
+      }
+    },
+    "early_equivalence": {
+      "quarter350": 163
+    }
+  }
+}

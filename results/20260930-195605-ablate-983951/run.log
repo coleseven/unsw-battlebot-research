@@ -1,0 +1,82 @@
+base: 24/540 games, 31s
+base: 48/540 games, 97s
+base: 72/540 games, 130s
+base: 96/540 games, 179s
+base: 120/540 games, 215s
+base: 144/540 games, 293s
+base: 168/540 games, 317s
+base: 192/540 games, 362s
+base: 216/540 games, 397s
+base: 240/540 games, 438s
+base: 264/540 games, 489s
+base: 288/540 games, 527s
+base: 312/540 games, 550s
+base: 336/540 games, 580s
+base: 360/540 games, 606s
+base: 384/540 games, 665s
+base: 408/540 games, 773s
+base: 432/540 games, 828s
+base: 456/540 games, 943s
+base: 480/540 games, 1026s
+base: 504/540 games, 1177s
+base: 528/540 games, 1232s
+base: 540/540 games, 1314s
+sonarhub: 24/540 games, 34s
+sonarhub: 48/540 games, 110s
+sonarhub: 72/540 games, 136s
+sonarhub: 96/540 games, 190s
+sonarhub: 120/540 games, 233s
+sonarhub: 144/540 games, 310s
+sonarhub: 168/540 games, 334s
+sonarhub: 192/540 games, 377s
+sonarhub: 216/540 games, 414s
+sonarhub: 240/540 games, 457s
+sonarhub: 264/540 games, 506s
+sonarhub: 288/540 games, 544s
+sonarhub: 312/540 games, 566s
+sonarhub: 336/540 games, 595s
+sonarhub: 360/540 games, 620s
+sonarhub: 384/540 games, 675s
+sonarhub: 408/540 games, 771s
+sonarhub: 432/540 games, 824s
+sonarhub: 456/540 games, 929s
+sonarhub: 480/540 games, 1029s
+sonarhub: 504/540 games, 1139s
+sonarhub: 528/540 games, 1269s
+sonarhub: 540/540 games, 1322s
+sonarhub_whub3: 24/540 games, 33s
+sonarhub_whub3: 48/540 games, 103s
+sonarhub_whub3: 72/540 games, 126s
+sonarhub_whub3: 96/540 games, 179s
+sonarhub_whub3: 120/540 games, 211s
+sonarhub_whub3: 144/540 games, 286s
+sonarhub_whub3: 168/540 games, 310s
+sonarhub_whub3: 192/540 games, 359s
+sonarhub_whub3: 216/540 games, 402s
+sonarhub_whub3: 240/540 games, 441s
+sonarhub_whub3: 264/540 games, 492s
+sonarhub_whub3: 288/540 games, 534s
+sonarhub_whub3: 312/540 games, 556s
+sonarhub_whub3: 336/540 games, 584s
+sonarhub_whub3: 360/540 games, 608s
+sonarhub_whub3: 384/540 games, 663s
+sonarhub_whub3: 408/540 games, 764s
+sonarhub_whub3: 432/540 games, 820s
+sonarhub_whub3: 456/540 games, 941s
+sonarhub_whub3: 480/540 games, 1037s
+sonarhub_whub3: 504/540 games, 1167s
+sonarhub_whub3: 528/540 games, 1280s
+sonarhub_whub3: 540/540 games, 1325s
+# Ablation report: 20260930-195605-ablate-983951
+
+3 seeds, opponents cpp_nicked_v92, cpp_nicked_v75, cpp_leviathan3, v7-base-bot, nicked_v44, nicked_lab; 11 official + 4 extra maps, both sides. Objective: aligned. Delta = variant score minus base score on the same (opponent, map, seed, side); positive means removing the group helped. 95% CI resamples (map, seed) blocks.
+
+base: mean margin +0.178, wins 343/540; by opponent: cpp_nicked_v92 -0.382, cpp_nicked_v75 -0.097, cpp_leviathan3 +0.636, v7-base-bot +0.394, nicked_v44 +0.466, nicked_lab +0.052
+
+| variant | current pool delta [95% CI] | pool verdict | other maps | delta all 15 [95% CI] | verdict | vs cpp_nicked_v92 | vs cpp_nicked_v75 | vs cpp_leviathan3 | vs v7-base-bot | vs nicked_v44 | vs nicked_lab | official | extra | wins |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| sonarhub | -0.011 [-0.065, +0.042] | neutral | +0.000 | -0.007 [-0.040, +0.028] | neutral | +0.027 | +0.005 | -0.014 | +0.014 | -0.038 | -0.038 | +0.000 | -0.027 | 337/540 |
+| sonarhub_whub3 | -0.193 [-0.318, -0.069] | essential | -0.043 | -0.143 [-0.228, -0.061] | essential | -0.033 | -0.148 | -0.148 | -0.151 | -0.219 | -0.159 | -0.171 | -0.066 | 293/540 |
+
+Noise: seed-to-seed SD of base's margin within a (opponent, map, side) cell 0.594 over 180 cells. Expected paired CI half-width with K seeds, 1.96 * sqrt(2 * 0.594^2 / (180 * K)): K=2: 0.087, K=3: 0.071, K=4: 0.061, K=6: 0.050, K=8: 0.043
+

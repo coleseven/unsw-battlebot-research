@@ -1,0 +1,70 @@
+{
+  "bk100": {
+    "delta": 0.003676470588235294,
+    "lo": -0.058823529411764705,
+    "hi": 0.051470588235294115,
+    "verdict": "unclear",
+    "equal_map": 0.003676470588235294,
+    "equal_family": -0.010784313725490194,
+    "families": {
+      "cpp_leviathan3": -0.058823529411764705,
+      "nicked": 0.014705882352941176,
+      "ours": 0.011764705882352941
+    },
+    "maps": {
+      "around_unsw": 0.25,
+      "australia": 0.0,
+      "autarky": -0.3125,
+      "default": 0.0,
+      "devil": 0.0,
+      "islands": 0.0,
+      "maze": 0.0,
+      "portals": 0.0,
+      "prisoners_dilemma": 0.25,
+      "queen_of_spades": 0.0,
+      "schooltime": 0.0,
+      "slithery_fight": -0.125,
+      "stripes": 0.0,
+      "tower_defense": 0.0,
+      "trauma": 0.0,
+      "trophy": 0.0,
+      "weakhold": 0.0
+    },
+    "wins": 274,
+    "games": 544
+  },
+  "bk200": {
+    "delta": 0.003676470588235294,
+    "lo": -0.058823529411764705,
+    "hi": 0.05514705882352941,
+    "verdict": "unclear",
+    "equal_map": 0.003676470588235294,
+    "equal_family": -0.010784313725490194,
+    "families": {
+      "cpp_leviathan3": -0.058823529411764705,
+      "nicked": 0.014705882352941176,
+      "ours": 0.011764705882352941
+    },
+    "maps": {
+      "around_unsw": 0.25,
+      "australia": 0.0,
+      "autarky": -0.3125,
+      "default": 0.0,
+      "devil": 0.0,
+      "islands": 0.0,
+      "maze": 0.0,
+      "portals": 0.0,
+      "prisoners_dilemma": 0.25,
+      "queen_of_spades": 0.0,
+      "schooltime": 0.0,
+      "slithery_fight": -0.125,
+      "stripes": 0.0,
+      "tower_defense": 0.0,
+      "trauma": 0.0,
+      "trophy": 0.0,
+      "weakhold": 0.0
+    },
+    "wins": 274,
+    "games": 544
+  }
+}

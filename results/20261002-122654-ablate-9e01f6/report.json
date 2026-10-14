@@ -1,0 +1,42 @@
+{
+  "qs250": {
+    "delta": 0.0,
+    "lo": -0.014285714285714285,
+    "hi": 0.014285714285714285,
+    "verdict": "neutral",
+    "pool_delta": 0.0,
+    "pool_lo": -0.02142857142857143,
+    "pool_hi": 0.02142857142857143,
+    "pool_verdict": "neutral"
+  },
+  "qs350": {
+    "delta": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "verdict": "neutral",
+    "pool_delta": 0.0,
+    "pool_lo": 0.0,
+    "pool_hi": 0.0,
+    "pool_verdict": "neutral"
+  },
+  "qfeed": {
+    "delta": 0.004761904761904762,
+    "lo": -0.06190476190476191,
+    "hi": 0.07142857142857142,
+    "verdict": "neutral",
+    "pool_delta": 0.04285714285714286,
+    "pool_lo": -0.04285714285714286,
+    "pool_hi": 0.1357142857142857,
+    "pool_verdict": "neutral"
+  },
+  "qs350feed": {
+    "delta": 0.009523809523809525,
+    "lo": -0.05714285714285714,
+    "hi": 0.08095238095238096,
+    "verdict": "neutral",
+    "pool_delta": 0.05,
+    "pool_lo": -0.04285714285714286,
+    "pool_hi": 0.14285714285714285,
+    "pool_verdict": "neutral"
+  }
+}

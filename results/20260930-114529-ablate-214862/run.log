@@ -1,0 +1,106 @@
+base: 24/540 games, 29s
+base: 48/540 games, 89s
+base: 72/540 games, 114s
+base: 96/540 games, 156s
+base: 120/540 games, 189s
+base: 144/540 games, 264s
+base: 168/540 games, 286s
+base: 192/540 games, 327s
+base: 216/540 games, 370s
+base: 240/540 games, 406s
+base: 264/540 games, 460s
+base: 288/540 games, 494s
+base: 312/540 games, 519s
+base: 336/540 games, 549s
+base: 360/540 games, 576s
+base: 384/540 games, 628s
+base: 408/540 games, 718s
+base: 432/540 games, 774s
+base: 456/540 games, 884s
+base: 480/540 games, 977s
+base: 504/540 games, 1129s
+base: 528/540 games, 1174s
+base: 540/540 games, 1278s
+reach4: 24/540 games, 29s
+reach4: 48/540 games, 92s
+reach4: 72/540 games, 116s
+reach4: 96/540 games, 157s
+reach4: 120/540 games, 193s
+reach4: 144/540 games, 264s
+reach4: 168/540 games, 286s
+reach4: 192/540 games, 328s
+reach4: 216/540 games, 371s
+reach4: 240/540 games, 408s
+reach4: 264/540 games, 465s
+reach4: 288/540 games, 497s
+reach4: 312/540 games, 522s
+reach4: 336/540 games, 550s
+reach4: 360/540 games, 576s
+reach4: 384/540 games, 625s
+reach4: 408/540 games, 707s
+reach4: 432/540 games, 761s
+reach4: 456/540 games, 866s
+reach4: 480/540 games, 959s
+reach4: 504/540 games, 1079s
+reach4: 528/540 games, 1193s
+reach4: 540/540 games, 1235s
+reach6: 24/540 games, 28s
+reach6: 48/540 games, 84s
+reach6: 72/540 games, 111s
+reach6: 96/540 games, 154s
+reach6: 120/540 games, 184s
+reach6: 144/540 games, 257s
+reach6: 168/540 games, 281s
+reach6: 192/540 games, 318s
+reach6: 216/540 games, 359s
+reach6: 240/540 games, 393s
+reach6: 264/540 games, 446s
+reach6: 288/540 games, 480s
+reach6: 312/540 games, 505s
+reach6: 336/540 games, 533s
+reach6: 360/540 games, 558s
+reach6: 384/540 games, 608s
+reach6: 408/540 games, 691s
+reach6: 432/540 games, 744s
+reach6: 456/540 games, 845s
+reach6: 480/540 games, 934s
+reach6: 504/540 games, 1055s
+reach6: 528/540 games, 1172s
+reach6: 540/540 games, 1217s
+kb2reach4: 24/540 games, 28s
+kb2reach4: 48/540 games, 86s
+kb2reach4: 72/540 games, 111s
+kb2reach4: 96/540 games, 151s
+kb2reach4: 120/540 games, 185s
+kb2reach4: 144/540 games, 256s
+kb2reach4: 168/540 games, 276s
+kb2reach4: 192/540 games, 316s
+kb2reach4: 216/540 games, 359s
+kb2reach4: 240/540 games, 393s
+kb2reach4: 264/540 games, 445s
+kb2reach4: 288/540 games, 476s
+kb2reach4: 312/540 games, 501s
+kb2reach4: 336/540 games, 529s
+kb2reach4: 360/540 games, 556s
+kb2reach4: 384/540 games, 607s
+kb2reach4: 408/540 games, 694s
+kb2reach4: 432/540 games, 749s
+kb2reach4: 456/540 games, 854s
+kb2reach4: 480/540 games, 944s
+kb2reach4: 504/540 games, 1080s
+kb2reach4: 528/540 games, 1125s
+kb2reach4: 540/540 games, 1223s
+# Ablation report: 20260930-114529-ablate-214862
+
+3 seeds, opponents cpp_nicked_v92, cpp_nicked_v75, cpp_leviathan3, v7-base-bot, nicked_v44, nicked_lab; 11 official + 4 extra maps, both sides. Objective: aligned. Delta = variant score minus base score on the same (opponent, map, seed, side); positive means removing the group helped. 95% CI resamples (map, seed) blocks.
+
+base: mean margin +0.151, wins 329/540; by opponent: cpp_nicked_v92 -0.306, cpp_nicked_v75 -0.140, cpp_leviathan3 +0.538, v7-base-bot +0.522, nicked_v44 +0.350, nicked_lab -0.058
+
+| variant | current pool delta [95% CI] | pool verdict | other maps | delta all 15 [95% CI] | verdict | vs cpp_nicked_v92 | vs cpp_nicked_v75 | vs cpp_leviathan3 | vs v7-base-bot | vs nicked_v44 | vs nicked_lab | official | extra | wins |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| reach4 | +0.030 [-0.014, +0.078] | neutral | -0.032 | +0.009 [-0.024, +0.045] | neutral | -0.029 | +0.049 | +0.002 | +0.015 | +0.016 | +0.003 | -0.005 | +0.050 | 333/540 |
+| reach6 | +0.004 [-0.039, +0.051] | neutral | -0.032 | -0.008 [-0.043, +0.026] | neutral | -0.048 | -0.012 | +0.008 | +0.018 | +0.001 | -0.011 | -0.025 | +0.041 | 325/540 |
+| kb2reach4 | +0.022 [-0.017, +0.064] | neutral | -0.057 | -0.005 [-0.037, +0.030] | neutral | -0.058 | +0.014 | +0.003 | +0.005 | +0.016 | -0.007 | -0.021 | +0.041 | 326/540 |
+
+Noise: seed-to-seed SD of base's margin within a (opponent, map, side) cell 0.620 over 180 cells. Expected paired CI half-width with K seeds, 1.96 * sqrt(2 * 0.620^2 / (180 * K)): K=2: 0.091, K=3: 0.074, K=4: 0.064, K=6: 0.052, K=8: 0.045
+

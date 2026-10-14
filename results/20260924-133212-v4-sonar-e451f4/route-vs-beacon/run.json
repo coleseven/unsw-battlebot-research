@@ -1,0 +1,33 @@
+{
+  "time": "2026-09-24 13:36:12",
+  "git": "8e1000d+dirty",
+  "python": "3.14.2",
+  "unswbc": "0.3.10",
+  "engine": "5412052f33ddb160",
+  "bots": {
+    "route": {
+      "path": "results\\20260924-133212-v4-sonar-e451f4\\bots\\route",
+      "hash": "a3bd27841857e668"
+    },
+    "beacon": {
+      "path": "results\\20260924-133212-v4-sonar-e451f4\\bots\\beacon",
+      "hash": "314e07006b093ed8"
+    }
+  },
+  "maps": {
+    "schooltime_8be7eda86910a849": {
+      "file": "448616c71781d224",
+      "signature": "8be7eda86910a849"
+    },
+    "stronghold_fb60e37176a8d1d3": {
+      "file": "88b0f451cc44c7dc",
+      "signature": "fb60e37176a8d1d3"
+    }
+  },
+  "settings": {
+    "seeds": [
+      44000
+    ],
+    "workers": 1
+  }
+}

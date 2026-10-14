@@ -1,0 +1,52 @@
+{
+  "no_portal_ablation_pairs_identical": 32,
+  "portal_addition_paired_gain": {
+    "difference": 0.006944444444444444,
+    "map_cluster_ci95": [
+      -0.13194444444444445,
+      0.1527777777777778
+    ],
+    "paired_block_ci95": [
+      -0.1111111111111111,
+      0.13194444444444445
+    ],
+    "maps": 9,
+    "blocks": 36,
+    "matched_games": 72
+  },
+  "diagnostics": {
+    "control_450": {
+      "games": 72,
+      "wins": 36,
+      "losses": 36,
+      "elimination_losses": 4,
+      "length_decisions": 64,
+      "length_wins": 32,
+      "length_losses": 32,
+      "mean_longest_in_length_decisions": 12.21875
+    },
+    "terrain_memory": {
+      "games": 72,
+      "wins": 39,
+      "losses": 32,
+      "elimination_losses": 6,
+      "length_decisions": 60,
+      "length_wins": 33,
+      "length_losses": 26,
+      "draws": 1,
+      "length_draws": 1,
+      "mean_longest_in_length_decisions": 12.5
+    },
+    "portal_memory": {
+      "games": 72,
+      "losses": 32,
+      "elimination_losses": 8,
+      "wins": 40,
+      "length_decisions": 59,
+      "length_wins": 35,
+      "length_losses": 24,
+      "mean_longest_in_length_decisions": 12.813559322033898
+    }
+  },
+  "limits": "Screening data only; selection and descriptive ablation, not independent confirmation."
+}

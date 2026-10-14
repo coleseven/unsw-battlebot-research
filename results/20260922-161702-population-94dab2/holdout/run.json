@@ -1,0 +1,69 @@
+{
+  "time": "2026-09-22 16:19:00",
+  "git": "26836bb+dirty",
+  "python": "3.14.2",
+  "unswbc": "0.3.10",
+  "engine": "5412052f33ddb160",
+  "bots": {
+    "pop_00": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-161702-population-94dab2\\bots\\pop_00",
+      "hash": "ec4660832dc1d33f"
+    },
+    "pop_64": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-161702-population-94dab2\\bots\\pop_64",
+      "hash": "36d90b2477003f64"
+    },
+    "v1": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-161702-population-94dab2\\bots\\v1",
+      "hash": "ffe736af6c14ea33"
+    },
+    "splitter": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-161702-population-94dab2\\bots\\splitter",
+      "hash": "c50e10c521282fec"
+    },
+    "hunter": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-161702-population-94dab2\\bots\\hunter",
+      "hash": "8622139a1a3d64a8"
+    }
+  },
+  "maps": {
+    "Big_Empty_60f7d35583505a93": {
+      "file": "962f265ed2a9071f",
+      "signature": "60f7d35583505a93"
+    },
+    "arena_728547b8376892d9": {
+      "file": "b4bab09603289c2d",
+      "signature": "728547b8376892d9"
+    },
+    "queen_of_spades_90867997b27cae7f": {
+      "file": "126d71b464432685",
+      "signature": "90867997b27cae7f"
+    },
+    "Default_908dcc5cee06830e": {
+      "file": "78bee46e3a595c0b",
+      "signature": "908dcc5cee06830e"
+    },
+    "trophy_a3671180ec15b2b0": {
+      "file": "5f1f6b23d6edb944",
+      "signature": "a3671180ec15b2b0"
+    },
+    "default_c14ae35451fc0e61": {
+      "file": "6bd7abf2ed51a7f6",
+      "signature": "c14ae35451fc0e61"
+    },
+    "Devil_d0935a95185a8dd9": {
+      "file": "a09e8f2d3bdd1e40",
+      "signature": "d0935a95185a8dd9"
+    }
+  },
+  "settings": {
+    "seeds": [
+      1000,
+      1001,
+      1002,
+      1003
+    ],
+    "workers": 4,
+    "stage": "holdout"
+  }
+}

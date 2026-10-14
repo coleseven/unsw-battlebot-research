@@ -1,0 +1,353 @@
+{
+ "decisions": 1075,
+ "train": 717,
+ "test": 358,
+ "score_scale": 20.766599999999997,
+ "margin": {
+  "tau0.0": {
+   "overrides": 215,
+   "better": 69.0,
+   "worse": 67.0,
+   "margin_incumbent_vs_student": [
+    752.0,
+    470.0
+   ],
+   "result_incumbent_vs_student": [
+    182.0,
+    199.5
+   ]
+  },
+  "tau0.5": {
+   "overrides": 86,
+   "better": 28.0,
+   "worse": 30.0,
+   "margin_incumbent_vs_student": [
+    752.0,
+    510.0
+   ],
+   "result_incumbent_vs_student": [
+    182.0,
+    188.0
+   ]
+  },
+  "tau1.0": {
+   "overrides": 15,
+   "better": 4.0,
+   "worse": 9.0,
+   "margin_incumbent_vs_student": [
+    752.0,
+    698.0
+   ],
+   "result_incumbent_vs_student": [
+    182.0,
+    182.0
+   ]
+  }
+ },
+ "result": {
+  "tau0.0": {
+   "overrides": 237,
+   "better": 24.0,
+   "worse": 3.0,
+   "result_incumbent_vs_student": [
+    182.0,
+    203.0
+   ],
+   "margin_incumbent_vs_student": [
+    752.0,
+    468.0
+   ]
+  },
+  "tau0.5": {
+   "overrides": 159,
+   "better": 13.0,
+   "worse": 2.0,
+   "result_incumbent_vs_student": [
+    182.0,
+    192.5
+   ],
+   "margin_incumbent_vs_student": [
+    752.0,
+    459.0
+   ]
+  },
+  "tau1.0": {
+   "overrides": 85,
+   "better": 8.0,
+   "worse": 1.0,
+   "result_incumbent_vs_student": [
+    182.0,
+    189.0
+   ],
+   "margin_incumbent_vs_student": [
+    752.0,
+    554.0
+   ]
+  }
+ },
+ "h20_total": {
+  "tau0.0": {
+   "overrides": 83,
+   "better": 21.0,
+   "worse": 20.0,
+   "h20_total_incumbent_vs_student": [
+    1906.0,
+    1877.0
+   ],
+   "margin_incumbent_vs_student": [
+    752.0,
+    764.0
+   ],
+   "result_incumbent_vs_student": [
+    182.0,
+    194.0
+   ]
+  },
+  "tau0.5": {
+   "overrides": 11,
+   "better": 4.0,
+   "worse": 3.0,
+   "h20_total_incumbent_vs_student": [
+    1906.0,
+    1908.0
+   ],
+   "margin_incumbent_vs_student": [
+    752.0,
+    802.0
+   ],
+   "result_incumbent_vs_student": [
+    182.0,
+    183.0
+   ]
+  },
+  "tau1.0": {
+   "overrides": 0,
+   "better": 0,
+   "worse": 0,
+   "h20_total_incumbent_vs_student": [
+    1906.0,
+    1906.0
+   ],
+   "margin_incumbent_vs_student": [
+    752.0,
+    752.0
+   ],
+   "result_incumbent_vs_student": [
+    182.0,
+    182.0
+   ]
+  }
+ },
+ "h40_total": {
+  "tau0.0": {
+   "overrides": 207,
+   "better": 49.0,
+   "worse": 67.0,
+   "h40_total_incumbent_vs_student": [
+    1550.0,
+    1425.0
+   ],
+   "margin_incumbent_vs_student": [
+    752.0,
+    475.0
+   ],
+   "result_incumbent_vs_student": [
+    182.0,
+    197.0
+   ]
+  },
+  "tau0.5": {
+   "overrides": 81,
+   "better": 21.0,
+   "worse": 24.0,
+   "h40_total_incumbent_vs_student": [
+    1550.0,
+    1588.0
+   ],
+   "margin_incumbent_vs_student": [
+    752.0,
+    613.0
+   ],
+   "result_incumbent_vs_student": [
+    182.0,
+    187.0
+   ]
+  },
+  "tau1.0": {
+   "overrides": 4,
+   "better": 1.0,
+   "worse": 2.0,
+   "h40_total_incumbent_vs_student": [
+    1550.0,
+    1541.0
+   ],
+   "margin_incumbent_vs_student": [
+    752.0,
+    744.0
+   ],
+   "result_incumbent_vs_student": [
+    182.0,
+    182.0
+   ]
+  }
+ },
+ "h80_total": {
+  "tau0.0": {
+   "overrides": 175,
+   "better": 55.0,
+   "worse": 53.0,
+   "h80_total_incumbent_vs_student": [
+    700.0,
+    676.0
+   ],
+   "margin_incumbent_vs_student": [
+    752.0,
+    492.0
+   ],
+   "result_incumbent_vs_student": [
+    182.0,
+    195.0
+   ]
+  },
+  "tau0.5": {
+   "overrides": 28,
+   "better": 11.0,
+   "worse": 11.0,
+   "h80_total_incumbent_vs_student": [
+    700.0,
+    828.0
+   ],
+   "margin_incumbent_vs_student": [
+    752.0,
+    709.0
+   ],
+   "result_incumbent_vs_student": [
+    182.0,
+    185.0
+   ]
+  },
+  "tau1.0": {
+   "overrides": 3,
+   "better": 1.0,
+   "worse": 2.0,
+   "h80_total_incumbent_vs_student": [
+    700.0,
+    715.0
+   ],
+   "margin_incumbent_vs_student": [
+    752.0,
+    747.0
+   ],
+   "result_incumbent_vs_student": [
+    182.0,
+    182.0
+   ]
+  }
+ },
+ "h40_longest": {
+  "tau0.0": {
+   "overrides": 154,
+   "better": 19.0,
+   "worse": 28.0,
+   "h40_longest_incumbent_vs_student": [
+    -82.0,
+    -125.0
+   ],
+   "margin_incumbent_vs_student": [
+    752.0,
+    503.0
+   ],
+   "result_incumbent_vs_student": [
+    182.0,
+    198.5
+   ]
+  },
+  "tau0.5": {
+   "overrides": 31,
+   "better": 7.0,
+   "worse": 7.0,
+   "h40_longest_incumbent_vs_student": [
+    -82.0,
+    -88.0
+   ],
+   "margin_incumbent_vs_student": [
+    752.0,
+    660.0
+   ],
+   "result_incumbent_vs_student": [
+    182.0,
+    184.0
+   ]
+  },
+  "tau1.0": {
+   "overrides": 3,
+   "better": 1.0,
+   "worse": 0.0,
+   "h40_longest_incumbent_vs_student": [
+    -82.0,
+    -81.0
+   ],
+   "margin_incumbent_vs_student": [
+    752.0,
+    747.0
+   ],
+   "result_incumbent_vs_student": [
+    182.0,
+    182.0
+   ]
+  }
+ },
+ "h80_longest": {
+  "tau0.0": {
+   "overrides": 195,
+   "better": 39.0,
+   "worse": 45.0,
+   "h80_longest_incumbent_vs_student": [
+    -51.0,
+    -142.0
+   ],
+   "margin_incumbent_vs_student": [
+    752.0,
+    510.0
+   ],
+   "result_incumbent_vs_student": [
+    182.0,
+    195.5
+   ]
+  },
+  "tau0.5": {
+   "overrides": 45,
+   "better": 12.0,
+   "worse": 16.0,
+   "h80_longest_incumbent_vs_student": [
+    -51.0,
+    -82.0
+   ],
+   "margin_incumbent_vs_student": [
+    752.0,
+    566.0
+   ],
+   "result_incumbent_vs_student": [
+    182.0,
+    182.5
+   ]
+  },
+  "tau1.0": {
+   "overrides": 7,
+   "better": 1.0,
+   "worse": 4.0,
+   "h80_longest_incumbent_vs_student": [
+    -51.0,
+    -65.0
+   ],
+   "margin_incumbent_vs_student": [
+    752.0,
+    693.0
+   ],
+   "result_incumbent_vs_student": [
+    182.0,
+    181.0
+   ]
+  }
+ }
+}

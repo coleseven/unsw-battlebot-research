@@ -1,0 +1,30 @@
+{
+  "question": "Does remembered spawn routing change real actions against nicked?",
+  "scope": "Diagnostic only: Default, Schooltime, Big Empty, both sides.",
+  "seed": 56001,
+  "workers": 1,
+  "control_hash": "23a140e48e5f7d89",
+  "nicked_hash": "d6dd50765f54f638",
+  "live_hash": "ffe736af6c14ea33",
+  "bot_hashes": {
+    "economy": "c150c0dab8fef5dc",
+    "nicked": "d6dd50765f54f638"
+  },
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-112740-v5-economy-probe-6fd266\\maps\\Default.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-112740-v5-economy-probe-6fd266\\maps\\schooltime.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-112740-v5-economy-probe-6fd266\\maps\\Big_Empty.map"
+  ],
+  "map_hashes": {
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-112740-v5-economy-probe-6fd266\\maps\\Default.map": "78bee46e3a595c0b",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-112740-v5-economy-probe-6fd266\\maps\\schooltime.map": "726c404f3b34b4ed",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-112740-v5-economy-probe-6fd266\\maps\\Big_Empty.map": "962f265ed2a9071f"
+  },
+  "source_hashes": {
+    "experiments\\v5\\brain.py": "df7ea8e6c8b829ac",
+    "framework\\v5_economy.py": "6316df1b061f6baf",
+    "framework\\navigation.py": "704ce89f4a92aadd",
+    "bcsim\\v5_initial.py": "9170793650c714f4",
+    "bcsim\\v5_economy_probe.py": "77fc36043b6878e0"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "question": "Does clean v3+feed+sonar remain promising on four new maps, and beat uploaded v2?",
+  "candidate_hash": "bf33497158a49a7b",
+  "v3_hash": "69382825b699723d",
+  "v2_hash": "9f29ab4138b51d26",
+  "live_hash": "ffe736af6c14ea33",
+  "bot_hashes": {
+    "additive": "bf33497158a49a7b",
+    "reference_v3": "69382825b699723d",
+    "reference_v2": "9f29ab4138b51d26"
+  },
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-174513-v4-additive-validation-d407dd\\maps\\Devil.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-174513-v4-additive-validation-d407dd\\maps\\Trauma.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-174513-v4-additive-validation-d407dd\\maps\\queen_of_spades.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-174513-v4-additive-validation-d407dd\\maps\\Colosseum.map"
+  ],
+  "map_hashes": {
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-174513-v4-additive-validation-d407dd\\maps\\Devil.map": "a09e8f2d3bdd1e40",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-174513-v4-additive-validation-d407dd\\maps\\Trauma.map": "dcf39d713c060e5d",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-174513-v4-additive-validation-d407dd\\maps\\queen_of_spades.map": "126d71b464432685",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-174513-v4-additive-validation-d407dd\\maps\\Colosseum.map": "c7549a41ea26600f"
+  },
+  "v3_seeds": [
+    44002,
+    44003
+  ],
+  "v2_seeds": [
+    44002
+  ],
+  "workers": 1,
+  "v3_games": 16,
+  "v2_games": 8,
+  "decision": "A small upload-readiness screen, not a ladder-strength claim. Prefer at least a winning v3 score, a clear v2 edge, no errors, and a passing separate judge-sandbox runtime test. Do not submit automatically.",
+  "source_hashes": {
+    "bcsim\\v4_additive_validate.py": "3eafae783c30cdca",
+    "bcsim\\match.py": "d546d7f5532b71f6",
+    "bcsim\\guarded.py": "87ac3dd271b72d9a",
+    "bcsim\\bounded.py": "c60b1fa2106c485f"
+  }
+}

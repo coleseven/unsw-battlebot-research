@@ -1,0 +1,49 @@
+{
+  "time": "2026-09-24 22:20:31",
+  "git": "8e1000d+dirty",
+  "python": "3.14.2",
+  "unswbc": "0.3.10",
+  "engine": "5412052f33ddb160",
+  "bots": {
+    "safe_king": {
+      "path": "results\\20260924-221605-v5-king-safety-0c6649\\bots\\safe_king",
+      "hash": "26f0426bacc1095a"
+    },
+    "additive": {
+      "path": "results\\20260924-221605-v5-king-safety-0c6649\\bots\\additive",
+      "hash": "bf33497158a49a7b"
+    }
+  },
+  "maps": {
+    "big_empty": {
+      "file": "6cb3b7be72a4e27e",
+      "signature": "685baf0e797207b7"
+    },
+    "default": {
+      "file": "6bd7abf2ed51a7f6",
+      "signature": "afc3707a967881d6"
+    },
+    "schooltime": {
+      "file": "726c404f3b34b4ed",
+      "signature": "8be7eda86910a849"
+    },
+    "stronghold": {
+      "file": "02455e481fe56e1e",
+      "signature": "fb60e37176a8d1d3"
+    },
+    "Trauma": {
+      "file": "dcf39d713c060e5d",
+      "signature": "d014b28abbd1abb0"
+    },
+    "trophy": {
+      "file": "5f1f6b23d6edb944",
+      "signature": "fd985019831fe135"
+    }
+  },
+  "settings": {
+    "seeds": [
+      49001
+    ],
+    "workers": 1
+  }
+}

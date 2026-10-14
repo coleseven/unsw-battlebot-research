@@ -1,0 +1,34 @@
+{
+  "question": "Does visible-only portal additive still beat uploaded v2 on portal maps?",
+  "candidate_hash": "1908cee70f460d5e",
+  "v2_hash": "9f29ab4138b51d26",
+  "live_hash": "ffe736af6c14ea33",
+  "bot_hashes": {
+    "visible_portal": "1908cee70f460d5e",
+    "reference_v2": "9f29ab4138b51d26"
+  },
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-183910-v4-visible-portal-v2-fb319a\\maps\\Colosseum.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-183910-v4-visible-portal-v2-fb319a\\maps\\default.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-183910-v4-visible-portal-v2-fb319a\\maps\\queen_of_spades.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-183910-v4-visible-portal-v2-fb319a\\maps\\schooltime.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-183910-v4-visible-portal-v2-fb319a\\maps\\trophy.map"
+  ],
+  "map_hashes": {
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-183910-v4-visible-portal-v2-fb319a\\maps\\Colosseum.map": "c7549a41ea26600f",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-183910-v4-visible-portal-v2-fb319a\\maps\\default.map": "6bd7abf2ed51a7f6",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-183910-v4-visible-portal-v2-fb319a\\maps\\queen_of_spades.map": "126d71b464432685",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-183910-v4-visible-portal-v2-fb319a\\maps\\schooltime.map": "726c404f3b34b4ed",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-183910-v4-visible-portal-v2-fb319a\\maps\\trophy.map": "5f1f6b23d6edb944"
+  },
+  "seed": 44007,
+  "workers": 1,
+  "games": 10,
+  "selection": "Regression only. No promotion or submission; require clear v2 edge and no errors.",
+  "source_hashes": {
+    "bcsim\\v4_visible_portal_v2.py": "99276e21f02aa9a2",
+    "bcsim\\match.py": "d546d7f5532b71f6",
+    "bcsim\\guarded.py": "87ac3dd271b72d9a",
+    "bcsim\\bounded.py": "c60b1fa2106c485f"
+  }
+}

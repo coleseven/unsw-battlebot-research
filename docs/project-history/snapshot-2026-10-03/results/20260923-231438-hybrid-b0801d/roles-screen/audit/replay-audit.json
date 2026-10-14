@@ -1,0 +1,92 @@
+{
+  "counts": {
+    "games": 264,
+    "verified_candidate_turns": 1549615,
+    "splits": 30335,
+    "late_splits": 0,
+    "mature_turns": 805128,
+    "mature_preserve_turns": 46414,
+    "mature_preserved_split_opportunities": 896,
+    "opportunity_turns": 744487,
+    "opportunity_preserve_turns": 61005,
+    "opportunity_preserved_split_opportunities": 14453
+  },
+  "samples": {
+    "mature__long": {
+      "bot": "mature",
+      "score": 34,
+      "init": "ID 141\nTEAM B\nMAP 64 64\nUNIT_LIMIT 64\n",
+      "id": 141,
+      "round": 432,
+      "block": "ROUND 432\nDIR W\nLENGTH 34\nUNIT_COUNT 64\nNUM_MSGS 0\n63 33 0 92\n0 33 0 87\n1 33 0 449\n2 33 0 260\n3 33 0 681\n4 33 0 387\n5 33 0 5\n63 34 0 83\n0 34 0 94\n1 34 0 49\n2 34 0 141\n3 34 0 80\n4 34 0 447\n5 34 0 206\n63 35 0 159\n0 35 0 65\n1 35 0 14\n2 35 0 544\n3 35 0 632\n4 35 0 413\n5 35 0 195\n63 36 0 228\n0 36 0 678\n1 36 0 509\n2 36 0 694\n3 36 0 308\n4 36 0 593\n5 36 0 484\n63 37 0 251\n0 37 0 116\n1 37 0 244\n2 37 0 220\n3 37 0 361\n4 37 0 56\n5 37 0 50\n63 38 0 354\n0 38 0 266\n1 38 0 522\n2 38 0 554\n3 38 0 339\n4 38 0 282\n5 38 0 372\n63 39 0 457\n0 39 0 107\n1 39 0 149\n2 39 0 192\n3 39 0 125\n4 39 0 41\n5 39 0 306\nDRAGON_BODIES 25\nB 212 63 33 N 0\nB 141 0 33 S 0\nA 112 5 33 S 0\nB 141 0 34 E 0\nB 141 1 34 S 0\nA 112 4 34 N 1\nA 112 5 34 S 0\nB 141 1 35 S 0\nA 112 4 35 N 0\nA 112 5 35 S 0\nB 141 1 36 S 0\nB 141 2 36 W 1\nB 141 3 36 W 0\nA 112 4 36 N 0\nA 112 5 36 W 0\nB 141 1 37 E 0\nB 141 2 37 E 0\nB 141 3 37 N 0\nB 297 1 38 W 1\nB 297 2 38 W 0\nB 297 3 38 W 0\nB 297 5 38 S 0\nB 297 3 39 N 0\nB 297 4 39 W 0\nB 297 5 39 W 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n",
+      "source": "results\\20260923-231438-hybrid-b0801d\\roles-screen\\replays\\reference_v2-vs-mature-big_empty_685baf0e797207b7-s28002.replay"
+    },
+    "mature__dense": {
+      "bot": "mature",
+      "score": 43,
+      "init": "ID 722\nTEAM A\nMAP 11 11\nUNIT_LIMIT 64\n",
+      "id": 722,
+      "round": 491,
+      "block": "ROUND 491\nDIR W\nLENGTH 25\nUNIT_COUNT 2\nNUM_MSGS 0\n3 0 0 -1\n4 0 0 -1\n5 0 0 -1\n6 0 0 -1\n7 0 0 -1\n8 0 0 -1\n9 0 0 -1\n3 1 0 14\n4 1 0 2\n5 1 0 10\n6 1 0 6\n7 1 0 4\n8 1 0 15\n9 1 1 7\n3 2 0 5\n4 2 0 3\n5 2 0 2\n6 2 0 15\n7 2 0 17\n8 2 0 9\n9 2 0 4\n3 3 0 3\n4 3 0 8\n5 3 0 2\n6 3 0 12\n7 3 0 5\n8 3 0 5\n9 3 0 13\n3 4 0 1\n4 4 0 8\n5 4 0 5\n6 4 1 15\n7 4 0 15\n8 4 0 3\n9 4 0 17\n3 5 1 5\n4 5 0 1\n5 5 0 9\n6 5 0 1\n7 5 0 5\n8 5 0 10\n9 5 0 9\n3 6 1 15\n4 6 0 15\n5 6 0 5\n6 6 0 8\n7 6 0 1\n8 6 0 1\n9 6 0 18\nDRAGON_BODIES 43\nA 722 3 0 S 0\nA 722 4 0 E 0\nA 722 5 0 S 0\nB 842 6 0 S 0\nB 842 7 0 W 0\nB 842 8 0 W 0\nB 842 9 0 W 0\nA 722 3 1 S 0\nA 722 4 1 N 0\nA 722 5 1 S 0\nB 842 6 1 E 0\nB 842 7 1 E 0\nB 842 8 1 S 0\nA 722 3 2 W 0\nA 722 4 2 N 0\nA 722 5 2 E 0\nA 722 6 2 E 0\nA 722 7 2 S 0\nB 842 8 2 S 0\nB 842 9 2 E 0\nA 722 3 3 E 0\nA 722 4 3 N 0\nA 722 6 3 W 1\nA 722 7 3 W 0\nB 842 8 3 S 0\nB 842 9 3 N 0\nA 722 3 4 N 0\nA 837 4 4 E 0\nA 837 5 4 E 1\nB 842 7 4 S 0\nB 842 8 4 W 0\nB 842 9 4 N 0\nA 837 4 5 N 0\nB 842 5 5 S 0\nB 842 7 5 S 1\nB 842 8 5 E 0\nB 842 9 5 N 0\nA 837 4 6 N 0\nB 842 5 6 E 0\nB 842 6 6 E 0\nB 842 7 6 E 0\nB 842 8 6 N 0\nA 837 9 6 E 0\nw w w w w w w\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n",
+      "source": "results\\20260923-231438-hybrid-b0801d\\roles-screen\\replays\\mature-vs-reference_v2-arena_728547b8376892d9-s28000.replay"
+    },
+    "mature__enemy_heads": {
+      "bot": "mature",
+      "score": 14,
+      "init": "ID 706\nTEAM A\nMAP 11 11\nUNIT_LIMIT 64\n",
+      "id": 706,
+      "round": 405,
+      "block": "ROUND 405\nDIR W\nLENGTH 3\nUNIT_COUNT 14\nNUM_MSGS 0\n1 5 0 7\n2 5 0 6\n3 5 0 6\n4 5 0 7\n5 5 0 9\n6 5 0 7\n7 5 0 6\n1 6 0 4\n2 6 0 6\n3 6 0 8\n4 6 0 16\n5 6 0 9\n6 6 0 12\n7 6 0 3\n1 7 0 7\n2 7 0 4\n3 7 0 6\n4 7 0 6\n5 7 0 2\n6 7 0 1\n7 7 0 8\n1 8 0 5\n2 8 0 13\n3 8 0 9\n4 8 0 1\n5 8 0 16\n6 8 0 8\n7 8 0 8\n1 9 0 15\n2 9 0 4\n3 9 1 12\n4 9 0 2\n5 9 0 7\n6 9 0 10\n7 9 0 10\n1 10 0 -1\n2 10 0 -1\n3 10 0 -1\n4 10 0 -1\n5 10 0 -1\n6 10 0 -1\n7 10 0 -1\n1 0 0 -1\n2 0 0 -1\n3 0 0 -1\n4 0 0 -1\n5 0 0 -1\n6 0 0 -1\n7 0 0 -1\nDRAGON_BODIES 35\nB 728 1 5 E 1\nB 723 2 5 W 1\nB 723 3 5 W 0\nB 673 4 5 S 1\nB 732 5 5 S 0\nB 732 6 5 W 0\nB 710 7 5 N 0\nA 722 2 6 E 0\nA 722 3 6 E 0\nA 722 4 6 E 1\nB 732 5 6 S 1\nB 710 7 6 N 0\nB 735 1 7 N 1\nB 739 2 7 W 1\nB 739 3 7 W 0\nB 646 5 7 W 1\nB 646 6 7 W 0\nB 735 1 8 N 0\nB 662 2 8 W 1\nB 662 3 8 W 0\nA 706 4 8 W 1\nA 706 5 8 W 0\nB 731 6 8 S 0\nB 731 7 8 W 0\nB 721 1 9 E 1\nB 730 2 9 S 0\nA 706 5 9 N 0\nB 731 6 9 S 1\nB 730 2 10 S 1\nB 734 6 10 W 1\nB 734 7 10 W 0\nA 709 1 0 S 0\nA 709 2 0 W 0\nB 729 6 0 N 1\nB 700 7 0 W 1\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\nw w w w w w w\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n",
+      "source": "results\\20260923-231438-hybrid-b0801d\\roles-screen\\replays\\mature-vs-reference_v2-arena_728547b8376892d9-s28001.replay"
+    },
+    "mature__population": {
+      "bot": "mature",
+      "score": 64,
+      "init": "ID 89\nTEAM A\nMAP 64 64\nUNIT_LIMIT 64\n",
+      "id": 89,
+      "round": 69,
+      "block": "ROUND 69\nDIR E\nLENGTH 3\nUNIT_COUNT 64\nNUM_MSGS 0\n5 58 0 246\n6 58 0 367\n7 58 0 412\n8 58 0 174\n9 58 0 284\n10 58 0 318\n11 58 0 550\n5 59 0 133\n6 59 0 123\n7 59 1 306\n8 59 0 365\n9 59 0 643\n10 59 0 470\n11 59 0 273\n5 60 0 177\n6 60 0 676\n7 60 0 638\n8 60 0 309\n9 60 0 613\n10 60 0 325\n11 60 0 562\n5 61 0 566\n6 61 0 146\n7 61 0 278\n8 61 0 585\n9 61 0 553\n10 61 0 468\n11 61 0 23\n5 62 0 641\n6 62 0 275\n7 62 0 626\n8 62 0 215\n9 62 0 547\n10 62 0 615\n11 62 0 409\n5 63 0 116\n6 63 0 239\n7 63 0 585\n8 63 0 83\n9 63 0 339\n10 63 0 263\n11 63 0 191\n5 0 0 455\n6 0 0 93\n7 0 0 613\n8 0 0 58\n9 0 0 51\n10 0 0 66\n11 0 0 629\nDRAGON_BODIES 6\nB 49 9 59 N 1\nB 49 9 60 N 0\nA 89 6 61 E 0\nA 89 7 61 E 0\nA 89 8 61 E 1\nB 49 9 61 N 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n",
+      "source": "results\\20260923-231438-hybrid-b0801d\\roles-screen\\replays\\mature-vs-reference_v2-big_empty_685baf0e797207b7-s28001.replay"
+    },
+    "opportunity__long": {
+      "bot": "opportunity",
+      "score": 35,
+      "init": "ID 802\nTEAM B\nMAP 11 11\nUNIT_LIMIT 64\n",
+      "id": 802,
+      "round": 499,
+      "block": "ROUND 499\nDIR W\nLENGTH 35\nUNIT_COUNT 1\nNUM_MSGS 0\n10 6 1 -1\n0 6 0 -1\n1 6 0 9\n2 6 0 9\n3 6 0 7\n4 6 0 7\n5 6 0 11\n10 7 0 -1\n0 7 0 -1\n1 7 0 5\n2 7 0 14\n3 7 1 5\n4 7 0 4\n5 7 0 7\n10 8 0 -1\n0 8 0 -1\n1 8 0 13\n2 8 0 1\n3 8 0 9\n4 8 0 7\n5 8 0 11\n10 9 0 -1\n0 9 0 -1\n1 9 1 8\n2 9 0 7\n3 9 0 12\n4 9 0 9\n5 9 0 2\n10 10 0 -1\n0 10 0 -1\n1 10 0 -1\n2 10 0 -1\n3 10 0 -1\n4 10 0 -1\n5 10 1 -1\n10 0 0 -1\n0 0 0 -1\n1 0 0 -1\n2 0 0 -1\n3 0 1 -1\n4 0 0 -1\n5 0 1 -1\n10 1 0 -1\n0 1 0 -1\n1 1 0 5\n2 1 0 12\n3 1 0 6\n4 1 0 10\n5 1 1 2\nDRAGON_BODIES 27\nA 759 0 6 S 0\nA 759 1 6 W 0\nA 759 2 6 N 0\nA 759 3 6 E 0\nA 759 4 6 S 0\nB 802 5 6 S 0\nA 759 0 7 E 0\nA 759 1 7 S 0\nA 759 2 7 N 0\nA 759 4 7 S 0\nB 802 5 7 E 0\nA 759 0 8 W 1\nA 759 1 8 W 0\nA 759 2 8 N 0\nA 759 3 8 W 0\nA 759 4 8 W 0\nB 802 5 8 S 0\nB 802 2 9 W 1\nB 802 3 9 W 0\nB 802 4 9 W 0\nB 802 5 9 W 0\nB 802 10 1 W 0\nA 759 0 1 S 0\nA 759 1 1 W 0\nA 759 2 1 W 0\nA 759 3 1 S 0\nA 759 4 1 W 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\nw w w w w w w\n. . . . . . .\n. . . . . . .\n. w . . . . . .\n. w . . . . . .\n. w . . . . . .\n. w . . . . . .\n. w . . . . . .\n. w . . . . . .\n. w . . . . . .\n",
+      "source": "results\\20260923-231438-hybrid-b0801d\\roles-screen\\replays\\reference_v2-vs-opportunity-arena_728547b8376892d9-s28002.replay"
+    },
+    "opportunity__dense": {
+      "bot": "opportunity",
+      "score": 45,
+      "init": "ID 780\nTEAM A\nMAP 11 11\nUNIT_LIMIT 64\n",
+      "id": 780,
+      "round": 490,
+      "block": "ROUND 490\nDIR S\nLENGTH 16\nUNIT_COUNT 4\nNUM_MSGS 0\n3 2 0 6\n4 2 0 4\n5 2 0 3\n6 2 0 16\n7 2 0 18\n8 2 0 10\n9 2 0 5\n3 3 0 4\n4 3 0 9\n5 3 0 3\n6 3 0 13\n7 3 0 6\n8 3 0 6\n9 3 0 14\n3 4 0 2\n4 4 0 9\n5 4 0 6\n6 4 0 1\n7 4 0 16\n8 4 0 4\n9 4 0 18\n3 5 0 6\n4 5 0 2\n5 5 0 10\n6 5 0 2\n7 5 0 6\n8 5 0 11\n9 5 0 10\n3 6 0 16\n4 6 0 1\n5 6 0 6\n6 6 0 9\n7 6 0 2\n8 6 0 2\n9 6 0 1\n3 7 0 6\n4 7 0 13\n5 7 0 3\n6 7 0 9\n7 7 0 4\n8 7 0 10\n9 7 0 3\n3 8 0 18\n4 8 0 16\n5 8 0 3\n6 8 0 4\n7 8 0 6\n8 8 0 1\n9 8 0 10\nDRAGON_BODIES 45\nB 740 3 2 W 0\nB 740 4 2 N 0\nA 733 5 2 N 0\nA 733 6 2 W 0\nA 733 7 2 W 0\nA 733 8 2 W 0\nA 733 9 2 N 0\nB 740 4 3 N 0\nA 780 5 3 E 0\nA 780 6 3 E 0\nA 780 7 3 S 0\nA 733 8 3 E 0\nA 733 9 3 N 0\nB 740 4 4 N 0\nA 780 5 4 N 0\nA 780 6 4 S 0\nA 780 7 4 W 0\nA 733 8 4 N 0\nA 733 9 4 W 0\nB 740 3 5 E 0\nB 740 4 5 N 0\nA 780 5 5 N 0\nA 780 6 5 S 1\nA 733 9 5 N 0\nA 780 3 6 E 0\nA 780 4 6 S 0\nA 780 5 6 N 0\nA 782 6 6 E 0\nA 782 7 6 E 1\nA 733 8 6 E 0\nA 733 9 6 N 0\nA 780 3 7 N 0\nA 780 4 7 E 0\nA 780 5 7 N 0\nA 782 6 7 N 0\nA 782 7 7 W 0\nA 782 8 7 W 0\nA 782 9 7 W 0\nA 780 3 8 N 0\nA 780 4 8 W 0\nA 782 5 8 E 0\nA 782 6 8 E 0\nA 782 7 8 E 0\nA 782 8 8 S 0\nA 782 9 8 N 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n",
+      "source": "results\\20260923-231438-hybrid-b0801d\\roles-screen\\replays\\opportunity-vs-reference_v2-arena_728547b8376892d9-s28003.replay"
+    },
+    "opportunity__enemy_heads": {
+      "bot": "opportunity",
+      "score": 14,
+      "init": "ID 162\nTEAM B\nMAP 11 11\nUNIT_LIMIT 64\n",
+      "id": 162,
+      "round": 93,
+      "block": "ROUND 93\nDIR W\nLENGTH 2\nUNIT_COUNT 10\nNUM_MSGS 0\n3 3 0 15\n4 3 0 17\n5 3 0 1\n6 3 0 11\n7 3 0 16\n8 3 0 11\n9 3 0 13\n3 4 0 12\n4 4 0 9\n5 4 0 2\n6 4 0 8\n7 4 0 7\n8 4 0 13\n9 4 0 6\n3 5 0 16\n4 5 0 9\n5 5 0 1\n6 5 0 9\n7 5 0 16\n8 5 0 18\n9 5 0 3\n3 6 0 7\n4 6 0 8\n5 6 0 2\n6 6 0 9\n7 6 0 12\n8 6 0 5\n9 6 0 11\n3 7 0 16\n4 7 0 11\n5 7 0 1\n6 7 0 17\n7 7 0 15\n8 7 0 8\n9 7 0 11\n3 8 0 5\n4 8 0 6\n5 8 0 2\n6 8 0 15\n7 8 0 2\n8 8 0 9\n9 8 0 4\n3 9 0 11\n4 9 0 5\n5 9 0 4\n6 9 0 15\n7 9 0 8\n8 9 0 11\n9 9 0 14\nDRAGON_BODIES 35\nA 149 3 3 W 1\nA 149 4 3 W 0\nA 167 5 3 E 0\nA 167 6 3 E 1\nA 108 7 3 N 0\nA 164 8 3 S 1\nA 163 4 4 E 0\nA 163 5 4 E 1\nA 160 9 4 W 1\nA 169 4 5 W 1\nA 169 5 5 W 0\nB 115 6 5 W 1\nB 115 7 5 W 0\nA 93 9 5 E 0\nA 168 3 6 E 1\nA 158 4 6 W 1\nA 158 5 6 W 0\nB 162 6 6 W 1\nB 162 7 6 W 0\nA 93 9 6 N 0\nA 151 3 7 E 1\nA 133 5 7 W 1\nA 133 6 7 W 0\nA 133 7 7 W 0\nA 133 8 7 W 0\nA 93 9 7 N 0\nA 148 4 8 W 1\nA 148 5 8 W 0\nA 154 7 8 N 1\nA 156 9 8 N 1\nA 166 5 9 E 0\nA 166 6 9 E 1\nA 154 7 9 N 0\nA 156 8 9 E 0\nA 156 9 9 N 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n",
+      "source": "results\\20260923-231438-hybrid-b0801d\\roles-screen\\replays\\reference_v2-vs-opportunity-arena_728547b8376892d9-s28000.replay"
+    },
+    "opportunity__population": {
+      "bot": "opportunity",
+      "score": 64,
+      "init": "ID 21\nTEAM A\nMAP 64 64\nUNIT_LIMIT 64\n",
+      "id": 21,
+      "round": 70,
+      "block": "ROUND 70\nDIR E\nLENGTH 2\nUNIT_COUNT 64\nNUM_MSGS 0\n29 37 0 174\n30 37 0 22\n31 37 0 401\n32 37 0 99\n33 37 0 291\n34 37 0 327\n35 37 0 465\n29 38 0 177\n30 38 0 312\n31 38 0 524\n32 38 0 548\n33 38 0 53\n34 38 0 642\n35 38 0 383\n29 39 0 679\n30 39 0 538\n31 39 0 523\n32 39 0 554\n33 39 0 186\n34 39 0 585\n35 39 0 277\n29 40 0 415\n30 40 0 333\n31 40 0 249\n32 40 0 485\n33 40 0 199\n34 40 0 299\n35 40 0 577\n29 41 0 403\n30 41 0 466\n31 41 0 312\n32 41 0 415\n33 41 0 42\n34 41 0 634\n35 41 0 424\n29 42 0 78\n30 42 0 592\n31 42 0 314\n32 42 0 389\n33 42 0 287\n34 42 0 541\n35 42 0 23\n29 43 0 576\n30 43 0 374\n31 43 0 78\n32 43 0 491\n33 43 0 428\n34 43 0 616\n35 43 0 16\nDRAGON_BODIES 5\nB 88 29 40 E 0\nB 88 30 40 E 1\nA 21 31 40 E 0\nA 21 32 40 E 1\nB 13 30 43 N 1\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n",
+      "source": "results\\20260923-231438-hybrid-b0801d\\roles-screen\\replays\\opportunity-vs-reference_v2-big_empty_685baf0e797207b7-s28000.replay"
+    }
+  },
+  "hashes": {
+    "mature": "d895206d10a64131",
+    "opportunity": "35168ff1ade1b83b"
+  }
+}

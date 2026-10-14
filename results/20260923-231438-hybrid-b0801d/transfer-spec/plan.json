@@ -1,0 +1,324 @@
+{
+  "question": "Does unchanged linear improvement transfer, and how does its neural control compare?",
+  "maps": [
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\plain_open_small.map",
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\plain_open_large.map",
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\plain_baffles_small.map",
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\plain_baffles_large.map",
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\plain_dense_small.map",
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\plain_dense_large.map",
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\plain_scarce_small.map",
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\plain_scarce_large.map",
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\portal_open_small.map",
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\portal_open_large.map",
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\portal_baffles_small.map",
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\portal_baffles_large.map",
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\portal_dense_small.map",
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\portal_dense_large.map",
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\portal_scarce_small.map",
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\portal_scarce_large.map"
+  ],
+  "families": {
+    "plain_open_small": "open",
+    "plain_open_large": "open",
+    "plain_baffles_small": "baffles",
+    "plain_baffles_large": "baffles",
+    "plain_dense_small": "dense",
+    "plain_dense_large": "dense",
+    "plain_scarce_small": "scarce",
+    "plain_scarce_large": "scarce",
+    "portal_open_small": "open",
+    "portal_open_large": "open",
+    "portal_baffles_small": "baffles",
+    "portal_baffles_large": "baffles",
+    "portal_dense_small": "dense",
+    "portal_dense_large": "dense",
+    "portal_scarce_small": "scarce",
+    "portal_scarce_large": "scarce"
+  },
+  "specs": [
+    {
+      "name": "plain_open_small",
+      "spec": [
+        "open_small",
+        "open",
+        16,
+        16,
+        0.0,
+        0.85,
+        9,
+        21,
+        34001
+      ]
+    },
+    {
+      "name": "plain_open_large",
+      "spec": [
+        "open_large",
+        "open",
+        28,
+        20,
+        0.0,
+        0.65,
+        15,
+        34,
+        34002
+      ]
+    },
+    {
+      "name": "plain_baffles_small",
+      "spec": [
+        "baffles_small",
+        "baffles",
+        14,
+        18,
+        0.14,
+        0.85,
+        7,
+        17,
+        34003
+      ]
+    },
+    {
+      "name": "plain_baffles_large",
+      "spec": [
+        "baffles_large",
+        "baffles",
+        24,
+        18,
+        0.2,
+        0.55,
+        11,
+        26,
+        34004
+      ]
+    },
+    {
+      "name": "plain_dense_small",
+      "spec": [
+        "dense_small",
+        "dense",
+        16,
+        20,
+        0.3,
+        0.8,
+        9,
+        22,
+        34005
+      ]
+    },
+    {
+      "name": "plain_dense_large",
+      "spec": [
+        "dense_large",
+        "dense",
+        24,
+        22,
+        0.37,
+        0.6,
+        12,
+        31,
+        34006
+      ]
+    },
+    {
+      "name": "plain_scarce_small",
+      "spec": [
+        "scarce_small",
+        "scarce",
+        18,
+        14,
+        0.24,
+        0.25,
+        21,
+        42,
+        34007
+      ]
+    },
+    {
+      "name": "plain_scarce_large",
+      "spec": [
+        "scarce_large",
+        "scarce",
+        22,
+        18,
+        0.33,
+        0.25,
+        21,
+        42,
+        34008
+      ]
+    },
+    {
+      "name": "portal_open_small",
+      "spec": [
+        "open_small",
+        "open",
+        16,
+        16,
+        0.0,
+        0.85,
+        9,
+        21,
+        35001,
+        4
+      ]
+    },
+    {
+      "name": "portal_open_large",
+      "spec": [
+        "open_large",
+        "open",
+        28,
+        20,
+        0.0,
+        0.65,
+        15,
+        34,
+        35002,
+        8
+      ]
+    },
+    {
+      "name": "portal_baffles_small",
+      "spec": [
+        "baffles_small",
+        "baffles",
+        14,
+        18,
+        0.14,
+        0.85,
+        7,
+        17,
+        35003,
+        4
+      ]
+    },
+    {
+      "name": "portal_baffles_large",
+      "spec": [
+        "baffles_large",
+        "baffles",
+        24,
+        18,
+        0.2,
+        0.55,
+        11,
+        26,
+        35004,
+        8
+      ]
+    },
+    {
+      "name": "portal_dense_small",
+      "spec": [
+        "dense_small",
+        "dense",
+        16,
+        20,
+        0.3,
+        0.8,
+        9,
+        22,
+        35005,
+        4
+      ]
+    },
+    {
+      "name": "portal_dense_large",
+      "spec": [
+        "dense_large",
+        "dense",
+        24,
+        22,
+        0.37,
+        0.6,
+        12,
+        31,
+        35006,
+        8
+      ]
+    },
+    {
+      "name": "portal_scarce_small",
+      "spec": [
+        "scarce_small",
+        "scarce",
+        18,
+        14,
+        0.24,
+        0.25,
+        21,
+        42,
+        35007,
+        4
+      ]
+    },
+    {
+      "name": "portal_scarce_large",
+      "spec": [
+        "scarce_large",
+        "scarce",
+        22,
+        18,
+        0.33,
+        0.25,
+        21,
+        42,
+        35008,
+        8
+      ]
+    }
+  ],
+  "seeds": [
+    32000,
+    32001,
+    32002,
+    32003,
+    32004,
+    32005,
+    32006,
+    32007
+  ],
+  "pairs": [
+    [
+      "linear",
+      "reference_v2"
+    ],
+    [
+      "neural",
+      "reference_v2"
+    ],
+    [
+      "linear",
+      "neural"
+    ]
+  ],
+  "hashes": {
+    "linear": "69382825b699723d",
+    "neural": "8b30b4590f0f6e5c",
+    "reference_v2": "9f29ab4138b51d26"
+  },
+  "map_hashes": {
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\plain_open_small.map": "2bdb684266df6f06",
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\plain_open_large.map": "44bbdfc1ba8aafd6",
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\plain_baffles_small.map": "916f79c3f8fe7e26",
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\plain_baffles_large.map": "83d873c067e15df5",
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\plain_dense_small.map": "d606376d97f45331",
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\plain_dense_large.map": "e4ff44ec90f4bd33",
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\plain_scarce_small.map": "d4c59fcb03909b54",
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\plain_scarce_large.map": "ddb3a56dd56c83d7",
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\portal_open_small.map": "d0265c374cd3fb7a",
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\portal_open_large.map": "e09a2328bf220721",
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\portal_baffles_small.map": "d8372e6eefbfd2f4",
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\portal_baffles_large.map": "2f78c8410b22da7b",
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\portal_dense_small.map": "9142e1d0a20f2f5b",
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\portal_dense_large.map": "d83c26b0015f7c44",
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\portal_scarce_small.map": "dd47edb194eb5c16",
+    "results\\20260923-231438-hybrid-b0801d\\transfer-spec\\portal_scarce_large.map": "f399c5af4b68bc99"
+  },
+  "expected_games": 768,
+  "condition": "Run only if linear passes the original fresh-seed official-map performance gate.",
+  "gate": "Linear versus v2 family-cluster 95% lower bound > .5 and every map score >= .375. Neural comparisons are diagnostic and do not select a replacement.",
+  "limits": "Four related procedural families; not the competition distribution. Fresh geometry and bot RNG seeds, no training or tuning. No portal navigation added."
+}

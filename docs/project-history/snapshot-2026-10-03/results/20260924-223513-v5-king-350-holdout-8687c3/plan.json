@@ -1,0 +1,30 @@
+{
+  "question": "Does the unchanged round-350 king generalize beyond its six screen maps?",
+  "limits": "Five distinct held-out official maps, both sides, deterministic engine, one worker.",
+  "seed": 51001,
+  "workers": 1,
+  "live_hash": "ffe736af6c14ea33",
+  "source_hashes": {
+    "king_350": "16e1ada2ad2ec086",
+    "king_400": "acf0bbe02fa71c44"
+  },
+  "bot_hashes": {
+    "king_350": "16e1ada2ad2ec086",
+    "king_400": "acf0bbe02fa71c44"
+  },
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-223513-v5-king-350-holdout-8687c3\\maps\\arena.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-223513-v5-king-350-holdout-8687c3\\maps\\Colosseum.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-223513-v5-king-350-holdout-8687c3\\maps\\default_small.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-223513-v5-king-350-holdout-8687c3\\maps\\queen_of_spades.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-223513-v5-king-350-holdout-8687c3\\maps\\Devil.map"
+  ],
+  "map_hashes": {
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-223513-v5-king-350-holdout-8687c3\\maps\\arena.map": "b4bab09603289c2d",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-223513-v5-king-350-holdout-8687c3\\maps\\Colosseum.map": "c7549a41ea26600f",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-223513-v5-king-350-holdout-8687c3\\maps\\default_small.map": "8ac4b2eedcf19f85",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-223513-v5-king-350-holdout-8687c3\\maps\\queen_of_spades.map": "126d71b464432685",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-223513-v5-king-350-holdout-8687c3\\maps\\Devil.map": "a09e8f2d3bdd1e40"
+  },
+  "script_hash": "c03ac3cdddd26b13"
+}

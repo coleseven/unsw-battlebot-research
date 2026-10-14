@@ -1,0 +1,2460 @@
+{
+  "description": "Results source snapshot exclusions: opponent-named bot roots and exact normalized non-helper third-party source matches, including five renamed candidate snapshots. Preserve SOURCE.txt provenance records separately. All sparring source excluded. These are source-only exclusions; match results and replay data remain publishable project evidence.",
+  "excluded_source_roots": [
+    "results/20260924-114923-v4-grower-352a0f/bots/ctmes",
+    "results/20260924-114923-v4-grower-352a0f/bots/nicked",
+    "results/20260924-115357-v4-grower-374d2b/bots/ctmes",
+    "results/20260924-115357-v4-grower-374d2b/bots/nicked",
+    "results/20260924-121059-v4-phase-e23595/bots/ctmes",
+    "results/20260924-121059-v4-phase-e23595/bots/nicked",
+    "results/20260924-223816-v5-combo-809e43/bots/nicked",
+    "results/20260924-233609-full-change-bb86e5/bots/nicked",
+    "results/20260924-235440-v5-portal-probe-b63cb1/bots/nicked",
+    "results/20260924-235840-full-change-a01a46/bots/nicked",
+    "results/20260925-001144-v5-trap-probe-047e50/bots/nicked",
+    "results/20260925-001343-full-change-a0dc40/bots/nicked",
+    "results/20260925-112740-v5-economy-probe-6fd266/bots/nicked",
+    "results/20260925-113359-full-change-053960/bots/nicked",
+    "results/20260925-114617-v5-queen-probe-733bcb/bots/nicked",
+    "results/20260925-114822-v5-queen-probe-977acd/bots/nicked",
+    "results/20260925-114947-full-change-08d46d/bots/nicked",
+    "results/20260925-115752-v5-head-probe-5daac8/bots/nicked",
+    "results/20260925-115956-full-change-cb0cd7/bots/nicked",
+    "results/20260925-121905-v5-explore-probe-5971fb/bots/nicked",
+    "results/20260925-122111-full-change-0499e5/bots/nicked",
+    "results/20260925-122956-v5-population-probe-079b04/bots/nicked",
+    "results/20260925-123353-full-change-4c85a0/bots/nicked",
+    "results/20260925-132108-v6-g0-791c56/bots/nicked",
+    "results/20260925-132931-full-change-982835/bots/nicked",
+    "results/20260925-165427-full-change-6aff76/bots/nicked",
+    "results/20260925-170438-full-change-1b70b0/bots/nicked",
+    "results/20260925-172503-full-change-de9339/bots/nicked",
+    "results/20260925-174256-full-change-ac5a2a/bots/nicked",
+    "results/20260925-182609-full-change-a85586/bots/nicked",
+    "results/20260925-182711-full-change-1505bb/bots/nicked",
+    "results/20260925-184725-full-change-858372/bots/nicked",
+    "results/20260925-190333-full-change-62d036/bots/ctmes",
+    "results/20260925-190333-full-change-62d036/bots/nicked_v44",
+    "results/20260925-191302-full-change-a71535/bots/ctmes",
+    "results/20260925-191302-full-change-a71535/bots/nicked",
+    "results/20260925-191302-full-change-a71535/bots/nicked_v44",
+    "results/20260925-204545-full-change-13b847/bots/nicked",
+    "results/20260925-204546-full-change-911c3e/bots/nicked",
+    "results/20260925-210223-full-change-d2d318/bots/nicked",
+    "results/20260925-210223-full-change-d2d318/bots/nicked_v44",
+    "results/20260925-210224-full-change-4838d6/bots/nicked",
+    "results/20260925-210224-full-change-4838d6/bots/nicked_v44",
+    "results/20260925-210224-full-change-b3cbea/bots/nicked",
+    "results/20260925-210224-full-change-b3cbea/bots/nicked_v44",
+    "results/20260925-212726-full-change-52675f/bots/nicked",
+    "results/20260925-212726-full-change-52675f/bots/nicked_v44",
+    "results/20260925-212727-full-change-b01abd/bots/nicked",
+    "results/20260925-212727-full-change-b01abd/bots/nicked_v44",
+    "results/20260925-214042-full-change-ba75fb/bots/ctmes",
+    "results/20260925-224533-full-change-9382db/bots/ctmes",
+    "results/20260925-224533-full-change-9382db/bots/nicked",
+    "results/20260925-224533-full-change-9382db/bots/nicked_v44",
+    "results/20260925-232832-full-change-b0a387/bots/ctmes",
+    "results/20260925-232832-full-change-b0a387/bots/nicked",
+    "results/20260925-232832-full-change-b0a387/bots/nicked_v44",
+    "results/20260925-234031-tune-0d2021/opponents/nicked",
+    "results/20260925-235406-full-change-d94b9b/bots/nicked",
+    "results/20260925-235406-full-change-ecd2b0/bots/nicked",
+    "results/20260925-235407-full-change-165aad/bots/nicked",
+    "results/20260925-235407-full-change-6fe318/bots/nicked",
+    "results/20260926-001535-tune-79f3f9/opponents/nicked",
+    "results/20260926-145349-full-change-516b69/bots/ctmes",
+    "results/20260926-145349-full-change-516b69/bots/nicked_v44",
+    "results/20260926-145350-full-change-c39295/bots/ctmes",
+    "results/20260926-145350-full-change-c39295/bots/nicked_v44",
+    "results/20260926-145351-full-change-5e66de/bots/ctmes",
+    "results/20260926-145351-full-change-5e66de/bots/nicked_v44",
+    "results/20260926-145351-full-change-bbba46/bots/ctmes",
+    "results/20260926-145351-full-change-bbba46/bots/nicked_v44",
+    "results/20260926-151434-full-change-8bec11/bots/ctmes",
+    "results/20260926-151434-full-change-8bec11/bots/nicked_v44",
+    "results/20260926-151852-tune-d9e7d6/opponents/nicked",
+    "results/20260926-163332-full-change-f35783/bots/ctmes",
+    "results/20260926-163332-full-change-f35783/bots/nicked_v44",
+    "results/20260926-163333-full-change-c38170/bots/ctmes",
+    "results/20260926-163333-full-change-c38170/bots/nicked_v44",
+    "results/20260926-170140-tune-268a93/opponents/nicked",
+    "results/20260926-182526-tune-4fcea2/opponents/nicked",
+    "results/20260926-183834-full-change-162756/bots/candidate",
+    "results/20260926-183834-full-change-162756/bots/nicked",
+    "results/20260926-183834-full-change-162756/bots/nicked_v44",
+    "results/20260926-183834-full-change-3fe65d/bots/candidate",
+    "results/20260926-183834-full-change-3fe65d/bots/nicked",
+    "results/20260926-183834-full-change-3fe65d/bots/nicked_v44",
+    "results/20260926-183835-full-change-bb2dcf/bots/candidate",
+    "results/20260926-183835-full-change-bb2dcf/bots/nicked",
+    "results/20260926-183835-full-change-bb2dcf/bots/nicked_v44",
+    "results/20260926-183836-full-change-d496cd/bots/candidate",
+    "results/20260926-183836-full-change-d496cd/bots/nicked",
+    "results/20260926-183836-full-change-d496cd/bots/nicked_v44",
+    "results/20260926-183837-full-change-60b9a8/bots/candidate",
+    "results/20260926-183837-full-change-60b9a8/bots/nicked",
+    "results/20260926-183837-full-change-60b9a8/bots/nicked_v44",
+    "results/20260926-204722-ablate-903314/opponents/nicked",
+    "results/20260926-214429-ablate-346278/opponents/nicked",
+    "results/20260927-021008-ablate-5c0197/opponents/nicked",
+    "results/20260927-030709-tune-4efc96/opponents/nicked",
+    "results/20260927-061647-full-change-fc188d/bots/cpp_leviathan3",
+    "results/20260927-061647-full-change-fc188d/bots/ctmes",
+    "results/20260927-061647-full-change-fc188d/bots/nicked_v44",
+    "results/20260927-061649-full-change-db2585/bots/cpp_leviathan3",
+    "results/20260927-061649-full-change-db2585/bots/ctmes",
+    "results/20260927-061649-full-change-db2585/bots/nicked_v44",
+    "results/20260927-112601-tune-40f110/opponents/cpp_abyss",
+    "results/20260927-112601-tune-40f110/opponents/cpp_nicked_v75",
+    "results/20260927-132201-tune-a63e89/opponents/cpp_leviathan3",
+    "results/20260927-132201-tune-a63e89/opponents/cpp_nicked_v75",
+    "results/20260927-190107-ablate-6028c1/opponents/cpp_leviathan3",
+    "results/20260927-190107-ablate-6028c1/opponents/cpp_nicked_v75",
+    "results/20260927-194503-tune-ccc4cd/opponents/cpp_leviathan3",
+    "results/20260927-194503-tune-ccc4cd/opponents/cpp_nicked_v75",
+    "results/20260927-231030-full-change-1f35bb/bots/nicked_lab",
+    "results/20260927-231030-full-change-1f35bb/bots/nicked_v44",
+    "results/20260927-231031-full-change-51b4d9/bots/nicked_lab",
+    "results/20260927-231031-full-change-51b4d9/bots/nicked_v44",
+    "results/20260928-044431-full-change-62591f/bots/nicked_lab",
+    "results/20260928-044431-full-change-62591f/bots/nicked_v44",
+    "results/20260928-044432-full-change-5fc479/bots/nicked_lab",
+    "results/20260928-044432-full-change-5fc479/bots/nicked_v44",
+    "results/20260928-140413-ablate-2970a3/opponents/cpp_leviathan3",
+    "results/20260928-140413-ablate-2970a3/opponents/cpp_nicked_v75",
+    "results/20260928-140413-ablate-2970a3/opponents/nicked_v44",
+    "results/20260928-174742-ablate-8cf646/opponents/cpp_leviathan3",
+    "results/20260928-174742-ablate-8cf646/opponents/cpp_nicked_v75",
+    "results/20260928-174742-ablate-8cf646/opponents/nicked_v44",
+    "results/20260928-180616-ablate-22301c/opponents/cpp_leviathan3",
+    "results/20260928-180616-ablate-22301c/opponents/cpp_nicked_v75",
+    "results/20260928-180616-ablate-22301c/opponents/nicked_v44",
+    "results/20260928-224114-full-change-f05cec/bots/ctmes",
+    "results/20260928-224114-full-change-f05cec/bots/nicked_lab",
+    "results/20260928-224115-full-change-345748/bots/ctmes",
+    "results/20260928-224115-full-change-345748/bots/nicked_lab",
+    "results/20260929-001450-ablate-0e245d/opponents/cpp_leviathan3",
+    "results/20260929-001450-ablate-0e245d/opponents/cpp_nicked_v75",
+    "results/20260929-001450-ablate-0e245d/opponents/nicked_v44",
+    "results/20260929-005706-ablate-39e66c/opponents/cpp_leviathan3",
+    "results/20260929-005706-ablate-39e66c/opponents/cpp_nicked_v75",
+    "results/20260929-005706-ablate-39e66c/opponents/nicked_v44",
+    "results/20260929-013847-tune-c7cd3d/opponents/cpp_leviathan3",
+    "results/20260929-013847-tune-c7cd3d/opponents/cpp_nicked_v75",
+    "results/20260929-013847-tune-c7cd3d/opponents/nicked_v44",
+    "results/20260929-071650-full-change-8cfa1b/bots/ctmes",
+    "results/20260929-071650-full-change-8cfa1b/bots/nicked_lab",
+    "results/20260929-071651-full-change-5060a9/bots/ctmes",
+    "results/20260929-071651-full-change-5060a9/bots/nicked_lab",
+    "results/20260929-074209-ablate-87a257/opponents/cpp_leviathan3",
+    "results/20260929-074209-ablate-87a257/opponents/cpp_nicked_v75",
+    "results/20260929-074209-ablate-87a257/opponents/nicked_v44",
+    "results/20260929-092956-ablate-1fdc1e/opponents/cpp_leviathan3",
+    "results/20260929-092956-ablate-1fdc1e/opponents/cpp_nicked_v75",
+    "results/20260929-092956-ablate-1fdc1e/opponents/nicked_lab",
+    "results/20260929-092956-ablate-1fdc1e/opponents/nicked_v44",
+    "results/20260929-093158-ablate-933dc7/opponents/cpp_leviathan3",
+    "results/20260929-093158-ablate-933dc7/opponents/cpp_nicked_v75",
+    "results/20260929-093158-ablate-933dc7/opponents/nicked_lab",
+    "results/20260929-093158-ablate-933dc7/opponents/nicked_v44",
+    "results/20260929-121639-ablate-d99145/opponents/cpp_leviathan3",
+    "results/20260929-121639-ablate-d99145/opponents/cpp_nicked_v75",
+    "results/20260929-121639-ablate-d99145/opponents/nicked_lab",
+    "results/20260929-121639-ablate-d99145/opponents/nicked_v44",
+    "results/20260929-134853-ablate-5617dc/opponents/cpp_leviathan3",
+    "results/20260929-134853-ablate-5617dc/opponents/cpp_nicked_v75",
+    "results/20260929-134853-ablate-5617dc/opponents/nicked_lab",
+    "results/20260929-134853-ablate-5617dc/opponents/nicked_v44",
+    "results/20260929-152502-ablate-f3fe84/opponents/cpp_nicked_v75",
+    "results/20260929-152502-ablate-f3fe84/opponents/cpp_nicked_v92",
+    "results/20260929-152611-ablate-5cb6f9/opponents/cpp_leviathan3",
+    "results/20260929-152611-ablate-5cb6f9/opponents/cpp_nicked_v75",
+    "results/20260929-152611-ablate-5cb6f9/opponents/cpp_nicked_v92",
+    "results/20260929-152611-ablate-5cb6f9/opponents/nicked_lab",
+    "results/20260929-152611-ablate-5cb6f9/opponents/nicked_v44",
+    "results/20260929-163912-ablate-263928/opponents/cpp_leviathan3",
+    "results/20260929-163912-ablate-263928/opponents/cpp_nicked_v75",
+    "results/20260929-163912-ablate-263928/opponents/cpp_nicked_v92",
+    "results/20260929-163912-ablate-263928/opponents/nicked_lab",
+    "results/20260929-163912-ablate-263928/opponents/nicked_v44",
+    "results/20260929-182640-ablate-e2493c/opponents/cpp_leviathan3",
+    "results/20260929-182640-ablate-e2493c/opponents/cpp_nicked_v75",
+    "results/20260929-182640-ablate-e2493c/opponents/cpp_nicked_v92",
+    "results/20260929-182640-ablate-e2493c/opponents/nicked_lab",
+    "results/20260929-182640-ablate-e2493c/opponents/nicked_v44",
+    "results/20260929-201541-tune-6e4812/opponents/cpp_nicked_v75",
+    "results/20260929-201541-tune-6e4812/opponents/cpp_nicked_v92",
+    "results/20260929-201541-tune-6e4812/opponents/nicked_lab",
+    "results/20260929-201541-tune-6e4812/opponents/nicked_v44",
+    "results/20260930-073741-ablate-f5f4ba/opponents/cpp_leviathan3",
+    "results/20260930-073741-ablate-f5f4ba/opponents/cpp_nicked_v75",
+    "results/20260930-073741-ablate-f5f4ba/opponents/cpp_nicked_v92",
+    "results/20260930-073741-ablate-f5f4ba/opponents/nicked_lab",
+    "results/20260930-073741-ablate-f5f4ba/opponents/nicked_v44",
+    "results/20260930-095351-ablate-907fbc/opponents/cpp_leviathan3",
+    "results/20260930-095351-ablate-907fbc/opponents/cpp_nicked_v75",
+    "results/20260930-095351-ablate-907fbc/opponents/cpp_nicked_v92",
+    "results/20260930-095351-ablate-907fbc/opponents/nicked_lab",
+    "results/20260930-095351-ablate-907fbc/opponents/nicked_v44",
+    "results/20260930-110033-ablate-a99756/opponents/cpp_leviathan3",
+    "results/20260930-110033-ablate-a99756/opponents/cpp_nicked_v75",
+    "results/20260930-110033-ablate-a99756/opponents/cpp_nicked_v92",
+    "results/20260930-110033-ablate-a99756/opponents/nicked_lab",
+    "results/20260930-110033-ablate-a99756/opponents/nicked_v44",
+    "results/20260930-114529-ablate-214862/opponents/cpp_leviathan3",
+    "results/20260930-114529-ablate-214862/opponents/cpp_nicked_v75",
+    "results/20260930-114529-ablate-214862/opponents/cpp_nicked_v92",
+    "results/20260930-114529-ablate-214862/opponents/nicked_lab",
+    "results/20260930-114529-ablate-214862/opponents/nicked_v44",
+    "results/20260930-131507-ablate-bfe34e/opponents/cpp_leviathan3",
+    "results/20260930-131507-ablate-bfe34e/opponents/cpp_nicked_v75",
+    "results/20260930-131507-ablate-bfe34e/opponents/cpp_nicked_v92",
+    "results/20260930-131507-ablate-bfe34e/opponents/nicked_lab",
+    "results/20260930-131507-ablate-bfe34e/opponents/nicked_v44",
+    "results/20260930-144847-ablate-27e8a7/opponents/cpp_leviathan3",
+    "results/20260930-144847-ablate-27e8a7/opponents/cpp_nicked_v75",
+    "results/20260930-144847-ablate-27e8a7/opponents/cpp_nicked_v92",
+    "results/20260930-144847-ablate-27e8a7/opponents/nicked_lab",
+    "results/20260930-144847-ablate-27e8a7/opponents/nicked_v44",
+    "results/20260930-161837-ablate-05467d/opponents/cpp_leviathan3",
+    "results/20260930-161837-ablate-05467d/opponents/cpp_nicked_v75",
+    "results/20260930-161837-ablate-05467d/opponents/cpp_nicked_v92",
+    "results/20260930-161837-ablate-05467d/opponents/nicked_lab",
+    "results/20260930-161837-ablate-05467d/opponents/nicked_v44",
+    "results/20260930-182348-ablate-81c0bb/opponents/cpp_leviathan3",
+    "results/20260930-182348-ablate-81c0bb/opponents/cpp_nicked_v75",
+    "results/20260930-182348-ablate-81c0bb/opponents/cpp_nicked_v92",
+    "results/20260930-182348-ablate-81c0bb/opponents/nicked_lab",
+    "results/20260930-182348-ablate-81c0bb/opponents/nicked_v44",
+    "results/20260930-195605-ablate-983951/opponents/cpp_leviathan3",
+    "results/20260930-195605-ablate-983951/opponents/cpp_nicked_v75",
+    "results/20260930-195605-ablate-983951/opponents/cpp_nicked_v92",
+    "results/20260930-195605-ablate-983951/opponents/nicked_lab",
+    "results/20260930-195605-ablate-983951/opponents/nicked_v44",
+    "results/20260930-210927-ablate-9aaef8/opponents/cpp_leviathan3",
+    "results/20260930-210927-ablate-9aaef8/opponents/cpp_nicked_v75",
+    "results/20260930-210927-ablate-9aaef8/opponents/cpp_nicked_v92",
+    "results/20260930-210927-ablate-9aaef8/opponents/nicked_lab",
+    "results/20260930-210927-ablate-9aaef8/opponents/nicked_v44",
+    "results/20260930-224316-ablate-46cdb1/opponents/cpp_leviathan3",
+    "results/20260930-224316-ablate-46cdb1/opponents/cpp_nicked_v75",
+    "results/20260930-224316-ablate-46cdb1/opponents/cpp_nicked_v92",
+    "results/20260930-224316-ablate-46cdb1/opponents/nicked_lab",
+    "results/20260930-224316-ablate-46cdb1/opponents/nicked_v44",
+    "results/20260930-224324-ablate-a110d4/opponents/cpp_leviathan3",
+    "results/20260930-224324-ablate-a110d4/opponents/cpp_nicked_v75",
+    "results/20260930-224324-ablate-a110d4/opponents/cpp_nicked_v92",
+    "results/20260930-224324-ablate-a110d4/opponents/nicked_lab",
+    "results/20260930-224324-ablate-a110d4/opponents/nicked_v44",
+    "results/20261001-141248-ablate-4e9237/opponents/cpp_leviathan3",
+    "results/20261001-141248-ablate-4e9237/opponents/cpp_nicked_v75",
+    "results/20261001-141248-ablate-4e9237/opponents/cpp_nicked_v92",
+    "results/20261001-141248-ablate-4e9237/opponents/nicked_lab",
+    "results/20261001-141248-ablate-4e9237/opponents/nicked_v44",
+    "results/20261001-152839-ablate-fec4b0/opponents/cpp_leviathan3",
+    "results/20261001-152839-ablate-fec4b0/opponents/cpp_nicked_v75",
+    "results/20261001-152839-ablate-fec4b0/opponents/cpp_nicked_v92",
+    "results/20261001-152839-ablate-fec4b0/opponents/nicked_lab",
+    "results/20261001-152839-ablate-fec4b0/opponents/nicked_v44",
+    "results/20261001-203651-ablate-9c6006/opponents/cpp_leviathan3",
+    "results/20261001-203651-ablate-9c6006/opponents/cpp_nicked_v75",
+    "results/20261001-203651-ablate-9c6006/opponents/cpp_nicked_v92",
+    "results/20261001-203651-ablate-9c6006/opponents/nicked_lab",
+    "results/20261001-203651-ablate-9c6006/opponents/nicked_v44",
+    "results/20261001-204841-ablate-1c9d1d/opponents/cpp_leviathan3",
+    "results/20261001-204841-ablate-1c9d1d/opponents/cpp_nicked_v75",
+    "results/20261001-204841-ablate-1c9d1d/opponents/cpp_nicked_v92",
+    "results/20261001-204841-ablate-1c9d1d/opponents/nicked_lab",
+    "results/20261001-204841-ablate-1c9d1d/opponents/nicked_v44",
+    "results/20261001-213229-ablate-a8b26d/opponents/cpp_leviathan3",
+    "results/20261001-213229-ablate-a8b26d/opponents/cpp_nicked_v75",
+    "results/20261001-213229-ablate-a8b26d/opponents/cpp_nicked_v92",
+    "results/20261001-213229-ablate-a8b26d/opponents/nicked_lab",
+    "results/20261001-213229-ablate-a8b26d/opponents/nicked_v44",
+    "results/20261001-232813-ablate-9ec1d0/opponents/cpp_leviathan3",
+    "results/20261001-232813-ablate-9ec1d0/opponents/cpp_nicked_v75",
+    "results/20261001-232813-ablate-9ec1d0/opponents/cpp_nicked_v92",
+    "results/20261001-232813-ablate-9ec1d0/opponents/nicked_lab",
+    "results/20261001-232813-ablate-9ec1d0/opponents/nicked_v44",
+    "results/20261002-003855-ablate-58e7c5/opponents/cpp_leviathan3",
+    "results/20261002-003855-ablate-58e7c5/opponents/cpp_nicked_v75",
+    "results/20261002-003855-ablate-58e7c5/opponents/cpp_nicked_v92",
+    "results/20261002-003855-ablate-58e7c5/opponents/nicked_lab",
+    "results/20261002-003855-ablate-58e7c5/opponents/nicked_v44",
+    "results/20261002-013638-ablate-03f6ea/opponents/cpp_leviathan3",
+    "results/20261002-013638-ablate-03f6ea/opponents/cpp_nicked_v75",
+    "results/20261002-013638-ablate-03f6ea/opponents/cpp_nicked_v92",
+    "results/20261002-013638-ablate-03f6ea/opponents/nicked_lab",
+    "results/20261002-013638-ablate-03f6ea/opponents/nicked_v44",
+    "results/20261002-091849-ablate-0b2d16/opponents/cpp_leviathan3",
+    "results/20261002-091849-ablate-0b2d16/opponents/cpp_nicked_v75",
+    "results/20261002-091849-ablate-0b2d16/opponents/cpp_nicked_v92",
+    "results/20261002-091849-ablate-0b2d16/opponents/nicked_lab",
+    "results/20261002-091849-ablate-0b2d16/opponents/nicked_v44",
+    "results/20261002-104933-ablate-4d1d01/opponents/cpp_leviathan3",
+    "results/20261002-104933-ablate-4d1d01/opponents/cpp_nicked_v75",
+    "results/20261002-104933-ablate-4d1d01/opponents/cpp_nicked_v92",
+    "results/20261002-104933-ablate-4d1d01/opponents/nicked_lab",
+    "results/20261002-104933-ablate-4d1d01/opponents/nicked_v44",
+    "results/20261002-122654-ablate-9e01f6/opponents/cpp_leviathan3",
+    "results/20261002-122654-ablate-9e01f6/opponents/cpp_nicked_v75",
+    "results/20261002-122654-ablate-9e01f6/opponents/cpp_nicked_v92",
+    "results/20261002-122654-ablate-9e01f6/opponents/nicked_lab",
+    "results/20261002-122654-ablate-9e01f6/opponents/nicked_v44",
+    "results/20261002-133325-ablate-192622/opponents/cpp_leviathan3",
+    "results/20261002-133325-ablate-192622/opponents/cpp_nicked_v75",
+    "results/20261002-133325-ablate-192622/opponents/cpp_nicked_v92",
+    "results/20261002-133325-ablate-192622/opponents/nicked_lab",
+    "results/20261002-133325-ablate-192622/opponents/nicked_v44",
+    "results/20261002-145854-ablate-0e3685/opponents/cpp_leviathan3",
+    "results/20261002-145854-ablate-0e3685/opponents/cpp_nicked_v75",
+    "results/20261002-145854-ablate-0e3685/opponents/cpp_nicked_v92",
+    "results/20261002-145854-ablate-0e3685/opponents/nicked_lab",
+    "results/20261002-145854-ablate-0e3685/opponents/nicked_v44",
+    "results/20261002-163932-ablate-df1077/opponents/cpp_leviathan3",
+    "results/20261002-163932-ablate-df1077/opponents/cpp_nicked_v75",
+    "results/20261002-163932-ablate-df1077/opponents/cpp_nicked_v92",
+    "results/20261002-163932-ablate-df1077/opponents/nicked_lab",
+    "results/20261002-163932-ablate-df1077/opponents/nicked_v44",
+    "results/20261002-180409-ablate-3db476/opponents/cpp_leviathan3",
+    "results/20261002-180409-ablate-3db476/opponents/cpp_nicked_v75",
+    "results/20261002-180409-ablate-3db476/opponents/cpp_nicked_v92",
+    "results/20261002-180409-ablate-3db476/opponents/nicked_lab",
+    "results/20261002-180409-ablate-3db476/opponents/nicked_v44",
+    "results/20261002-192514-ablate-52aecd/opponents/cpp_leviathan3",
+    "results/20261002-192514-ablate-52aecd/opponents/cpp_nicked_v75",
+    "results/20261002-192514-ablate-52aecd/opponents/cpp_nicked_v92",
+    "results/20261002-192514-ablate-52aecd/opponents/nicked_lab",
+    "results/20261002-192514-ablate-52aecd/opponents/nicked_v44",
+    "results/20261002-200810-ablate-394220/opponents/cpp_leviathan3",
+    "results/20261002-200810-ablate-394220/opponents/cpp_nicked_v75",
+    "results/20261002-200810-ablate-394220/opponents/cpp_nicked_v92",
+    "results/20261002-200810-ablate-394220/opponents/nicked_lab",
+    "results/20261002-200810-ablate-394220/opponents/nicked_v44",
+    "results/20261002-221412-ablate-3a1e25/opponents/cpp_leviathan3",
+    "results/20261002-221412-ablate-3a1e25/opponents/cpp_nicked_v75",
+    "results/20261002-221412-ablate-3a1e25/opponents/cpp_nicked_v92",
+    "results/20261002-221412-ablate-3a1e25/opponents/nicked_lab",
+    "results/20261002-221412-ablate-3a1e25/opponents/nicked_v44",
+    "results/20261002-234510-ablate-a5b1f7/opponents/cpp_leviathan3",
+    "results/20261002-234510-ablate-a5b1f7/opponents/cpp_nicked_v75",
+    "results/20261002-234510-ablate-a5b1f7/opponents/cpp_nicked_v92",
+    "results/20261002-234510-ablate-a5b1f7/opponents/nicked_lab",
+    "results/20261002-234510-ablate-a5b1f7/opponents/nicked_v44",
+    "results/20261003-114945-ablate-1bdd7a/opponents/cpp_leviathan3",
+    "results/20261003-114945-ablate-1bdd7a/opponents/cpp_nicked_v75",
+    "results/20261003-114945-ablate-1bdd7a/opponents/cpp_nicked_v92",
+    "results/20261003-114945-ablate-1bdd7a/opponents/nicked_lab",
+    "results/20261003-114945-ablate-1bdd7a/opponents/nicked_v44",
+    "results/20261003-115128-ablate-71a0f6/opponents/cpp_leviathan3",
+    "results/20261003-115128-ablate-71a0f6/opponents/cpp_nicked_v75",
+    "results/20261003-115128-ablate-71a0f6/opponents/cpp_nicked_v92",
+    "results/20261003-115128-ablate-71a0f6/opponents/nicked_lab",
+    "results/20261003-115128-ablate-71a0f6/opponents/nicked_v44",
+    "results/20261003-115234-ablate-b8901c/opponents/cpp_leviathan3",
+    "results/20261003-115234-ablate-b8901c/opponents/cpp_nicked_v75",
+    "results/20261003-115234-ablate-b8901c/opponents/cpp_nicked_v92",
+    "results/20261003-115234-ablate-b8901c/opponents/nicked_lab",
+    "results/20261003-115234-ablate-b8901c/opponents/nicked_v44",
+    "results/20261003-125123-ablate-6a262e/opponents/cpp_nicked_v75",
+    "results/20261003-125123-ablate-6a262e/opponents/cpp_nicked_v92",
+    "results/20261003-125123-ablate-6a262e/opponents/nicked_lab",
+    "results/20261003-134712-ablate-e3fcd5/opponents/cpp_leviathan3",
+    "results/20261003-134712-ablate-e3fcd5/opponents/cpp_nicked_v75",
+    "results/20261003-134712-ablate-e3fcd5/opponents/cpp_nicked_v92",
+    "results/20261003-134712-ablate-e3fcd5/opponents/nicked_lab",
+    "results/20261003-134712-ablate-e3fcd5/opponents/nicked_v44",
+    "results/20261003-171037-ablate-052b88/opponents/cpp_leviathan3",
+    "results/20261003-171037-ablate-052b88/opponents/cpp_nicked_v75",
+    "results/20261003-171037-ablate-052b88/opponents/cpp_nicked_v92",
+    "results/20261003-171037-ablate-052b88/opponents/nicked_lab",
+    "results/20261003-171037-ablate-052b88/opponents/nicked_v44",
+    "results/20261003-183034-ablate-3ac260/opponents/cpp_leviathan3",
+    "results/20261003-183034-ablate-3ac260/opponents/cpp_nicked_v75",
+    "results/20261003-183034-ablate-3ac260/opponents/cpp_nicked_v92",
+    "results/20261003-183034-ablate-3ac260/opponents/nicked_lab",
+    "results/20261003-183034-ablate-3ac260/opponents/nicked_v44",
+    "results/20261003-192712-ablate-d2ca26/opponents/cpp_leviathan3",
+    "results/20261003-192712-ablate-d2ca26/opponents/cpp_nicked_v75",
+    "results/20261003-192712-ablate-d2ca26/opponents/cpp_nicked_v92",
+    "results/20261003-192712-ablate-d2ca26/opponents/nicked_lab",
+    "results/20261003-192712-ablate-d2ca26/opponents/nicked_v44",
+    "results/20261003-214401-ablate-28bd72/opponents/cpp_leviathan3",
+    "results/20261003-214401-ablate-28bd72/opponents/cpp_nicked_v75",
+    "results/20261003-214401-ablate-28bd72/opponents/cpp_nicked_v92",
+    "results/20261003-214401-ablate-28bd72/opponents/nicked_lab",
+    "results/20261003-214401-ablate-28bd72/opponents/nicked_v44",
+    "results/20261003-224713-ablate-d440c5/opponents/cpp_leviathan3",
+    "results/20261003-224713-ablate-d440c5/opponents/cpp_nicked_v75",
+    "results/20261003-224713-ablate-d440c5/opponents/cpp_nicked_v92",
+    "results/20261003-224713-ablate-d440c5/opponents/nicked_lab",
+    "results/20261003-224713-ablate-d440c5/opponents/nicked_v44",
+    "results/20261003-230525-ablate-af20b7/opponents/cpp_leviathan3",
+    "results/20261003-230525-ablate-af20b7/opponents/cpp_nicked_v75",
+    "results/20261003-230525-ablate-af20b7/opponents/cpp_nicked_v92",
+    "results/20261003-230525-ablate-af20b7/opponents/nicked_lab",
+    "results/20261003-230525-ablate-af20b7/opponents/nicked_v44",
+    "results/20261004-121204-ablate-936b79/opponents/cpp_leviathan3",
+    "results/20261004-121204-ablate-936b79/opponents/cpp_nicked_v92",
+    "results/20261004-121204-ablate-936b79/opponents/nicked_lab",
+    "results/20261004-130824-ablate-a66d4f/opponents/cpp_leviathan3",
+    "results/20261004-130824-ablate-a66d4f/opponents/cpp_nicked_v75",
+    "results/20261004-130824-ablate-a66d4f/opponents/cpp_nicked_v92",
+    "results/20261004-130824-ablate-a66d4f/opponents/nicked_lab",
+    "results/20261004-130824-ablate-a66d4f/opponents/nicked_v44",
+    "results/20261004-160858-ablate-b4a68d/opponents/cpp_leviathan3",
+    "results/20261004-160858-ablate-b4a68d/opponents/cpp_nicked_v92",
+    "results/20261004-160858-ablate-b4a68d/opponents/nicked_lab",
+    "results/20261004-162434-ablate-333e9c/opponents/cpp_leviathan3",
+    "results/20261004-162434-ablate-333e9c/opponents/cpp_nicked_v92",
+    "results/20261004-162434-ablate-333e9c/opponents/nicked_lab",
+    "results/20261004-172323-ablate-961460/opponents/cpp_leviathan3",
+    "results/20261004-172323-ablate-961460/opponents/cpp_nicked_v92",
+    "results/20261004-172323-ablate-961460/opponents/nicked_lab",
+    "results/20261004-180058-ablate-2034b1/opponents/cpp_leviathan3",
+    "results/20261004-180058-ablate-2034b1/opponents/cpp_nicked_v75",
+    "results/20261004-180058-ablate-2034b1/opponents/cpp_nicked_v92",
+    "results/20261004-180058-ablate-2034b1/opponents/nicked_lab",
+    "results/20261004-180058-ablate-2034b1/opponents/nicked_v44",
+    "results/20261004-233200-ablate-bc4e4e/opponents/cpp_leviathan3",
+    "results/20261004-233200-ablate-bc4e4e/opponents/cpp_nicked_v92",
+    "results/20261004-233200-ablate-bc4e4e/opponents/nicked_lab",
+    "results/20261005-002713-ablate-50f8e9/opponents/cpp_leviathan3",
+    "results/20261005-002713-ablate-50f8e9/opponents/cpp_nicked_v75",
+    "results/20261005-002713-ablate-50f8e9/opponents/cpp_nicked_v92",
+    "results/20261005-002713-ablate-50f8e9/opponents/nicked_lab",
+    "results/20261005-002713-ablate-50f8e9/opponents/nicked_v44",
+    "results/20261005-023115-ablate-472761/opponents/cpp_leviathan3",
+    "results/20261005-023115-ablate-472761/opponents/cpp_nicked_v92",
+    "results/20261005-023115-ablate-472761/opponents/nicked_lab",
+    "results/20261005-032739-ablate-617f76/opponents/cpp_leviathan3",
+    "results/20261005-032739-ablate-617f76/opponents/cpp_nicked_v75",
+    "results/20261005-032739-ablate-617f76/opponents/cpp_nicked_v92",
+    "results/20261005-032739-ablate-617f76/opponents/nicked_lab",
+    "results/20261005-032739-ablate-617f76/opponents/nicked_v44",
+    "results/20261005-134322-ablate-576e85/opponents/cpp_leviathan3",
+    "results/20261005-134322-ablate-576e85/opponents/cpp_nicked_v92",
+    "results/20261005-134322-ablate-576e85/opponents/nicked_lab",
+    "results/20261006-164930-ablate-c1a05d/opponents/cpp_leviathan3",
+    "results/20261006-164930-ablate-c1a05d/opponents/cpp_nicked_v92",
+    "results/20261006-164930-ablate-c1a05d/opponents/nicked_lab",
+    "results/20261006-175553-ablate-a3575f/opponents/cpp_leviathan3",
+    "results/20261006-175553-ablate-a3575f/opponents/cpp_nicked_v75",
+    "results/20261006-175553-ablate-a3575f/opponents/cpp_nicked_v92",
+    "results/20261006-175553-ablate-a3575f/opponents/nicked_lab",
+    "results/20261006-175553-ablate-a3575f/opponents/nicked_v44",
+    "results/20261006-180726-ablate-ea6fce/opponents/cpp_leviathan3",
+    "results/20261006-180726-ablate-ea6fce/opponents/cpp_nicked_v92",
+    "results/20261006-180726-ablate-ea6fce/opponents/nicked_lab",
+    "results/20261006-234331-ablate-647787/opponents/cpp_leviathan3",
+    "results/20261006-234331-ablate-647787/opponents/cpp_nicked_v92",
+    "results/20261006-234331-ablate-647787/opponents/nicked_lab",
+    "results/20261006-234808-ablate-c2af62/opponents/cpp_leviathan3",
+    "results/20261006-234808-ablate-c2af62/opponents/cpp_nicked_v92",
+    "results/20261006-234808-ablate-c2af62/opponents/nicked_lab",
+    "results/20261007-022453-ablate-02982a/opponents/cpp_leviathan3",
+    "results/20261007-022453-ablate-02982a/opponents/cpp_nicked_v75",
+    "results/20261007-022453-ablate-02982a/opponents/cpp_nicked_v92",
+    "results/20261007-022453-ablate-02982a/opponents/nicked_lab",
+    "results/20261007-022453-ablate-02982a/opponents/nicked_v44",
+    "results/20261007-084959-ablate-ca9d33/opponents/cpp_leviathan3",
+    "results/20261007-084959-ablate-ca9d33/opponents/cpp_nicked_v92",
+    "results/20261007-084959-ablate-ca9d33/opponents/nicked_lab",
+    "results/20261007-091551-ablate-5e7397/opponents/cpp_leviathan3",
+    "results/20261007-091551-ablate-5e7397/opponents/cpp_nicked_v92",
+    "results/20261007-091551-ablate-5e7397/opponents/nicked_lab",
+    "results/20261007-111025-ablate-398ccc/opponents/cpp_leviathan3",
+    "results/20261007-111025-ablate-398ccc/opponents/cpp_nicked_v92",
+    "results/20261007-111025-ablate-398ccc/opponents/nicked_lab",
+    "results/20261007-125134-ablate-07ccc3/opponents/cpp_leviathan3",
+    "results/20261007-125134-ablate-07ccc3/opponents/cpp_nicked_v75",
+    "results/20261007-125134-ablate-07ccc3/opponents/cpp_nicked_v92",
+    "results/20261007-125134-ablate-07ccc3/opponents/nicked_lab",
+    "results/20261007-125134-ablate-07ccc3/opponents/nicked_v44"
+  ],
+  "source_records": [
+    {
+      "path": "results/20260924-114923-v4-grower-352a0f/bots/ctmes/SOURCE.txt",
+      "provenance": "ctmes/battlecode 653225f399515b93d09d098c5702373c753af4df"
+    },
+    {
+      "path": "results/20260924-114923-v4-grower-352a0f/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260924-115357-v4-grower-374d2b/bots/ctmes/SOURCE.txt",
+      "provenance": "ctmes/battlecode 653225f399515b93d09d098c5702373c753af4df"
+    },
+    {
+      "path": "results/20260924-115357-v4-grower-374d2b/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260924-121059-v4-phase-e23595/bots/ctmes/SOURCE.txt",
+      "provenance": "ctmes/battlecode 653225f399515b93d09d098c5702373c753af4df"
+    },
+    {
+      "path": "results/20260924-121059-v4-phase-e23595/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260924-223816-v5-combo-809e43/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260924-233609-full-change-bb86e5/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260924-235440-v5-portal-probe-b63cb1/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260924-235840-full-change-a01a46/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-001144-v5-trap-probe-047e50/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-001343-full-change-a0dc40/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-112740-v5-economy-probe-6fd266/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-113359-full-change-053960/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-114617-v5-queen-probe-733bcb/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-114822-v5-queen-probe-977acd/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-114947-full-change-08d46d/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-115752-v5-head-probe-5daac8/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-115956-full-change-cb0cd7/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-121905-v5-explore-probe-5971fb/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-122111-full-change-0499e5/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-122956-v5-population-probe-079b04/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-123353-full-change-4c85a0/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-132108-v6-g0-791c56/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-132931-full-change-982835/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-165427-full-change-6aff76/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-170438-full-change-1b70b0/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-172503-full-change-de9339/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-174256-full-change-ac5a2a/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-182609-full-change-a85586/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-182711-full-change-1505bb/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-184725-full-change-858372/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-190333-full-change-62d036/bots/ctmes/SOURCE.txt",
+      "provenance": "ctmes/battlecode 653225f399515b93d09d098c5702373c753af4df"
+    },
+    {
+      "path": "results/20260925-190333-full-change-62d036/bots/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260925-191302-full-change-a71535/bots/ctmes/SOURCE.txt",
+      "provenance": "ctmes/battlecode 653225f399515b93d09d098c5702373c753af4df"
+    },
+    {
+      "path": "results/20260925-191302-full-change-a71535/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-191302-full-change-a71535/bots/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260925-204545-full-change-13b847/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-204546-full-change-911c3e/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-210223-full-change-d2d318/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-210223-full-change-d2d318/bots/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260925-210224-full-change-4838d6/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-210224-full-change-4838d6/bots/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260925-210224-full-change-b3cbea/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-210224-full-change-b3cbea/bots/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260925-212726-full-change-52675f/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-212726-full-change-52675f/bots/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260925-212727-full-change-b01abd/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-212727-full-change-b01abd/bots/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260925-214042-full-change-ba75fb/bots/ctmes/SOURCE.txt",
+      "provenance": "ctmes/battlecode 653225f399515b93d09d098c5702373c753af4df"
+    },
+    {
+      "path": "results/20260925-224533-full-change-9382db/bots/ctmes/SOURCE.txt",
+      "provenance": "ctmes/battlecode 653225f399515b93d09d098c5702373c753af4df"
+    },
+    {
+      "path": "results/20260925-224533-full-change-9382db/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-224533-full-change-9382db/bots/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260925-232832-full-change-b0a387/bots/ctmes/SOURCE.txt",
+      "provenance": "ctmes/battlecode 653225f399515b93d09d098c5702373c753af4df"
+    },
+    {
+      "path": "results/20260925-232832-full-change-b0a387/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-232832-full-change-b0a387/bots/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260925-234031-tune-0d2021/opponents/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-235406-full-change-d94b9b/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-235406-full-change-ecd2b0/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-235407-full-change-165aad/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260925-235407-full-change-6fe318/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260926-001535-tune-79f3f9/opponents/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260926-145349-full-change-516b69/bots/ctmes/SOURCE.txt",
+      "provenance": "ctmes/battlecode 653225f399515b93d09d098c5702373c753af4df"
+    },
+    {
+      "path": "results/20260926-145349-full-change-516b69/bots/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260926-145350-full-change-c39295/bots/ctmes/SOURCE.txt",
+      "provenance": "ctmes/battlecode 653225f399515b93d09d098c5702373c753af4df"
+    },
+    {
+      "path": "results/20260926-145350-full-change-c39295/bots/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260926-145351-full-change-5e66de/bots/ctmes/SOURCE.txt",
+      "provenance": "ctmes/battlecode 653225f399515b93d09d098c5702373c753af4df"
+    },
+    {
+      "path": "results/20260926-145351-full-change-5e66de/bots/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260926-145351-full-change-bbba46/bots/ctmes/SOURCE.txt",
+      "provenance": "ctmes/battlecode 653225f399515b93d09d098c5702373c753af4df"
+    },
+    {
+      "path": "results/20260926-145351-full-change-bbba46/bots/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260926-151434-full-change-8bec11/bots/ctmes/SOURCE.txt",
+      "provenance": "ctmes/battlecode 653225f399515b93d09d098c5702373c753af4df"
+    },
+    {
+      "path": "results/20260926-151434-full-change-8bec11/bots/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260926-151852-tune-d9e7d6/opponents/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260926-163332-full-change-f35783/bots/ctmes/SOURCE.txt",
+      "provenance": "ctmes/battlecode 653225f399515b93d09d098c5702373c753af4df"
+    },
+    {
+      "path": "results/20260926-163332-full-change-f35783/bots/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260926-163333-full-change-c38170/bots/ctmes/SOURCE.txt",
+      "provenance": "ctmes/battlecode 653225f399515b93d09d098c5702373c753af4df"
+    },
+    {
+      "path": "results/20260926-163333-full-change-c38170/bots/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260926-170140-tune-268a93/opponents/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260926-182526-tune-4fcea2/opponents/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260926-183834-full-change-162756/bots/candidate/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260926-183834-full-change-162756/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260926-183834-full-change-162756/bots/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260926-183834-full-change-3fe65d/bots/candidate/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260926-183834-full-change-3fe65d/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260926-183834-full-change-3fe65d/bots/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260926-183835-full-change-bb2dcf/bots/candidate/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260926-183835-full-change-bb2dcf/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260926-183835-full-change-bb2dcf/bots/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260926-183836-full-change-d496cd/bots/candidate/SOURCE.txt",
+      "provenance": "Aarav0010/botpro 1303a47b4354a4e70aadbbe1ee55622599be9e9c"
+    },
+    {
+      "path": "results/20260926-183836-full-change-d496cd/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260926-183836-full-change-d496cd/bots/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260926-183837-full-change-60b9a8/bots/candidate/SOURCE.txt",
+      "provenance": "devkadaba-maker/BattleCode 34e23093511fff1dd9417308b3a5ac460e43243a"
+    },
+    {
+      "path": "results/20260926-183837-full-change-60b9a8/bots/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260926-183837-full-change-60b9a8/bots/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260926-204722-ablate-903314/opponents/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260926-214429-ablate-346278/opponents/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260927-021008-ablate-5c0197/opponents/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260927-030709-tune-4efc96/opponents/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b"
+    },
+    {
+      "path": "results/20260927-061647-full-change-fc188d/bots/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260927-061647-full-change-fc188d/bots/ctmes/SOURCE.txt",
+      "provenance": "ctmes/battlecode 653225f399515b93d09d098c5702373c753af4df"
+    },
+    {
+      "path": "results/20260927-061647-full-change-fc188d/bots/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260927-061649-full-change-db2585/bots/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260927-061649-full-change-db2585/bots/ctmes/SOURCE.txt",
+      "provenance": "ctmes/battlecode 653225f399515b93d09d098c5702373c753af4df"
+    },
+    {
+      "path": "results/20260927-061649-full-change-db2585/bots/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260927-112601-tune-40f110/opponents/cpp_abyss/SOURCE.txt",
+      "provenance": "SongyuQi-Francisco/battlecode-abyss-framework b8e92e18592f8135622718570e8ebf8f7992fa94 (SongyuQi-Francisco_battlecode-abyss-framework)"
+    },
+    {
+      "path": "results/20260927-112601-tune-40f110/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260927-132201-tune-a63e89/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260927-132201-tune-a63e89/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260927-190107-ablate-6028c1/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260927-190107-ablate-6028c1/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260927-194503-tune-ccc4cd/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260927-194503-tune-ccc4cd/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260927-231030-full-change-1f35bb/bots/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20260927-231030-full-change-1f35bb/bots/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260927-231031-full-change-51b4d9/bots/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20260927-231031-full-change-51b4d9/bots/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260928-044431-full-change-62591f/bots/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20260928-044431-full-change-62591f/bots/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260928-044432-full-change-5fc479/bots/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20260928-044432-full-change-5fc479/bots/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260928-140413-ablate-2970a3/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260928-140413-ablate-2970a3/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260928-140413-ablate-2970a3/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260928-174742-ablate-8cf646/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260928-174742-ablate-8cf646/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260928-174742-ablate-8cf646/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260928-180616-ablate-22301c/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260928-180616-ablate-22301c/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260928-180616-ablate-22301c/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260928-224114-full-change-f05cec/bots/ctmes/SOURCE.txt",
+      "provenance": "ctmes/battlecode 653225f399515b93d09d098c5702373c753af4df"
+    },
+    {
+      "path": "results/20260928-224114-full-change-f05cec/bots/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20260928-224115-full-change-345748/bots/ctmes/SOURCE.txt",
+      "provenance": "ctmes/battlecode 653225f399515b93d09d098c5702373c753af4df"
+    },
+    {
+      "path": "results/20260928-224115-full-change-345748/bots/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20260929-001450-ablate-0e245d/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260929-001450-ablate-0e245d/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260929-001450-ablate-0e245d/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260929-005706-ablate-39e66c/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260929-005706-ablate-39e66c/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260929-005706-ablate-39e66c/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260929-013847-tune-c7cd3d/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260929-013847-tune-c7cd3d/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260929-013847-tune-c7cd3d/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260929-071650-full-change-8cfa1b/bots/ctmes/SOURCE.txt",
+      "provenance": "ctmes/battlecode 653225f399515b93d09d098c5702373c753af4df"
+    },
+    {
+      "path": "results/20260929-071650-full-change-8cfa1b/bots/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20260929-071651-full-change-5060a9/bots/ctmes/SOURCE.txt",
+      "provenance": "ctmes/battlecode 653225f399515b93d09d098c5702373c753af4df"
+    },
+    {
+      "path": "results/20260929-071651-full-change-5060a9/bots/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20260929-074209-ablate-87a257/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260929-074209-ablate-87a257/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260929-074209-ablate-87a257/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260929-092956-ablate-1fdc1e/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260929-092956-ablate-1fdc1e/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260929-092956-ablate-1fdc1e/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20260929-092956-ablate-1fdc1e/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260929-093158-ablate-933dc7/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260929-093158-ablate-933dc7/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260929-093158-ablate-933dc7/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20260929-093158-ablate-933dc7/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260929-121639-ablate-d99145/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260929-121639-ablate-d99145/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260929-121639-ablate-d99145/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20260929-121639-ablate-d99145/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260929-134853-ablate-5617dc/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260929-134853-ablate-5617dc/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260929-134853-ablate-5617dc/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20260929-134853-ablate-5617dc/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260929-152502-ablate-f3fe84/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260929-152502-ablate-f3fe84/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20260929-152611-ablate-5cb6f9/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260929-152611-ablate-5cb6f9/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260929-152611-ablate-5cb6f9/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20260929-152611-ablate-5cb6f9/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20260929-152611-ablate-5cb6f9/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260929-163912-ablate-263928/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260929-163912-ablate-263928/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260929-163912-ablate-263928/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20260929-163912-ablate-263928/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20260929-163912-ablate-263928/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260929-182640-ablate-e2493c/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260929-182640-ablate-e2493c/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260929-182640-ablate-e2493c/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20260929-182640-ablate-e2493c/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20260929-182640-ablate-e2493c/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260929-201541-tune-6e4812/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260929-201541-tune-6e4812/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20260929-201541-tune-6e4812/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20260929-201541-tune-6e4812/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260930-073741-ablate-f5f4ba/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260930-073741-ablate-f5f4ba/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260930-073741-ablate-f5f4ba/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20260930-073741-ablate-f5f4ba/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20260930-073741-ablate-f5f4ba/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260930-095351-ablate-907fbc/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260930-095351-ablate-907fbc/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260930-095351-ablate-907fbc/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20260930-095351-ablate-907fbc/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20260930-095351-ablate-907fbc/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260930-110033-ablate-a99756/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260930-110033-ablate-a99756/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260930-110033-ablate-a99756/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20260930-110033-ablate-a99756/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20260930-110033-ablate-a99756/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260930-114529-ablate-214862/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260930-114529-ablate-214862/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260930-114529-ablate-214862/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20260930-114529-ablate-214862/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20260930-114529-ablate-214862/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260930-131507-ablate-bfe34e/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260930-131507-ablate-bfe34e/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260930-131507-ablate-bfe34e/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20260930-131507-ablate-bfe34e/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20260930-131507-ablate-bfe34e/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260930-144847-ablate-27e8a7/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260930-144847-ablate-27e8a7/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260930-144847-ablate-27e8a7/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20260930-144847-ablate-27e8a7/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20260930-144847-ablate-27e8a7/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260930-161837-ablate-05467d/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260930-161837-ablate-05467d/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260930-161837-ablate-05467d/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20260930-161837-ablate-05467d/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20260930-161837-ablate-05467d/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260930-182348-ablate-81c0bb/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260930-182348-ablate-81c0bb/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260930-182348-ablate-81c0bb/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20260930-182348-ablate-81c0bb/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20260930-182348-ablate-81c0bb/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260930-195605-ablate-983951/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260930-195605-ablate-983951/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260930-195605-ablate-983951/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20260930-195605-ablate-983951/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20260930-195605-ablate-983951/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260930-210927-ablate-9aaef8/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260930-210927-ablate-9aaef8/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260930-210927-ablate-9aaef8/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20260930-210927-ablate-9aaef8/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20260930-210927-ablate-9aaef8/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260930-224316-ablate-46cdb1/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260930-224316-ablate-46cdb1/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260930-224316-ablate-46cdb1/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20260930-224316-ablate-46cdb1/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20260930-224316-ablate-46cdb1/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20260930-224324-ablate-a110d4/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20260930-224324-ablate-a110d4/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20260930-224324-ablate-a110d4/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20260930-224324-ablate-a110d4/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20260930-224324-ablate-a110d4/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261001-141248-ablate-4e9237/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261001-141248-ablate-4e9237/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261001-141248-ablate-4e9237/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261001-141248-ablate-4e9237/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261001-141248-ablate-4e9237/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261001-152839-ablate-fec4b0/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261001-152839-ablate-fec4b0/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261001-152839-ablate-fec4b0/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261001-152839-ablate-fec4b0/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261001-152839-ablate-fec4b0/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261001-203651-ablate-9c6006/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261001-203651-ablate-9c6006/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261001-203651-ablate-9c6006/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261001-203651-ablate-9c6006/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261001-203651-ablate-9c6006/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261001-204841-ablate-1c9d1d/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261001-204841-ablate-1c9d1d/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261001-204841-ablate-1c9d1d/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261001-204841-ablate-1c9d1d/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261001-204841-ablate-1c9d1d/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261001-213229-ablate-a8b26d/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261001-213229-ablate-a8b26d/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261001-213229-ablate-a8b26d/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261001-213229-ablate-a8b26d/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261001-213229-ablate-a8b26d/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261001-232813-ablate-9ec1d0/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261001-232813-ablate-9ec1d0/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261001-232813-ablate-9ec1d0/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261001-232813-ablate-9ec1d0/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261001-232813-ablate-9ec1d0/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261002-003855-ablate-58e7c5/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261002-003855-ablate-58e7c5/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261002-003855-ablate-58e7c5/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261002-003855-ablate-58e7c5/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261002-003855-ablate-58e7c5/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261002-013638-ablate-03f6ea/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261002-013638-ablate-03f6ea/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261002-013638-ablate-03f6ea/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261002-013638-ablate-03f6ea/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261002-013638-ablate-03f6ea/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261002-091849-ablate-0b2d16/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261002-091849-ablate-0b2d16/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261002-091849-ablate-0b2d16/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261002-091849-ablate-0b2d16/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261002-091849-ablate-0b2d16/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261002-104933-ablate-4d1d01/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261002-104933-ablate-4d1d01/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261002-104933-ablate-4d1d01/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261002-104933-ablate-4d1d01/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261002-104933-ablate-4d1d01/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261002-122654-ablate-9e01f6/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261002-122654-ablate-9e01f6/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261002-122654-ablate-9e01f6/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261002-122654-ablate-9e01f6/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261002-122654-ablate-9e01f6/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261002-133325-ablate-192622/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261002-133325-ablate-192622/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261002-133325-ablate-192622/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261002-133325-ablate-192622/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261002-133325-ablate-192622/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261002-145854-ablate-0e3685/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261002-145854-ablate-0e3685/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261002-145854-ablate-0e3685/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261002-145854-ablate-0e3685/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261002-145854-ablate-0e3685/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261002-163932-ablate-df1077/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261002-163932-ablate-df1077/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261002-163932-ablate-df1077/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261002-163932-ablate-df1077/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261002-163932-ablate-df1077/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261002-180409-ablate-3db476/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261002-180409-ablate-3db476/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261002-180409-ablate-3db476/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261002-180409-ablate-3db476/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261002-180409-ablate-3db476/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261002-192514-ablate-52aecd/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261002-192514-ablate-52aecd/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261002-192514-ablate-52aecd/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261002-192514-ablate-52aecd/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261002-192514-ablate-52aecd/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261002-200810-ablate-394220/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261002-200810-ablate-394220/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261002-200810-ablate-394220/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261002-200810-ablate-394220/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261002-200810-ablate-394220/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261002-221412-ablate-3a1e25/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261002-221412-ablate-3a1e25/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261002-221412-ablate-3a1e25/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261002-221412-ablate-3a1e25/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261002-221412-ablate-3a1e25/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261002-234510-ablate-a5b1f7/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261002-234510-ablate-a5b1f7/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261002-234510-ablate-a5b1f7/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261002-234510-ablate-a5b1f7/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261002-234510-ablate-a5b1f7/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261003-114945-ablate-1bdd7a/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261003-114945-ablate-1bdd7a/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261003-114945-ablate-1bdd7a/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261003-114945-ablate-1bdd7a/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261003-114945-ablate-1bdd7a/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261003-115128-ablate-71a0f6/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261003-115128-ablate-71a0f6/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261003-115128-ablate-71a0f6/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261003-115128-ablate-71a0f6/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261003-115128-ablate-71a0f6/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261003-115234-ablate-b8901c/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261003-115234-ablate-b8901c/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261003-115234-ablate-b8901c/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261003-115234-ablate-b8901c/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261003-115234-ablate-b8901c/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261003-125123-ablate-6a262e/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261003-125123-ablate-6a262e/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261003-125123-ablate-6a262e/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261003-134712-ablate-e3fcd5/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261003-134712-ablate-e3fcd5/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261003-134712-ablate-e3fcd5/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261003-134712-ablate-e3fcd5/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261003-134712-ablate-e3fcd5/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261003-171037-ablate-052b88/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261003-171037-ablate-052b88/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261003-171037-ablate-052b88/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261003-171037-ablate-052b88/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261003-171037-ablate-052b88/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261003-183034-ablate-3ac260/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261003-183034-ablate-3ac260/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261003-183034-ablate-3ac260/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261003-183034-ablate-3ac260/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261003-183034-ablate-3ac260/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261003-192712-ablate-d2ca26/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261003-192712-ablate-d2ca26/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261003-192712-ablate-d2ca26/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261003-192712-ablate-d2ca26/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261003-192712-ablate-d2ca26/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261003-214401-ablate-28bd72/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261003-214401-ablate-28bd72/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261003-214401-ablate-28bd72/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261003-214401-ablate-28bd72/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261003-214401-ablate-28bd72/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261003-224713-ablate-d440c5/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261003-224713-ablate-d440c5/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261003-224713-ablate-d440c5/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261003-224713-ablate-d440c5/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261003-224713-ablate-d440c5/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261003-230525-ablate-af20b7/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261003-230525-ablate-af20b7/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261003-230525-ablate-af20b7/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261003-230525-ablate-af20b7/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261003-230525-ablate-af20b7/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261004-121204-ablate-936b79/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261004-121204-ablate-936b79/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261004-121204-ablate-936b79/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261004-130824-ablate-a66d4f/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261004-130824-ablate-a66d4f/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261004-130824-ablate-a66d4f/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261004-130824-ablate-a66d4f/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261004-130824-ablate-a66d4f/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261004-160858-ablate-b4a68d/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261004-160858-ablate-b4a68d/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261004-160858-ablate-b4a68d/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261004-162434-ablate-333e9c/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261004-162434-ablate-333e9c/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261004-162434-ablate-333e9c/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261004-172323-ablate-961460/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261004-172323-ablate-961460/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261004-172323-ablate-961460/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261004-180058-ablate-2034b1/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261004-180058-ablate-2034b1/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261004-180058-ablate-2034b1/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261004-180058-ablate-2034b1/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261004-180058-ablate-2034b1/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261004-233200-ablate-bc4e4e/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261004-233200-ablate-bc4e4e/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261004-233200-ablate-bc4e4e/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261005-002713-ablate-50f8e9/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261005-002713-ablate-50f8e9/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261005-002713-ablate-50f8e9/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261005-002713-ablate-50f8e9/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261005-002713-ablate-50f8e9/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261005-023115-ablate-472761/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261005-023115-ablate-472761/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261005-023115-ablate-472761/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261005-032739-ablate-617f76/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261005-032739-ablate-617f76/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261005-032739-ablate-617f76/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261005-032739-ablate-617f76/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261005-032739-ablate-617f76/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261005-134322-ablate-576e85/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261005-134322-ablate-576e85/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261005-134322-ablate-576e85/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261006-164930-ablate-c1a05d/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261006-164930-ablate-c1a05d/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261006-164930-ablate-c1a05d/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261006-175553-ablate-a3575f/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261006-175553-ablate-a3575f/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261006-175553-ablate-a3575f/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261006-175553-ablate-a3575f/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261006-175553-ablate-a3575f/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261006-180726-ablate-ea6fce/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261006-180726-ablate-ea6fce/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261006-180726-ablate-ea6fce/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261006-234331-ablate-647787/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261006-234331-ablate-647787/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261006-234331-ablate-647787/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261006-234808-ablate-c2af62/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261006-234808-ablate-c2af62/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261006-234808-ablate-c2af62/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261007-022453-ablate-02982a/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261007-022453-ablate-02982a/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261007-022453-ablate-02982a/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261007-022453-ablate-02982a/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261007-022453-ablate-02982a/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    },
+    {
+      "path": "results/20261007-084959-ablate-ca9d33/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261007-084959-ablate-ca9d33/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261007-084959-ablate-ca9d33/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261007-091551-ablate-5e7397/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261007-091551-ablate-5e7397/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261007-091551-ablate-5e7397/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261007-111025-ablate-398ccc/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261007-111025-ablate-398ccc/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261007-111025-ablate-398ccc/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261007-125134-ablate-07ccc3/opponents/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad"
+    },
+    {
+      "path": "results/20261007-125134-ablate-07ccc3/opponents/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)"
+    },
+    {
+      "path": "results/20261007-125134-ablate-07ccc3/opponents/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)"
+    },
+    {
+      "path": "results/20261007-125134-ablate-07ccc3/opponents/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)"
+    },
+    {
+      "path": "results/20261007-125134-ablate-07ccc3/opponents/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)"
+    }
+  ],
+  "additional_provenance": [
+    {
+      "path": "sparring/cpp_abyss/SOURCE.txt",
+      "provenance": "SongyuQi-Francisco/battlecode-abyss-framework b8e92e18592f8135622718570e8ebf8f7992fa94 (SongyuQi-Francisco_battlecode-abyss-framework)\n"
+    },
+    {
+      "path": "sparring/cpp_abyss_v2live/SOURCE.txt",
+      "provenance": "HarshwardhanWalunjkar/battlecode 5599e37 (CurrentActiveSubmission abyss-v2 sub9062)\n"
+    },
+    {
+      "path": "sparring/cpp_danielhe/SOURCE.txt",
+      "provenance": "danielhe13/battlecode2026 44466163987a84e8ab1efc59ce3836f39185d463 (danielhe13_battlecode2026)\n"
+    },
+    {
+      "path": "sparring/cpp_devkadaba/SOURCE.txt",
+      "provenance": "devkadaba-maker/BattleCode 34e23093511fff1dd9417308b3a5ac460e43243a\n"
+    },
+    {
+      "path": "sparring/cpp_kraken/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad\n"
+    },
+    {
+      "path": "sparring/cpp_krakenslayer/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad\n"
+    },
+    {
+      "path": "sparring/cpp_leviathan/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad\n"
+    },
+    {
+      "path": "sparring/cpp_leviathan3/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad\n"
+    },
+    {
+      "path": "sparring/cpp_nicked_v75/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_cpp)\n"
+    },
+    {
+      "path": "sparring/cpp_nicked_v92/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 615c54e (mybot_cpp_arch4, v92)\n"
+    },
+    {
+      "path": "sparring/cpp_portoff/SOURCE.txt",
+      "provenance": "Aarav0010/botpro 1303a47b4354a4e70aadbbe1ee55622599be9e9c\n"
+    },
+    {
+      "path": "sparring/cpp_seadragon/SOURCE.txt",
+      "provenance": "Aarav0010/botpro 1303a47b4354a4e70aadbbe1ee55622599be9e9c\n"
+    },
+    {
+      "path": "sparring/ctmes/SOURCE.txt",
+      "provenance": "ctmes/battlecode 653225f399515b93d09d098c5702373c753af4df\n"
+    },
+    {
+      "path": "sparring/devkadaba/SOURCE.txt",
+      "provenance": "devkadaba-maker/BattleCode 34e23093511fff1dd9417308b3a5ac460e43243a\n"
+    },
+    {
+      "path": "sparring/kgts/SOURCE.txt",
+      "provenance": "Sumitforces/unsw-battlecode-kgts b72ca9baac0e00071ac8013e238b01fe718d02b5 (bots/main)\n"
+    },
+    {
+      "path": "sparring/nambot/SOURCE.txt",
+      "provenance": "TX140907/UNSWBC- 7f25e84c50536998caf94e0991c16b949402f2ad\n"
+    },
+    {
+      "path": "sparring/nicked/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 badc527ffd88c022923850dd7b918c5c23c1390b\n"
+    },
+    {
+      "path": "sparring/nicked_lab/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot_lab)\n"
+    },
+    {
+      "path": "sparring/nicked_v44/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 b932513ce3109b3212d0db46abe7ad6196b4a1bb (v44)\n"
+    },
+    {
+      "path": "sparring/nicked_v75py/SOURCE.txt",
+      "provenance": "nicked1205/battlecode-unsw-2026 dbc96d60e933d431039a8b700c4a012e50b95156 (mybot)\n"
+    },
+    {
+      "path": "sparring/patrick/SOURCE.txt",
+      "provenance": "PatrickCM21/UNSW-battlebot 08b2a4a56f33a91364e48586e0d6324fc40607a4 (mybot)\n"
+    },
+    {
+      "path": "sparring/ryuken/SOURCE.txt",
+      "provenance": "ryuken101/UNSW-Battlecode-2026 b9756f11c713a75b23e1dcd8d1bfab9b02e07a1b (mybot)\n"
+    },
+    {
+      "path": "sparring/zylotomous2/SOURCE.txt",
+      "provenance": "zylotomous/bc2026 6251df17e6461d8315b34591c48bca8c7fe4279f\n"
+    },
+    {
+      "path": "sparring/zylotomous3/SOURCE.txt",
+      "provenance": "zylotomous/bc2026 6251df17e6461d8315b34591c48bca8c7fe4279f\n"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+base: 24/408 games, 57s
+base: 48/408 games, 153s
+base: 72/408 games, 221s
+base: 96/408 games, 278s
+base: 120/408 games, 374s
+base: 144/408 games, 460s
+base: 168/408 games, 633s
+base: 192/408 games, 770s
+base: 216/408 games, 824s
+base: 240/408 games, 862s
+base: 264/408 games, 886s
+base: 288/408 games, 908s
+base: 312/408 games, 948s
+base: 336/408 games, 960s
+base: 360/408 games, 988s
+base: 384/408 games, 1023s
+base: 408/408 games, 1045s
+pt: 24/408 games, 53s
+pt: 48/408 games, 133s
+pt: 72/408 games, 183s
+pt: 96/408 games, 231s
+pt: 120/408 games, 307s
+pt: 144/408 games, 375s
+pt: 168/408 games, 510s
+pt: 192/408 games, 669s
+pt: 216/408 games, 713s
+pt: 240/408 games, 744s
+pt: 264/408 games, 767s
+pt: 288/408 games, 787s
+pt: 312/408 games, 824s
+pt: 336/408 games, 836s
+pt: 360/408 games, 862s
+pt: 384/408 games, 896s
+pt: 408/408 games, 917s
+pt2: 24/408 games, 47s
+pt2: 48/408 games, 122s
+pt2: 72/408 games, 164s
+pt2: 96/408 games, 210s
+pt2: 120/408 games, 285s
+pt2: 144/408 games, 349s
+pt2: 168/408 games, 514s
+pt2: 192/408 games, 630s
+pt2: 216/408 games, 677s
+pt2: 240/408 games, 715s
+pt2: 264/408 games, 738s
+pt2: 288/408 games, 759s
+pt2: 312/408 games, 796s
+pt2: 336/408 games, 808s
+pt2: 360/408 games, 833s
+pt2: 384/408 games, 867s
+pt2: 408/408 games, 889s
+pt1: 24/408 games, 44s
+pt1: 48/408 games, 118s
+pt1: 72/408 games, 163s
+pt1: 96/408 games, 209s
+pt1: 120/408 games, 283s
+pt1: 144/408 games, 347s
+pt1: 168/408 games, 495s
+pt1: 192/408 games, 636s
+pt1: 216/408 games, 681s
+pt1: 240/408 games, 727s
+pt1: 264/408 games, 740s
+pt1: 288/408 games, 761s
+pt1: 312/408 games, 798s
+pt1: 336/408 games, 810s
+pt1: 360/408 games, 835s
+pt1: 384/408 games, 870s
+pt1: 408/408 games, 891s
+# Ablation report: 20261004-160858-ablate-b4a68d
+
+2 seeds [821001, 821002], opponents cpp_nicked_v92, cpp_leviathan3, nicked_lab, opp-careful-queen, opp-raider, opp-economy (families: cpp_leviathan3 1, nicked 2, ours 3); 17 maps from the run's plan (around_unsw, australia, autarky, default, devil, islands, maze, portals, prisoners_dilemma, queen_of_spades, schooltime, slithery_fight, stripes, tower_defense, trauma, trophy, weakhold), both sides. Objective: wins. Delta = variant score minus base score on the same (opponent, map, seed, side), where the variant is the base plus that group's parameter changes: **positive means the variant scored higher than the base**. 95% CI resamples (map, seed) blocks. Equal-map and equal-family deltas weight each map / opponent family equally.
+
+base: mean margin +0.039, wins 212/408; by opponent: cpp_nicked_v92 -0.294, cpp_leviathan3 +0.588, nicked_lab +0.029, opp-careful-queen -0.029, opp-raider -0.294, opp-economy +0.235
+
+Objective wins is the signed outcome (win +1, draw 0, loss -1); the win-score column (win 1, draw 0.5, loss 0) is delta / 2 in percentage points.
+
+| variant | delta all 17 maps [95% CI] | verdict | win-score pp [95% CI] | equal-map delta | equal-family delta | vs cpp_nicked_v92 | vs cpp_leviathan3 | vs nicked_lab | vs opp-careful-queen | vs opp-raider | vs opp-economy | wins |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| pt | -0.025 [-0.093, +0.025] | unclear | -1.2 [-4.7, +1.2] | -0.025 | -0.015 | -0.059 | +0.029 | -0.029 | -0.029 | -0.029 | -0.029 | 207/408 |
+| pt2 | +0.029 [-0.108, +0.162] | unclear | +1.5 [-5.4, +8.1] | +0.029 | +0.059 | +0.000 | +0.176 | +0.000 | +0.088 | +0.118 | -0.206 | 218/408 |
+| pt1 | +0.032 [-0.113, +0.172] | unclear | +1.6 [-5.6, +8.6] | +0.032 | +0.026 | +0.059 | +0.015 | -0.029 | +0.029 | +0.265 | -0.147 | 216/408 |
+
+Per map (wins/games; delta vs base):
+
+| map | base | pt | pt2 | pt1 |
+|---|---|---|---|---|
+| around_unsw | 10/24 | 10/24 (+0.000) | 14/24 (+0.333) | 17/24 (+0.583) |
+| australia | 10/24 | 10/24 (+0.000) | 13/24 (+0.250) | 13/24 (+0.250) |
+| autarky | 11/24 | 11/24 (+0.000) | 17/24 (+0.500) | 9/24 (-0.167) |
+| default | 16/24 | 15/24 (-0.083) | 13/24 (-0.250) | 9/24 (-0.583) |
+| devil | 12/24 | 12/24 (+0.000) | 10/24 (-0.167) | 13/24 (+0.083) |
+| islands | 12/24 | 12/24 (+0.000) | 10/24 (-0.167) | 7/24 (-0.417) |
+| maze | 15/24 | 15/24 (+0.000) | 15/24 (+0.000) | 15/24 (+0.000) |
+| portals | 16/24 | 15/24 (-0.083) | 11/24 (-0.417) | 15/24 (-0.083) |
+| prisoners_dilemma | 6/24 | 6/24 (+0.000) | 4/24 (-0.167) | 4/24 (-0.167) |
+| queen_of_spades | 17/24 | 17/24 (+0.000) | 18/24 (+0.083) | 17/24 (+0.000) |
+| schooltime | 17/24 | 17/24 (+0.000) | 17/24 (+0.000) | 17/24 (+0.000) |
+| slithery_fight | 17/24 | 17/24 (+0.000) | 13/24 (-0.333) | 15/24 (-0.167) |
+| stripes | 4/24 | 6/24 (+0.167) | 16/24 (+1.000) | 16/24 (+1.000) |
+| tower_defense | 9/24 | 9/24 (+0.000) | 13/24 (+0.333) | 10/24 (+0.083) |
+| trauma | 14/24 | 9/24 (-0.417) | 13/24 (-0.083) | 15/24 (+0.083) |
+| trophy | 14/24 | 14/24 (+0.000) | 14/24 (+0.000) | 15/24 (+0.083) |
+| weakhold | 12/24 | 12/24 (+0.000) | 7/24 (-0.417) | 9/24 (-0.042) |
+
+Noise: seed-to-seed SD of base's margin within a (opponent, map, side) cell 0.863 over 204 cells. Expected paired CI half-width with K seeds, 1.96 * sqrt(2 * 0.863^2 / (204 * K)): K=2: 0.118, K=3: 0.097, K=4: 0.084, K=6: 0.068, K=8: 0.059
+

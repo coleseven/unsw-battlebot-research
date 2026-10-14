@@ -1,0 +1,53 @@
+{
+  "base": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10-cand-bot",
+  "base_hash": "bc45f09218a98e7c",
+  "params": "params.hpp",
+  "variants": {
+    "base": {},
+    "room8": {
+      "CPP_SPLIT_SAFE": 1,
+      "CPP_SPLIT_ROOM": 8
+    },
+    "room16": {
+      "CPP_SPLIT_SAFE": 1,
+      "CPP_SPLIT_ROOM": 16
+    },
+    "dead60": {
+      "CPP_DEADEND_LOOK": 12,
+      "CPP_DEADEND_PEN": 60.0
+    }
+  },
+  "opponents": [
+    "cpp_nicked_v75",
+    "cpp_leviathan3",
+    "v7-base-bot",
+    "nicked_v44"
+  ],
+  "official_maps": [
+    "default_small",
+    "trophy",
+    "queen_of_spades",
+    "default",
+    "Devil",
+    "stronghold",
+    "Trauma",
+    "schooltime",
+    "big_empty",
+    "arena",
+    "Colosseum"
+  ],
+  "extra_maps": [
+    "Autarky",
+    "Prisoners_Dilemma",
+    "Slithery_Fight",
+    "Portals"
+  ],
+  "seeds": [
+    107001,
+    107002,
+    107003
+  ],
+  "objective": "aligned",
+  "unswbc": "1.1.0",
+  "deterministic_v6_clock": true
+}

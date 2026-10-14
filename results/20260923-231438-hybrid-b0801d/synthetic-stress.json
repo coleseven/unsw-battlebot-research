@@ -1,0 +1,432 @@
+{
+  "source_hash": "4a22cfed0f4f78b3",
+  "inputs": [
+    {
+      "category": "open_none",
+      "init": "ID 0\nTEAM A\nMAP 32 32\nUNIT_LIMIT 64\n",
+      "block": "ROUND 499\nDIR N\nLENGTH 2\nUNIT_COUNT 1\nNUM_MSGS 0\n0 0 0 -1\n1 0 0 -1\n2 0 0 -1\n3 0 0 -1\n4 0 0 -1\n5 0 0 -1\n6 0 0 -1\n0 1 0 -1\n1 1 0 -1\n2 1 0 -1\n3 1 0 -1\n4 1 0 -1\n5 1 0 -1\n6 1 0 -1\n0 2 0 -1\n1 2 0 -1\n2 2 0 -1\n3 2 0 -1\n4 2 0 -1\n5 2 0 -1\n6 2 0 -1\n0 3 0 -1\n1 3 0 -1\n2 3 0 -1\n3 3 0 -1\n4 3 0 -1\n5 3 0 -1\n6 3 0 -1\n0 4 0 -1\n1 4 0 -1\n2 4 0 -1\n3 4 0 -1\n4 4 0 -1\n5 4 0 -1\n6 4 0 -1\n0 5 0 -1\n1 5 0 -1\n2 5 0 -1\n3 5 0 -1\n4 5 0 -1\n5 5 0 -1\n6 5 0 -1\n0 6 0 -1\n1 6 0 -1\n2 6 0 -1\n3 6 0 -1\n4 6 0 -1\n5 6 0 -1\n6 6 0 -1\nDRAGON_BODIES 2\nA 0 3 3 N 1\nA 0 3 4 N 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n"
+    },
+    {
+      "category": "open_present",
+      "init": "ID 0\nTEAM A\nMAP 32 32\nUNIT_LIMIT 64\n",
+      "block": "ROUND 499\nDIR N\nLENGTH 2\nUNIT_COUNT 1\nNUM_MSGS 0\n0 0 1 15\n1 0 1 15\n2 0 1 15\n3 0 1 15\n4 0 1 15\n5 0 1 15\n6 0 1 15\n0 1 1 15\n1 1 1 15\n2 1 1 15\n3 1 1 15\n4 1 1 15\n5 1 1 15\n6 1 1 15\n0 2 1 15\n1 2 1 15\n2 2 1 15\n3 2 1 15\n4 2 1 15\n5 2 1 15\n6 2 1 15\n0 3 1 15\n1 3 1 15\n2 3 1 15\n3 3 0 15\n4 3 1 15\n5 3 1 15\n6 3 1 15\n0 4 1 15\n1 4 1 15\n2 4 1 15\n3 4 0 15\n4 4 1 15\n5 4 1 15\n6 4 1 15\n0 5 1 15\n1 5 1 15\n2 5 1 15\n3 5 1 15\n4 5 1 15\n5 5 1 15\n6 5 1 15\n0 6 1 15\n1 6 1 15\n2 6 1 15\n3 6 1 15\n4 6 1 15\n5 6 1 15\n6 6 1 15\nDRAGON_BODIES 2\nA 0 3 3 N 1\nA 0 3 4 N 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n"
+    },
+    {
+      "category": "open_imminent",
+      "init": "ID 0\nTEAM A\nMAP 32 32\nUNIT_LIMIT 64\n",
+      "block": "ROUND 499\nDIR N\nLENGTH 2\nUNIT_COUNT 1\nNUM_MSGS 0\n0 0 0 0\n1 0 0 0\n2 0 0 0\n3 0 0 0\n4 0 0 0\n5 0 0 0\n6 0 0 0\n0 1 0 0\n1 1 0 0\n2 1 0 0\n3 1 0 0\n4 1 0 0\n5 1 0 0\n6 1 0 0\n0 2 0 0\n1 2 0 0\n2 2 0 0\n3 2 0 0\n4 2 0 0\n5 2 0 0\n6 2 0 0\n0 3 0 0\n1 3 0 0\n2 3 0 0\n3 3 0 0\n4 3 0 0\n5 3 0 0\n6 3 0 0\n0 4 0 0\n1 4 0 0\n2 4 0 0\n3 4 0 0\n4 4 0 0\n5 4 0 0\n6 4 0 0\n0 5 0 0\n1 5 0 0\n2 5 0 0\n3 5 0 0\n4 5 0 0\n5 5 0 0\n6 5 0 0\n0 6 0 0\n1 6 0 0\n2 6 0 0\n3 6 0 0\n4 6 0 0\n5 6 0 0\n6 6 0 0\nDRAGON_BODIES 2\nA 0 3 3 N 1\nA 0 3 4 N 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n"
+    },
+    {
+      "category": "open_far",
+      "init": "ID 0\nTEAM A\nMAP 32 32\nUNIT_LIMIT 64\n",
+      "block": "ROUND 499\nDIR N\nLENGTH 2\nUNIT_COUNT 1\nNUM_MSGS 0\n0 0 0 500\n1 0 0 500\n2 0 0 500\n3 0 0 500\n4 0 0 500\n5 0 0 500\n6 0 0 500\n0 1 0 500\n1 1 0 500\n2 1 0 500\n3 1 0 500\n4 1 0 500\n5 1 0 500\n6 1 0 500\n0 2 0 500\n1 2 0 500\n2 2 0 500\n3 2 0 500\n4 2 0 500\n5 2 0 500\n6 2 0 500\n0 3 0 500\n1 3 0 500\n2 3 0 500\n3 3 0 500\n4 3 0 500\n5 3 0 500\n6 3 0 500\n0 4 0 500\n1 4 0 500\n2 4 0 500\n3 4 0 500\n4 4 0 500\n5 4 0 500\n6 4 0 500\n0 5 0 500\n1 5 0 500\n2 5 0 500\n3 5 0 500\n4 5 0 500\n5 5 0 500\n6 5 0 500\n0 6 0 500\n1 6 0 500\n2 6 0 500\n3 6 0 500\n4 6 0 500\n5 6 0 500\n6 6 0 500\nDRAGON_BODIES 2\nA 0 3 3 N 1\nA 0 3 4 N 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n"
+    },
+    {
+      "category": "crowded_none",
+      "init": "ID 0\nTEAM A\nMAP 32 32\nUNIT_LIMIT 64\n",
+      "block": "ROUND 499\nDIR N\nLENGTH 2\nUNIT_COUNT 7\nNUM_MSGS 0\n0 0 0 -1\n1 0 0 -1\n2 0 0 -1\n3 0 0 -1\n4 0 0 -1\n5 0 0 -1\n6 0 0 -1\n0 1 0 -1\n1 1 0 -1\n2 1 0 -1\n3 1 0 -1\n4 1 0 -1\n5 1 0 -1\n6 1 0 -1\n0 2 0 -1\n1 2 0 -1\n2 2 0 -1\n3 2 0 -1\n4 2 0 -1\n5 2 0 -1\n6 2 0 -1\n0 3 0 -1\n1 3 0 -1\n2 3 0 -1\n3 3 0 -1\n4 3 0 -1\n5 3 0 -1\n6 3 0 -1\n0 4 0 -1\n1 4 0 -1\n2 4 0 -1\n3 4 0 -1\n4 4 0 -1\n5 4 0 -1\n6 4 0 -1\n0 5 0 -1\n1 5 0 -1\n2 5 0 -1\n3 5 0 -1\n4 5 0 -1\n5 5 0 -1\n6 5 0 -1\n0 6 0 -1\n1 6 0 -1\n2 6 0 -1\n3 6 0 -1\n4 6 0 -1\n5 6 0 -1\n6 6 0 -1\nDRAGON_BODIES 26\nA 0 3 3 N 1\nA 0 3 4 N 0\nB 1 0 0 W 1\nB 1 1 0 W 0\nA 2 2 0 W 1\nA 2 3 0 W 0\nB 3 4 0 W 1\nB 3 5 0 W 0\nA 4 0 1 W 1\nA 4 1 1 W 0\nB 5 2 1 W 1\nB 5 3 1 W 0\nA 6 4 1 W 1\nA 6 5 1 W 0\nB 7 0 5 W 1\nB 7 1 5 W 0\nA 8 2 5 W 1\nA 8 3 5 W 0\nB 9 4 5 W 1\nB 9 5 5 W 0\nA 10 0 6 W 1\nA 10 1 6 W 0\nB 11 2 6 W 1\nB 11 3 6 W 0\nA 12 4 6 W 1\nA 12 5 6 W 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n"
+    },
+    {
+      "category": "crowded_present",
+      "init": "ID 0\nTEAM A\nMAP 32 32\nUNIT_LIMIT 64\n",
+      "block": "ROUND 499\nDIR N\nLENGTH 2\nUNIT_COUNT 7\nNUM_MSGS 0\n0 0 0 15\n1 0 0 15\n2 0 0 15\n3 0 0 15\n4 0 0 15\n5 0 0 15\n6 0 1 15\n0 1 0 15\n1 1 0 15\n2 1 0 15\n3 1 0 15\n4 1 0 15\n5 1 0 15\n6 1 1 15\n0 2 1 15\n1 2 1 15\n2 2 1 15\n3 2 1 15\n4 2 1 15\n5 2 1 15\n6 2 1 15\n0 3 1 15\n1 3 1 15\n2 3 1 15\n3 3 0 15\n4 3 1 15\n5 3 1 15\n6 3 1 15\n0 4 1 15\n1 4 1 15\n2 4 1 15\n3 4 0 15\n4 4 1 15\n5 4 1 15\n6 4 1 15\n0 5 0 15\n1 5 0 15\n2 5 0 15\n3 5 0 15\n4 5 0 15\n5 5 0 15\n6 5 1 15\n0 6 0 15\n1 6 0 15\n2 6 0 15\n3 6 0 15\n4 6 0 15\n5 6 0 15\n6 6 1 15\nDRAGON_BODIES 26\nA 0 3 3 N 1\nA 0 3 4 N 0\nB 1 0 0 W 1\nB 1 1 0 W 0\nA 2 2 0 W 1\nA 2 3 0 W 0\nB 3 4 0 W 1\nB 3 5 0 W 0\nA 4 0 1 W 1\nA 4 1 1 W 0\nB 5 2 1 W 1\nB 5 3 1 W 0\nA 6 4 1 W 1\nA 6 5 1 W 0\nB 7 0 5 W 1\nB 7 1 5 W 0\nA 8 2 5 W 1\nA 8 3 5 W 0\nB 9 4 5 W 1\nB 9 5 5 W 0\nA 10 0 6 W 1\nA 10 1 6 W 0\nB 11 2 6 W 1\nB 11 3 6 W 0\nA 12 4 6 W 1\nA 12 5 6 W 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n"
+    },
+    {
+      "category": "crowded_imminent",
+      "init": "ID 0\nTEAM A\nMAP 32 32\nUNIT_LIMIT 64\n",
+      "block": "ROUND 499\nDIR N\nLENGTH 2\nUNIT_COUNT 7\nNUM_MSGS 0\n0 0 0 0\n1 0 0 0\n2 0 0 0\n3 0 0 0\n4 0 0 0\n5 0 0 0\n6 0 0 0\n0 1 0 0\n1 1 0 0\n2 1 0 0\n3 1 0 0\n4 1 0 0\n5 1 0 0\n6 1 0 0\n0 2 0 0\n1 2 0 0\n2 2 0 0\n3 2 0 0\n4 2 0 0\n5 2 0 0\n6 2 0 0\n0 3 0 0\n1 3 0 0\n2 3 0 0\n3 3 0 0\n4 3 0 0\n5 3 0 0\n6 3 0 0\n0 4 0 0\n1 4 0 0\n2 4 0 0\n3 4 0 0\n4 4 0 0\n5 4 0 0\n6 4 0 0\n0 5 0 0\n1 5 0 0\n2 5 0 0\n3 5 0 0\n4 5 0 0\n5 5 0 0\n6 5 0 0\n0 6 0 0\n1 6 0 0\n2 6 0 0\n3 6 0 0\n4 6 0 0\n5 6 0 0\n6 6 0 0\nDRAGON_BODIES 26\nA 0 3 3 N 1\nA 0 3 4 N 0\nB 1 0 0 W 1\nB 1 1 0 W 0\nA 2 2 0 W 1\nA 2 3 0 W 0\nB 3 4 0 W 1\nB 3 5 0 W 0\nA 4 0 1 W 1\nA 4 1 1 W 0\nB 5 2 1 W 1\nB 5 3 1 W 0\nA 6 4 1 W 1\nA 6 5 1 W 0\nB 7 0 5 W 1\nB 7 1 5 W 0\nA 8 2 5 W 1\nA 8 3 5 W 0\nB 9 4 5 W 1\nB 9 5 5 W 0\nA 10 0 6 W 1\nA 10 1 6 W 0\nB 11 2 6 W 1\nB 11 3 6 W 0\nA 12 4 6 W 1\nA 12 5 6 W 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n"
+    },
+    {
+      "category": "crowded_far",
+      "init": "ID 0\nTEAM A\nMAP 32 32\nUNIT_LIMIT 64\n",
+      "block": "ROUND 499\nDIR N\nLENGTH 2\nUNIT_COUNT 7\nNUM_MSGS 0\n0 0 0 500\n1 0 0 500\n2 0 0 500\n3 0 0 500\n4 0 0 500\n5 0 0 500\n6 0 0 500\n0 1 0 500\n1 1 0 500\n2 1 0 500\n3 1 0 500\n4 1 0 500\n5 1 0 500\n6 1 0 500\n0 2 0 500\n1 2 0 500\n2 2 0 500\n3 2 0 500\n4 2 0 500\n5 2 0 500\n6 2 0 500\n0 3 0 500\n1 3 0 500\n2 3 0 500\n3 3 0 500\n4 3 0 500\n5 3 0 500\n6 3 0 500\n0 4 0 500\n1 4 0 500\n2 4 0 500\n3 4 0 500\n4 4 0 500\n5 4 0 500\n6 4 0 500\n0 5 0 500\n1 5 0 500\n2 5 0 500\n3 5 0 500\n4 5 0 500\n5 5 0 500\n6 5 0 500\n0 6 0 500\n1 6 0 500\n2 6 0 500\n3 6 0 500\n4 6 0 500\n5 6 0 500\n6 6 0 500\nDRAGON_BODIES 26\nA 0 3 3 N 1\nA 0 3 4 N 0\nB 1 0 0 W 1\nB 1 1 0 W 0\nA 2 2 0 W 1\nA 2 3 0 W 0\nB 3 4 0 W 1\nB 3 5 0 W 0\nA 4 0 1 W 1\nA 4 1 1 W 0\nB 5 2 1 W 1\nB 5 3 1 W 0\nA 6 4 1 W 1\nA 6 5 1 W 0\nB 7 0 5 W 1\nB 7 1 5 W 0\nA 8 2 5 W 1\nA 8 3 5 W 0\nB 9 4 5 W 1\nB 9 5 5 W 0\nA 10 0 6 W 1\nA 10 1 6 W 0\nB 11 2 6 W 1\nB 11 3 6 W 0\nA 12 4 6 W 1\nA 12 5 6 W 0\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n"
+    }
+  ],
+  "rows": [
+    {
+      "bot": "linear",
+      "hash": "69382825b699723d",
+      "category": "open_none",
+      "phase": "cold",
+      "points": 63865811,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n",
+      "expected_action": "MOVE N",
+      "action_matches": true
+    },
+    {
+      "bot": "linear",
+      "hash": "69382825b699723d",
+      "category": "open_none",
+      "phase": "repeated",
+      "points": 49081275,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n",
+      "expected_action": "MOVE N",
+      "action_matches": true
+    },
+    {
+      "bot": "linear",
+      "hash": "69382825b699723d",
+      "category": "open_present",
+      "phase": "cold",
+      "points": 64658999,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n",
+      "expected_action": "MOVE N",
+      "action_matches": true
+    },
+    {
+      "bot": "linear",
+      "hash": "69382825b699723d",
+      "category": "open_present",
+      "phase": "repeated",
+      "points": 49869194,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n",
+      "expected_action": "MOVE N",
+      "action_matches": true
+    },
+    {
+      "bot": "linear",
+      "hash": "69382825b699723d",
+      "category": "open_imminent",
+      "phase": "cold",
+      "points": 64656499,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n",
+      "expected_action": "MOVE N",
+      "action_matches": true
+    },
+    {
+      "bot": "linear",
+      "hash": "69382825b699723d",
+      "category": "open_imminent",
+      "phase": "repeated",
+      "points": 49871776,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n",
+      "expected_action": "MOVE N",
+      "action_matches": true
+    },
+    {
+      "bot": "linear",
+      "hash": "69382825b699723d",
+      "category": "open_far",
+      "phase": "cold",
+      "points": 64093162,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n",
+      "expected_action": "MOVE N",
+      "action_matches": true
+    },
+    {
+      "bot": "linear",
+      "hash": "69382825b699723d",
+      "category": "open_far",
+      "phase": "repeated",
+      "points": 49295929,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n",
+      "expected_action": "MOVE N",
+      "action_matches": true
+    },
+    {
+      "bot": "linear",
+      "hash": "69382825b699723d",
+      "category": "crowded_none",
+      "phase": "cold",
+      "points": 49633173,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE E\n",
+      "expected_action": "MOVE E",
+      "action_matches": true
+    },
+    {
+      "bot": "linear",
+      "hash": "69382825b699723d",
+      "category": "crowded_none",
+      "phase": "repeated",
+      "points": 34836821,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE E\n",
+      "expected_action": "MOVE E",
+      "action_matches": true
+    },
+    {
+      "bot": "linear",
+      "hash": "69382825b699723d",
+      "category": "crowded_present",
+      "phase": "cold",
+      "points": 50024070,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE E\n",
+      "expected_action": "MOVE E",
+      "action_matches": true
+    },
+    {
+      "bot": "linear",
+      "hash": "69382825b699723d",
+      "category": "crowded_present",
+      "phase": "repeated",
+      "points": 35234350,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE E\n",
+      "expected_action": "MOVE E",
+      "action_matches": true
+    },
+    {
+      "bot": "linear",
+      "hash": "69382825b699723d",
+      "category": "crowded_imminent",
+      "phase": "cold",
+      "points": 50000614,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE E\n",
+      "expected_action": "MOVE E",
+      "action_matches": true
+    },
+    {
+      "bot": "linear",
+      "hash": "69382825b699723d",
+      "category": "crowded_imminent",
+      "phase": "repeated",
+      "points": 35201222,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE E\n",
+      "expected_action": "MOVE E",
+      "action_matches": true
+    },
+    {
+      "bot": "linear",
+      "hash": "69382825b699723d",
+      "category": "crowded_far",
+      "phase": "cold",
+      "points": 49750796,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE E\n",
+      "expected_action": "MOVE E",
+      "action_matches": true
+    },
+    {
+      "bot": "linear",
+      "hash": "69382825b699723d",
+      "category": "crowded_far",
+      "phase": "repeated",
+      "points": 34956445,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE E\n",
+      "expected_action": "MOVE E",
+      "action_matches": true
+    },
+    {
+      "bot": "neural",
+      "hash": "8b30b4590f0f6e5c",
+      "category": "open_none",
+      "phase": "cold",
+      "points": 70198460,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n",
+      "expected_action": "MOVE N",
+      "action_matches": true
+    },
+    {
+      "bot": "neural",
+      "hash": "8b30b4590f0f6e5c",
+      "category": "open_none",
+      "phase": "repeated",
+      "points": 55088541,
+      "memory_bytes": 21626880,
+      "error": null,
+      "output": "MOVE N\n",
+      "expected_action": "MOVE N",
+      "action_matches": true
+    },
+    {
+      "bot": "neural",
+      "hash": "8b30b4590f0f6e5c",
+      "category": "open_present",
+      "phase": "cold",
+      "points": 70973430,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n",
+      "expected_action": "MOVE N",
+      "action_matches": true
+    },
+    {
+      "bot": "neural",
+      "hash": "8b30b4590f0f6e5c",
+      "category": "open_present",
+      "phase": "repeated",
+      "points": 55846462,
+      "memory_bytes": 21626880,
+      "error": null,
+      "output": "MOVE N\n",
+      "expected_action": "MOVE N",
+      "action_matches": true
+    },
+    {
+      "bot": "neural",
+      "hash": "8b30b4590f0f6e5c",
+      "category": "open_imminent",
+      "phase": "cold",
+      "points": 70960449,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n",
+      "expected_action": "MOVE N",
+      "action_matches": true
+    },
+    {
+      "bot": "neural",
+      "hash": "8b30b4590f0f6e5c",
+      "category": "open_imminent",
+      "phase": "repeated",
+      "points": 55859880,
+      "memory_bytes": 21626880,
+      "error": null,
+      "output": "MOVE N\n",
+      "expected_action": "MOVE N",
+      "action_matches": true
+    },
+    {
+      "bot": "neural",
+      "hash": "8b30b4590f0f6e5c",
+      "category": "open_far",
+      "phase": "cold",
+      "points": 70421389,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n",
+      "expected_action": "MOVE N",
+      "action_matches": true
+    },
+    {
+      "bot": "neural",
+      "hash": "8b30b4590f0f6e5c",
+      "category": "open_far",
+      "phase": "repeated",
+      "points": 55315303,
+      "memory_bytes": 21626880,
+      "error": null,
+      "output": "MOVE N\n",
+      "expected_action": "MOVE N",
+      "action_matches": true
+    },
+    {
+      "bot": "neural",
+      "hash": "8b30b4590f0f6e5c",
+      "category": "crowded_none",
+      "phase": "cold",
+      "points": 55970007,
+      "memory_bytes": 21626880,
+      "error": null,
+      "output": "MOVE E\n",
+      "expected_action": "MOVE E",
+      "action_matches": true
+    },
+    {
+      "bot": "neural",
+      "hash": "8b30b4590f0f6e5c",
+      "category": "crowded_none",
+      "phase": "repeated",
+      "points": 40850376,
+      "memory_bytes": 21626880,
+      "error": null,
+      "output": "MOVE E\n",
+      "expected_action": "MOVE E",
+      "action_matches": true
+    },
+    {
+      "bot": "neural",
+      "hash": "8b30b4590f0f6e5c",
+      "category": "crowded_present",
+      "phase": "cold",
+      "points": 56350903,
+      "memory_bytes": 21626880,
+      "error": null,
+      "output": "MOVE E\n",
+      "expected_action": "MOVE E",
+      "action_matches": true
+    },
+    {
+      "bot": "neural",
+      "hash": "8b30b4590f0f6e5c",
+      "category": "crowded_present",
+      "phase": "repeated",
+      "points": 41220421,
+      "memory_bytes": 21626880,
+      "error": null,
+      "output": "MOVE E\n",
+      "expected_action": "MOVE E",
+      "action_matches": true
+    },
+    {
+      "bot": "neural",
+      "hash": "8b30b4590f0f6e5c",
+      "category": "crowded_imminent",
+      "phase": "cold",
+      "points": 56298166,
+      "memory_bytes": 21626880,
+      "error": null,
+      "output": "MOVE E\n",
+      "expected_action": "MOVE E",
+      "action_matches": true
+    },
+    {
+      "bot": "neural",
+      "hash": "8b30b4590f0f6e5c",
+      "category": "crowded_imminent",
+      "phase": "repeated",
+      "points": 41199544,
+      "memory_bytes": 21626880,
+      "error": null,
+      "output": "MOVE E\n",
+      "expected_action": "MOVE E",
+      "action_matches": true
+    },
+    {
+      "bot": "neural",
+      "hash": "8b30b4590f0f6e5c",
+      "category": "crowded_far",
+      "phase": "cold",
+      "points": 56083845,
+      "memory_bytes": 21626880,
+      "error": null,
+      "output": "MOVE E\n",
+      "expected_action": "MOVE E",
+      "action_matches": true
+    },
+    {
+      "bot": "neural",
+      "hash": "8b30b4590f0f6e5c",
+      "category": "crowded_far",
+      "phase": "repeated",
+      "points": 40969480,
+      "memory_bytes": 21626880,
+      "error": null,
+      "output": "MOVE E\n",
+      "expected_action": "MOVE E",
+      "action_matches": true
+    }
+  ],
+  "limits": "Synthetic local observations and repeated identical blocks, not trajectories, strength estimates, or a worst-case bound. No policy modifications."
+}

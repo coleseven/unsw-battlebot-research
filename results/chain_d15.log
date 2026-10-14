@@ -1,0 +1,12 @@
+guard: waiting for running experiment 'ablate 20261006-175553-ablate-a3575f' (pid 134596)
+sprinter check opp-raider: 24/68 games, 27s
+sprinter check opp-raider: 48/68 games, 61s
+sprinter check opp-raider: 68/68 games, 86s
+opp-raider: v12x wins 41/68, our queen alive 22, theirs 16
+sprinter check opp-sprinter: 24/68 games, 30s
+sprinter check opp-sprinter: 48/68 games, 68s
+sprinter check opp-sprinter: 68/68 games, 96s
+opp-sprinter: v12x wins 29/68, our queen alive 18, theirs 27
+23:25 CHECK DONE
+00:33 done results/20261006-180726-ablate-ea6fce rc=0
+00:33 CHAIN DONE

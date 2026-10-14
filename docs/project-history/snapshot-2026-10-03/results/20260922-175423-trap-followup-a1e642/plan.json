@@ -1,0 +1,36 @@
+{
+  "question": "Does the unchanged trap gain repeat and transfer within an Arena map family?",
+  "seeds": [
+    6000,
+    6001,
+    6002,
+    6003,
+    6004,
+    6005,
+    6006,
+    6007,
+    6008,
+    6009,
+    6010,
+    6011
+  ],
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-175423-trap-followup-a1e642\\maps\\arena.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-175423-trap-followup-a1e642\\maps\\schooltime.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-175423-trap-followup-a1e642\\maps\\arena_baffles.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-175423-trap-followup-a1e642\\maps\\arena_pockets.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-175423-trap-followup-a1e642\\maps\\arena_slow_food.map"
+  ],
+  "policy_tuning": false,
+  "workers": 1,
+  "priority": "below normal",
+  "gpu_work": false,
+  "memory_guard": "stop between games below 4 GiB available or above 1 GiB worker RSS",
+  "live_bot_hash": "ffe736af6c14ea33",
+  "source_hashes": {
+    "trap": "b76c7b9c943a1d5d",
+    "control_450": "2e0e1867b6cf7cda"
+  },
+  "runner_hash": "9a4bd08b964058e2",
+  "limits": "related synthetic maps and previously observed originals; exploratory transfer test, not five independent map families or a fresh broad promotion test"
+}

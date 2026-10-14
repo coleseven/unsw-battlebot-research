@@ -1,0 +1,39 @@
+{
+  "base": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7-base-bot",
+  "base_hash": "bec48091e76579a1",
+  "params": "params.hpp",
+  "variants": {
+    "base": {},
+    "no_hub": {
+      "W_HUB": 0.0,
+      "HUB_BOOK": false,
+      "LEARN_HUBS": false
+    },
+    "no_food": {
+      "W_PEARL": 0.0,
+      "W_MEM_PEARL": 0.0
+    }
+  },
+  "opponents": [
+    "splitter"
+  ],
+  "official_maps": [
+    "default_small",
+    "trophy",
+    "queen_of_spades",
+    "default",
+    "Devil",
+    "stronghold",
+    "Trauma",
+    "schooltime",
+    "big_empty",
+    "arena",
+    "Colosseum"
+  ],
+  "extra_maps": [],
+  "seeds": [
+    61001
+  ],
+  "unswbc": "1.1.0",
+  "deterministic_v6_clock": true
+}

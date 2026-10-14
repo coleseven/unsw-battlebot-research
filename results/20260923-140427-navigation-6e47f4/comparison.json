@@ -1,0 +1,33 @@
+{
+  "candidate": "portal_memory",
+  "hash": "8ae8a538410a4be2",
+  "paired_pool": {
+    "difference": 0.0,
+    "map_cluster_ci95": [
+      -0.09375,
+      0.09027777777777778
+    ],
+    "paired_block_ci95": [
+      -0.04050925925925926,
+      0.037037037037037035
+    ],
+    "maps": 9,
+    "blocks": 216,
+    "matched_games": 432
+  },
+  "direct": {
+    "wins": 70,
+    "draws": 2,
+    "losses": 72,
+    "score": 0.4930555555555556,
+    "map_ci95": [
+      0.3333333333333333,
+      0.65625
+    ],
+    "pair_ci95": [
+      0.40625,
+      0.5833333333333334
+    ]
+  },
+  "performance_gate": false
+}

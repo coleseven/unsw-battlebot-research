@@ -1,0 +1,223 @@
+{
+  "selection": "Latest one replay per distinct map, sorted at/game descending; stop after 10 maps. grp=new is existing attribution, not independently reverified.",
+  "method": "Pre-action replay state, our workers only. Adjacent enemy original queen head through OPEN non-reversing edge. These inputs are necessarily visible. No portals or paid paths. Record actual action; no counterfactual games. Repeated chances from same game/queen are not independent.",
+  "games": [
+    {
+      "game": 1275877,
+      "map": "Tower Defense",
+      "at": "2026-10-06T20:20:48.518Z",
+      "won": true
+    },
+    {
+      "game": 1275876,
+      "map": "Islands",
+      "at": "2026-10-06T20:20:48.518Z",
+      "won": false
+    },
+    {
+      "game": 1275875,
+      "map": "Stripes",
+      "at": "2026-10-06T20:20:48.518Z",
+      "won": true
+    },
+    {
+      "game": 1275874,
+      "map": "Trauma",
+      "at": "2026-10-06T20:20:48.518Z",
+      "won": false
+    },
+    {
+      "game": 1275873,
+      "map": "Queen Of Spades",
+      "at": "2026-10-06T20:20:48.518Z",
+      "won": true
+    },
+    {
+      "game": 1275377,
+      "map": "Autarky",
+      "at": "2026-10-06T20:14:28.029Z",
+      "won": false
+    },
+    {
+      "game": 1275375,
+      "map": "Default",
+      "at": "2026-10-06T20:14:28.029Z",
+      "won": false
+    },
+    {
+      "game": 1275373,
+      "map": "Around UNSW",
+      "at": "2026-10-06T20:14:28.029Z",
+      "won": false
+    },
+    {
+      "game": 1273425,
+      "map": "Devil",
+      "at": "2026-10-06T19:44:17.723Z",
+      "won": true
+    },
+    {
+      "game": 1273423,
+      "map": "Schooltime",
+      "at": "2026-10-06T19:44:17.723Z",
+      "won": true
+    }
+  ],
+  "our_worker_turns": 109608,
+  "opportunities": 7,
+  "taken": 3,
+  "missed": 4,
+  "missed_by_action": {
+    "move": 4
+  },
+  "missed_with_our_queen_alive": 0,
+  "rows": [
+    {
+      "game": 1275877,
+      "map": "Tower Defense",
+      "round": 396,
+      "worker": 265,
+      "worker_len": 2,
+      "our_queen_alive": false,
+      "our_units": 49,
+      "kill_dirs": [
+        "S"
+      ],
+      "our_head": [
+        27,
+        12
+      ],
+      "action": [
+        "move",
+        "E"
+      ],
+      "immediate_kill_taken": false
+    },
+    {
+      "game": 1275877,
+      "map": "Tower Defense",
+      "round": 471,
+      "worker": 242,
+      "worker_len": 2,
+      "our_queen_alive": false,
+      "our_units": 18,
+      "kill_dirs": [
+        "S"
+      ],
+      "our_head": [
+        19,
+        15
+      ],
+      "action": [
+        "move",
+        "S"
+      ],
+      "immediate_kill_taken": true
+    },
+    {
+      "game": 1275875,
+      "map": "Stripes",
+      "round": 96,
+      "worker": 17,
+      "worker_len": 2,
+      "our_queen_alive": false,
+      "our_units": 11,
+      "kill_dirs": [
+        "N"
+      ],
+      "our_head": [
+        1,
+        7
+      ],
+      "action": [
+        "move",
+        "E"
+      ],
+      "immediate_kill_taken": false
+    },
+    {
+      "game": 1275875,
+      "map": "Stripes",
+      "round": 131,
+      "worker": 31,
+      "worker_len": 2,
+      "our_queen_alive": false,
+      "our_units": 18,
+      "kill_dirs": [
+        "W"
+      ],
+      "our_head": [
+        0,
+        11
+      ],
+      "action": [
+        "move",
+        "W"
+      ],
+      "immediate_kill_taken": true
+    },
+    {
+      "game": 1275873,
+      "map": "Queen Of Spades",
+      "round": 333,
+      "worker": 147,
+      "worker_len": 2,
+      "our_queen_alive": false,
+      "our_units": 19,
+      "kill_dirs": [
+        "W"
+      ],
+      "our_head": [
+        20,
+        30
+      ],
+      "action": [
+        "move",
+        "N"
+      ],
+      "immediate_kill_taken": false
+    },
+    {
+      "game": 1275873,
+      "map": "Queen Of Spades",
+      "round": 385,
+      "worker": 91,
+      "worker_len": 3,
+      "our_queen_alive": false,
+      "our_units": 18,
+      "kill_dirs": [
+        "N"
+      ],
+      "our_head": [
+        4,
+        2
+      ],
+      "action": [
+        "move",
+        "E"
+      ],
+      "immediate_kill_taken": false
+    },
+    {
+      "game": 1275873,
+      "map": "Queen Of Spades",
+      "round": 391,
+      "worker": 188,
+      "worker_len": 2,
+      "our_queen_alive": false,
+      "our_units": 17,
+      "kill_dirs": [
+        "S"
+      ],
+      "our_head": [
+        9,
+        34
+      ],
+      "action": [
+        "move",
+        "S"
+      ],
+      "immediate_kill_taken": true
+    }
+  ]
+}

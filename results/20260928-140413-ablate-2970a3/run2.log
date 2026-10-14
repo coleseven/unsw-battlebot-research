@@ -1,0 +1,20 @@
+dead: 24/360 games, 41s
+dead: 48/360 games, 101s
+dead: 72/360 games, 152s
+dead: 96/360 games, 206s
+dead: 120/360 games, 254s
+dead: 144/360 games, 315s
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\ablate.py", line 264, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\ablate.py", line 256, in main
+    run(a.result, a.workers)
+    ~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\ablate.py", line 112, in run
+    games = bounded.run(jobs, workers, folder, name)
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\bounded.py", line 51, in run
+    raise RuntimeError(f"Match failed; partial results saved: {game}")
+RuntimeError: Match failed; partial results saved: {'map': 'Prisoners_Dilemma', 'bot_a': 'dead', 'bot_b': 'cpp_leviathan3', 'seed': 103003, 'winner': None, 'reason': 'error', 'error': "RuntimeError: in-process build failed for dead:\nduring RTL pass: combine\nIn file included from C:/Users/Sea7/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT.LLVM_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/include/c++/14.2.0/algorithm:61,\n                 from results\\20260928-140413-ablate-2970a3\\variants\\dead/v6.hpp:16,\n                 from results\\20260928-140413-ablate-2970a3\\variants\\dead/v6_brain.hpp:11,\n                 from C:\\Users\\Sea7\\Desktop\\unsw battlebot\\cppbot_inproc\\inproc.cpp:17:\nC:/Users/Sea7/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT.LLVM_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/include/c++/14.2.0/bits/stl_algo.h: In function '_BidirectionalIterator1 std::__rotate_adaptive(_BidirectionalIterator1, _BidirectionalIterator1, _BidirectionalIterator1, _Distance, _Distance, _BidirectionalIterator2, _Distance) [with _BidirectionalIterator1 = __gnu_cxx::__normal_iterator<pair<int, double>*, vector<pair<int, double> > >; _BidirectionalIterator2 = pair<int, double>*; _Distance = long long int]':\nC:/Users/Sea7/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT.LLVM_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/include/c++/14.2.0/bits/stl_algo.h:2353:5: internal compiler error: Segmentation fault\n 2353 |     }\n      |     ^\nPlease submit a full bug report, with preprocessed source (by using -freport-bug).\nSee <https://gcc.gnu.org/bugs/> for instructions.\n", 'deaths': {}, 'block': ['cpp_leviathan3', 'Prisoners_Dilemma', 103003], 'worker': {'pid': 28864, 'rss_bytes': 60674048}}

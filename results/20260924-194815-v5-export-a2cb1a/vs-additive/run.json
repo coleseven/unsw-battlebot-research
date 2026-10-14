@@ -1,0 +1,36 @@
+{
+  "time": "2026-09-24 19:48:24",
+  "git": "8e1000d+dirty",
+  "python": "3.14.2",
+  "unswbc": "0.3.10",
+  "engine": "5412052f33ddb160",
+  "bots": {
+    "export_scout": {
+      "path": "results\\20260924-194815-v5-export-a2cb1a\\bots\\export_scout",
+      "hash": "a67ebf2b6eb44faa"
+    },
+    "additive": {
+      "path": "results\\20260924-194815-v5-export-a2cb1a\\bots\\additive",
+      "hash": "bf33497158a49a7b"
+    }
+  },
+  "maps": {
+    "stronghold": {
+      "file": "02455e481fe56e1e",
+      "signature": "fb60e37176a8d1d3"
+    },
+    "Trauma": {
+      "file": "dcf39d713c060e5d",
+      "signature": "d014b28abbd1abb0"
+    }
+  },
+  "settings": {
+    "seeds": [
+      45003,
+      45004,
+      45005,
+      45006
+    ],
+    "workers": 1
+  }
+}

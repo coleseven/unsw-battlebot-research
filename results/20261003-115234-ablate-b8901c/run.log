@@ -1,0 +1,95 @@
+guard: waiting for running experiment 'ablate 20261003-114945-ablate-1bdd7a' (pid 78844)
+base: 24/476 games, 43s
+base: 48/476 games, 110s
+base: 72/476 games, 153s
+base: 96/476 games, 189s
+base: 120/476 games, 253s
+base: 144/476 games, 291s
+base: 168/476 games, 357s
+base: 192/476 games, 415s
+base: 216/476 games, 441s
+base: 240/476 games, 477s
+base: 264/476 games, 494s
+base: 288/476 games, 532s
+base: 312/476 games, 671s
+base: 336/476 games, 735s
+base: 360/476 games, 829s
+base: 384/476 games, 999s
+base: 408/476 games, 1066s
+base: 432/476 games, 1108s
+base: 456/476 games, 1141s
+base: 476/476 games, 1159s
+y150: 24/476 games, 43s
+y150: 48/476 games, 113s
+y150: 72/476 games, 153s
+y150: 96/476 games, 191s
+y150: 120/476 games, 259s
+y150: 144/476 games, 296s
+y150: 168/476 games, 361s
+y150: 192/476 games, 420s
+y150: 216/476 games, 445s
+y150: 240/476 games, 482s
+y150: 264/476 games, 499s
+y150: 288/476 games, 538s
+y150: 312/476 games, 670s
+y150: 336/476 games, 732s
+y150: 360/476 games, 822s
+y150: 384/476 games, 985s
+y150: 408/476 games, 1050s
+y150: 432/476 games, 1088s
+y150: 456/476 games, 1123s
+y150: 476/476 games, 1142s
+y300: 24/476 games, 48s
+y300: 48/476 games, 123s
+y300: 72/476 games, 165s
+y300: 96/476 games, 216s
+y300: 120/476 games, 289s
+y300: 144/476 games, 326s
+y300: 168/476 games, 395s
+y300: 192/476 games, 455s
+y300: 216/476 games, 482s
+y300: 240/476 games, 521s
+y300: 264/476 games, 538s
+y300: 288/476 games, 577s
+y300: 312/476 games, 712s
+y300: 336/476 games, 776s
+y300: 360/476 games, 852s
+y300: 384/476 games, 1024s
+y300: 408/476 games, 1081s
+y300: 432/476 games, 1128s
+y300: 456/476 games, 1161s
+y300: 476/476 games, 1181s
+y150_t2: 24/476 games, 43s
+y150_t2: 48/476 games, 106s
+y150_t2: 72/476 games, 151s
+y150_t2: 96/476 games, 193s
+y150_t2: 120/476 games, 258s
+y150_t2: 144/476 games, 293s
+y150_t2: 168/476 games, 358s
+y150_t2: 192/476 games, 416s
+y150_t2: 216/476 games, 439s
+y150_t2: 240/476 games, 477s
+y150_t2: 264/476 games, 494s
+y150_t2: 288/476 games, 528s
+y150_t2: 312/476 games, 654s
+y150_t2: 336/476 games, 725s
+y150_t2: 360/476 games, 807s
+y150_t2: 384/476 games, 953s
+y150_t2: 408/476 games, 1032s
+y150_t2: 432/476 games, 1073s
+y150_t2: 456/476 games, 1106s
+y150_t2: 476/476 games, 1123s
+# Ablation report: 20261003-115234-ablate-b8901c
+
+2 seeds, opponents cpp_nicked_v92, cpp_nicked_v75, cpp_leviathan3, v7-base-bot, nicked_v44, nicked_lab, v11q; 17 official + 0 extra maps, both sides. Objective: wins. Delta = variant score minus base score on the same (opponent, map, seed, side); positive means removing the group helped. 95% CI resamples (map, seed) blocks.
+
+base: mean margin +0.071, wins 255/476; by opponent: cpp_nicked_v92 -0.529, cpp_nicked_v75 -0.294, cpp_leviathan3 +0.529, v7-base-bot +0.441, nicked_v44 +0.412, nicked_lab -0.059, v11q +0.000
+
+| variant | current pool delta [95% CI] | pool verdict | other maps | delta all 15 [95% CI] | verdict | vs cpp_nicked_v92 | vs cpp_nicked_v75 | vs cpp_leviathan3 | vs v7-base-bot | vs nicked_v44 | vs nicked_lab | vs v11q | official | extra | wins |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| y150 | +0.000 [+0.000, +0.000] | neutral | +0.018 | +0.013 [+0.000, +0.029] | neutral | +0.000 | +0.000 | +0.000 | +0.000 | +0.029 | +0.029 | +0.029 | +0.013 | - | 258/476 |
+| y300 | +0.000 [+0.000, +0.000] | neutral | +0.018 | +0.013 [+0.000, +0.029] | neutral | +0.000 | +0.000 | +0.000 | +0.000 | +0.029 | +0.029 | +0.029 | +0.013 | - | 258/476 |
+| y150_t2 | +0.100 [-0.029, +0.257] | neutral | +0.137 | +0.126 [+0.025, +0.218] | harmful (drop) | +0.265 | +0.206 | +0.088 | +0.147 | -0.029 | +0.176 | +0.029 | +0.126 | - | 285/476 |
+
+Noise: seed-to-seed SD of base's margin within a (opponent, map, side) cell 0.815 over 238 cells. Expected paired CI half-width with K seeds, 1.96 * sqrt(2 * 0.815^2 / (238 * K)): K=2: 0.104, K=3: 0.085, K=4: 0.073, K=6: 0.060, K=8: 0.052
+

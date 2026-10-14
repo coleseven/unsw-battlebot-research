@@ -1,0 +1,5140 @@
+[
+  {
+    "run": "20260922-150650-mybot",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260922-150650-mybot/summary.md"
+    ]
+  },
+  {
+    "run": "20260922-153401-tournament",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260922-153401-tournament/summary.md"
+    ]
+  },
+  {
+    "run": "20260922-155504-mybot",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260922-155504-mybot/summary.md"
+    ]
+  },
+  {
+    "run": "20260922-160702-mybot",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260922-160702-mybot/summary.md"
+    ]
+  },
+  {
+    "run": "20260922-161702-population-94dab2",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260922-161702-population-94dab2/comparison.json",
+      "results/20260922-161702-population-94dab2/plan.json",
+      "results/20260922-161702-population-94dab2/selection.json",
+      "results/20260922-161702-population-94dab2/summary.md",
+      "results/20260922-161702-population-94dab2/holdout/summary.md",
+      "results/20260922-161702-population-94dab2/map-audit/comparison.json",
+      "results/20260922-161702-population-94dab2/map-audit/summary.md",
+      "results/20260922-161702-population-94dab2/screen/summary.md"
+    ]
+  },
+  {
+    "run": "20260922-171805-endgame-b67e3b",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260922-171805-endgame-b67e3b/comparison.json",
+      "results/20260922-171805-endgame-b67e3b/plan.json",
+      "results/20260922-171805-endgame-b67e3b/selection.json",
+      "results/20260922-171805-endgame-b67e3b/summary.md",
+      "results/20260922-171805-endgame-b67e3b/holdout/summary.md",
+      "results/20260922-171805-endgame-b67e3b/screen/summary.md"
+    ]
+  },
+  {
+    "run": "20260922-173739-movement-659d1f",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": [
+      "control_450",
+      "trap",
+      "sprint"
+    ],
+    "reports": [
+      "results/20260922-173739-movement-659d1f/comparison.json",
+      "results/20260922-173739-movement-659d1f/plan.json",
+      "results/20260922-173739-movement-659d1f/replay-audit.json",
+      "results/20260922-173739-movement-659d1f/summary.md",
+      "results/20260922-173739-movement-659d1f/holdout/summary.md",
+      "results/20260922-173739-movement-659d1f/screen/summary.md"
+    ]
+  },
+  {
+    "run": "20260922-175356-trap-followup-1bcfe0",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "20260922-175423-trap-followup-a1e642",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [
+      6000,
+      6001,
+      6002,
+      6003,
+      6004,
+      6005,
+      6006,
+      6007,
+      6008,
+      6009,
+      6010,
+      6011
+    ],
+    "variants": {},
+    "reports": [
+      "results/20260922-175423-trap-followup-a1e642/comparison.json",
+      "results/20260922-175423-trap-followup-a1e642/plan.json",
+      "results/20260922-175423-trap-followup-a1e642/summary.md",
+      "results/20260922-175423-trap-followup-a1e642/diagnostics/audit.json"
+    ]
+  },
+  {
+    "run": "20260922-232135-guarded-0cb56c",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260922-232135-guarded-0cb56c/comparison.json",
+      "results/20260922-232135-guarded-0cb56c/plan.json",
+      "results/20260922-232135-guarded-0cb56c/replay-audit.json",
+      "results/20260922-232135-guarded-0cb56c/selection.json",
+      "results/20260922-232135-guarded-0cb56c/screen/summary.md",
+      "results/20260922-232135-guarded-0cb56c/stress/summary.md",
+      "results/20260922-232135-guarded-0cb56c/validation/summary.md"
+    ]
+  },
+  {
+    "run": "20260922-232921-fission-5df835",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260922-232921-fission-5df835/comparison.json",
+      "results/20260922-232921-fission-5df835/plan.json",
+      "results/20260922-232921-fission-5df835/replay-audit.json",
+      "results/20260922-232921-fission-5df835/selection.json",
+      "results/20260922-232921-fission-5df835/screen/summary.md",
+      "results/20260922-232921-fission-5df835/validation/summary.md"
+    ]
+  },
+  {
+    "run": "20260922-233553-corpus-strategy-3d71b9",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260922-233553-corpus-strategy-3d71b9/audit.json",
+      "results/20260922-233553-corpus-strategy-3d71b9/summary.md"
+    ]
+  },
+  {
+    "run": "20260922-234132-corpus-strategy-de8cf0",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260922-234132-corpus-strategy-de8cf0/audit.json",
+      "results/20260922-234132-corpus-strategy-de8cf0/summary.md"
+    ]
+  },
+  {
+    "run": "20260922-235151-novel-maps-db3a9c",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [
+      14000,
+      14001,
+      14002,
+      14003,
+      14004,
+      14005,
+      14006,
+      14007
+    ],
+    "variants": {},
+    "reports": [
+      "results/20260922-235151-novel-maps-db3a9c/comparison.json",
+      "results/20260922-235151-novel-maps-db3a9c/plan.json",
+      "results/20260922-235151-novel-maps-db3a9c/replay-audit.json",
+      "results/20260922-235151-novel-maps-db3a9c/transfer/summary.md"
+    ]
+  },
+  {
+    "run": "20260923-084317-growers-5ac330",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260923-084317-growers-5ac330/comparison.json",
+      "results/20260923-084317-growers-5ac330/plan.json",
+      "results/20260923-084317-growers-5ac330/replay-audit.json",
+      "results/20260923-084317-growers-5ac330/selection.json",
+      "results/20260923-084317-growers-5ac330/screen/summary.md",
+      "results/20260923-084317-growers-5ac330/split-mortality-control_450/summary.json",
+      "results/20260923-084317-growers-5ac330/validation/summary.md"
+    ]
+  },
+  {
+    "run": "20260923-085446-portal-9297e0",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [
+      17000,
+      17001,
+      17002,
+      17003,
+      17004,
+      17005,
+      17006,
+      17007,
+      17008,
+      17009,
+      17010,
+      17011,
+      17012,
+      17013,
+      17014,
+      17015,
+      17016,
+      17017,
+      17018,
+      17019,
+      17020,
+      17021,
+      17022,
+      17023
+    ],
+    "variants": {},
+    "reports": [
+      "results/20260923-085446-portal-9297e0/comparison.json",
+      "results/20260923-085446-portal-9297e0/plan.json",
+      "results/20260923-085446-portal-9297e0/replay-audit.json",
+      "results/20260923-085446-portal-9297e0/validation/summary.md"
+    ]
+  },
+  {
+    "run": "20260923-091759-portal-followup-206dc9",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260923-091759-portal-followup-206dc9/comparison.json",
+      "results/20260923-091759-portal-followup-206dc9/plan.json",
+      "results/20260923-091759-portal-followup-206dc9/replay-audit.json",
+      "results/20260923-091759-portal-followup-206dc9/transfer/summary.md",
+      "results/20260923-091759-portal-followup-206dc9/validation/summary.md"
+    ]
+  },
+  {
+    "run": "20260923-140214-navigation-e8864d",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260923-140214-navigation-e8864d/plan.json"
+    ]
+  },
+  {
+    "run": "20260923-140427-navigation-6e47f4",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260923-140427-navigation-6e47f4/comparison.json",
+      "results/20260923-140427-navigation-6e47f4/plan.json",
+      "results/20260923-140427-navigation-6e47f4/selection.json",
+      "results/20260923-140427-navigation-6e47f4/case-study/plan.json",
+      "results/20260923-140427-navigation-6e47f4/case-study/summary.json",
+      "results/20260923-140427-navigation-6e47f4/screen/summary.md",
+      "results/20260923-140427-navigation-6e47f4/screen/audit/replay-audit.json",
+      "results/20260923-140427-navigation-6e47f4/validation/summary.md",
+      "results/20260923-140427-navigation-6e47f4/validation/audit/replay-audit.json"
+    ]
+  },
+  {
+    "run": "20260923-231438-hybrid-b0801d",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260923-231438-hybrid-b0801d/comparison.json",
+      "results/20260923-231438-hybrid-b0801d/plan.json",
+      "results/20260923-231438-hybrid-b0801d/diagnostics/plan.json",
+      "results/20260923-231438-hybrid-b0801d/diagnostics/summary.json",
+      "results/20260923-231438-hybrid-b0801d/evaluators-screen/summary.md",
+      "results/20260923-231438-hybrid-b0801d/evaluators-screen/audit/replay-audit.json",
+      "results/20260923-231438-hybrid-b0801d/external-imitation/plan.json",
+      "results/20260923-231438-hybrid-b0801d/models/selection.json",
+      "results/20260923-231438-hybrid-b0801d/roles-screen/summary.md",
+      "results/20260923-231438-hybrid-b0801d/roles-screen/audit/replay-audit.json",
+      "results/20260923-231438-hybrid-b0801d/training_data/manifest.json",
+      "results/20260923-231438-hybrid-b0801d/transfer/comparison.json",
+      "results/20260923-231438-hybrid-b0801d/transfer/audit/replay-audit.json",
+      "results/20260923-231438-hybrid-b0801d/transfer-spec/plan.json",
+      "results/20260923-231438-hybrid-b0801d/validation/summary.md",
+      "results/20260923-231438-hybrid-b0801d/validation/audit/replay-audit.json",
+      "results/20260923-231438-hybrid-b0801d/validation-core/summary.md",
+      "results/20260923-231438-hybrid-b0801d/validation-evaluator/summary.md"
+    ]
+  },
+  {
+    "run": "20260924-113203-v4-abbee0",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260924-113203-v4-abbee0/plan.json",
+      "results/20260924-113203-v4-abbee0/screen-direct/summary.md",
+      "results/20260924-113203-v4-abbee0/screen-pool/summary.md"
+    ]
+  },
+  {
+    "run": "20260924-114923-v4-grower-352a0f",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260924-114923-v4-grower-352a0f/plan.json"
+    ]
+  },
+  {
+    "run": "20260924-115357-v4-grower-374d2b",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260924-115357-v4-grower-374d2b/plan.json",
+      "results/20260924-115357-v4-grower-374d2b/screen-direct/summary.md",
+      "results/20260924-115357-v4-grower-374d2b/screen-pool/summary.md"
+    ]
+  },
+  {
+    "run": "20260924-121059-v4-phase-e23595",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260924-121059-v4-phase-e23595/plan.json"
+    ]
+  },
+  {
+    "run": "20260924-131752-v4-feed-48a467",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260924-131752-v4-feed-48a467/plan.json",
+      "results/20260924-131752-v4-feed-48a467/feed-vs-grower/summary.md",
+      "results/20260924-131752-v4-feed-48a467/feed-vs-reference_v3/summary.md",
+      "results/20260924-131752-v4-feed-48a467/grower-vs-reference_v3/summary.md"
+    ]
+  },
+  {
+    "run": "20260924-133212-v4-sonar-e451f4",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260924-133212-v4-sonar-e451f4/plan.json",
+      "results/20260924-133212-v4-sonar-e451f4/route-vs-beacon/summary.md",
+      "results/20260924-133212-v4-sonar-e451f4/screen-v3/summary.md"
+    ]
+  },
+  {
+    "run": "20260924-172250-v4-additive-9c22dc",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260924-172250-v4-additive-9c22dc/plan.json",
+      "results/20260924-172250-v4-additive-9c22dc/vs-old-route/summary.md",
+      "results/20260924-172250-v4-additive-9c22dc/vs-v3/summary.md"
+    ]
+  },
+  {
+    "run": "20260924-174513-v4-additive-validation-d407dd",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260924-174513-v4-additive-validation-d407dd/plan.json",
+      "results/20260924-174513-v4-additive-validation-d407dd/vs-v2/summary.md",
+      "results/20260924-174513-v4-additive-validation-d407dd/vs-v3/summary.md"
+    ]
+  },
+  {
+    "run": "20260924-180920-v4-additive-portal-ed6674",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260924-180920-v4-additive-portal-ed6674/plan.json",
+      "results/20260924-180920-v4-additive-portal-ed6674/official/summary.md",
+      "results/20260924-180920-v4-additive-portal-ed6674/stress/summary.md"
+    ]
+  },
+  {
+    "run": "20260924-182411-v4-visible-portal-ada92a",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260924-182411-v4-visible-portal-ada92a/plan.json",
+      "results/20260924-182411-v4-visible-portal-ada92a/official/summary.md",
+      "results/20260924-182411-v4-visible-portal-ada92a/stress/summary.md"
+    ]
+  },
+  {
+    "run": "20260924-183910-v4-visible-portal-v2-fb319a",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260924-183910-v4-visible-portal-v2-fb319a/plan.json",
+      "results/20260924-183910-v4-visible-portal-v2-fb319a/vs-v2/summary.md"
+    ]
+  },
+  {
+    "run": "20260924-184143-v4-portal-control-e3989f",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260924-184143-v4-portal-control-e3989f/comparison.json",
+      "results/20260924-184143-v4-portal-control-e3989f/plan.json",
+      "results/20260924-184143-v4-portal-control-e3989f/vs-v2/summary.md"
+    ]
+  },
+  {
+    "run": "20260924-193023-v5-initial-4cdc22",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260924-193023-v5-initial-4cdc22/plan.json",
+      "results/20260924-193023-v5-initial-4cdc22/vs-additive/summary.md"
+    ]
+  },
+  {
+    "run": "20260924-193730-v5-initial-e256aa",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260924-193730-v5-initial-e256aa/plan.json",
+      "results/20260924-193730-v5-initial-e256aa/vs-additive/summary.md"
+    ]
+  },
+  {
+    "run": "20260924-194334-v5-export-ad159f",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [
+      45001,
+      45002
+    ],
+    "variants": {},
+    "reports": [
+      "results/20260924-194334-v5-export-ad159f/plan.json",
+      "results/20260924-194334-v5-export-ad159f/vs-additive/summary.md"
+    ]
+  },
+  {
+    "run": "20260924-194815-v5-export-a2cb1a",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [
+      45003,
+      45004,
+      45005,
+      45006
+    ],
+    "variants": {},
+    "reports": [
+      "results/20260924-194815-v5-export-a2cb1a/plan.json",
+      "results/20260924-194815-v5-export-a2cb1a/vs-additive/summary.md"
+    ]
+  },
+  {
+    "run": "20260924-194928-v5-early-king-47a8ab",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [
+      46001,
+      46002
+    ],
+    "variants": {},
+    "reports": [
+      "results/20260924-194928-v5-early-king-47a8ab/plan.json",
+      "results/20260924-194928-v5-early-king-47a8ab/vs-additive/summary.md"
+    ]
+  },
+  {
+    "run": "20260924-215539-export_scout",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260924-215539-export_scout/summary.md"
+    ]
+  },
+  {
+    "run": "20260924-215614-export_scout",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260924-215614-export_scout/summary.md"
+    ]
+  },
+  {
+    "run": "20260924-215724-additive",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260924-215724-additive/summary.md"
+    ]
+  },
+  {
+    "run": "20260924-220052-v5-feed-38e008",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260924-220052-v5-feed-38e008/plan.json",
+      "results/20260924-220052-v5-feed-38e008/vs-additive/summary.md",
+      "results/20260924-220052-v5-feed-38e008/vs-king/summary.md"
+    ]
+  },
+  {
+    "run": "20260924-221046-v5-sonar-7b27e1",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260924-221046-v5-sonar-7b27e1/comparison.json",
+      "results/20260924-221046-v5-sonar-7b27e1/plan.json",
+      "results/20260924-221046-v5-sonar-7b27e1/vs-additive/summary.md"
+    ]
+  },
+  {
+    "run": "20260924-221605-v5-king-safety-0c6649",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260924-221605-v5-king-safety-0c6649/comparison.json",
+      "results/20260924-221605-v5-king-safety-0c6649/plan.json",
+      "results/20260924-221605-v5-king-safety-0c6649/vs-additive/summary.md",
+      "results/20260924-221605-v5-king-safety-0c6649/vs-early_king/summary.md"
+    ]
+  },
+  {
+    "run": "20260924-222647-v5-king-350-937025",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260924-222647-v5-king-350-937025/comparison.json",
+      "results/20260924-222647-v5-king-350-937025/plan.json",
+      "results/20260924-222647-v5-king-350-937025/vs-additive/summary.md",
+      "results/20260924-222647-v5-king-350-937025/vs-king_400/summary.md"
+    ]
+  },
+  {
+    "run": "20260924-223513-v5-king-350-holdout-8687c3",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260924-223513-v5-king-350-holdout-8687c3/comparison.json",
+      "results/20260924-223513-v5-king-350-holdout-8687c3/plan.json",
+      "results/20260924-223513-v5-king-350-holdout-8687c3/vs-king_400/summary.md"
+    ]
+  },
+  {
+    "run": "20260924-223816-v5-combo-809e43",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260924-223816-v5-combo-809e43/comparison.json",
+      "results/20260924-223816-v5-combo-809e43/plan.json",
+      "results/20260924-223816-v5-combo-809e43/vs-additive/summary.md",
+      "results/20260924-223816-v5-combo-809e43/vs-nicked/summary.md"
+    ]
+  },
+  {
+    "run": "20260924-233609-full-change-bb86e5",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-223816-v5-combo-809e43\\bots\\scout_king",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260924-233609-full-change-bb86e5/comparison.json",
+      "results/20260924-233609-full-change-bb86e5/map_matrix.md",
+      "results/20260924-233609-full-change-bb86e5/plan.json",
+      "results/20260924-233609-full-change-bb86e5/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260924-235440-v5-portal-probe-b63cb1",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260924-235440-v5-portal-probe-b63cb1/comparison.json",
+      "results/20260924-235440-v5-portal-probe-b63cb1/plan.json",
+      "results/20260924-235440-v5-portal-probe-b63cb1/diagnostic/summary.md"
+    ]
+  },
+  {
+    "run": "20260924-235840-full-change-a01a46",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-235440-v5-portal-probe-b63cb1\\bots\\portal_push",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260924-235840-full-change-a01a46/comparison.json",
+      "results/20260924-235840-full-change-a01a46/map_matrix.md",
+      "results/20260924-235840-full-change-a01a46/plan.json",
+      "results/20260924-235840-full-change-a01a46/completed/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-001144-v5-trap-probe-047e50",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-001144-v5-trap-probe-047e50/comparison.json",
+      "results/20260925-001144-v5-trap-probe-047e50/plan.json",
+      "results/20260925-001144-v5-trap-probe-047e50/diagnostic/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-001343-full-change-a0dc40",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-001144-v5-trap-probe-047e50\\bots\\trap_guard",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-001343-full-change-a0dc40/comparison.json",
+      "results/20260925-001343-full-change-a0dc40/map_matrix.md",
+      "results/20260925-001343-full-change-a0dc40/plan.json",
+      "results/20260925-001343-full-change-a0dc40/completed/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-112740-v5-economy-probe-6fd266",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-112740-v5-economy-probe-6fd266/comparison.json",
+      "results/20260925-112740-v5-economy-probe-6fd266/plan.json",
+      "results/20260925-112740-v5-economy-probe-6fd266/diagnostic/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-113359-full-change-053960",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-112740-v5-economy-probe-6fd266\\bots\\economy",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-113359-full-change-053960/comparison.json",
+      "results/20260925-113359-full-change-053960/map_matrix.md",
+      "results/20260925-113359-full-change-053960/plan.json",
+      "results/20260925-113359-full-change-053960/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-114617-v5-queen-probe-733bcb",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-114617-v5-queen-probe-733bcb/comparison.json",
+      "results/20260925-114617-v5-queen-probe-733bcb/plan.json",
+      "results/20260925-114617-v5-queen-probe-733bcb/diagnostic/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-114822-v5-queen-probe-977acd",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-114822-v5-queen-probe-977acd/comparison.json",
+      "results/20260925-114822-v5-queen-probe-977acd/plan.json",
+      "results/20260925-114822-v5-queen-probe-977acd/diagnostic/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-114947-full-change-08d46d",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-114822-v5-queen-probe-977acd\\bots\\queen_opening",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-114947-full-change-08d46d/comparison.json",
+      "results/20260925-114947-full-change-08d46d/map_matrix.md",
+      "results/20260925-114947-full-change-08d46d/plan.json",
+      "results/20260925-114947-full-change-08d46d/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-115752-v5-head-probe-5daac8",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-115752-v5-head-probe-5daac8/comparison.json",
+      "results/20260925-115752-v5-head-probe-5daac8/plan.json",
+      "results/20260925-115752-v5-head-probe-5daac8/diagnostic/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-115956-full-change-cb0cd7",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-115752-v5-head-probe-5daac8\\bots\\head_guard",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-115956-full-change-cb0cd7/comparison.json",
+      "results/20260925-115956-full-change-cb0cd7/map_matrix.md",
+      "results/20260925-115956-full-change-cb0cd7/plan.json",
+      "results/20260925-115956-full-change-cb0cd7/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-121905-v5-explore-probe-5971fb",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-121905-v5-explore-probe-5971fb/comparison.json",
+      "results/20260925-121905-v5-explore-probe-5971fb/plan.json",
+      "results/20260925-121905-v5-explore-probe-5971fb/diagnostic/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-122111-full-change-0499e5",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-121905-v5-explore-probe-5971fb\\bots\\exploration",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-122111-full-change-0499e5/comparison.json",
+      "results/20260925-122111-full-change-0499e5/map_matrix.md",
+      "results/20260925-122111-full-change-0499e5/plan.json",
+      "results/20260925-122111-full-change-0499e5/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-122956-v5-population-probe-079b04",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-122956-v5-population-probe-079b04/comparison.json",
+      "results/20260925-122956-v5-population-probe-079b04/plan.json",
+      "results/20260925-122956-v5-population-probe-079b04/diagnostic/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-123353-full-change-4c85a0",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-122956-v5-population-probe-079b04\\bots\\population",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-123353-full-change-4c85a0/comparison.json",
+      "results/20260925-123353-full-change-4c85a0/map_matrix.md",
+      "results/20260925-123353-full-change-4c85a0/plan.json",
+      "results/20260925-123353-full-change-4c85a0/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-132108-v6-g0-791c56",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-132108-v6-g0-791c56/comparison.json",
+      "results/20260925-132108-v6-g0-791c56/plan.json",
+      "results/20260925-132108-v6-g0-791c56/g0/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-132931-full-change-982835",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-132108-v6-g0-791c56\\bots\\v6",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-132931-full-change-982835/comparison.json",
+      "results/20260925-132931-full-change-982835/map_matrix.md",
+      "results/20260925-132931-full-change-982835/plan.json",
+      "results/20260925-132931-full-change-982835/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-165427-full-change-6aff76",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v6-portal-scout-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-165427-full-change-6aff76/comparison.json",
+      "results/20260925-165427-full-change-6aff76/map_matrix.md",
+      "results/20260925-165427-full-change-6aff76/plan.json",
+      "results/20260925-165427-full-change-6aff76/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-170438-full-change-1b70b0",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v6-pocket-route-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-170438-full-change-1b70b0/comparison.json",
+      "results/20260925-170438-full-change-1b70b0/map_matrix.md",
+      "results/20260925-170438-full-change-1b70b0/plan.json",
+      "results/20260925-170438-full-change-1b70b0/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-172503-full-change-de9339",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v6-trauma-hotspot-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-172503-full-change-de9339/comparison.json",
+      "results/20260925-172503-full-change-de9339/map_matrix.md",
+      "results/20260925-172503-full-change-de9339/plan.json",
+      "results/20260925-172503-full-change-de9339/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-174256-full-change-ac5a2a",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v6-narrow-escape-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-174256-full-change-ac5a2a/comparison.json",
+      "results/20260925-174256-full-change-ac5a2a/map_matrix.md",
+      "results/20260925-174256-full-change-ac5a2a/plan.json",
+      "results/20260925-174256-full-change-ac5a2a/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-182609-full-change-a85586",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-132108-v6-g0-791c56\\bots\\v6",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-182609-full-change-a85586/comparison.json",
+      "results/20260925-182609-full-change-a85586/map_matrix.md",
+      "results/20260925-182609-full-change-a85586/plan.json",
+      "results/20260925-182609-full-change-a85586/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-182711-full-change-1505bb",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v6-narrow-escape-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-182711-full-change-1505bb/comparison.json",
+      "results/20260925-182711-full-change-1505bb/map_matrix.md",
+      "results/20260925-182711-full-change-1505bb/plan.json",
+      "results/20260925-182711-full-change-1505bb/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-184725-full-change-858372",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v6-fair-search-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-184725-full-change-858372/comparison.json",
+      "results/20260925-184725-full-change-858372/map_matrix.md",
+      "results/20260925-184725-full-change-858372/plan.json",
+      "results/20260925-184725-full-change-858372/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-184755-v6-cpu-32f2f9",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v6-fair-search-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-184755-v6-cpu-32f2f9/plan.json",
+      "results/20260925-184755-v6-cpu-32f2f9/summary.json"
+    ]
+  },
+  {
+    "run": "20260925-190333-full-change-62d036",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v6-fair-search-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-190333-full-change-62d036/comparison.json",
+      "results/20260925-190333-full-change-62d036/map_matrix.md",
+      "results/20260925-190333-full-change-62d036/plan.json",
+      "results/20260925-190333-full-change-62d036/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-191302-full-change-a71535",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v6-floorfix-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-191302-full-change-a71535/comparison.json",
+      "results/20260925-191302-full-change-a71535/map_matrix.md",
+      "results/20260925-191302-full-change-a71535/plan.json",
+      "results/20260925-191302-full-change-a71535/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-191314-v6-cpu-cc9c2f",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v6-floorfix-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-191314-v6-cpu-cc9c2f/plan.json",
+      "results/20260925-191314-v6-cpu-cc9c2f/summary.json"
+    ]
+  },
+  {
+    "run": "20260925-204545-full-change-13b847",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v6-book-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-204545-full-change-13b847/comparison.json",
+      "results/20260925-204545-full-change-13b847/map_matrix.md",
+      "results/20260925-204545-full-change-13b847/plan.json",
+      "results/20260925-204545-full-change-13b847/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-204546-full-change-911c3e",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v6-book-low-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-204546-full-change-911c3e/comparison.json",
+      "results/20260925-204546-full-change-911c3e/map_matrix.md",
+      "results/20260925-204546-full-change-911c3e/plan.json",
+      "results/20260925-204546-full-change-911c3e/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-210223-full-change-d2d318",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v61-all-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-210223-full-change-d2d318/comparison.json",
+      "results/20260925-210223-full-change-d2d318/map_matrix.md",
+      "results/20260925-210223-full-change-d2d318/plan.json",
+      "results/20260925-210223-full-change-d2d318/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-210224-full-change-4838d6",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v61-hubs-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-210224-full-change-4838d6/comparison.json",
+      "results/20260925-210224-full-change-4838d6/map_matrix.md",
+      "results/20260925-210224-full-change-4838d6/plan.json",
+      "results/20260925-210224-full-change-4838d6/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-210224-full-change-b3cbea",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v61-aggr-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-210224-full-change-b3cbea/comparison.json",
+      "results/20260925-210224-full-change-b3cbea/map_matrix.md",
+      "results/20260925-210224-full-change-b3cbea/plan.json",
+      "results/20260925-210224-full-change-b3cbea/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-212726-full-change-52675f",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v61b-nogoal-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-212726-full-change-52675f/comparison.json",
+      "results/20260925-212726-full-change-52675f/map_matrix.md",
+      "results/20260925-212726-full-change-52675f/plan.json",
+      "results/20260925-212726-full-change-52675f/completed/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-212727-full-change-b01abd",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v61b-goal-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-212727-full-change-b01abd/comparison.json",
+      "results/20260925-212727-full-change-b01abd/map_matrix.md",
+      "results/20260925-212727-full-change-b01abd/plan.json",
+      "results/20260925-212727-full-change-b01abd/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-214041-v6-cpu-f74d3d",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v61b-goal-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-214041-v6-cpu-f74d3d/plan.json",
+      "results/20260925-214041-v6-cpu-f74d3d/summary.json"
+    ]
+  },
+  {
+    "run": "20260925-214042-full-change-ba75fb",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v61b-goal-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-214042-full-change-ba75fb/comparison.json",
+      "results/20260925-214042-full-change-ba75fb/map_matrix.md",
+      "results/20260925-214042-full-change-ba75fb/plan.json",
+      "results/20260925-214042-full-change-ba75fb/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-215416-tune-6926fc",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v61b-goal-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-215416-tune-6926fc/plan.json"
+    ]
+  },
+  {
+    "run": "20260925-224533-full-change-9382db",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\cppbot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-224533-full-change-9382db/plan.json"
+    ]
+  },
+  {
+    "run": "20260925-232832-full-change-b0a387",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\cppbot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-232832-full-change-b0a387/comparison.json",
+      "results/20260925-232832-full-change-b0a387/map_matrix.md",
+      "results/20260925-232832-full-change-b0a387/plan.json",
+      "results/20260925-232832-full-change-b0a387/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-234031-tune-0d2021",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\cppbot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-234031-tune-0d2021/plan.json"
+    ]
+  },
+  {
+    "run": "20260925-235406-full-change-d94b9b",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7-search-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-235406-full-change-d94b9b/comparison.json",
+      "results/20260925-235406-full-change-d94b9b/map_matrix.md",
+      "results/20260925-235406-full-change-d94b9b/plan.json",
+      "results/20260925-235406-full-change-d94b9b/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-235406-full-change-ecd2b0",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7-path-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-235406-full-change-ecd2b0/comparison.json",
+      "results/20260925-235406-full-change-ecd2b0/map_matrix.md",
+      "results/20260925-235406-full-change-ecd2b0/plan.json",
+      "results/20260925-235406-full-change-ecd2b0/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-235407-full-change-165aad",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7-all-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-235407-full-change-165aad/comparison.json",
+      "results/20260925-235407-full-change-165aad/map_matrix.md",
+      "results/20260925-235407-full-change-165aad/plan.json",
+      "results/20260925-235407-full-change-165aad/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260925-235407-full-change-6fe318",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7-beam-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260925-235407-full-change-6fe318/comparison.json",
+      "results/20260925-235407-full-change-6fe318/map_matrix.md",
+      "results/20260925-235407-full-change-6fe318/plan.json",
+      "results/20260925-235407-full-change-6fe318/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260926-001535-tune-79f3f9",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7-base-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260926-001535-tune-79f3f9/plan.json"
+    ]
+  },
+  {
+    "run": "20260926-145349-full-change-516b69",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7t-g1c01-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260926-145349-full-change-516b69/comparison.json",
+      "results/20260926-145349-full-change-516b69/map_matrix.md",
+      "results/20260926-145349-full-change-516b69/plan.json",
+      "results/20260926-145349-full-change-516b69/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260926-145350-full-change-c39295",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7t-g8c05-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260926-145350-full-change-c39295/comparison.json",
+      "results/20260926-145350-full-change-c39295/map_matrix.md",
+      "results/20260926-145350-full-change-c39295/plan.json",
+      "results/20260926-145350-full-change-c39295/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260926-145351-full-change-5e66de",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7t-mean-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260926-145351-full-change-5e66de/comparison.json",
+      "results/20260926-145351-full-change-5e66de/map_matrix.md",
+      "results/20260926-145351-full-change-5e66de/plan.json",
+      "results/20260926-145351-full-change-5e66de/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260926-145351-full-change-bbba46",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7t-g7c05-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260926-145351-full-change-bbba46/comparison.json",
+      "results/20260926-145351-full-change-bbba46/map_matrix.md",
+      "results/20260926-145351-full-change-bbba46/plan.json",
+      "results/20260926-145351-full-change-bbba46/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260926-151434-full-change-8bec11",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7-base-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260926-151434-full-change-8bec11/comparison.json",
+      "results/20260926-151434-full-change-8bec11/map_matrix.md",
+      "results/20260926-151434-full-change-8bec11/plan.json",
+      "results/20260926-151434-full-change-8bec11/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260926-151843-v6-cpu-1688eb",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7t-g7c05-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260926-151843-v6-cpu-1688eb/plan.json"
+    ]
+  },
+  {
+    "run": "20260926-151852-tune-d9e7d6",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7t-g7c05-bot",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260926-151852-tune-d9e7d6/plan.json"
+    ]
+  },
+  {
+    "run": "20260926-163332-full-change-f35783",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\versions\\v7",
+    "engine": "1.1.0",
+    "objective": "",
+    "seeds": [
+      53001,
+      53002,
+      53003
+    ],
+    "variants": {},
+    "reports": [
+      "results/20260926-163332-full-change-f35783/comparison.json",
+      "results/20260926-163332-full-change-f35783/map_matrix.md",
+      "results/20260926-163332-full-change-f35783/plan.json",
+      "results/20260926-163332-full-change-f35783/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260926-163333-full-change-c38170",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7-base-bot",
+    "engine": "1.1.0",
+    "objective": "",
+    "seeds": [
+      53001,
+      53002,
+      53003
+    ],
+    "variants": {},
+    "reports": [
+      "results/20260926-163333-full-change-c38170/comparison.json",
+      "results/20260926-163333-full-change-c38170/map_matrix.md",
+      "results/20260926-163333-full-change-c38170/plan.json",
+      "results/20260926-163333-full-change-c38170/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260926-170140-tune-268a93",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7-base-bot",
+    "engine": "1.1.0",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260926-170140-tune-268a93/plan.json"
+    ]
+  },
+  {
+    "run": "20260926-182526-tune-4fcea2",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7-base-bot",
+    "engine": "1.1.0",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260926-182526-tune-4fcea2/plan.json"
+    ]
+  },
+  {
+    "run": "20260926-183834-full-change-162756",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\sparring\\cpp_leviathan",
+    "engine": "1.1.0",
+    "objective": "",
+    "seeds": [
+      53001,
+      53002
+    ],
+    "variants": {},
+    "reports": [
+      "results/20260926-183834-full-change-162756/comparison.json",
+      "results/20260926-183834-full-change-162756/plan.json",
+      "results/20260926-183834-full-change-162756/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260926-183834-full-change-3fe65d",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\sparring\\cpp_leviathan3",
+    "engine": "1.1.0",
+    "objective": "",
+    "seeds": [
+      53001,
+      53002
+    ],
+    "variants": {},
+    "reports": [
+      "results/20260926-183834-full-change-3fe65d/comparison.json",
+      "results/20260926-183834-full-change-3fe65d/plan.json",
+      "results/20260926-183834-full-change-3fe65d/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260926-183835-full-change-bb2dcf",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\sparring\\cpp_kraken",
+    "engine": "1.1.0",
+    "objective": "",
+    "seeds": [
+      53001,
+      53002
+    ],
+    "variants": {},
+    "reports": [
+      "results/20260926-183835-full-change-bb2dcf/comparison.json",
+      "results/20260926-183835-full-change-bb2dcf/plan.json",
+      "results/20260926-183835-full-change-bb2dcf/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260926-183836-full-change-d496cd",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\sparring\\cpp_seadragon",
+    "engine": "1.1.0",
+    "objective": "",
+    "seeds": [
+      53001,
+      53002
+    ],
+    "variants": {},
+    "reports": [
+      "results/20260926-183836-full-change-d496cd/comparison.json",
+      "results/20260926-183836-full-change-d496cd/plan.json",
+      "results/20260926-183836-full-change-d496cd/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260926-183837-full-change-60b9a8",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\sparring\\cpp_devkadaba",
+    "engine": "1.1.0",
+    "objective": "",
+    "seeds": [
+      53001,
+      53002
+    ],
+    "variants": {},
+    "reports": [
+      "results/20260926-183837-full-change-60b9a8/comparison.json",
+      "results/20260926-183837-full-change-60b9a8/plan.json",
+      "results/20260926-183837-full-change-60b9a8/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260926-204339-ablate-af847f",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7-base-bot",
+    "engine": "1.1.0",
+    "objective": "",
+    "seeds": [
+      61001
+    ],
+    "variants": {
+      "base": {},
+      "no_hub": {
+        "W_HUB": 0.0,
+        "HUB_BOOK": false,
+        "LEARN_HUBS": false
+      },
+      "no_food": {
+        "W_PEARL": 0.0,
+        "W_MEM_PEARL": 0.0
+      }
+    },
+    "reports": [
+      "results/20260926-204339-ablate-af847f/plan.json",
+      "results/20260926-204339-ablate-af847f/report.json",
+      "results/20260926-204339-ablate-af847f/report.md"
+    ]
+  },
+  {
+    "run": "20260926-204722-ablate-903314",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7-base-bot",
+    "engine": "1.1.0",
+    "objective": "",
+    "seeds": [
+      61001,
+      61002,
+      61003,
+      61004,
+      61005,
+      61006
+    ],
+    "variants": {
+      "base": {}
+    },
+    "reports": [
+      "results/20260926-204722-ablate-903314/plan.json",
+      "results/20260926-204722-ablate-903314/report.json",
+      "results/20260926-204722-ablate-903314/report.md"
+    ]
+  },
+  {
+    "run": "20260926-214429-ablate-346278",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\versions\\v7-base",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [
+      61001,
+      61002,
+      61003,
+      61004
+    ],
+    "variants": {
+      "base": {},
+      "no_food": {
+        "W_PEARL": 0.0,
+        "W_MEM_PEARL": 0.0
+      },
+      "no_spawn": {
+        "W_SPAWN": 0.0
+      },
+      "no_explore": {
+        "W_UNSEEN": 0.0,
+        "W_STALE": 0.0
+      },
+      "no_trap": {
+        "W_TRAP": 0.0,
+        "W_LETHAL": 0.0
+      },
+      "no_deadend": {
+        "W_DEADEND": 0.0,
+        "W_CORRIDOR": 0.0
+      },
+      "no_headsafe": {
+        "W_HEAD_ENEMY": 0.0,
+        "W_HEAD_TEAM": 0.0,
+        "W_AHEAD": 0.0
+      },
+      "no_revisit": {
+        "W_REVISIT": 0.0
+      },
+      "no_fan": {
+        "W_FAN_EARLY": 0.0,
+        "W_FAN_LATE": 0.0
+      },
+      "no_straight": {
+        "W_STRAIGHT": 0.0
+      },
+      "no_portal": {
+        "W_PORTAL": 0.0,
+        "W_PORTAL_UNSEEN": 0.0,
+        "W_PORTAL_SCOUT": 0.0,
+        "PORTAL_BOOK": false
+      },
+      "no_v3model": {
+        "W_V3": 0.0
+      },
+      "no_attack": {
+        "W_ATTACK": 0.0,
+        "W_TRADE": 0.0
+      },
+      "no_hunt": {
+        "W_HUNT": 0.0
+      },
+      "no_defend": {
+        "W_DEFEND": 0.0
+      },
+      "no_hub": {
+        "W_HUB": 0.0,
+        "HUB_BOOK": false,
+        "LEARN_HUBS": false
+      },
+      "no_goal": {
+        "W_GOAL": 0.0,
+        "GOAL": false
+      },
+      "no_feed": {
+        "W_CASH": 0.0,
+        "FEED_ROUND": 999
+      },
+      "no_protect": {
+        "PROTECT_MULT": 1.0,
+        "PROTECT_FOOD_MULT": 1.0
+      }
+    },
+    "reports": [
+      "results/20260926-214429-ablate-346278/plan.json",
+      "results/20260926-214429-ablate-346278/report.json",
+      "results/20260926-214429-ablate-346278/report.md"
+    ]
+  },
+  {
+    "run": "20260927-021008-ablate-5c0197",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\versions\\v7-base",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [
+      71001,
+      71002,
+      71003,
+      71004
+    ],
+    "variants": {
+      "base": {},
+      "drop_harmful": {
+        "W_TRAP": 0.0,
+        "W_LETHAL": 0.0,
+        "W_DEFEND": 0.0
+      },
+      "lean": {
+        "W_TRAP": 0.0,
+        "W_LETHAL": 0.0,
+        "W_DEFEND": 0.0,
+        "W_UNSEEN": 0.0,
+        "W_STALE": 0.0,
+        "W_REVISIT": 0.0,
+        "W_FAN_EARLY": 0.0,
+        "W_FAN_LATE": 0.0,
+        "W_HUNT": 0.0,
+        "W_GOAL": 0.0,
+        "GOAL": false,
+        "PROTECT_MULT": 1.0,
+        "PROTECT_FOOD_MULT": 1.0
+      },
+      "simplified": {
+        "W_TRAP": 0.0,
+        "W_LETHAL": 0.0,
+        "W_DEFEND": 0.0,
+        "W_UNSEEN": 0.0,
+        "W_STALE": 0.0,
+        "W_REVISIT": 0.0,
+        "W_FAN_EARLY": 0.0,
+        "W_FAN_LATE": 0.0,
+        "W_HUNT": 0.0,
+        "W_GOAL": 0.0,
+        "GOAL": false,
+        "PROTECT_MULT": 1.0,
+        "PROTECT_FOOD_MULT": 1.0,
+        "W_HEAD_ENEMY": 0.0,
+        "W_HEAD_TEAM": 0.0,
+        "W_AHEAD": 0.0,
+        "W_STRAIGHT": 0.0,
+        "W_PORTAL": 0.0,
+        "W_PORTAL_UNSEEN": 0.0,
+        "W_PORTAL_SCOUT": 0.0,
+        "PORTAL_BOOK": false
+      }
+    },
+    "reports": [
+      "results/20260927-021008-ablate-5c0197/plan.json",
+      "results/20260927-021008-ablate-5c0197/report.json",
+      "results/20260927-021008-ablate-5c0197/report.md"
+    ]
+  },
+  {
+    "run": "20260927-030709-tune-4efc96",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7-b1-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260927-030709-tune-4efc96/plan.json"
+    ]
+  },
+  {
+    "run": "20260927-061647-full-change-fc188d",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v7-b1-bot",
+    "engine": "1.1.0",
+    "objective": "",
+    "seeds": [
+      53001,
+      53002,
+      53003
+    ],
+    "variants": {},
+    "reports": [
+      "results/20260927-061647-full-change-fc188d/comparison.json",
+      "results/20260927-061647-full-change-fc188d/plan.json",
+      "results/20260927-061647-full-change-fc188d/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260927-061649-full-change-db2585",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\versions\\v7-base",
+    "engine": "1.1.0",
+    "objective": "",
+    "seeds": [
+      53001,
+      53002,
+      53003
+    ],
+    "variants": {},
+    "reports": [
+      "results/20260927-061649-full-change-db2585/comparison.json",
+      "results/20260927-061649-full-change-db2585/plan.json",
+      "results/20260927-061649-full-change-db2585/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260927-112601-tune-40f110",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v8-dev-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260927-112601-tune-40f110/plan.json"
+    ]
+  },
+  {
+    "run": "20260927-132201-tune-a63e89",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v8-dev-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260927-132201-tune-a63e89/plan.json"
+    ]
+  },
+  {
+    "run": "20260927-190107-ablate-6028c1",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v9-ab-base-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [
+      97001,
+      97002,
+      97003
+    ],
+    "variants": {
+      "base": {},
+      "age": {
+        "CPP_PORTAL_AGE": 1
+      },
+      "vor": {
+        "CPP_VOR": 1
+      },
+      "age_vor": {
+        "CPP_PORTAL_AGE": 1,
+        "CPP_VOR": 1
+      }
+    },
+    "reports": [
+      "results/20260927-190107-ablate-6028c1/plan.json",
+      "results/20260927-190107-ablate-6028c1/report.json",
+      "results/20260927-190107-ablate-6028c1/report.md"
+    ]
+  },
+  {
+    "run": "20260927-194503-tune-ccc4cd",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v8-dev2-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260927-194503-tune-ccc4cd/plan.json"
+    ]
+  },
+  {
+    "run": "20260927-231030-full-change-1f35bb",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v9-g5-bot",
+    "engine": "1.1.0",
+    "objective": "",
+    "seeds": [
+      53001,
+      53002,
+      53003
+    ],
+    "variants": {},
+    "reports": [
+      "results/20260927-231030-full-change-1f35bb/comparison.json",
+      "results/20260927-231030-full-change-1f35bb/plan.json",
+      "results/20260927-231030-full-change-1f35bb/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260927-231031-full-change-51b4d9",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\versions\\v7-base",
+    "engine": "1.1.0",
+    "objective": "",
+    "seeds": [
+      53001,
+      53002,
+      53003
+    ],
+    "variants": {},
+    "reports": [
+      "results/20260927-231031-full-change-51b4d9/comparison.json",
+      "results/20260927-231031-full-change-51b4d9/plan.json",
+      "results/20260927-231031-full-change-51b4d9/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260928-044431-full-change-62591f",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v9-late-bot",
+    "engine": "1.1.0",
+    "objective": "",
+    "seeds": [
+      53001,
+      53002,
+      53003
+    ],
+    "variants": {},
+    "reports": [
+      "results/20260928-044431-full-change-62591f/comparison.json",
+      "results/20260928-044431-full-change-62591f/plan.json",
+      "results/20260928-044431-full-change-62591f/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260928-044432-full-change-5fc479",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\versions\\v9",
+    "engine": "1.1.0",
+    "objective": "",
+    "seeds": [
+      53001,
+      53002,
+      53003
+    ],
+    "variants": {},
+    "reports": [
+      "results/20260928-044432-full-change-5fc479/comparison.json",
+      "results/20260928-044432-full-change-5fc479/plan.json",
+      "results/20260928-044432-full-change-5fc479/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260928-140413-ablate-2970a3",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v9n-base-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [
+      103001,
+      103002,
+      103003
+    ],
+    "variants": {
+      "base": {},
+      "kb": {
+        "CPP_KING_BEACON": 1
+      },
+      "kbbig": {
+        "CPP_KING_BEACON": 1,
+        "CPP_BIG_FEED": 1
+      },
+      "dead": {
+        "CPP_DEADEND_LOOK": 12
+      },
+      "all": {
+        "CPP_KING_BEACON": 1,
+        "CPP_BIG_FEED": 1,
+        "CPP_DEADEND_LOOK": 12
+      }
+    },
+    "reports": [
+      "results/20260928-140413-ablate-2970a3/plan.json",
+      "results/20260928-140413-ablate-2970a3/report.json",
+      "results/20260928-140413-ablate-2970a3/report.md"
+    ]
+  },
+  {
+    "run": "20260928-174742-ablate-8cf646",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10-cand-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [
+      107001,
+      107002,
+      107003
+    ],
+    "variants": {
+      "base": {},
+      "room8": {
+        "CPP_SPLIT_SAFE": 1,
+        "CPP_SPLIT_ROOM": 8
+      },
+      "room16": {
+        "CPP_SPLIT_SAFE": 1,
+        "CPP_SPLIT_ROOM": 16
+      },
+      "dead60": {
+        "CPP_DEADEND_LOOK": 12,
+        "CPP_DEADEND_PEN": 60.0
+      }
+    },
+    "reports": [
+      "results/20260928-174742-ablate-8cf646/plan.json",
+      "results/20260928-174742-ablate-8cf646/report.json",
+      "results/20260928-174742-ablate-8cf646/report.md"
+    ]
+  },
+  {
+    "run": "20260928-180616-ablate-22301c",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10-cand2-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [
+      107001,
+      107002,
+      107003
+    ],
+    "variants": {
+      "base": {},
+      "brief": {
+        "CPP_BRIEF": 1
+      },
+      "brief_room8": {
+        "CPP_BRIEF": 1,
+        "CPP_SPLIT_SAFE": 1,
+        "CPP_SPLIT_ROOM": 8
+      }
+    },
+    "reports": [
+      "results/20260928-180616-ablate-22301c/plan.json",
+      "results/20260928-180616-ablate-22301c/report.json",
+      "results/20260928-180616-ablate-22301c/report.md"
+    ]
+  },
+  {
+    "run": "20260928-224114-full-change-f05cec",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10-cand2-bot",
+    "engine": "1.1.0",
+    "objective": "",
+    "seeds": [
+      53001,
+      53002,
+      53003
+    ],
+    "variants": {},
+    "reports": [
+      "results/20260928-224114-full-change-f05cec/comparison.json",
+      "results/20260928-224114-full-change-f05cec/plan.json",
+      "results/20260928-224114-full-change-f05cec/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260928-224115-full-change-345748",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\versions\\v9",
+    "engine": "1.1.0",
+    "objective": "",
+    "seeds": [
+      53001,
+      53002,
+      53003
+    ],
+    "variants": {},
+    "reports": [
+      "results/20260928-224115-full-change-345748/comparison.json",
+      "results/20260928-224115-full-change-345748/plan.json",
+      "results/20260928-224115-full-change-345748/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260929-001450-ablate-0e245d",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\versions\\v10",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [
+      109001,
+      109002,
+      109003
+    ],
+    "variants": {
+      "base": {},
+      "hubbook_off": {
+        "HUB_BOOK": false
+      }
+    },
+    "reports": [
+      "results/20260929-001450-ablate-0e245d/plan.json",
+      "results/20260929-001450-ablate-0e245d/report.json",
+      "results/20260929-001450-ablate-0e245d/report.md"
+    ]
+  },
+  {
+    "run": "20260929-005706-ablate-39e66c",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10b-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [
+      109001,
+      109002,
+      109003
+    ],
+    "variants": {
+      "base": {},
+      "hub_observe": {
+        "CPP_HUB_OBSERVE": 1
+      }
+    },
+    "reports": [
+      "results/20260929-005706-ablate-39e66c/plan.json",
+      "results/20260929-005706-ablate-39e66c/report.json",
+      "results/20260929-005706-ablate-39e66c/report.md"
+    ]
+  },
+  {
+    "run": "20260929-013847-tune-c7cd3d",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10b-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260929-013847-tune-c7cd3d/plan.json"
+    ]
+  },
+  {
+    "run": "20260929-071650-full-change-8cfa1b",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v11-cand-bot",
+    "engine": "1.1.0",
+    "objective": "",
+    "seeds": [
+      53001,
+      53002,
+      53003
+    ],
+    "variants": {},
+    "reports": [
+      "results/20260929-071650-full-change-8cfa1b/comparison.json",
+      "results/20260929-071650-full-change-8cfa1b/plan.json",
+      "results/20260929-071650-full-change-8cfa1b/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260929-071651-full-change-5060a9",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10b-bot",
+    "engine": "1.1.0",
+    "objective": "",
+    "seeds": [
+      53001,
+      53002,
+      53003
+    ],
+    "variants": {},
+    "reports": [
+      "results/20260929-071651-full-change-5060a9/comparison.json",
+      "results/20260929-071651-full-change-5060a9/plan.json",
+      "results/20260929-071651-full-change-5060a9/full/summary.md"
+    ]
+  },
+  {
+    "run": "20260929-074209-ablate-87a257",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10b-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [
+      113001,
+      113002,
+      113003
+    ],
+    "variants": {
+      "base": {},
+      "v11": {
+        "W_PEARL": 478.3342,
+        "W_MEM_PEARL": 119.5836,
+        "W_SPAWN": 55.0351,
+        "W_TRAP": 4.0635,
+        "W_LETHAL": 40.6349,
+        "W_HEAD_ENEMY": 177.7711,
+        "W_HEAD_TEAM": 177.7711,
+        "W_AHEAD": 59.257,
+        "W_V3": 55.2947,
+        "CAP": 54,
+        "SPLIT_UNTIL_SMALL": 403,
+        "SPLIT_UNTIL_LARGE": 320,
+        "FEED_ROUND": 414,
+        "W_CASH": 109.9384,
+        "W_ATTACK": 1017.0839,
+        "W_TRADE": 67.8056,
+        "CPP_KB_ROUND": 290,
+        "CPP_BIG_FEED_ROUND": 405,
+        "CPP_DEADEND_LOOK": 12,
+        "CPP_DEADEND_PEN": 73.9211
+      }
+    },
+    "reports": [
+      "results/20260929-074209-ablate-87a257/plan.json",
+      "results/20260929-074209-ablate-87a257/report.json",
+      "results/20260929-074209-ablate-87a257/report.md"
+    ]
+  },
+  {
+    "run": "20260929-092956-ablate-1fdc1e",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10c-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [
+      127001,
+      127002,
+      127003
+    ],
+    "variants": {
+      "base": {},
+      "fpr80": {
+        "FOUNDER_PROTECT_ROUND": 80
+      },
+      "anchor80": {
+        "CPP_ANCHOR": 1,
+        "FOUNDER_PROTECT_ROUND": 80
+      },
+      "anchor150": {
+        "CPP_ANCHOR": 1,
+        "FOUNDER_PROTECT_ROUND": 150
+      },
+      "anchor80_r20": {
+        "CPP_ANCHOR": 1,
+        "FOUNDER_PROTECT_ROUND": 80,
+        "CPP_ANCHOR_RESCUE": 20
+      }
+    },
+    "reports": [
+      "results/20260929-092956-ablate-1fdc1e/plan.json",
+      "results/20260929-092956-ablate-1fdc1e/report.json",
+      "results/20260929-092956-ablate-1fdc1e/report.md"
+    ]
+  },
+  {
+    "run": "20260929-093158-ablate-933dc7",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10c-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [
+      127001,
+      127002,
+      127003
+    ],
+    "variants": {
+      "base": {},
+      "hubfar": {
+        "HUB_FAR_MULT": 1.5,
+        "HUB_SCALE": 10.0
+      },
+      "hubfar2": {
+        "HUB_FAR_MULT": 1.0,
+        "HUB_SCALE": 7.0
+      },
+      "goal0": {
+        "W_GOAL": 0.0
+      }
+    },
+    "reports": [
+      "results/20260929-093158-ablate-933dc7/plan.json",
+      "results/20260929-093158-ablate-933dc7/report.json",
+      "results/20260929-093158-ablate-933dc7/report.md"
+    ]
+  },
+  {
+    "run": "20260929-121639-ablate-d99145",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10c-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [
+      131001,
+      131002,
+      131003
+    ],
+    "variants": {
+      "base": {},
+      "hubfar": {
+        "HUB_FAR_MULT": 1.5,
+        "HUB_SCALE": 10.0
+      },
+      "hubfar_strong": {
+        "HUB_FAR_MULT": 2.5,
+        "HUB_SCALE": 14.0
+      }
+    },
+    "reports": [
+      "results/20260929-121639-ablate-d99145/plan.json",
+      "results/20260929-121639-ablate-d99145/report.json",
+      "results/20260929-121639-ablate-d99145/report.md"
+    ]
+  },
+  {
+    "run": "20260929-134853-ablate-5617dc",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10e-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [
+      137001,
+      137002,
+      137003
+    ],
+    "variants": {
+      "base": {},
+      "book": {
+        "CPP_BOOK_MAP": 1
+      },
+      "bookgrad15": {
+        "CPP_BOOK_MAP": 1,
+        "CPP_HUB_GRAD": 15.0
+      },
+      "bookgrad8": {
+        "CPP_BOOK_MAP": 1,
+        "CPP_HUB_GRAD": 8.0
+      }
+    },
+    "reports": [
+      "results/20260929-134853-ablate-5617dc/plan.json",
+      "results/20260929-134853-ablate-5617dc/report.json",
+      "results/20260929-134853-ablate-5617dc/report.md"
+    ]
+  },
+  {
+    "run": "20260929-152502-ablate-f3fe84",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "20260929-152513-ablate-1241c8",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "20260929-152611-ablate-5cb6f9",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10e-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [
+      153001,
+      153002,
+      153003
+    ],
+    "variants": {
+      "base": {},
+      "book": {
+        "CPP_BOOK_MAP": 1
+      }
+    },
+    "reports": [
+      "results/20260929-152611-ablate-5cb6f9/plan.json",
+      "results/20260929-152611-ablate-5cb6f9/report.json",
+      "results/20260929-152611-ablate-5cb6f9/report.md"
+    ]
+  },
+  {
+    "run": "20260929-163912-ablate-263928",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10g-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [
+      161001,
+      161002,
+      161003
+    ],
+    "variants": {
+      "base": {},
+      "pf16": {
+        "CPP_PROTECT_FLOOR": 16
+      },
+      "pf16r5": {
+        "CPP_PROTECT_FLOOR": 16,
+        "CPP_RESCUE_EVERY": 5
+      },
+      "pf10r5": {
+        "CPP_PROTECT_FLOOR": 10,
+        "CPP_RESCUE_EVERY": 5
+      },
+      "shift40": {
+        "CPP_FEED_SHIFT_LARGE": 40
+      }
+    },
+    "reports": [
+      "results/20260929-163912-ablate-263928/plan.json",
+      "results/20260929-163912-ablate-263928/report.json",
+      "results/20260929-163912-ablate-263928/report.md"
+    ]
+  },
+  {
+    "run": "20260929-182640-ablate-e2493c",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10g-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [
+      171001,
+      171002,
+      171003
+    ],
+    "variants": {
+      "base": {},
+      "shift40": {
+        "CPP_FEED_SHIFT_LARGE": 40
+      },
+      "plen4": {
+        "PROTECT_LEN": 4
+      },
+      "plen4pf16r5": {
+        "PROTECT_LEN": 4,
+        "CPP_PROTECT_FLOOR": 16,
+        "CPP_RESCUE_EVERY": 5
+      },
+      "plen4pf16r5s40": {
+        "PROTECT_LEN": 4,
+        "CPP_PROTECT_FLOOR": 16,
+        "CPP_RESCUE_EVERY": 5,
+        "CPP_FEED_SHIFT_LARGE": 40
+      }
+    },
+    "reports": [
+      "results/20260929-182640-ablate-e2493c/plan.json",
+      "results/20260929-182640-ablate-e2493c/report.json",
+      "results/20260929-182640-ablate-e2493c/report.md"
+    ]
+  },
+  {
+    "run": "20260929-201541-tune-6e4812",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10h-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/20260929-201541-tune-6e4812/plan.json"
+    ]
+  },
+  {
+    "run": "20260930-073741-ablate-f5f4ba",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10i-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [
+      191001,
+      191002,
+      191003
+    ],
+    "variants": {
+      "base": {},
+      "hubsep": {
+        "CPP_HUB_SEP_FIX": 1
+      },
+      "v3portal": {
+        "CPP_V3_PORTAL": 1
+      },
+      "both": {
+        "CPP_HUB_SEP_FIX": 1,
+        "CPP_V3_PORTAL": 1
+      },
+      "v12tune": {
+        "W_PEARL": 521.0673,
+        "W_MEM_PEARL": 130.2668,
+        "W_SPAWN": 47.7502,
+        "W_V3": 40.6002,
+        "W_ATTACK": 918.9269,
+        "W_TRADE": 61.2618,
+        "W_HEAD_ENEMY": 202.6174,
+        "W_HEAD_TEAM": 202.6174,
+        "W_AHEAD": 67.5391,
+        "W_TRAP": 4.17,
+        "W_LETHAL": 41.7004,
+        "W_CASH": 157.3718,
+        "FEED_ROUND": 400,
+        "SPLIT_UNTIL_LARGE": 330,
+        "SPLIT_UNTIL_SMALL": 384,
+        "CAP": 52,
+        "FLOOR": 21,
+        "CPP_KB_ROUND": 250,
+        "CPP_KB_MINLEN": 11,
+        "CPP_BIG_FEED_ROUND": 400,
+        "CPP_BIG_FEED_MARGIN": 6,
+        "CPP_FEED_SHIFT_LARGE": 46
+      },
+      "v12gen5": {
+        "W_PEARL": 341.2009,
+        "W_MEM_PEARL": 85.3002,
+        "W_SPAWN": 43.7803,
+        "W_V3": 33.8755,
+        "W_ATTACK": 836.9967,
+        "W_TRADE": 55.7998,
+        "W_HEAD_ENEMY": 151.9525,
+        "W_HEAD_TEAM": 151.9525,
+        "W_AHEAD": 50.6508,
+        "W_TRAP": 4.4051,
+        "W_LETHAL": 44.0508,
+        "W_CASH": 111.438,
+        "FEED_ROUND": 400,
+        "SPLIT_UNTIL_LARGE": 363,
+        "SPLIT_UNTIL_SMALL": 407,
+        "CAP": 55,
+        "FLOOR": 23,
+        "CPP_KB_ROUND": 298,
+        "CPP_KB_MINLEN": 10,
+        "CPP_BIG_FEED_ROUND": 416,
+        "CPP_BIG_FEED_MARGIN": 4,
+        "CPP_FEED_SHIFT_LARGE": 38
+      }
+    },
+    "reports": [
+      "results/20260930-073741-ablate-f5f4ba/plan.json",
+      "results/20260930-073741-ablate-f5f4ba/report.json",
+      "results/20260930-073741-ablate-f5f4ba/report.md"
+    ]
+  },
+  {
+    "run": "20260930-095351-ablate-907fbc",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10j-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [
+      211001,
+      211002,
+      211003
+    ],
+    "variants": {
+      "base": {},
+      "kb2": {
+        "CPP_KB_V2": 1
+      },
+      "kb2hub": {
+        "CPP_KB_V2": 1,
+        "CPP_HUB_SEP_FIX": 1
+      }
+    },
+    "reports": [
+      "results/20260930-095351-ablate-907fbc/plan.json",
+      "results/20260930-095351-ablate-907fbc/report.json",
+      "results/20260930-095351-ablate-907fbc/report.md"
+    ]
+  },
+  {
+    "run": "20260930-110033-ablate-a99756",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10j-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [
+      221001,
+      221002,
+      221003
+    ],
+    "variants": {
+      "base": {},
+      "kb2": {
+        "CPP_KB_V2": 1
+      }
+    },
+    "reports": [
+      "results/20260930-110033-ablate-a99756/plan.json",
+      "results/20260930-110033-ablate-a99756/report.json",
+      "results/20260930-110033-ablate-a99756/report.md"
+    ]
+  },
+  {
+    "run": "20260930-114529-ablate-214862",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10k-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [
+      231001,
+      231002,
+      231003
+    ],
+    "variants": {
+      "base": {},
+      "reach4": {
+        "CPP_FEED_REACH": 4
+      },
+      "reach6": {
+        "CPP_FEED_REACH": 6
+      },
+      "kb2reach4": {
+        "CPP_KB_V2": 1,
+        "CPP_FEED_REACH": 4
+      }
+    },
+    "reports": [
+      "results/20260930-114529-ablate-214862/plan.json",
+      "results/20260930-114529-ablate-214862/report.json",
+      "results/20260930-114529-ablate-214862/report.md"
+    ]
+  },
+  {
+    "run": "20260930-131507-ablate-bfe34e",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10l-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [
+      241001,
+      241002,
+      241003
+    ],
+    "variants": {
+      "base": {},
+      "kgrad10": {
+        "CPP_KING_GRAD": 10.0
+      },
+      "kgrad25": {
+        "CPP_KING_GRAD": 25.0
+      },
+      "kgrad25kb2": {
+        "CPP_KING_GRAD": 25.0,
+        "CPP_KB_V2": 1
+      }
+    },
+    "reports": [
+      "results/20260930-131507-ablate-bfe34e/plan.json",
+      "results/20260930-131507-ablate-bfe34e/report.json",
+      "results/20260930-131507-ablate-bfe34e/report.md"
+    ]
+  },
+  {
+    "run": "20260930-144847-ablate-27e8a7",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10l-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [
+      261001,
+      261002,
+      261003
+    ],
+    "variants": {
+      "base": {},
+      "sum64": {
+        "FEED_MAXLEN": 64,
+        "CPP_KING_GRAD": 10.0
+      },
+      "sum12": {
+        "FEED_MAXLEN": 12,
+        "CPP_KING_GRAD": 10.0
+      },
+      "sum64early": {
+        "FEED_MAXLEN": 64,
+        "CPP_KING_GRAD": 10.0,
+        "FEED_ROUND": 380
+      }
+    },
+    "reports": [
+      "results/20260930-144847-ablate-27e8a7/plan.json",
+      "results/20260930-144847-ablate-27e8a7/report.json",
+      "results/20260930-144847-ablate-27e8a7/report.md"
+    ]
+  },
+  {
+    "run": "20260930-161837-ablate-05467d",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10l-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [
+      271001,
+      271002,
+      271003
+    ],
+    "variants": {
+      "base": {},
+      "sum12": {
+        "FEED_MAXLEN": 12,
+        "CPP_KING_GRAD": 10.0
+      },
+      "sum64": {
+        "FEED_MAXLEN": 64,
+        "CPP_KING_GRAD": 10.0
+      }
+    },
+    "reports": [
+      "results/20260930-161837-ablate-05467d/plan.json",
+      "results/20260930-161837-ablate-05467d/report.json",
+      "results/20260930-161837-ablate-05467d/report.md"
+    ]
+  },
+  {
+    "run": "20260930-182348-ablate-81c0bb",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10m-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [
+      301001,
+      301002,
+      301003
+    ],
+    "variants": {
+      "base": {},
+      "r4": {
+        "CPP_V3_R4": 1
+      },
+      "r4eq": {
+        "CPP_V3_R4": 1,
+        "W_V3": 14.06
+      },
+      "r4lo": {
+        "CPP_V3_R4": 1,
+        "W_V3": 9.0
+      }
+    },
+    "reports": [
+      "results/20260930-182348-ablate-81c0bb/plan.json",
+      "results/20260930-182348-ablate-81c0bb/report.json",
+      "results/20260930-182348-ablate-81c0bb/report.md"
+    ]
+  },
+  {
+    "run": "20260930-195605-ablate-983951",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10m-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [
+      311001,
+      311002,
+      311003
+    ],
+    "variants": {
+      "base": {},
+      "sonarhub": {
+        "CPP_SONAR_HUB": 1
+      },
+      "sonarhub_whub3": {
+        "CPP_SONAR_HUB": 1,
+        "W_HUB": 215.0
+      }
+    },
+    "reports": [
+      "results/20260930-195605-ablate-983951/plan.json",
+      "results/20260930-195605-ablate-983951/report.json",
+      "results/20260930-195605-ablate-983951/report.md"
+    ]
+  },
+  {
+    "run": "20260930-210927-ablate-9aaef8",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10n-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [
+      331001,
+      331002,
+      331003
+    ],
+    "variants": {
+      "base": {},
+      "sh_age15": {
+        "CPP_SONAR_HUB": 1,
+        "CPP_SONAR_ADOPT_AGE": 15
+      },
+      "sh_age30": {
+        "CPP_SONAR_HUB": 1,
+        "CPP_SONAR_ADOPT_AGE": 30
+      },
+      "sh_age60": {
+        "CPP_SONAR_HUB": 1,
+        "CPP_SONAR_ADOPT_AGE": 60
+      }
+    },
+    "reports": [
+      "results/20260930-210927-ablate-9aaef8/plan.json",
+      "results/20260930-210927-ablate-9aaef8/report.json",
+      "results/20260930-210927-ablate-9aaef8/report.md"
+    ]
+  },
+  {
+    "run": "20260930-224316-ablate-46cdb1",
+    "kind": "dated run",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "20260930-224324-ablate-a110d4",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10n-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [
+      341001,
+      341002,
+      341003
+    ],
+    "variants": {
+      "base": {},
+      "sh_age30": {
+        "CPP_SONAR_HUB": 1,
+        "CPP_SONAR_ADOPT_AGE": 30
+      },
+      "sh_age60": {
+        "CPP_SONAR_HUB": 1,
+        "CPP_SONAR_ADOPT_AGE": 60
+      }
+    },
+    "reports": [
+      "results/20260930-224324-ablate-a110d4/plan.json",
+      "results/20260930-224324-ablate-a110d4/report.json",
+      "results/20260930-224324-ablate-a110d4/report.md"
+    ]
+  },
+  {
+    "run": "20261001-141248-ablate-4e9237",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10q-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [
+      411001,
+      411002
+    ],
+    "variants": {
+      "base": {},
+      "mv_t05": {
+        "CPP_MOVER": 1,
+        "CPP_MOVER_TAU": 0.5
+      },
+      "mv_t1": {
+        "CPP_MOVER": 1,
+        "CPP_MOVER_TAU": 1.0
+      },
+      "mv_t2": {
+        "CPP_MOVER": 1,
+        "CPP_MOVER_TAU": 2.0
+      }
+    },
+    "reports": [
+      "results/20261001-141248-ablate-4e9237/plan.json",
+      "results/20261001-141248-ablate-4e9237/report.json",
+      "results/20261001-141248-ablate-4e9237/report.md"
+    ]
+  },
+  {
+    "run": "20261001-152839-ablate-fec4b0",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v10q-bot",
+    "engine": "1.1.0",
+    "objective": "aligned",
+    "seeds": [
+      421001,
+      421002
+    ],
+    "variants": {
+      "base": {},
+      "v7_weights": {
+        "W_V3": 10.0,
+        "W_PEARL": 80.0,
+        "W_MEM_PEARL": 20.0,
+        "W_SPAWN": 30.0,
+        "W_TRAP": 10.0,
+        "W_LETHAL": 100.0,
+        "W_ATTACK": 150.0,
+        "W_TRADE": 10.0,
+        "W_HEAD_ENEMY": 60.0,
+        "W_HEAD_TEAM": 60.0,
+        "W_AHEAD": 20.0,
+        "W_UNSEEN": 8.0,
+        "W_STALE": 3.0,
+        "W_GOAL": 3.0,
+        "W_FAN_EARLY": 8.0,
+        "W_FAN_LATE": 1.5,
+        "W_HUB": 60.0,
+        "W_CASH": 80.0,
+        "LEARN_EVERY": 10,
+        "POOR_MULT": 2.5,
+        "FEED_ROUND": 410,
+        "SPLIT_UNTIL_LARGE": 300,
+        "CPP_TRAP_OPEN": 1.0
+      },
+      "v7_v3": {
+        "W_V3": 10.0
+      },
+      "v7_food": {
+        "W_PEARL": 80.0,
+        "W_MEM_PEARL": 20.0,
+        "W_SPAWN": 30.0
+      },
+      "v7_safety": {
+        "W_TRAP": 10.0,
+        "W_LETHAL": 100.0,
+        "CPP_TRAP_OPEN": 1.0
+      },
+      "v7_fight": {
+        "W_ATTACK": 150.0,
+        "W_TRADE": 10.0,
+        "W_HEAD_ENEMY": 60.0,
+        "W_HEAD_TEAM": 60.0,
+        "W_AHEAD": 20.0
+      },
+      "v7_explore": {
+        "W_UNSEEN": 8.0,
+        "W_STALE": 3.0,
+        "W_GOAL": 3.0,
+        "W_FAN_EARLY": 8.0,
+        "W_FAN_LATE": 1.5,
+        "LEARN_EVERY": 10,
+        "W_HUB": 60.0
+      },
+      "no_kb_feed": {
+        "CPP_KING_BEACON": 0,
+        "CPP_BIG_FEED": 0
+      }
+    },
+    "reports": [
+      "results/20261001-152839-ablate-fec4b0/plan.json",
+      "results/20261001-152839-ablate-fec4b0/report.json",
+      "results/20261001-152839-ablate-fec4b0/report.md"
+    ]
+  },
+  {
+    "run": "20261001-203651-ablate-9c6006",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v11a-bot",
+    "engine": "1.2.3",
+    "objective": "wins",
+    "seeds": [
+      431001,
+      431002
+    ],
+    "variants": {
+      "base": {},
+      "q_on": {
+        "CPP_QUEEN": 1
+      },
+      "q_nosplit": {
+        "CPP_QUEEN": 1,
+        "CPP_QUEEN_SPLIT_UNTIL": 0
+      },
+      "q_late": {
+        "CPP_QUEEN": 1,
+        "CPP_QUEEN_SPLIT_UNTIL": 200,
+        "CPP_QUEEN_FLOOR": 12
+      }
+    },
+    "reports": [
+      "results/20261001-203651-ablate-9c6006/plan.json",
+      "results/20261001-203651-ablate-9c6006/report.json",
+      "results/20261001-203651-ablate-9c6006/report.md"
+    ]
+  },
+  {
+    "run": "20261001-204841-ablate-1c9d1d",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v11b-bot",
+    "engine": "1.2.3",
+    "objective": "wins",
+    "seeds": [
+      441001,
+      441002
+    ],
+    "variants": {
+      "base": {},
+      "q_ms": {
+        "CPP_QUEEN": 1,
+        "CPP_MULTISTEP": 1
+      },
+      "q_ms_s7": {
+        "CPP_QUEEN": 1,
+        "CPP_MULTISTEP": 1,
+        "SPLIT_AT": 7
+      },
+      "q_ms_s11": {
+        "CPP_QUEEN": 1,
+        "CPP_MULTISTEP": 1,
+        "SPLIT_AT": 11
+      },
+      "q_s7": {
+        "CPP_QUEEN": 1,
+        "SPLIT_AT": 7
+      },
+      "ms_s7": {
+        "CPP_MULTISTEP": 1,
+        "SPLIT_AT": 7
+      }
+    },
+    "reports": [
+      "results/20261001-204841-ablate-1c9d1d/plan.json",
+      "results/20261001-204841-ablate-1c9d1d/report.json",
+      "results/20261001-204841-ablate-1c9d1d/report.md"
+    ]
+  },
+  {
+    "run": "20261001-213229-ablate-a8b26d",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v11c-bot",
+    "engine": "1.2.3",
+    "objective": "wins",
+    "seeds": [
+      461001,
+      461002
+    ],
+    "variants": {
+      "base": {},
+      "q_kb": {
+        "CPP_QUEEN": 1,
+        "CPP_QUEEN_KB": 1
+      },
+      "qs_reach": {
+        "CPP_QUEEN": 1,
+        "CPP_QUEEN_KB": 1,
+        "CPP_QUEEN_REACH_PEN": 300.0
+      },
+      "qs_dead": {
+        "CPP_QUEEN": 1,
+        "CPP_QUEEN_KB": 1,
+        "CPP_QUEEN_DEADEND": 12
+      },
+      "qs_full": {
+        "CPP_QUEEN": 1,
+        "CPP_QUEEN_KB": 1,
+        "CPP_QUEEN_SAFE_MULT": 4.0,
+        "CPP_QUEEN_REACH_PEN": 300.0,
+        "CPP_QUEEN_DEADEND": 12,
+        "CPP_QUEEN_GUARD_PEN": 200.0
+      },
+      "qs_full_nosplit": {
+        "CPP_QUEEN": 1,
+        "CPP_QUEEN_KB": 1,
+        "CPP_QUEEN_SAFE_MULT": 4.0,
+        "CPP_QUEEN_REACH_PEN": 300.0,
+        "CPP_QUEEN_DEADEND": 12,
+        "CPP_QUEEN_GUARD_PEN": 200.0,
+        "CPP_QUEEN_SPLIT_UNTIL": 0
+      }
+    },
+    "reports": [
+      "results/20261001-213229-ablate-a8b26d/plan.json",
+      "results/20261001-213229-ablate-a8b26d/report.json",
+      "results/20261001-213229-ablate-a8b26d/report.md"
+    ]
+  },
+  {
+    "run": "20261001-232813-ablate-9ec1d0",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v11c-bot",
+    "engine": "1.2.3",
+    "objective": "wins",
+    "seeds": [
+      471001,
+      471002
+    ],
+    "variants": {
+      "base": {},
+      "ms": {
+        "CPP_MULTISTEP": 1
+      },
+      "ms_qsafe": {
+        "CPP_MULTISTEP": 1,
+        "CPP_QUEEN": 1,
+        "CPP_QUEEN_KB": 1,
+        "CPP_QUEEN_SAFE_MULT": 4.0,
+        "CPP_QUEEN_REACH_PEN": 300.0,
+        "CPP_QUEEN_DEADEND": 12,
+        "CPP_QUEEN_GUARD_PEN": 200.0
+      }
+    },
+    "reports": [
+      "results/20261001-232813-ablate-9ec1d0/plan.json",
+      "results/20261001-232813-ablate-9ec1d0/report.json",
+      "results/20261001-232813-ablate-9ec1d0/report.md"
+    ]
+  },
+  {
+    "run": "20261002-003855-ablate-58e7c5",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v11d-bot",
+    "engine": "1.2.3",
+    "objective": "wins",
+    "seeds": [
+      491001,
+      491002
+    ],
+    "variants": {
+      "base": {},
+      "qx2": {
+        "CPP_QUEEN": 1,
+        "CPP_QUEEN_KB": 1,
+        "CPP_QUEEN_SAFE_MULT": 4.0,
+        "CPP_QUEEN_REACH_PEN": 400.0,
+        "CPP_QUEEN_REACH_EXTRA": 2,
+        "CPP_QUEEN_DEADEND": 12,
+        "CPP_QUEEN_GUARD_PEN": 200.0,
+        "CPP_QUEEN_GUARD_R": 2
+      },
+      "qx3": {
+        "CPP_QUEEN": 1,
+        "CPP_QUEEN_KB": 1,
+        "CPP_QUEEN_SAFE_MULT": 4.0,
+        "CPP_QUEEN_REACH_PEN": 400.0,
+        "CPP_QUEEN_REACH_EXTRA": 3,
+        "CPP_QUEEN_DEADEND": 12,
+        "CPP_QUEEN_GUARD_PEN": 200.0,
+        "CPP_QUEEN_GUARD_R": 3
+      },
+      "qx2_nosplit": {
+        "CPP_QUEEN": 1,
+        "CPP_QUEEN_KB": 1,
+        "CPP_QUEEN_SAFE_MULT": 4.0,
+        "CPP_QUEEN_REACH_PEN": 400.0,
+        "CPP_QUEEN_REACH_EXTRA": 2,
+        "CPP_QUEEN_DEADEND": 12,
+        "CPP_QUEEN_GUARD_PEN": 200.0,
+        "CPP_QUEEN_GUARD_R": 2,
+        "CPP_QUEEN_SPLIT_UNTIL": 0
+      }
+    },
+    "reports": [
+      "results/20261002-003855-ablate-58e7c5/plan.json",
+      "results/20261002-003855-ablate-58e7c5/report.json",
+      "results/20261002-003855-ablate-58e7c5/report.md"
+    ]
+  },
+  {
+    "run": "20261002-013638-ablate-03f6ea",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v11d-bot",
+    "engine": "1.2.3",
+    "objective": "wins",
+    "seeds": [
+      501001,
+      501002,
+      501003
+    ],
+    "variants": {
+      "base": {},
+      "ms": {
+        "CPP_MULTISTEP": 1
+      }
+    },
+    "reports": [
+      "results/20261002-013638-ablate-03f6ea/plan.json",
+      "results/20261002-013638-ablate-03f6ea/report.json",
+      "results/20261002-013638-ablate-03f6ea/report.md"
+    ]
+  },
+  {
+    "run": "20261002-091849-ablate-0b2d16",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v11e-bot",
+    "engine": "1.2.3",
+    "objective": "wins",
+    "seeds": [
+      531001,
+      531002
+    ],
+    "variants": {
+      "base": {},
+      "qt": {
+        "CPP_QUEEN_TACTICS": 1
+      },
+      "ql": {
+        "CPP_QUEEN_LIGHT": 1,
+        "CPP_QUEEN_GUARD_PEN": 200.0
+      },
+      "ql_qt": {
+        "CPP_QUEEN_LIGHT": 1,
+        "CPP_QUEEN_GUARD_PEN": 200.0,
+        "CPP_QUEEN_TACTICS": 1
+      },
+      "ql_qt_r2": {
+        "CPP_QUEEN_LIGHT": 1,
+        "CPP_QUEEN_GUARD_PEN": 200.0,
+        "CPP_QUEEN_GUARD_R": 2,
+        "CPP_QUEEN_TACTICS": 1
+      },
+      "ql_qt_m1": {
+        "CPP_QUEEN_LIGHT": 1,
+        "CPP_QUEEN_GUARD_PEN": 200.0,
+        "CPP_QUEEN_TACTICS": 1,
+        "CPP_QUEEN_TACTICS_MARGIN": 1
+      }
+    },
+    "reports": [
+      "results/20261002-091849-ablate-0b2d16/plan.json",
+      "results/20261002-091849-ablate-0b2d16/report.json",
+      "results/20261002-091849-ablate-0b2d16/report.md"
+    ]
+  },
+  {
+    "run": "20261002-104933-ablate-4d1d01",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v11e-bot",
+    "engine": "1.2.3",
+    "objective": "wins",
+    "seeds": [
+      541001,
+      541002,
+      541003
+    ],
+    "variants": {
+      "base": {},
+      "ql_qt": {
+        "CPP_QUEEN_LIGHT": 1,
+        "CPP_QUEEN_GUARD_PEN": 200.0,
+        "CPP_QUEEN_TACTICS": 1
+      }
+    },
+    "reports": [
+      "results/20261002-104933-ablate-4d1d01/plan.json",
+      "results/20261002-104933-ablate-4d1d01/report.json",
+      "results/20261002-104933-ablate-4d1d01/report.md"
+    ]
+  },
+  {
+    "run": "20261002-122654-ablate-9e01f6",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v11f-bot",
+    "engine": "1.2.3",
+    "objective": "wins",
+    "seeds": [
+      561001,
+      561002
+    ],
+    "variants": {
+      "base": {},
+      "qs250": {
+        "CPP_QUEEN_LIGHT_SPLIT_UNTIL": 250
+      },
+      "qs350": {
+        "CPP_QUEEN_LIGHT_SPLIT_UNTIL": 350
+      },
+      "qfeed": {
+        "CPP_QUEEN_LIGHT_FEED": 1
+      },
+      "qs350feed": {
+        "CPP_QUEEN_LIGHT_SPLIT_UNTIL": 350,
+        "CPP_QUEEN_LIGHT_FEED": 1
+      }
+    },
+    "reports": [
+      "results/20261002-122654-ablate-9e01f6/plan.json",
+      "results/20261002-122654-ablate-9e01f6/report.json",
+      "results/20261002-122654-ablate-9e01f6/report.md"
+    ]
+  },
+  {
+    "run": "20261002-133325-ablate-192622",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v11g-bot",
+    "engine": "1.2.3",
+    "objective": "wins",
+    "seeds": [
+      571001,
+      571002
+    ],
+    "variants": {
+      "base": {},
+      "flight": {
+        "CPP_QUEEN_FLIGHT": 1
+      },
+      "qfood3": {
+        "CPP_QUEEN_LIGHT_FOOD": 3.0
+      },
+      "qkeep6": {
+        "CPP_QUEEN_LIGHT_KEEP": 6
+      },
+      "qfood3_keep6": {
+        "CPP_QUEEN_LIGHT_FOOD": 3.0,
+        "CPP_QUEEN_LIGHT_KEEP": 6
+      },
+      "all3": {
+        "CPP_QUEEN_FLIGHT": 1,
+        "CPP_QUEEN_LIGHT_FOOD": 3.0,
+        "CPP_QUEEN_LIGHT_KEEP": 6
+      }
+    },
+    "reports": [
+      "results/20261002-133325-ablate-192622/plan.json",
+      "results/20261002-133325-ablate-192622/report.json",
+      "results/20261002-133325-ablate-192622/report.md"
+    ]
+  },
+  {
+    "run": "20261002-145854-ablate-0e3685",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v11h-bot",
+    "engine": "1.2.3",
+    "objective": "wins",
+    "seeds": [
+      581001,
+      581002
+    ],
+    "variants": {
+      "base": {},
+      "hunt": {
+        "CPP_QUEEN_HUNT": 1
+      },
+      "hunt_strong": {
+        "CPP_QUEEN_HUNT": 1,
+        "CPP_QUEEN_HUNT_BONUS": 600.0,
+        "CPP_QUEEN_HUNT_PULL": 400.0
+      },
+      "hunt_nopull": {
+        "CPP_QUEEN_HUNT": 1,
+        "CPP_QUEEN_HUNT_PULL": 0.0
+      }
+    },
+    "reports": [
+      "results/20261002-145854-ablate-0e3685/plan.json",
+      "results/20261002-145854-ablate-0e3685/report.json",
+      "results/20261002-145854-ablate-0e3685/report.md"
+    ]
+  },
+  {
+    "run": "20261002-163932-ablate-df1077",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v11h-bot",
+    "engine": "1.2.3",
+    "objective": "wins",
+    "seeds": [
+      591001,
+      591002,
+      591003
+    ],
+    "variants": {
+      "base": {},
+      "hunt": {
+        "CPP_QUEEN_HUNT": 1
+      }
+    },
+    "reports": [
+      "results/20261002-163932-ablate-df1077/plan.json",
+      "results/20261002-163932-ablate-df1077/report.json",
+      "results/20261002-163932-ablate-df1077/report.md"
+    ]
+  },
+  {
+    "run": "20261002-180409-ablate-3db476",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v11i-bot",
+    "engine": "1.2.3",
+    "objective": "wins",
+    "seeds": [
+      601001,
+      601002,
+      601003
+    ],
+    "variants": {
+      "base": {},
+      "travel": {
+        "CPP_MULTISTEP_TRAVEL": 1
+      }
+    },
+    "reports": [
+      "results/20261002-180409-ablate-3db476/plan.json",
+      "results/20261002-180409-ablate-3db476/report.json",
+      "results/20261002-180409-ablate-3db476/report.md"
+    ]
+  },
+  {
+    "run": "20261002-192514-ablate-52aecd",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v11i-bot",
+    "engine": "1.2.3",
+    "objective": "wins",
+    "seeds": [
+      611001,
+      611002,
+      611003
+    ],
+    "variants": {
+      "base": {},
+      "travel_w": {
+        "CPP_MULTISTEP_TRAVEL": 1
+      }
+    },
+    "reports": [
+      "results/20261002-192514-ablate-52aecd/plan.json",
+      "results/20261002-192514-ablate-52aecd/report.json",
+      "results/20261002-192514-ablate-52aecd/report.md"
+    ]
+  },
+  {
+    "run": "20261002-200810-ablate-394220",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v11j-bot",
+    "engine": "1.2.3",
+    "objective": "wins",
+    "seeds": [
+      621001,
+      621002
+    ],
+    "variants": {
+      "base": {},
+      "d4": {
+        "CPP_QUEEN_TACTICS_DEPTH": 4
+      },
+      "d5": {
+        "CPP_QUEEN_TACTICS_DEPTH": 5
+      },
+      "keep300": {
+        "CPP_QUEEN_REACH_PEN": 300.0
+      },
+      "keep300x1": {
+        "CPP_QUEEN_REACH_PEN": 300.0,
+        "CPP_QUEEN_REACH_EXTRA": 1
+      },
+      "d4_keep300": {
+        "CPP_QUEEN_TACTICS_DEPTH": 4,
+        "CPP_QUEEN_REACH_PEN": 300.0
+      }
+    },
+    "reports": [
+      "results/20261002-200810-ablate-394220/plan.json",
+      "results/20261002-200810-ablate-394220/report.json",
+      "results/20261002-200810-ablate-394220/report.md"
+    ]
+  },
+  {
+    "run": "20261002-221412-ablate-3a1e25",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v11k-bot",
+    "engine": "1.2.3",
+    "objective": "wins",
+    "seeds": [
+      631001,
+      631002
+    ],
+    "variants": {
+      "base": {},
+      "safe3": {
+        "CPP_QUEEN_LIGHT_SAFE": 3.0
+      },
+      "safe6": {
+        "CPP_QUEEN_LIGHT_SAFE": 6.0
+      },
+      "safe3_g2": {
+        "CPP_QUEEN_LIGHT_SAFE": 3.0,
+        "CPP_QUEEN_GUARD_R": 2
+      },
+      "safe3_d4": {
+        "CPP_QUEEN_LIGHT_SAFE": 3.0,
+        "CPP_QUEEN_TACTICS_DEPTH": 4
+      }
+    },
+    "reports": [
+      "results/20261002-221412-ablate-3a1e25/plan.json",
+      "results/20261002-221412-ablate-3a1e25/report.json",
+      "results/20261002-221412-ablate-3a1e25/report.md"
+    ]
+  },
+  {
+    "run": "20261002-234510-ablate-a5b1f7",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v11k-bot",
+    "engine": "1.2.3",
+    "objective": "wins",
+    "seeds": [
+      641001,
+      641002,
+      641003
+    ],
+    "variants": {
+      "base": {},
+      "kx1": {
+        "CPP_QUEEN_REACH_PEN": 300.0,
+        "CPP_QUEEN_REACH_EXTRA": 1
+      },
+      "kx1_g2": {
+        "CPP_QUEEN_REACH_PEN": 300.0,
+        "CPP_QUEEN_REACH_EXTRA": 1,
+        "CPP_QUEEN_GUARD_R": 2
+      }
+    },
+    "reports": [
+      "results/20261002-234510-ablate-a5b1f7/plan.json",
+      "results/20261002-234510-ablate-a5b1f7/report.json",
+      "results/20261002-234510-ablate-a5b1f7/report.md"
+    ]
+  },
+  {
+    "run": "20261003-114945-ablate-1bdd7a",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\versions\\v11q",
+    "engine": "1.2.9",
+    "objective": "wins",
+    "seeds": [
+      651001,
+      651002
+    ],
+    "variants": {
+      "base": {},
+      "nobookmap": {
+        "CPP_BOOK_MAP": 0
+      },
+      "nobooks": {
+        "CPP_BOOK_MAP": 0,
+        "PORTAL_BOOK": false,
+        "HUB_BOOK": false
+      }
+    },
+    "reports": [
+      "results/20261003-114945-ablate-1bdd7a/plan.json",
+      "results/20261003-114945-ablate-1bdd7a/report.json",
+      "results/20261003-114945-ablate-1bdd7a/report.md"
+    ]
+  },
+  {
+    "run": "20261003-115128-ablate-71a0f6",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v11l-bot",
+    "engine": "1.2.9",
+    "objective": "wins",
+    "seeds": [
+      661001,
+      661002
+    ],
+    "variants": {
+      "base": {},
+      "t2": {
+        "CPP_QUEEN_TACTICS2": 1
+      },
+      "t2_d4": {
+        "CPP_QUEEN_TACTICS2": 1,
+        "CPP_QUEEN_TACTICS_DEPTH": 4
+      }
+    },
+    "reports": [
+      "results/20261003-115128-ablate-71a0f6/plan.json",
+      "results/20261003-115128-ablate-71a0f6/report.json",
+      "results/20261003-115128-ablate-71a0f6/report.md"
+    ]
+  },
+  {
+    "run": "20261003-115234-ablate-b8901c",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v11m-bot",
+    "engine": "1.2.9",
+    "objective": "wins",
+    "seeds": [
+      671001,
+      671002
+    ],
+    "variants": {
+      "base": {},
+      "y150": {
+        "CPP_QUEEN_YIELD": 1
+      },
+      "y300": {
+        "CPP_QUEEN_YIELD": 1,
+        "CPP_QUEEN_YIELD_PEN": 300.0
+      },
+      "y150_t2": {
+        "CPP_QUEEN_YIELD": 1,
+        "CPP_QUEEN_TACTICS2": 1
+      }
+    },
+    "reports": [
+      "results/20261003-115234-ablate-b8901c/plan.json",
+      "results/20261003-115234-ablate-b8901c/report.json",
+      "results/20261003-115234-ablate-b8901c/report.md"
+    ]
+  },
+  {
+    "run": "20261003-125123-ablate-6a262e",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v11n-bot",
+    "engine": "1.2.9",
+    "objective": "wins",
+    "seeds": [
+      681001,
+      681002
+    ],
+    "variants": {
+      "base": {},
+      "ref100": {
+        "CPP_QUEEN_REFUGE": 1
+      },
+      "ref250": {
+        "CPP_QUEEN_REFUGE": 1,
+        "CPP_QUEEN_REFUGE_W": 250.0
+      }
+    },
+    "reports": [
+      "results/20261003-125123-ablate-6a262e/plan.json",
+      "results/20261003-125123-ablate-6a262e/report.json",
+      "results/20261003-125123-ablate-6a262e/report.md"
+    ]
+  },
+  {
+    "run": "20261003-134712-ablate-e3fcd5",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v11n-bot",
+    "engine": "1.2.9",
+    "objective": "wins",
+    "seeds": [
+      691001,
+      691002,
+      691003
+    ],
+    "variants": {
+      "base": {},
+      "t2": {
+        "CPP_QUEEN_TACTICS2": 1
+      }
+    },
+    "reports": [
+      "results/20261003-134712-ablate-e3fcd5/plan.json",
+      "results/20261003-134712-ablate-e3fcd5/report.json",
+      "results/20261003-134712-ablate-e3fcd5/report.md"
+    ]
+  },
+  {
+    "run": "20261003-171036-ablate-775827",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\versions\\v11t",
+    "engine": "1.2.9",
+    "objective": "wins",
+    "seeds": [
+      711001,
+      711002,
+      711003,
+      711004
+    ],
+    "variants": {
+      "base": {}
+    },
+    "reports": [
+      "results/20261003-171036-ablate-775827/plan.json",
+      "results/20261003-171036-ablate-775827/report.json",
+      "results/20261003-171036-ablate-775827/report.md"
+    ]
+  },
+  {
+    "run": "20261003-171037-ablate-052b88",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\versions\\v11t",
+    "engine": "1.2.9",
+    "objective": "wins",
+    "seeds": [
+      721001,
+      721002
+    ],
+    "variants": {
+      "base": {},
+      "ref100": {
+        "CPP_QUEEN_REFUGE": 1
+      },
+      "ref250": {
+        "CPP_QUEEN_REFUGE": 1,
+        "CPP_QUEEN_REFUGE_W": 250.0
+      }
+    },
+    "reports": [
+      "results/20261003-171037-ablate-052b88/plan.json",
+      "results/20261003-171037-ablate-052b88/report.json",
+      "results/20261003-171037-ablate-052b88/report.md"
+    ]
+  },
+  {
+    "run": "20261003-183034-ablate-3ac260",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\versions\\v11t",
+    "engine": "1.2.9",
+    "objective": "wins",
+    "seeds": [
+      731001,
+      731002,
+      731003
+    ],
+    "variants": {
+      "base": {},
+      "ref100": {
+        "CPP_QUEEN_REFUGE": 1
+      }
+    },
+    "reports": [
+      "results/20261003-183034-ablate-3ac260/plan.json",
+      "results/20261003-183034-ablate-3ac260/report.json",
+      "results/20261003-183034-ablate-3ac260/report.md"
+    ]
+  },
+  {
+    "run": "20261003-183036-ablate-5c644b",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\versions\\v11u",
+    "engine": "1.2.9",
+    "objective": "wins",
+    "seeds": [
+      741001,
+      741002,
+      741003,
+      741004
+    ],
+    "variants": {
+      "base": {}
+    },
+    "reports": [
+      "results/20261003-183036-ablate-5c644b/plan.json",
+      "results/20261003-183036-ablate-5c644b/report.json",
+      "results/20261003-183036-ablate-5c644b/report.md"
+    ]
+  },
+  {
+    "run": "20261003-192712-ablate-d2ca26",
+    "kind": "dated run",
+    "candidate": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v11t2-bot",
+    "engine": "1.2.9",
+    "objective": "wins",
+    "seeds": [
+      751001,
+      751002
+    ],
+    "variants": {
+      "base": {},
+      "sx2": {
+        "CPP_QUEEN_SPLIT_EXITS": 2
+      },
+      "sx3": {
+        "CPP_QUEEN_SPLIT_EXITS": 3
+      }
+    },
+    "reports": [
+      "results/20261003-192712-ablate-d2ca26/plan.json",
+      "results/20261003-192712-ablate-d2ca26/report.json",
+      "results/20261003-192712-ablate-d2ca26/report.md"
+    ]
+  },
+  {
+    "run": "h2h-queen",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "h2h-v11q",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "live-review-20261003",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": [
+      "results/live-review-20261003/summary.json"
+    ]
+  },
+  {
+    "run": "mover-m2",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "mover-m2b",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "mover-variants",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "opp-careful-queen",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "opp-economy",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "opp-growth-queen",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "opp-raider",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "pd-diag",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "pd-probe",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "qdiag-t2",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "ranker-v4",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": 2,
+    "variants": {},
+    "reports": [
+      "results/ranker-v4/plan.json"
+    ]
+  },
+  {
+    "run": "review-20261003",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "screen-new-20260927",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "sprint-baseline",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "sprint-baseline-INVALID-nospawners",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "unseen-books-probe",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10-book-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10-bookgrad-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10-briefdbg-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10-cand-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10-cand2-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10-cpu",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10-grad15-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10-vs-v75",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10-vs-v92",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10b-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10c-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10d-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10dbg-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10e-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10f-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10g-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10h-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10h-hubdbg-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10h-sandbox",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10i-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10j-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10j-kb2-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10k-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10l-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10m-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10n-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10n-hubdbg-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10o-sandbox",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10o-sandbox-q",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10p-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v10q-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v11-cand-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v11a-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v11b-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v11c-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v11c-queendbg-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v11d-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v11e-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v11e-queendbg-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v11f-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v11g-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v11h-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v11i-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v11j-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v11k-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v11l-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v11m-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v11ms-sandbox",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v11n-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v11q-sandbox",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v11t-sandbox",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v11t2-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v6-book-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v6-book-low-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v6-deterministic-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v6-deterministic96-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v6-fair-search-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v6-floorfix-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v6-forced-escape-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v6-narrow-escape-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v6-pocket-route-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v6-portal-scout-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v6-profile-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v6-trauma-hotspot-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v61-aggr-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v61-all-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v61-hubs-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v61b-goal-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v61b-nogoal-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v6dbg",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v7-all-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v7-b1-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v7-base-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v7-beam-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v7-cpu-1.1.0",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v7-path-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v7-search-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v7t-cpu",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v7t-g1c01-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v7t-g7c05-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v7t-g8c05-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v7t-mean-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v8-age-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v8-all-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v8-book-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v8-cpu",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v8-dev-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v8-dev2-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v8-sanity",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v8-sonar-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v8-sonar-check",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v8-trap-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v8-vor-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v9-ab-base-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v9-cpu",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v9-g5-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v9-late-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v92-diag",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v9n-all-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v9n-all2-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v9n-base-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v9n-base2-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v9n-check",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v9n-dead-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v9n-kb-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v9n-kbbig-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v9n-room16-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "v9n-room8-bot",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  },
+  {
+    "run": "zcheck",
+    "kind": "support/diagnostic/snapshot",
+    "candidate": "",
+    "engine": "",
+    "objective": "",
+    "seeds": [],
+    "variants": {},
+    "reports": []
+  }
+]

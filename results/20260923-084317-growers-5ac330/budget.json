@@ -1,0 +1,451 @@
+{
+  "summary": {
+    "control_450": {
+      "turns": 24,
+      "max_points": 31220287,
+      "max_memory_bytes": 21561344,
+      "failures": 0
+    },
+    "quarter350": {
+      "turns": 24,
+      "max_points": 31338426,
+      "max_memory_bytes": 21561344,
+      "failures": 0
+    }
+  },
+  "turns": [
+    {
+      "bot": "control_450",
+      "category": "long",
+      "phase": "cold",
+      "points": 21827848,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE E\n"
+    },
+    {
+      "bot": "control_450",
+      "category": "long",
+      "phase": "warm",
+      "points": 12597358,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE E\n"
+    },
+    {
+      "bot": "control_450",
+      "category": "dense",
+      "phase": "cold",
+      "points": 17450842,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "control_450",
+      "category": "dense",
+      "phase": "warm",
+      "points": 8347609,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "control_450",
+      "category": "enemy_heads",
+      "phase": "cold",
+      "points": 17061174,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "control_450",
+      "category": "enemy_heads",
+      "phase": "warm",
+      "points": 7931544,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "control_450",
+      "category": "round_0",
+      "phase": "cold",
+      "points": 30961586,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE W\n"
+    },
+    {
+      "bot": "control_450",
+      "category": "round_0",
+      "phase": "warm",
+      "points": 21733629,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE W\n"
+    },
+    {
+      "bot": "control_450",
+      "category": "sprint_trigger",
+      "phase": "cold",
+      "points": 16934239,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "control_450",
+      "category": "sprint_trigger",
+      "phase": "warm",
+      "points": 7813149,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "control_450",
+      "category": "round_100",
+      "phase": "cold",
+      "points": 16305726,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 3\n"
+    },
+    {
+      "bot": "control_450",
+      "category": "round_100",
+      "phase": "warm",
+      "points": 7179190,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 3\n"
+    },
+    {
+      "bot": "control_450",
+      "category": "round_300",
+      "phase": "cold",
+      "points": 16064680,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "control_450",
+      "category": "round_300",
+      "phase": "warm",
+      "points": 6985127,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "control_450",
+      "category": "round_460",
+      "phase": "cold",
+      "points": 27743099,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE S\n"
+    },
+    {
+      "bot": "control_450",
+      "category": "round_460",
+      "phase": "warm",
+      "points": 18523048,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE S\n"
+    },
+    {
+      "bot": "control_450",
+      "category": "long",
+      "phase": "cold",
+      "points": 22488576,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE S\n"
+    },
+    {
+      "bot": "control_450",
+      "category": "long",
+      "phase": "warm",
+      "points": 13293146,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE S\n"
+    },
+    {
+      "bot": "control_450",
+      "category": "dense",
+      "phase": "cold",
+      "points": 18111981,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE S\n"
+    },
+    {
+      "bot": "control_450",
+      "category": "dense",
+      "phase": "warm",
+      "points": 8986456,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE S\n"
+    },
+    {
+      "bot": "control_450",
+      "category": "enemy_heads",
+      "phase": "cold",
+      "points": 23735845,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE W\n"
+    },
+    {
+      "bot": "control_450",
+      "category": "enemy_heads",
+      "phase": "warm",
+      "points": 14511495,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE W\n"
+    },
+    {
+      "bot": "control_450",
+      "category": "population",
+      "phase": "cold",
+      "points": 31220287,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n"
+    },
+    {
+      "bot": "control_450",
+      "category": "population",
+      "phase": "warm",
+      "points": 21997602,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n"
+    },
+    {
+      "bot": "quarter350",
+      "category": "long",
+      "phase": "cold",
+      "points": 21951606,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE E\n"
+    },
+    {
+      "bot": "quarter350",
+      "category": "long",
+      "phase": "warm",
+      "points": 12603925,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE E\n"
+    },
+    {
+      "bot": "quarter350",
+      "category": "dense",
+      "phase": "cold",
+      "points": 17565117,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "quarter350",
+      "category": "dense",
+      "phase": "warm",
+      "points": 8350937,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "quarter350",
+      "category": "enemy_heads",
+      "phase": "cold",
+      "points": 17177263,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "quarter350",
+      "category": "enemy_heads",
+      "phase": "warm",
+      "points": 7933635,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "quarter350",
+      "category": "round_0",
+      "phase": "cold",
+      "points": 31078515,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE W\n"
+    },
+    {
+      "bot": "quarter350",
+      "category": "round_0",
+      "phase": "warm",
+      "points": 21739628,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE W\n"
+    },
+    {
+      "bot": "quarter350",
+      "category": "sprint_trigger",
+      "phase": "cold",
+      "points": 17048930,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "quarter350",
+      "category": "sprint_trigger",
+      "phase": "warm",
+      "points": 7817732,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "quarter350",
+      "category": "round_100",
+      "phase": "cold",
+      "points": 16420234,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 3\n"
+    },
+    {
+      "bot": "quarter350",
+      "category": "round_100",
+      "phase": "warm",
+      "points": 7187328,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 3\n"
+    },
+    {
+      "bot": "quarter350",
+      "category": "round_300",
+      "phase": "cold",
+      "points": 16180904,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "quarter350",
+      "category": "round_300",
+      "phase": "warm",
+      "points": 6986923,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 2\n"
+    },
+    {
+      "bot": "quarter350",
+      "category": "round_460",
+      "phase": "cold",
+      "points": 16191115,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 3\n"
+    },
+    {
+      "bot": "quarter350",
+      "category": "round_460",
+      "phase": "warm",
+      "points": 7002207,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "SPLIT 3\n"
+    },
+    {
+      "bot": "quarter350",
+      "category": "long",
+      "phase": "cold",
+      "points": 22612240,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE S\n"
+    },
+    {
+      "bot": "quarter350",
+      "category": "long",
+      "phase": "warm",
+      "points": 13326113,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE S\n"
+    },
+    {
+      "bot": "quarter350",
+      "category": "dense",
+      "phase": "cold",
+      "points": 18227411,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE S\n"
+    },
+    {
+      "bot": "quarter350",
+      "category": "dense",
+      "phase": "warm",
+      "points": 8987161,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE S\n"
+    },
+    {
+      "bot": "quarter350",
+      "category": "enemy_heads",
+      "phase": "cold",
+      "points": 23857235,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE W\n"
+    },
+    {
+      "bot": "quarter350",
+      "category": "enemy_heads",
+      "phase": "warm",
+      "points": 14523063,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE W\n"
+    },
+    {
+      "bot": "quarter350",
+      "category": "population",
+      "phase": "cold",
+      "points": 31338426,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n"
+    },
+    {
+      "bot": "quarter350",
+      "category": "population",
+      "phase": "warm",
+      "points": 22006030,
+      "memory_bytes": 21561344,
+      "error": null,
+      "output": "MOVE N\n"
+    }
+  ],
+  "limits": "Sampled cold/warm turns, not a full-game or worst-case guarantee."
+}

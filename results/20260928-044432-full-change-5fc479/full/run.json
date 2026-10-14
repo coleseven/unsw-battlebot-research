@@ -1,0 +1,95 @@
+{
+  "time": "2026-09-28 05:02:00",
+  "git": "bcbf72d",
+  "python": "3.14.2",
+  "unswbc": "1.1.0",
+  "engine": "12e58ad88650da69",
+  "bots": {
+    "candidate": {
+      "path": "results\\20260928-044432-full-change-5fc479\\bots\\candidate",
+      "hash": "7bad14b4e4fd110b"
+    },
+    "nicked_v44": {
+      "path": "results\\20260928-044432-full-change-5fc479\\bots\\nicked_v44",
+      "hash": "5f9efb7e03ba029b"
+    },
+    "nicked_lab": {
+      "path": "results\\20260928-044432-full-change-5fc479\\bots\\nicked_lab",
+      "hash": "902a04976020ece2"
+    },
+    "v6": {
+      "path": "results\\20260928-044432-full-change-5fc479\\bots\\v6",
+      "hash": "4959b003957277f5"
+    }
+  },
+  "maps": {
+    "default_small": {
+      "file": "8ac4b2eedcf19f85",
+      "signature": "f98ab391cccf33b1"
+    },
+    "trophy": {
+      "file": "5f1f6b23d6edb944",
+      "signature": "fd985019831fe135"
+    },
+    "queen_of_spades": {
+      "file": "126d71b464432685",
+      "signature": "6cdb74a7a52d715a"
+    },
+    "default": {
+      "file": "6bd7abf2ed51a7f6",
+      "signature": "afc3707a967881d6"
+    },
+    "Devil": {
+      "file": "a09e8f2d3bdd1e40",
+      "signature": "1b2147f4a8a775d2"
+    },
+    "stronghold": {
+      "file": "02455e481fe56e1e",
+      "signature": "fb60e37176a8d1d3"
+    },
+    "Trauma": {
+      "file": "dcf39d713c060e5d",
+      "signature": "d014b28abbd1abb0"
+    },
+    "schooltime": {
+      "file": "726c404f3b34b4ed",
+      "signature": "8be7eda86910a849"
+    },
+    "big_empty": {
+      "file": "6cb3b7be72a4e27e",
+      "signature": "685baf0e797207b7"
+    },
+    "arena": {
+      "file": "b4bab09603289c2d",
+      "signature": "728547b8376892d9"
+    },
+    "Colosseum": {
+      "file": "c7549a41ea26600f",
+      "signature": "3042ccc262f0211a"
+    },
+    "Autarky": {
+      "file": "35737755c5a3123f",
+      "signature": "4e62ccae97c0dd84"
+    },
+    "Prisoners_Dilemma": {
+      "file": "d76d7ad9ada3a8d0",
+      "signature": "aef5f05c62b25ae9"
+    },
+    "Slithery_Fight": {
+      "file": "954ea0147fbc5653",
+      "signature": "a892563546a123fb"
+    },
+    "Portals": {
+      "file": "56341e6577da7429",
+      "signature": "e8b48fe5ccf3f7f0"
+    }
+  },
+  "settings": {
+    "seeds": [
+      53001,
+      53002,
+      53003
+    ],
+    "workers": 12
+  }
+}

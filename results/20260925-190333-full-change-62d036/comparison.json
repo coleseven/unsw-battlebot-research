@@ -1,0 +1,37 @@
+{
+  "maps": [
+    "default_small",
+    "trophy",
+    "queen_of_spades",
+    "default",
+    "Devil",
+    "stronghold",
+    "Trauma",
+    "schooltime",
+    "big_empty",
+    "arena",
+    "Colosseum"
+  ],
+  "games": 66,
+  "workers": 6,
+  "opponents": {
+    "v3": {
+      "wins": 16,
+      "draws": 0,
+      "losses": 6,
+      "score": 0.7272727272727273
+    },
+    "ctmes": {
+      "wins": 17,
+      "draws": 0,
+      "losses": 5,
+      "score": 0.7727272727272727
+    },
+    "nicked_v44": {
+      "wins": 7,
+      "draws": 0,
+      "losses": 15,
+      "score": 0.3181818181818182
+    }
+  }
+}

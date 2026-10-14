@@ -1,0 +1,20 @@
+# no_sonar
+
+| opponent | W-D-L | win rate | score | score 95% CI | Elo diff | blocks | errors |
+|---|---|---|---|---|---|---|---|
+| additive | 5-0-7 | 42% | 42% | 25-50% | -58 | 6 | 0 |
+| **overall** | 5-0-7 | 42% | 42% | 25-50% | -58 | 6 | 0 |
+
+| map | W-D-L | win rate | score | games | errors |
+|---|---|---|---|---|---|
+| schooltime | 0-0-2 | 0% | 0% | 2 | 0 |
+| big_empty | 1-0-1 | 50% | 50% | 2 | 0 |
+| default | 1-0-1 | 50% | 50% | 2 | 0 |
+| stronghold | 1-0-1 | 50% | 50% | 2 | 0 |
+| Trauma | 1-0-1 | 50% | 50% | 2 | 0 |
+| trophy | 1-0-1 | 50% | 50% | 2 | 0 |
+
+no_sonar dragon deaths: hit kelp 757, head-to-head 461, hit other body 356, hit itself 60, no valid action/timeout 6
+
+Score counts a draw as half a win; win rate counts wins only. CI: percentile bootstrap over opponent+map+seed blocks (both sides kept together).
+Fewer than 20 blocks for additive: those intervals understate the uncertainty (a result that never varied gets a zero-width interval); add maps or seeds before trusting them.

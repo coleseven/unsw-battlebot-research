@@ -1,0 +1,106 @@
+{
+ "G_FOOD": {
+  "low": 0.5,
+  "high": 6.0,
+  "scale": [
+   "W_PEARL",
+   "W_MEM_PEARL"
+  ]
+ },
+ "G_SPAWN": {
+  "low": 0.25,
+  "high": 3.0,
+  "scale": [
+   "W_SPAWN"
+  ]
+ },
+ "G_V3": {
+  "low": 0.5,
+  "high": 5.0,
+  "scale": [
+   "W_V3"
+  ]
+ },
+ "G_ATTACK": {
+  "low": 0.5,
+  "high": 5.0,
+  "scale": [
+   "W_ATTACK",
+   "W_TRADE"
+  ]
+ },
+ "G_HEADSAFE": {
+  "low": 0.25,
+  "high": 3.0,
+  "scale": [
+   "W_HEAD_ENEMY",
+   "W_HEAD_TEAM",
+   "W_AHEAD"
+  ]
+ },
+ "G_TRAP": {
+  "low": 0.0,
+  "high": 1.5,
+  "scale": [
+   "W_TRAP",
+   "W_LETHAL"
+  ]
+ },
+ "G_FEED": {
+  "low": 0.25,
+  "high": 4.0,
+  "scale": [
+   "W_CASH"
+  ]
+ },
+ "FEED_ROUND": [
+  340,
+  470,
+  "int"
+ ],
+ "SPLIT_UNTIL_LARGE": [
+  200,
+  460,
+  "int"
+ ],
+ "SPLIT_UNTIL_SMALL": [
+  300,
+  480,
+  "int"
+ ],
+ "CAP": [
+  32,
+  64,
+  "int"
+ ],
+ "FLOOR": [
+  8,
+  36,
+  "int"
+ ],
+ "CPP_KB_ROUND": [
+  200,
+  420,
+  "int"
+ ],
+ "CPP_KB_MINLEN": [
+  4,
+  16,
+  "int"
+ ],
+ "CPP_BIG_FEED_ROUND": [
+  340,
+  480,
+  "int"
+ ],
+ "CPP_BIG_FEED_MARGIN": [
+  1,
+  12,
+  "int"
+ ],
+ "CPP_FEED_SHIFT_LARGE": [
+  0,
+  80,
+  "int"
+ ]
+}

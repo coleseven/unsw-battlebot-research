@@ -1,0 +1,46 @@
+{
+  "question": "Separate trap-avoidance and emergency-sprint ablations on the frozen stop-450 bot",
+  "variants": [
+    "control_450",
+    "trap",
+    "sprint"
+  ],
+  "opponents": [
+    "reference_450",
+    "splitter",
+    "hunter"
+  ],
+  "baseline_path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-171805-endgame-b67e3b\\bots\\stop_450",
+  "baseline_hash": "2e0e1867b6cf7cda",
+  "live_bot_hash": "ffe736af6c14ea33",
+  "runner_hash": "92d3aca37d565b76",
+  "geometry_hash": "b241baeb015b12e3",
+  "map_identity_hash": "01de427666f7dc60",
+  "screen_maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-173739-movement-659d1f\\maps\\Devil_1b2147f4a8a775d2.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-173739-movement-659d1f\\maps\\Colosseum_3042ccc262f0211a.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-173739-movement-659d1f\\maps\\big_empty_685baf0e797207b7.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-173739-movement-659d1f\\maps\\queen_of_spades_6cdb74a7a52d715a.map"
+  ],
+  "screen_seeds": [
+    4000,
+    4001
+  ],
+  "holdout_maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-173739-movement-659d1f\\maps\\arena_728547b8376892d9.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-173739-movement-659d1f\\maps\\schooltime_8be7eda86910a849.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-173739-movement-659d1f\\maps\\default_afc3707a967881d6.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-173739-movement-659d1f\\maps\\default_small_f98ab391cccf33b1.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260922-173739-movement-659d1f\\maps\\trophy_fd985019831fe135.map"
+  ],
+  "holdout_seeds": [
+    5000,
+    5001,
+    5002,
+    5003
+  ],
+  "selection": "none: both fixed variants proceed unchanged, regardless of screening results",
+  "success_gate": "paired overall map-cluster lower bound > 0 AND direct reference_450 lower bound > .5",
+  "intervals": "97.5% per experiment (Bonferroni adjustment for two variants); approximate bootstrap",
+  "limits": "local familiar maps, static visible occupancy, unknown boundaries optimistic; no enemy sprint model or portal use; runtime metering evaluated separately"
+}

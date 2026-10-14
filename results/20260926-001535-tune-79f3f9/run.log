@@ -1,0 +1,123 @@
+C:\Users\Sea7\Desktop\unsw battlebot\.venv\Lib\site-packages\cma\s.py:17: UserWarning: Could not import matplotlib.pyplot, therefore ``cma.plot()`` etc. is not available
+  _warnings.warn('Could not import matplotlib.pyplot, therefore'
+gen3: 24/240 games, 112s
+gen3: 48/240 games, 269s
+gen3: 72/240 games, 402s
+gen3: 96/240 games, 528s
+gen3: 120/240 games, 653s
+gen3: 144/240 games, 809s
+gen3: 168/240 games, 933s
+gen3: 192/240 games, 1079s
+gen3: 216/240 games, 1210s
+gen3: 240/240 games, 1363s
+gen 3: best F +0.230 (16/20 wins) mean F +0.081
+gen4: 24/240 games, 140s
+gen4: 48/240 games, 267s
+gen4: 72/240 games, 386s
+gen4: 96/240 games, 524s
+gen4: 120/240 games, 664s
+gen4: 144/240 games, 813s
+gen4: 168/240 games, 958s
+gen4: 192/240 games, 1102s
+gen4: 216/240 games, 1230s
+gen4: 240/240 games, 1395s
+gen 4: best F +0.297 (17/20 wins) mean F +0.048
+gen5: 24/240 games, 124s
+gen5: 48/240 games, 256s
+gen5: 72/240 games, 389s
+gen5: 96/240 games, 511s
+gen5: 120/240 games, 651s
+gen5: 144/240 games, 790s
+gen5: 168/240 games, 924s
+gen5: 192/240 games, 1069s
+gen5: 216/240 games, 1202s
+gen5: 240/240 games, 1366s
+gen 5: best F +0.165 (15/20 wins) mean F +0.032
+gen6: 24/240 games, 130s
+gen6: 48/240 games, 249s
+gen6: 72/240 games, 390s
+gen6: 96/240 games, 512s
+gen6: 120/240 games, 648s
+gen6: 144/240 games, 784s
+gen6: 168/240 games, 908s
+gen6: 192/240 games, 1068s
+gen6: 216/240 games, 1199s
+gen6: 240/240 games, 1355s
+gen 6: best F +0.263 (16/20 wins) mean F +0.075
+gen7: 24/240 games, 139s
+gen7: 48/240 games, 268s
+gen7: 72/240 games, 410s
+gen7: 96/240 games, 535s
+gen7: 120/240 games, 662s
+gen7: 144/240 games, 808s
+gen7: 168/240 games, 945s
+gen7: 192/240 games, 1092s
+gen7: 216/240 games, 1224s
+gen7: 240/240 games, 1389s
+gen 7: best F +0.308 (18/20 wins) mean F +0.127
+gen8: 24/240 games, 142s
+gen8: 48/240 games, 267s
+gen8: 72/240 games, 396s
+gen8: 96/240 games, 521s
+gen8: 120/240 games, 656s
+gen8: 144/240 games, 804s
+gen8: 168/240 games, 941s
+gen8: 192/240 games, 1097s
+gen8: 216/240 games, 1234s
+gen8: 240/240 games, 1408s
+gen 8: best F +0.311 (16/20 wins) mean F +0.058
+gen9: 24/240 games, 147s
+gen9: 48/240 games, 298s
+gen9: 72/240 games, 467s
+gen9: 96/240 games, 594s
+gen9: 120/240 games, 747s
+gen9: 144/240 games, 887s
+gen9: 168/240 games, 1056s
+gen9: 192/240 games, 1225s
+gen9: 216/240 games, 1380s
+gen9: 240/240 games, 1554s
+gen 9: best F +0.269 (16/20 wins) mean F -0.011
+gen10: 24/240 games, 159s
+gen10: 48/240 games, 300s
+gen10: 72/240 games, 466s
+gen10: 96/240 games, 626s
+gen10: 120/240 games, 776s
+gen10: 144/240 games, 925s
+gen10: 168/240 games, 1064s
+gen10: 192/240 games, 1243s
+gen10: 216/240 games, 1387s
+gen10: 240/240 games, 1571s
+gen 10: best F +0.174 (11/20 wins) mean F +0.023
+gen11: 24/240 games, 129s
+gen11: 48/240 games, 271s
+gen11: 72/240 games, 429s
+gen11: 96/240 games, 573s
+gen11: 120/240 games, 711s
+gen11: 144/240 games, 872s
+gen11: 168/240 games, 1023s
+gen11: 192/240 games, 1188s
+gen11: 216/240 games, 1321s
+gen11: 240/240 games, 1494s
+gen 11: best F +0.236 (16/20 wins) mean F +0.022
+gen12: 24/240 games, 156s
+gen12: 48/240 games, 299s
+gen12: 72/240 games, 453s
+gen12: 96/240 games, 584s
+gen12: 120/240 games, 713s
+gen12: 144/240 games, 872s
+gen12: 168/240 games, 1011s
+gen12: 192/240 games, 1171s
+gen12: 216/240 games, 1315s
+gen12: 240/240 games, 1492s
+gen 12: best F +0.198 (13/20 wins) mean F +0.070
+gen13: 24/240 games, 127s
+gen13: 48/240 games, 259s
+gen13: 72/240 games, 411s
+gen13: 96/240 games, 532s
+gen13: 120/240 games, 659s
+gen13: 144/240 games, 796s
+gen13: 168/240 games, 944s
+gen13: 192/240 games, 1089s
+gen13: 216/240 games, 1220s
+gen13: 240/240 games, 1385s
+gen 13: best F +0.262 (17/20 wins) mean F +0.049

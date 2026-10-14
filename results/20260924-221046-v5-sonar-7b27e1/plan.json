@@ -1,0 +1,36 @@
+{
+  "question": "Does removing public sonar/routing improve additive v4?",
+  "limits": "Six distinct maps, both sides, deterministic engine, one worker; not a promotion test.",
+  "seed": 48001,
+  "workers": 1,
+  "baseline_hash": "bf33497158a49a7b",
+  "live_hash": "ffe736af6c14ea33",
+  "bot_hashes": {
+    "additive": "bf33497158a49a7b",
+    "no_sonar": "fd53b092674d53bc"
+  },
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-221046-v5-sonar-7b27e1\\maps\\big_empty.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-221046-v5-sonar-7b27e1\\maps\\default.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-221046-v5-sonar-7b27e1\\maps\\schooltime.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-221046-v5-sonar-7b27e1\\maps\\stronghold.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-221046-v5-sonar-7b27e1\\maps\\Trauma.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-221046-v5-sonar-7b27e1\\maps\\trophy.map"
+  ],
+  "map_hashes": {
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-221046-v5-sonar-7b27e1\\maps\\big_empty.map": "6cb3b7be72a4e27e",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-221046-v5-sonar-7b27e1\\maps\\default.map": "6bd7abf2ed51a7f6",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-221046-v5-sonar-7b27e1\\maps\\schooltime.map": "726c404f3b34b4ed",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-221046-v5-sonar-7b27e1\\maps\\stronghold.map": "02455e481fe56e1e",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-221046-v5-sonar-7b27e1\\maps\\Trauma.map": "dcf39d713c060e5d",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-221046-v5-sonar-7b27e1\\maps\\trophy.map": "5f1f6b23d6edb944"
+  },
+  "source_hashes": {
+    "experiments\\v5\\brain.py": "78f7e4317c6386db",
+    "framework\\v5_king.py": "9f6e4aa59ed95c8f",
+    "framework\\v5_hotspot.py": "786b752611a4b24f",
+    "framework\\v5_feeding.py": "3f5dd322b411ebe5",
+    "bcsim\\v5_initial.py": "a2ec7deb9de21396",
+    "bcsim\\v5_sonar_ablation.py": "373a0bdd9ecdc3b3"
+  }
+}

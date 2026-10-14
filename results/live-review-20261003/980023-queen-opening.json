@@ -1,0 +1,492 @@
+[
+  {
+    "round": 0,
+    "head": [
+      4,
+      15
+    ],
+    "length": 4,
+    "action": [
+      "split",
+      2
+    ],
+    "options": {
+      "N": {
+        "edge": -1,
+        "occupant": null
+      },
+      "E": {
+        "edge": -1,
+        "occupant": null
+      },
+      "S": {
+        "edge": -1,
+        "occupant": null
+      },
+      "W": {
+        "edge": -1,
+        "occupant": [
+          "B",
+          0,
+          false,
+          "E"
+        ]
+      }
+    }
+  },
+  {
+    "round": 1,
+    "head": [
+      4,
+      15
+    ],
+    "length": 2,
+    "action": [
+      "move",
+      "E"
+    ],
+    "options": {
+      "N": {
+        "edge": -1,
+        "occupant": null
+      },
+      "E": {
+        "edge": -1,
+        "occupant": null
+      },
+      "S": {
+        "edge": -1,
+        "occupant": null
+      },
+      "W": {
+        "edge": -1,
+        "occupant": [
+          "B",
+          0,
+          false,
+          "E"
+        ]
+      }
+    }
+  },
+  {
+    "round": 2,
+    "head": [
+      5,
+      15
+    ],
+    "length": 2,
+    "action": [
+      "move",
+      "E"
+    ],
+    "options": {
+      "N": {
+        "edge": -1,
+        "occupant": null
+      },
+      "E": {
+        "edge": -1,
+        "occupant": null
+      },
+      "S": {
+        "edge": -1,
+        "occupant": null
+      },
+      "W": {
+        "edge": -1,
+        "occupant": [
+          "B",
+          0,
+          false,
+          "E"
+        ]
+      }
+    }
+  },
+  {
+    "round": 3,
+    "head": [
+      6,
+      15
+    ],
+    "length": 2,
+    "action": [
+      "move",
+      "E"
+    ],
+    "options": {
+      "N": {
+        "edge": -1,
+        "occupant": null
+      },
+      "E": {
+        "edge": -1,
+        "occupant": null
+      },
+      "S": {
+        "edge": -1,
+        "occupant": null
+      },
+      "W": {
+        "edge": -1,
+        "occupant": [
+          "B",
+          0,
+          false,
+          "E"
+        ]
+      }
+    }
+  },
+  {
+    "round": 4,
+    "head": [
+      7,
+      15
+    ],
+    "length": 2,
+    "action": [
+      "move",
+      "E"
+    ],
+    "options": {
+      "N": {
+        "edge": -1,
+        "occupant": null
+      },
+      "E": {
+        "edge": -1,
+        "occupant": null
+      },
+      "S": {
+        "edge": -1,
+        "occupant": null
+      },
+      "W": {
+        "edge": -1,
+        "occupant": [
+          "B",
+          0,
+          false,
+          "E"
+        ]
+      }
+    }
+  },
+  {
+    "round": 5,
+    "head": [
+      8,
+      15
+    ],
+    "length": 2,
+    "action": [
+      "move",
+      "E"
+    ],
+    "options": {
+      "N": {
+        "edge": -1,
+        "occupant": null
+      },
+      "E": {
+        "edge": -1,
+        "occupant": null
+      },
+      "S": {
+        "edge": -1,
+        "occupant": null
+      },
+      "W": {
+        "edge": -1,
+        "occupant": [
+          "B",
+          0,
+          false,
+          "E"
+        ]
+      }
+    }
+  },
+  {
+    "round": 6,
+    "head": [
+      9,
+      15
+    ],
+    "length": 2,
+    "action": [
+      "move",
+      "E"
+    ],
+    "options": {
+      "N": {
+        "edge": -1,
+        "occupant": null
+      },
+      "E": {
+        "edge": -1,
+        "occupant": null
+      },
+      "S": {
+        "edge": -1,
+        "occupant": null
+      },
+      "W": {
+        "edge": -1,
+        "occupant": [
+          "B",
+          0,
+          false,
+          "E"
+        ]
+      }
+    }
+  },
+  {
+    "round": 7,
+    "head": [
+      10,
+      15
+    ],
+    "length": 2,
+    "action": [
+      "move",
+      "N"
+    ],
+    "options": {
+      "N": {
+        "edge": -1,
+        "occupant": null
+      },
+      "E": {
+        "edge": -2,
+        "occupant": null
+      },
+      "S": {
+        "edge": -1,
+        "occupant": null
+      },
+      "W": {
+        "edge": -1,
+        "occupant": [
+          "B",
+          0,
+          false,
+          "E"
+        ]
+      }
+    }
+  },
+  {
+    "round": 8,
+    "head": [
+      10,
+      14
+    ],
+    "length": 2,
+    "action": [
+      "move",
+      "E"
+    ],
+    "options": {
+      "N": {
+        "edge": -1,
+        "occupant": null
+      },
+      "E": {
+        "edge": -1,
+        "occupant": null
+      },
+      "S": {
+        "edge": -1,
+        "occupant": [
+          "B",
+          0,
+          false,
+          "N"
+        ]
+      },
+      "W": {
+        "edge": -1,
+        "occupant": null
+      }
+    }
+  },
+  {
+    "round": 9,
+    "head": [
+      11,
+      14
+    ],
+    "length": 2,
+    "action": [
+      "move",
+      "S"
+    ],
+    "options": {
+      "N": {
+        "edge": -1,
+        "occupant": null
+      },
+      "E": {
+        "edge": -1,
+        "occupant": null
+      },
+      "S": {
+        "edge": -1,
+        "occupant": null
+      },
+      "W": {
+        "edge": -1,
+        "occupant": [
+          "B",
+          0,
+          false,
+          "E"
+        ]
+      }
+    }
+  },
+  {
+    "round": 10,
+    "head": [
+      11,
+      15
+    ],
+    "length": 3,
+    "action": [
+      "move",
+      "S"
+    ],
+    "options": {
+      "N": {
+        "edge": -1,
+        "occupant": [
+          "B",
+          0,
+          false,
+          "S"
+        ]
+      },
+      "E": {
+        "edge": -2,
+        "occupant": null
+      },
+      "S": {
+        "edge": -1,
+        "occupant": null
+      },
+      "W": {
+        "edge": -2,
+        "occupant": null
+      }
+    }
+  },
+  {
+    "round": 11,
+    "head": [
+      11,
+      16
+    ],
+    "length": 4,
+    "action": [
+      "split",
+      2
+    ],
+    "options": {
+      "N": {
+        "edge": -1,
+        "occupant": [
+          "B",
+          0,
+          false,
+          "S"
+        ]
+      },
+      "E": {
+        "edge": -1,
+        "occupant": null
+      },
+      "S": {
+        "edge": -2,
+        "occupant": null
+      },
+      "W": {
+        "edge": -2,
+        "occupant": null
+      }
+    }
+  },
+  {
+    "round": 12,
+    "head": [
+      11,
+      16
+    ],
+    "length": 2,
+    "action": [
+      "move",
+      "E"
+    ],
+    "options": {
+      "N": {
+        "edge": -1,
+        "occupant": [
+          "B",
+          0,
+          false,
+          "S"
+        ]
+      },
+      "E": {
+        "edge": -1,
+        "occupant": null
+      },
+      "S": {
+        "edge": -2,
+        "occupant": null
+      },
+      "W": {
+        "edge": -2,
+        "occupant": null
+      }
+    }
+  },
+  {
+    "round": 13,
+    "head": [
+      12,
+      16
+    ],
+    "length": 3,
+    "action": [
+      "move",
+      "E"
+    ],
+    "options": {
+      "N": {
+        "edge": -2,
+        "occupant": null
+      },
+      "E": {
+        "edge": -2,
+        "occupant": null
+      },
+      "S": {
+        "edge": -2,
+        "occupant": null
+      },
+      "W": {
+        "edge": -1,
+        "occupant": [
+          "B",
+          0,
+          false,
+          "E"
+        ]
+      }
+    }
+  }
+]

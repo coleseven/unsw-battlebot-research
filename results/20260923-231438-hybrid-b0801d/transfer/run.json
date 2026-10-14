@@ -1,0 +1,100 @@
+{
+  "time": "2026-09-24 09:59:45",
+  "git": "8e1000d+dirty",
+  "python": "3.14.2",
+  "unswbc": "0.3.10",
+  "engine": "5412052f33ddb160",
+  "bots": {
+    "linear": {
+      "path": "results\\20260923-231438-hybrid-b0801d\\bots\\linear",
+      "hash": "69382825b699723d"
+    },
+    "neural": {
+      "path": "results\\20260923-231438-hybrid-b0801d\\bots\\neural",
+      "hash": "8b30b4590f0f6e5c"
+    },
+    "reference_v2": {
+      "path": "results\\20260923-231438-hybrid-b0801d\\bots\\reference_v2",
+      "hash": "9f29ab4138b51d26"
+    }
+  },
+  "maps": {
+    "plain_open_small": {
+      "file": "2bdb684266df6f06",
+      "signature": "5e4be64f0b47c829"
+    },
+    "plain_open_large": {
+      "file": "44bbdfc1ba8aafd6",
+      "signature": "4beab7a2d0264bec"
+    },
+    "plain_baffles_small": {
+      "file": "916f79c3f8fe7e26",
+      "signature": "24d45a702027f956"
+    },
+    "plain_baffles_large": {
+      "file": "83d873c067e15df5",
+      "signature": "f18b89cfecda843b"
+    },
+    "plain_dense_small": {
+      "file": "d606376d97f45331",
+      "signature": "f42bc6cd5787a638"
+    },
+    "plain_dense_large": {
+      "file": "e4ff44ec90f4bd33",
+      "signature": "713dde4105d45a56"
+    },
+    "plain_scarce_small": {
+      "file": "d4c59fcb03909b54",
+      "signature": "d2fc23e3ae9601df"
+    },
+    "plain_scarce_large": {
+      "file": "ddb3a56dd56c83d7",
+      "signature": "7c44335aa22e8e7e"
+    },
+    "portal_open_small": {
+      "file": "d0265c374cd3fb7a",
+      "signature": "46874bec42fafbac"
+    },
+    "portal_open_large": {
+      "file": "e09a2328bf220721",
+      "signature": "2887e585979a9c93"
+    },
+    "portal_baffles_small": {
+      "file": "d8372e6eefbfd2f4",
+      "signature": "4f65680f826f19f5"
+    },
+    "portal_baffles_large": {
+      "file": "2f78c8410b22da7b",
+      "signature": "157da2b8b376f413"
+    },
+    "portal_dense_small": {
+      "file": "9142e1d0a20f2f5b",
+      "signature": "e3dd09877e749fda"
+    },
+    "portal_dense_large": {
+      "file": "d83c26b0015f7c44",
+      "signature": "202cb7457256564a"
+    },
+    "portal_scarce_small": {
+      "file": "dd47edb194eb5c16",
+      "signature": "e827842e4b2315bb"
+    },
+    "portal_scarce_large": {
+      "file": "f399c5af4b68bc99",
+      "signature": "3826753decdc35b6"
+    }
+  },
+  "settings": {
+    "seeds": [
+      32000,
+      32001,
+      32002,
+      32003,
+      32004,
+      32005,
+      32006,
+      32007
+    ],
+    "workers": 4
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "games": [
+    {
+      "side": "A",
+      "changed_actions": true,
+      "winner": "B",
+      "error": null
+    },
+    {
+      "side": "B",
+      "changed_actions": true,
+      "winner": "A",
+      "error": null
+    }
+  ]
+}

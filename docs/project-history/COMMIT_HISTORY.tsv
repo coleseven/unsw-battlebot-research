@@ -1,0 +1,152 @@
+commit	author_date	committer_date	subject
+f87692761eae3ccc106a335cff1888ccc2f034b1	2026-09-22T14:47:20-04:00	2026-09-22T14:47:20-04:00	Starter Python bot and bundled maps from unswbc 0.3.10
+b809acc444fc1849cb08623f5ddba90a2dfa0d09	2026-09-22T15:37:05-04:00	2026-09-22T15:37:05-04:00	Local training and testing setup
+6bd40928e3cd3ed6830f8d9620e03ef906f774b7	2026-09-22T15:55:24-04:00	2026-09-22T15:55:24-04:00	Make arena benchmarks trustworthy
+7e975d5b42c160ab4a2aacaba3ed06b423b917b1	2026-09-22T16:07:26-04:00	2026-09-22T16:07:26-04:00	Evaluation task follow-ups: hashes cover all code, last-turn lengths
+26836bb570884c4c4f1e39d1e447fbb6e1107ebb	2026-09-22T16:07:35-04:00	2026-09-22T16:07:35-04:00	Restore LF line endings in bcsim/arena.py
+8e1000d0e5e92fa50461ea7a2fc40fb34d5e37ff	2026-09-22T16:28:26-04:00	2026-09-22T16:28:26-04:00	Ignore explicit open edges in map signatures
+9c610771e21e14c5cbcf367fc55a2d3ee4076b70	2026-09-25T21:23:31-04:00	2026-09-25T21:23:31-04:00	V4-V6 development, research and v6 release
+1525ffce9e9bb558966917ce67b1f2c8e76a4cd0	2026-09-25T21:24:49-04:00	2026-09-25T21:24:49-04:00	Add V7 C++ port plan for a cloud session
+6693adc9ead3113d4a4488169b3a0e77b56f1929	2026-09-25T21:41:46-04:00	2026-09-25T21:41:46-04:00	v6.1: tuned aggression and hub defaults, experiment log
+e2236c8cd1d2bee62f50d55e3db9857e189c19c7	2026-09-25T21:54:34-04:00	2026-09-25T21:54:34-04:00	Add CMA-ES tuner for Python and C++ parameter files
+f9423f86cd12f554f19e8828ca2e0d87f0300d03	2026-09-25T22:10:12-04:00	2026-09-25T22:10:12-04:00	Add cloud handoff notes for the C++ port session
+d6c591cdb129b6d739a599ade6ced478ab3e5e87	2026-09-26T01:40:16Z	2026-09-26T01:40:16Z	Add PARITY matching mode to the v6 search core (V7 groundwork)
+5c1c9806de7cf86131dc6472b2c5ef2b261e8a4a	2026-09-26T01:41:43Z	2026-09-26T01:41:43Z	Add C++ codegen for params and official-map books (V7)
+33f8e648a5b4e7766416786dc1ea4c87d9e1f31b	2026-09-26T02:05:44Z	2026-09-26T02:05:44Z	Add the V7 C++ port of the v6 core and the parity harness
+2de827f55124eb87b27d16b176176611cf82e658	2026-09-26T02:40:04Z	2026-09-26T02:40:04Z	Log V7 port: G1 (parity) and G2 (CPU) pass in matching settings
+d2ccc43021f03073802baef6709c781bb9be4656	2026-09-25T22:43:08-04:00	2026-09-25T22:43:08-04:00	Merge remote-tracking branch 'origin/claude/happy-brown-0mwwlo' into v6-release-and-port-prep
+81b1f44bfa2d73ae31a30c13988991dd22dfbaf3	2026-09-25T22:45:19-04:00	2026-09-25T22:45:19-04:00	Fix line endings at the root; v6.1 params for the C++ port
+d743442f28dedc4844cf710f977c9d2e60498a57	2026-09-25T22:48:33-04:00	2026-09-25T22:48:33-04:00	Add cloud task 2: spend the C++ speed
+c8f9f2104d3414e8274728ebaee89cece6d77392	2026-09-25T23:30:37-04:00	2026-09-25T23:30:37-04:00	Pre-build compiled bots once before parallel workers start
+61a30c7a55815c57d59748ca7b394b80786f74a0	2026-09-25T23:42:30-04:00	2026-09-25T23:42:30-04:00	Add the first C++ tuning search space (v6.1 core weights)
+82fdd9d76716ce1ce25297c77739dc2f3b796bac	2026-09-26T03:20:22Z	2026-09-26T03:20:22Z	V7 section 5: CPU meter, path distances and lookahead beam (all off by default)
+a2adcf03d1bed8f4757d3cbf25f152dbafa410ff	2026-09-26T03:47:57Z	2026-09-26T03:47:57Z	Log V7 section 5: features, parity-off, CPU tables, screens, suggested settings
+f2f202adca709f5fd47fb46571574d38e303f494	2026-09-25T23:53:40-04:00	2026-09-25T23:53:40-04:00	Merge remote-tracking branch 'origin/claude/v7-speed' into v6-release-and-port-prep
+6b72a4f3757fb6659667a623abf6c6185311299a	2026-09-26T00:15:53-04:00	2026-09-26T00:15:53-04:00	Add the v7 tuning space (v6.1 weights plus search size, depth, path distances)
+8f06a96324c76e68a3addac6280e54a2278b38aa	2026-09-26T01:36:58-04:00	2026-09-26T01:36:58-04:00	tune: replay a generation after a worker-pool crash (up to 3 attempts)
+c50a128a766b1e4813a434c1d52b1093f2c0905f	2026-09-26T02:40:08-04:00	2026-09-26T02:40:08-04:00	Launch Python process bots with the real interpreter, not the Store alias
+22fbf60219835b2724278b2ebde1fba1f0288a92	2026-09-26T15:29:47-04:00	2026-09-26T15:29:47-04:00	Freeze tuned C++ v7 (tune gen 7 c05) for release; tuner --extra-maps; add 4 ladder maps
+97dcc6a61ba06bbad2e27b586ff0470751fbd18b	2026-09-26T17:02:13-04:00	2026-09-26T17:02:13-04:00	Move to unswbc 1.1.0: engine seeds, multi-seed tests and tuning; recommend untuned v7-base
+038bd379a8394902a5bd11e00c17f39f66b1fada	2026-09-26T18:28:50-04:00	2026-09-26T18:28:50-04:00	Cloud task 3: in-process C++ bot for fast simulation; v7 exploration tuning space
+a74b4aa018dae91cf14433a4e040b4ed6fbf1f53	2026-09-26T18:34:18-04:00	2026-09-26T18:34:18-04:00	tune: score each generation's replays in parallel (identical margins, ~4x faster scoring)
+a351954da19f43886cfe31105710f615af564e58	2026-09-26T19:22:27-04:00	2026-09-26T19:22:27-04:00	full_change_test: write per-map wins in the one comparison.json write
+e6c44c96117b715116ef9b0adb1328bda564dd64	2026-09-26T20:37:56-04:00	2026-09-26T20:37:56-04:00	Feature-efficiency experiment plan (ablation, simplify, compact CMA, forward selection)
+32f1f5fb1d31a201285003af9b1a02e7e5771d2f	2026-09-26T20:47:12-04:00	2026-09-26T20:47:12-04:00	Ablation runner (bcsim.ablate), tuner group multipliers and boolean params; sonar as stage-4 feature
+5dedab47374de3cf558c8e6deff9e57658937cdc	2026-09-27T01:21:47Z	2026-09-27T01:21:47Z	Run the C++ bot in-process for fast local simulation (cloud task 3)
+787b52ed3bcd4820994c77ff090fe80a6ea6ba2d	2026-09-26T21:24:56-04:00	2026-09-26T21:24:56-04:00	Merge remote-tracking branch 'origin/claude/v7-inproc' into v6-release-and-port-prep
+73b5eec18871e650dca24bd0a3adb01d8313d964	2026-09-26T21:42:41-04:00	2026-09-26T21:42:41-04:00	In-process C++ on Windows (DLL search path, parallel build race); all 15 ranked maps by default
+7f9e56c63b8af5ffd90e1a4c73bcc5af6b96414f	2026-09-26T21:44:28-04:00	2026-09-26T21:44:28-04:00	Win-aligned objective: result + longest-dragon share + length margin
+b22fc0d2635c61a24ae9d5fe683208815da8fb4f	2026-09-26T21:46:47-04:00	2026-09-26T21:46:47-04:00	Feature experiment: aligned objective, measured noise, stage 1 launched
+ff53fc4246184ef38ae410241400879022c0c79a	2026-09-26T21:58:10-04:00	2026-09-26T21:58:10-04:00	Target the current ranked rotation (10 maps) with the other 5 as a guard; record scoring and Elo rules
+f7bac8873ebe22cd1575431045bfed4a12239865	2026-09-27T02:10:31-04:00	2026-09-27T02:10:31-04:00	Stage 1 ablation results; stage 2 simplification variants
+a26a31beda1f35a7ae76ae01b8c1bb84ce6926d4	2026-09-27T03:09:21-04:00	2026-09-27T03:09:21-04:00	Stage 2 confirms dropping trap+defend (+0.131 on the current pool); stage 3 compact tuning launched
+d15abaa9235dcb069407e06686f8d18a05187705	2026-09-27T06:18:25-04:00	2026-09-27T06:18:25-04:00	In-process only for our cppbot-derived bots; sparring C++ bots stay processes
+79df62d76d8219a75f44057e94f82d7ee4a52fe5	2026-09-27T08:26:37-04:00	2026-09-27T08:26:37-04:00	B1 held-out check: +0.04 (n.s.); trap removal helps Trauma/Portals/Default, hurts Queen Of Spades
+2cc7ce2b36563eee1ae3e7e069502b308ede9365	2026-09-27T11:02:27-04:00	2026-09-27T11:02:27-04:00	Morning findings: nicked v75 (82% vs v7-base), portal-map stall, hidden-spawn map variants
+939ddb73d93661246bc07e0c94bd90cdc1f714e1	2026-09-27T11:24:37-04:00	2026-09-27T11:24:37-04:00	C++ v8 features behind switches: portal book for all 15 ranked maps, age-based portal scouting, trap weight by local tightness, Voronoi-lite pearl targeting
+60e0337fcfdbe544c8428002ecb2f0bed9a0decd	2026-09-27T11:28:46-04:00	2026-09-27T11:28:46-04:00	Spawn-perturbed map generator; v8 tuning space (18 dims incl. new switches)
+fc90f9e97c269806811837e86f05737f6ee1ff5d	2026-09-27T15:54:38-04:00	2026-09-27T15:54:38-04:00	CPP_SONAR_HUB: share learned hubs by sonar (default off; hurts on Prisoners Dilemma vs nicked v75)
+87c73bad3f9570fbb91d1265aa7e8b2262f9deff	2026-09-27T19:01:27-04:00	2026-09-27T19:01:27-04:00	tune: cmaes-lra backend (learning-rate adaptation), distribution-mean candidate per generation, paired map sampling, warm start from a previous run, fixed settings
+692166105ce5434934dcc6a450e2a923f15892de	2026-09-27T19:47:52-04:00	2026-09-27T19:47:52-04:00	Switch A/B (portal-by-age on, Voronoi off) and v9 tuning launch
+bcbf72dac6d414807a808966e690589f0d3ee304	2026-09-28T01:16:39-04:00	2026-09-28T01:16:39-04:00	Freeze v9 (v9 tune gen-5 mean): held out +0.174 vs v7-base (153 vs 124 wins)
+a4fb9a4b1098352ddd8a7f9bc3a23169a260acaf	2026-09-28T05:20:57-04:00	2026-09-28T05:20:57-04:00	v9 tuning converged: late-mean average ties v9 on the held-out set (153-153)
+82cd91c1cb7735e10a53f116ccad69385b782439	2026-09-28T14:04:36-04:00	2026-09-28T14:04:36-04:00	C++: king beacon over sonar, big-dragon feeding, dead-end corridor check (all default off)
+5b74215ccb9aca06c9cd56b7b46466dc39e12bfc	2026-09-28T17:05:13-04:00	2026-09-28T17:05:13-04:00	guard: one experiment at a time, max 8 workers (two BSODs today under stacked jobs); split-safety room check
+8d835c19c03cd4b361b107da2eec7b74bd23140e	2026-09-28T17:19:29-04:00	2026-09-28T17:19:29-04:00	Fix in-process build cache: workers were recompiling every C++ bot each batch
+1c90b7a42c9c1b1272bbf411c95d283350b9edfb	2026-09-28T17:48:11-04:00	2026-09-28T17:48:11-04:00	King beacon + big feeding: +0.085 vs v9 (237 vs 210 wins); dead-end check does not help
+490c71e860aea9ef77e8c630675cf0afd38481b6	2026-09-28T18:06:15-04:00	2026-09-28T18:06:15-04:00	CPP_BRIEF: parent sonars its newborn child a dead-end mask at the split (default off)
+baf597f5c65ebdd0fdd850f211c4a5076e85225f	2026-09-28T21:46:55-04:00	2026-09-28T21:46:55-04:00	guard: default 4 workers until the faulty RAM is fixed (Windows memory diagnostic flagged bad regions; third BSOD under one 8-worker job)
+5e17ba53e55c8f662136d397c6c38bb80bdab0f1	2026-09-28T21:52:49-04:00	2026-09-28T21:52:49-04:00	guard: back to 12 workers now the RAM overclock is removed (one job at a time stays)
+159f108df203cc89262721d29b595d8f77e70d12	2026-09-28T22:41:41-04:00	2026-09-28T22:41:41-04:00	Kelp fixes and sonar brief do not help; v10 = v9 + king beacon + big feeding
+cbbb69e3d33817d4f2a9c3c878acafe2fec6fecd	2026-09-28T23:12:41-04:00	2026-09-28T23:12:41-04:00	Freeze v10 (v9 + king beacon + big feeding): +0.085 vs v9 on 4 opponents, +0.036 held out
+6dcc138b2d3ec89b14b68e9ca158dc29b74b121d	2026-09-28T23:46:40-04:00	2026-09-28T23:46:40-04:00	tune --warm-mean base: centre a warm start on the base bot's values, keep the old run's covariance; v11 space
+c546b2ca513856e2c762a51f1b484a0eae04f175	2026-09-29T00:07:44-04:00	2026-09-29T00:07:44-04:00	scrape: replay maps with hidden spawners go to maps/server/hidden
+7f124dcc1e9d3b36d814d3ad86d3f33098b15d69	2026-09-29T00:15:09-04:00	2026-09-29T00:15:09-04:00	v11 space: wider king-feeding ranges plus economy settings (17 dims); hub-book A/B
+7d14f891a5e87cf0df36e04a62433b6a861fdf6e	2026-09-29T00:57:06-04:00	2026-09-29T00:57:06-04:00	CPP_HUB_OBSERVE: on hub-book maps, switch to learned hubs once a dragon has observed spawners (default off)
+08409fc76e4addce5043d75731e610e04aac54e0	2026-09-29T01:41:38-04:00	2026-09-29T01:41:38-04:00	v9 ladder analysis, hub book A/Bs (keep book), v11 retune launched
+0cdce30b03e398484ba6661a41e14e868cca9da6	2026-09-29T09:29:57-04:00	2026-09-29T09:29:57-04:00	CPP_ANCHOR: founders stop splitting from FOUNDER_PROTECT_ROUND (grow early kings, as nicked's anchors do); default off
+8f43f7283f430fcc11e52aba31cda401f8a0cdf8	2026-09-29T09:31:59-04:00	2026-09-29T09:31:59-04:00	Hub-pull A/B variants (Trophy opening: dragons leave home instead of taking the centre hub)
+0d1045749986c9b7c1aca31097f648423cd348bc	2026-09-29T13:22:26-04:00	2026-09-29T13:22:26-04:00	v11 retune, anchors and hub pull: none beats v10 robustly (hub pull reversed on fresh seeds)
+633b9fac0ef846c9681089cec28e5875a11be611	2026-09-29T13:48:53-04:00	2026-09-29T13:48:53-04:00	CPP_BOOK_MAP (fill identified map's open edges) and CPP_HUB_GRAD (per-step pull to the best hub by walking distance); default off
+5585e2dfbf8bb506bda047e635c7f34ad3e4b60d	2026-09-29T15:29:21-04:00	2026-09-29T15:29:21-04:00	King growth switches (CPP_PROTECT_FLOOR, CPP_RESCUE_EVERY, CPP_FEED_SHIFT_LARGE), default off; book-map ablate results
+e629b41e5d8488d3fefcfe88af37b033c0be6e22	2026-09-29T16:39:23-04:00	2026-09-29T16:39:23-04:00	Book-map fresh-seed confirmation: adopted (v10g base)
+a1f8943ee1522ae3f003b8725f45dea2f4b21426	2026-09-29T20:15:58-04:00	2026-09-29T20:15:58-04:00	King-growth round 2 (early kings hurt; big-map cash shift adopted), v12 retune launched
+9e3ee3e1f6b9a01a6c2d8cf12b1c07ecb78064b9	2026-09-29T22:14:25-04:00	2026-09-29T22:14:25-04:00	CPP_HUB_SEP_FIX (learned-hub spacing used max of wrapped distances) and CPP_V3_PORTAL (v3 scored portal moves at the near side); default off
+9870b6a3ed85c0a800bf1436f3181be0a09328ca	2026-09-30T07:37:55-04:00	2026-09-30T07:37:55-04:00	v12 retune result; defect-fix + tune-candidate ablate launched
+aa0968e86d3a36768a3be393503affae173835ed	2026-09-30T08:36:50-04:00	2026-09-30T08:36:50-04:00	Work queue from the two external reviews
+7d72dabaab8db0f02ecd6e4a6e2d783afa812c63	2026-09-30T09:54:08-04:00	2026-09-30T09:54:08-04:00	CPP_KB_V2: king beacon with token and origin age (default off); defect/tune ablate: nothing beats v10h
+9d99eb07c5bf8d9a5745bb6eedc88d1074489247	2026-09-30T11:01:44-04:00	2026-09-30T11:01:44-04:00	CPP_FEED_REACH: feed only where the king can reach our body (default off); kb2 first result
+a8393403b16ff070f36b912a9eb07e2398572adb	2026-09-30T11:45:41-04:00	2026-09-30T11:45:41-04:00	kb2 confirmation (easy-opponent gains only); feed-reach ablate launched
+e155414406e96f34d6f81163b4b0f8ba101d1fc3	2026-09-30T13:15:27-04:00	2026-09-30T13:15:27-04:00	CPP_KING_GRAD (endgame per-step pull to the feeding target), v92 loss anatomy, reach results
+b62c9cec683b3ec90087560bcbefc3ca0dd41688	2026-09-30T14:48:59-04:00	2026-09-30T14:48:59-04:00	King-grad result (no effect); feed trace vs v92 (feeding volume); summon ablate launched
+faaa72a04adc09995e5acf43b8f3fb98832a7f60	2026-09-30T16:18:47-04:00	2026-09-30T16:18:47-04:00	Feeding volume: sum12 helps vs strong opponents; confirmation launched
+a7d01c9aa694e65fb25520589823fe3c3df6d829	2026-09-30T17:26:59-04:00	2026-09-30T17:26:59-04:00	sum12 confirmation: did not replicate
+6838f6ca2b26c910b7863201d58a588b8e2875ab	2026-09-30T17:46:58-04:00	2026-09-30T17:47:04-04:00	Freeze v10h (v10 + book map + big-map feed shift): judge sandbox max 7.9M points
+7c6cf9f7bcd7d1790abba70907a40f712c956fd9	2026-09-30T18:03:51-04:00	2026-09-30T18:03:51-04:00	ranker_v4: refit the v3 local move ranker on a stronger bot's moves in local games
+917056d5112ff2fb809f3649fe256590521d3f90	2026-09-30T18:24:01-04:00	2026-09-30T18:24:01-04:00	Move ranker refit on nicked v92's moves (CPP_V3_R4, model::WEIGHT_R4), default off; ablate launched
+588a9942d1f7d3ea62e586bf91eb31e51ea630a5	2026-09-30T19:51:40-04:00	2026-09-30T19:51:40-04:00	Ranker refit on v92 moves: worse in games; not adopted
+25ca607dce11823ebb60f6798eda95b70e9ae79c	2026-09-30T19:56:20-04:00	2026-09-30T19:56:20-04:00	PD diagnosis: sonar hub sharing triples PD food vs v92; full-suite ablate launched
+990a688f1decd7d768de713520ce8910028a2f5d	2026-09-30T20:06:54-04:00	2026-09-30T20:06:54-04:00	Queue: self-taught move ranker (counterfactual rollout labels)
+4f1004673120e1ddc727608b0831e419e67364af	2026-09-30T20:21:08-04:00	2026-09-30T20:21:08-04:00	Queue: plan for this PC only
+f0fa32b89971984178e0c2630587c8625c596442	2026-09-30T21:09:53-04:00	2026-09-30T21:09:53-04:00	Sonar hub: full-suite result (PD up, Slithery/Portals down); CPP_SONAR_HUB_MIN and CPP_SONAR_ADOPT_AGE (default off); adopt-age ablate
+aa2cbb571dc7581913f7c5ebe43ddfae8f07a537	2026-09-30T22:43:41-04:00	2026-09-30T22:43:41-04:00	Adopt-age result (mildly positive, PD gain not kept); confirmation with perturbed layouts launched
+8875e5b9a2d08379fd6f94444fe87cdb49a95c93	2026-09-30T23:05:31-04:00	2026-09-30T23:05:31-04:00	New mover M0 (frozen contract) and M1 start: match.play reply hook, counterfactual-move teacher with identity gate
+4b611a0082dc127367c98c78a659c19db841ceab	2026-10-01T00:42:27-04:00	2026-10-01T00:42:27-04:00	Sonar adoption age 30 confirmed (563 vs 542 of 900): candidate v10o frozen
+1de65bdb66568b17a99322c550fb66e4cc2d6933	2026-10-01T00:57:36-04:00	2026-10-01T00:57:36-04:00	v10o upload zip: judge sandbox max 7.9M points
+e289071889eb8afa4515154ba04c6bf29ec393c7	2026-10-01T00:57:47-04:00	2026-10-01T00:57:47-04:00	Mover M1: identity gate passed
+10ce96f93ec890a4eac83d63a087fb1db287a0b8	2026-10-01T10:51:45-04:00	2026-10-01T10:51:45-04:00	Sprint 1 maps (7 unseen layouts) as a separate generalisation panel: official_suite.sprint_maps()
+246f82cd7f014ee1a083923650d5689f88cc0ecd	2026-10-01T11:06:32-04:00	2026-10-01T11:06:32-04:00	Mover M1 (residual switch, 64-feature logging, parity gate passed) and M2 pilot tooling; Sprint unseen-map baseline
+3716942df30b155dcc8175582e9d08e63e416f6b	2026-10-01T11:34:02-04:00	2026-10-01T11:34:02-04:00	Mover M2 pilot: gate not passed (result labels chaos-dominated; margin student worse held-out)
+65921fd57a4fcddad13b65b5830a187049c21fda	2026-10-01T11:40:37-04:00	2026-10-01T11:40:37-04:00	Mover M2b: short-horizon labels (+20/40/80 rounds, from the reply hook), held-out check over labels and override margins
+cc54f049ff860c5466fb5b748d78b5a9d38b21ef	2026-10-01T14:13:06-04:00	2026-10-01T14:13:06-04:00	Mover M2b (weak learnable result signal), linear residual trained and exported, M5 parity passed; game screen launched
+5de62b3c0e6c757496f448224afad16231a1cce2	2026-10-01T15:28:10-04:00	2026-10-01T15:28:10-04:00	Mover R5: M6 screen shows the residual loses games (tau 0.5 184 vs 270); stopped, incumbent kept
+d7e424d2db97883b5bebad024396d8446b09212f	2026-10-01T15:28:53-04:00	2026-10-01T15:28:53-04:00	Unseen-maps grouped ablate launched; Sprint and R5 summary in the log
+51bf5df2785442e56b4929d7a398e170c13b75ae	2026-10-01T17:08:40-04:00	2026-10-01T17:08:40-04:00	Correction: Sprint map extracts have no spawners (scraper matched TILE_COUNT); moved to hidden, unseen-map findings retracted
+e9d4af731ac1b227ef0654cc350808b996e2c386	2026-10-01T17:22:52-04:00	2026-10-01T17:22:52-04:00	Reconstruct Sprint map spawners from 57 real games each (bcsim.spawn_reconstruct, symmetry-pooled); panel now maps/sprint
+251b81c5f317c475bd74b300a8b61d6f45f60b99	2026-10-01T17:43:11-04:00	2026-10-01T17:43:11-04:00	Corrected unseen-map baseline on reconstructed Sprint maps: v10h 82/168, v10o 83/168
+25a7b1240f61aee57c6a0ad664f05d6d870b9b40	2026-10-01T20:37:11-04:00	2026-10-01T20:37:11-04:00	Queen rules (Slay Queen, unswbc 1.2.3): Astra's Q0 groundwork (isolated 1.2.3 runtime, engine rules tests, queen diagnostics, wins objective, CPP_QUEEN switch); Q1 ablate launched
+d67e1089d90811d41844fa0a94b9918a3df37f32	2026-10-01T20:42:00-04:00	2026-10-01T20:42:00-04:00	Q2 first cut: CPP_MULTISTEP spends extra free steps (ceil(len/4)) reaching a visible pearl; legal under 1.2.3, rarely triggers (dragons split at 4)
+05d41c405ecd5eb79cce600f88fb7f72b41372b9	2026-10-01T21:12:33-04:00	2026-10-01T21:12:33-04:00	ablate: take the guard lock before deleting partial variant folders (a waiting resume had deleted a running variant's replays); detached overnight chain
+28bf828701bfe15e75a2efc940e29529cd22b4e1	2026-10-01T21:32:45-04:00	2026-10-01T21:32:45-04:00	Queen safety switches (multi-step enemy reach, queen dead-end look-ahead, worker guard, safety multiplier, keep king beacon); Q1b ablate queued
+69bf99bf5029e07f15677367924f7c34f986b010	2026-10-01T23:29:26-04:00	2026-10-01T23:29:26-04:00	Queen-rules night results so far: queen mode and later splits lose; Q1b and Q3b queued
+721a4308353d621b90e8bc5046e0bf2eb2bcb7f7	2026-10-02T00:39:08-04:00	2026-10-02T00:39:08-04:00	Queen death diagnosis (7/12 enemy head-ons at length 12-20, 4/12 boxed in early); wider queen reach margin and worker guard radius; Q1c queued
+cd4aa462a2df68afb81470199f067af840772365	2026-10-02T01:36:52-04:00	2026-10-02T01:36:52-04:00	Multistep alone +27 wins (236 vs 209, strong 95 vs 76) under queen rules; confirmation queued (3 seeds, 15 + 7 Sprint maps)
+e117905104359733eb027eb737df3747aef4da54	2026-10-02T02:57:06-04:00	2026-10-02T02:57:06-04:00	Queen-rules night: queen safety triples survival but loses vs old-rules panel; multistep +27 wins (confirming)
+c6b84811d1036ae02359b8e7420c7b3f07d434b2	2026-10-02T04:16:15-04:00	2026-10-02T04:16:15-04:00	Freeze v11ms (v10o + multistep): confirmed under queen rules (+27 wins twice), 1.2.3 sandbox max 8.0M; upload zip
+f3a624d0134b19e79c931ef002054081f84dcaf5	2026-10-02T04:21:11-04:00	2026-10-02T04:21:11-04:00	Multistep confirmed (v11ms frozen); head-to-heads: v11ms 62/120 vs v10o, queen safety 48/120 vs v11ms
+93b5d7251fb623bcb22ed248e3fc1574d93721df	2026-10-02T09:19:03-04:00	2026-10-02T09:19:03-04:00	Q4: queen tactics (exact 3-step escape search with multi-step threat timing) and light queen mode (queen never feeds, workers keep clear); Q4 ablate launched
+82ca0df6cebb9d0752467597668a72dfd3794308	2026-10-02T10:52:59-04:00	2026-10-02T10:52:59-04:00	Q4: light queen + tactics keeps wins (228 vs 223) and nearly triples queen survival (37 vs 13); confirmation queued
+bda0902fb8d15fdcab01f1b6ab451ec5df917594	2026-10-02T12:18:39-04:00	2026-10-02T12:18:39-04:00	Freeze v11q (v11ms + light queen + queen tactics): queen alive 79 vs 24, wins neutral vs panel, beats v10o 80/120 and v11ms 73/120 head-to-head
+e6140a1dd80eb5f157f6d86600d020b3b9c7ed14	2026-10-02T12:27:09-04:00	2026-10-02T12:27:09-04:00	Queen growth switches (light-mode queen split cutoff, late feeding to the queen by id); Q5 test with v11q added as a queen-aware opponent
+ef10ae96dd4e75a08704a7fbd08da52a57922787	2026-10-02T12:28:00-04:00	2026-10-02T12:28:00-04:00	CPP_QUEEN_FLIGHT: a threatened queen spends its extra free steps maximising distance from threat heads (default off)
+e529eb1edfe508752ed9579bb6d67dc031d34993	2026-10-02T13:27:59-04:00	2026-10-02T13:27:59-04:00	Light queen growth switches: queen food multiplier, queen keep-length before splitting (default off)
+c859fd8147b2e53155de9014deaaad2013af74fb	2026-10-02T13:33:30-04:00	2026-10-02T13:33:30-04:00	Q6 queen growth round 2 queued (flight, queen food x3, keep 6, combos)
+8aa351c8426d914af4b0d15d187e1faf42fe18b3	2026-10-02T14:55:31-04:00	2026-10-02T14:55:31-04:00	Live ladder: 10 of 23 losses from queen survival (theirs alive, ours dead); Q5/Q6 queen growth results so far
+6b15fd5125b186c2f1f74269ff273fa2df6a2428	2026-10-02T14:58:59-04:00	2026-10-02T14:58:59-04:00	CPP_QUEEN_HUNT: workers trade into the enemy queen at any length difference, pull toward a visible enemy queen; Q7 queued
+6f12027d6d0a123ff0fcaea2444e18efe345a0cc	2026-10-02T16:39:40-04:00	2026-10-02T16:39:40-04:00	Q6 growth rejected; Q7 queen hunt cuts enemy queen survival 40 -> 25, gains vs v92 and v11q; confirmation queued
+f986fc0c57bf9738b8b445cdebccbcad2ed669f5	2026-10-02T18:02:05-04:00	2026-10-02T18:02:05-04:00	Q7 hunt confirmation: did not replicate (549 vs 563); v11q uploaded
+c125c05e38a9901922c9b623f9b57cb880219ffe	2026-10-02T18:04:15-04:00	2026-10-02T18:04:15-04:00	CPP_MULTISTEP_TRAVEL (extra free steps toward the best hub when no pearl is reachable); confirmation-scale test launched
+2bf852a4fb24b2b31d3b6fcd404cdaa60d839a9b	2026-10-02T19:25:22-04:00	2026-10-02T19:25:22-04:00	Travel: workers only (queen survival fell with queen travel); v11q live start; Q8b launched
+7608a0131f023ec17627d12a4b2a1aa3804dc640	2026-10-02T20:02:04-04:00	2026-10-02T20:02:04-04:00	v11q live: rank 108 (1529), rank 100 at 1560; queen survival still decides 22 of 82 games
+a853e4b9d583da6b19f8a061897137dad9273263	2026-10-02T20:08:16-04:00	2026-10-02T20:08:16-04:00	Light queen can use reach/dead-end penalties; Q9 (deeper queen look-ahead, keep-away) queued
+46d36e485bf73e1ae4c20c781715c14b7b4164f6	2026-10-02T20:48:39-04:00	2026-10-02T20:48:39-04:00	Worker travel: not adopted (552 vs 563)
+c11de7349feff46b5eae649ac3e1bc8b7e825b03	2026-10-02T22:14:25-04:00	2026-10-02T22:14:25-04:00	Ladder queen death anatomy (43% boxed in); CPP_QUEEN_LIGHT_SAFE room safety; Q10 queued
+c0f9b449c46f567e6cacd21dde73cbc3346e4f21	2026-10-02T23:45:16-04:00	2026-10-02T23:45:16-04:00	Q9/Q10: keep-away +1 and guard radius 2 raise queen survival ~25% at equal wins; confirmation queued
+ca1bb65c42456ce8ad386e95394540d36496e5e4	2026-10-03T01:45:05-04:00	2026-10-03T01:45:05-04:00	Q11: keep-away/guard queen tweaks do not confirm; v11q stays
+7c67dc29174b146a43ac66d13c2ebd8c86522a8c	2026-10-03T02:04:45-04:00	2026-10-03T02:04:45-04:00	Ladder anatomy (queen survival is our largest loss source); ranked pool now includes the 7 Sprint maps
+c5f4f37c03cfdfc48c03276dafcf2f2f8cabb3dd	2026-10-03T11:50:00-04:00	2026-10-03T11:50:00-04:00	Current toolkit 1.2.9 (isolated runtime, default; rules tests pass), official 1.2.9 maps in maps/v129 verified against live replays, ablate --maps current; v11q baseline + book audit launched
+8700d51b438b98a921c5fecb909391b7fe17c9c0	2026-10-03T11:51:34-04:00	2026-10-03T11:51:34-04:00	CPP_QUEEN_TACTICS2: corrected queen escape search (food keeps the tail, path-aware threat reach, uncertain exits separate, line counts, checked move = final move); C2 queued
+44fa234acec4b05acd7f8c2c79eb0c0378b20a32	2026-10-03T11:52:41-04:00	2026-10-03T11:52:41-04:00	CPP_QUEEN_YIELD: workers keep our queen's free exits open; C3 queued
+e75f6355aac035fde9a2f23d455230d3a807dd97	2026-10-03T12:45:56-04:00	2026-10-03T12:45:56-04:00	C1: v11q baseline on current 1.2.9 maps (242/408); books still help (-13 / -26 off)
+359b429d52a6a37c7c76c8442f0218ef6da59819	2026-10-03T12:51:29-04:00	2026-10-03T12:51:29-04:00	Queen-aware opponent panel (careful, raider, growth, economy specialists); CPP_QUEEN_REFUGE temporary refuge; C4 queued
+454b38553ba4d964d9d3c4ae68df4624f042bfa1	2026-10-03T13:47:18-04:00	2026-10-03T13:47:18-04:00	C2: corrected queen search +18 wins, queen alive 158 vs 101, strong vs v92 and v11q; confirmation queued
+34cb1104ac7afdb0896b5c850ddfe830ddc627ab	2026-10-03T15:09:46-04:00	2026-10-03T15:09:46-04:00	C3: worker yield has no effect; corrected search replicates (+30, queen alive 175 vs 91)
+77a11bd7a19c0a893f5f8f6ef0fb543e0f404fe7	2026-10-03T16:32:33-04:00	2026-10-03T16:32:33-04:00	Corrected queen search confirmed (571 vs 534 of 1020, queen alive 346 vs 207); freeze v11t; sandbox queued
+8088ec053f39ff031897916d7e6ca45654453a2b	2026-10-03T17:10:51-04:00	2026-10-03T17:10:51-04:00	C4: temporary queen refuge +11 (233 vs 222) on the old search; C6 (refuge on v11t), v11t vs v11q and queen-death replays queued
+65d4efa5c5817baae4a1b21b79ef9c31195af546	2026-10-03T17:10:57-04:00	2026-10-03T17:10:57-04:00	Add queen-death diagnostic scripts, chains, C4 report, v11t zip
+65df94898c1bcaba224fe8a451541585be55137a	2026-10-03T17:13:12-04:00	2026-10-03T17:13:12-04:00	v11t FROZEN notes: 1.2.9 sandbox max 8.4M points/turn
+b1925a8f08054d4b37a2659e6471cf8b883fb856	2026-10-03T17:16:41-04:00	2026-10-03T17:16:41-04:00	v11t beats v11q 75/136 on fresh seeds (queen alive 48 vs 26); recommend upload
+5db28df39a613253b2f47836ccf8abe94ad577b6	2026-10-03T18:31:13-04:00	2026-10-03T18:31:13-04:00	C6: refuge on v11t +34 (392 vs 358 of 680); candidate v11u; C7 confirmation queued
+683d57c7f92755144bdc544497849c29a6c04e9e	2026-10-03T19:28:13-04:00	2026-10-03T19:28:13-04:00	Queen-death diagnostic: 53% of v11t queen deaths are boxed-in walls, 2/3 of them right after a split; CPP_QUEEN_SPLIT_EXITS switch; C8 queued
+3d2ed6d2742acba8562e7fbf6fbe81920ac7e15f	2026-10-03T20:19:40-04:00	2026-10-03T20:19:40-04:00	C7: refuge not confirmed on fresh seeds (641 vs 627, CI spans 0); v11t stays
+69095e569c8717f2eeeb99863f10fd19d56075ab	2026-10-03T21:30:23-04:00	2026-10-03T21:30:23-04:00	C8: queen split-exits rejected (377/382 vs 402; fewer splits, fewer surviving queens)

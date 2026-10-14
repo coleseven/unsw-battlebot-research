@@ -1,0 +1,2 @@
+CUTOFF = 425
+GROWER_CUTOFF = None

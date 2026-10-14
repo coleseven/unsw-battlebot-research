@@ -1,0 +1,62 @@
+base: 24/600 games, 29s
+base: 48/600 games, 94s
+base: 72/600 games, 114s
+base: 96/600 games, 163s
+base: 120/600 games, 193s
+base: 144/600 games, 240s
+base: 168/600 games, 265s
+base: 192/600 games, 308s
+base: 216/600 games, 337s
+base: 240/600 games, 404s
+base: 264/600 games, 435s
+base: 288/600 games, 489s
+base: 312/600 games, 517s
+base: 336/600 games, 536s
+base: 360/600 games, 553s
+base: 384/600 games, 576s
+base: 408/600 games, 596s
+base: 432/600 games, 616s
+base: 456/600 games, 651s
+base: 480/600 games, 708s
+base: 504/600 games, 791s
+base: 528/600 games, 834s
+base: 552/600 games, 959s
+base: 576/600 games, 1052s
+base: 600/600 games, 1132s
+hubbook_off: 24/600 games, 27s
+hubbook_off: 48/600 games, 94s
+hubbook_off: 72/600 games, 115s
+hubbook_off: 96/600 games, 162s
+hubbook_off: 120/600 games, 193s
+hubbook_off: 144/600 games, 243s
+hubbook_off: 168/600 games, 272s
+hubbook_off: 192/600 games, 316s
+hubbook_off: 216/600 games, 347s
+hubbook_off: 240/600 games, 418s
+hubbook_off: 264/600 games, 446s
+hubbook_off: 288/600 games, 502s
+hubbook_off: 312/600 games, 541s
+hubbook_off: 336/600 games, 559s
+hubbook_off: 360/600 games, 577s
+hubbook_off: 384/600 games, 602s
+hubbook_off: 408/600 games, 621s
+hubbook_off: 432/600 games, 641s
+hubbook_off: 456/600 games, 672s
+hubbook_off: 480/600 games, 730s
+hubbook_off: 504/600 games, 813s
+hubbook_off: 528/600 games, 859s
+hubbook_off: 552/600 games, 975s
+hubbook_off: 576/600 games, 1063s
+hubbook_off: 600/600 games, 1142s
+# Ablation report: 20260929-001450-ablate-0e245d
+
+3 seeds, opponents cpp_nicked_v75, cpp_leviathan3, v7-base-bot, nicked_v44; 11 official + 14 extra maps, both sides. Objective: aligned. Delta = variant score minus base score on the same (opponent, map, seed, side); positive means removing the group helped. 95% CI resamples (map, seed) blocks.
+
+base: mean margin +0.209, wins 386/600; by opponent: cpp_nicked_v75 -0.238, cpp_leviathan3 +0.462, v7-base-bot +0.409, nicked_v44 +0.202
+
+| variant | current pool delta [95% CI] | pool verdict | other maps | delta all 15 [95% CI] | verdict | vs cpp_nicked_v75 | vs cpp_leviathan3 | vs v7-base-bot | vs nicked_v44 | official | extra | wins |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| hubbook_off | -0.086 [-0.165, -0.008] | essential | +0.001 | -0.034 [-0.088, +0.022] | neutral | -0.130 | -0.048 | +0.019 | +0.024 | -0.103 | +0.021 | 371/600 |
+
+Noise: seed-to-seed SD of base's margin within a (opponent, map, side) cell 0.552 over 200 cells. Expected paired CI half-width with K seeds, 1.96 * sqrt(2 * 0.552^2 / (200 * K)): K=2: 0.076, K=3: 0.062, K=4: 0.054, K=6: 0.044, K=8: 0.038
+

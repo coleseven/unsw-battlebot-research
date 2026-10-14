@@ -1,0 +1,125 @@
+guard: waiting for running experiment 'ablate 20261002-192514-ablate-52aecd' (pid 190008)
+base: 24/420 games, 45s
+base: 48/420 games, 90s
+base: 72/420 games, 132s
+base: 96/420 games, 181s
+base: 120/420 games, 238s
+base: 144/420 games, 281s
+base: 168/420 games, 328s
+base: 192/420 games, 364s
+base: 216/420 games, 392s
+base: 240/420 games, 419s
+base: 264/420 games, 505s
+base: 288/420 games, 563s
+base: 312/420 games, 669s
+base: 336/420 games, 753s
+base: 360/420 games, 881s
+base: 384/420 games, 909s
+base: 408/420 games, 931s
+base: 420/420 games, 948s
+d4: 24/420 games, 51s
+d4: 48/420 games, 85s
+d4: 72/420 games, 135s
+d4: 96/420 games, 181s
+d4: 120/420 games, 229s
+d4: 144/420 games, 275s
+d4: 168/420 games, 324s
+d4: 192/420 games, 360s
+d4: 216/420 games, 388s
+d4: 240/420 games, 418s
+d4: 264/420 games, 501s
+d4: 288/420 games, 561s
+d4: 312/420 games, 656s
+d4: 336/420 games, 777s
+d4: 360/420 games, 851s
+d4: 384/420 games, 894s
+d4: 408/420 games, 924s
+d4: 420/420 games, 936s
+d5: 24/420 games, 48s
+d5: 48/420 games, 81s
+d5: 72/420 games, 126s
+d5: 96/420 games, 168s
+d5: 120/420 games, 224s
+d5: 144/420 games, 268s
+d5: 168/420 games, 319s
+d5: 192/420 games, 352s
+d5: 216/420 games, 378s
+d5: 240/420 games, 407s
+d5: 264/420 games, 485s
+d5: 288/420 games, 541s
+d5: 312/420 games, 636s
+d5: 336/420 games, 732s
+d5: 360/420 games, 837s
+d5: 384/420 games, 864s
+d5: 408/420 games, 885s
+d5: 420/420 games, 901s
+keep300: 24/420 games, 46s
+keep300: 48/420 games, 78s
+keep300: 72/420 games, 124s
+keep300: 96/420 games, 168s
+keep300: 120/420 games, 213s
+keep300: 144/420 games, 258s
+keep300: 168/420 games, 303s
+keep300: 192/420 games, 337s
+keep300: 216/420 games, 364s
+keep300: 240/420 games, 390s
+keep300: 264/420 games, 472s
+keep300: 288/420 games, 529s
+keep300: 312/420 games, 630s
+keep300: 336/420 games, 711s
+keep300: 360/420 games, 843s
+keep300: 384/420 games, 863s
+keep300: 408/420 games, 884s
+keep300: 420/420 games, 901s
+keep300x1: 24/420 games, 48s
+keep300x1: 48/420 games, 81s
+keep300x1: 72/420 games, 133s
+keep300x1: 96/420 games, 175s
+keep300x1: 120/420 games, 220s
+keep300x1: 144/420 games, 265s
+keep300x1: 168/420 games, 316s
+keep300x1: 192/420 games, 357s
+keep300x1: 216/420 games, 383s
+keep300x1: 240/420 games, 412s
+keep300x1: 264/420 games, 484s
+keep300x1: 288/420 games, 553s
+keep300x1: 312/420 games, 606s
+keep300x1: 336/420 games, 679s
+keep300x1: 360/420 games, 803s
+keep300x1: 384/420 games, 833s
+keep300x1: 408/420 games, 854s
+keep300x1: 420/420 games, 871s
+d4_keep300: 24/420 games, 48s
+d4_keep300: 48/420 games, 80s
+d4_keep300: 72/420 games, 134s
+d4_keep300: 96/420 games, 177s
+d4_keep300: 120/420 games, 225s
+d4_keep300: 144/420 games, 269s
+d4_keep300: 168/420 games, 315s
+d4_keep300: 192/420 games, 351s
+d4_keep300: 216/420 games, 378s
+d4_keep300: 240/420 games, 408s
+d4_keep300: 264/420 games, 500s
+d4_keep300: 288/420 games, 556s
+d4_keep300: 312/420 games, 659s
+d4_keep300: 336/420 games, 735s
+d4_keep300: 360/420 games, 856s
+d4_keep300: 384/420 games, 887s
+d4_keep300: 408/420 games, 906s
+d4_keep300: 420/420 games, 922s
+# Ablation report: 20261002-200810-ablate-394220
+
+2 seeds, opponents cpp_nicked_v92, cpp_nicked_v75, cpp_leviathan3, v7-base-bot, nicked_v44, nicked_lab, v11q; 11 official + 4 extra maps, both sides. Objective: wins. Delta = variant score minus base score on the same (opponent, map, seed, side); positive means removing the group helped. 95% CI resamples (map, seed) blocks.
+
+base: mean margin +0.219, wins 256/420; by opponent: cpp_nicked_v92 -0.467, cpp_nicked_v75 +0.067, cpp_leviathan3 +0.533, v7-base-bot +0.500, nicked_v44 +0.700, nicked_lab +0.200, v11q +0.000
+
+| variant | current pool delta [95% CI] | pool verdict | other maps | delta all 15 [95% CI] | verdict | vs cpp_nicked_v92 | vs cpp_nicked_v75 | vs cpp_leviathan3 | vs v7-base-bot | vs nicked_v44 | vs nicked_lab | vs v11q | official | extra | wins |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| d4 | -0.036 [-0.143, +0.064] | neutral | +0.000 | -0.024 [-0.090, +0.043] | neutral | +0.133 | -0.067 | -0.067 | +0.033 | -0.133 | -0.033 | -0.033 | -0.026 | -0.018 | 251/420 |
+| d5 | -0.036 [-0.100, +0.021] | neutral | -0.029 | -0.033 [-0.090, +0.029] | neutral | +0.133 | -0.200 | +0.067 | -0.033 | -0.100 | +0.033 | -0.133 | -0.045 | +0.000 | 249/420 |
+| keep300 | -0.014 [-0.036, +0.000] | neutral | +0.043 | +0.005 [-0.019, +0.033] | neutral | +0.000 | -0.067 | +0.067 | +0.033 | +0.000 | +0.000 | +0.000 | +0.006 | +0.000 | 257/420 |
+| keep300x1 | -0.014 [-0.093, +0.057] | neutral | +0.029 | +0.000 [-0.067, +0.062] | neutral | +0.100 | +0.000 | +0.100 | -0.067 | +0.067 | -0.067 | -0.133 | -0.013 | +0.036 | 256/420 |
+| d4_keep300 | -0.043 [-0.143, +0.057] | neutral | +0.043 | -0.014 [-0.090, +0.062] | neutral | +0.100 | -0.033 | -0.067 | +0.100 | -0.100 | -0.033 | -0.067 | -0.013 | -0.018 | 253/420 |
+
+Noise: seed-to-seed SD of base's margin within a (opponent, map, side) cell 0.884 over 210 cells. Expected paired CI half-width with K seeds, 1.96 * sqrt(2 * 0.884^2 / (210 * K)): K=2: 0.120, K=3: 0.098, K=4: 0.085, K=6: 0.069, K=8: 0.060
+

@@ -1,0 +1,38 @@
+{
+  "candidate": "tail_guard",
+  "hash": "1f7db5f7f15de29c",
+  "paired_pool": {
+    "difference": 0.006944444444444444,
+    "map_cluster_ci95": [
+      -0.03009259259259259,
+      0.04398148148148148
+    ],
+    "paired_block_ci95": [
+      -0.032407407407407406,
+      0.04861111111111111
+    ],
+    "maps": 9,
+    "blocks": 216,
+    "matched_games": 432
+  },
+  "direct": {
+    "wins": 75,
+    "draws": 0,
+    "losses": 69,
+    "score": 0.5208333333333334,
+    "map_ci95": [
+      0.4236111111111111,
+      0.6180555555555556
+    ],
+    "pair_ci95": [
+      0.4375,
+      0.6041666666666666
+    ]
+  },
+  "stress_scores": {
+    "arena_baffles": 0.875,
+    "arena_pockets": 0.5,
+    "arena_slow_food": 0.5625
+  },
+  "performance_gate": false
+}

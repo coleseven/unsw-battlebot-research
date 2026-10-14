@@ -1,0 +1,72 @@
+{
+  "games": [
+    {
+      "map": "Big_Empty",
+      "side": "A",
+      "changed_actions": true,
+      "r450_control": [
+        64,
+        503,
+        38
+      ],
+      "r450_population": [
+        24,
+        266,
+        29
+      ],
+      "winner": "B",
+      "error": null
+    },
+    {
+      "map": "Big_Empty",
+      "side": "B",
+      "changed_actions": true,
+      "r450_control": [
+        64,
+        455,
+        18
+      ],
+      "r450_population": [
+        24,
+        249,
+        23
+      ],
+      "winner": "A",
+      "error": null
+    },
+    {
+      "map": "schooltime",
+      "side": "A",
+      "changed_actions": true,
+      "r450_control": [
+        64,
+        171,
+        5
+      ],
+      "r450_population": [
+        24,
+        92,
+        6
+      ],
+      "winner": "B",
+      "error": null
+    },
+    {
+      "map": "schooltime",
+      "side": "B",
+      "changed_actions": true,
+      "r450_control": [
+        57,
+        137,
+        4
+      ],
+      "r450_population": [
+        24,
+        92,
+        14
+      ],
+      "winner": "A",
+      "error": null
+    }
+  ]
+}

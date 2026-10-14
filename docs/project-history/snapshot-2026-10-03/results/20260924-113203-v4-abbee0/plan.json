@@ -1,0 +1,58 @@
+{
+  "question": "Does a hard visible teammate-head guard improve frozen v3 movement?",
+  "baseline_hash": "69382825b699723d",
+  "live_hash": "ffe736af6c14ea33",
+  "candidate_hashes": {
+    "guard_all": "1993d13a95fc5c4a",
+    "guard_later": "6e5682cdae035f74"
+  },
+  "opponent_hashes": {
+    "splitter": "c50e10c521282fec",
+    "hunter": "8622139a1a3d64a8"
+  },
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-113203-v4-abbee0\\maps\\arena_728547b8376892d9.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-113203-v4-abbee0\\maps\\big_empty_685baf0e797207b7.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-113203-v4-abbee0\\maps\\Colosseum_3042ccc262f0211a.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-113203-v4-abbee0\\maps\\default_afc3707a967881d6.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-113203-v4-abbee0\\maps\\default_small_f98ab391cccf33b1.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-113203-v4-abbee0\\maps\\queen_of_spades_6cdb74a7a52d715a.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-113203-v4-abbee0\\maps\\schooltime_8be7eda86910a849.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-113203-v4-abbee0\\maps\\trophy_fd985019831fe135.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-113203-v4-abbee0\\maps\\Devil_1b2147f4a8a775d2.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-113203-v4-abbee0\\maps\\stronghold_fb60e37176a8d1d3.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-113203-v4-abbee0\\maps\\Trauma_d014b28abbd1abb0.map"
+  ],
+  "map_hashes": {
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-113203-v4-abbee0\\maps\\arena_728547b8376892d9.map": "707cbffebdb4a648",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-113203-v4-abbee0\\maps\\big_empty_685baf0e797207b7.map": "8183641362aab7e9",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-113203-v4-abbee0\\maps\\Colosseum_3042ccc262f0211a.map": "c49518b65561b5d8",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-113203-v4-abbee0\\maps\\default_afc3707a967881d6.map": "8cbd2473c772cb2d",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-113203-v4-abbee0\\maps\\default_small_f98ab391cccf33b1.map": "b1f09be73e876dce",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-113203-v4-abbee0\\maps\\queen_of_spades_6cdb74a7a52d715a.map": "bf9886dc024dc300",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-113203-v4-abbee0\\maps\\schooltime_8be7eda86910a849.map": "448616c71781d224",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-113203-v4-abbee0\\maps\\trophy_fd985019831fe135.map": "3dffb977ef762e7c",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-113203-v4-abbee0\\maps\\Devil_1b2147f4a8a775d2.map": "a7e7720c817738ac",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-113203-v4-abbee0\\maps\\stronghold_fb60e37176a8d1d3.map": "88b0f451cc44c7dc",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-113203-v4-abbee0\\maps\\Trauma_d014b28abbd1abb0.map": "c1977dce278badd5"
+  },
+  "modes": {
+    "guard_all": false,
+    "guard_later": true
+  },
+  "screen_seeds": [
+    41000,
+    41001
+  ],
+  "direct_seed": 41000,
+  "screen_games": 264,
+  "direct_games": 44,
+  "selection": "Among modes with positive paired pool score versus control and direct score at least 50% versus v3, choose larger paired gain. Screen is exploratory. Direct v3 games use one seed because both bots are deterministic.",
+  "future_gate": "Fresh opponents and layouts, map-cluster 95% paired-gain lower bound > 0, plus exact replay and judge-sandbox budget checks before any v4 freeze.",
+  "limits": "The 11 maps are familiar. Split logic and linear weights are unchanged. All-threatened move states fall back to the original v3 candidates. No competitor source is copied into a candidate.",
+  "source_hashes": {
+    "experiments\\v4\\brain.py": "3a80f55b3d4a6dfd",
+    "framework\\v4_safety.py": "11fbad87ff94ceda",
+    "bcsim\\v4.py": "efa9d51b33c24b8f"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "question": "Does the big-board split brake improve r450 retained length?",
+  "scope": "Diagnostic only: Big Empty and Schooltime, both sides.",
+  "seed": 60001,
+  "workers": 1,
+  "control_hash": "23a140e48e5f7d89",
+  "nicked_hash": "d6dd50765f54f638",
+  "live_hash": "ffe736af6c14ea33",
+  "bot_hashes": {
+    "population": "a18f0bd58d365fc7",
+    "nicked": "d6dd50765f54f638"
+  },
+  "maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-122956-v5-population-probe-079b04\\maps\\Big_Empty.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-122956-v5-population-probe-079b04\\maps\\schooltime.map"
+  ],
+  "map_hashes": {
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-122956-v5-population-probe-079b04\\maps\\Big_Empty.map": "962f265ed2a9071f",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-122956-v5-population-probe-079b04\\maps\\schooltime.map": "726c404f3b34b4ed"
+  },
+  "source_hashes": {
+    "experiments\\v5\\brain.py": "2c75532219353747",
+    "framework\\v5_population.py": "680b8cb2f610e620",
+    "bcsim\\v5_initial.py": "736648c9760cf106",
+    "bcsim\\v5_population_probe.py": "71ab2ec5828ec35f"
+  }
+}

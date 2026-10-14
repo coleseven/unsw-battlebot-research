@@ -1,0 +1,53 @@
+{
+  "time": "2026-09-24 11:54:07",
+  "git": "8e1000d+dirty",
+  "python": "3.14.2",
+  "unswbc": "0.3.10",
+  "engine": "5412052f33ddb160",
+  "bots": {
+    "control_v3": {
+      "path": "results\\20260924-115357-v4-grower-374d2b\\bots\\control_v3",
+      "hash": "69382825b699723d"
+    },
+    "mature": {
+      "path": "results\\20260924-115357-v4-grower-374d2b\\bots\\mature",
+      "hash": "179cf9015b8ae8f3"
+    },
+    "opportunity": {
+      "path": "results\\20260924-115357-v4-grower-374d2b\\bots\\opportunity",
+      "hash": "2c2babaa5da74cfb"
+    },
+    "ctmes": {
+      "path": "results\\20260924-115357-v4-grower-374d2b\\bots\\ctmes",
+      "hash": "8b08ab70a6837573"
+    },
+    "nicked": {
+      "path": "results\\20260924-115357-v4-grower-374d2b\\bots\\nicked",
+      "hash": "d6dd50765f54f638"
+    }
+  },
+  "maps": {
+    "default_afc3707a967881d6": {
+      "file": "8cbd2473c772cb2d",
+      "signature": "afc3707a967881d6"
+    },
+    "default_small_f98ab391cccf33b1": {
+      "file": "b1f09be73e876dce",
+      "signature": "f98ab391cccf33b1"
+    },
+    "queen_of_spades_6cdb74a7a52d715a": {
+      "file": "bf9886dc024dc300",
+      "signature": "6cdb74a7a52d715a"
+    },
+    "Trauma_d014b28abbd1abb0": {
+      "file": "c1977dce278badd5",
+      "signature": "d014b28abbd1abb0"
+    }
+  },
+  "settings": {
+    "seeds": [
+      42000
+    ],
+    "workers": 4
+  }
+}

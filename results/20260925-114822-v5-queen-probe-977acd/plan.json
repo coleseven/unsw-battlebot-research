@@ -1,0 +1,20 @@
+{
+  "question": "Does founder routing change Queen's first 50 rounds against nicked?",
+  "seed": 57001,
+  "workers": 1,
+  "control_hash": "23a140e48e5f7d89",
+  "nicked_hash": "d6dd50765f54f638",
+  "live_hash": "ffe736af6c14ea33",
+  "bot_hashes": {
+    "queen_opening": "53fe99318c4a963f",
+    "nicked": "d6dd50765f54f638"
+  },
+  "map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260925-114822-v5-queen-probe-977acd\\maps\\queen_of_spades.map",
+  "map_hash": "126d71b464432685",
+  "source_hashes": {
+    "experiments\\v5\\brain.py": "efb6dc24e62480ff",
+    "framework\\v5_queen_opening.py": "db69ca5bff8eb5ec",
+    "bcsim\\v5_initial.py": "78489c2e5ea280fa",
+    "bcsim\\v5_queen_probe.py": "aaea1ee281c15e94"
+  }
+}

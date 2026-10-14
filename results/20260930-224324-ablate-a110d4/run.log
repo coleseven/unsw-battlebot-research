@@ -1,0 +1,127 @@
+base: 24/900 games, 42s
+base: 48/900 games, 124s
+base: 72/900 games, 153s
+base: 96/900 games, 232s
+base: 120/900 games, 262s
+base: 144/900 games, 338s
+base: 168/900 games, 364s
+base: 192/900 games, 420s
+base: 216/900 games, 478s
+base: 240/900 games, 535s
+base: 264/900 games, 568s
+base: 288/900 games, 633s
+base: 312/900 games, 666s
+base: 336/900 games, 711s
+base: 360/900 games, 748s
+base: 384/900 games, 812s
+base: 408/900 games, 873s
+base: 432/900 games, 916s
+base: 456/900 games, 959s
+base: 480/900 games, 987s
+base: 504/900 games, 1010s
+base: 528/900 games, 1031s
+base: 552/900 games, 1059s
+base: 576/900 games, 1068s
+base: 600/900 games, 1101s
+base: 624/900 games, 1165s
+base: 648/900 games, 1263s
+base: 672/900 games, 1321s
+base: 696/900 games, 1463s
+base: 720/900 games, 1515s
+base: 744/900 games, 1623s
+base: 768/900 games, 1695s
+base: 792/900 games, 1786s
+base: 816/900 games, 1921s
+base: 840/900 games, 2041s
+base: 864/900 games, 2123s
+base: 888/900 games, 2264s
+base: 900/900 games, 2287s
+sh_age30: 24/900 games, 35s
+sh_age30: 48/900 games, 100s
+sh_age30: 72/900 games, 132s
+sh_age30: 96/900 games, 204s
+sh_age30: 120/900 games, 235s
+sh_age30: 144/900 games, 308s
+sh_age30: 168/900 games, 335s
+sh_age30: 192/900 games, 385s
+sh_age30: 216/900 games, 438s
+sh_age30: 240/900 games, 492s
+sh_age30: 264/900 games, 518s
+sh_age30: 288/900 games, 577s
+sh_age30: 312/900 games, 608s
+sh_age30: 336/900 games, 651s
+sh_age30: 360/900 games, 687s
+sh_age30: 384/900 games, 750s
+sh_age30: 408/900 games, 805s
+sh_age30: 432/900 games, 851s
+sh_age30: 456/900 games, 893s
+sh_age30: 480/900 games, 920s
+sh_age30: 504/900 games, 943s
+sh_age30: 528/900 games, 962s
+sh_age30: 552/900 games, 989s
+sh_age30: 576/900 games, 999s
+sh_age30: 600/900 games, 1032s
+sh_age30: 624/900 games, 1090s
+sh_age30: 648/900 games, 1175s
+sh_age30: 672/900 games, 1233s
+sh_age30: 696/900 games, 1360s
+sh_age30: 720/900 games, 1412s
+sh_age30: 744/900 games, 1519s
+sh_age30: 768/900 games, 1586s
+sh_age30: 792/900 games, 1682s
+sh_age30: 816/900 games, 1797s
+sh_age30: 840/900 games, 1936s
+sh_age30: 864/900 games, 2012s
+sh_age30: 888/900 games, 2157s
+sh_age30: 900/900 games, 2180s
+sh_age60: 24/900 games, 35s
+sh_age60: 48/900 games, 103s
+sh_age60: 72/900 games, 130s
+sh_age60: 96/900 games, 202s
+sh_age60: 120/900 games, 232s
+sh_age60: 144/900 games, 305s
+sh_age60: 168/900 games, 332s
+sh_age60: 192/900 games, 380s
+sh_age60: 216/900 games, 430s
+sh_age60: 240/900 games, 482s
+sh_age60: 264/900 games, 508s
+sh_age60: 288/900 games, 569s
+sh_age60: 312/900 games, 599s
+sh_age60: 336/900 games, 643s
+sh_age60: 360/900 games, 681s
+sh_age60: 384/900 games, 744s
+sh_age60: 408/900 games, 810s
+sh_age60: 432/900 games, 855s
+sh_age60: 456/900 games, 895s
+sh_age60: 480/900 games, 924s
+sh_age60: 504/900 games, 946s
+sh_age60: 528/900 games, 967s
+sh_age60: 552/900 games, 993s
+sh_age60: 576/900 games, 1004s
+sh_age60: 600/900 games, 1038s
+sh_age60: 624/900 games, 1098s
+sh_age60: 648/900 games, 1182s
+sh_age60: 672/900 games, 1238s
+sh_age60: 696/900 games, 1365s
+sh_age60: 720/900 games, 1420s
+sh_age60: 744/900 games, 1527s
+sh_age60: 768/900 games, 1591s
+sh_age60: 792/900 games, 1686s
+sh_age60: 816/900 games, 1802s
+sh_age60: 840/900 games, 1941s
+sh_age60: 864/900 games, 2017s
+sh_age60: 888/900 games, 2164s
+sh_age60: 900/900 games, 2187s
+# Ablation report: 20260930-224324-ablate-a110d4
+
+3 seeds, opponents cpp_nicked_v92, cpp_nicked_v75, cpp_leviathan3, v7-base-bot, nicked_v44, nicked_lab; 11 official + 14 extra maps, both sides. Objective: aligned. Delta = variant score minus base score on the same (opponent, map, seed, side); positive means removing the group helped. 95% CI resamples (map, seed) blocks.
+
+base: mean margin +0.142, wins 542/900; by opponent: cpp_nicked_v92 -0.481, cpp_nicked_v75 -0.123, cpp_leviathan3 +0.553, v7-base-bot +0.415, nicked_v44 +0.413, nicked_lab +0.075
+
+| variant | current pool delta [95% CI] | pool verdict | other maps | delta all 15 [95% CI] | verdict | vs cpp_nicked_v92 | vs cpp_nicked_v75 | vs cpp_leviathan3 | vs v7-base-bot | vs nicked_v44 | vs nicked_lab | official | extra | wins |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| sh_age30 | +0.038 [-0.004, +0.085] | neutral | +0.037 | +0.038 [+0.010, +0.065] | harmful (drop) | +0.060 | +0.033 | -0.019 | +0.089 | +0.055 | +0.008 | +0.000 | +0.067 | 563/900 |
+| sh_age60 | +0.026 [-0.013, +0.069] | neutral | +0.015 | +0.020 [-0.002, +0.044] | neutral | +0.006 | +0.029 | -0.009 | +0.093 | +0.038 | -0.038 | +0.000 | +0.035 | 552/900 |
+
+Noise: seed-to-seed SD of base's margin within a (opponent, map, side) cell 0.574 over 300 cells. Expected paired CI half-width with K seeds, 1.96 * sqrt(2 * 0.574^2 / (300 * K)): K=2: 0.065, K=3: 0.053, K=4: 0.046, K=6: 0.038, K=8: 0.033
+

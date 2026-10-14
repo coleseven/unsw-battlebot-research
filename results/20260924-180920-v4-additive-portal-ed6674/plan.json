@@ -1,0 +1,45 @@
+{
+  "question": "Does last-resort portal escape add value to clean additive v3+feeding+sonar?",
+  "baseline_hash": "bf33497158a49a7b",
+  "v3_hash": "69382825b699723d",
+  "live_hash": "ffe736af6c14ea33",
+  "bot_hashes": {
+    "additive": "bf33497158a49a7b",
+    "reference_v3": "69382825b699723d",
+    "portal": "e6e40509b4e5f30b"
+  },
+  "official_maps": [
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-180920-v4-additive-portal-ed6674\\maps\\Colosseum.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-180920-v4-additive-portal-ed6674\\maps\\default.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-180920-v4-additive-portal-ed6674\\maps\\queen_of_spades.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-180920-v4-additive-portal-ed6674\\maps\\schooltime.map",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-180920-v4-additive-portal-ed6674\\maps\\trophy.map"
+  ],
+  "stress_map": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-180920-v4-additive-portal-ed6674\\maps\\new_dense_small.map",
+  "map_hashes": {
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-180920-v4-additive-portal-ed6674\\maps\\Colosseum.map": "c7549a41ea26600f",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-180920-v4-additive-portal-ed6674\\maps\\default.map": "6bd7abf2ed51a7f6",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-180920-v4-additive-portal-ed6674\\maps\\queen_of_spades.map": "126d71b464432685",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-180920-v4-additive-portal-ed6674\\maps\\schooltime.map": "726c404f3b34b4ed",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-180920-v4-additive-portal-ed6674\\maps\\trophy.map": "5f1f6b23d6edb944",
+    "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-180920-v4-additive-portal-ed6674\\maps\\new_dense_small.map": "e762523300cb77a6"
+  },
+  "official_seeds": [
+    44004,
+    44005
+  ],
+  "stress_seed": 44004,
+  "workers": 1,
+  "official_games": 40,
+  "stress_games": 2,
+  "selection": "Exploratory. Portal variant should not lose paired score on official maps; replay audit must confirm portal use. Stress map is mechanism-only, not part of the official score. No automatic bot promotion or upload.",
+  "limits": "Five familiar portal maps, two new seeds, both sides; one synthetic portal-dense stress map. In-process matches, not judge CPU metering.",
+  "source_hashes": {
+    "experiments\\v4\\additive_portal_brain.py": "d944e304f859acf0",
+    "framework\\portal_escape.py": "24bf10d4e766df94",
+    "bcsim\\v4_additive_portal.py": "e11131569de994bc",
+    "bcsim\\match.py": "d546d7f5532b71f6",
+    "bcsim\\guarded.py": "87ac3dd271b72d9a",
+    "bcsim\\bounded.py": "c60b1fa2106c485f"
+  }
+}

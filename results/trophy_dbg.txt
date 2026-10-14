@@ -1,0 +1,316 @@
+DBG r0 id0 head 4,2 len 3 hubs 2 goal 124 chose MOVE E
+DBG r0 dir N total=126.1 food=6.0 explore=1.2 safety=0.0 hunt=0.0 goal=11.4 hub=7.2 misc=0.0 v3=100.3
+DBG r0 dir E total=132.1 food=8.1 explore=1.2 safety=0.0 hunt=0.0 goal=11.4 hub=8.0 misc=0.0 v3=103.0
+DBG r0 dir S total=128.4 food=12.4 explore=1.2 safety=0.0 hunt=0.0 goal=16.0 hub=8.0 misc=0.0 v3=90.9
+DBG r0 id2 head 4,22 len 3 hubs 2 goal 620 chose MOVE E
+DBG r0 dir N total=111.4 food=0.0 explore=1.5 safety=0.0 hunt=0.0 goal=11.4 hub=6.0 misc=0.0 v3=92.6
+DBG r0 dir E total=124.3 food=0.0 explore=1.5 safety=0.0 hunt=0.0 goal=11.4 hub=6.2 misc=0.0 v3=104.6
+DBG r0 dir S total=116.3 food=0.0 explore=1.5 safety=0.0 hunt=0.0 goal=16.0 hub=6.2 misc=0.0 v3=92.6
+DBG r1 id0 head 5,2 len 3 hubs 2 goal 124 chose MOVE E
+DBG r1 dir N total=120.9 food=0.0 explore=1.2 safety=0.0 hunt=0.0 goal=13.7 hub=7.5 misc=0.0 v3=98.4
+DBG r1 dir E total=144.2 food=7.2 explore=1.2 safety=0.0 hunt=0.0 goal=13.7 hub=8.4 misc=0.0 v3=113.2
+DBG r1 dir S total=128.4 food=10.3 explore=1.2 safety=0.0 hunt=0.0 goal=18.3 hub=8.4 misc=0.0 v3=90.1
+DBG r1 id2 head 5,22 len 3 hubs 2 goal 620 chose MOVE E
+DBG r1 dir N total=114.1 food=0.0 explore=1.6 safety=0.0 hunt=0.0 goal=13.7 hub=6.2 misc=0.0 v3=92.6
+DBG r1 dir E total=126.9 food=0.0 explore=1.6 safety=0.0 hunt=0.0 goal=13.7 hub=6.5 misc=0.0 v3=104.6
+DBG r1 dir S total=118.9 food=0.0 explore=1.6 safety=0.0 hunt=0.0 goal=18.3 hub=6.5 misc=0.0 v3=92.6
+DBG r2 id0 head 6,2 len 3 hubs 2 goal 124 chose MOVE E
+DBG r2 dir N total=117.7 food=5.3 explore=1.3 safety=0.0 hunt=0.0 goal=6.5 hub=8.0 misc=0.0 v3=96.7
+DBG r2 dir E total=133.4 food=5.3 explore=1.3 safety=0.0 hunt=0.0 goal=6.5 hub=9.0 misc=0.0 v3=110.9
+DBG r2 dir S total=130.0 food=8.9 explore=1.3 safety=0.0 hunt=0.0 goal=8.3 hub=9.0 misc=0.0 v3=102.6
+DBG r2 id2 head 6,22 len 3 hubs 2 goal 620 chose MOVE E
+DBG r2 dir N total=121.5 food=4.8 explore=1.7 safety=0.0 hunt=0.0 goal=16.0 hub=6.5 misc=0.0 v3=92.6
+DBG r2 dir E total=135.6 food=6.0 explore=1.7 safety=0.0 hunt=0.0 goal=16.0 hub=6.8 misc=0.0 v3=104.6
+DBG r2 dir S total=127.6 food=6.0 explore=1.7 safety=0.0 hunt=0.0 goal=20.6 hub=6.8 misc=0.0 v3=92.6
+DBG r3 id0 head 7,2 len 3 hubs 2 goal 124 chose MOVE E
+DBG r3 dir N total=185.4 food=35.9 explore=1.3 safety=0.0 hunt=0.0 goal=18.3 hub=8.4 misc=0.0 v3=121.5
+DBG r3 dir E total=199.1 food=35.9 explore=1.3 safety=0.0 hunt=0.0 goal=18.3 hub=9.6 misc=0.0 v3=133.5
+DBG r3 dir S total=167.0 food=25.6 explore=1.3 safety=0.0 hunt=0.0 goal=22.9 hub=9.6 misc=0.0 v3=107.7
+DBG r3 id2 head 7,22 len 3 hubs 2 goal 620 chose MOVE E
+DBG r3 dir N total=159.7 food=22.4 explore=1.7 safety=0.0 hunt=0.0 goal=18.3 hub=6.8 misc=0.0 v3=110.5
+DBG r3 dir E total=184.5 food=29.9 explore=1.7 safety=0.0 hunt=0.0 goal=18.3 hub=7.2 misc=0.0 v3=127.0
+DBG r3 dir S total=176.5 food=29.9 explore=1.7 safety=0.0 hunt=0.0 goal=22.9 hub=7.2 misc=0.0 v3=114.9
+DBG r4 id0 head 8,2 len 3 hubs 2 goal 124 chose MOVE E
+DBG r4 dir N total=193.3 food=44.9 explore=1.4 safety=0.0 hunt=0.0 goal=20.6 hub=9.0 misc=0.0 v3=117.5
+DBG r4 dir E total=207.1 food=44.9 explore=1.4 safety=0.0 hunt=0.0 goal=20.6 hub=10.2 misc=0.0 v3=129.6
+DBG r4 dir S total=164.9 food=29.9 explore=1.4 safety=0.0 hunt=0.0 goal=25.1 hub=10.2 misc=0.0 v3=98.2
+DBG r4 id2 head 8,22 len 3 hubs 2 goal 620 chose MOVE E
+DBG r4 dir N total=162.1 food=25.6 explore=1.7 safety=0.0 hunt=0.0 goal=16.0 hub=7.2 misc=0.0 v3=111.6
+DBG r4 dir E total=191.3 food=35.9 explore=1.7 safety=0.0 hunt=0.0 goal=16.0 hub=7.5 misc=0.0 v3=129.7
+DBG r4 dir S total=183.3 food=35.9 explore=1.7 safety=0.0 hunt=0.0 goal=20.6 hub=7.5 misc=0.0 v3=117.7
+DBG r5 id0 head 9,2 len 3 hubs 2 goal 124 chose MOVE E
+DBG r5 dir N total=219.0 food=59.8 explore=1.4 safety=0.0 hunt=0.0 goal=22.9 hub=9.6 misc=0.0 v3=125.4
+DBG r5 dir E total=233.0 food=59.8 explore=1.4 safety=0.0 hunt=0.0 goal=22.9 hub=11.0 misc=0.0 v3=137.4
+DBG r5 dir S total=184.8 food=35.9 explore=1.4 safety=0.0 hunt=0.0 goal=27.4 hub=11.0 misc=0.0 v3=109.0
+DBG r5 id2 head 9,22 len 3 hubs 2 goal 620 chose MOVE E
+DBG r5 dir N total=163.3 food=29.9 explore=1.8 safety=0.0 hunt=0.0 goal=11.4 hub=7.5 misc=0.0 v3=112.6
+DBG r5 dir E total=204.6 food=44.9 explore=1.8 safety=0.0 hunt=0.0 goal=16.0 hub=8.0 misc=0.0 v3=133.5
+DBG r5 dir S total=192.1 food=44.9 explore=1.8 safety=0.0 hunt=0.0 goal=16.0 hub=8.0 misc=0.0 v3=121.4
+DBG r6 id0 head 10,2 len 3 hubs 2 goal 124 chose MOVE N
+DBG r6 dir N total=268.8 food=89.7 explore=1.5 safety=0.0 hunt=0.0 goal=25.1 hub=10.2 misc=0.0 v3=142.2
+DBG r6 dir E total=221.2 food=44.9 explore=1.5 safety=0.0 hunt=0.0 goal=25.1 hub=11.9 misc=0.0 v3=137.3
+DBG r6 dir S total=176.9 food=29.9 explore=1.5 safety=0.0 hunt=0.0 goal=29.7 hub=11.9 misc=0.0 v3=103.8
+DBG r6 id2 head 10,22 len 3 hubs 2 goal 620 chose MOVE S
+DBG r6 dir N total=158.3 food=25.6 explore=1.9 safety=0.0 hunt=0.0 goal=4.6 hub=8.0 misc=0.0 v3=118.1
+DBG r6 dir E total=181.2 food=35.9 explore=1.9 safety=0.0 hunt=0.0 goal=6.5 hub=8.4 misc=0.0 v3=128.0
+DBG r6 dir S total=206.7 food=59.8 explore=1.9 safety=0.0 hunt=0.0 goal=6.5 hub=8.4 misc=0.0 v3=130.0
+DBG r7 id0 head 10,1 len 3 hubs 2 goal 124 chose MOVE N
+DBG r7 dir N total=383.8 food=179.4 explore=1.5 safety=0.0 hunt=0.0 goal=27.4 hub=9.6 misc=-39.0 v3=204.4
+DBG r7 dir E total=237.1 food=59.8 explore=1.5 safety=0.0 hunt=0.0 goal=27.4 hub=11.0 misc=0.0 v3=137.4
+DBG r7 dir W total=219.1 food=59.8 explore=1.5 safety=0.0 hunt=0.0 goal=32.0 hub=9.6 misc=0.0 v3=116.3
+DBG r7 id2 head 10,23 len 3 hubs 2 goal 620 chose MOVE E
+DBG r7 dir E total=123.7 food=8.5 explore=1.9 safety=0.0 hunt=0.0 goal=13.7 hub=9.0 misc=0.0 v3=90.7
+DBG r7 dir S total=-40.1 food=13.3 explore=1.9 safety=0.0 hunt=0.0 goal=13.7 hub=9.0 misc=-144.7 v3=66.2
+DBG r7 dir W total=112.9 food=13.3 explore=1.9 safety=0.0 hunt=0.0 goal=9.1 hub=8.0 misc=0.0 v3=80.6
+DBG r8 id0 head 10,0 len 4 hubs 2 goal 124 chose SPLIT 2
+DBG r8 id2 head 11,23 len 3 hubs 2 goal 620 chose MOVE E
+DBG r8 dir N total=146.4 food=25.6 explore=1.7 safety=0.0 hunt=0.0 goal=9.1 hub=8.4 misc=0.0 v3=101.4
+DBG r8 dir E total=193.7 food=35.9 explore=1.6 safety=0.0 hunt=0.0 goal=13.7 hub=9.6 misc=0.0 v3=132.4
+DBG r8 dir S total=164.9 food=35.9 explore=1.6 safety=0.0 hunt=0.0 goal=13.7 hub=9.6 misc=-3.7 v3=107.9
+DBG r8 id4 head 9,2 len 2 hubs 2 goal 512 chose MOVE W
+DBG r8 dir N total=92.2 food=10.9 explore=0.9 safety=0.0 hunt=0.0 goal=7.4 hub=9.6 misc=-3.7 v3=67.2
+DBG r8 dir S total=102.0 food=0.0 explore=0.9 safety=0.0 hunt=0.0 goal=5.5 hub=11.0 misc=0.0 v3=84.5
+DBG r8 dir W total=133.7 food=7.4 explore=0.9 safety=0.0 hunt=0.0 goal=5.5 hub=9.6 misc=0.0 v3=109.7
+DBG r9 id0 head 10,0 len 2 hubs 2 goal 124 chose MOVE E
+DBG r9 dir N total=140.0 food=15.5 explore=1.8 safety=0.0 hunt=0.0 goal=29.7 hub=9.0 misc=0.0 v3=83.5
+DBG r9 dir E total=150.6 food=9.3 explore=1.8 safety=0.0 hunt=0.0 goal=29.7 hub=10.2 misc=0.0 v3=99.6
+DBG r9 dir W total=147.1 food=15.5 explore=1.9 safety=0.0 hunt=0.0 goal=34.3 hub=9.0 misc=0.0 v3=86.4
+DBG r9 id2 head 12,23 len 3 hubs 2 goal 620 chose MOVE E
+DBG r9 dir N total=82.3 food=0.0 explore=2.1 safety=0.0 hunt=0.0 goal=1.8 hub=9.0 misc=0.0 v3=69.4
+DBG r9 dir E total=124.8 food=9.3 explore=1.7 safety=0.0 hunt=0.0 goal=5.5 hub=9.0 misc=0.0 v3=98.8
+DBG r9 dir S total=122.1 food=9.3 explore=1.9 safety=0.0 hunt=0.0 goal=5.5 hub=10.2 misc=-3.7 v3=98.9
+DBG r10 id0 head 11,0 len 2 hubs 2 goal 124 chose MOVE E
+DBG r10 dir N total=147.0 food=12.4 explore=1.7 safety=0.0 hunt=8.0 goal=29.7 hub=9.6 misc=0.0 v3=85.6
+DBG r10 dir E total=162.4 food=2.2 explore=1.7 safety=0.0 hunt=13.3 goal=29.7 hub=11.0 misc=0.0 v3=104.0
+DBG r10 dir S total=159.3 food=2.2 explore=1.9 safety=0.0 hunt=8.0 goal=36.6 hub=11.0 misc=0.0 v3=99.6
+DBG r10 id2 head 13,23 len 3 hubs 2 goal 304 chose MOVE S
+DBG r10 dir N total=129.4 food=0.0 explore=2.0 safety=0.0 hunt=0.0 goal=34.3 hub=8.4 misc=0.0 v3=84.7
+DBG r10 dir E total=133.4 food=12.4 explore=1.7 safety=0.0 hunt=0.0 goal=29.7 hub=8.4 misc=-35.2 v3=115.9
+DBG r10 dir S total=149.1 food=12.4 explore=1.9 safety=0.0 hunt=0.0 goal=29.7 hub=9.6 misc=-3.7 v3=99.3
+DBG r11 id0 head 12,0 len 2 hubs 2 goal 124 chose MOVE S
+DBG r11 dir N total=-40.4 food=2.6 explore=1.9 safety=-8.0 hunt=0.0 goal=10.2 hub=10.2 misc=-109.4 v3=52.1
+DBG r11 dir E total=-190.6 food=2.1 explore=1.7 safety=-8.0 hunt=-105.7 goal=10.2 hub=10.2 misc=-144.7 v3=43.0
+DBG r11 dir S total=126.9 food=2.4 explore=2.1 safety=0.0 hunt=0.0 goal=13.9 hub=11.9 misc=0.0 v3=96.7
+DBG r11 id2 head 13,24 len 3 hubs 2 goal 304 chose MOVE E
+DBG r11 dir E total=154.9 food=18.6 explore=1.7 safety=0.0 hunt=0.0 goal=29.7 hub=9.0 misc=0.0 v3=95.9
+DBG r11 dir S total=87.9 food=0.0 explore=1.4 safety=-8.0 hunt=0.0 goal=13.7 hub=10.2 misc=-3.7 v3=73.8
+DBG r11 dir W total=112.1 food=0.0 explore=2.1 safety=0.0 hunt=0.0 goal=36.6 hub=10.2 misc=-3.7 v3=67.0
+DBG r12 id0 head 12,1 len 2 hubs 2 goal 124 chose MOVE W
+DBG r12 dir E total=151.7 food=25.6 explore=1.9 safety=0.0 hunt=0.0 goal=25.1 hub=11.0 misc=0.0 v3=87.9
+DBG r12 dir S total=51.4 food=25.6 explore=2.2 safety=0.0 hunt=-105.7 goal=32.0 hub=13.0 misc=0.0 v3=83.8
+DBG r12 dir W total=189.0 food=35.9 explore=2.2 safety=0.0 hunt=0.0 goal=32.0 hub=11.0 misc=0.0 v3=108.0
+DBG r12 id2 head 14,24 len 3 hubs 2 goal 304 chose MOVE E
+DBG r12 dir N total=226.0 food=59.8 explore=2.0 safety=0.0 hunt=0.0 goal=38.8 hub=8.4 misc=0.0 v3=116.9
+DBG r12 dir E total=415.6 food=179.4 explore=1.6 safety=0.0 hunt=0.0 goal=29.7 hub=8.4 misc=0.0 v3=196.0
+DBG r12 dir S total=167.0 food=35.9 explore=1.9 safety=0.0 hunt=0.0 goal=29.7 hub=9.6 misc=0.0 v3=90.0
+DBG r13 id0 head 11,1 len 2 hubs 2 goal 124 chose MOVE W
+DBG r13 dir N total=129.0 food=4.5 explore=2.1 safety=0.0 hunt=0.0 goal=29.7 hub=10.2 misc=-2.5 v3=85.0
+DBG r13 dir S total=1.2 food=3.7 explore=2.2 safety=0.0 hunt=-105.7 goal=34.3 hub=11.9 misc=0.0 v3=54.8
+DBG r13 dir W total=145.9 food=3.7 explore=2.2 safety=0.0 hunt=0.0 goal=34.3 hub=10.2 misc=-2.1 v3=97.1
+DBG r13 id2 head 15,24 len 4 hubs 2 goal 304 chose SPLIT 2
+DBG r13 id7 head 13,23 len 2 hubs 2 goal 504 chose MOVE N
+DBG r13 dir N total=115.3 food=0.0 explore=1.0 safety=0.0 hunt=0.0 goal=18.3 hub=8.4 misc=0.0 v3=87.1
+DBG r13 dir E total=88.4 food=0.0 explore=1.0 safety=0.0 hunt=0.0 goal=13.7 hub=8.4 misc=-3.7 v3=69.0
+DBG r13 dir W total=103.9 food=0.0 explore=1.0 safety=0.0 hunt=0.0 goal=18.3 hub=9.6 misc=0.0 v3=75.1
+DBG r14 id0 head 10,1 len 2 hubs 2 goal 124 chose MOVE W
+DBG r14 dir N total=-18.0 food=4.1 explore=2.2 safety=0.0 hunt=0.0 goal=27.4 hub=9.6 misc=-111.7 v3=50.4
+DBG r14 dir S total=-2.1 food=3.5 explore=2.2 safety=0.0 hunt=-105.7 goal=32.0 hub=11.0 misc=-1.8 v3=56.8
+DBG r14 dir W total=142.2 food=3.5 explore=2.2 safety=0.0 hunt=0.0 goal=32.0 hub=9.6 misc=0.0 v3=94.5
+DBG r14 id2 head 15,24 len 2 hubs 2 goal 304 chose MOVE E
+DBG r14 dir N total=136.9 food=1.9 explore=1.7 safety=0.0 hunt=0.0 goal=38.8 hub=8.0 misc=0.0 v3=86.5
+DBG r14 dir E total=141.8 food=1.9 explore=1.7 safety=0.0 hunt=0.0 goal=29.7 hub=8.0 misc=0.0 v3=100.1
+DBG r14 dir S total=2.3 food=0.0 explore=1.8 safety=0.0 hunt=-105.7 goal=29.7 hub=9.0 misc=0.0 v3=67.5
+DBG r15 id0 head 9,1 len 2 hubs 2 goal 124 chose MOVE W
+DBG r15 dir N total=110.4 food=5.6 explore=2.2 safety=0.0 hunt=0.0 goal=25.1 hub=9.0 misc=0.0 v3=68.6
+DBG r15 dir S total=-2.7 food=4.5 explore=2.1 safety=0.0 hunt=-105.7 goal=29.7 hub=10.2 misc=-1.5 v3=57.9
+DBG r15 dir W total=146.0 food=4.5 explore=2.1 safety=0.0 hunt=0.0 goal=29.7 hub=9.0 misc=0.0 v3=100.2
+DBG r15 id2 head 16,24 len 2 hubs 2 goal 304 chose MOVE E
+DBG r15 dir N total=139.2 food=0.0 explore=1.8 safety=0.0 hunt=0.0 goal=38.8 hub=7.5 misc=0.0 v3=91.0
+DBG r15 dir E total=144.4 food=2.0 explore=1.7 safety=0.0 hunt=0.0 goal=29.7 hub=7.5 misc=0.0 v3=103.0
+DBG r15 dir S total=129.8 food=2.0 explore=1.8 safety=0.0 hunt=0.0 goal=29.7 hub=8.4 misc=0.0 v3=87.9
+DBG r16 id0 head 8,1 len 2 hubs 2 goal 124 chose MOVE W
+DBG r16 dir N total=127.0 food=5.0 explore=2.2 safety=0.0 hunt=0.0 goal=22.9 hub=8.4 misc=0.0 v3=88.6
+DBG r16 dir S total=-5.5 food=4.1 explore=2.1 safety=0.0 hunt=-105.7 goal=27.4 hub=9.6 misc=-1.2 v3=58.3
+DBG r16 dir W total=143.1 food=4.1 explore=2.1 safety=0.0 hunt=0.0 goal=27.4 hub=8.4 misc=0.0 v3=100.6
+DBG r16 id2 head 17,24 len 2 hubs 2 goal 304 chose MOVE E
+DBG r16 dir N total=136.7 food=2.1 explore=1.8 safety=0.0 hunt=0.0 goal=34.3 hub=7.2 misc=0.0 v3=91.4
+DBG r16 dir E total=139.9 food=1.9 explore=1.7 safety=0.0 hunt=0.0 goal=25.1 hub=7.2 misc=0.0 v3=103.5
+DBG r16 dir S total=130.5 food=1.9 explore=1.8 safety=0.0 hunt=0.0 goal=27.4 hub=8.0 misc=0.0 v3=91.4
+DBG r17 id0 head 7,1 len 2 hubs 2 goal 124 chose MOVE W
+DBG r17 dir N total=159.9 food=22.4 explore=2.1 safety=0.0 hunt=0.0 goal=20.6 hub=8.0 misc=0.0 v3=106.8
+DBG r17 dir S total=40.3 food=29.9 explore=1.9 safety=0.0 hunt=-105.7 goal=25.1 hub=9.0 misc=-0.9 v3=81.0
+DBG r17 dir W total=188.7 food=29.9 explore=1.9 safety=0.0 hunt=0.0 goal=25.1 hub=8.0 misc=0.0 v3=123.3
+DBG r17 id2 head 18,24 len 2 hubs 2 goal 304 chose MOVE E
+DBG r17 dir N total=127.8 food=2.0 explore=1.8 safety=0.0 hunt=0.0 goal=25.1 hub=6.8 misc=0.0 v3=91.9
+DBG r17 dir E total=133.2 food=1.9 explore=1.7 safety=0.0 hunt=0.0 goal=18.3 hub=6.8 misc=0.0 v3=104.0
+DBG r17 dir S total=123.7 food=1.9 explore=1.8 safety=0.0 hunt=0.0 goal=20.6 hub=7.5 misc=0.0 v3=91.9
+DBG r18 id0 head 6,1 len 2 hubs 2 goal 124 chose MOVE W
+DBG r18 dir N total=163.0 food=25.6 explore=2.1 safety=0.0 hunt=0.0 goal=18.3 hub=7.5 misc=0.0 v3=109.5
+DBG r18 dir S total=47.9 food=35.9 explore=1.8 safety=0.0 hunt=-105.7 goal=22.9 hub=8.4 misc=-0.6 v3=85.2
+DBG r18 dir W total=196.1 food=35.9 explore=1.8 safety=0.0 hunt=0.0 goal=22.9 hub=7.5 misc=0.0 v3=127.5
+DBG r18 id2 head 19,24 len 2 hubs 2 goal 304 chose MOVE E
+DBG r18 dir N total=120.5 food=2.0 explore=1.8 safety=0.0 hunt=0.0 goal=18.3 hub=6.5 misc=0.0 v3=91.9
+DBG r18 dir E total=132.8 food=1.8 explore=1.7 safety=0.0 hunt=0.0 goal=18.3 hub=6.5 misc=0.0 v3=104.0
+DBG r18 dir S total=116.5 food=1.8 explore=1.9 safety=0.0 hunt=0.0 goal=13.7 hub=7.2 misc=0.0 v3=91.9
+DBG r19 id0 head 5,1 len 2 hubs 2 goal 124 chose MOVE W
+DBG r19 dir N total=167.7 food=29.9 explore=1.9 safety=0.0 hunt=0.0 goal=16.0 hub=7.2 misc=0.0 v3=112.7
+DBG r19 dir S total=60.3 food=44.9 explore=1.7 safety=0.0 hunt=-105.7 goal=20.6 hub=8.0 misc=-0.3 v3=91.2
+DBG r19 dir W total=208.3 food=44.9 explore=1.7 safety=0.0 hunt=0.0 goal=20.6 hub=7.2 misc=0.0 v3=133.5
+DBG r19 id2 head 20,24 len 2 hubs 2 goal 304 chose MOVE E
+DBG r19 dir N total=120.1 food=1.9 explore=1.8 safety=0.0 hunt=0.0 goal=18.3 hub=6.2 misc=0.0 v3=91.9
+DBG r19 dir E total=133.3 food=2.5 explore=1.8 safety=0.0 hunt=0.0 goal=18.3 hub=6.2 misc=0.0 v3=104.0
+DBG r19 dir S total=116.9 food=2.5 explore=1.9 safety=0.0 hunt=0.0 goal=13.7 hub=6.8 misc=0.0 v3=91.9
+DBG r20 id0 head 4,1 len 2 hubs 2 goal 124 chose MOVE W
+DBG r20 dir N total=159.1 food=25.6 explore=1.9 safety=0.0 hunt=0.0 goal=13.7 hub=6.8 misc=0.0 v3=111.0
+DBG r20 dir S total=44.2 food=35.9 explore=1.5 safety=0.0 hunt=-105.7 goal=18.3 hub=7.5 misc=0.0 v3=86.7
+DBG r20 dir W total=192.0 food=35.9 explore=1.5 safety=0.0 hunt=0.0 goal=18.3 hub=6.8 misc=0.0 v3=129.0
+DBG r20 id2 head 21,24 len 2 hubs 2 goal 304 chose MOVE E
+DBG r20 dir N total=135.9 food=3.9 explore=2.2 safety=0.0 hunt=0.0 goal=32.0 hub=6.0 misc=0.0 v3=91.9
+DBG r20 dir E total=148.5 food=3.9 explore=2.2 safety=0.0 hunt=0.0 goal=32.0 hub=6.0 misc=0.0 v3=104.0
+DBG r20 dir S total=131.6 food=3.3 explore=2.4 safety=0.0 hunt=0.0 goal=27.4 hub=6.5 misc=0.0 v3=91.9
+DBG r21 id0 head 3,1 len 2 hubs 2 goal 124 chose MOVE W
+DBG r21 dir N total=116.6 food=3.2 explore=1.7 safety=0.0 hunt=0.0 goal=13.7 hub=6.5 misc=0.0 v3=91.5
+DBG r21 dir S total=118.9 food=3.6 explore=1.4 safety=0.0 hunt=0.0 goal=18.3 hub=7.2 misc=0.0 v3=88.4
+DBG r21 dir W total=133.8 food=3.6 explore=1.3 safety=0.0 hunt=0.0 goal=18.3 hub=6.5 misc=0.0 v3=103.6
+DBG r21 id2 head 22,24 len 2 hubs 2 goal 304 chose MOVE E
+DBG r21 dir N total=135.9 food=4.3 explore=1.9 safety=0.0 hunt=0.0 goal=32.0 hub=5.7 misc=0.0 v3=91.9
+DBG r21 dir E total=148.4 food=4.3 explore=1.9 safety=0.0 hunt=0.0 goal=32.0 hub=5.7 misc=0.0 v3=104.0
+DBG r21 dir S total=128.8 food=3.6 explore=1.9 safety=0.0 hunt=0.0 goal=25.1 hub=6.2 misc=0.0 v3=91.9
+DBG r22 id0 head 2,1 len 2 hubs 2 goal 120 chose MOVE W
+DBG r22 dir N total=116.1 food=3.4 explore=1.5 safety=0.0 hunt=0.0 goal=13.7 hub=6.2 misc=0.0 v3=91.2
+DBG r22 dir S total=121.8 food=4.0 explore=1.5 safety=0.0 hunt=0.0 goal=18.3 hub=6.8 misc=0.0 v3=91.2
+DBG r22 dir W total=133.6 food=4.0 explore=1.3 safety=0.0 hunt=0.0 goal=18.3 hub=6.2 misc=0.0 v3=103.2
+DBG r22 id2 head 23,24 len 2 hubs 2 goal 324 chose MOVE E
+DBG r22 dir N total=117.3 food=4.9 explore=1.8 safety=0.0 hunt=0.0 goal=13.7 hub=5.5 misc=0.0 v3=91.4
+DBG r22 dir E total=129.9 food=4.9 explore=1.8 safety=0.0 hunt=0.0 goal=13.7 hub=5.5 misc=0.0 v3=103.5
+DBG r22 dir S total=112.4 food=4.0 explore=1.8 safety=0.0 hunt=0.0 goal=9.1 hub=6.0 misc=0.0 v3=91.4
+DBG r23 id0 head 1,1 len 2 hubs 2 goal 320 chose MOVE W
+DBG r23 dir N total=116.1 food=3.8 explore=1.4 safety=0.0 hunt=0.0 goal=13.7 hub=6.0 misc=0.0 v3=91.2
+DBG r23 dir S total=121.9 food=4.5 explore=1.4 safety=0.0 hunt=0.0 goal=18.3 hub=6.5 misc=0.0 v3=91.2
+DBG r23 dir W total=133.8 food=4.5 explore=1.3 safety=0.0 hunt=0.0 goal=18.3 hub=6.0 misc=0.0 v3=103.2
+DBG r23 id2 head 24,24 len 2 hubs 2 goal 324 chose MOVE N
+DBG r23 dir N total=115.7 food=5.6 explore=1.8 safety=0.0 hunt=0.0 goal=11.4 hub=5.3 misc=0.0 v3=91.5
+DBG r23 dir E total=114.9 food=5.0 explore=1.8 safety=0.0 hunt=0.0 goal=6.9 hub=5.5 misc=-3.7 v3=99.0
+DBG r23 dir S total=101.7 food=4.1 explore=1.8 safety=0.0 hunt=0.0 goal=6.9 hub=5.7 misc=-3.7 v3=87.0
+DBG r24 id0 head 0,1 len 2 hubs 2 goal 320 chose MOVE W
+DBG r24 dir N total=111.9 food=3.9 explore=1.5 safety=0.0 hunt=0.0 goal=13.7 hub=5.7 misc=0.0 v3=87.2
+DBG r24 dir S total=122.8 food=5.2 explore=1.4 safety=0.0 hunt=0.0 goal=18.3 hub=6.2 misc=0.0 v3=91.7
+DBG r24 dir W total=130.0 food=4.7 explore=1.4 safety=0.0 hunt=0.0 goal=18.3 hub=6.0 misc=0.0 v3=99.2
+DBG r24 id2 head 24,23 len 2 hubs 2 goal 324 chose MOVE N
+DBG r24 dir N total=128.1 food=6.6 explore=1.7 safety=0.0 hunt=0.0 goal=11.4 hub=5.1 misc=0.0 v3=102.7
+DBG r24 dir E total=110.3 food=5.8 explore=1.7 safety=0.0 hunt=0.0 goal=6.9 hub=5.3 misc=0.0 v3=90.6
+DBG r24 dir W total=109.9 food=5.2 explore=1.7 safety=0.0 hunt=0.0 goal=6.9 hub=5.5 misc=0.0 v3=90.6
+DBG r25 id0 head 24,1 len 2 hubs 2 goal 320 chose MOVE W
+DBG r25 dir N total=111.7 food=4.0 explore=1.5 safety=0.0 hunt=0.0 goal=13.7 hub=5.7 misc=0.0 v3=86.8
+DBG r25 dir S total=122.6 food=5.3 explore=1.4 safety=0.0 hunt=0.0 goal=18.3 hub=6.2 misc=0.0 v3=91.4
+DBG r25 dir W total=134.2 food=4.3 explore=1.4 safety=0.0 hunt=0.0 goal=18.3 hub=6.2 misc=0.0 v3=103.5
+DBG r25 id2 head 24,22 len 2 hubs 2 goal 324 chose MOVE E
+DBG r25 dir N total=-53.5 food=5.3 explore=1.8 safety=0.0 hunt=0.0 goal=11.4 hub=5.1 misc=-144.7 v3=67.0
+DBG r25 dir E total=112.1 food=6.9 explore=1.7 safety=0.0 hunt=0.0 goal=6.9 hub=5.1 misc=0.0 v3=91.5
+DBG r25 dir W total=-40.4 food=4.8 explore=1.8 safety=0.0 hunt=0.0 goal=2.3 hub=5.3 misc=-109.4 v3=54.9
+DBG r26 id0 head 23,1 len 2 hubs 2 goal 320 chose MOVE W
+DBG r26 dir N total=144.5 food=22.4 explore=1.6 safety=0.0 hunt=0.0 goal=13.7 hub=6.0 misc=-3.7 v3=104.6
+DBG r26 dir S total=169.7 food=29.9 explore=1.5 safety=0.0 hunt=0.0 goal=18.3 hub=6.5 misc=0.0 v3=113.5
+DBG r26 dir W total=173.9 food=29.9 explore=1.5 safety=0.0 hunt=0.0 goal=18.3 hub=6.5 misc=-3.7 v3=121.0
+DBG r26 id2 head 0,22 len 2 hubs 2 goal 324 chose MOVE E
+DBG r26 dir N total=113.1 food=5.5 explore=1.9 safety=0.0 hunt=0.0 goal=13.7 hub=5.1 misc=0.0 v3=87.0
+DBG r26 dir E total=125.2 food=4.9 explore=1.8 safety=0.0 hunt=0.0 goal=9.1 hub=5.3 misc=0.0 v3=103.6
+DBG r26 dir S total=113.2 food=5.5 explore=1.8 safety=0.0 hunt=0.0 goal=9.1 hub=5.3 misc=0.0 v3=91.5
+DBG r27 id0 head 22,1 len 2 hubs 2 goal 320 chose MOVE W
+DBG r27 dir N total=128.6 food=25.6 explore=1.7 safety=0.0 hunt=0.0 goal=11.4 hub=6.2 misc=-3.7 v3=87.4
+DBG r27 dir S total=177.8 food=35.9 explore=1.6 safety=0.0 hunt=0.0 goal=16.0 hub=6.8 misc=0.0 v3=117.5
+DBG r27 dir W total=185.8 food=35.9 explore=1.6 safety=0.0 hunt=0.0 goal=16.0 hub=6.8 misc=0.0 v3=125.0
+DBG r27 id2 head 1,22 len 2 hubs 2 goal 324 chose MOVE E
+DBG r27 dir N total=119.6 food=5.6 explore=1.8 safety=0.0 hunt=0.0 goal=16.0 hub=5.3 misc=0.0 v3=90.8
+DBG r27 dir E total=126.7 food=4.5 explore=1.8 safety=0.0 hunt=0.0 goal=11.4 hub=5.5 misc=0.0 v3=102.9
+DBG r27 dir S total=115.2 food=5.6 explore=1.8 safety=0.0 hunt=0.0 goal=11.4 hub=5.5 misc=0.0 v3=90.8
+DBG r28 id0 head 21,1 len 2 hubs 2 goal 320 chose MOVE W
+DBG r28 dir N total=156.1 food=29.9 explore=1.6 safety=0.0 hunt=0.0 goal=9.1 hub=6.5 misc=0.0 v3=108.9
+DBG r28 dir S total=189.5 food=44.9 explore=1.6 safety=0.0 hunt=0.0 goal=13.7 hub=7.2 misc=0.0 v3=122.2
+DBG r28 dir W total=202.1 food=44.9 explore=1.6 safety=0.0 hunt=0.0 goal=13.7 hub=7.2 misc=0.0 v3=134.3
+DBG r28 id2 head 2,22 len 2 hubs 2 goal 324 chose MOVE E
+DBG r28 dir N total=122.8 food=5.2 explore=1.9 safety=0.0 hunt=0.0 goal=18.3 hub=5.5 misc=0.0 v3=91.9
+DBG r28 dir E total=129.9 food=4.2 explore=1.7 safety=0.0 hunt=0.0 goal=13.7 hub=5.7 misc=0.0 v3=104.0
+DBG r28 dir S total=118.3 food=5.2 explore=1.8 safety=0.0 hunt=0.0 goal=13.7 hub=5.7 misc=0.0 v3=91.9
+DBG r29 id0 head 20,1 len 2 hubs 2 goal 320 chose MOVE S
+DBG r29 dir N total=147.1 food=25.6 explore=1.7 safety=0.0 hunt=0.0 goal=2.3 hub=6.8 misc=0.0 v3=110.6
+DBG r29 dir S total=211.1 food=59.8 explore=1.8 safety=0.0 hunt=0.0 goal=11.4 hub=7.5 misc=0.0 v3=130.6
+DBG r29 dir W total=181.2 food=35.9 explore=1.7 safety=0.0 hunt=0.0 goal=6.9 hub=7.5 misc=0.0 v3=128.7
+DBG r29 id2 head 3,22 len 2 hubs 2 goal 324 chose MOVE E
+DBG r29 dir N total=125.4 food=4.8 explore=1.8 safety=0.0 hunt=0.0 goal=20.6 hub=5.7 misc=0.0 v3=92.5
+DBG r29 dir E total=132.7 food=4.0 explore=1.7 safety=0.0 hunt=0.0 goal=16.0 hub=6.0 misc=0.0 v3=104.6
+DBG r29 dir S total=121.0 food=4.8 explore=1.8 safety=0.0 hunt=0.0 goal=16.0 hub=6.0 misc=0.0 v3=92.5
+DBG r30 id0 head 20,2 len 2 hubs 2 goal 320 chose MOVE S
+DBG r30 dir E total=181.7 food=44.9 explore=1.7 safety=0.0 hunt=0.0 goal=6.9 hub=7.2 misc=0.0 v3=121.1
+DBG r30 dir S total=270.6 food=89.7 explore=1.7 safety=0.0 hunt=0.0 goal=11.4 hub=8.0 misc=0.0 v3=159.3
+DBG r30 dir W total=182.3 food=44.9 explore=1.5 safety=0.0 hunt=0.0 goal=6.9 hub=8.0 misc=0.0 v3=121.1
+DBG r30 id2 head 4,22 len 2 hubs 2 goal 324 chose MOVE E
+DBG r30 dir N total=127.5 food=4.4 explore=1.7 safety=0.0 hunt=0.0 goal=22.9 hub=6.0 misc=0.0 v3=92.5
+DBG r30 dir E total=134.9 food=3.7 explore=1.6 safety=0.0 hunt=0.0 goal=18.3 hub=6.2 misc=0.0 v3=104.6
+DBG r30 dir S total=123.1 food=4.4 explore=1.6 safety=0.0 hunt=0.0 goal=18.3 hub=6.2 misc=0.0 v3=92.5
+DBG r31 id0 head 20,3 len 2 hubs 2 goal 320 chose MOVE S
+DBG r31 dir E total=200.6 food=59.8 explore=1.7 safety=0.0 hunt=0.0 goal=4.6 hub=7.5 misc=0.0 v3=127.0
+DBG r31 dir S total=407.9 food=179.4 explore=1.6 safety=0.0 hunt=0.0 goal=9.1 hub=8.4 misc=0.0 v3=208.8
+DBG r31 dir W total=201.3 food=59.8 explore=1.5 safety=0.0 hunt=0.0 goal=4.6 hub=8.4 misc=0.0 v3=127.0
+DBG r31 id2 head 5,22 len 2 hubs 2 goal 324 chose MOVE E
+DBG r31 dir N total=129.7 food=4.1 explore=1.7 safety=0.0 hunt=0.0 goal=25.1 hub=6.2 misc=0.0 v3=92.5
+DBG r31 dir E total=137.4 food=3.7 explore=1.6 safety=0.0 hunt=0.0 goal=20.6 hub=6.5 misc=0.0 v3=104.6
+DBG r31 dir S total=125.3 food=4.1 explore=1.6 safety=0.0 hunt=0.0 goal=20.6 hub=6.5 misc=0.0 v3=92.5
+DBG r32 id0 head 20,4 len 3 hubs 2 goal 320 chose MOVE S
+DBG r32 dir E total=161.8 food=35.9 explore=1.7 safety=0.0 hunt=0.0 goal=2.3 hub=8.8 misc=0.0 v3=113.1
+DBG r32 dir S total=180.5 food=35.9 explore=1.7 safety=0.0 hunt=0.0 goal=6.9 hub=10.4 misc=0.0 v3=125.2
+DBG r32 dir W total=151.7 food=25.6 explore=1.7 safety=0.0 hunt=0.0 goal=6.9 hub=10.4 misc=0.0 v3=107.1
+DBG r32 id2 head 6,22 len 2 hubs 2 goal 324 chose MOVE E
+DBG r32 dir N total=132.0 food=3.9 explore=1.7 safety=0.0 hunt=0.0 goal=27.4 hub=6.5 misc=0.0 v3=92.5
+DBG r32 dir E total=140.5 food=4.1 explore=1.6 safety=0.0 hunt=0.0 goal=22.9 hub=6.8 misc=0.0 v3=104.6
+DBG r32 dir S total=127.9 food=4.1 explore=1.6 safety=0.0 hunt=0.0 goal=22.9 hub=6.8 misc=0.0 v3=92.5
+DBG r33 id0 head 20,5 len 3 hubs 2 goal 312 chose MOVE E
+DBG r33 dir E total=170.0 food=44.9 explore=1.7 safety=0.0 hunt=0.0 goal=4.6 hub=8.4 misc=0.0 v3=110.5
+DBG r33 dir S total=148.9 food=25.6 explore=1.4 safety=-8.0 hunt=0.0 goal=13.7 hub=11.5 misc=0.0 v3=104.2
+DBG r33 dir W total=155.1 food=25.6 explore=1.7 safety=0.0 hunt=0.0 goal=13.7 hub=11.5 misc=0.0 v3=102.6
+DBG r33 id2 head 7,22 len 2 hubs 2 goal 324 chose MOVE E
+DBG r33 dir N total=134.5 food=3.9 explore=1.6 safety=0.0 hunt=0.0 goal=29.7 hub=6.8 misc=0.0 v3=92.5
+DBG r33 dir E total=141.4 food=4.7 explore=1.6 safety=0.0 hunt=0.0 goal=22.9 hub=7.2 misc=0.0 v3=104.6
+DBG r33 dir S total=128.7 food=4.7 explore=1.6 safety=0.0 hunt=0.0 goal=22.9 hub=7.2 misc=0.0 v3=92.5
+DBG r34 id0 head 21,5 len 3 hubs 2 goal 312 chose MOVE E
+DBG r34 dir N total=162.0 food=35.9 explore=1.7 safety=0.0 hunt=0.0 goal=4.6 hub=11.5 misc=0.0 v3=108.3
+DBG r34 dir E total=212.7 food=59.8 explore=1.8 safety=0.0 hunt=0.0 goal=2.8 hub=14.4 misc=0.0 v3=133.5
+DBG r34 id2 head 8,22 len 2 hubs 2 goal 304 chose MOVE E
+DBG r34 dir N total=125.0 food=3.6 explore=1.7 safety=0.0 hunt=0.0 goal=20.6 hub=7.2 misc=0.0 v3=91.9
+DBG r34 dir E total=133.9 food=4.3 explore=1.6 safety=0.0 hunt=0.0 goal=16.0 hub=7.5 misc=0.0 v3=104.0
+DBG r34 dir S total=122.4 food=5.3 explore=1.6 safety=0.0 hunt=0.0 goal=16.0 hub=7.5 misc=0.0 v3=91.9
+DBG r35 id0 head 22,5 len 3 hubs 2 goal 312 chose MOVE E
+DBG r35 dir N total=23.4 food=29.9 explore=1.6 safety=0.0 hunt=-105.7 goal=5.5 hub=10.4 misc=0.0 v3=81.5
+DBG r35 dir E total=100.9 food=89.7 explore=1.3 safety=0.0 hunt=-105.7 goal=0.0 hub=16.4 misc=-35.2 v3=133.9
+DBG r35 id2 head 9,22 len 2 hubs 2 goal 304 chose MOVE E
+DBG r35 dir N total=127.0 food=4.0 explore=1.7 safety=0.0 hunt=0.0 goal=22.9 hub=7.5 misc=0.0 v3=90.8
+DBG r35 dir E total=135.3 food=4.0 explore=1.6 safety=0.0 hunt=0.0 goal=18.3 hub=8.0 misc=0.0 v3=102.9
+DBG r35 dir S total=123.6 food=4.9 explore=1.6 safety=0.0 hunt=0.0 goal=18.3 hub=8.0 misc=0.0 v3=90.8
+DBG r36 id0 head 23,5 len 3 hubs 2 goal 312 chose MOVE S
+DBG r36 dir E total=87.0 food=59.8 explore=1.4 safety=0.0 hunt=-105.7 goal=4.6 hub=19.1 misc=0.0 v3=107.1
+DBG r36 dir S total=368.2 food=179.4 explore=1.3 safety=-8.0 hunt=0.0 goal=4.6 hub=19.1 misc=0.0 v3=171.7
+DBG r36 id2 head 10,22 len 2 hubs 2 goal 304 chose MOVE E
+DBG r36 dir N total=129.3 food=3.8 explore=1.7 safety=0.0 hunt=0.0 goal=25.1 hub=8.0 misc=0.0 v3=90.6
+DBG r36 dir E total=138.2 food=4.4 explore=1.6 safety=0.0 hunt=0.0 goal=20.6 hub=8.4 misc=0.0 v3=102.7
+DBG r36 dir S total=125.7 food=4.5 explore=1.6 safety=0.0 hunt=0.0 goal=20.6 hub=8.4 misc=0.0 v3=90.6
+DBG r37 id0 head 23,6 len 4 hubs 2 goal 312 chose SPLIT 2
+DBG r37 id2 head 11,22 len 2 hubs 2 goal 304 chose MOVE S
+DBG r37 dir N total=128.6 food=3.6 explore=1.7 safety=0.0 hunt=0.0 goal=27.4 hub=8.4 misc=0.0 v3=87.5
+DBG r37 dir E total=123.5 food=4.1 explore=1.7 safety=0.0 hunt=0.0 goal=16.0 hub=9.0 misc=0.0 v3=92.3
+DBG r37 dir S total=129.1 food=5.0 explore=1.6 safety=0.0 hunt=0.0 goal=22.9 hub=9.0 misc=0.0 v3=90.6
+DBG r37 id16 head 21,5 len 2 hubs 2 goal 620 chose MOVE W
+DBG r37 dir N total=139.6 food=17.9 explore=0.9 safety=0.0 hunt=0.0 goal=5.5 hub=8.8 misc=0.0 v3=106.3
+DBG r37 dir W total=161.9 food=22.4 explore=0.9 safety=0.0 hunt=0.0 goal=5.5 hub=10.4 misc=0.0 v3=122.1
+DBG r38 id0 head 23,6 len 2 hubs 2 goal 312 chose MOVE S
+DBG r38 id2 head 11,23 len 2 hubs 2 goal 304 chose MOVE S
+DBG r38 dir E total=130.6 food=4.7 explore=1.6 safety=0.0 hunt=0.0 goal=22.9 hub=9.6 misc=0.0 v3=91.9
+DBG r38 dir S total=142.4 food=4.0 explore=1.5 safety=0.0 hunt=0.0 goal=22.9 hub=9.6 misc=0.0 v3=104.0
+DBG r38 dir W total=136.4 food=4.8 explore=1.5 safety=0.0 hunt=0.0 goal=29.7 hub=8.4 misc=0.0 v3=91.9
+DBG r39 id2 head 11,24 len 2 hubs 2 goal 304 chose MOVE S
+DBG r39 dir E total=133.8 food=4.3 explore=1.6 safety=0.0 hunt=0.0 goal=25.1 hub=10.2 misc=0.0 v3=92.5
+DBG r39 dir S total=145.7 food=3.7 explore=1.6 safety=0.0 hunt=0.0 goal=25.1 hub=10.2 misc=0.0 v3=104.6
+DBG r39 dir W total=139.5 food=4.4 explore=1.6 safety=0.0 hunt=0.0 goal=32.0 hub=9.0 misc=0.0 v3=92.5
+DBG r40 id2 head 11,0 len 2 hubs 2 goal 304 chose MOVE S
+DBG r40 dir E total=129.5 food=4.0 explore=1.4 safety=0.0 hunt=0.0 goal=20.6 hub=11.0 misc=0.0 v3=92.5
+DBG r40 dir S total=144.1 food=3.7 explore=1.4 safety=0.0 hunt=0.0 goal=22.9 hub=11.0 misc=0.0 v3=104.6
+DBG r40 dir W total=134.9 food=4.1 explore=1.3 safety=0.0 hunt=0.0 goal=27.4 hub=9.6 misc=0.0 v3=92.5

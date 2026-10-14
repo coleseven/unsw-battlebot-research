@@ -1,0 +1,27 @@
+{
+  "maps": {
+    "default_afc3707a967881d6": {
+      "games": 4,
+      "verified_candidate_turns": 43684,
+      "overrides": 2103,
+      "late_overrides": 249,
+      "override_own_turn_deaths": 10,
+      "overrides_with_baseline_food_route": 6,
+      "overrides_without_baseline_food_route": 2097,
+      "immediate_portal_overrides": 81,
+      "hidden_immediate_portal_exits": 81
+    },
+    "queen_of_spades_6cdb74a7a52d715a": {
+      "games": 4,
+      "verified_candidate_turns": 12796,
+      "overrides": 649,
+      "late_overrides": 50,
+      "override_own_turn_deaths": 1,
+      "overrides_with_baseline_food_route": 3,
+      "overrides_without_baseline_food_route": 646,
+      "immediate_portal_overrides": 64,
+      "hidden_immediate_portal_exits": 64
+    }
+  },
+  "limits": "Baseline action on visited states is not a counterfactual game outcome. No strategy changes from these validation cases."
+}

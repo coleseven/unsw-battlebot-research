@@ -1,0 +1,610 @@
+[
+  {
+    "id": 981442,
+    "ranked": true,
+    "challenge": false,
+    "tournament": false,
+    "a": {
+      "id": 351,
+      "name": "Cognoscenti",
+      "elo": 1479
+    },
+    "b": {
+      "id": 590,
+      "name": "777",
+      "elo": 1534
+    },
+    "resultsA": [
+      "win",
+      "loss",
+      "loss",
+      "win",
+      "win"
+    ],
+    "winsA": 3,
+    "winsB": 2,
+    "eloChangeA": 9,
+    "eloChangeB": -3,
+    "outcome": "a",
+    "replayId": 981442,
+    "at": "2026-10-03T18:19:55.958Z",
+    "rating": 1503,
+    "wait": null
+  },
+  {
+    "id": 980020,
+    "ranked": true,
+    "challenge": false,
+    "tournament": false,
+    "a": {
+      "id": 1022,
+      "name": "ouroboros",
+      "elo": 1613
+    },
+    "b": {
+      "id": 590,
+      "name": "777",
+      "elo": 1535
+    },
+    "resultsA": [
+      "loss",
+      "win",
+      "loss",
+      "win",
+      "win"
+    ],
+    "winsA": 3,
+    "winsB": 2,
+    "eloChangeA": 5,
+    "eloChangeB": -1,
+    "outcome": "a",
+    "replayId": 980020,
+    "at": "2026-10-03T17:49:19.301Z",
+    "rating": 1575,
+    "wait": null
+  },
+  {
+    "id": 979004,
+    "ranked": true,
+    "challenge": false,
+    "tournament": false,
+    "a": {
+      "id": 590,
+      "name": "777",
+      "elo": 1538
+    },
+    "b": {
+      "id": 273,
+      "name": "Quantify",
+      "elo": 1408
+    },
+    "resultsA": [
+      "win",
+      "loss",
+      "loss",
+      "win",
+      "win"
+    ],
+    "winsA": 3,
+    "winsB": 2,
+    "eloChangeA": -3,
+    "eloChangeB": 1,
+    "outcome": "a",
+    "replayId": 979004,
+    "at": "2026-10-03T17:27:30.461Z",
+    "rating": 1471,
+    "wait": null
+  },
+  {
+    "id": 978435,
+    "ranked": true,
+    "challenge": false,
+    "tournament": false,
+    "a": {
+      "id": 835,
+      "name": "\u5929\u5929\u5f00\u5fc3 :(",
+      "elo": 1658
+    },
+    "b": {
+      "id": 590,
+      "name": "777",
+      "elo": 1535
+    },
+    "resultsA": [
+      "win",
+      "win",
+      "loss",
+      "win",
+      "loss"
+    ],
+    "winsA": 3,
+    "winsB": 2,
+    "eloChangeA": -4,
+    "eloChangeB": 3,
+    "outcome": "a",
+    "replayId": 978435,
+    "at": "2026-10-03T17:17:52.631Z",
+    "rating": 1592,
+    "wait": null
+  },
+  {
+    "id": 976807,
+    "ranked": true,
+    "challenge": false,
+    "tournament": false,
+    "a": {
+      "id": 190,
+      "name": "risq-v",
+      "elo": 1563
+    },
+    "b": {
+      "id": 590,
+      "name": "777",
+      "elo": 1537
+    },
+    "resultsA": [
+      "win",
+      "win",
+      "loss",
+      "win",
+      "win"
+    ],
+    "winsA": 4,
+    "winsB": 1,
+    "eloChangeA": 10,
+    "eloChangeB": -2,
+    "outcome": "a",
+    "replayId": 976807,
+    "at": "2026-10-03T16:47:53.963Z",
+    "rating": 1538,
+    "wait": null
+  },
+  {
+    "id": 975838,
+    "ranked": true,
+    "challenge": false,
+    "tournament": false,
+    "a": {
+      "id": 919,
+      "name": "1234",
+      "elo": 1703
+    },
+    "b": {
+      "id": 590,
+      "name": "777",
+      "elo": 1544
+    },
+    "resultsA": [
+      "win",
+      "win",
+      "win",
+      "win",
+      "win"
+    ],
+    "winsA": 5,
+    "winsB": 0,
+    "eloChangeA": 3,
+    "eloChangeB": -7,
+    "outcome": "a",
+    "replayId": 975838,
+    "at": "2026-10-03T16:26:36.101Z",
+    "rating": 1619,
+    "wait": null
+  },
+  {
+    "id": 975266,
+    "ranked": true,
+    "challenge": false,
+    "tournament": false,
+    "a": {
+      "id": 262,
+      "name": "NUSW Battlecode",
+      "elo": 1590
+    },
+    "b": {
+      "id": 590,
+      "name": "777",
+      "elo": 1551
+    },
+    "resultsA": [
+      "win",
+      "win",
+      "win",
+      "win",
+      "loss"
+    ],
+    "winsA": 4,
+    "winsB": 1,
+    "eloChangeA": 5,
+    "eloChangeB": -7,
+    "outcome": "a",
+    "replayId": 975266,
+    "at": "2026-10-03T16:16:20.480Z",
+    "rating": 1555,
+    "wait": null
+  },
+  {
+    "id": 973650,
+    "ranked": true,
+    "challenge": false,
+    "tournament": false,
+    "a": {
+      "id": 196,
+      "name": "No Idea",
+      "elo": 1618
+    },
+    "b": {
+      "id": 590,
+      "name": "777",
+      "elo": 1553
+    },
+    "resultsA": [
+      "win",
+      "loss",
+      "win",
+      "win",
+      "win"
+    ],
+    "winsA": 4,
+    "winsB": 1,
+    "eloChangeA": 2,
+    "eloChangeB": -2,
+    "outcome": "a",
+    "replayId": 973650,
+    "at": "2026-10-03T15:46:58.670Z",
+    "rating": 1518,
+    "wait": null
+  },
+  {
+    "id": 972500,
+    "ranked": true,
+    "challenge": false,
+    "tournament": false,
+    "a": {
+      "id": 590,
+      "name": "777",
+      "elo": 1549
+    },
+    "b": {
+      "id": 528,
+      "name": "JalSena",
+      "elo": 1453
+    },
+    "resultsA": [
+      "win",
+      "win",
+      "win",
+      "loss",
+      "win"
+    ],
+    "winsA": 4,
+    "winsB": 1,
+    "eloChangeA": 4,
+    "eloChangeB": -4,
+    "outcome": "a",
+    "replayId": 972500,
+    "at": "2026-10-03T15:24:27.458Z",
+    "rating": 1501,
+    "wait": null
+  },
+  {
+    "id": 971786,
+    "ranked": true,
+    "challenge": false,
+    "tournament": false,
+    "a": {
+      "id": 590,
+      "name": "777",
+      "elo": 1544
+    },
+    "b": {
+      "id": 141,
+      "name": "Sarvottam",
+      "elo": 1605
+    },
+    "resultsA": [
+      "win",
+      "loss",
+      "loss",
+      "win",
+      "win"
+    ],
+    "winsA": 3,
+    "winsB": 2,
+    "eloChangeA": 5,
+    "eloChangeB": -2,
+    "outcome": "a",
+    "replayId": 971786,
+    "at": "2026-10-03T15:15:04.009Z",
+    "rating": 1560,
+    "wait": null
+  },
+  {
+    "id": 969805,
+    "ranked": true,
+    "challenge": false,
+    "tournament": false,
+    "a": {
+      "id": 78,
+      "name": "Citadel Insecurities",
+      "elo": 1601
+    },
+    "b": {
+      "id": 590,
+      "name": "777",
+      "elo": 1538
+    },
+    "resultsA": [
+      "loss",
+      "win",
+      "loss",
+      "win",
+      "loss"
+    ],
+    "winsA": 2,
+    "winsB": 3,
+    "eloChangeA": -4,
+    "eloChangeB": 6,
+    "outcome": "b",
+    "replayId": 969805,
+    "at": "2026-10-03T14:45:57.174Z",
+    "rating": 1553,
+    "wait": null
+  },
+  {
+    "id": 968533,
+    "ranked": true,
+    "challenge": false,
+    "tournament": false,
+    "a": {
+      "id": 590,
+      "name": "777",
+      "elo": 1539
+    },
+    "b": {
+      "id": 528,
+      "name": "JalSena",
+      "elo": 1458
+    },
+    "resultsA": [
+      "win",
+      "loss",
+      "win",
+      "win",
+      "loss"
+    ],
+    "winsA": 3,
+    "winsB": 2,
+    "eloChangeA": -1,
+    "eloChangeB": 1,
+    "outcome": "a",
+    "replayId": 968533,
+    "at": "2026-10-03T14:23:40.452Z",
+    "rating": 1501,
+    "wait": null
+  },
+  {
+    "id": 967943,
+    "ranked": true,
+    "challenge": false,
+    "tournament": false,
+    "a": {
+      "id": 590,
+      "name": "777",
+      "elo": 1544
+    },
+    "b": {
+      "id": 141,
+      "name": "Sarvottam",
+      "elo": 1603
+    },
+    "resultsA": [
+      "win",
+      "win",
+      "loss",
+      "loss",
+      "loss"
+    ],
+    "winsA": 2,
+    "winsB": 3,
+    "eloChangeA": -5,
+    "eloChangeB": 2,
+    "outcome": "b",
+    "replayId": 967943,
+    "at": "2026-10-03T14:14:05.578Z",
+    "rating": 1560,
+    "wait": null
+  },
+  {
+    "id": 966058,
+    "ranked": true,
+    "challenge": false,
+    "tournament": false,
+    "a": {
+      "id": 590,
+      "name": "777",
+      "elo": 1545
+    },
+    "b": {
+      "id": 78,
+      "name": "Citadel Insecurities",
+      "elo": 1603
+    },
+    "resultsA": [
+      "loss",
+      "loss",
+      "loss",
+      "win",
+      "loss"
+    ],
+    "winsA": 1,
+    "winsB": 4,
+    "eloChangeA": -1,
+    "eloChangeB": 2,
+    "outcome": "b",
+    "replayId": 966058,
+    "at": "2026-10-03T13:44:09.146Z",
+    "rating": 1553,
+    "wait": null
+  },
+  {
+    "id": 964857,
+    "ranked": true,
+    "challenge": false,
+    "tournament": false,
+    "a": {
+      "id": 528,
+      "name": "JalSena",
+      "elo": 1463
+    },
+    "b": {
+      "id": 590,
+      "name": "777",
+      "elo": 1543
+    },
+    "resultsA": [
+      "loss",
+      "loss",
+      "loss",
+      "win",
+      "loss"
+    ],
+    "winsA": 1,
+    "winsB": 4,
+    "eloChangeA": -3,
+    "eloChangeB": 2,
+    "outcome": "b",
+    "replayId": 964857,
+    "at": "2026-10-03T13:22:47.319Z",
+    "rating": 1501,
+    "wait": null
+  },
+  {
+    "id": 964390,
+    "ranked": true,
+    "challenge": false,
+    "tournament": false,
+    "a": {
+      "id": 186,
+      "name": "Macleans",
+      "elo": 1483
+    },
+    "b": {
+      "id": 590,
+      "name": "777",
+      "elo": 1535
+    },
+    "resultsA": [
+      "win",
+      "loss",
+      "loss",
+      "loss",
+      "loss"
+    ],
+    "winsA": 1,
+    "winsB": 4,
+    "eloChangeA": -6,
+    "eloChangeB": 8,
+    "outcome": "b",
+    "replayId": 964390,
+    "at": "2026-10-03T13:13:12.400Z",
+    "rating": 1504,
+    "wait": null
+  },
+  {
+    "id": 962400,
+    "ranked": true,
+    "challenge": false,
+    "tournament": false,
+    "a": {
+      "id": 590,
+      "name": "777",
+      "elo": 1538
+    },
+    "b": {
+      "id": 78,
+      "name": "Citadel Insecurities",
+      "elo": 1610
+    },
+    "resultsA": [
+      "loss",
+      "win",
+      "loss",
+      "loss",
+      "win"
+    ],
+    "winsA": 2,
+    "winsB": 3,
+    "eloChangeA": -3,
+    "eloChangeB": 2,
+    "outcome": "b",
+    "replayId": 962400,
+    "at": "2026-10-03T12:43:01.034Z",
+    "rating": 1553,
+    "wait": null
+  },
+  {
+    "id": 961063,
+    "ranked": true,
+    "challenge": false,
+    "tournament": false,
+    "a": {
+      "id": 590,
+      "name": "777",
+      "elo": 1543
+    },
+    "b": {
+      "id": 528,
+      "name": "JalSena",
+      "elo": 1461
+    },
+    "resultsA": [
+      "loss",
+      "win",
+      "loss",
+      "win",
+      "loss"
+    ],
+    "winsA": 2,
+    "winsB": 3,
+    "eloChangeA": -5,
+    "eloChangeB": 3,
+    "outcome": "b",
+    "replayId": 961063,
+    "at": "2026-10-03T12:22:02.855Z",
+    "rating": 1501,
+    "wait": null
+  },
+  {
+    "id": 960486,
+    "ranked": true,
+    "challenge": false,
+    "tournament": false,
+    "a": {
+      "id": 186,
+      "name": "Macleans",
+      "elo": 1491
+    },
+    "b": {
+      "id": 590,
+      "name": "777",
+      "elo": 1537
+    },
+    "resultsA": [
+      "loss",
+      "loss",
+      "win",
+      "loss",
+      "loss"
+    ],
+    "winsA": 1,
+    "winsB": 4,
+    "eloChangeA": -4,
+    "eloChangeB": 6,
+    "outcome": "b",
+    "replayId": 960486,
+    "at": "2026-10-03T12:12:22.755Z",
+    "rating": 1504,
+    "wait": null
+  }
+]

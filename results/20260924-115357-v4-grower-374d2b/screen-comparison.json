@@ -1,0 +1,50 @@
+{
+  "comparison": {
+    "mature": {
+      "paired_pool": {
+        "difference": 0.0,
+        "map_cluster_ci95": [
+          0.0,
+          0.0
+        ],
+        "paired_block_ci95": [
+          0.0,
+          0.0
+        ],
+        "maps": 4,
+        "blocks": 8,
+        "matched_games": 16
+      },
+      "direct": {
+        "wins": 4,
+        "draws": 0,
+        "losses": 4,
+        "score": 0.5
+      }
+    },
+    "opportunity": {
+      "paired_pool": {
+        "difference": -0.0625,
+        "map_cluster_ci95": [
+          -0.1875,
+          0.0
+        ],
+        "paired_block_ci95": [
+          -0.1875,
+          0.0
+        ],
+        "maps": 4,
+        "blocks": 8,
+        "matched_games": 16
+      },
+      "direct": {
+        "wins": 5,
+        "draws": 0,
+        "losses": 3,
+        "score": 0.625
+      }
+    }
+  },
+  "selected_for_fresh_followup": null,
+  "selection_is_promotion": false
+}

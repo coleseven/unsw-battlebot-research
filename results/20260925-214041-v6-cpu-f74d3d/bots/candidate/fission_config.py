@@ -1,0 +1,2 @@
+THRESHOLD = 4
+SMALL_CHILD = False

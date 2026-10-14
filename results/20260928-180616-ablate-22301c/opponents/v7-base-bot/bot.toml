@@ -1,0 +1,4 @@
+# V7 C++ port of the v6 search core (PARITY / matching build).
+[project]
+language = "c++"
+include = [ "*.cpp", "*.hpp" ]

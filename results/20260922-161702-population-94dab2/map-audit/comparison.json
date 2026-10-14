@@ -1,0 +1,28 @@
+{
+  "difference": 0.44166666666666665,
+  "map_cluster_ci95": [
+    0.35,
+    0.525
+  ],
+  "paired_block_ci95": [
+    0.38333333333333336,
+    0.5
+  ],
+  "maps": 5,
+  "blocks": 60,
+  "matched_games": 120,
+  "kept_maps": [
+    "arena_728547b8376892d9",
+    "queen_of_spades_90867997b27cae7f",
+    "Default_908dcc5cee06830e",
+    "trophy_a3671180ec15b2b0",
+    "Devil_d0935a95185a8dd9"
+  ],
+  "excluded_maps": {
+    "Big_Empty_60f7d35583505a93": "same semantic map as screening or an earlier held-out map",
+    "default_c14ae35451fc0e61": "same semantic map as screening or an earlier held-out map"
+  },
+  "excluded_games": 96,
+  "map_identity_code_hash": "01de427666f7dc60",
+  "selection_changed": false
+}

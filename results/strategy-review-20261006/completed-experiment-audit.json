@@ -1,0 +1,425 @@
+{
+  "D11": {
+    "base": {
+      "n": 1122,
+      "wins": 631,
+      "queen_alive": 381,
+      "classes": {
+        "both_alive": {
+          "n": 97,
+          "wins": 46,
+          "draws": 0
+        },
+        "both_dead": {
+          "n": 536,
+          "wins": 275,
+          "draws": 0
+        },
+        "elimination": {
+          "n": 208,
+          "wins": 74,
+          "draws": 0
+        },
+        "only_ours": {
+          "n": 236,
+          "wins": 236,
+          "draws": 0
+        },
+        "only_theirs": {
+          "n": 45,
+          "wins": 0,
+          "draws": 0
+        }
+      }
+    },
+    "x30gp": {
+      "n": 1122,
+      "wins": 678,
+      "queen_alive": 354,
+      "classes": {
+        "both_alive": {
+          "n": 86,
+          "wins": 41,
+          "draws": 0
+        },
+        "both_dead": {
+          "n": 497,
+          "wins": 315,
+          "draws": 0
+        },
+        "elimination": {
+          "n": 263,
+          "wins": 94,
+          "draws": 0
+        },
+        "only_ours": {
+          "n": 228,
+          "wins": 228,
+          "draws": 0
+        },
+        "only_theirs": {
+          "n": 48,
+          "wins": 0,
+          "draws": 0
+        }
+      },
+      "win_flips": {
+        "better": 228,
+        "worse": 181,
+        "same": 713
+      },
+      "queen_flips": {
+        "saved": 140,
+        "lost": 167
+      }
+    },
+    "x30gp_s": {
+      "n": 1122,
+      "wins": 684,
+      "queen_alive": 357,
+      "classes": {
+        "both_alive": {
+          "n": 86,
+          "wins": 41,
+          "draws": 0
+        },
+        "both_dead": {
+          "n": 495,
+          "wins": 314,
+          "draws": 0
+        },
+        "elimination": {
+          "n": 265,
+          "wins": 101,
+          "draws": 0
+        },
+        "only_ours": {
+          "n": 228,
+          "wins": 228,
+          "draws": 0
+        },
+        "only_theirs": {
+          "n": 48,
+          "wins": 0,
+          "draws": 0
+        }
+      },
+      "win_flips": {
+        "better": 233,
+        "worse": 180,
+        "same": 709
+      },
+      "queen_flips": {
+        "saved": 144,
+        "lost": 168
+      }
+    }
+  },
+  "D12": {
+    "base": {
+      "n": 476,
+      "wins": 254,
+      "queen_alive": 154,
+      "classes": {
+        "both_alive": {
+          "n": 47,
+          "wins": 20,
+          "draws": 0
+        },
+        "both_dead": {
+          "n": 214,
+          "wins": 117,
+          "draws": 0
+        },
+        "elimination": {
+          "n": 104,
+          "wins": 30,
+          "draws": 0
+        },
+        "only_ours": {
+          "n": 87,
+          "wins": 87,
+          "draws": 0
+        },
+        "only_theirs": {
+          "n": 24,
+          "wins": 0,
+          "draws": 0
+        }
+      }
+    },
+    "bg2": {
+      "n": 476,
+      "wins": 254,
+      "queen_alive": 155,
+      "classes": {
+        "both_alive": {
+          "n": 46,
+          "wins": 20,
+          "draws": 0
+        },
+        "both_dead": {
+          "n": 208,
+          "wins": 113,
+          "draws": 0
+        },
+        "elimination": {
+          "n": 109,
+          "wins": 33,
+          "draws": 0
+        },
+        "only_ours": {
+          "n": 88,
+          "wins": 88,
+          "draws": 0
+        },
+        "only_theirs": {
+          "n": 25,
+          "wins": 0,
+          "draws": 0
+        }
+      },
+      "win_flips": {
+        "better": 5,
+        "worse": 5,
+        "same": 466
+      },
+      "queen_flips": {
+        "saved": 3,
+        "lost": 2
+      }
+    },
+    "dq": {
+      "n": 476,
+      "wins": 260,
+      "queen_alive": 164,
+      "classes": {
+        "both_alive": {
+          "n": 50,
+          "wins": 25,
+          "draws": 0
+        },
+        "both_dead": {
+          "n": 201,
+          "wins": 108,
+          "draws": 0
+        },
+        "elimination": {
+          "n": 106,
+          "wins": 35,
+          "draws": 0
+        },
+        "only_ours": {
+          "n": 92,
+          "wins": 92,
+          "draws": 0
+        },
+        "only_theirs": {
+          "n": 27,
+          "wins": 0,
+          "draws": 0
+        }
+      },
+      "win_flips": {
+        "better": 40,
+        "worse": 34,
+        "same": 402
+      },
+      "queen_flips": {
+        "saved": 32,
+        "lost": 22
+      }
+    }
+  },
+  "D13": {
+    "base": {
+      "n": 476,
+      "wins": 253,
+      "queen_alive": 143,
+      "classes": {
+        "both_alive": {
+          "n": 43,
+          "wins": 23,
+          "draws": 0
+        },
+        "both_dead": {
+          "n": 216,
+          "wins": 115,
+          "draws": 0
+        },
+        "elimination": {
+          "n": 110,
+          "wins": 35,
+          "draws": 0
+        },
+        "only_ours": {
+          "n": 80,
+          "wins": 80,
+          "draws": 0
+        },
+        "only_theirs": {
+          "n": 27,
+          "wins": 0,
+          "draws": 0
+        }
+      }
+    },
+    "v3half": {
+      "n": 476,
+      "wins": 259,
+      "queen_alive": 147,
+      "classes": {
+        "both_alive": {
+          "n": 39,
+          "wins": 18,
+          "draws": 0
+        },
+        "both_dead": {
+          "n": 211,
+          "wins": 118,
+          "draws": 0
+        },
+        "elimination": {
+          "n": 99,
+          "wins": 29,
+          "draws": 0
+        },
+        "only_ours": {
+          "n": 94,
+          "wins": 94,
+          "draws": 0
+        },
+        "only_theirs": {
+          "n": 33,
+          "wins": 0,
+          "draws": 0
+        }
+      },
+      "win_flips": {
+        "better": 86,
+        "worse": 80,
+        "same": 310
+      },
+      "queen_flips": {
+        "saved": 64,
+        "lost": 60
+      }
+    },
+    "v3quarter": {
+      "n": 476,
+      "wins": 238,
+      "queen_alive": 135,
+      "classes": {
+        "both_alive": {
+          "n": 42,
+          "wins": 20,
+          "draws": 0
+        },
+        "both_dead": {
+          "n": 219,
+          "wins": 110,
+          "draws": 0
+        },
+        "elimination": {
+          "n": 104,
+          "wins": 30,
+          "draws": 0
+        },
+        "only_ours": {
+          "n": 78,
+          "wins": 78,
+          "draws": 0
+        },
+        "only_theirs": {
+          "n": 33,
+          "wins": 0,
+          "draws": 0
+        }
+      },
+      "win_flips": {
+        "better": 86,
+        "worse": 101,
+        "same": 289
+      },
+      "queen_flips": {
+        "saved": 47,
+        "lost": 55
+      }
+    }
+  },
+  "D14": {
+    "base": {
+      "n": 1122,
+      "wins": 653,
+      "queen_alive": 347,
+      "classes": {
+        "both_alive": {
+          "n": 75,
+          "wins": 37,
+          "draws": 0
+        },
+        "both_dead": {
+          "n": 506,
+          "wins": 300,
+          "draws": 0
+        },
+        "elimination": {
+          "n": 261,
+          "wins": 87,
+          "draws": 0
+        },
+        "only_ours": {
+          "n": 229,
+          "wins": 229,
+          "draws": 0
+        },
+        "only_theirs": {
+          "n": 51,
+          "wins": 0,
+          "draws": 0
+        }
+      }
+    },
+    "dq": {
+      "n": 1122,
+      "wins": 663,
+      "queen_alive": 375,
+      "classes": {
+        "both_alive": {
+          "n": 75,
+          "wins": 32,
+          "draws": 0
+        },
+        "both_dead": {
+          "n": 498,
+          "wins": 294,
+          "draws": 0
+        },
+        "elimination": {
+          "n": 254,
+          "wins": 88,
+          "draws": 0
+        },
+        "only_ours": {
+          "n": 249,
+          "wins": 249,
+          "draws": 0
+        },
+        "only_theirs": {
+          "n": 46,
+          "wins": 0,
+          "draws": 0
+        }
+      },
+      "win_flips": {
+        "better": 83,
+        "worse": 73,
+        "same": 966
+      },
+      "queen_flips": {
+        "saved": 77,
+        "lost": 49
+      }
+    }
+  }
+}

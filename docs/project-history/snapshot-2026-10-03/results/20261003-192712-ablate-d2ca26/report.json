@@ -1,0 +1,22 @@
+{
+  "sx2": {
+    "delta": -0.07352941176470588,
+    "lo": -0.15294117647058825,
+    "hi": -0.008823529411764706,
+    "verdict": "essential",
+    "pool_delta": -0.04,
+    "pool_lo": -0.13,
+    "pool_hi": 0.02,
+    "pool_verdict": "neutral"
+  },
+  "sx3": {
+    "delta": -0.058823529411764705,
+    "lo": -0.14411764705882352,
+    "hi": 0.008823529411764706,
+    "verdict": "neutral",
+    "pool_delta": -0.09,
+    "pool_lo": -0.18,
+    "pool_hi": -0.01,
+    "pool_verdict": "essential"
+  }
+}

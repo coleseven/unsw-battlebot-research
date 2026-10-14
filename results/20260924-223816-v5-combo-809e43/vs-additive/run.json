@@ -1,0 +1,33 @@
+{
+  "time": "2026-09-24 22:38:25",
+  "git": "8e1000d+dirty",
+  "python": "3.14.2",
+  "unswbc": "0.3.10",
+  "engine": "5412052f33ddb160",
+  "bots": {
+    "scout_king": {
+      "path": "results\\20260924-223816-v5-combo-809e43\\bots\\scout_king",
+      "hash": "23a140e48e5f7d89"
+    },
+    "additive": {
+      "path": "results\\20260924-223816-v5-combo-809e43\\bots\\additive",
+      "hash": "bf33497158a49a7b"
+    }
+  },
+  "maps": {
+    "Trauma": {
+      "file": "dcf39d713c060e5d",
+      "signature": "d014b28abbd1abb0"
+    },
+    "stronghold": {
+      "file": "02455e481fe56e1e",
+      "signature": "fb60e37176a8d1d3"
+    }
+  },
+  "settings": {
+    "seeds": [
+      52001
+    ],
+    "workers": 1
+  }
+}

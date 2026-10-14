@@ -1,0 +1,5 @@
+{
+  "linear": "linear_0",
+  "mlp": "mlp_1",
+  "criterion": "dev cross-entropy only"
+}

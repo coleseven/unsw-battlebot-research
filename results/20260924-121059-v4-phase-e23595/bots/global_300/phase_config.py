@@ -1,0 +1,1 @@
+MODE = 'global_300'

@@ -1,0 +1,431 @@
+{
+  "phase_diagnostics": {
+    "validation": {
+      "control_450": {
+        "games": 864,
+        "losses": 177,
+        "elimination_losses": 17,
+        "wins": 684,
+        "length_decisions": 460,
+        "length_wins": 297,
+        "length_losses": 160,
+        "draws": 3,
+        "length_draws": 3,
+        "mean_longest_in_length_decisions": 13.139130434782608
+      },
+      "portal_escape": {
+        "games": 864,
+        "losses": 170,
+        "elimination_losses": 17,
+        "wins": 692,
+        "length_decisions": 458,
+        "length_losses": 153,
+        "length_wins": 303,
+        "draws": 2,
+        "length_draws": 2,
+        "mean_longest_in_length_decisions": 13.299126637554584
+      }
+    },
+    "transfer": {
+      "portal_escape": {
+        "games": 256,
+        "wins": 172,
+        "losses": 83,
+        "elimination_losses": 35,
+        "length_decisions": 109,
+        "length_losses": 48,
+        "length_wins": 60,
+        "draws": 1,
+        "length_draws": 1,
+        "mean_longest_in_length_decisions": 26.357798165137616
+      }
+    }
+  },
+  "maps": [
+    {
+      "stage": "validation",
+      "map": "official_arena_728547b8376892d9",
+      "width": 11,
+      "height": 11,
+      "portal_pairs": 0,
+      "portal_edge_fraction": 0.0,
+      "spawn_tile_fraction": 0.6694214876033058,
+      "kelp_edge_fraction": 0.09090909090909091,
+      "counts": {
+        "games": 192,
+        "verified_candidate_turns": 223838,
+        "splits": 18064,
+        "late_splits": 0
+      },
+      "overrides_per_1000_turns": 0.0,
+      "immediate_override_survival": null
+    },
+    {
+      "stage": "validation",
+      "map": "official_big_empty_685baf0e797207b7",
+      "width": 64,
+      "height": 64,
+      "portal_pairs": 0,
+      "portal_edge_fraction": 0.0,
+      "spawn_tile_fraction": 1.0,
+      "kelp_edge_fraction": 0.0,
+      "counts": {
+        "games": 192,
+        "verified_candidate_turns": 2481668,
+        "splits": 16309,
+        "late_splits": 0
+      },
+      "overrides_per_1000_turns": 0.0,
+      "immediate_override_survival": null
+    },
+    {
+      "stage": "validation",
+      "map": "official_Colosseum_3042ccc262f0211a",
+      "width": 16,
+      "height": 16,
+      "portal_pairs": 4,
+      "portal_edge_fraction": 0.015625,
+      "spawn_tile_fraction": 1.0,
+      "kelp_edge_fraction": 0.046875,
+      "counts": {
+        "games": 192,
+        "verified_candidate_turns": 550262,
+        "splits": 16058,
+        "late_splits": 0,
+        "portal_moves": 1600,
+        "portal_own_turn_deaths": 563,
+        "visible_empty_portal_moves": 0,
+        "portal_overrides": 1112,
+        "override_survived_own_turn": 724,
+        "redirect_existing_portal": 0
+      },
+      "overrides_per_1000_turns": 2.0208555197342357,
+      "immediate_override_survival": 0.6510791366906474
+    },
+    {
+      "stage": "validation",
+      "map": "official_default_afc3707a967881d6",
+      "width": 32,
+      "height": 32,
+      "portal_pairs": 12,
+      "portal_edge_fraction": 0.01171875,
+      "spawn_tile_fraction": 1.0,
+      "kelp_edge_fraction": 0.10546875,
+      "counts": {
+        "games": 192,
+        "verified_candidate_turns": 1024531,
+        "splits": 7578,
+        "late_splits": 0,
+        "portal_moves": 484,
+        "portal_own_turn_deaths": 50,
+        "visible_empty_portal_moves": 30,
+        "portal_overrides": 428,
+        "override_survived_own_turn": 385,
+        "redirect_existing_portal": 0
+      },
+      "overrides_per_1000_turns": 0.4177521226785719,
+      "immediate_override_survival": 0.8995327102803738
+    },
+    {
+      "stage": "validation",
+      "map": "official_default_small_f98ab391cccf33b1",
+      "width": 16,
+      "height": 16,
+      "portal_pairs": 0,
+      "portal_edge_fraction": 0.0,
+      "spawn_tile_fraction": 1.0,
+      "kelp_edge_fraction": 0.140625,
+      "counts": {
+        "games": 192,
+        "verified_candidate_turns": 362156,
+        "splits": 8662,
+        "late_splits": 0
+      },
+      "overrides_per_1000_turns": 0.0,
+      "immediate_override_survival": null
+    },
+    {
+      "stage": "validation",
+      "map": "official_queen_of_spades_6cdb74a7a52d715a",
+      "width": 25,
+      "height": 35,
+      "portal_pairs": 2,
+      "portal_edge_fraction": 0.002285714285714286,
+      "spawn_tile_fraction": 0.5051428571428571,
+      "kelp_edge_fraction": 0.16914285714285715,
+      "counts": {
+        "games": 192,
+        "verified_candidate_turns": 279274,
+        "splits": 3098,
+        "late_splits": 0,
+        "portal_moves": 106,
+        "portal_own_turn_deaths": 5,
+        "visible_empty_portal_moves": 0,
+        "portal_overrides": 106,
+        "override_survived_own_turn": 101,
+        "redirect_existing_portal": 0
+      },
+      "overrides_per_1000_turns": 0.37955556192126727,
+      "immediate_override_survival": 0.9528301886792453
+    },
+    {
+      "stage": "validation",
+      "map": "official_schooltime_8be7eda86910a849",
+      "width": 60,
+      "height": 40,
+      "portal_pairs": 12,
+      "portal_edge_fraction": 0.005,
+      "spawn_tile_fraction": 0.13583333333333333,
+      "kelp_edge_fraction": 0.19020833333333334,
+      "counts": {
+        "games": 192,
+        "verified_candidate_turns": 1757264,
+        "splits": 50951,
+        "late_splits": 0,
+        "portal_moves": 867,
+        "portal_own_turn_deaths": 63,
+        "visible_empty_portal_moves": 0,
+        "portal_overrides": 452,
+        "override_survived_own_turn": 402,
+        "redirect_existing_portal": 0
+      },
+      "overrides_per_1000_turns": 0.2572180389514609,
+      "immediate_override_survival": 0.8893805309734514
+    },
+    {
+      "stage": "validation",
+      "map": "official_trophy_fd985019831fe135",
+      "width": 25,
+      "height": 25,
+      "portal_pairs": 1,
+      "portal_edge_fraction": 0.0016,
+      "spawn_tile_fraction": 1.0,
+      "kelp_edge_fraction": 0.0704,
+      "counts": {
+        "games": 192,
+        "verified_candidate_turns": 879276,
+        "splits": 14354,
+        "late_splits": 0,
+        "portal_moves": 204,
+        "portal_own_turn_deaths": 24,
+        "visible_empty_portal_moves": 0,
+        "portal_overrides": 154,
+        "override_survived_own_turn": 134,
+        "redirect_existing_portal": 0
+      },
+      "overrides_per_1000_turns": 0.1751440958242918,
+      "immediate_override_survival": 0.8701298701298701
+    },
+    {
+      "stage": "validation",
+      "map": "official_Devil_1b2147f4a8a775d2",
+      "width": 32,
+      "height": 16,
+      "portal_pairs": 0,
+      "portal_edge_fraction": 0.0,
+      "spawn_tile_fraction": 0.33984375,
+      "kelp_edge_fraction": 0.23828125,
+      "counts": {
+        "games": 192,
+        "verified_candidate_turns": 412141,
+        "splits": 19910,
+        "late_splits": 0
+      },
+      "overrides_per_1000_turns": 0.0,
+      "immediate_override_survival": null
+    },
+    {
+      "stage": "transfer",
+      "map": "new_open_small",
+      "width": 12,
+      "height": 12,
+      "portal_pairs": 4,
+      "portal_edge_fraction": 0.027777777777777776,
+      "spawn_tile_fraction": 1.0,
+      "kelp_edge_fraction": 0.0,
+      "counts": {
+        "games": 32,
+        "verified_candidate_turns": 255994,
+        "splits": 25397,
+        "late_splits": 0,
+        "portal_moves": 2458,
+        "portal_own_turn_deaths": 330,
+        "visible_empty_portal_moves": 2128,
+        "portal_overrides": 1739,
+        "override_survived_own_turn": 1739,
+        "redirect_existing_portal": 0
+      },
+      "overrides_per_1000_turns": 6.793127963936655,
+      "immediate_override_survival": 1.0
+    },
+    {
+      "stage": "transfer",
+      "map": "new_open_large",
+      "width": 24,
+      "height": 24,
+      "portal_pairs": 8,
+      "portal_edge_fraction": 0.013888888888888888,
+      "spawn_tile_fraction": 0.7222222222222222,
+      "kelp_edge_fraction": 0.0,
+      "counts": {
+        "games": 32,
+        "verified_candidate_turns": 786917,
+        "splits": 36037,
+        "late_splits": 0,
+        "portal_moves": 2966,
+        "portal_own_turn_deaths": 965,
+        "visible_empty_portal_moves": 1077,
+        "portal_overrides": 1855,
+        "override_survived_own_turn": 1358,
+        "redirect_existing_portal": 0
+      },
+      "overrides_per_1000_turns": 2.3573007064277425,
+      "immediate_override_survival": 0.7320754716981132
+    },
+    {
+      "stage": "transfer",
+      "map": "new_baffles_small",
+      "width": 12,
+      "height": 16,
+      "portal_pairs": 4,
+      "portal_edge_fraction": 0.020833333333333332,
+      "spawn_tile_fraction": 1.0,
+      "kelp_edge_fraction": 0.11979166666666667,
+      "counts": {
+        "games": 32,
+        "verified_candidate_turns": 335212,
+        "splits": 45699,
+        "late_splits": 0,
+        "portal_moves": 4416,
+        "portal_own_turn_deaths": 2032,
+        "visible_empty_portal_moves": 1408,
+        "portal_overrides": 2203,
+        "override_survived_own_turn": 1324,
+        "redirect_existing_portal": 0
+      },
+      "overrides_per_1000_turns": 6.571960431010823,
+      "immediate_override_survival": 0.6009986382206083
+    },
+    {
+      "stage": "transfer",
+      "map": "new_baffles_large",
+      "width": 20,
+      "height": 16,
+      "portal_pairs": 8,
+      "portal_edge_fraction": 0.025,
+      "spawn_tile_fraction": 0.675,
+      "kelp_edge_fraction": 0.184375,
+      "counts": {
+        "games": 32,
+        "verified_candidate_turns": 430978,
+        "splits": 37291,
+        "late_splits": 0,
+        "portal_moves": 8042,
+        "portal_own_turn_deaths": 2029,
+        "visible_empty_portal_moves": 0,
+        "portal_overrides": 2527,
+        "override_survived_own_turn": 1503,
+        "redirect_existing_portal": 0
+      },
+      "overrides_per_1000_turns": 5.863408341029008,
+      "immediate_override_survival": 0.5947764147210131
+    },
+    {
+      "stage": "transfer",
+      "map": "new_dense_small",
+      "width": 14,
+      "height": 14,
+      "portal_pairs": 4,
+      "portal_edge_fraction": 0.02040816326530612,
+      "spawn_tile_fraction": 1.0,
+      "kelp_edge_fraction": 0.3010204081632653,
+      "counts": {
+        "games": 32,
+        "verified_candidate_turns": 153729,
+        "splits": 21410,
+        "late_splits": 0,
+        "portal_moves": 1869,
+        "portal_own_turn_deaths": 0,
+        "visible_empty_portal_moves": 1869,
+        "portal_overrides": 1608,
+        "override_survived_own_turn": 1608,
+        "redirect_existing_portal": 0
+      },
+      "overrides_per_1000_turns": 10.459965263548192,
+      "immediate_override_survival": 1.0
+    },
+    {
+      "stage": "transfer",
+      "map": "new_dense_large",
+      "width": 20,
+      "height": 20,
+      "portal_pairs": 8,
+      "portal_edge_fraction": 0.02,
+      "spawn_tile_fraction": 0.68,
+      "kelp_edge_fraction": 0.375,
+      "counts": {
+        "games": 32,
+        "verified_candidate_turns": 346118,
+        "splits": 37666,
+        "late_splits": 0,
+        "portal_moves": 9412,
+        "portal_own_turn_deaths": 3908,
+        "visible_empty_portal_moves": 85,
+        "portal_overrides": 5427,
+        "override_survived_own_turn": 1738,
+        "redirect_existing_portal": 0
+      },
+      "overrides_per_1000_turns": 15.679623712144414,
+      "immediate_override_survival": 0.320250598857564
+    },
+    {
+      "stage": "transfer",
+      "map": "new_scarce_small",
+      "width": 16,
+      "height": 12,
+      "portal_pairs": 4,
+      "portal_edge_fraction": 0.020833333333333332,
+      "spawn_tile_fraction": 0.2708333333333333,
+      "kelp_edge_fraction": 0.19791666666666666,
+      "counts": {
+        "games": 32,
+        "verified_candidate_turns": 109444,
+        "splits": 4194,
+        "late_splits": 0,
+        "portal_moves": 609,
+        "portal_own_turn_deaths": 104,
+        "visible_empty_portal_moves": 286,
+        "portal_overrides": 279,
+        "override_survived_own_turn": 253,
+        "redirect_existing_portal": 0
+      },
+      "overrides_per_1000_turns": 2.549248930960126,
+      "immediate_override_survival": 0.9068100358422939
+    },
+    {
+      "stage": "transfer",
+      "map": "new_scarce_large",
+      "width": 18,
+      "height": 18,
+      "portal_pairs": 8,
+      "portal_edge_fraction": 0.024691358024691357,
+      "spawn_tile_fraction": 0.2222222222222222,
+      "kelp_edge_fraction": 0.33024691358024694,
+      "counts": {
+        "games": 32,
+        "verified_candidate_turns": 142859,
+        "splits": 7606,
+        "late_splits": 0,
+        "portal_moves": 1329,
+        "portal_own_turn_deaths": 94,
+        "visible_empty_portal_moves": 460,
+        "portal_overrides": 983,
+        "override_survived_own_turn": 905,
+        "redirect_existing_portal": 0
+      },
+      "overrides_per_1000_turns": 6.880910548162874,
+      "immediate_override_survival": 0.9206510681586979
+    }
+  ],
+  "limits": "Post-test descriptive geometry and mechanism counts, not a causal explanation or new acceptance gate."
+}

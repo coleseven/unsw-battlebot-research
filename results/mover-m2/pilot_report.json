@@ -1,0 +1,114 @@
+{
+ "decisions": 308,
+ "labelled": 308,
+ "errors": 0,
+ "not_applied": 0,
+ "chosen_reproduces_source": 308,
+ "result_differs": 50,
+ "margin_differs": 204,
+ "oracle_gain": 26.5,
+ "by_phase": {
+  "r<100": [
+   86,
+   13
+  ],
+  "r<300": [
+   148,
+   29
+  ],
+  "r>=300": [
+   74,
+   8
+  ]
+ },
+ "by_map": {
+  "default_small": [
+   14,
+   0
+  ],
+  "trophy": [
+   14,
+   0
+  ],
+  "queen_of_spades": [
+   14,
+   1
+  ],
+  "default": [
+   14,
+   1
+  ],
+  "Devil": [
+   14,
+   1
+  ],
+  "stronghold": [
+   14,
+   0
+  ],
+  "Trauma": [
+   14,
+   2
+  ],
+  "schooltime": [
+   14,
+   7
+  ],
+  "big_empty": [
+   14,
+   3
+  ],
+  "arena": [
+   14,
+   0
+  ],
+  "Colosseum": [
+   14,
+   3
+  ],
+  "Autarky": [
+   14,
+   4
+  ],
+  "Prisoners_Dilemma": [
+   14,
+   1
+  ],
+  "Slithery_Fight": [
+   14,
+   4
+  ],
+  "Portals": [
+   14,
+   1
+  ],
+  "Australia": [
+   14,
+   2
+  ],
+  "Islands": [
+   14,
+   4
+  ],
+  "Maze": [
+   14,
+   11
+  ],
+  "Stripes": [
+   14,
+   3
+  ],
+  "Tower_Defense": [
+   14,
+   1
+  ],
+  "Around_UNSW": [
+   14,
+   0
+  ],
+  "weakhold": [
+   14,
+   1
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+  "time": "2026-09-24 21:55:39",
+  "git": "8e1000d+dirty",
+  "python": "3.14.2",
+  "unswbc": "0.3.10",
+  "engine": "5412052f33ddb160",
+  "bots": {
+    "export_scout": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\20260924-194815-v5-export-a2cb1a\\bots\\export_scout",
+      "hash": "a67ebf2b6eb44faa"
+    },
+    "v3": {
+      "path": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\versions\\v3",
+      "hash": "69382825b699723d"
+    }
+  },
+  "maps": {
+    "Trauma": {
+      "file": "dcf39d713c060e5d",
+      "signature": "d014b28abbd1abb0"
+    }
+  },
+  "settings": {
+    "cmd": "eval",
+    "bot": "results/20260924-194815-v5-export-a2cb1a/bots/export_scout",
+    "vs": "v3",
+    "maps": "Trauma",
+    "seeds": 1,
+    "workers": 1,
+    "save_replays": "all"
+  }
+}

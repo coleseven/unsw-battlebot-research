@@ -1,0 +1,165 @@
+{
+ "cases": [
+  {
+   "map": "Portals",
+   "a": "v10h",
+   "b": "cpp_nicked_v92",
+   "seed": 351001,
+   "team": "A",
+   "noop_identical": true,
+   "forced": [
+    {
+     "dragon": 0,
+     "round": 40,
+     "move": "S",
+     "seen": "S",
+     "same_move_identical": true,
+     "other_move": "N",
+     "other_applied": true,
+     "other_diverges": true
+    },
+    {
+     "dragon": 2,
+     "round": 40,
+     "move": "E",
+     "seen": "E",
+     "same_move_identical": true,
+     "other_move": "N",
+     "other_applied": true,
+     "other_diverges": true
+    },
+    {
+     "dragon": 4,
+     "round": 40,
+     "move": "S",
+     "seen": "S",
+     "same_move_identical": true,
+     "other_move": "N",
+     "other_applied": true,
+     "other_diverges": true
+    },
+    {
+     "dragon": 4,
+     "round": 300,
+     "move": "S",
+     "seen": "S",
+     "same_move_identical": true,
+     "other_move": "N",
+     "other_applied": true,
+     "other_diverges": true
+    },
+    {
+     "dragon": 86,
+     "round": 300,
+     "move": "S",
+     "seen": "S",
+     "same_move_identical": true,
+     "other_move": "N",
+     "other_applied": true,
+     "other_diverges": true
+    }
+   ]
+  },
+  {
+   "map": "schooltime",
+   "a": "nicked_lab",
+   "b": "v10h",
+   "seed": 351002,
+   "team": "B",
+   "noop_identical": true,
+   "forced": [
+    {
+     "dragon": 1,
+     "round": 40,
+     "move": "E",
+     "seen": "E",
+     "same_move_identical": true,
+     "other_move": "N",
+     "other_applied": true,
+     "other_diverges": true
+    },
+    {
+     "dragon": 3,
+     "round": 40,
+     "move": "E",
+     "seen": "E",
+     "same_move_identical": true,
+     "other_move": "N",
+     "other_applied": true,
+     "other_diverges": true
+    },
+    {
+     "dragon": 5,
+     "round": 40,
+     "move": "S",
+     "seen": "S",
+     "same_move_identical": true,
+     "other_move": "N",
+     "other_applied": true,
+     "other_diverges": true
+    },
+    {
+     "dragon": 1,
+     "round": 300,
+     "move": "W",
+     "seen": "W",
+     "same_move_identical": true,
+     "other_move": "N",
+     "other_applied": true,
+     "other_diverges": true
+    },
+    {
+     "dragon": 25,
+     "round": 300,
+     "move": "E",
+     "seen": "E",
+     "same_move_identical": true,
+     "other_move": "N",
+     "other_applied": true,
+     "other_diverges": true
+    }
+   ]
+  },
+  {
+   "map": "trophy",
+   "a": "v10h",
+   "b": "v7-base-bot",
+   "seed": 351003,
+   "team": "A",
+   "noop_identical": true,
+   "forced": [
+    {
+     "dragon": 0,
+     "round": 40,
+     "move": "N",
+     "seen": "N",
+     "same_move_identical": true,
+     "other_move": "E",
+     "other_applied": true,
+     "other_diverges": true
+    },
+    {
+     "dragon": 2,
+     "round": 40,
+     "move": "S",
+     "seen": "S",
+     "same_move_identical": true,
+     "other_move": "N",
+     "other_applied": true,
+     "other_diverges": true
+    },
+    {
+     "dragon": 4,
+     "round": 40,
+     "move": "W",
+     "seen": "W",
+     "same_move_identical": true,
+     "other_move": "N",
+     "other_applied": true,
+     "other_diverges": true
+    }
+   ]
+  }
+ ],
+ "pass": true
+}

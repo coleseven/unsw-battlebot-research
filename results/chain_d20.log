@@ -1,0 +1,12 @@
+guard: waiting for running experiment 'ablate 20261007-084959-ablate-ca9d33' (pid 44100)
+equivalence v12x: 24/68 games, 86s
+equivalence v12x: 48/68 games, 123s
+equivalence v12x: 68/68 games, 156s
+equivalence v12x5-bot: 24/68 games, 83s
+equivalence v12x5-bot: 48/68 games, 120s
+equivalence v12x5-bot: 68/68 games, 153s
+68 games each; identical 68; different 0
+EQUIVALENCE PASS
+14:18 EQUIV DONE
+15:10 done results/20261007-091551-ablate-5e7397 rc=0
+15:10 CHAIN DONE

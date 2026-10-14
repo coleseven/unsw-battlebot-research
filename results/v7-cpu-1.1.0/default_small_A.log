@@ -1,0 +1,16 @@
+loaded wasm vs python in the judge's sandbox
+seed 0xb9584c22cfe881a2
+running round 2/500 --  last: 2.3s  eta: 18m49s  dragons: 2 vs 2
+round 10: bot 3 (team B) died: lost a head-to-head
+round 10: bot 0 (team A) died: lost a head-to-head
+running round 51/500 --  last: 44ms  eta: 27.6s  dragons: 9 vs 2
+round 54: bot 11 (team A) died: hit a wall
+round 69: bot 1 (team B) died: hit itself
+round 73: bot 17 (team B) died: lost a head-to-head
+round 73: bot 24 (team A) died: lost a head-to-head
+round 83: bot 9 (team B) died: lost a head-to-head
+round 83: bot 4 (team A) died: lost a head-to-head
+team A wins after 84 rounds (by elimination) (5.3s)
+team A points per turn: p50 4.9M  p99 5.7M  mean 4.9M  max 5.8M  (760 turns)
+team B points per turn: p50 15.3M  p99 25.0M  mean 15.1M  max 25.3M  (136 turns)
+skipped writing replay

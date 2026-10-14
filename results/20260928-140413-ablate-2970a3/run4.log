@@ -1,0 +1,24 @@
+dead: 24/360 games, 44s
+dead: 48/360 games, 129s
+dead: 72/360 games, 175s
+dead: 96/360 games, 238s
+dead: 120/360 games, 308s
+dead: 144/360 games, 369s
+dead: 168/360 games, 419s
+dead: 192/360 games, 504s
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\ablate.py", line 264, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\ablate.py", line 256, in main
+    run(a.result, a.workers)
+    ~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\ablate.py", line 112, in run
+    games = bounded.run(jobs, workers, folder, name)
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\bounded.py", line 38, in run
+    return _run(jobs, workers, folder, label, batch_per_worker)
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\bounded.py", line 58, in _run
+    raise RuntimeError(f"Match failed; partial results saved: {game}")
+RuntimeError: Match failed; partial results saved: {'map': 'queen_of_spades', 'bot_a': 'dead', 'bot_b': 'v7-base-bot', 'seed': 103001, 'winner': None, 'reason': 'error', 'error': "RuntimeError: in-process build failed for dead:\nduring RTL pass: subreg3\nIn file included from results\\20260928-140413-ablate-2970a3\\variants\\dead/v6_brain.hpp:11,\n                 from C:\\Users\\Sea7\\Desktop\\unsw battlebot\\cppbot_inproc\\inproc.cpp:17:\nresults\\20260928-140413-ablate-2970a3\\variants\\dead/v6.hpp: In member function 'void v6::WorldMemory::identify_map(const v6::Obs&)':\nresults\\20260928-140413-ablate-2970a3\\variants\\dead/v6.hpp:381:5: internal compiler error: Segmentation fault\n  381 |     }\n      |     ^\nPlease submit a full bug report, with preprocessed source (by using -freport-bug).\nSee <https://gcc.gnu.org/bugs/> for instructions.\n", 'deaths': {}, 'block': ['v7-base-bot', 'queen_of_spades', 103001], 'worker': {'pid': 32664, 'rss_bytes': 47276032}}

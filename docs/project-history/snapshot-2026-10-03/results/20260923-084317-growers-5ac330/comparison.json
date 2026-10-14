@@ -1,0 +1,33 @@
+{
+  "candidate": "quarter350",
+  "hash": "eba788af5f0d162c",
+  "paired_pool": {
+    "difference": 0.009259259259259259,
+    "map_cluster_ci95": [
+      -0.027777777777777776,
+      0.041666666666666664
+    ],
+    "paired_block_ci95": [
+      -0.023148148148148147,
+      0.04398148148148148
+    ],
+    "maps": 9,
+    "blocks": 216,
+    "matched_games": 432
+  },
+  "direct": {
+    "wins": 74,
+    "draws": 0,
+    "losses": 70,
+    "score": 0.5138888888888888,
+    "map_ci95": [
+      0.4097222222222222,
+      0.6041666666666666
+    ],
+    "pair_ci95": [
+      0.4375,
+      0.5902777777777778
+    ]
+  },
+  "performance_gate": false
+}

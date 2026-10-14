@@ -1,0 +1,64 @@
+{
+  "base": "C:\\Users\\Sea7\\Desktop\\unsw battlebot\\results\\v11b-bot",
+  "base_hash": "d4c0cc8d79794a6c",
+  "params": "params.hpp",
+  "variants": {
+    "base": {},
+    "q_ms": {
+      "CPP_QUEEN": 1,
+      "CPP_MULTISTEP": 1
+    },
+    "q_ms_s7": {
+      "CPP_QUEEN": 1,
+      "CPP_MULTISTEP": 1,
+      "SPLIT_AT": 7
+    },
+    "q_ms_s11": {
+      "CPP_QUEEN": 1,
+      "CPP_MULTISTEP": 1,
+      "SPLIT_AT": 11
+    },
+    "q_s7": {
+      "CPP_QUEEN": 1,
+      "SPLIT_AT": 7
+    },
+    "ms_s7": {
+      "CPP_MULTISTEP": 1,
+      "SPLIT_AT": 7
+    }
+  },
+  "opponents": [
+    "cpp_nicked_v92",
+    "cpp_nicked_v75",
+    "cpp_leviathan3",
+    "v7-base-bot",
+    "nicked_v44",
+    "nicked_lab"
+  ],
+  "official_maps": [
+    "default_small",
+    "trophy",
+    "queen_of_spades",
+    "default",
+    "Devil",
+    "stronghold",
+    "Trauma",
+    "schooltime",
+    "big_empty",
+    "arena",
+    "Colosseum"
+  ],
+  "extra_maps": [
+    "Autarky",
+    "Prisoners_Dilemma",
+    "Slithery_Fight",
+    "Portals"
+  ],
+  "seeds": [
+    441001,
+    441002
+  ],
+  "objective": "wins",
+  "unswbc": "1.2.3",
+  "deterministic_v6_clock": true
+}

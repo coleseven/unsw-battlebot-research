@@ -1,0 +1,50 @@
+{
+  "current_date": "2026-10-14",
+  "credential_scan": {
+    "reachable_git_blobs": 1122,
+    "text_files": 26175,
+    "text_bytes": 616140664,
+    "high_signal_matches": 0,
+    "patterns": [
+      "GitHub token",
+      "AWS access key ID",
+      "private key PEM header",
+      "OpenAI token",
+      "quoted credential assignment",
+      "authorization Bearer"
+    ],
+    "limitations": "Signature scan; no absolute assurance. Dependencies/runtime/build files excluded from current text scan."
+  },
+  "external_source_audit": {
+    "result_snapshot_roots": 471,
+    "normalized_source_matches": 868,
+    "history_blobs_checked": 1122,
+    "history_exact_competitor_matches": []
+  },
+  "renamed_external_candidates": [
+    "results/20260926-183834-full-change-162756/bots/candidate",
+    "results/20260926-183834-full-change-3fe65d/bots/candidate",
+    "results/20260926-183835-full-change-bb2dcf/bots/candidate",
+    "results/20260926-183836-full-change-d496cd/bots/candidate",
+    "results/20260926-183837-full-change-60b9a8/bots/candidate"
+  ],
+  "recommended_other_exclusions": [
+    ".git/",
+    ".venv/",
+    "**/__pycache__/",
+    "**/.unswbc-build/",
+    "results/queen-runtime-packages/",
+    "**/*.whl",
+    "**/*.wasm",
+    "**/*.dll",
+    "**/*.exe",
+    "**/*.o",
+    "**/*.obj",
+    "**/*.a",
+    "**/*.so",
+    "**/*.pyc",
+    "**/*.pyd",
+    "sparring/ source except provenance metadata"
+  ],
+  "engine_license": ".venv/Lib/site-packages/unswbc-1.1.0.dist-info/licenses/LICENSE"
+}

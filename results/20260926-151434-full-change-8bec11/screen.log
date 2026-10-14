@@ -1,0 +1,40 @@
+full: 24/66 games, 90s
+full: 48/66 games, 158s
+full: 66/66 games, 228s
+{
+  "maps": [
+    "default_small",
+    "trophy",
+    "queen_of_spades",
+    "default",
+    "Devil",
+    "stronghold",
+    "Trauma",
+    "schooltime",
+    "big_empty",
+    "arena",
+    "Colosseum"
+  ],
+  "games": 66,
+  "workers": 8,
+  "opponents": {
+    "nicked_v44": {
+      "wins": 9,
+      "draws": 0,
+      "losses": 13,
+      "score": 0.4090909090909091
+    },
+    "ctmes": {
+      "wins": 21,
+      "draws": 0,
+      "losses": 1,
+      "score": 0.9545454545454546
+    },
+    "v6": {
+      "wins": 16,
+      "draws": 0,
+      "losses": 6,
+      "score": 0.7272727272727273
+    }
+  }
+}

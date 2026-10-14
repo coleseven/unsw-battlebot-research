@@ -1,0 +1,45 @@
+{
+  "time": "2026-09-24 22:35:35",
+  "git": "8e1000d+dirty",
+  "python": "3.14.2",
+  "unswbc": "0.3.10",
+  "engine": "5412052f33ddb160",
+  "bots": {
+    "king_350": {
+      "path": "results\\20260924-223513-v5-king-350-holdout-8687c3\\bots\\king_350",
+      "hash": "16e1ada2ad2ec086"
+    },
+    "king_400": {
+      "path": "results\\20260924-223513-v5-king-350-holdout-8687c3\\bots\\king_400",
+      "hash": "acf0bbe02fa71c44"
+    }
+  },
+  "maps": {
+    "arena": {
+      "file": "b4bab09603289c2d",
+      "signature": "728547b8376892d9"
+    },
+    "Colosseum": {
+      "file": "c7549a41ea26600f",
+      "signature": "3042ccc262f0211a"
+    },
+    "default_small": {
+      "file": "8ac4b2eedcf19f85",
+      "signature": "f98ab391cccf33b1"
+    },
+    "queen_of_spades": {
+      "file": "126d71b464432685",
+      "signature": "6cdb74a7a52d715a"
+    },
+    "Devil": {
+      "file": "a09e8f2d3bdd1e40",
+      "signature": "1b2147f4a8a775d2"
+    }
+  },
+  "settings": {
+    "seeds": [
+      51001
+    ],
+    "workers": 1
+  }
+}

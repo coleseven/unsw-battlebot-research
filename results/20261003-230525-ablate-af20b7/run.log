@@ -1,0 +1,101 @@
+guard: waiting for running experiment 'ablate 20261003-214401-ablate-28bd72' (pid 4992)
+base: 24/680 games, 43s
+base: 48/680 games, 119s
+base: 72/680 games, 168s
+base: 96/680 games, 205s
+base: 120/680 games, 274s
+base: 144/680 games, 319s
+base: 168/680 games, 384s
+base: 192/680 games, 448s
+base: 216/680 games, 478s
+base: 240/680 games, 516s
+base: 264/680 games, 532s
+base: 288/680 games, 579s
+base: 312/680 games, 717s
+base: 336/680 games, 793s
+base: 360/680 games, 867s
+base: 384/680 games, 1042s
+base: 408/680 games, 1108s
+base: 432/680 games, 1144s
+base: 456/680 games, 1180s
+base: 480/680 games, 1195s
+base: 504/680 games, 1219s
+base: 528/680 games, 1246s
+base: 552/680 games, 1265s
+base: 576/680 games, 1284s
+base: 600/680 games, 1315s
+base: 624/680 games, 1336s
+base: 648/680 games, 1358s
+base: 672/680 games, 1382s
+base: 680/680 games, 1397s
+bg2: 24/680 games, 42s
+bg2: 48/680 games, 119s
+bg2: 72/680 games, 160s
+bg2: 96/680 games, 201s
+bg2: 120/680 games, 270s
+bg2: 144/680 games, 311s
+bg2: 168/680 games, 374s
+bg2: 192/680 games, 443s
+bg2: 216/680 games, 473s
+bg2: 240/680 games, 512s
+bg2: 264/680 games, 528s
+bg2: 288/680 games, 578s
+bg2: 312/680 games, 715s
+bg2: 336/680 games, 792s
+bg2: 360/680 games, 866s
+bg2: 384/680 games, 1042s
+bg2: 408/680 games, 1107s
+bg2: 432/680 games, 1144s
+bg2: 456/680 games, 1180s
+bg2: 480/680 games, 1196s
+bg2: 504/680 games, 1219s
+bg2: 528/680 games, 1246s
+bg2: 552/680 games, 1265s
+bg2: 576/680 games, 1285s
+bg2: 600/680 games, 1316s
+bg2: 624/680 games, 1336s
+bg2: 648/680 games, 1359s
+bg2: 672/680 games, 1383s
+bg2: 680/680 games, 1397s
+bg3: 24/680 games, 42s
+bg3: 48/680 games, 114s
+bg3: 72/680 games, 164s
+bg3: 96/680 games, 199s
+bg3: 120/680 games, 263s
+bg3: 144/680 games, 308s
+bg3: 168/680 games, 370s
+bg3: 192/680 games, 436s
+bg3: 216/680 games, 464s
+bg3: 240/680 games, 500s
+bg3: 264/680 games, 517s
+bg3: 288/680 games, 565s
+bg3: 312/680 games, 703s
+bg3: 336/680 games, 777s
+bg3: 360/680 games, 844s
+bg3: 384/680 games, 1008s
+bg3: 408/680 games, 1104s
+bg3: 432/680 games, 1135s
+bg3: 456/680 games, 1170s
+bg3: 480/680 games, 1186s
+bg3: 504/680 games, 1209s
+bg3: 528/680 games, 1236s
+bg3: 552/680 games, 1256s
+bg3: 576/680 games, 1274s
+bg3: 600/680 games, 1305s
+bg3: 624/680 games, 1325s
+bg3: 648/680 games, 1349s
+bg3: 672/680 games, 1371s
+bg3: 680/680 games, 1386s
+# Ablation report: 20261003-230525-ablate-af20b7
+
+2 seeds, opponents cpp_nicked_v92, cpp_nicked_v75, cpp_leviathan3, v7-base-bot, nicked_v44, nicked_lab, opp-careful-queen, opp-raider, opp-growth-queen, opp-economy; 17 official + 0 extra maps, both sides. Objective: wins. Delta = variant score minus base score on the same (opponent, map, seed, side); positive means removing the group helped. 95% CI resamples (map, seed) blocks.
+
+base: mean margin +0.132, wins 385/680; by opponent: cpp_nicked_v92 -0.235, cpp_nicked_v75 -0.029, cpp_leviathan3 +0.559, v7-base-bot +0.412, nicked_v44 +0.382, nicked_lab -0.029, opp-careful-queen +0.059, opp-raider -0.118, opp-growth-queen +0.176, opp-economy +0.147
+
+| variant | current pool delta [95% CI] | pool verdict | other maps | delta all 15 [95% CI] | verdict | vs cpp_nicked_v92 | vs cpp_nicked_v75 | vs cpp_leviathan3 | vs v7-base-bot | vs nicked_v44 | vs nicked_lab | vs opp-careful-queen | vs opp-raider | vs opp-growth-queen | vs opp-economy | official | extra | wins |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| bg2 | -0.030 [-0.070, +0.010] | neutral | -0.004 | -0.012 [-0.029, +0.003] | neutral | -0.029 | +0.000 | +0.000 | -0.029 | -0.059 | +0.000 | +0.000 | +0.000 | +0.000 | +0.000 | -0.012 | - | 381/680 |
+| bg3 | -0.030 [-0.120, +0.050] | neutral | -0.013 | -0.018 [-0.050, +0.015] | neutral | -0.029 | -0.059 | +0.000 | -0.029 | +0.000 | +0.059 | -0.118 | +0.029 | +0.000 | -0.029 | -0.018 | - | 379/680 |
+
+Noise: seed-to-seed SD of base's margin within a (opponent, map, side) cell 0.822 over 340 cells. Expected paired CI half-width with K seeds, 1.96 * sqrt(2 * 0.822^2 / (340 * K)): K=2: 0.087, K=3: 0.071, K=4: 0.062, K=6: 0.050, K=8: 0.044
+

@@ -1,0 +1,77 @@
+{
+  "time": "2026-09-25 20:45:53",
+  "git": "8e1000d+dirty",
+  "python": "3.14.2",
+  "unswbc": "0.3.10",
+  "engine": "5412052f33ddb160",
+  "bots": {
+    "candidate": {
+      "path": "results\\20260925-204546-full-change-911c3e\\bots\\candidate",
+      "hash": "8e7ba089f89adda9"
+    },
+    "v6": {
+      "path": "results\\20260925-204546-full-change-911c3e\\bots\\v6",
+      "hash": "4959b003957277f5"
+    },
+    "additive": {
+      "path": "results\\20260925-204546-full-change-911c3e\\bots\\additive",
+      "hash": "bf33497158a49a7b"
+    },
+    "nicked": {
+      "path": "results\\20260925-204546-full-change-911c3e\\bots\\nicked",
+      "hash": "d6dd50765f54f638"
+    }
+  },
+  "maps": {
+    "default_small": {
+      "file": "8ac4b2eedcf19f85",
+      "signature": "f98ab391cccf33b1"
+    },
+    "trophy": {
+      "file": "5f1f6b23d6edb944",
+      "signature": "fd985019831fe135"
+    },
+    "queen_of_spades": {
+      "file": "126d71b464432685",
+      "signature": "6cdb74a7a52d715a"
+    },
+    "default": {
+      "file": "6bd7abf2ed51a7f6",
+      "signature": "afc3707a967881d6"
+    },
+    "Devil": {
+      "file": "a09e8f2d3bdd1e40",
+      "signature": "1b2147f4a8a775d2"
+    },
+    "stronghold": {
+      "file": "02455e481fe56e1e",
+      "signature": "fb60e37176a8d1d3"
+    },
+    "Trauma": {
+      "file": "dcf39d713c060e5d",
+      "signature": "d014b28abbd1abb0"
+    },
+    "schooltime": {
+      "file": "726c404f3b34b4ed",
+      "signature": "8be7eda86910a849"
+    },
+    "big_empty": {
+      "file": "6cb3b7be72a4e27e",
+      "signature": "685baf0e797207b7"
+    },
+    "arena": {
+      "file": "b4bab09603289c2d",
+      "signature": "728547b8376892d9"
+    },
+    "Colosseum": {
+      "file": "c7549a41ea26600f",
+      "signature": "3042ccc262f0211a"
+    }
+  },
+  "settings": {
+    "seeds": [
+      53001
+    ],
+    "workers": 4
+  }
+}

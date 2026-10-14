@@ -1,0 +1,261 @@
+{
+  "candidate": "results\\20260925-214041-v6-cpu-f74d3d\\bots\\candidate",
+  "hash": "a208ae7f66bbd144",
+  "side": "A",
+  "opponent": "results\\20260925-214041-v6-cpu-f74d3d\\bots\\opponent",
+  "opponent_hash": "bf33497158a49a7b",
+  "map": "results\\20260925-214041-v6-cpu-f74d3d\\maps\\arena.map",
+  "map_hash": "b4bab09603289c2d",
+  "metrics": {
+    "turns": 34,
+    "max_points": 78551503,
+    "p50_points": 52789647,
+    "p99_points": 78551503,
+    "max_memory_bytes": 21757952,
+    "first_turn_max_points": 78551503,
+    "hard_fallback_logs": 0,
+    "sampled_host_rss_bytes": 103288832,
+    "seconds": 4.461017199995695
+  },
+  "errors": [],
+  "exception": null,
+  "notices": [],
+  "deaths": [
+    {
+      "round": 15,
+      "id": 1,
+      "team": "B",
+      "reason": "H"
+    },
+    {
+      "round": 15,
+      "id": 2,
+      "team": "A",
+      "reason": "H"
+    }
+  ],
+  "final": {
+    "terminated": true,
+    "end_reason": "eliminated",
+    "winner": "A",
+    "a": {
+      "dragons": 6,
+      "longest": 4,
+      "total": 16
+    },
+    "b": {
+      "dragons": 0,
+      "longest": 0,
+      "total": 0
+    }
+  },
+  "turns": [
+    {
+      "round": 0,
+      "id": 0,
+      "points": 78551503,
+      "memory_bytes": 21692416
+    },
+    {
+      "round": 1,
+      "id": 0,
+      "points": 53548272,
+      "memory_bytes": 21692416
+    },
+    {
+      "round": 2,
+      "id": 0,
+      "points": 52444247,
+      "memory_bytes": 21692416
+    },
+    {
+      "round": 3,
+      "id": 0,
+      "points": 52328158,
+      "memory_bytes": 21692416
+    },
+    {
+      "round": 4,
+      "id": 0,
+      "points": 52121507,
+      "memory_bytes": 21692416
+    },
+    {
+      "round": 5,
+      "id": 0,
+      "points": 52594699,
+      "memory_bytes": 21692416
+    },
+    {
+      "round": 6,
+      "id": 0,
+      "points": 52593552,
+      "memory_bytes": 21757952
+    },
+    {
+      "round": 7,
+      "id": 0,
+      "points": 54529715,
+      "memory_bytes": 21757952
+    },
+    {
+      "round": 8,
+      "id": 0,
+      "points": 55083683,
+      "memory_bytes": 21757952
+    },
+    {
+      "round": 9,
+      "id": 0,
+      "points": 13548527,
+      "memory_bytes": 21757952
+    },
+    {
+      "round": 9,
+      "id": 2,
+      "points": 76091210,
+      "memory_bytes": 21692416
+    },
+    {
+      "round": 10,
+      "id": 0,
+      "points": 54119659,
+      "memory_bytes": 21757952
+    },
+    {
+      "round": 10,
+      "id": 2,
+      "points": 52433190,
+      "memory_bytes": 21692416
+    },
+    {
+      "round": 11,
+      "id": 0,
+      "points": 52501961,
+      "memory_bytes": 21757952
+    },
+    {
+      "round": 11,
+      "id": 2,
+      "points": 52327366,
+      "memory_bytes": 21692416
+    },
+    {
+      "round": 12,
+      "id": 0,
+      "points": 13437146,
+      "memory_bytes": 21757952
+    },
+    {
+      "round": 12,
+      "id": 2,
+      "points": 52559584,
+      "memory_bytes": 21692416
+    },
+    {
+      "round": 12,
+      "id": 3,
+      "points": 77183476,
+      "memory_bytes": 21692416
+    },
+    {
+      "round": 13,
+      "id": 0,
+      "points": 52789647,
+      "memory_bytes": 21757952
+    },
+    {
+      "round": 13,
+      "id": 2,
+      "points": 13291019,
+      "memory_bytes": 21692416
+    },
+    {
+      "round": 13,
+      "id": 3,
+      "points": 53079062,
+      "memory_bytes": 21692416
+    },
+    {
+      "round": 13,
+      "id": 4,
+      "points": 64824685,
+      "memory_bytes": 21692416
+    },
+    {
+      "round": 14,
+      "id": 0,
+      "points": 53455877,
+      "memory_bytes": 21757952
+    },
+    {
+      "round": 14,
+      "id": 2,
+      "points": 52976074,
+      "memory_bytes": 21757952
+    },
+    {
+      "round": 14,
+      "id": 3,
+      "points": 13772596,
+      "memory_bytes": 21692416
+    },
+    {
+      "round": 14,
+      "id": 4,
+      "points": 52888914,
+      "memory_bytes": 21692416
+    },
+    {
+      "round": 14,
+      "id": 5,
+      "points": 76126753,
+      "memory_bytes": 21692416
+    },
+    {
+      "round": 15,
+      "id": 0,
+      "points": 14424298,
+      "memory_bytes": 21757952
+    },
+    {
+      "round": 15,
+      "id": 2,
+      "points": 32623180,
+      "memory_bytes": 21757952
+    },
+    {
+      "round": 15,
+      "id": 3,
+      "points": 52757310,
+      "memory_bytes": 21692416
+    },
+    {
+      "round": 15,
+      "id": 4,
+      "points": 13365883,
+      "memory_bytes": 21692416
+    },
+    {
+      "round": 15,
+      "id": 5,
+      "points": 52917098,
+      "memory_bytes": 21692416
+    },
+    {
+      "round": 15,
+      "id": 6,
+      "points": 60384027,
+      "memory_bytes": 21692416
+    },
+    {
+      "round": 15,
+      "id": 7,
+      "points": 62265174,
+      "memory_bytes": 21692416
+    }
+  ],
+  "intentional_feed_deaths": [],
+  "invalid_action_deaths": [],
+  "limits": "One full-game runtime test. Only candidate uses judge sandbox; opponent is in-process. Not same-seed strength evaluation or a worst-case guarantee."
+}

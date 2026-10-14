@@ -1,0 +1,58 @@
+base: 24/540 games, 30s
+base: 48/540 games, 91s
+base: 72/540 games, 125s
+base: 96/540 games, 170s
+base: 120/540 games, 198s
+base: 144/540 games, 275s
+base: 168/540 games, 296s
+base: 192/540 games, 339s
+base: 216/540 games, 381s
+base: 240/540 games, 418s
+base: 264/540 games, 471s
+base: 288/540 games, 503s
+base: 312/540 games, 528s
+base: 336/540 games, 557s
+base: 360/540 games, 581s
+base: 384/540 games, 638s
+base: 408/540 games, 735s
+base: 432/540 games, 786s
+base: 456/540 games, 892s
+base: 480/540 games, 982s
+base: 504/540 games, 1135s
+base: 528/540 games, 1184s
+base: 540/540 games, 1278s
+kb2: 24/540 games, 29s
+kb2: 48/540 games, 97s
+kb2: 72/540 games, 120s
+kb2: 96/540 games, 164s
+kb2: 120/540 games, 191s
+kb2: 144/540 games, 269s
+kb2: 168/540 games, 295s
+kb2: 192/540 games, 332s
+kb2: 216/540 games, 375s
+kb2: 240/540 games, 413s
+kb2: 264/540 games, 461s
+kb2: 288/540 games, 495s
+kb2: 312/540 games, 520s
+kb2: 336/540 games, 548s
+kb2: 360/540 games, 571s
+kb2: 384/540 games, 623s
+kb2: 408/540 games, 712s
+kb2: 432/540 games, 762s
+kb2: 456/540 games, 861s
+kb2: 480/540 games, 949s
+kb2: 504/540 games, 1066s
+kb2: 528/540 games, 1161s
+kb2: 540/540 games, 1225s
+# Ablation report: 20260930-110033-ablate-a99756
+
+3 seeds, opponents cpp_nicked_v92, cpp_nicked_v75, cpp_leviathan3, v7-base-bot, nicked_v44, nicked_lab; 11 official + 4 extra maps, both sides. Objective: aligned. Delta = variant score minus base score on the same (opponent, map, seed, side); positive means removing the group helped. 95% CI resamples (map, seed) blocks.
+
+base: mean margin +0.076, wins 303/540; by opponent: cpp_nicked_v92 -0.532, cpp_nicked_v75 -0.287, cpp_leviathan3 +0.451, v7-base-bot +0.472, nicked_v44 +0.333, nicked_lab +0.020
+
+| variant | current pool delta [95% CI] | pool verdict | other maps | delta all 15 [95% CI] | verdict | vs cpp_nicked_v92 | vs cpp_nicked_v75 | vs cpp_leviathan3 | vs v7-base-bot | vs nicked_v44 | vs nicked_lab | official | extra | wins |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| kb2 | +0.017 [-0.020, +0.060] | neutral | -0.008 | +0.009 [-0.021, +0.040] | neutral | -0.026 | +0.022 | +0.053 | +0.015 | +0.049 | -0.059 | -0.001 | +0.036 | 308/540 |
+
+Noise: seed-to-seed SD of base's margin within a (opponent, map, side) cell 0.556 over 180 cells. Expected paired CI half-width with K seeds, 1.96 * sqrt(2 * 0.556^2 / (180 * K)): K=2: 0.081, K=3: 0.066, K=4: 0.057, K=6: 0.047, K=8: 0.041
+

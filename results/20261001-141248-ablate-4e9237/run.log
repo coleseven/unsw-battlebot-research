@@ -1,0 +1,102 @@
+base: 24/528 games, 52s
+base: 48/528 games, 83s
+base: 72/528 games, 114s
+base: 96/528 games, 138s
+base: 120/528 games, 181s
+base: 144/528 games, 231s
+base: 168/528 games, 244s
+base: 192/528 games, 279s
+base: 216/528 games, 322s
+base: 240/528 games, 362s
+base: 264/528 games, 378s
+base: 288/528 games, 404s
+base: 312/528 games, 428s
+base: 336/528 games, 443s
+base: 360/528 games, 476s
+base: 384/528 games, 548s
+base: 408/528 games, 625s
+base: 432/528 games, 665s
+base: 456/528 games, 730s
+base: 480/528 games, 837s
+base: 504/528 games, 933s
+base: 528/528 games, 967s
+mv_t05: 24/528 games, 43s
+mv_t05: 48/528 games, 82s
+mv_t05: 72/528 games, 127s
+mv_t05: 96/528 games, 145s
+mv_t05: 120/528 games, 195s
+mv_t05: 144/528 games, 263s
+mv_t05: 168/528 games, 282s
+mv_t05: 192/528 games, 324s
+mv_t05: 216/528 games, 377s
+mv_t05: 240/528 games, 435s
+mv_t05: 264/528 games, 452s
+mv_t05: 288/528 games, 472s
+mv_t05: 312/528 games, 502s
+mv_t05: 336/528 games, 524s
+mv_t05: 360/528 games, 571s
+mv_t05: 384/528 games, 658s
+mv_t05: 408/528 games, 776s
+mv_t05: 432/528 games, 804s
+mv_t05: 456/528 games, 871s
+mv_t05: 480/528 games, 984s
+mv_t05: 504/528 games, 1084s
+mv_t05: 528/528 games, 1102s
+mv_t1: 24/528 games, 45s
+mv_t1: 48/528 games, 81s
+mv_t1: 72/528 games, 126s
+mv_t1: 96/528 games, 141s
+mv_t1: 120/528 games, 190s
+mv_t1: 144/528 games, 256s
+mv_t1: 168/528 games, 274s
+mv_t1: 192/528 games, 313s
+mv_t1: 216/528 games, 372s
+mv_t1: 240/528 games, 427s
+mv_t1: 264/528 games, 447s
+mv_t1: 288/528 games, 468s
+mv_t1: 312/528 games, 501s
+mv_t1: 336/528 games, 522s
+mv_t1: 360/528 games, 568s
+mv_t1: 384/528 games, 637s
+mv_t1: 408/528 games, 741s
+mv_t1: 432/528 games, 778s
+mv_t1: 456/528 games, 841s
+mv_t1: 480/528 games, 938s
+mv_t1: 504/528 games, 1062s
+mv_t1: 528/528 games, 1080s
+mv_t2: 24/528 games, 51s
+mv_t2: 48/528 games, 86s
+mv_t2: 72/528 games, 132s
+mv_t2: 96/528 games, 150s
+mv_t2: 120/528 games, 197s
+mv_t2: 144/528 games, 265s
+mv_t2: 168/528 games, 285s
+mv_t2: 192/528 games, 321s
+mv_t2: 216/528 games, 373s
+mv_t2: 240/528 games, 429s
+mv_t2: 264/528 games, 448s
+mv_t2: 288/528 games, 471s
+mv_t2: 312/528 games, 505s
+mv_t2: 336/528 games, 528s
+mv_t2: 360/528 games, 565s
+mv_t2: 384/528 games, 640s
+mv_t2: 408/528 games, 753s
+mv_t2: 432/528 games, 776s
+mv_t2: 456/528 games, 842s
+mv_t2: 480/528 games, 944s
+mv_t2: 504/528 games, 1062s
+mv_t2: 528/528 games, 1079s
+# Ablation report: 20261001-141248-ablate-4e9237
+
+2 seeds, opponents cpp_nicked_v92, cpp_nicked_v75, cpp_leviathan3, v7-base-bot, nicked_v44, nicked_lab; 11 official + 11 extra maps, both sides. Objective: aligned. Delta = variant score minus base score on the same (opponent, map, seed, side); positive means removing the group helped. 95% CI resamples (map, seed) blocks.
+
+base: mean margin +0.090, wins 270/528; by opponent: cpp_nicked_v92 -0.277, cpp_nicked_v75 -0.079, cpp_leviathan3 +0.298, v7-base-bot +0.305, nicked_v44 +0.334, nicked_lab -0.039
+
+| variant | current pool delta [95% CI] | pool verdict | other maps | delta all 15 [95% CI] | verdict | vs cpp_nicked_v92 | vs cpp_nicked_v75 | vs cpp_leviathan3 | vs v7-base-bot | vs nicked_v44 | vs nicked_lab | official | extra | wins |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| mv_t05 | -0.352 [-0.557, -0.161] | essential | -0.179 | -0.258 [-0.367, -0.156] | essential | -0.246 | -0.251 | -0.213 | -0.194 | -0.361 | -0.282 | -0.415 | -0.100 | 184/528 |
+| mv_t1 | -0.163 [-0.314, -0.016] | essential | -0.036 | -0.094 [-0.177, -0.015] | essential | -0.066 | -0.138 | -0.011 | -0.139 | -0.029 | -0.181 | -0.191 | +0.003 | 234/528 |
+| mv_t2 | -0.014 [-0.104, +0.080] | neutral | +0.009 | -0.001 [-0.049, +0.052] | neutral | +0.028 | -0.037 | +0.098 | -0.042 | -0.007 | -0.048 | +0.009 | -0.011 | 263/528 |
+
+Noise: seed-to-seed SD of base's margin within a (opponent, map, side) cell 0.440 over 264 cells. Expected paired CI half-width with K seeds, 1.96 * sqrt(2 * 0.440^2 / (264 * K)): K=2: 0.053, K=3: 0.043, K=4: 0.038, K=6: 0.031, K=8: 0.027
+

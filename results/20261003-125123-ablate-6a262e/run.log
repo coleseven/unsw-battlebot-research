@@ -1,0 +1,74 @@
+guard: waiting for running experiment 'ablate 20261003-115128-ablate-71a0f6' (pid 53072)
+base: 24/476 games, 45s
+base: 48/476 games, 112s
+base: 72/476 games, 153s
+base: 96/476 games, 194s
+base: 120/476 games, 253s
+base: 144/476 games, 302s
+base: 168/476 games, 462s
+base: 192/476 games, 574s
+base: 216/476 games, 613s
+base: 240/476 games, 638s
+base: 264/476 games, 661s
+base: 288/476 games, 680s
+base: 312/476 games, 715s
+base: 336/476 games, 727s
+base: 360/476 games, 748s
+base: 384/476 games, 781s
+base: 408/476 games, 794s
+base: 432/476 games, 818s
+base: 456/476 games, 851s
+base: 476/476 games, 869s
+ref100: 24/476 games, 42s
+ref100: 48/476 games, 109s
+ref100: 72/476 games, 151s
+ref100: 96/476 games, 195s
+ref100: 120/476 games, 255s
+ref100: 144/476 games, 300s
+ref100: 168/476 games, 453s
+ref100: 192/476 games, 569s
+ref100: 216/476 games, 604s
+ref100: 240/476 games, 631s
+ref100: 264/476 games, 655s
+ref100: 288/476 games, 674s
+ref100: 312/476 games, 708s
+ref100: 336/476 games, 721s
+ref100: 360/476 games, 741s
+ref100: 384/476 games, 771s
+ref100: 408/476 games, 784s
+ref100: 432/476 games, 806s
+ref100: 456/476 games, 839s
+ref100: 476/476 games, 857s
+ref250: 24/476 games, 44s
+ref250: 48/476 games, 113s
+ref250: 72/476 games, 154s
+ref250: 96/476 games, 206s
+ref250: 120/476 games, 262s
+ref250: 144/476 games, 308s
+ref250: 168/476 games, 459s
+ref250: 192/476 games, 589s
+ref250: 216/476 games, 637s
+ref250: 240/476 games, 665s
+ref250: 264/476 games, 690s
+ref250: 288/476 games, 708s
+ref250: 312/476 games, 743s
+ref250: 336/476 games, 754s
+ref250: 360/476 games, 775s
+ref250: 384/476 games, 807s
+ref250: 408/476 games, 819s
+ref250: 432/476 games, 843s
+ref250: 456/476 games, 875s
+ref250: 476/476 games, 893s
+# Ablation report: 20261003-125123-ablate-6a262e
+
+2 seeds, opponents cpp_nicked_v92, cpp_nicked_v75, nicked_lab, opp-careful-queen, opp-raider, opp-growth-queen, opp-economy; 17 official + 0 extra maps, both sides. Objective: wins. Delta = variant score minus base score on the same (opponent, map, seed, side); positive means removing the group helped. 95% CI resamples (map, seed) blocks.
+
+base: mean margin -0.063, wins 222/476; by opponent: cpp_nicked_v92 -0.412, cpp_nicked_v75 -0.324, nicked_lab -0.029, opp-careful-queen +0.000, opp-raider -0.206, opp-growth-queen +0.353, opp-economy +0.176
+
+| variant | current pool delta [95% CI] | pool verdict | other maps | delta all 15 [95% CI] | verdict | vs cpp_nicked_v92 | vs cpp_nicked_v75 | vs nicked_lab | vs opp-careful-queen | vs opp-raider | vs opp-growth-queen | vs opp-economy | official | extra | wins |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| ref100 | +0.014 [-0.093, +0.164] | neutral | +0.054 | +0.042 [-0.074, +0.162] | neutral | +0.059 | +0.176 | +0.235 | +0.029 | +0.000 | -0.147 | -0.059 | +0.042 | - | 233/476 |
+| ref250 | +0.086 [-0.007, +0.193] | neutral | +0.024 | +0.042 [-0.067, +0.155] | neutral | +0.118 | +0.029 | +0.088 | -0.088 | +0.176 | -0.029 | +0.000 | +0.042 | - | 233/476 |
+
+Noise: seed-to-seed SD of base's margin within a (opponent, map, side) cell 0.830 over 238 cells. Expected paired CI half-width with K seeds, 1.96 * sqrt(2 * 0.830^2 / (238 * K)): K=2: 0.105, K=3: 0.086, K=4: 0.075, K=6: 0.061, K=8: 0.053
+

@@ -1,0 +1,100 @@
+3199 games to play
+labelled 50/3199
+labelled 100/3199
+labelled 150/3199
+labelled 200/3199
+labelled 250/3199
+labelled 300/3199
+labelled 350/3199
+labelled 400/3199
+labelled 450/3199
+labelled 500/3199
+labelled 550/3199
+labelled 600/3199
+labelled 650/3199
+labelled 700/3199
+labelled 750/3199
+labelled 800/3199
+labelled 850/3199
+labelled 900/3199
+labelled 950/3199
+labelled 1000/3199
+labelled 1050/3199
+labelled 1100/3199
+labelled 1150/3199
+labelled 1200/3199
+labelled 1250/3199
+labelled 1300/3199
+labelled 1350/3199
+labelled 1400/3199
+labelled 1450/3199
+labelled 1500/3199
+labelled 1550/3199
+labelled 1600/3199
+labelled 1650/3199
+labelled 1700/3199
+labelled 1750/3199
+labelled 1800/3199
+labelled 1850/3199
+labelled 1900/3199
+labelled 1950/3199
+labelled 2000/3199
+labelled 2050/3199
+labelled 2100/3199
+labelled 2150/3199
+labelled 2200/3199
+labelled 2250/3199
+labelled 2300/3199
+labelled 2350/3199
+labelled 2400/3199
+labelled 2450/3199
+labelled 2500/3199
+labelled 2550/3199
+labelled 2600/3199
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\process.py", line 254, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\mover_teacher.py", line 284, in _label_job
+    r = match.play(Path(map_path), Path(a), Path(b), seed=seed, replay_to=tmp, hook=f)
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\match.py", line 395, in play
+    loaders = {"A": load_bot(bot_a, "A"), "B": load_bot(bot_b, "B")}
+                                               ~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\match.py", line 347, in load_bot
+    return InProcessCppBot(path)
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\match.py", line 277, in __init__
+    self.hash = bot_hash(path)  # same identity as the process build
+                ~~~~~~~~^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\paths.py", line 53, in bot_hash
+    h.update(f.read_bytes() + b"\0")
+             ~~~~~~~~~~~~^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\pathlib\__init__.py", line 777, in read_bytes
+    with self.open(mode='rb', buffering=0) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\pathlib\__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 24] Too many open files: 'results\\mover-variants\\off\\bot.toml'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\mover_teacher.py", line 406, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\mover_teacher.py", line 400, in main
+    pilot_label(a.pilot, Path(a.playbot), a.workers)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Sea7\Desktop\unsw battlebot\bcsim\mover_teacher.py", line 322, in pilot_label
+    f.write(json.dumps(fut.result()) + "\n"); f.flush()
+                       ~~~~~~~~~~^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 443, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Sea7\AppData\Local\Python\pythoncore-3.14-64\Lib\concurrent\futures\_base.py", line 395, in __get_result
+    raise self._exception
+OSError: [Errno 24] Too many open files: 'results\\mover-variants\\off\\bot.toml'
